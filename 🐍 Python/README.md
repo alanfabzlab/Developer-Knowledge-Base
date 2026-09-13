@@ -1,13 +1,27 @@
+<div align="center">
 
 # 🐍 Python: The Art of Algorithmic Craft (MOC)
 
-A dynamic knowledge map designed to transform Python syntax into functional projects, architectures, and systems.
+[![Python 3.x](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Obsidian](https://img.shields.io/badge/Obsidian-483699?logo=obsidian&logoColor=white)](https://obsidian.md/)
+[![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)](https://www.apple.com/macos/)
+
+_A dynamic knowledge map for transforming Python syntax into functional projects, architectures, and systems._
+
+</div>
+
+> [!NOTE]
+> This page is the central map for the Python notes in this Obsidian vault.
+
+> [!TIP]
+> Start with the **Core Language Foundations**, then follow the map toward data structures, architecture, and real-world applications.
 
 ---
 
 ## 🗺️ Map of Content
 
 ### 🎨 1. Core Language Foundations
+
 - **Variables & Data Types:** The initial canvas (`str`, `int`, `float`, `bool`).
 - **Control Flow Systems:**
   - Decision-making with `if` / `elif` / `else`: `[[Python - (if,elif,else) - Examples]]`
@@ -19,6 +33,7 @@ A dynamic knowledge map designed to transform Python syntax into functional proj
 ---
 
 ### 📦 2. Data Structures (Organization & Storage)
+
 - **Lists (`list`) & Tuples (`tuple`):** Mutable and immutable sequences for managing collections.
 - **Dictionaries (`dict`) & Sets (`set`):** Key-value mapping and unique set operations.
 - **Comprehensions:** Expressive and efficient single-line creation of lists and dictionaries.
@@ -26,6 +41,7 @@ A dynamic knowledge map designed to transform Python syntax into functional proj
 ---
 
 ### ⚙️ 3. Modular Architecture (Functions & Modules)
+
 - **Functions:**
   - Defining reusable logic blocks (`def`).
   - Positional arguments, keyword arguments, and default parameters.
@@ -38,6 +54,7 @@ A dynamic knowledge map designed to transform Python syntax into functional proj
 ---
 
 ### 🧱 4. Object-Oriented Programming (OOP)
+
 - **Classes & Objects:** Modeling real-world entities.
 - **Encapsulation & Abstraction:** Shielding internal state using private attributes.
 - **Inheritance & Polymorphism:** Behavior extension and method overriding.
@@ -46,6 +63,7 @@ A dynamic knowledge map designed to transform Python syntax into functional proj
 ---
 
 ### 💾 5. Data Persistence & File I/O
+
 - **Exception Handling:** Robust error management using `try` / `except` / `finally`.
 - **File Manipulation:** Reading and writing files (`.txt`, `.json`, `.csv`).
 - **Context Managers:** Safe resource allocation using the `with` statement.
@@ -53,6 +71,7 @@ A dynamic knowledge map designed to transform Python syntax into functional proj
 ---
 
 ### 🚀 6. Advanced Concepts & Patterns
+
 - **Decorators (`@decorator`):** Dynamically wrapping and modifying function behavior.
 - **Generators & Iterators:** Efficient processing of large data streams using `yield`.
 - **Virtual Environments:** Isolating project dependencies (`venv`, `poetry`).
@@ -60,6 +79,7 @@ A dynamic knowledge map designed to transform Python syntax into functional proj
 ---
 
 ### 🛠️ 7. Real-World Application Ecosystems
+
 - **Web Development:** Building APIs and full-stack platforms (`FastAPI`, `Django`, `Flask`).
 - **Data Analysis & Viz:** Data wrangling and visualization (`Pandas`, `NumPy`, `Matplotlib`).
 - **Scripting & Automation:** Web scraping and OS automated tasks.
@@ -68,5 +88,6 @@ A dynamic knowledge map designed to transform Python syntax into functional proj
 ---
 
 ## 📌 Related Exercises & Notes
+
 - `[[Python - (if,elif,else) - Examples]]`
 - `[[Python - Basics - Currency Converter]]`
