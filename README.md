@@ -11,12 +11,14 @@
 
 </div>
 
----
+<!-- Separador Neón -->
+<img src="https://i.imgur.com/WA140P4.gif" width="100%" alt="Neon Line Divider" />
 
 > [!NOTE]
 > This knowledge base acts as a central repository for documentation, reference architectures, and code notes authored in **Obsidian** and rendered directly on **GitHub**.
 
----
+<!-- Separador Neón -->
+<img src="https://i.imgur.com/WA140P4.gif" width="100%" alt="Neon Line Divider" />
 
 
 ## 🗺️ Knowledge Domains & MOCs
@@ -27,7 +29,8 @@
 | **💻 Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | _Coming soon_ |
 | **🎮 Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | _Coming soon_ |
 
----
+<!-- Separador Neón -->
+<img src="https://i.imgur.com/WA140P4.gif" width="100%" alt="Neon Line Divider" />
 
 
 ## 🛠️ Repository Architecture
@@ -42,7 +45,8 @@ Developer-Knowledge-Base/
 ```
 
 
----
+<!-- Separador Neón -->
+<img src="https://i.imgur.com/WA140P4.gif" width="100%" alt="Neon Line Divider" />
 
 
 ## ⚙️ Engineering Workflow
