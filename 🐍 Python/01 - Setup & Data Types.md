@@ -50,13 +50,13 @@ print('Hello World!')
 Python
 
 ```python
-print('☀️ Morning Dharma!')
-print('🦉 Evening Sonny!')
+print('👾 Hello Developer!')
+print('🚀 Systems Ready!')
 
 **Output:**
 
-☀️ Morning Dharma!
-🦉 Evening Sonny!
+👾 Hello Developer!
+🚀 Systems Ready!
 ```
 
 
@@ -82,13 +82,13 @@ Create ASCII block initials accompanied by a code comment.
 
 
 ```python
-# Fun fact: Building interactive open-source learning guides!
+# Fun fact: Developing immersive tools and software projects!
 
-print("DDDD   L    ")
-print("D   D  L    ")
-print("D   D  L    ")
-print("D   D  L    ")
-print("DDDD   LLLLL")
+print(" AAA   FFFFFF")
+print("A   A  F     ")
+print("AAAAA  FFF   ")
+print("A   A  F     ")
+print("A   A  F     ")
 ```
 
 ## 04. Future Self Letter (`letter.py`)
@@ -97,14 +97,14 @@ Using comments (`#`) for documentation alongside output statements:
 
 
 ```python
-# Goal: Letter to my future developer self
+# Goal: Note to my future game developer self
 # Date: 2026
 
 print("Date: September 13, 2026")
-print("Status: Feeling excited to build interactive projects.")
-print("Goal: Master Python for software and immersive tech.")
-print("Message: Keep building consistently every single day!")
-print("Favorite Emoji: 🚀")
+print("Status: Building personal knowledge base in Obsidian.")
+print("Goal: Master software engineering and game development.")
+print("Message: Keep pushing code every single day!")
+print("Favorite Emoji: 🎮")
 ```
 
 ## 05. Variables & Data Types
@@ -118,16 +118,16 @@ print("Favorite Emoji: 🚀")
 
 ```python
 # Variable declarations & reassignment
-name = 'Erlich Bachman'
-user_id = 16180339887
-progress = 0.75
-xp = 60
+name = 'Alan Fabricio'
+user_id = 9876543210
+progress = 0.85
+xp = 120
 verified = True
 
 # Value Reassignment
-xp = 70
-xp = 80
-print(xp)  # Output: 80
+xp = 150
+xp = 200
+print(xp)  # Output: 200
 ```
 
 | Type        | Name            | Description             | Example |
@@ -143,27 +143,30 @@ print(xp)  # Output: 80
 
 Python includes standard arithmetic operators for performing mathematical calculations:
 
-| Operator | Name | Description | Example | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| `+` | Addition | Adds two values together | `4 + 3` | `7` |
-| `-` | Subtraction | Subtracts one value from another | `4 - 3` | `1` |
-| `*` | Multiplication | Multiplies two values | `4 * 3` | `12` |
-| `/` | Division | Divides numerator by denominator (returns float) | `4 / 3` | `1.3333...` |
-| `%` | Modulo | Returns the remainder of a division | `10 % 3` | `1` |
-| `**` | Exponentiation | Raises base to the power of exponent | `2 ** 3` | `8` |
+|**Operator**|**Name**|**Description**|**Example**|**Result**|
+|---|---|---|---|---|
+|`+`|Addition|Adds two values together|`15 + 5`|`20`|
+|`-`|Subtraction|Subtracts one value from another|`15 - 5`|`10`|
+|`*`|Multiplication|Multiplies two values|`15 * 5`|`75`|
+|`/`|Division|Divides numerator by denominator (returns float)|`15 / 5`|`3.0`|
+|`%`|Modulo|Returns the remainder of a division|`15 % 4`|`3`|
+|`**`|Exponentiation|Raises base to the power of exponent|`3 ** 3`|`27`|
+
 
 ### 🧮 Practical Examples & Formula Challenges
 
+
 #### 💡 Tip Calculation (`tip.py`)
 ```python
-pizza = 2.99
-coke = 0.99
+americano = 4.50
+muffin = 3.20
 
-total = pizza + coke
-tip = total * 0.2
+total = americano + muffin
+tip = total * 0.15
 
-print(tip)  # Output: 0.796
+print(tip)  # Output: 1.155
 ```
+
 
 #### ⚖️ Body Mass Index (`bmi.py`)
 
@@ -171,12 +174,13 @@ $$bmi = \frac{mass}{height^2}$$
 
 ```python
 # bmi.py
-mass = 70    # in kilograms
-height = 1.75 # in meters
+mass = 80     # in kilograms
+height = 1.86 # in meters
 
 bmi = mass / (height ** 2)
 print(bmi)
 ```
+
 
 #### 📐 Pythagorean Theorem (`hypotenuse.py`)
 
@@ -184,45 +188,50 @@ $$c = \sqrt{a^2 + b^2}$$
 
 ```python
 # hypotenuse.py
-a = int(input('Enter length of side a: '))
-b = int(input('Enter length of side b: '))
+a = int(input('Enter length of base side a: '))
+b = int(input('Enter length of height side b: '))
 
 c = (a**2 + b**2) ** 0.5
 print(c)
 ```
+
 
 ## 07. User Input & Type Casting
 
 To interact with users, Python provides the built-in `input()` function.
 
 > [!WARNING] Default Input Type `input()` **always** returns the user response as a `str` (String). To perform calculations, cast it using `int()` or `float()`.
+> 
 
 ### ⌨️ Standard Input
 
 ```python
-username = input('Enter your name: ')
+username = input('Enter your developer handle: ')
 print(username)
 ```
+
 
 🔢 Type Conversion (`int()`)
 
 ```python
-age = int(input('What is your age? '))
-print(age)  # Stored as integer 24, not string "24"
+level = int(input('What is your current level? '))
+print(level)  # Stored as integer 30, not string "30"
 ```
+
 
 ## 08. Chapter Recap Challenge: Currency Converter (`currency.py`)
 
 A multi-currency converter program converting Colombian Pesos, Peruvian Soles, and Brazilian Reais to USD:
 
+
 ```python
 # currency.py
 
-pesos = int(input('What do you have left in pesos? '))
-soles = int(input('What do you have left in soles? '))
-reais = int(input('What do you have left in reais? '))
+pesos = int(input('Amount in Colombian pesos: '))
+soles = int(input('Amount in Peruvian soles: '))
+reais = int(input('Amount in Brazilian reais: '))
 
-# Exchange rates (Example standard conversion)
+# Standard exchange rate factors
 usd_from_pesos = pesos * 0.00025
 usd_from_soles = soles * 0.27
 usd_from_reais = reais * 0.18
