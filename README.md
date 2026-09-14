@@ -11,12 +11,12 @@
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=footer" width="100%" alt="Wave Divider" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
 
 > [!NOTE]
 > This knowledge base acts as a central repository for documentation, reference architectures, and code notes authored in **Obsidian** and rendered directly on **GitHub**.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=footer" width="100%" alt="Wave Divider" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
 
 
 ## 🗺️ Knowledge Domains & MOCs
@@ -27,7 +27,7 @@
 | **💻 Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | _Coming soon_ |
 | **🎮 Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | _Coming soon_ |
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=footer" width="100%" alt="Wave Divider" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
 
 
 ## 🛠️ Repository Architecture
@@ -42,7 +42,7 @@ Developer-Knowledge-Base/
 ```
 
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=footer" width="100%" alt="Wave Divider" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
 
 
 ## ⚙️ Engineering Workflow
