@@ -140,5 +140,5 @@ print(xp)  # Output: 80
 | **Float** | `float` | Decimal numbers | `0.75`, `3.14159` |
 | **Boolean** | `bool` | Logical truth values | `True`, `False` |
 
-> [!SUCCESS] Next Steps
+
 
