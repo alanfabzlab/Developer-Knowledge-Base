@@ -1,11 +1,10 @@
-
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 # 05 - Lists
 
 A **list** is an ordered collection of items stored in a single variable. Lists are defined using square brackets `[]` with items separated by commas.
 
-<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
-
+---
 
 ## 01. Introduction to Lists (`grocery.py`)
 

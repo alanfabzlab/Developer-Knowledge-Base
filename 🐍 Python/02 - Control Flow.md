@@ -1,5 +1,4 @@
-
-
+---
 tags:
   - python
   - control-flow
@@ -9,11 +8,13 @@ status: in-progress
 type: lesson
 ---
 
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
+
 # 🔀 Python Control Flow & Error Handling
 
 ![Status Badge](https://img.shields.io/badge/Topic-Control%20Flow-orange?style=for-the-badge)
 
-<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
+---
 
 ## 01. Common Errors in Python
 
@@ -25,7 +26,7 @@ Errors are a natural part of programming. Recognizing error types helps debug co
 - **`NameError`**: Occurs when referencing a variable or function that hasn't been defined yet.
 - **`TypeError`**: Occurs when applying an operation to an incompatible data type (e.g., combining strings and integers without casting).
 
-<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
+---
 
 ### 🔍 Error Examples & Solutions
 
@@ -151,7 +152,7 @@ else:
 ```
 
 
-<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
+---
 
 ## 04. Relational Operators & `elif` Statements
 

@@ -1,5 +1,4 @@
-
-
+---
 tags:
   - python
   - programming
@@ -9,6 +8,8 @@ tags:
   - notes
 status: in-progress
 type: lesson
+---
+
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 # 🐍 Python Functions & Modern Syntax

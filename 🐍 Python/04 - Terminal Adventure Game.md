@@ -13,7 +13,7 @@ A text-based mini-adventure game built in the terminal as a Checkpoint Project, 
 * **Core Logic:** Guide the player through an interactive story where each step presents at least 2 choices.
 * **Key Mechanics:** Use control flow (`if`/`elif`/`else`), loops (`while`/`for`), input handling (`input()`), and optional random outcomes using `import random`.
 
-<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
+---
 
 
 ## 💡 Implementation (`terminal_game.py`)
