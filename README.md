@@ -30,12 +30,15 @@
 
 ## 🛠️ Repository Architecture
 
+```text
 Developer-Knowledge-Base/
-├── 🐍 Python/ <-- Python language domain
-│ ├── README.md <-- Python MOC & overview
-│ └── z_attachments/ <-- Local media & diagrams
-├── .gitignore <-- Git exclusion rules
-└── README.md <-- Main repository homepage
+├── 🐍 Python/                   <-- Python language domain
+│   └── README.md               <-- Python MOC & topic index
+├── 📁 z_attachments/           <-- Local media, assets & diagrams
+├── .gitignore                  <-- Git exclusion rules
+└── README.md                   <-- Main repository homepage
+```
+
 
 ---
 
