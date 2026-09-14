@@ -1,4 +1,4 @@
----
+
 tags:
   - python
   - programming
@@ -7,14 +7,14 @@ tags:
   - notes
 status: completed
 type: lesson
----
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 # 🐍 Python Basics: Setup, Output & Data Types
 
 ![Python Badge](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Status Badge](https://img.shields.io/badge/Difficulty-Beginner-brightgreen?style=for-the-badge)
 
----
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 ## 01. Setting Up & History
 
@@ -31,7 +31,7 @@ type: lesson
 - **Files:** Code is stored in text files with the `.py` extension.
 - **Code Editor:** Software used to write, edit, and run code.
 
----
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 ## 02. Output & Console Printing
 
@@ -137,7 +137,7 @@ print(xp)  # Output: 200
 | **Float** | `float` | Decimal numbers | `0.75`, `3.14159` |
 | **Boolean** | `bool` | Logical truth values | `True`, `False` |
 
----
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 ## 06. Arithmetic Operators
 

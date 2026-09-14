@@ -1,5 +1,5 @@
 
----
+
 tags:
   - python
   - control-flow
@@ -13,7 +13,7 @@ type: lesson
 
 ![Status Badge](https://img.shields.io/badge/Topic-Control%20Flow-orange?style=for-the-badge)
 
----
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 ## 01. Common Errors in Python
 
@@ -25,7 +25,7 @@ Errors are a natural part of programming. Recognizing error types helps debug co
 - **`NameError`**: Occurs when referencing a variable or function that hasn't been defined yet.
 - **`TypeError`**: Occurs when applying an operation to an incompatible data type (e.g., combining strings and integers without casting).
 
----
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 ### 🔍 Error Examples & Solutions
 
@@ -151,7 +151,7 @@ else:
 ```
 
 
----
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 ## 04. Relational Operators & `elif` Statements
 
@@ -163,7 +163,7 @@ Relational operators compare two values and return a boolean result (`True` or `
 - `<` Less than
 - `>=` Greater than or equal to
 - `<=` Less than or equal to
-- 
+
 
 ### 🔹 The `elif` Statement
 When checking more than two conditions, append `elif` (else if) blocks between `if` and `else`.

@@ -1,5 +1,5 @@
 
----
+
 tags:
   - python
   - programming
@@ -9,13 +9,13 @@ tags:
   - notes
 status: in-progress
 type: lesson
----
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 # 🐍 Python Functions & Modern Syntax
 
 ![Status Badge](https://img.shields.io/badge/Topic-Functions-orange?style=for-the-badge&logo=python&logoColor=white)
 
----
+<hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 
 ## 01. The D.R.Y. Principle & Built-in Functions (`dry.py`)
