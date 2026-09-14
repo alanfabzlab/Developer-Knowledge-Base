@@ -23,9 +23,9 @@
 
 | Domain / Language | Description | Status | Map of Content |
 | :--- | :--- | :---: | :---: |
-| **🐍 Python** | Core syntax, control flow, data structures, OOP & ecosystems | 🟢 Active | [Go to MOC](./2%20Python/00%20-%20README.md) |
+| **🐍 Python** | Core syntax, control flow, data structures, OOP & ecosystems | 🟢 Active | [Go to MOC](./Python/00%20-%20README.md) |
 | **💻 Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | _Coming soon_ |
-| **🎮 Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | _Coming soon_ |          |
+| **🎮 Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | _Coming soon_ |
 
 ---
 
