@@ -11,12 +11,12 @@
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Laser Line" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=footer" width="100%" alt="Wave Divider" />
 
 > [!NOTE]
 > This knowledge base acts as a central repository for documentation, reference architectures, and code notes authored in **Obsidian** and rendered directly on **GitHub**.
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Laser Line" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=footer" width="100%" alt="Wave Divider" />
 
 
 ## 🗺️ Knowledge Domains & MOCs
@@ -27,7 +27,7 @@
 | **💻 Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | _Coming soon_ |
 | **🎮 Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | _Coming soon_ |
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Laser Line" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=footer" width="100%" alt="Wave Divider" />
 
 
 ## 🛠️ Repository Architecture
@@ -42,7 +42,7 @@ Developer-Knowledge-Base/
 ```
 
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Laser Line" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=footer" width="100%" alt="Wave Divider" />
 
 
 ## ⚙️ Engineering Workflow
