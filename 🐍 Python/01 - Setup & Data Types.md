@@ -80,7 +80,6 @@ print('7 8 9 10')
 
 Create ASCII block initials accompanied by a code comment.
 
-Python
 
 ```python
 # Fun fact: Building interactive open-source learning guides!
@@ -96,7 +95,6 @@ print("DDDD   LLLLL")
 
 Using comments (`#`) for documentation alongside output statements:
 
-Python
 
 ```python
 # Goal: Letter to my future developer self
@@ -117,7 +115,6 @@ print("Favorite Emoji: 🚀")
 > 
 > Assign values using the equal sign (`=`): `variable_name = value`.
 
-Python
 
 ```python
 # Variable declarations & reassignment
@@ -140,5 +137,98 @@ print(xp)  # Output: 80
 | **Float** | `float` | Decimal numbers | `0.75`, `3.14159` |
 | **Boolean** | `bool` | Logical truth values | `True`, `False` |
 
+---
 
+## 06. Arithmetic Operators
+
+Python includes standard arithmetic operators for performing mathematical calculations:
+
+| Operator | Name | Description | Example | Result |
+| :--- | :--- | :--- | :--- | :--- |
+| `+` | Addition | Adds two values together | `4 + 3` | `7` |
+| `-` | Subtraction | Subtracts one value from another | `4 - 3` | `1` |
+| `*` | Multiplication | Multiplies two values | `4 * 3` | `12` |
+| `/` | Division | Divides numerator by denominator (returns float) | `4 / 3` | `1.3333...` |
+| `%` | Modulo | Returns the remainder of a division | `10 % 3` | `1` |
+| `**` | Exponentiation | Raises base to the power of exponent | `2 ** 3` | `8` |
+
+### 🧮 Practical Examples & Formula Challenges
+
+#### 💡 Tip Calculation (`tip.py`)
+```python
+pizza = 2.99
+coke = 0.99
+
+total = pizza + coke
+tip = total * 0.2
+
+print(tip)  # Output: 0.796
+```
+
+#### ⚖️ Body Mass Index (`bmi.py`)
+
+$$bmi = \frac{mass}{height^2}$$
+
+```python
+# bmi.py
+mass = 70    # in kilograms
+height = 1.75 # in meters
+
+bmi = mass / (height ** 2)
+print(bmi)
+```
+
+#### 📐 Pythagorean Theorem (`hypotenuse.py`)
+
+$$c = \sqrt{a^2 + b^2}$$
+
+```python
+# hypotenuse.py
+a = int(input('Enter length of side a: '))
+b = int(input('Enter length of side b: '))
+
+c = (a**2 + b**2) ** 0.5
+print(c)
+```
+
+## 07. User Input & Type Casting
+
+To interact with users, Python provides the built-in `input()` function.
+
+> [!WARNING] Default Input Type `input()` **always** returns the user response as a `str` (String). To perform calculations, cast it using `int()` or `float()`.
+
+### ⌨️ Standard Input
+
+```python
+username = input('Enter your name: ')
+print(username)
+```
+
+🔢 Type Conversion (`int()`)
+
+```python
+age = int(input('What is your age? '))
+print(age)  # Stored as integer 24, not string "24"
+```
+
+## 08. Chapter Recap Challenge: Currency Converter (`currency.py`)
+
+A multi-currency converter program converting Colombian Pesos, Peruvian Soles, and Brazilian Reais to USD:
+
+```python
+# currency.py
+
+pesos = int(input('What do you have left in pesos? '))
+soles = int(input('What do you have left in soles? '))
+reais = int(input('What do you have left in reais? '))
+
+# Exchange rates (Example standard conversion)
+usd_from_pesos = pesos * 0.00025
+usd_from_soles = soles * 0.27
+usd_from_reais = reais * 0.18
+
+total_usd = usd_from_pesos + usd_from_soles + usd_from_reais
+
+print(total_usd)
+```
 
