@@ -11,14 +11,12 @@
 
 </div>
 
-<!-- Separador Neón -->
-<img src="https://i.imgur.com/WA140P4.gif" width="100%" alt="Neon Line Divider" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=100&section=header" width="100%" alt="Neon Wave" />
 
 > [!NOTE]
 > This knowledge base acts as a central repository for documentation, reference architectures, and code notes authored in **Obsidian** and rendered directly on **GitHub**.
 
-<!-- Separador Neón -->
-<img src="https://i.imgur.com/WA140P4.gif" width="100%" alt="Neon Line Divider" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=100&section=header" width="100%" alt="Neon Wave" />
 
 
 ## 🗺️ Knowledge Domains & MOCs
@@ -29,8 +27,7 @@
 | **💻 Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | _Coming soon_ |
 | **🎮 Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | _Coming soon_ |
 
-<!-- Separador Neón -->
-<img src="https://i.imgur.com/WA140P4.gif" width="100%" alt="Neon Line Divider" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=100&section=header" width="100%" alt="Neon Wave" />
 
 
 ## 🛠️ Repository Architecture
@@ -45,8 +42,7 @@ Developer-Knowledge-Base/
 ```
 
 
-<!-- Separador Neón -->
-<img src="https://i.imgur.com/WA140P4.gif" width="100%" alt="Neon Line Divider" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=100&section=header" width="100%" alt="Neon Wave" />
 
 
 ## ⚙️ Engineering Workflow
