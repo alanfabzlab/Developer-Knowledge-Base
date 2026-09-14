@@ -22,7 +22,7 @@ _A dynamic knowledge map for transforming Python syntax into functional projects
 
 ### 🎨 1. Core Language Foundations
 
-- **Variables & Data Types:** [[01 - Setup & Data Types]] — Fundamentals, print output, and initial canvas (`str`, `int`, `float`, `bool`).
+- - **Variables & Data Types:** [01 - Setup & Data Types](./01%20-%20Setup%20%26%20Data%20Types.md) — Fundamentals, print output, and initial canvas (`str`, `int`, `float`, `bool`).
 - **Control Flow Systems:**
   - Decision-making with `if` / `elif` / `else`: `[[Python - (if,elif,else) - Examples]]`
   - Propositional logic using boolean operators (`and`, `or`, `not`).
