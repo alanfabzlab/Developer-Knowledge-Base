@@ -1,5 +1,6 @@
 ---
 course: Python
+topic: Common Errors, Conditional Statements, Relational & Logical Operators
 tags:
   - python
   - control-flow

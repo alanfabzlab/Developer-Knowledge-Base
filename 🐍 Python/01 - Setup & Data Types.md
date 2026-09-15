@@ -1,5 +1,6 @@
 ---
 course: Python
+topic: Environment Setup, Output, Variables, Data Types & Arithmetic Operators
 tags:
   - python
   - programming

@@ -1,6 +1,5 @@
 ---
 course: Python
-chapter: Terminal Adventure Game
 topic: Checkpoint Project, Control Flow & CLI Logic
 tags:
   - python
