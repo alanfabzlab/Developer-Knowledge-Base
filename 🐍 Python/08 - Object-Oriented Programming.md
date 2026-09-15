@@ -1,6 +1,6 @@
 ---
+course: Python
 type: note
-course: Codedex Python
 chapter: Object-Oriented Programming
 topic: Classes, Objects & Init Method
 tags:

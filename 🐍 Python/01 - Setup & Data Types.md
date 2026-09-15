@@ -1,4 +1,5 @@
 ---
+course: Python
 tags:
   - python
   - programming

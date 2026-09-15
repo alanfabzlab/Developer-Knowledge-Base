@@ -1,6 +1,6 @@
 ---
+course: Python
 type: note
-course: Codedex Python
 chapter: Built-in Functions & List Methods
 topic: List Manipulation, Built-in Helpers & Projects
 tags:

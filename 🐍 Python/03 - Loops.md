@@ -1,6 +1,6 @@
 ---
+course: Python
 type: note
-course: Codedex Python
 chapter: Loops
 topic: While Loops, For Loops & Nested Conditions
 tags:

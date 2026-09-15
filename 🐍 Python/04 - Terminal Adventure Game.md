@@ -1,6 +1,6 @@
 ---
+course: Python
 type: note
-course: Codedex Python
 chapter: Terminal Adventure Game
 topic: Checkpoint Project, Control Flow & CLI Logic
 tags:

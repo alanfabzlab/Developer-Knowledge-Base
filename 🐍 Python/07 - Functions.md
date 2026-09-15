@@ -1,4 +1,5 @@
 ---
+course: Python
 tags:
   - python
   - programming
@@ -6,7 +7,6 @@ tags:
   - dry
   - open-source
   - notes
-status: in-progress
 type: lesson
 ---
 

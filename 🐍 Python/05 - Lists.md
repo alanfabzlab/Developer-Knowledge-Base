@@ -1,6 +1,6 @@
 ---
+course: Python
 type: note
-course: Codedex Python
 chapter: Lists
 topic: Data Structures, Arrays & Indexing
 tags:

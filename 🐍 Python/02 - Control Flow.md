@@ -1,10 +1,10 @@
 ---
+course: Python
 tags:
   - python
   - control-flow
   - logic
   - fundamentals
-status: in-progress
 type: lesson
 ---
 

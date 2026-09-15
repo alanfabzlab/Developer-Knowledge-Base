@@ -1,6 +1,6 @@
 ---
+course: Python
 type: note
-course: Codedex Python
 chapter: Modules
 topic: Modules, Random Choices & Solar System Calculations
 tags:
