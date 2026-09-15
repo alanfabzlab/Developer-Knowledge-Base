@@ -123,3 +123,112 @@ def happy_birthday(name):
 happy_birthday('Lillian')
 ```
 
+
+
+## 04. Return Value
+
+
+A function can return a value back to the line of code that called it using the `return` keyword. 
+
+
+* **`return`**: Ends the execution of a function and sends data back to the caller.
+* **Implicit Return**: If no `return` statement is defined, Python returns `None` by default.
+* **`print()` vs `return`**: `print()` only displays output to the terminal, whereas `return` passes data internally so it can be saved in variables or processed further.
+
+
+```python
+# Exercise 31: Calculator
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    return a / b
+
+def exp(a, b):
+    return a ** b
+
+# Output execution
+print(add(10, 5))       # Output: 15
+print(subtract(10, 5))  # Output: 5
+print(multiply(10, 5))  # Output: 50
+print(divide(10, 5))    # Output: 2.0
+print(exp(2, 3))        # Output: 8
+```
+
+
+
+## 05. Variable Scope
+
+Scope determines where in the program a variable is visible and accessible.
+
+- **Local Scope**: Variables declared inside a function. They only exist while the function is executing and cannot be accessed from outside.
+    
+- **Global Scope**: Variables declared outside of any function. They are accessible throughout the entire script.
+    
+
+
+```python
+# Exercise 32: Stonks (Time Series Analysis)
+stock_prices = [34.68, 36.09, 34.94, 33.97, 34.68, 35.82, 43.41, 44.29, 44.91, 43.87]
+
+def price_at(x):
+    # 'x' is a local variable, 'stock_prices' is global
+    return stock_prices[x - 1]
+
+def max_price(a, b):
+    return max(stock_prices[a - 1:b])
+
+def min_price(a, b):
+    return min(stock_prices[a - 1:b])
+
+# Tests
+print(f"Price on day 3: {price_at(3)}")
+print(f"Max price (days 1-5): {max_price(1, 5)}")
+print(f"Min price (days 5-10): {min_price(5, 10)}")
+```
+
+
+
+## 06. Checkpoint Project: Drive-Thru
+
+Integrating functions, user input, conditional structures, and returned values into a single program.
+
+
+```python
+# Exercise 33: Drive-Thru
+def welcome():
+    print("Welcome to Fast Food Drive-Thru!")
+    print("1. 🍔 Cheeseburger")
+    print("2. 🍟 Fries")
+    print("3. 🥤 Soda")
+    print("4. 🍦 Ice Cream")
+    print("5. 🍪 Cookie")
+
+def get_item(x):
+    if x == 1:
+        return 'Cheeseburger'
+    elif x == 2:
+        return 'Fries'
+    elif x == 3:
+        return 'Soda'
+    elif x == 4:
+        return 'Ice Cream'
+    elif x == 5:
+        return 'Cookie'
+    else:
+        return 'Invalid item'
+
+# Execution flow
+welcome()
+option = int(input('What would you like to order? '))
+print(f"You ordered: {get_item(option)}")
+```
+
+
+
