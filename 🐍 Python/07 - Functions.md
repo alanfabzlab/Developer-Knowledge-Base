@@ -231,4 +231,91 @@ print(f"You ordered: {get_item(option)}")
 ```
 
 
+---
+
+## 07. Lambda Functions (Bonus Article)
+
+Lambda functions (also known as anonymous functions) are concise, single-line functions defined without a name using the `lambda` keyword.
+
+### Syntax
+
+```python
+lambda arguments: expression
+```
+
+
+- **`lambda`**: Keyword used to define an anonymous function.
+    
+- **`arguments`**: Inputs passed to the function (separated by commas).
+    
+- **`expression`**: A single expression evaluated and returned automatically.
+    
+
+
+### Basic Example vs. Standard Function
+
+**Standard Function:**
+
+
+```python
+def double(x):
+    return x * 2
+```
+
+
+**Lambda Equivalent:**
+
+
+```python
+double = lambda x: x * 2
+
+print(double(4)) # Output: 8
+```
+
+
+### Common Use Cases: `map()` & `filter()`
+
+Lambda functions shine when passed as one-time arguments to high-order functions like `map()` or `filter()`.
+
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+# Using map() to multiply each element by 3
+tripled_numbers = list(map(lambda x: x * 3, numbers))
+
+# Using filter() to keep only odd numbers
+odd_numbers = list(filter(lambda x: x % 2 == 1, numbers))
+
+print(tripled_numbers) # Output: [3, 6, 9, 12, 15]
+print(odd_numbers)     # Output: [1, 3, 5]
+```
+
+
+### Practical Examples
+
+**1. Filtering Text Data:**
+
+
+```python
+names = ['Anthony', 'Benedict', 'Colin', 'Daphne', 'Eloise']
+
+# Filter out names starting with 'A'
+filtered_names = list(filter(lambda name: name[0].upper() != 'A', names))
+
+print(filtered_names) # Output: ['Benedict', 'Colin', 'Daphne', 'Eloise']
+```
+
+
+**2. Using Multiple Arguments:**
+
+
+```python
+compound_word = lambda str1, str2: str1 + str2
+
+word = compound_word('fire', 'fly')
+print(f'The compound word is: {word}') # Output: The compound word is: firefly
+```
+
+
 
