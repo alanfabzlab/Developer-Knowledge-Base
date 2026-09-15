@@ -1,7 +1,6 @@
 ---
 course: Python
-topic: Python Modules, Importing Modules (`import`), Selective Imports (`from ... import`), Module Aliasing (`as`), Built-in Modules (`random`,` math`)
-  - python
+topic: Python Modules, Custom Modules (`import`), Built-in `datetime`, Python Packages, Package Management (`pip3`), External Packages (`wikipedia`), The Zen of Python (`import this`)
   - modules
   - random
   - math
@@ -117,3 +116,121 @@ print(f'{random_planet} area: {round(area, 2)} sq km')
 ```
 
 
+---
+
+
+## 05. Creating Custom Modules
+
+Modules are `.py` files containing statements, functions, and variables. Any Python file created in a project can be imported into another file within the same directory using the `import` keyword.
+
+```python
+# calculator.py
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    return a / b
+
+def exp(a, b):
+    return a ** b
+```
+
+
+
+```python
+# main.py
+import calculator
+import datetime
+
+calculator.add(3, 4)       # 7
+calculator.subtract(3, 4)  # -1
+calculator.multiply(3, 4)  # 12
+calculator.divide(3, 4)    # 0.75
+calculator.exp(3, 4)       # 81
+```
+
+
+
+## 06. Exercise: Countdown (`bday_messages.py` & `main.py`)
+
+Calculates the remaining days until a birthday using custom module imports and the built-in `datetime` module.
+
+
+```python
+# bday_messages.py
+import random
+
+bday_messages = [
+    'Hope you have a very Happy Birthday! 🎉',
+    "It's your special day - get out there and celebrate! 🥳",
+    'You were born and the world got better - everybody wins! 👏',
+    'Have lots of fun on your special day! 🎁',
+    'Another year of you going around the sun! ☀️'
+]
+
+random_message = random.choice(bday_messages)
+```
+
+
+```python
+# main.py
+import datetime
+import bday_messages
+
+today = datetime.date.today()
+next_birthday = datetime.date(2027, 4, 15)
+
+days_away = (next_birthday - today).days
+
+if today == next_birthday:
+    print(bday_messages.random_message)
+else:
+    print(f'My next birthday is {days_away} days away!')
+```
+
+
+
+## 07. Python Packages & `pip3`
+
+- **Package**: A folder containing related modules along with an `__init__.py` file.
+    
+- **Libraries**: Large, specialized packages designed for broader application development.
+    
+- **PyPI**: The official Python Package Index containing external open-source packages.
+    
+- **`pip3`**: The command-line package manager used to install external Python packages.
+    
+
+
+```bash
+# Installing third-party packages via terminal
+pip3 install wikipedia
+```
+
+
+### Exercise: Wikipedia Query (`wiki.py`)
+
+
+```python
+# wiki.py
+import wikipedia
+
+result = wikipedia.summary("Philosophy of life", sentences=2)
+print(result)
+```
+
+
+## 08. The Zen of Python
+
+Python includes an easter egg featuring 19 guiding principles for writing clean and maintainable code, written by Tim Peters.
+
+
+```python
+import this
+```
