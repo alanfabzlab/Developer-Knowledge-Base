@@ -1,6 +1,5 @@
 ---
 course: Python
-type: note
 chapter: Python Cheatsheet
 topic: Syntax, Basic I/O, Data Types & Quick Reference
 tags:

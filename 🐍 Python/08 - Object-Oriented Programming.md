@@ -1,6 +1,5 @@
 ---
 course: Python
-type: note
 chapter: Object-Oriented Programming
 topic: Classes, Objects & Init Method
 tags:

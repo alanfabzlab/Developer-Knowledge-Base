@@ -1,6 +1,5 @@
 ---
 course: Python
-type: note
 chapter: Terminal Adventure Game
 topic: Checkpoint Project, Control Flow & CLI Logic
 tags:

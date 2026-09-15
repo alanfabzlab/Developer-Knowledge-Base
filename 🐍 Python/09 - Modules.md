@@ -1,6 +1,5 @@
 ---
 course: Python
-type: note
 chapter: Modules
 topic: Modules, Random Choices & Solar System Calculations
 tags:

@@ -1,6 +1,5 @@
 ---
 course: Python
-type: note
 chapter: Built-in Functions & List Methods
 topic: List Manipulation, Built-in Helpers & Projects
 tags:

@@ -1,6 +1,5 @@
 ---
 course: Python
-type: note
 chapter: Loops
 topic: While Loops, For Loops & Nested Conditions
 tags:

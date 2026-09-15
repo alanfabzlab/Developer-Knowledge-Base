@@ -1,6 +1,5 @@
 ---
 course: Python
-type: note
 chapter: Lists
 topic: Data Structures, Arrays & Indexing
 tags:
