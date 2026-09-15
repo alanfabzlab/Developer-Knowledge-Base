@@ -1,6 +1,5 @@
 ---
 course: Python
-chapter: Object-Oriented Programming
 topic: Object-Oriented Programming (OOP), Classes, Objects & Instances, Constructor Method (__init__), Instance Methods
 tags:
   - python
