@@ -1,7 +1,7 @@
 ---
 course: Python
 chapter: Object-Oriented Programming
-topic: Classes, Objects & Init Method
+topic: Object-Oriented Programming (OOP), Classes, Objects & Instances, Constructor Method (__init__), Instance Methods
 tags:
   - python
   - oop

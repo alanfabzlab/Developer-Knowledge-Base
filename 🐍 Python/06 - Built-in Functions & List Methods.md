@@ -1,6 +1,6 @@
 ---
 course: Python
-topic: List Manipulation, Built-in Helpers & Projects
+topic: Built-in Functions, List Methods, Nested Lists & Matrices, Dictionaries, Sets
 tags:
   - python
   - list-methods

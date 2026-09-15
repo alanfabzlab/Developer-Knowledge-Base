@@ -1,8 +1,7 @@
 ---
 course: Python
 chapter: Modules
-topic: Modules, Random Choices & Solar System Calculations
-tags:
+topic: Python Modules, Importing Modules (`import`), Selective Imports (`from ... import`), Module Aliasing (`as`), Built-in Modules (`random`,` math`)
   - python
   - modules
   - random

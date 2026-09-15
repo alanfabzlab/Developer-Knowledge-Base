@@ -1,7 +1,7 @@
 ---
 course: Python
 chapter: Loops
-topic: While Loops, For Loops & Nested Conditions
+topic: Nested If Statements, while Loops, for Loops & range(), String Interpolation, FizzBuzz
 tags:
   - python
   - loops

@@ -1,6 +1,6 @@
 ---
 course: Python
-topic: Checkpoint Project, Control Flow & CLI Logic
+topic: Terminal Adventure Game, Control Flow, Game Loop & State Management
 tags:
   - python
   - project

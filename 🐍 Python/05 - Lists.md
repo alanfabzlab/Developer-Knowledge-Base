@@ -1,6 +1,6 @@
 ---
 course: Python
-topic: Data Structures, Arrays & Indexing
+topic: Python Lists, Indexing & Slicing, Built-in Functions, List Methods, Iterating Over Lists
 tags:
   - python
   - lists
