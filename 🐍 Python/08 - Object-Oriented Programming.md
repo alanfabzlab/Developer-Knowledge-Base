@@ -1,4 +1,3 @@
-
 ---
 type: note
 course: Codedex Python
@@ -11,6 +10,7 @@ tags:
   - objects
   - data-structures
 ---
+
 
 
 # 08. Object-Oriented Programming (OOP)
