@@ -1,3 +1,17 @@
+---
+type: note
+course: Codedex Python
+chapter: Lists
+topic: Data Structures, Arrays & Indexing
+tags:
+  - python
+  - lists
+  - data-structures
+  - arrays
+  - fundamentals
+---
+
+
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 # 05 - Lists

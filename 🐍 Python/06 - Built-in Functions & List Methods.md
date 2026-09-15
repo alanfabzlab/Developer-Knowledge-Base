@@ -1,3 +1,16 @@
+---
+type: note
+course: Codedex Python
+chapter: Built-in Functions & List Methods
+topic: List Manipulation, Built-in Helpers & Projects
+tags:
+  - python
+  - list-methods
+  - built-in-functions
+  - data-structures
+  - iteration
+---
+
 
 
 ## 06. Bucket List Project (`bucket_list.py`)

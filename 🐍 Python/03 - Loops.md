@@ -1,3 +1,16 @@
+---
+type: note
+course: Codedex Python
+chapter: Loops
+topic: While Loops, For Loops & Nested Conditions
+tags:
+  - python
+  - loops
+  - iteration
+  - while-loop
+  - for-loop
+  - logic
+---
 
 
 ## Bonus: Nested If Statements
