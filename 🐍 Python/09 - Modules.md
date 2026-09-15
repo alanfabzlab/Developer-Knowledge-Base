@@ -1,6 +1,5 @@
 ---
 course: Python
-chapter: Modules
 topic: Python Modules, Importing Modules (`import`), Selective Imports (`from ... import`), Module Aliasing (`as`), Built-in Modules (`random`,` math`)
   - python
   - modules
