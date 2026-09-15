@@ -72,3 +72,127 @@ row = 2
 column = 1
 print(board[row][column]) # Output: x
 ```
+
+
+---
+type: note
+course: Codedex Python
+chapter: Lists
+topic: Dictionaries and Sets
+tags:
+  - python
+  - data-structures
+  - dictionaries
+  - sets
+---
+
+
+# Bonus: Dictionaries & Sets in Python
+
+Python offers structures beyond standard ordered lists that enable faster searches, optimized organization, and direct value retrieval.
+
+---
+
+
+## 1. Dictionaries
+
+A **dictionary** connects a unique `key` to a `value`. They are ordered collections storing data as `key: value` pairs.
+
+```python
+contacts = {
+    'Taylor': '626-242-1072',
+    'Xin Xin': '614-555-5678',
+    'Hans': '614-555-9999'
+}
+```
+
+
+### Accessing Values
+
+Items are retrieved using key indexing `[key]` instead of zero-based numerical indices:
+
+
+```python
+print(contacts['Xin Xin']) 
+# Output: 614-555-5678
+```
+
+> [!NOTE] Key Rules
+> 
+> - Each **key** must be unique.
+>     
+> - **Keys** map directly to values (any data type).
+>     
+> - **Keys** are immutable and cannot be modified after creation.
+>     
+
+
+### Dictionary Methods
+
+|Method|Description|Example Output|
+|---|---|---|
+|`.keys()`|Returns all dictionary keys|`dict_keys(['Taylor', 'Xin Xin', 'Hans'])`|
+|`.values()`|Returns all values|`dict_values(['626-242-1072', ...])`|
+|`.items()`|Returns a list of `(key, value)` tuples|`dict_items([('Taylor', '626-242-1072'), ...])`|
+
+
+```python
+print(contacts.keys())
+print(contacts.values())
+print(contacts.items())
+```
+
+
+## 2. Sets
+
+A **set** is an unordered collection of **unique items** with no duplicates.
+
+
+```python
+mochi_favorites = {'Tuna', 'Chestnuts', 'Corn', 'Valerian Root Tea', 'Catnip'}
+cloud_favorites = {'Salmon', 'Chicken', 'Catnip', 'Sweet Potato', 'Rice'}
+```
+
+> [!WARNING] Creating Empty Sets Declaring `{}` creates an empty **dictionary**, not a set. To initialize an empty set, use `set()`:
+> 
+> 
+```python
+empty_set = set()
+```
+> 
+> 
+
+
+### Set Methods
+
+- **`.union()`**: Combines items from both sets.
+    
+- **`.intersection()`**: Finds elements present in both sets.
+    
+- **`.difference()`**: Finds elements unique to the calling set.
+    
+
+Python
+
+```
+# Union
+print(mochi_favorites.union(cloud_favorites))
+
+# Intersection
+print(mochi_favorites.intersection(cloud_favorites))
+# Output: {'Catnip'}
+
+# Difference
+print(mochi_favorites.difference(cloud_favorites))
+# Output: {'Tuna', 'Chestnuts', 'Corn', 'Valerian Root Tea'}
+```
+
+## Summary: Data Structures Overview
+
+|Data Structure|Characteristics|Common Use Case|
+|---|---|---|
+|**List**|Ordered, index-accessible, allows duplicates|Grocery lists, chronological logs|
+|**Dictionary**|Key-value pairs, fast key lookups|Contact lists, configuration profiles|
+|**Set**|Unordered, unique elements, fast membership checks|Filtering duplicates, comparing categories|
+
+
