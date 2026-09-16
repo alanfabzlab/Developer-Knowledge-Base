@@ -16,9 +16,15 @@ _A dynamic knowledge map for transforming Python syntax into functional projects
 > [!TIP]
 > Start with the **Core Language Foundations**, then follow the map toward data structures, architecture, and real-world applications.
 
----
 
 ## 🗺️ Map of Content
+
+### 📑 Reference & Cheatsheets
+
+* **Cheatsheets:**
+  * [00b - Python Cheatsheet](./00b%20-%20Python%20Cheatsheet.md) — Syntax, primitives, control flow, loops, and core fundamentals.
+  * [00c - Python Cheatsheet II](./00c%20-%20Python%20Cheatsheet%20II.md) — Lists, list methods, functions, scope, classes, and modules.
+
 
 ### 🧠 1. Core Language Foundations
 
@@ -27,7 +33,6 @@ _A dynamic knowledge map for transforming Python syntax into functional projects
 * **Iterative Logic (Loops):** [03 - Loops](./03%20-%20Loops.md) — Automated iteration with `for` and `while`, control via `break`, `continue`, and `pass`.
 * **Projects:** [04 - Terminal Adventure Game](./04%20-%20Terminal%20Adventure%20Game.md) — Interactive CLI control flow project.
 
----
 
 ### 📦 2. Data Structures (Organization & Storage)
 
@@ -37,15 +42,12 @@ _A dynamic knowledge map for transforming Python syntax into functional projects
 * **Dictionaries (`dict`) & Sets (`set`):** Key-value mapping and unique set operations.
 * **Comprehensions:** Expressive and efficient single-line creation of lists and dictionaries.
 
----
 
 ### ⚙️ 3. Modular Architecture (Functions & Modules)
 
 * **Functions:**
   * [07 - Functions](./07%20-%20Functions.md) — The D.R.Y. principle, defining/calling functions, parameters, and arguments.
-  * Positional arguments, keyword arguments, and default parameters.
-  * Flexible parameter capture using `*args` and `**kwargs`.
-* **Functional Programming:**
-  * Lambda functions (anonymous expressions).
-  * Data transformation with `map()`, `filter()`, and `reduce()`.
-  * Modularity: Importing standard libraries (`math`, `random`, `datetime`) and building custom packages.
+* **Object-Oriented Programming:**
+  * [08 - Object-Oriented Programming](./08%20-%20Object-Oriented%20Programming.md) — Classes, instances, constructors, methods, and OOP principles.
+* **Modules & Packages:**
+  * [09 - Modules](./09%20-%20Modules.md) — Standard library (`math`, `random`, `datetime`), custom modules, `pip3`, PyPI (`wikipedia`), and The Zen of Python.
