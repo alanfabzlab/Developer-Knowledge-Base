@@ -160,3 +160,104 @@ class MathIsMathing
 Full bundles: 4
 People without tickets: 3
 ```
+
+
+
+## 5. Collecting User Input
+
+In C#, user input is collected from the console using `Console.ReadLine()`. The input is always captured as a `string` by default.
+
+
+### Standard String Input
+
+```csharp
+Console.WriteLine("What's your name?");
+string name = Console.ReadLine();
+Console.WriteLine($"Nice to meet you, {name}!");
+````
+
+
+### Converting String Input to Integer (`int`)
+
+When numeric operations are required on user input, the captured `string` must be converted using `Convert.ToInt32()` or `int.Parse()`.
+
+
+```csharp
+Console.Write("Enter a number: ");
+string input = Console.ReadLine();
+int convertedValue = Convert.ToInt32(input);
+```
+
+
+## 6. Input & Conversion Exercises
+
+
+### Exercise 5: Year of the X
+
+Asking the user for their birth year, parsing the string input to an integer, and calculating the years remaining until their Chinese Zodiac year repeats (12-year cycle).
+
+
+```csharp
+using System;
+
+class YearOfTheX
+{
+    static void Main()
+    {
+        Console.Write("Enter your birth year: ");
+        int birthYear = Convert.ToInt32(Console.ReadLine());
+
+        int currentYear = 2026;
+        int yearsPassed = (currentYear - birthYear) % 12;
+        int yearsUntilNext = (12 - yearsPassed) % 12;
+
+        Console.WriteLine($"Years until your zodiac year happens again: {yearsUntilNext}");
+    }
+}
+```
+
+
+**Terminal Output:**
+
+
+```text
+Enter your birth year: 1996
+Years until your zodiac year happens again: 2
+```
+
+
+### Exercise 6: Giant Plushie
+
+Calculating how many giant plushies a user can redeem based on their arcade ticket balance and finding the remaining ticket count using division and modulo operations.
+
+
+```csharp
+using System;
+
+class GiantPlushie
+{
+    static void Main()
+    {
+        Console.Write("How many tickets do you have? ");
+        string input = Console.ReadLine();
+        int userTickets = Convert.ToInt32(input);
+
+        int plushieCost = 50;
+
+        int totalPlushies = userTickets / plushieCost;
+        int remainingTickets = userTickets % plushieCost;
+
+        Console.WriteLine($"You can redeem: {totalPlushies} plushie(s)");
+        Console.WriteLine($"Tickets left over: {remainingTickets}");
+    }
+}
+```
+
+**Terminal Output:**
+
+
+```text
+How many tickets do you have? 125
+You can redeem: 2 plushie(s)
+Tickets left over: 25
+```
