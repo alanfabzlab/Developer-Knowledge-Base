@@ -28,7 +28,7 @@
 | Domain / Language | Description | Status | Map of Content |
 | :--- | :--- | :---: | :---: |
 | 🐍 **Python** | Core syntax, control flow, data structures, OOP & ecosystems | 🟢 Active | [Go to MOC](./Python/README.md) |
-| 🟣 **C#** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](./CSharp/README.md) |
+| 🟣 **C#** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](🟣%20CSharp/README.md) |
 | 🏗️ **Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | *Coming soon* |
 
