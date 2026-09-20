@@ -136,3 +136,89 @@ The buildings were made of crystal and light.
 I found a hidden portal behind a waterfall.
 Before I could step inside, I woke up.
 ```
+
+
+
+## 4. Comments in C#
+
+Comments are notes written in code that the compiler completely ignores. They help explain logic for developers.
+
+* **Single-line Comments**: Start with two forward slashes (`//`).
+* **Multi-line Comments**: Enclosed between `/*` and `*/`.
+
+---
+
+
+## 5. Additional Practice Exercises
+
+
+### Exercise 4: Hot Take
+Using single-line and multi-line comments to document an opinion and its reasoning.
+
+```csharp
+using System;
+
+class HotTake
+{
+    static void Main()
+    {
+        /* Cowboy boots are stylish and comfy.
+           You gotta be ready for anything, partner! */
+        // I think more people should wear cowboy boots on a daily basis.
+    }
+}
+```
+
+
+**Terminal Output:**
+
+_(Note: Comments produce no output in the terminal.)_
+
+
+### Exercise 5: Personal Billboard
+
+Creating a personal advertisement using comments and structured `Console.WriteLine()` statements.
+
+
+```csharp
+using System;
+
+class PersonalBillboard
+{
+    static void Main()
+    {
+        /* 
+        Personal billboard for friendship
+        I wanna make new friends
+        So I made this billboard!
+        */
+
+        // Headline to grab attention
+        Console.WriteLine("BE MY FRIEND! 🤝");
+
+        // Introduce yourself
+        Console.WriteLine("Hi, I'm Alan!");
+
+        // State your interest
+        Console.WriteLine("I love video game development and coding.");
+
+        // Favorite pastime
+        Console.WriteLine("I enjoy playing League of Legends and building projects.");
+
+        // Call to action
+        Console.WriteLine("Let's connect and build cool stuff together! 🚀");
+    }
+}
+```
+
+
+**Terminal Output:**
+
+
+```text
+BE MY FRIEND! 🤝
+Hi, I'm Alan!
+I love video game development and coding.
+I enjoy playing League of Legends and building projects.
+Let's connect and build cool stuff together! 🚀
+```
