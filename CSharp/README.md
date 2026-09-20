@@ -1,0 +1,57 @@
+
+
+# 🟣 C#: Object-Oriented Foundations & Systems Architecture (MOC)
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Language-C%23_12.0-purple?style=for-the-badge&logo=csharp" alt="C#">
+  <img src="https://img.shields.io/badge/Ecosystem-.NET_8.0-512BD4?style=for-the-badge&logo=dotnet" alt=".NET">
+  <img src="https://img.shields.io/badge/Engine-Unity_Support-black?style=for-the-badge&logo=unity" alt="Unity">
+  <img src="https://img.shields.io/badge/Vault-Obsidian-7B3FE4?style=for-the-badge&logo=obsidian" alt="Obsidian">
+  <img src="https://img.shields.io/badge/Environment-macOS-lightgrey?style=for-the-badge&logo=apple" alt="macOS">
+</p>
+
+> [!NOTE]
+> This repository module serves as the central Map of Content (MOC) for C# syntax, object-oriented design patterns, .NET ecosystem fundamentals, and Unity game architecture notes inside this Obsidian vault.
+
+> [!TIP]
+> **Learning Roadmap:** Master strong typing and core control structures first, then progress into Object-Oriented Programming (OOP) paradigms, memory management, and real-world game system engineering.
+
+---
+
+## 🗺️ Map of Content
+
+### 📚 Reference & Quick Guides
+* **Cheatsheets & Syntax Rules:**
+  * [[00b - CSharp Cheatsheet]] — *Type system, memory stack vs. heap, access modifiers, and core syntax.*
+
+---
+
+### 🧠 1. Core Language Foundations
+* **Language Overview:** [[01 - Playing It COOL]] — *C# lineage, .NET CLR architecture, compilation pipeline, and top-level statements in `Program.cs`.*
+* **Type System & Memory:** `02 - Primitive Types & Memory` — *Value types vs. reference types, explicit/implicit conversion, and `string` immutability.* `[Planned]`
+* **Control Flow Systems:** `03 - Decision Making & Loops` — *Pattern matching with `switch` expressions, iterative loops (`foreach`), and conditional branching.* `[Planned]`
+
+---
+
+### 🏗️ 2. Object-Oriented & Software Architecture
+* **Encapsulation & Abstraction:** `04 - Classes & Structs` — *Fields, auto-properties, constructors, and stack vs. heap allocation.* `[Planned]`
+* **Inheritance & Polymorphism:** `05 - Interfaces & Abstract Classes` — *Virtual methods, overrides, interface implementation, and contract-driven design.* `[Planned]`
+* **Advanced Features:** `06 - Generics & LINQ` — *Type-safe data collections, delegates, events, Lambdas, and Language Integrated Query.* `[Planned]`
+
+---
+
+### 🎮 3. Game Development & Engine Integration
+* **Unity Lifecycle Scripts:** `07 - MonoBehaviour Architecture` — *`Awake`, `Start`, `Update`, `FixedUpdate` cycles and component linkage.* `[Planned]`
+* **Game Systems Design:** `08 - Scriptable Objects & State Machines` — *Data-driven system design, decoupled events, and state-driven game logic.* `[Planned]`
+
+---
+
+<details>
+<summary><b>🔍 Quick Access Checklist</b></summary>
+
+- [x] Initial setup & `Program.cs` execution
+- [ ] Primitive types & String operations
+- [ ] Control flow & Pattern matching
+- [ ] OOP Core (Classes, Interfaces, Polymorphism)
+- [ ] Unity MonoBehaviour integration
+</details>
