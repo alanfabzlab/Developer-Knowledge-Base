@@ -51,3 +51,112 @@ Drink: Coffee
 Headphones on: True
 ```
 
+
+
+## 3. Variables, String Concatenation & Basic Math
+
+In C#, variables store data that can be joined with text using string concatenation or manipulated through standard arithmetic and modulo operators.
+
+
+## 4. Additional Practice Exercises
+
+### Exercise 2: Party Animal
+
+Declaring and initializing variables with different primitive types (`string`, `int`, `double`, `bool`) to plan an event.
+
+
+```csharp
+using System;
+
+class PartyAnimal
+{
+    static void Main()
+    {
+        string partyTheme = "Retro Gaming";
+        int numberOfGuests = 15;
+        double costPerGuest = 25.50;
+        bool isSurpriseParty = true;
+
+        Console.WriteLine($"Party Theme: {partyTheme}");
+        Console.WriteLine($"Guests: {numberOfGuests}");
+        Console.WriteLine($"Cost per Guest: ${costPerGuest}");
+        Console.WriteLine($"Surprise Party: {isSurpriseParty}");
+    }
+}
+```
+
+
+**Terminal Output:**
+
+
+```text
+Party Theme: Retro Gaming
+Guests: 15
+Cost per Guest: $25.5
+Surprise Party: True
+```
+
+
+### Exercise 3: Celebrity Crush
+
+Demonstrating string concatenation by combining text strings with integer variables.
+
+
+```csharp
+using System;
+
+class CelebrityCrush
+{
+    static void Main()
+    {
+        string name = "Lady Gaga";
+        int year = 2008;
+
+        Console.WriteLine(name + " is an incredibly talented artist.");
+        Console.WriteLine("She rose to fame in " + year + " with her hit album The Fame.");
+    }
+}
+```
+
+
+**Terminal Output:**
+
+
+```text
+Lady Gaga is an incredibly talented artist.
+She rose to fame in 2008 with her hit album The Fame.
+```
+
+
+### Exercise 4: Math Is Mathing
+
+Performing integer division and using the modulo (`%`) operator to calculate bundle distribution and remainder.
+
+
+```csharp
+using System;
+
+class MathIsMathing
+{
+    static void Main()
+    {
+        int totalPeople = 23;
+        int ticketsPerBundle = 5;
+
+        int fullBundles = totalPeople / ticketsPerBundle;
+        int peopleWithoutTickets = totalPeople % ticketsPerBundle;
+
+        Console.WriteLine($"Full bundles: {fullBundles}");
+        Console.WriteLine($"People without tickets: {peopleWithoutTickets}");
+    }
+}
+```
+
+
+**Terminal Output:**
+
+
+```text
+Full bundles: 4
+People without tickets: 3
+```
