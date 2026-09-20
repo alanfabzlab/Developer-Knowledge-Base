@@ -21,9 +21,6 @@
 
 ## 🗺️ Knowledge Domains & MOCs
 
-### 🗺️ Knowledge Domains & MOCs
-
-### 🗺️ Knowledge Domains & MOCs
 
 | Domain / Language | Description | Status | Map of Content |
 | :--- | :--- | :---: | :---: |
