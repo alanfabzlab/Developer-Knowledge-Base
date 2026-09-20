@@ -23,10 +23,12 @@
 
 ### 🗺️ Knowledge Domains & MOCs
 
+### 🗺️ Knowledge Domains & MOCs
+
 | Domain / Language | Description | Status | Map of Content |
 | :--- | :--- | :---: | :---: |
 | 🐍 **Python** | Core syntax, control flow, data structures, OOP & ecosystems | 🟢 Active | [Go to MOC](./Python/README.md) |
-| 🟣 **C#** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](./C%23/README.md) |
+| 🟣 **C#** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](./CSharp/README.md) |
 | 🏗️ **Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | *Coming soon* |
 
