@@ -28,10 +28,10 @@
 
 ### 🧠 1. Core Language Foundations
 
-* **Language Overview:** [[01 - Playing It COOL]] — C# lineage, .NET CLR architecture, compilation pipeline, and top-level statements in Program.cs.
-* **Type System & Memory:** [[02 - Typecast]] — Value types vs. reference types, explicit/implicit conversion, and string immutability.
-* **Control Flow Systems:** [[03 - Control Flow]] — Decision making with if/else statements, logical operators (&&, ||, !), and user input evaluation.
-* **Iterative Logic & Loops:** [[04 - Loops]] — Executing repetitive control flow blocks with while loops and user-driven exit conditions.
+* **Language Overview:** [01 - Playing It COOL](01%20-%20Playing%20It%20COOL.md) — C# lineage, .NET CLR architecture, compilation pipeline, and top-level statements in Program.cs.
+* **Type System & Memory:** [02 - Typecast](02%20-%20Typecast.md) — Value types vs. reference types, explicit/implicit conversion, and string immutability.
+* **Control Flow Systems:** [03 - Control Flow](03%20-%20Control%20Flow.md) — Decision making with if/else statements, logical operators (&&, ||, !), and user input evaluation.
+* **Iterative Logic & Loops:** [04 - Loops](04%20-%20Loops.md) — Executing repetitive control flow blocks with while loops and user-driven exit conditions.
 
 ---
 
