@@ -202,3 +202,145 @@ class BasementShow
 ```text
 The neighbors are getting annoyed 🤨
 ```
+
+
+
+---
+
+
+## 5. Logical Operators
+
+Logical operators allow combining multiple conditions within a single control flow evaluation.
+
+| Operator | Name | Description | Example |
+| :--- | :--- | :--- | :--- |
+| `&&` | AND | Returns `true` only if **both** conditions evaluate to `true`. | `(age >= 21 && hasInvitation)` |
+| `\|\|` | OR | Returns `true` if **at least one** condition evaluates to `true`. | `(isWeekend \|\| isHoliday)` |
+| `!` | NOT | Reverses (flips) the boolean value of a condition. | `(!isLoggedIn)` |
+
+
+---
+
+
+## 6. Advanced Control Flow Exercises
+
+
+### Exercise 5: Invite Only
+Combining conditions using the logical AND (`&&`) operator.
+
+```csharp
+using System;
+
+class InviteOnly
+{
+    static void Main()
+    {
+        int age = 22;
+        bool hasInvitation = true;
+
+        if (age > 21 && hasInvitation)
+        {
+            Console.WriteLine("Come on in!");
+        }
+        else
+        {
+            Console.WriteLine("Not tonight, buddy");
+        }
+    }
+}
+````
+
+
+**Terminal Output:**
+
+
+```text
+Come on in!
+```
+
+
+### Exercise 6: Aura Checker
+
+Combining user input parsing with conditional evaluations.
+
+
+```csharp
+using System;
+
+class AuraChecker
+{
+    static void Main()
+    {
+        Console.Write("Enter a number from 1 to 10: ");
+        int auraScore = Convert.ToInt32(Console.ReadLine());
+
+        if (auraScore >= 8)
+        {
+            Console.WriteLine("Immaculate vibes ✨");
+        }
+        else
+        {
+            Console.WriteLine("I'm detecting some dark energy, but we can turn this around. 🔮");
+        }
+    }
+}
+```
+
+
+**Terminal Output:**
+
+
+```text
+Enter a number from 1 to 10: 9
+Immaculate vibes ✨
+```
+
+
+### Exercise 7: Love Hate Relationship
+
+A complete program integrating user input, logical checks, and multi-branch control flow.
+
+
+```csharp
+using System;
+
+class LoveHateRelationship
+{
+    static void Main()
+    {
+        Console.WriteLine("Do you prefer sweet or savory foods?");
+        string answer = Console.ReadLine();
+
+        if (answer == "sweet")
+        {
+            Console.WriteLine("THINGS YOU LOVE:");
+            Console.WriteLine("1. Hot ramen on rainy days");
+            Console.WriteLine("2. Clean code without bugs");
+            Console.WriteLine("3. Quiet coffee shops");
+            Console.WriteLine("4. Cozy mechanical keyboards");
+        }
+        else
+        {
+            Console.WriteLine("THINGS YOU HATE:");
+            Console.WriteLine("1. Unhandled exceptions");
+            Console.WriteLine("2. Slow Wi-Fi connections");
+            Console.WriteLine("3. Unnecessary meetings");
+            Console.WriteLine("4. Missing semicolons");
+        }
+    }
+}
+```
+
+
+**Terminal Output:**
+
+
+```text
+Do you prefer sweet or savory foods?
+sweet
+THINGS YOU LOVE:
+1. Hot ramen on rainy days
+2. Clean code without bugs
+3. Quiet coffee shops
+4. Cozy mechanical keyboards
+```
