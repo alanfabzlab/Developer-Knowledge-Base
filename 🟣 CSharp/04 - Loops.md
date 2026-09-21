@@ -175,3 +175,86 @@ class UnoReverse
     }
 }
 ```
+
+
+
+### Exercise 6: Mystery Machine
+
+Demonstrating state mutation and compound operations inside a `for` loop to accumulate values across fixed iterations.
+
+```csharp
+using System;
+
+class MysteryMachine
+{
+    static void Main()
+    {
+        int timeDistortion = 0;
+
+        for (int i = 0; i < 5; i++)
+        {
+            timeDistortion += 3;
+            Console.WriteLine($"Time distortion: {timeDistortion}");
+        }
+    }
+}
+````
+
+
+
+### Exercise 7: Say Uncle
+
+Demonstrating dynamic loop control using user input inside a `while` loop, filtering output conditionally until a specific termination string is provided.
+
+
+```csharp
+using System;
+
+class SayUncle
+{
+    static void Main()
+    {
+        string response = "";
+
+        while (response != "uncle")
+        {
+            response = Console.ReadLine();
+
+            if (response != "uncle")
+            {
+                Console.WriteLine(response);
+            }
+        }
+    }
+}
+```
+
+
+### Exercise 8: Best Kept Secret
+
+Demonstrating a comprehensive `while` loop that tracks iteration attempts while evaluating dynamic user input against a hardcoded secret phrase.
+
+
+```csharp
+using System;
+
+class BestKeptSecret
+{
+    static void Main()
+    {
+        string secretPhrase = "open sesame";
+        string userInput = "";
+        int attempts = 0;
+
+        while (userInput != secretPhrase)
+        {
+            Console.Write("Enter the secret phrase: ");
+            userInput = Console.ReadLine();
+            attempts++;
+        }
+
+        Console.WriteLine("The bookshelf shifts aside, revealing a hidden passageway.");
+        Console.WriteLine($"It took {attempts} attempts to discover the passage.");
+    }
+}
+```
