@@ -32,6 +32,7 @@
 * **Type System & Memory:** [02 - Typecast](02%20-%20Typecast.md) — Value types vs. reference types, explicit/implicit conversion, and string immutability.
 * **Control Flow Systems:** [03 - Control Flow](03%20-%20Control%20Flow.md) — Decision making with if/else statements, logical operators (&&, ||, !), and user input evaluation.
 * **Iterative Logic & Loops:** [04 - Loops](04%20-%20Loops.md) — Executing repetitive control flow blocks with while loops and user-driven exit conditions.
+* **Checkpoint Project:** [Mad Lyricist - Checkpoint Project](./Mad%20Lyricist%20-%20Checkpoint%20Project.md) — Interactive C# lyrics generator applying loops, logic operators, and user input.
 
 ---
 
