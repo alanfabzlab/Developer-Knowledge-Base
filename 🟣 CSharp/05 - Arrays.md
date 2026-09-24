@@ -86,3 +86,86 @@ class LocalRecommendations
     }
 }
 ```
+
+
+## 4. Empty Arrays & Fixed Capacity
+
+When the size of an array is known in advance but values are not yet available, specify its length using the `new` keyword. Attempting to access or assign values outside the allocated bounds throws an `IndexOutOfRangeException`.
+
+
+```csharp
+using System;
+
+class WorldCup
+{
+    static void Main()
+    {
+        // Allocates space for 104 string elements
+        string[] matches = new string[104];
+
+        // Assigning values later
+        matches[0] = "Team A vs Team B";
+        matches[1] = "Team C vs Team D";
+    }
+}
+```
+
+
+## 5. Iterating Over Arrays with Loops
+
+Instead of manually accessing each index, a `for` loop automates traversal through the collection.
+
+
+```csharp
+using System;
+
+class NotificationOverload
+{
+    static void Main()
+    {
+        string[] messages = {
+            "Michael: who's going dancing tonight???",
+            "Sara: not meeeeee I gotta work on this project",
+            "Nate: join usssssss",
+            "Syd: i should rly stay in too tbh",
+            "Alex: see you all there!"
+        };
+
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine(messages[i]);
+        }
+    }
+}
+```
+
+
+## 6. Dynamic Loop Conditions with `.Length`
+
+Hardcoding loop boundaries makes code rigid. The built-in `.Length` property returns the total number of elements in an array, allowing loops to adapt dynamically if the array size changes.
+
+
+```csharp
+using System;
+
+class EmotionalSupportPlushie
+{
+    static void Main()
+    {
+        string[] toys = {
+            "Teddy Bear",
+            "Racecar",
+            "Action Figure",
+            "Bouncy Ball",
+            "Doll",
+            "Play Food"
+        };
+
+        // .Length dynamically evaluates to 6
+        for (int i = 0; i < toys.Length; i++)
+        {
+            Console.WriteLine(toys[i]);
+        }
+    }
+}
+```
