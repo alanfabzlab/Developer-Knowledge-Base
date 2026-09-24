@@ -124,3 +124,92 @@ class TheCookout
 }
 ```
 
+
+## 5. Multiple Parameters
+
+Methods can accept multiple parameters of different data types, separated by commas. The arguments supplied at the call site must match the expected type and positional order.
+
+
+```csharp
+using System;
+
+class TicketPool
+{
+    static void Main()
+    {
+        CalculateCost("Bad Bunny", 150, 4, 4);
+        CalculateCost("Dua Lipa", 200, 3, 3);
+    }
+
+    static void CalculateCost(string artist, int ticketPrice, int numberOfTickets, int people)
+    {
+        int totalCost = ticketPrice * numberOfTickets;
+        int costPerPerson = totalCost / people;
+
+        Console.WriteLine($"Artist: {artist}");
+        Console.WriteLine($"Cost per person: ${costPerPerson}");
+    }
+}
+```
+
+
+## 6. Return Values
+
+By default, methods marked with `void` do not return a value. To send data back to the calling scope, replace `void` with the desired return data type (`int`, `string`, `bool`, etc.) and use the `return` keyword.
+
+
+```csharp
+using System;
+
+class ReturnToSender
+{
+    static void Main()
+    {
+        int remainingPoints = PointsLeft(50000, 35000);
+        Console.WriteLine(remainingPoints);
+    }
+
+    static int PointsLeft(int startingPoints, int pointsNeeded)
+    {
+        return startingPoints - pointsNeeded;
+    }
+}
+```
+
+
+## 7. Modular Composition (Calling All Hackers)
+
+Breaking complex applications into specialized methods improves code maintainability and testability.
+
+
+```csharp
+using System;
+
+class CallingAllHackers
+{
+    static void Main()
+    {
+        int teams = CalculateTeams(36, 6);
+        int hours = CalculateHours(12, 18);
+        string invite = CreateInvite("Boba and Booleans", teams, hours);
+
+        Console.WriteLine(invite);
+    }
+
+    static int CalculateTeams(int attendees, int teamSize)
+    {
+        return attendees / teamSize;
+    }
+
+    static int CalculateHours(int startHour, int endHour)
+    {
+        return endHour - startHour;
+    }
+
+    static string CreateInvite(string eventName, int teams, int hours)
+    {
+        return $"{eventName} starts at 6 PM!\nWe'll hack for {hours} hours in {teams} teams. See you there!";
+    }
+}
+```
+
