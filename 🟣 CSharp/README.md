@@ -28,12 +28,13 @@
 
 ### 🧠 1. Core Language Foundations
 
-* **Language Overview:** [01 - Playing It COOL](01%20-%20Playing%20It%20COOL.md) — C# lineage, .NET CLR architecture, compilation pipeline, and top-level statements in Program.cs.
-* **Type System & Memory:** [02 - Typecast](02%20-%20Typecast.md) — Value types vs. reference types, explicit/implicit conversion, and string immutability.
-* **Control Flow Systems:** [03 - Control Flow](03%20-%20Control%20Flow.md) — Decision making with if/else statements, logical operators (&&, ||, !), and user input evaluation.
-* **Iterative Logic & Loops:** [04 - Loops](04%20-%20Loops.md) — Executing repetitive control flow blocks with while loops and user-driven exit conditions.
-* **Checkpoint Project:** [Mad Lyricist - Checkpoint Project](./Mad%20Lyricist%20-%20Checkpoint%20Project.md) — Interactive C# lyrics generator applying loops, logic operators, and user input.
-
+* **Language Overview:** [01 - Playing It COOL](01%20-%20Playing%20It%20COOL.md) - C# lineage, .NET CLR architecture, compilation pipeline, and top-level statements in Program.cs.
+* **Type System & Memory:** [02 - Typecast](02%20-%20Typecast.md) - Value types vs. reference types, explicit/implicit conversion, and string immutability.
+* **Control Flow Systems:** [03 - Control Flow](03%20-%20Control%20Flow.md) - Decision making with if/else statements, logical operators (&&, ||, !), and user input evaluation.
+* **Iterative Logic & Loops:** [04 - Loops](04%20-%20Loops.md) - Executing repetitive control flow blocks with while/for loops and user-driven exit conditions.
+* **Data Collections & Memory:** [05 - Arrays](05%20-%20Arrays.md) - Single-dimensional arrays, indexing, element iteration, and multi-array parallel data processing.
+* **Functional Modularity:** [06 - Methods](06%20-%20Methods.md) - Reusable code blocks, parameter passing, return values, and method composition.
+* **Checkpoint Project:** [Mad Lyricist - Checkpoint Project](Mad%20Lyricist%20-%20Checkpoint%20Project.md) - Interactive C# lyrics generator applying loops, logic operators, and user input.
 ---
 
 ### 🏗️ 2. Object-Oriented & Software Architecture
