@@ -51,3 +51,10 @@ _A dynamic knowledge map for transforming Python syntax into functional projects
   * [08 - Object-Oriented Programming](./08%20-%20Object-Oriented%20Programming.md) — Classes, instances, constructors, methods, and OOP principles.
 * **Modules & Packages:**
   * [09 - Modules](./09%20-%20Modules.md) — Standard library (`math`, `random`, `datetime`), custom modules, `pip3`, PyPI (`wikipedia`), and The Zen of Python.
+
+
+```mermaid
+flowchart LR
+    A[Python Fundamentals] --> B[Data Structures & OOP]
+    B --> C[Ecosystem & Modules]
+    C --> D[Advanced Core Topics]
