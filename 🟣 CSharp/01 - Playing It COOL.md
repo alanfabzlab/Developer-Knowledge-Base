@@ -22,6 +22,8 @@ It is a simple, general-purpose, object-oriented programming language that uses 
 
 Every standard C# console application follows a foundational boilerplate structure:
 
+CSharp
+
 ```csharp
 using System;
 
