@@ -20,6 +20,8 @@ Git is a distributed version control system created by Linus Torvalds in 2005 to
 
 Before working with Git, verify installation on your system terminal.
 
+Bash
+
 ```bash
 # Check installed Git version
 git --version
