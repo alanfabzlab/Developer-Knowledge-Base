@@ -41,6 +41,7 @@ Developer-Knowledge-Base/
 │   └── z_attachments/          <-- Local diagrams & assets
 ├── 🟣 C#/
 │   ├── README.md               <-- C# MOC & topic index
+│   ├── 00b - CSharp Cheatsheet.md
 │   ├── 01 - Playing It COOL.md
 │   └── z_attachments/          <-- Local diagrams & assets
 ├── .gitignore                  <-- Git exclusion rules
@@ -60,10 +61,15 @@ Developer-Knowledge-Base/
 ```mermaid
 gitGraph
    commit id: "Initial commit"
-   commit id: "Docs: Obsidian Vault setup"
+   commit id: "Vault Setup: Obsidian & Structure"
    branch feature/python
    checkout feature/python
-   commit id: "Add Python MOC"
+   commit id: "Docs: Python Core & MOC"
    checkout main
    merge feature/python
-   commit id: "Update README structure"
+   branch feature/csharp
+   checkout feature/csharp
+   commit id: "Docs: C# Architecture & Unity"
+   checkout main
+   merge feature/csharp
+   commit id: "Release: Knowledge Base v1.0"
