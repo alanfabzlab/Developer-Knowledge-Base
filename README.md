@@ -38,21 +38,17 @@
 ```text
 Developer-Knowledge-Base/
 ├── 🐍 Python/
-│   ├── README.md                 <-- Python MOC & topic index
-│   └── z_attachments/           <-- Local diagrams & assets
-├── 🚀 Git & GitHub/
-│   ├── 01 - Introduction & Setup.md
-│   ├── 02 - Core Workflow.md
-│   ├── 03 - Collaboration & Branching.md
-│   ├── 04 - Advanced Workflow & PRs.md
-│   └── README.md                 <-- Git & GitHub MOC & index
-├── 🟣 C#/
-│   ├── README.md                 <-- C# MOC & topic index
-│   ├── 00b - CSharp Cheatsheet.md
-│   ├── 01 - Playing It COOL.md
-│   └── z_attachments/           <-- Local diagrams & assets
-├── .gitignore                    <-- Git exclusion rules
-└── README.md                     <-- Main repository homepage
+│   ├── README.md               <-- Python MOC & topic index
+│   ├── z_attachments/          <-- Local diagrams & assets
+│   └── 01-09_*.md              <-- Topic notes (Setup, OOP, Modules, etc.)
+├── 🐙 Git & GitHub/
+│   ├── README.md               <-- Git & GitHub MOC & index
+│   └── 01-04_*.md              <-- Topic notes
+├── 🟣 CSharp/
+│   ├── README.md               <-- C# MOC & topic index
+│   └── 01-06_*.md              <-- Topic notes
+├── .gitignore
+└── README.md                   <-- Main repository homepage
 ```
 
 
