@@ -22,13 +22,13 @@
 ## 🗺️ Knowledge Domains & MOCs
 
 
-| Domain / Language | Description | Status | Map of Content |
-| :--- | :--- | :---: | :---: |
-| 🐍 **Python** | Core syntax, control flow, data structures, OOP & ecosystems | 🟢 Active | [Go to MOC](🐍%20Python/README.md) |
-| 🚀 **Git & GitHub** | Version control, branching strategies, collaboration & PR workflows | 🟢 Active | [Go to MOC](🚀%20Git%20%26%20GitHub/README.md) |
-| 🟣 **C#** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](🟣%20CSharp/README.md) |
-| 🏗️ **Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | *Coming soon* |
-| 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | *Coming soon* |
+| Domain / Language            | Description                                                         |   Status   |                 Map of Content                 |
+| :--------------------------- | :------------------------------------------------------------------ | :--------: | :--------------------------------------------: |
+| 🐍 **Python**                | Core syntax, control flow, data structures, OOP & ecosystems        | 🟢 Active  |       [Go to MOC](🐍%20Python/README.md)       |
+| 🚀 **Git & GitHub**          | Version control, branching strategies, collaboration & PR workflows | 🟢 Active  | [Go to MOC](🚀%20Git%20%26%20GitHub/README.md) |
+| 🟣 **C#**                    | Strongly typed, OOP, .NET ecosystem & Unity engine architecture     | 🟢 Active  |       [Go to MOC](🟣%20CSharp/README.md)       |
+| 🏗️ **Software Engineering** | Design patterns, algorithms & system architecture                   | 🟡 Planned |                 *Coming soon*                  |
+| 🎮 **Game Architecture**     | Interactive mechanics, engine patterns & physics                    | 🟡 Planned |                 *Coming soon*                  |
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
 
