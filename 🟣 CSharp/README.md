@@ -22,7 +22,7 @@
 
 ### 📚 Reference & Quick Guides
 * **Cheatsheets & Syntax Rules:**
-  * [[00b - CSharp Cheatsheet]] — *Type system, memory stack vs. heap, access modifiers, and core syntax.*
+* [00b - CSharp Cheatsheet](./00b%20-%20CSharp%20Cheatsheet.md) — Type system, memory stack vs. heap...
 
 ---
 
@@ -59,3 +59,12 @@
 - [ ] OOP Core (Classes, Interfaces, Polymorphism)
 - [ ] Unity MonoBehaviour integration
 </details>
+
+```mermaid
+flowchart LR
+    A[C# Core Foundations] --> B[OOP & Architecture]
+    B --> C[Unity Engine & Systems]
+
+    click A "#" "Data types, control flow, methods & memory"
+    click B "#" "Classes, inheritance, LINQ & interfaces"
+    click C "#" "MonoBehaviour lifecycle & ScriptableObjects"
