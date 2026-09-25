@@ -25,7 +25,8 @@
 | Domain / Language | Description | Status | Map of Content |
 | :--- | :--- | :---: | :---: |
 | 🐍 **Python** | Core syntax, control flow, data structures, OOP & ecosystems | 🟢 Active | [Go to MOC](./%F0%9F%90%8D%20Python/README.md) |
-| 🟣 **C#** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](🟣%20CSharp/README.md) |
+| 📌 **Git & GitHub** | Version control, branching strategies, collaboration & PR workflows | 🟢 Active | [Go to MOC](./%F0%9F%93%8D%20Git%20%26%20GitHub/README.md) |
+| 🔮 **C#** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](./%F0%9F%94%AE%20CSharp/README.md) |
 | 🏗️ **Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | *Coming soon* |
 
@@ -37,15 +38,21 @@
 ```text
 Developer-Knowledge-Base/
 ├── 🐍 Python/
-│   ├── README.md               <-- Python MOC & topic index
-│   └── z_attachments/          <-- Local diagrams & assets
-├── 🟣 C#/
-│   ├── README.md               <-- C# MOC & topic index
+│   ├── README.md                 <-- Python MOC & topic index
+│   └── z_attachments/           <-- Local diagrams & assets
+├── 📌 Git & GitHub/
+│   ├── 01 - Introduction & Setup.md
+│   ├── 02 - Core Workflow.md
+│   ├── 03 - Collaboration & Branching.md
+│   ├── 04 - Advanced Workflow & PRs.md
+│   └── README.md                 <-- Git & GitHub MOC & index
+├── 🔮 C#/
+│   ├── README.md                 <-- C# MOC & topic index
 │   ├── 00b - CSharp Cheatsheet.md
 │   ├── 01 - Playing It COOL.md
-│   └── z_attachments/          <-- Local diagrams & assets
-├── .gitignore                  <-- Git exclusion rules
-└── README.md                   <-- Main repository homepage
+│   └── z_attachments/           <-- Local diagrams & assets
+├── .gitignore                    <-- Git exclusion rules
+└── README.md                     <-- Main repository homepage
 ```
 
 
