@@ -40,13 +40,13 @@ Developer-Knowledge-Base/
 ├── 🐍 Python/
 │   ├── README.md                 <-- Python MOC & topic index
 │   └── z_attachments/           <-- Local diagrams & assets
-├── 📌 Git & GitHub/
+├── 🚀 Git & GitHub/
 │   ├── 01 - Introduction & Setup.md
 │   ├── 02 - Core Workflow.md
 │   ├── 03 - Collaboration & Branching.md
 │   ├── 04 - Advanced Workflow & PRs.md
 │   └── README.md                 <-- Git & GitHub MOC & index
-├── 🔮 C#/
+├── 🟣 C#/
 │   ├── README.md                 <-- C# MOC & topic index
 │   ├── 00b - CSharp Cheatsheet.md
 │   ├── 01 - Playing It COOL.md
