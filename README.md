@@ -56,3 +56,14 @@ Developer-Knowledge-Base/
 - **Vault Management:** Written and interlinked in [Obsidian](https://obsidian.md).
 - **Layout & Rendering:** Designed and formatted using **Visual Studio Code / Trae** + **GitHub Copilot**.
 - **Version Control:** Sourced, tracked, and hosted via **Git** & **GitHub**.
+
+```mermaid
+gitGraph
+   commit id: "Initial commit"
+   commit id: "Docs: Obsidian Vault setup"
+   branch feature/python
+   checkout feature/python
+   commit id: "Add Python MOC"
+   checkout main
+   merge feature/python
+   commit id: "Update README structure"
