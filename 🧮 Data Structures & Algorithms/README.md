@@ -9,3 +9,4 @@ Welcome to the Data Structures & Algorithms knowledge base. This directory cover
 
 1. **[01 - Introduction to DSA](./01%20-%20Introduction%20to%20DSA.md)** — Core definitions, importance in software engineering, built-in Python data structures (Lists, Dictionaries, Sets), and fundamental concepts.
 2. **[02 - Algorithms & Efficiency](./02%20-%20Algorithms%20%26%20Efficiency.md)** — Algorithmic thinking, Insertion Sort, Linear vs. Binary Search performance, worst-case analysis, and route optimization.
+3. **[03 - Lists & Linear Search](./03%20-%20Lists%20%26%20Linear%20Search.md)** — Review of Python Lists, indexing, slicing, common list methods, Linear Search algorithm implementation, and worst-case performance analysis.
