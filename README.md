@@ -21,12 +21,14 @@
 
 ## 🗺️ Knowledge Domains & MOCs
 
+## 🗺️ Knowledge Domains & MOCs
+
 | Domain / Language | Description | Status | Map of Content |
 | :--- | :--- | :--- | :--- |
-| 🐍 **Python** | Core syntax, control flow, data structures, OOP & ecosystems | 🟢 Active | [Go to MOC](🐍%20Python/README.md) |
-| 🚀 **Git & GitHub** | Version control, branching strategies, collaboration & PR workflows | 🟢 Active | [Go to MOC](📌%20Git%20%26%20GitHub/README.md) |
-| 🟣 **CSharp** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](🟣%20CSharp/README.md) |
-| 🧮 **Data Structures & Algorithms** | Core data structures, algorithm efficiency & problem solving | 🟢 Active | [Go to MOC](Data%20Structures%20%26%20Algorithms/README.md) |
+| 🐍 **Python** | Core syntax, control flow, data structures, OOP & ecosystems | 🟢 Active | [Go to MOC](%F0%9F%90%8D%20Python/README.md) |
+| 🚀 **Git & GitHub** | Version control, branching strategies, collaboration & PR workflows | 🟢 Active | [Go to MOC](%F0%9F%9A%80%20Git%20%26%20GitHub/README.md) |
+| 🟣 **CSharp** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](%F0%9F%9F%A3%20CSharp/README.md) |
+| 🧮 **Data Structures & Algorithms** | Core data structures, algorithm efficiency & problem solving | 🟢 Active | [Go to MOC](%F0%9F%A7%AE%20Data%20Structures%20%26%20Algorithms/README.md) |
 | ⚙️ **Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | *Coming soon* |
 
@@ -40,7 +42,7 @@ Developer-Knowledge-Base/
 ├── 🐍 Python/
 │   ├── README.md                <-- Python MOC & topic index
 │   ├── z_attachments/           <-- Local diagrams & assets
-│   └── 01-09_*.md               <-- Topic notes (Setup, OOP, Modules, etc.)
+│   └── 01-09_*.md               <-- Topic notes
 ├── 🚀 Git & GitHub/
 │   ├── README.md                <-- Git & GitHub MOC & topic index
 │   └── 01-04_*.md               <-- Topic notes
