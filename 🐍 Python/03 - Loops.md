@@ -1,5 +1,7 @@
 # 03 - Loops
 
+**Spanish version:** [03 - Bucles.md](03%20-%20Bucles.md)
+
 **Course:** Python
 **Topic:** Nested If Statements, while Loops, for Loops & range(), String Interpolation, Rarity Roll
 **Tags:** `#python` `#loops` `#iteration` `#while-loop` `#for-loop` `#logic`

@@ -1,6 +1,8 @@
 
 # 02. Algorithms & Algorithmic Efficiency
 
+**Spanish version:** [02 - Algoritmos y Eficiencia.md](02%20-%20Algoritmos%20y%20Eficiencia.md)
+
 **Course:** Data Structures & Algorithms
 **Topic:** Insertion Sort, Linear & Binary Search, Complexity Analysis
 **Tags:** `#dsa` `#algorithms` `#sorting` `#complexity`

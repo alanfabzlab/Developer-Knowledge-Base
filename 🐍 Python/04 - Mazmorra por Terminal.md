@@ -1,29 +1,30 @@
 
 
-# 04. Terminal Dungeon Crawl (`terminal_game.py`)
 
-**Spanish version:** [04 - Mazmorra por Terminal.md](04%20-%20Mazmorra%20por%20Terminal.md)
+# 04. Mazmorra por Terminal (`terminal_game.py`)
 
-**Course:** Python
-**Topic:** Terminal Dungeon Crawl, Control Flow, Game Loop & State Management
-**Tags:** `#python` `#project` `#cli` `#game-dev` `#control-flow`
+**Versión original en inglés:** [04 - Terminal Dungeon Crawl.md](./04%20-%20Terminal%20Dungeon%20Crawl.md)
+
+**Curso:** Python
+**Tema:** Mazmorra por terminal, control de flujo, bucle de juego y gestión de estado
+**Etiquetas:** `#python` `#project` `#cli` `#game-dev` `#control-flow`
 
 
-A text-based mini-dungeon crawler built in the terminal as a Checkpoint Project, integrating fundamental Python concepts: variables, conditional logic, loops, and the `random` module.
+Un mini crawler de mazmorras basado en texto, creado en la terminal como Proyecto de Hito, integrando conceptos fundamentales de Python: variables, lógica condicional, bucles y el módulo `random`.
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 
-## 🎯 Project Requirements
+## 🎯 Requisitos del Proyecto
 
-* **File Name:** `terminal_game.py`
-* **Core Logic:** Guide the hero through an interactive dungeon where each step presents at least 2 choices.
-* **Key Mechanics:** Use control flow (`if`/`elif`/`else`), loops (`while`/`for`), input handling (`input()`), and optional random outcomes using `import random`.
+* **Nombre del archivo:** `terminal_game.py`
+* **Lógica principal:** Guía al héroe a través de una mazmorra interactiva donde cada paso presenta al menos 2 opciones.
+* **Mecánicas clave:** Usa control de flujo (`if`/`elif`/`else`), bucles (`while`/`for`), manejo de la entrada (`input()`) y resultados aleatorios opcionales con `import random`.
 
 ---
 
 
-## 💡 Implementation (`terminal_game.py`)
+## 💡 Implementación (`terminal_game.py`)
 
 ```python
 # terminal_game.py
@@ -83,12 +84,12 @@ if hp <= 0:
 ```
 
 
-## 🛠️ Concepts Applied
+## 🛠️ Conceptos Aplicados
 
-- **Input & Parsing:** Capturing player selections via standard terminal input.
+- **Entrada e Interpretación:** Capturar las selecciones del jugador mediante la entrada estándar de la terminal.
     
-- **State Management:** Tracking player variables like `hp` and inventory flags (`has_key`).
+- **Gestión de Estado:** Seguir variables del jugador como `hp` y banderas de inventario (`has_key`).
     
-- **Game Loop:** Keeping the game active with a `while` loop until a win/loss condition is triggered.
+- **Bucle de Juego:** Mantener el juego activo con un bucle `while` hasta que se dispare una condición de victoria o derrota.
     
-- **Randomization:** Using `random.randint()` to generate unexpected dungeon events.
+- **Aleatorización:** Usar `random.randint()` para generar eventos inesperados dentro de la mazmorra.

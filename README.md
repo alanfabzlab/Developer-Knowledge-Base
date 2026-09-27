@@ -25,9 +25,9 @@ This knowledge base acts as a central repository for documentation, reference ar
 | Domain / Language | Description | Status | Map of Content |
 | :--- | :--- | :--- | :--- |
 | 🐍 **Python** | Core syntax, control flow, data structures, OOP & ecosystems | 🟢 Active | [Go to MOC](%F0%9F%90%8D%20Python/README.md) |
-| 🚀 **Git & GitHub** | Version control, branching strategies, collaboration & PR workflows | 🟢 Active | [Go to MOC](%F0%9F%9A%80%20Git%20%26%20GitHub/README.md) |
+| 🚀 **Git & GitHub** | Version control, branching strategies, collaboration & PR workflows | 🟢 Active | [Go to MOC](%F0%9F%9A%80%20Git%20&%20GitHub/README.md) |
 | 🟣 **CSharp** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 🟢 Active | [Go to MOC](%F0%9F%9F%A3%20CSharp/README.md) |
-| 🧮 **Data Structures & Algorithms** | Core data structures, algorithm efficiency & problem solving | 🟢 Active | [Go to MOC](%F0%9F%A7%AE%20Data%20Structures%20%26%20Algorithms/README.md) |
+| 🧮 **Data Structures & Algorithms** | Core data structures, algorithm efficiency & problem solving | 🟢 Active | [Go to MOC](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md) |
 | ⚙️ **Software Engineering** | Design patterns, algorithms & system architecture | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | 🟡 Planned | *Coming soon* |
 

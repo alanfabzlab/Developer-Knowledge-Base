@@ -1,6 +1,8 @@
 
 # 01. Introduction to Data Structures & Algorithms
 
+**Spanish version:** [01 - Introducción a Estructuras de Datos y Algoritmos.md](01%20-%20Introducci%C3%B3n%20a%20Estructuras%20de%20Datos%20y%20Algoritmos.md)
+
 **Course:** Data Structures & Algorithms
 **Topic:** Core Concepts, Built-in Data Structures & Problem Solving
 **Tags:** `#dsa` `#data-structures` `#fundamentals`

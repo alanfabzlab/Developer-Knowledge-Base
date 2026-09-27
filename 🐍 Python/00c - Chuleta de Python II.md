@@ -1,18 +1,19 @@
 
 
-# Python Cheatsheet II
 
-**Spanish version:** [00c - Chuleta de Python II.md](00c%20-%20Chuleta%20de%20Python%20II.md)
+# Chuleta de Python II
 
-**Course:** Python
-**Topic:** Lists, List Functions & Methods, Functions, Parameters, Scope, Classes & Objects, Modules
-**Tags:** `#python` `#cheatsheet` `#syntax` `#reference`
+**Versión original en inglés:** [00c - Python Cheatsheet II.md](./00c%20-%20Python%20Cheatsheet%20II.md)
+
+**Curso:** Python
+**Tema:** Listas, funciones y métodos de lista, funciones, parámetros, ámbito, clases y objetos, módulos
+**Etiquetas:** `#python` `#cheatsheet` `#syntax` `#reference`
 
 
 
 ---
 
-### Lists
+### Listas
 
 ```python
 enemy_hp = [320, 280, 410, 190, 540, 260, 130]
@@ -31,7 +32,7 @@ late_waves = enemy_hp[5:7]
 
 
 
-### List Functions & Methods
+### Funciones y Métodos de Lista
 
 
 ```python
@@ -57,7 +58,7 @@ stage_runtimes.pop(0)
 ```
 
 
-### Functions
+### Funciones
 
 
 ```python
@@ -68,7 +69,7 @@ announce_wave()  # Output: The boss spawns! 👹
 ```
 
 
-### Parameters
+### Parámetros
 
 
 ```python
@@ -80,7 +81,7 @@ print(add(21, 56))  # Output: 77
 ```
 
 
-### Scope
+### Ámbito
 
 
 ```python
@@ -95,7 +96,7 @@ func()    # Output: 42
 ```
 
 
-### Classes & Objects
+### Clases y Objetos
 
 
 ```python
@@ -114,7 +115,7 @@ aria.say_hi()  # 👋 My name is Aria
 ```
 
 
-### Modules
+### Módulos
 
 
 ```python

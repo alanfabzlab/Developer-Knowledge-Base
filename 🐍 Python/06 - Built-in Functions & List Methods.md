@@ -1,5 +1,7 @@
 # 06 - Built-in Functions & List Methods
 
+**Spanish version:** [06 - Funciones Integradas y Métodos de Lista.md](06%20-%20Funciones%20Integradas%20y%20M%C3%A9todos%20de%20Lista.md)
+
 **Course:** Python
 **Topic:** Built-in Functions, List Methods, Nested Lists & Matrices, Dictionaries, Sets
 **Tags:** `#python` `#list-methods` `#built-in-functions` `#data-structures` `#iteration`

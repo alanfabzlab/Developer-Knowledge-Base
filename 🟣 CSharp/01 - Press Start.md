@@ -1,6 +1,8 @@
 
 # 01. Press Start
 
+**Spanish version:** [01 - Pulsa Start.md](01%20-%20Pulsa%20Start.md)
+
 **Course:** C#
 **Topic:** Environment Setup, IDE Configuration & First Program
 **Tags:** `#csharp` `#setup` `#fundamentals`

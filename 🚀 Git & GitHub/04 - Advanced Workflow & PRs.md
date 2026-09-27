@@ -1,6 +1,8 @@
 
 # 04. Advanced Workflow & PRs
 
+**Spanish version:** [04 - Flujo Avanzado y PRs.md](04%20-%20Flujo%20Avanzado%20y%20PRs.md)
+
 **Course:** Git & GitHub
 **Topic:** Merging, Conflict Resolution & Pull Requests
 **Tags:** `#git` `#pull-requests` `#merging`

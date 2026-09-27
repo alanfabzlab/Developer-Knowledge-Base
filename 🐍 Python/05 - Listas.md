@@ -1,23 +1,24 @@
 
 
+
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
-# 05 - Lists
+# 05 - Listas
 
-**Spanish version:** [05 - Listas.md](05%20-%20Listas.md)
+**Versión original en inglés:** [05 - Lists.md](./05%20-%20Lists.md)
 
-**Course:** Python
-**Topic:** Python Lists, Indexing & Slicing, Built-in Functions, List Methods, Iterating Over Lists
-**Tags:** `#python` `#lists` `#data-structures` `#arrays` `#fundamentals`
+**Curso:** Python
+**Tema:** Listas de Python, indexación y rebanado, funciones integradas, métodos de lista, iteración sobre listas
+**Etiquetas:** `#python` `#lists` `#data-structures` `#arrays` `#fundamentals`
 
 
-A **list** is an ordered collection of items stored in a single variable. Lists are defined using square brackets `[]` with items separated by commas.
+Una **lista** es una colección ordenada de elementos guardada en una sola variable. Las listas se definen usando corchetes `[]` con los elementos separados por comas.
 
 ---
 
-## 01. Introduction to Lists (`boss_stats.py`)
+## 01. Introducción a las Listas (`boss_stats.py`)
 
-Lists can hold multiple data items, duplicate values, and mixed data types without a size limit.
+Las listas pueden contener múltiples elementos de datos, valores duplicados y tipos de datos mixtos sin límite de tamaño.
 
 ```python
 # Storing data using lists
@@ -26,7 +27,7 @@ wave_damage = [9, 6, 8]
 ```
 
 
-### 📝 Loot Bag Exercise (`loot_bag.py`)
+### 📝 Ejercicio de Bolsa de Botín (`loot_bag.py`)
 
 
 ```python
@@ -37,11 +38,11 @@ print(loot_bag)
 ```
 
 
-## 02. Indexing, Slicing & Errors (`quest_log.py`)
+## 02. Indexación, Rebanado y Errores (`quest_log.py`)
 
-### 🔹 Indexing
+### 🔹 Indexación
 
-List items are accessed via their zero-based position index `[index]`. Negative indices count backward from the end (`-1` is the last item).
+Los elementos de una lista se acceden mediante su índice de posición basado en cero `[index]`. Los índices negativos cuentan desde el final hacia atrás (`-1` es el último elemento).
 
 
 ```python
@@ -54,9 +55,9 @@ print(elements[-1])  # Output: Wind
 ```
 
 
-### 🔹 Slicing
+### 🔹 Rebanado
 
-Slicing retrieves a sub-sequence of items using `[start:end]`. It includes the `start` index and excludes the `end` index.
+El rebanado recupera una subsecuencia de elementos usando `[start:end]`. Incluye el índice `start` y excluye el índice `end`.
 
 
 ```python
@@ -69,7 +70,7 @@ print(elements[1:3]) # Output: ['Ice', 'Lightning']
 
 ### 🔹 IndexError
 
-An `IndexError` occurs when attempting to access an index that exceeds the sequence bounds.
+Un `IndexError` ocurre al intentar acceder a un índice que supera los límites de la secuencia.
 
 
 ```python
@@ -78,7 +79,7 @@ print(elements[5])
 ```
 
 
-### 📝 Quest Log Exercise (`quest_log.py`)
+### 📝 Ejercicio de Registro de Misiones (`quest_log.py`)
 
 
 ```python
@@ -108,13 +109,13 @@ print(quest_log[2:5])
 
 
 
-## 03. Built-in Functions (`inventory.py`)
+## 03. Funciones Integradas (`inventory.py`)
 
-Python includes several built-in functions designed to work directly with lists:
+Python incluye varias funciones integradas diseñadas para trabajar directamente con listas:
 
-* `len()`: Returns the total number of items in a list.
-* `max()`: Returns the maximum value in a list.
-* `min()`: Returns the minimum value in a list.
+* `len()`: Devuelve el número total de elementos de una lista.
+* `max()`: Devuelve el valor máximo de una lista.
+* `min()`: Devuelve el valor mínimo de una lista.
 
 
 ```python
@@ -128,7 +129,7 @@ print(min(rune_prices)) # Output: 28.4
 
 
 
-### 📝 Loot Tracker Exercise (`loot_tracker.py`)
+### 📝 Ejercicio de Rastreador de Botín (`loot_tracker.py`)
 
 
 ```python
@@ -144,27 +145,27 @@ print(max(enemy_kills))
 ```
 
 
-## 04. List Methods (`spellbook.py`)
+## 04. Métodos de Lista (`spellbook.py`)
 
-List methods are called using dot notation (`list_name.method()`).
+Los métodos de lista se llaman usando la notación de punto (`list_name.method()`).
 
-|**Method**|**Description**|
+|**Método**|**Descripción**|
 |---|---|
-|`.append()`|Adds an item to the end of the list|
-|`.clear()`|Removes all items from the list|
-|`.copy()`|Returns a shallow copy of the list|
-|`.count()`|Returns the number of times a value appears|
-|`.extend()`|Appends another list to the current list|
-|`.index()`|Returns the index of a value inside the list|
-|`.insert()`|Inserts an item at a specified position|
-|`.pop()`|Removes an item from a specified position|
-|`.remove()`|Removes the first item with the specified value|
-|`.reverse()`|Reverses the order of the list in place|
-|`.sort()`|Sorts the list in place|
+|`.append()`|Añade un elemento al final de la lista|
+|`.clear()`|Elimina todos los elementos de la lista|
+|`.copy()`|Devuelve una copia superficial de la lista|
+|`.count()`|Devuelve cuántas veces aparece un valor|
+|`.extend()`|Añade otra lista a la lista actual|
+|`.index()`|Devuelve el índice de un valor dentro de la lista|
+|`.insert()`|Inserta un elemento en una posición especificada|
+|`.pop()`|Elimina un elemento de una posición especificada|
+|`.remove()`|Elimina el primer elemento con el valor especificado|
+|`.reverse()`|Invierte el orden de la lista en el sitio|
+|`.sort()`|Ordena la lista en el sitio|
 
 
 
-### 🔹 Example Usage
+### 🔹 Ejemplo de Uso
 
 
 ```python
@@ -177,7 +178,7 @@ loot_codes.pop(0)             # ['HEL', 'BOW', 'POT', 'RIN']
 ```
 
 
-### 📝 Spellbook Exercise (`spellbook.py`)
+### 📝 Ejercicio del Libro de Hechizos (`spellbook.py`)
 
 
 ```python
@@ -199,11 +200,11 @@ print(spellbook)
 ```
 
 
-## 05. Iterating Over a List (`soundtrack.py`)
+## 05. Iteración sobre una Lista (`soundtrack.py`)
 
-### 🔹 Direct Iteration (`for-in`)
+### 🔹 Iteración Directa (`for-in`)
 
-Iterates directly over the items of the list.
+Itera directamente sobre los elementos de la lista.
 
 
 ```python
@@ -214,9 +215,9 @@ for i in boss_health:
 ```
 
 
-### 🔹 Index-Based Iteration (`for-in` with `range()` and `len()`)
+### 🔹 Iteración Basada en Índices (`for-in` con `range()` y `len()`)
 
-Iterates through indices using `range(len(list))`.
+Itera a través de los índices usando `range(len(list))`.
 
 
 ```python
@@ -227,7 +228,7 @@ for i in range(len(boss_health)):
 ```
 
 
-### 📝 Soundtrack Exercise (`soundtrack.py`)
+### 📝 Ejercicio de Banda Sonora (`soundtrack.py`)
 
 
 ```python

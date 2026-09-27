@@ -1,34 +1,34 @@
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
-# 🔀 Python Control Flow & Error Handling
-
-**Spanish version:** [02 - Control de Flujo.md](02%20-%20Control%20de%20Flujo.md)
+# 🔀 Control de Flujo y Manejo de Errores en Python
 
 ![Status Badge](https://img.shields.io/badge/Topic-Control%20Flow-orange?style=for-the-badge)
 
-**Course:** Python
-**Topic:** Common Errors, Conditional Statements, Relational & Logical Operators
-**Tags:** `#python` `#control-flow` `#logic` `#fundamentals`
+**Versión original en inglés:** [02 - Control Flow.md](./02%20-%20Control%20Flow.md)
+
+**Curso:** Python
+**Tema:** Errores comunes, sentencias condicionales, operadores relacionales y lógicos
+**Etiquetas:** `#python` `#control-flow` `#logic` `#fundamentals`
 
 
 ---
 
-## 01. Common Errors in Python
+## 01. Errores Comunes en Python
 
-Errors are a natural part of programming. Recognizing error types helps debug code faster.
+Los errores son una parte natural de la programación. Reconocer los tipos de error ayuda a depurar el código más rápido.
 
-### 📌 Main Error Types
+### 📌 Principales Tipos de Error
 
-- **`SyntaxError`**: Occurs when code violates Python's syntax rules (misspelled keywords, missing quotes, or invalid structure).
-- **`NameError`**: Occurs when referencing a variable or function that hasn't been defined yet.
-- **`TypeError`**: Occurs when applying an operation to an incompatible data type (e.g., combining strings and integers without casting).
+- **`SyntaxError`**: Ocurre cuando el código viola las reglas de sintaxis de Python (palabras clave mal escritas, comillas faltantes o estructura inválida).
+- **`NameError`**: Ocurre al referenciar una variable o función que todavía no ha sido definida.
+- **`TypeError`**: Ocurre al aplicar una operación a un tipo de dato incompatible (por ejemplo, combinar cadenas y enteros sin convertirlos).
 
 ---
 
-### 🔍 Error Examples & Solutions
+### 🔍 Ejemplos de Errores y Soluciones
 
-#### ❌ SyntaxError Example
+#### ❌ Ejemplo de SyntaxError
 
 ```python
 # Error: Missing closing quote and proper syntax
@@ -37,7 +37,7 @@ print(Welcome to the Kingdom!
 # SyntaxError: invalid syntax
 ```
 
-#### ❌ NameError Example
+#### ❌ Ejemplo de NameError
 
 ```python
 # Error: Referencing an undefined variable
@@ -50,7 +50,7 @@ goblin_hp = 40
 print(goblin_hp)  # Output: 40
 ```
 
-#### ❌ TypeError Example
+#### ❌ Ejemplo de TypeError
 
 ```python
 # Error: Attempting string concatenation with an integer directly
@@ -64,7 +64,7 @@ status = 'Player Level: '
 print(status + str(5))  # Output: Player Level: 5
 ```
 
-🐛 Bug Catcher Debugging Challenge (`bug_catcher.py`)
+🐛 Reto de Depuración: Cazador de Errores (`bug_catcher.py`)
 
 ```python
 # Fixed version of loot tracking script
@@ -80,16 +80,16 @@ total_items = health_potions + mana_potions + bomb_runes
 print('Total items: ' + str(total_items) + ' items collected!')
 ```
 
-## 02. Control Flow & Decision Making
+## 02. Control de Flujo y Toma de Decisiones
 
-By default, Python runs code sequentially line by line. **Control Flow** allows programs to execute different code blocks depending on specific conditions.
+Por defecto, Python ejecuta el código secuencialmente línea por línea. El **Control de Flujo** permite que los programas ejecuten diferentes bloques de código según condiciones específicas.
 
-**Note:** Concept Think of control flow as a crossroads: if a condition evaluates to `True`, the program takes one path; if `False`, it takes another.
+**Nota:** Concepto Piensa en el control de flujo como un cruce de caminos: si una condición se evalúa como `True`, el programa toma un camino; si es `False`, toma otro.
 
 
-### 🎲 Damage Roll Simulation (`damage_roll.py`)
+### 🎲 Simulación de Tirada de Daño (`damage_roll.py`)
 
-Using the `random` module to execute conditional code blocks based on a generated number:
+Usa el módulo `random` para ejecutar bloques de código condicionales según un número generado:
 
 ```python
 # damage_roll.py
@@ -105,11 +105,11 @@ else:
 ```
 
 
-## 03. Conditional Statements: `if` & `else`
+## 03. Sentencias Condicionales: `if` y `else`
 
-### 🔹 `if` Statement
+### 🔹 Sentencia `if`
 
-Evaluates a condition. If the condition is `True`, the indented block underneath runs.
+Evalúa una condición. Si la condición es `True`, se ejecuta el bloque indentado que hay debajo.
 
 ```python
 xp = 75
@@ -119,9 +119,9 @@ if xp >= 60:
 ```
 
 
-### 🔹 `else` Clause
+### 🔹 Cláusula `else`
 
-Provides an alternative execution block when the `if` condition evaluates to `False`.
+Proporciona un bloque de ejecución alternativo cuando la condición `if` se evalúa como `False`.
 
 ```python
 xp = 45
@@ -133,9 +133,9 @@ else:
 ```
 
 
-### 🏆 Rank Threshold Checker (`ranks.py`)
+### 🏆 Verificador de Umbral de Rango (`ranks.py`)
 
-Checks whether a match score meets the minimum threshold to unlock the ranked queue (55):
+Comprueba si la puntuación de una partida alcanza el umbral mínimo para desbloquear la cola clasificada (55):
 
 ```python
 # ranks.py
@@ -152,20 +152,20 @@ else:
 
 ---
 
-## 04. Relational Operators & `elif` Statements
+## 04. Operadores Relacionales y Sentencias `elif`
 
-Relational operators compare two values and return a boolean result (`True` or `False`):
+Los operadores relacionales comparan dos valores y devuelven un resultado booleano (`True` o `False`):
 
-- `==` Equal to
-- `!=` Not equal to
-- `>` Greater than
-- `<` Less than
-- `>=` Greater than or equal to
-- `<=` Less than or equal to
+- `==` Igual a
+- `!=` Distinto de
+- `>` Mayor que
+- `<` Menor que
+- `>=` Mayor o igual que
+- `<=` Menor o igual que
 
 
-### 🔹 The `elif` Statement
-When checking more than two conditions, append `elif` (else if) blocks between `if` and `else`.
+### 🔹 La Sentencia `elif`
+Cuando compruebes más de dos condiciones, añade bloques `elif` (else if) entre `if` y `else`.
 
 ```python
 rarity = 4.8
@@ -181,9 +181,9 @@ else:
 ```
 
 
-### 🧪 Potion Purity Analysis (`potion_purity.py`)
+### 🧪 Análisis de Pureza de Pociones (`potion_purity.py`)
 
-Checks elixir purity levels to determine how overpowered a brew is:
+Comprueba los niveles de pureza de los elixires para determinar qué tan sobrepoderoso es un brebaje:
 
 ```python
 # potion_purity.py
@@ -199,9 +199,9 @@ else:
 ```
 
 
-## 05. Generating Random Values (`loot_box.py`)
+## 05. Generando Valores Aleatorios (`loot_box.py`)
 
-Python's built-in `random` module provides functions like `randint(a, b)` to produce random integers within a range $[a, b]$ inclusive.
+El módulo integrado `random` de Python proporciona funciones como `randint(a, b)` para producir enteros aleatorios dentro de un rango $[a, b]$ inclusive.
 
 ```python
 import random
@@ -236,15 +236,15 @@ print('Loot Box Oracle: ' + answer)
 
 
 
-## 06. Logical Operators
+## 06. Operadores Lógicos
 
-Logical operators evaluate and combine multiple boolean expressions:
+Los operadores lógicos evalúan y combinan múltiples expresiones booleanas:
 
-- `and`: Returns `True` only if **both** conditions evaluate to `True`.
+- `and`: Devuelve `True` solo si **ambas** condiciones se evalúan como `True`.
     
-- `or`: Returns `True` if **at least one** condition evaluates to `True`.
+- `or`: Devuelve `True` si **al menos una** condición se evalúa como `True`.
     
-- `not`: Reverses the boolean status (`True` becomes `False`).
+- `not`: Invierte el estado booleano (`True` se convierte en `False`).
     
 
 |**A**|**B**|**A and B**|**A or B**|
@@ -277,9 +277,9 @@ if not is_paused:
 
 
 
-### 🎢 Boss Rush Access Checker (`boss_rush.py`)
+### 🎢 Verificador de Acceso a Boss Rush (`boss_rush.py`)
 
-Evaluates level requirement (Level $40$) and entry tokens ($15\text{ tokens}$):
+Evalúa el requisito de nivel (Nivel $40$) y los tokens de entrada ($15\text{ tokens}$):
 
 ```python
 # boss_rush.py
@@ -298,7 +298,7 @@ else:
 ```
 
 
-## 7. Capstone Project: Playstyle Sorting Quiz (`playstyle_quiz.py`)
+## 7. Proyecto Final: Cuestionario de Estilos de Juego (`playstyle_quiz.py`)
 
 ```python
 # playstyle_quiz.py

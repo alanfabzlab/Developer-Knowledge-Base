@@ -2,6 +2,8 @@
 
 # 🟣 C#: Object-Oriented Foundations & Game Systems Architecture (MOC)
 
+**Spanish version:** [README-ES.md](README-ES.md)
+
 <p align="left">
   <img src="https://img.shields.io/badge/Language-C%23_12.0-purple?style=for-the-badge&logo=csharp" alt="C#">
   <img src="https://img.shields.io/badge/Ecosystem-.NET_8.0-512BD4?style=for-the-badge&logo=dotnet" alt=".NET">

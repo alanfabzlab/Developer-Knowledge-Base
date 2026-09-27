@@ -1,36 +1,37 @@
 
 
-# 04. Loops in C#
 
-**Spanish version:** [04 - Bucles.md](04%20-%20Bucles.md)
+# 04. Bucles en C#
 
-**Course:** C#
-**Topic:** Loop Structures
-**Tags:** `#csharp` `#loops` `#iteration`
+**Versión original en inglés:** [04 - Loops.md](04%20-%20Loops.md)
 
-
-Loops are control flow structures used to repeat a block of code multiple times based on a specified condition. Instead of manually duplicating statements, loops automate execution cycles.
+**Curso:** C#
+**Tema:** Estructuras de Bucle
+**Etiquetas:** `#csharp` `#loops` `#iteration`
 
 
----
-
-
-## 1. Loop Types Overview
-
-C# primarily utilizes two core loop structures:
-- **`while` loop**: Executes as long as its condition remains `true`.
-- **`for` loop**: Executes a fixed number of times using an explicit counter variable.
+Los bucles son estructuras de control de flujo que se usan para repetir un bloque de código varias veces según una condición especificada. En lugar de duplicar manualmente las sentencias, los bucles automatizan los ciclos de ejecución.
 
 
 ---
 
 
-## 2. The `while` Loop
+## 1. Visión General de Tipos de Bucle
 
-A `while` loop checks a condition **before** each iteration. If the condition evaluates to `true`, the body executes; if `false`, execution stops and moves past the loop block.
+C# utiliza principalmente dos estructuras de bucle principales:
+- **Bucle `while`**: Se ejecuta mientras su condición siga siendo `true`.
+- **Bucle `for`**: Se ejecuta un número fijo de veces usando una variable de contador explícita.
 
 
-### Syntax
+---
+
+
+## 2. El Bucle `while`
+
+Un bucle `while` evalúa una condición **antes** de cada iteración. Si la condición evalúa a `true`, se ejecuta el cuerpo; si evalúa a `false`, la ejecución se detiene y pasa más allá del bloque del bucle.
+
+
+### Sintaxis
 
 ```csharp
 while (condition)
@@ -40,12 +41,12 @@ while (condition)
 ```
 
 
-## 3. Exercises
+## 3. Ejercicios
 
 
-### Exercise 1: Goblin Brawl
+### Ejercicio 1: Pelea con Goblins
 
-Demonstrating an interactive `while` loop controlled by user input until a specific exit keyword ("retreat") is encountered.
+Demostrar un bucle `while` interactivo controlado por la entrada del usuario hasta que se encuentre una palabra clave de salida específica ("retreat").
 
 
 ```csharp
@@ -68,7 +69,7 @@ class GoblinBrawl
 ```
 
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text
@@ -82,9 +83,9 @@ retreat
 
 
 
-### Exercise 2: Poison Stacks
+### Ejercicio 2: Acumulaciones de Veneno
 
-Demonstrating an interactive `while` loop that increments a variable (`poisonStacks`) and continues until the player inputs a specific string (`"antidote!"`).
+Demostrar un bucle `while` interactivo que incrementa una variable (`poisonStacks`) y continúa hasta que el jugador introduce una cadena específica (`"antidote!"`).
 
 ```csharp
 using System;
@@ -109,9 +110,9 @@ class PoisonStacks
 ```
 
 
-### Exercise 3: Spawn Wave
+### Ejercicio 3: Ola de Aparición
 
-Demonstrating a counter-controlled `while` loop executing code a fixed number of times (4 iterations) using an incrementing counter (`count++`).
+Demostrar un bucle `while` controlado por un contador que ejecuta el código un número fijo de veces (4 iteraciones) usando un contador que se incrementa (`count++`).
 
 
 ```csharp
@@ -133,9 +134,9 @@ class SpawnWave
 ```
 
 
-### Exercise 4: Stage Lights
+### Ejercicio 4: Luces de Escenario
 
-Demonstrating a `for` loop combined with conditional statements (`if/else`) and the modulo operator (`%`) to alternate output based on odd and even iterations.
+Demostrar un bucle `for` combinado con sentencias condicionales (`if/else`) y el operador de módulo (`%`) para alternar la salida según iteraciones impares y pares.
 
 
 ```csharp
@@ -161,9 +162,9 @@ class StageLights
 ```
 
 
-### Exercise 5: Pit Descent
+### Ejercicio 5: Descenso al Foso
 
-Demonstrating a decrementing `for` loop that counts down from `0` to `-20` using the decrement operator (`depth--`).
+Demostrar un bucle `for` con decremento que cuenta hacia atrás desde `0` hasta `-20` usando el operador de decremento (`depth--`).
 
 
 ```csharp
@@ -185,9 +186,9 @@ class PitDescent
 
 
 
-### Exercise 6: Rage Meter
+### Ejercicio 6: Medidor de Furia
 
-Demonstrating state mutation and compound operations inside a `for` loop to accumulate values across fixed iterations.
+Demostrar mutación de estado y operaciones compuestas dentro de un bucle `for` para acumular valores a lo largo de un número fijo de iteraciones.
 
 ```csharp
 using System;
@@ -209,9 +210,9 @@ class RageMeter
 
 
 
-### Exercise 7: Say Proceed
+### Ejercicio 7: Di Proceder
 
-Demonstrating dynamic loop control using user input inside a `while` loop, echoing every line the player types until a specific termination string is provided.
+Demostrar control dinámico del bucle usando la entrada del usuario dentro de un bucle `while`, repitiendo cada línea que el jugador escribe hasta que se proporcione una cadena de terminación específica.
 
 
 ```csharp
@@ -237,9 +238,9 @@ class SayProceed
 ```
 
 
-### Exercise 8: Locked Vault
+### Ejercicio 8: Bóveda Cerrada
 
-Demonstrating a comprehensive `while` loop that tracks attempt counts while evaluating dynamic user input against a hardcoded secret phrase.
+Demostrar un bucle `while` completo que lleva la cuenta de los intentos mientras evalúa la entrada dinámica del usuario frente a una frase secreta codificada en el programa.
 
 
 ```csharp

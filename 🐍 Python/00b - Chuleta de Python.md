@@ -1,18 +1,18 @@
 
-# Python Cheatsheet
+# Chuleta de Python
 
-**Spanish version:** [00b - Chuleta de Python.md](00b%20-%20Chuleta%20de%20Python.md)
+**Versión original en inglés:** [00b - Python Cheatsheet.md](./00b%20-%20Python%20Cheatsheet.md)
 
-**Course:** Python
-**Topic:** Syntax, Basic I/O, Data Types & Quick Reference
-**Tags:** `#python` `#cheatsheet` `#syntax` `#basics` `#reference`
+**Curso:** Python
+**Tema:** Sintaxis, E/S básica, tipos de datos y referencia rápida
+**Etiquetas:** `#python` `#cheatsheet` `#syntax` `#basics` `#reference`
 
 
-Quick reference for basic Python syntax and core language concepts, using video game data as running examples.
+Referencia rápida de la sintaxis básica de Python y de los conceptos fundamentales del lenguaje, usando datos de videojuegos como ejemplos a lo largo de la nota.
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
-## 🔹 Basic Output & Input
+## 🔹 Salida y Entrada Básicas
 
 ```python
 # Output
@@ -27,7 +27,7 @@ level = int(input('Enter your level: '))
 ```
 
 
-## 🔹 Comments
+## 🔹 Comentarios
 
 Python
 
@@ -37,7 +37,7 @@ Python
 print('Aria') # I'm also one T.T
 ```
 
-## 🔹 Variables & Data Types
+## 🔹 Variables y Tipos de Datos
 
 Python
 
@@ -48,9 +48,9 @@ player_tag = '@nightowl' # str
 is_game_over = False   # bool
 ```
 
-## 🔹 Operators
+## 🔹 Operadores
 
-### Arithmetic Operations
+### Operaciones Aritméticas
 
 
 ```python
@@ -62,7 +62,7 @@ wave_number = 76 % 4
 loot_tier = 2 ** 3
 ```
 
-### Relational Operators
+### Operadores Relacionales
 
 
 ```python
@@ -74,7 +74,7 @@ a >= b  # Greater than or equal to
 a <= b  # Less than or equal to
 ```
 
-### Logical Operators
+### Operadores Lógicos
 
 
 ```python
@@ -83,7 +83,7 @@ a or b  # True if at least one is true
 not a   # True if a is false
 ```
 
-## 🔹 Control Flow
+## 🔹 Control de Flujo
 
 
 ```python
@@ -97,7 +97,7 @@ else:
   print('C')
 ```
 
-## 🔹 Random Number
+## 🔹 Número Aleatorio
 
 
 ```python
@@ -106,14 +106,14 @@ import random
 roll = random.randint(1, 20)
 ```
 
-## 🔹 String Interpolation
+## 🔹 Interpolación de Cadenas
 
 
 ```python
 print(f'The damage of {i} is {i*i}')
 ```
 
-## 🔹 Loops
+## 🔹 Bucles
 
 
 ```python

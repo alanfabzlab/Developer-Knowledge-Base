@@ -3,6 +3,8 @@
 
 # 🐍 Python Basics: Setup, Output & Data Types
 
+**Spanish version:** [01 - Configuración y Tipos de Datos.md](01%20-%20Configuraci%C3%B3n%20y%20Tipos%20de%20Datos.md)
+
 ![Python Badge](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)![Status Badge](https://img.shields.io/badge/Difficulty-Beginner-brightgreen?style=for-the-badge)
 
 

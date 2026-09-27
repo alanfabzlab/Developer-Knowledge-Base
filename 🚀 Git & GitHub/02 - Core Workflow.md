@@ -1,6 +1,8 @@
 
 # 02. Core Workflow & Local Push
 
+**Spanish version:** [02 - Flujo de Trabajo Principal.md](02%20-%20Flujo%20de%20Trabajo%20Principal.md)
+
 **Course:** Git & GitHub
 **Topic:** Working Directory, Staging, Commits & Pushing
 **Tags:** `#git` `#workflow` `#commits`

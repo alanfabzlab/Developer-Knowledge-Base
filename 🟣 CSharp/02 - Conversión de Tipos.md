@@ -1,34 +1,34 @@
 
 
-# 02. Typecast
+# 02. Conversión de Tipos
 
-**Spanish version:** [02 - Conversión de Tipos.md](02%20-%20Conversi%C3%B3n%20de%20Tipos.md)
+**Versión original en inglés:** [02 - Typecast.md](02%20-%20Typecast.md)
 
-**Course:** C#
-**Topic:** Variables, Primitive Data Types, Typecast & Operators
-**Tags:** `#csharp` `#typecast` `#variables` `#operators`
-
-
-
-## 1. Variables & Primitive Data Types
-
-A variable is a named storage container that holds data in memory. Every variable in C# requires a explicit data type, a name, and an assigned value.
+**Curso:** C#
+**Tema:** Variables, Tipos de Datos Primitivos, Conversión de Tipos y Operadores
+**Etiquetas:** `#csharp` `#typecast` `#variables` `#operators`
 
 
-### Common Data Types
-* **`int`**: Whole numbers (integers) without decimals (positive or negative).
-* **`double`**: Floating-point decimal numbers.
-* **`string`**: Sequence of characters used for storing text (supports Unicode & emojis).
-* **`bool`**: Boolean values representing truth states (`true` or `false`).
+
+## 1. Variables y Tipos de Datos Primitivos
+
+Una variable es un contenedor de almacenamiento con nombre que guarda datos en memoria. Toda variable en C# requiere un tipo de dato explícito, un nombre y un valor asignado.
+
+
+### Tipos de Datos Comunes
+* **`int`**: Números enteros sin decimales (positivos o negativos).
+* **`double`**: Números decimales de punto flotante.
+* **`string`**: Secuencia de caracteres usada para almacenar texto (admite Unicode y emojis).
+* **`bool`**: Valores booleanos que representan estados de verdad (`true` o `false`).
 
 
 ---
 
 
-## 2. Practice Exercises
+## 2. Ejercicios de Práctica
 
-### Exercise 1: Loadout Screen
-Declaring basic variables (`int`, `string`, `bool`) for a character screen and printing their values to the console using string interpolation.
+### Ejercicio 1: Pantalla de Equipamiento
+Declarar variables básicas (`int`, `string`, `bool`) para una pantalla de personaje e imprimir sus valores en la consola usando interpolación de cadenas.
 
 ```csharp
 using System;
@@ -49,7 +49,7 @@ class LoadoutScreen
 ```
 
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text
@@ -60,16 +60,16 @@ Headset on: True
 
 
 
-## 3. Variables, String Concatenation & Basic Math
+## 3. Variables, Concatenación de Cadenas y Matemáticas Básicas
 
-In C#, variables store data that can be joined with text using string concatenation or manipulated through standard arithmetic and modulo operators.
+En C#, las variables almacenan datos que se pueden unir con texto mediante concatenación de cadenas o manipular con operadores aritméticos y de módulo estándar.
 
 
-## 4. Additional Practice Exercises
+## 4. Ejercicios Adicionales de Práctica
 
-### Exercise 2: Raid Planning
+### Ejercicio 2: Planificación de Incursión
 
-Declaring and initializing variables with different primitive types (`string`, `int`, `double`, `bool`) to plan a dungeon run.
+Declarar e inicializar variables con distintos tipos primitivos (`string`, `int`, `double`, `bool`) para planificar una incursión en una mazmorra.
 
 
 ```csharp
@@ -93,7 +93,7 @@ class RaidPlanning
 ```
 
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text
@@ -104,9 +104,9 @@ Blind Raid: True
 ```
 
 
-### Exercise 3: Legend Origins
+### Ejercicio 3: Orígenes de la Leyenda
 
-Demonstrating string concatenation by combining text strings with integer variables.
+Demostrar la concatenación de cadenas combinando cadenas de texto con variables enteras.
 
 
 ```csharp
@@ -126,7 +126,7 @@ class LegendOrigins
 ```
 
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text
@@ -135,9 +135,9 @@ She rose to fame in 1994 during the Siege of Emberfall.
 ```
 
 
-### Exercise 4: Loot Split
+### Ejercicio 4: Reparto del Botín
 
-Performing integer division and using the modulo (`%`) operator to distribute gold between chests and find the remainder.
+Realizar división entera y usar el operador de módulo (`%`) para distribuir el oro entre los cofres y hallar el resto.
 
 
 ```csharp
@@ -160,7 +160,7 @@ class LootSplit
 ```
 
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text
@@ -170,12 +170,12 @@ Gold left over: 3
 
 
 
-## 5. Collecting User Input
+## 5. Recopilar la Entrada del Usuario
 
-In C#, user input is collected from the console using `Console.ReadLine()`. The input is always captured as a `string` by default.
+En C#, la entrada del usuario se recopila desde la consola usando `Console.ReadLine()`. La entrada siempre se captura como `string` por defecto.
 
 
-### Standard String Input
+### Entrada de Cadena Estándar
 
 ```csharp
 Console.Write("What's your hero name?");
@@ -184,9 +184,9 @@ Console.WriteLine($"Welcome to the party, {heroName}!");
 ```
 
 
-### Converting String Input to Integer (`int`)
+### Convertir la Entrada de Cadena a Entero (`int`)
 
-When numeric operations are required on user input, the captured `string` must be converted using `Convert.ToInt32()` or `int.Parse()`.
+Cuando se requieren operaciones numéricas sobre la entrada del usuario, la cadena `string` capturada debe convertirse usando `Convert.ToInt32()` o `int.Parse()`.
 
 
 ```csharp
@@ -196,12 +196,12 @@ int damage = Convert.ToInt32(input);
 ```
 
 
-## 6. Input & Conversion Exercises
+## 6. Ejercicios de Entrada y Conversión
 
 
-### Exercise 5: Rune Cycle
+### Ejercicio 5: Ciclo de Runas
 
-Asking the user for the birth year of their character, parsing the string input to an integer, and calculating the years remaining until the twelve-rune cycle realigns for their sign (12-year cycle).
+Pedir al usuario el año de nacimiento de su personaje, convertir la entrada de cadena a un entero y calcular los años que faltan hasta que el ciclo de doce runas se realinee con su signo (ciclo de 12 años).
 
 
 ```csharp
@@ -224,7 +224,7 @@ class RuneCycle
 ```
 
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text
@@ -233,9 +233,9 @@ Years until the runes realign for your sign: 2
 ```
 
 
-### Exercise 6: Gacha Summon
+### Ejercicio 6: Invocación Gacha
 
-Calculating how many times a player can pull on a summoning banner based on their crystal balance and finding the leftover crystals using division and modulo operations.
+Calcular cuántas veces un jugador puede invocar en un banner de invocación según su saldo de cristales y hallar los cristales sobrantes usando operaciones de división y módulo.
 
 
 ```csharp
@@ -260,7 +260,7 @@ class GachaSummon
 }
 ```
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text

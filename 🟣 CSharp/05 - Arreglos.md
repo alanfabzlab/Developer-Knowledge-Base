@@ -1,25 +1,25 @@
 
-# 05. Arrays in C#
+# 05. Arreglos en C#
 
-**Spanish version:** [05 - Arreglos.md](05%20-%20Arreglos.md)
+**Versión original en inglés:** [05 - Arrays.md](05%20-%20Arrays.md)
 
-**Course:** C#
-**Topic:** Arrays & Collection Access
-**Tags:** `#csharp` `#arrays` `#collections`
+**Curso:** C#
+**Tema:** Arreglos y Acceso a Colecciones
+**Etiquetas:** `#csharp` `#arrays` `#collections`
 
 
-An array is a fixed-size collection of elements of the same data type stored in contiguous memory positions.
+Un arreglo es una colección de tamaño fijo de elementos del mismo tipo de dato, almacenados en posiciones de memoria contiguas.
 
 ---
 
-## 1. Array Declaration & Initialization
+## 1. Declaración e Inicialización de Arreglos
 
-Arrays are declared by specifying the data type followed by square brackets `[]`. Values are enclosed in curly braces `{}` and separated by commas.
+Los arreglos se declaran especificando el tipo de dato seguido de corchetes `[]`. Los valores se encierran entre llaves `{}` y se separan por comas.
 
 
-### Key Characteristics
-- **Fixed Size:** The number of elements is determined upon creation.
-- **Type Safety:** All elements must match the declared data type.
+### Características Clave
+- **Tamaño Fijo:** El número de elementos se determina en el momento de la creación.
+- **Seguridad de Tipos:** Todos los elementos deben coincidir con el tipo de dato declarado.
 
 ```csharp
 using System;
@@ -38,9 +38,9 @@ class ArrayFoundations
 ```
 
 
-## 2. Zero-Based Indexing
+## 2. Indexación Basada en Cero
 
-Elements inside an array are accessed using their numerical position (index) within square brackets `[index]`. C# arrays use zero-based indexing, meaning the first element is at index `0`.
+Los elementos dentro de un arreglo se acceden usando su posición numérica (índice) entre corchetes `[index]`. Los arreglos en C# usan indexación basada en cero, lo que significa que el primer elemento está en el índice `0`.
 
 
 ```csharp
@@ -72,9 +72,9 @@ class BossThemes
 ```
 
 
-## 3. Modifying Array Elements
+## 3. Modificar Elementos de un Arreglo
 
-Array elements can be updated after initialization by reassigning a new value directly to a specific index position.
+Los elementos de un arreglo se pueden actualizar después de la inicialización reasignando un nuevo valor directamente a una posición de índice concreta.
 
 
 ```csharp
@@ -95,9 +95,9 @@ class QuestBoard
 ```
 
 
-## 4. Empty Arrays & Fixed Capacity
+## 4. Arreglos Vacíos y Capacidad Fija
 
-When the size of an array is known in advance but values are not yet available, specify its length using the `new` keyword. Attempting to access or assign values outside the allocated bounds throws an `IndexOutOfRangeException`.
+Cuando el tamaño de un arreglo se conoce de antemano pero los valores aún no están disponibles, se especifica su longitud usando la palabra clave `new`. Intentar acceder o asignar valores fuera de los límites asignados lanza una `IndexOutOfRangeException`.
 
 
 ```csharp
@@ -118,9 +118,9 @@ class ArenaBracket
 ```
 
 
-## 5. Iterating Over Arrays with Loops
+## 5. Iterar sobre Arreglos con Bucles
 
-Instead of manually accessing each index, a `for` loop automates traversal through the collection.
+En lugar de acceder manualmente a cada índice, un bucle `for` automatiza el recorrido de la colección.
 
 
 ```csharp
@@ -147,9 +147,9 @@ class PartyChat
 ```
 
 
-## 6. Dynamic Loop Conditions with `.Length`
+## 6. Condiciones de Bucle Dinámicas con `.Length`
 
-Hardcoding loop boundaries makes code rigid. The built-in `.Length` property returns the total number of elements in an array, allowing loops to adapt dynamically if the array size changes.
+Codificar los límites del bucle a mano hace que el código sea rígido. La propiedad integrada `.Length` devuelve el número total de elementos de un arreglo, permitiendo que los bucles se adapten dinámicamente si cambia el tamaño del arreglo.
 
 
 ```csharp

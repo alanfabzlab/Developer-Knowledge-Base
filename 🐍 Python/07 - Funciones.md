@@ -1,34 +1,34 @@
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
-# 🐍 Python Functions & Modern Syntax
-
-**Spanish version:** [07 - Funciones.md](07%20-%20Funciones.md)
+# 🐍 Funciones en Python y Sintaxis Moderna
 
 ![Status Badge](https://img.shields.io/badge/Topic-Functions-orange?style=for-the-badge&logo=python&logoColor=white)
 
-**Course:** Python
-**Topic:** Function Definition, Parameters, Return Values, Variable Scope & Lambda Functions
-**Tags:** `#python` `#programming` `#functions` `#dry` `#open-source` `#notes`
+**Versión original en inglés:** [07 - Functions.md](./07%20-%20Functions.md)
+
+**Curso:** Python
+**Tema:** Definición de funciones, parámetros, valores de retorno, ámbito de variables y funciones lambda
+**Etiquetas:** `#python` `#programming` `#functions` `#dry` `#open-source` `#notes`
 
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 
-## 01. The D.R.Y. Principle & Built-in Functions (`dry.py`)
+## 01. El Principio D.R.Y. y las Funciones Integradas (`dry.py`)
 
-A **function** is a reusable block of code that performs a specific task. Instead of repeating code blocks throughout a program, you can wrap code inside a function and execute it whenever needed.
-
-
-### 🔹 The D.R.Y. Principle
-**D.R.Y.** stands for **"Don't Repeat Yourself"**, a fundamental software development principle aimed at reducing code repetition and writing clean, maintainable logic.
+Una **función** es un bloque de código reutilizable que realiza una tarea específica. En lugar de repetir bloques de código por todo un programa, puedes envolver el código dentro de una función y ejecutarlo cuando lo necesites.
 
 
-### 🔹 Built-in Functions
-Python includes 68 built-in functions ready to use out of the box (e.g., `print()`, `input()`, `len()`, `int()`, `type()`).
+### 🔹 El Principio D.R.Y.
+**D.R.Y.** significa **"No te repitas"**, un principio fundamental del desarrollo de software orientado a reducir la repetición de código y a escribir una lógica limpia y mantenible.
 
 
-### 📝 D.R.Y. Exercise (`dry.py`)
+### 🔹 Funciones Integradas
+Python incluye 68 funciones integradas listas para usar de inmediato (por ejemplo, `print()`, `input()`, `len()`, `int()`, `type()`).
+
+
+### 📝 Ejercicio D.R.Y. (`dry.py`)
 
 
 ```python
@@ -52,18 +52,17 @@ print(type(hero))
 
 
 
-## 02. Defining & Calling Functions (`loot_box.py`)
+## 02. Definiendo y Llamando Funciones (`loot_box.py`)
 
-User-defined functions require two key steps:
+Las funciones definidas por el usuario requieren dos pasos clave:
 
-1. **Definition**: Created using the `def` keyword, followed by the function name, parentheses `()`, and a colon `:`. Code inside must be indented.
+1. **Definición**: Se crea usando la palabra clave `def`, seguida del nombre de la función, paréntesis `()` y dos puntos `:`. El código interior debe estar indentado.
     
-2. **Execution (Call)**: Triggered by writing the function name followed by parentheses `()`.
+2. **Ejecución (Llamada)**: Se activa escribiendo el nombre de la función seguido de paréntesis `()`.
     
 
 
-
-### 📝 Loot Box Oracle Exercise (`loot_box.py`)
+### 📝 Ejercicio del Oráculo de la Caja de Botín (`loot_box.py`)
 
 
 ```python
@@ -98,13 +97,13 @@ loot_box()
 ```
 
 
-## 03. Parameters and Arguments
+## 03. Parámetros y Argumentos
 
-Functions become dynamic when they accept input data to process.
+Las funciones se vuelven dinámicas cuando aceptan datos de entrada que procesar.
 
-- **Parameter**: The variable defined inside the function's parentheses (the placeholder).
+- **Parámetro**: La variable definida dentro de los paréntesis de la función (el marcador de posición).
     
-- **Argument**: The actual value passed into the function when calling it.
+- **Argumento**: El valor real que se pasa a la función al llamarla.
     
 
 
@@ -122,15 +121,15 @@ level_up('Aria')
 
 
 
-## 04. Return Value
+## 04. Valor de Retorno
 
 
-A function can return a value back to the line of code that called it using the `return` keyword. 
+Una función puede devolver un valor a la línea de código que la llamó usando la palabra clave `return`. 
 
 
-* **`return`**: Ends the execution of a function and sends data back to the caller.
-* **Implicit Return**: If no `return` statement is defined, Python returns `None` by default.
-* **`print()` vs `return`**: `print()` only displays output to the terminal, whereas `return` passes data internally so it can be saved in variables or processed further.
+* **`return`**: Finaliza la ejecución de una función y envía los datos de vuelta al llamador.
+* **Retorno Implícito**: Si no se define ninguna sentencia `return`, Python devuelve `None` por defecto.
+* **`print()` frente a `return`**: `print()` solo muestra la salida en la terminal, mientras que `return` pasa los datos internamente para que puedan guardarse en variables o procesarse después.
 
 
 ```python
@@ -160,13 +159,13 @@ print(exp(2, 10))        # Output: 1024
 
 
 
-## 05. Variable Scope
+## 05. Ámbito de Variables
 
-Scope determines where in the program a variable is visible and accessible.
+El ámbito determina en qué parte del programa una variable es visible y accesible.
 
-- **Local Scope**: Variables declared inside a function. They only exist while the function is executing and cannot be accessed from outside.
+- **Ámbito Local**: Variables declaradas dentro de una función. Solo existen mientras la función se está ejecutando y no se puede acceder a ellas desde fuera.
     
-- **Global Scope**: Variables declared outside of any function. They are accessible throughout the entire script.
+- **Ámbito Global**: Variables declaradas fuera de cualquier función. Son accesibles en todo el script.
     
 
 
@@ -192,9 +191,9 @@ print(f"Min damage (turns 5-10): {min_damage(5, 10)}")
 
 
 
-## 06. Checkpoint Project: Blacksmith
+## 06. Proyecto de Hito: Herrero
 
-Integrating functions, user input, conditional structures, and returned values into a single program.
+Integra funciones, entrada del usuario, estructuras condicionales y valores de retorno en un solo programa.
 
 
 ```python
@@ -230,29 +229,29 @@ print(f"You bought: {get_item(option)}")
 
 ---
 
-## 07. Lambda Functions (Bonus Article)
+## 07. Funciones Lambda (Artículo Bonus)
 
-Lambda functions (also known as anonymous functions) are concise, single-line functions defined without a name using the `lambda` keyword.
+Las funciones lambda (también conocidas como funciones anónimas) son funciones concisas de una sola línea, definidas sin nombre usando la palabra clave `lambda`.
 
-### Syntax
+### Sintaxis
 
 ```python
 lambda arguments: expression
 ```
 
 
-- **`lambda`**: Keyword used to define an anonymous function.
+- **`lambda`**: Palabra clave usada para definir una función anónima.
     
-- **`arguments`**: Inputs passed to the function (separated by commas).
+- **`arguments`**: Entradas que se pasan a la función (separadas por comas).
     
-- **`expression`**: A single expression evaluated and returned automatically.
+- **`expression`**: Una única expresión que se evalúa y se devuelve automáticamente.
     
 
 
 
-### Basic Example vs. Standard Function
+### Ejemplo Básico frente a una Función Estándar
 
-**Standard Function:**
+**Función Estándar:**
 
 
 ```python
@@ -261,7 +260,7 @@ def double_damage(x):
 ```
 
 
-**Lambda Equivalent:**
+**Equivalente con Lambda:**
 
 
 ```python
@@ -271,9 +270,9 @@ print(double_damage(4)) # Output: 8
 ```
 
 
-### Common Use Cases: `map()` & `filter()`
+### Casos de Uso Comunes: `map()` y `filter()`
 
-Lambda functions shine when passed as one-time arguments to high-order functions like `map()` or `filter()`.
+Las funciones lambda destacan cuando se pasan como argumentos de un solo uso a funciones de orden superior como `map()` o `filter()`.
 
 
 ```python
@@ -290,9 +289,9 @@ print(heavy_hits)     # Output: [8, 10]
 ```
 
 
-### Practical Examples
+### Ejemplos Prácticos
 
-**1. Filtering Text Data:**
+**1. Filtrando Datos de Texto:**
 
 
 ```python
@@ -305,7 +304,7 @@ print(filtered_heroes) # Output: ['Borin', 'Cass', 'Dara', 'Elowen']
 ```
 
 
-**2. Using Multiple Arguments:**
+**2. Usando Múltiples Argumentos:**
 
 
 ```python

@@ -1,27 +1,28 @@
 
 
-# Checkpoint Project: Mad Dungeon Master 👹
 
-**Spanish version:** [Mad Dungeon Master - Proyecto de Hito.md](Mad%20Dungeon%20Master%20-%20Proyecto%20de%20Hito.md)
+# Proyecto de Hito: Mad Dungeon Master 👹
 
-**Course:** C#
-**Topic:** Checkpoint Project: Boss Script Generator
-**Tags:** `#csharp` `#checkpoint` `#console-app`
+**Versión original en inglés:** [Mad Dungeon Master - Checkpoint Project.md](Mad%20Dungeon%20Master%20-%20Checkpoint%20Project.md)
+
+**Curso:** C#
+**Tema:** Proyecto de Hito: Generador de Guiones de Jefes
+**Etiquetas:** `#csharp` `#checkpoint` `#console-app`
 
 
-- **Language:** C# / .NET
-- **Concepts Applied:** `Console.ReadLine()`, string interpolation and concatenation, conditional statements (`if/else`), logical operators (`&&`, `||`), relational operators (`==`, `!=`), `while` loops.
-- **Repository:** [MadDungeonMaster on GitHub](https://github.com/alanfabzlab/MadDungeonMaster)
+- **Lenguaje:** C# / .NET
+- **Conceptos Aplicados:** `Console.ReadLine()`, interpolación y concatenación de cadenas, sentencias condicionales (`if/else`), operadores lógicos (`&&`, `||`), operadores relacionales (`==`, `!=`), bucles `while`.
+- **Repositorio:** [MadDungeonMaster en GitHub](https://github.com/alanfabzlab/MadDungeonMaster)
 
 
 ---
 
 
-## 📋 Project Overview
-An interactive text-based console application that prompts the user for various encounter inputs (boss name, dark deed, adjective, hero weapon, dungeon, time of day) and dynamically builds a personalized villain monologue for a boss fight. It uses conditional logic to alter the final lines based on the chosen hour and runs inside a main `while` loop to support continuous playthroughs.
+## 📋 Descripción General del Proyecto
+Una aplicación de consola interactiva basada en texto que pide al usuario distintas entradas para el enfrentamiento (nombre del jefe, crimen oscuro, adjetivo, arma del héroe, mazmorra, hora del día) y construye dinámicamente un monólogo de villano personalizado para un combate contra un jefe. Usa lógica condicional para alterar las líneas finales según la hora elegida y se ejecuta dentro de un bucle `while` principal para permitir partidas continuas.
 
 
-## 🛠️ Source Code (`Program.cs`)
+## 🛠️ Código Fuente (`Program.cs`)
 
 ```csharp
 using System;

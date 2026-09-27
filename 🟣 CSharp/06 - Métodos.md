@@ -1,21 +1,21 @@
 
-# 06. Methods in C#
+# 06. Métodos en C#
 
-**Spanish version:** [06 - Métodos.md](06%20-%20M%C3%A9todos.md)
+**Versión original en inglés:** [06 - Methods.md](06%20-%20Methods.md)
 
-**Course:** C#
-**Topic:** Methods, Parameters & Return Values
-**Tags:** `#csharp` `#methods` `#functions`
+**Curso:** C#
+**Tema:** Métodos, Parámetros y Valores de Retorno
+**Etiquetas:** `#csharp` `#methods` `#functions`
 
 
-A method is a reusable block of code designed to perform a specific task. Methods help organize code, avoid duplication, and break down complex problems into modular pieces.
+Un método es un bloque de código reutilizable diseñado para realizar una tarea específica. Los métodos ayudan a organizar el código, evitar la duplicación y dividir los problemas complejos en piezas modulares.
 
 ---
 
 
-## 1. Array Processing Example (Loot Hoarder)
+## 1. Ejemplo de Procesamiento de Arreglos (Loot Hoarder)
 
-Before creating standalone methods, here is how multiple arrays are combined with loops to process data dynamically.
+Antes de crear métodos independientes, aquí se muestra cómo se combinan varios arreglos con bucles para procesar datos de forma dinámica.
 
 ```csharp
 using System;
@@ -44,9 +44,9 @@ class LootHoarder
 ```
 
 
-## 2. Declaring and Calling Methods
+## 2. Declarar y Llamar Métodos
 
-Every C# executable starts in the `Main()` method. Custom methods are defined outside of `Main()` but inside the class block.
+Todo ejecutable de C# comienza en el método `Main()`. Los métodos personalizados se definen fuera de `Main()` pero dentro del bloque de la clase.
 
 
 ```csharp
@@ -70,9 +70,9 @@ class LevelUpFanfare
 ```
 
 
-## 3. Method Reusability
+## 3. Reutilización de Métodos
 
-Calling a method multiple times executes its encapsulated logic without duplicating code.
+Llamar a un método varias veces ejecuta su lógica encapsulada sin duplicar código.
 
 
 ```csharp
@@ -98,15 +98,15 @@ class CrowdChant
 ```
 
 
-## 4. Parameters vs. Arguments
+## 4. Parámetros vs. Argumentos
 
-Methods can accept external data to customize their execution using parameters.
+Los métodos pueden aceptar datos externos para personalizar su ejecución usando parámetros.
 
-### Definitions
+### Definiciones
 
-- **Parameter:** The placeholder variable defined in the method signature (e.g., `string elixir`).
+- **Parámetro:** La variable auxiliar definida en la firma del método (p. ej., `string elixir`).
     
-- **Argument:** The actual value passed into the method during its call (e.g., `"ember 🔥"`).
+- **Argumento:** El valor real que se pasa al método durante su llamada (p. ej., `"ember 🔥"`).
     
 
 
@@ -132,9 +132,9 @@ class BuffMenu
 ```
 
 
-## 5. Multiple Parameters
+## 5. Múltiples Parámetros
 
-Methods can accept multiple parameters of different data types, separated by commas. The arguments supplied at the call site must match the expected type and positional order.
+Los métodos pueden aceptar múltiples parámetros de distintos tipos de dato, separados por comas. Los argumentos suministrados en el punto de llamada deben coincidir con el tipo esperado y con el orden posicional.
 
 
 ```csharp
@@ -160,9 +160,9 @@ class PrizeSplit
 ```
 
 
-## 6. Return Values
+## 6. Valores de Retorno
 
-By default, methods marked with `void` do not return a value. To send data back to the calling scope, replace `void` with the desired return data type (`int`, `string`, `bool`, etc.) and use the `return` keyword.
+De forma predeterminada, los métodos marcados con `void` no devuelven ningún valor. Para enviar datos de vuelta al ámbito que llama, reemplaza `void` por el tipo de dato de retorno deseado (`int`, `string`, `bool`, etc.) y usa la palabra clave `return`.
 
 
 ```csharp
@@ -184,9 +184,9 @@ class QuestProgress
 ```
 
 
-## 7. Modular Composition (Calling All Raiders)
+## 7. Composición Modular (Calling All Raiders)
 
-Breaking complex applications into specialized methods improves code maintainability and testability.
+Dividir las aplicaciones complejas en métodos especializados mejora la mantenibilidad y la testeabilidad del código.
 
 
 ```csharp

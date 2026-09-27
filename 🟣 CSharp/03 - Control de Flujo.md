@@ -1,25 +1,26 @@
 
 
-# 03. Control Flow in C#
 
-**Spanish version:** [03 - Control de Flujo.md](03%20-%20Control%20de%20Flujo.md)
+# 03. Control de Flujo en C#
 
-**Course:** C#
-**Topic:** Conditionals & Control Flow
-**Tags:** `#csharp` `#control-flow` `#conditionals`
+**Versión original en inglés:** [03 - Control Flow.md](03%20-%20Control%20Flow.md)
+
+**Curso:** C#
+**Tema:** Sentencias Condicionales y Control de Flujo
+**Etiquetas:** `#csharp` `#control-flow` `#conditionals`
 
 
-Control flow describes the order in which individual statements, instructions, or function calls are executed or evaluated. By default, code executes line-by-line from top to bottom, but control flow statements allow making decisions based on dynamic conditions.
+El control de flujo describe el orden en el que se ejecutan o evalúan sentencias, instrucciones o llamadas a función individuales. Por defecto, el código se ejecuta línea por línea de arriba abajo, pero las sentencias de control de flujo permiten tomar decisiones basadas en condiciones dinámicas.
 
 ---
 
 
-## 1. Boolean Conditions & `if` Statements
+## 1. Condiciones Booleanas y Sentencias `if`
 
-An `if` statement executes a block of code only when a specified condition evaluates to `true`.
+Una sentencia `if` ejecuta un bloque de código solo cuando una condición especificada evalúa a `true`.
 
 
-### Basic Syntax
+### Sintaxis Básica
 
 ```csharp
 bool isGateOpen = true;
@@ -31,28 +32,27 @@ if (isGateOpen)
 ```
 
 
-## 2. Comparison Operators
+## 2. Operadores de Comparación
 
-Comparison operators evaluate the relationship between two values and return a boolean result (`true` or `false`).
+Los operadores de comparación evalúan la relación entre dos valores y devuelven un resultado booleano (`true` o `false`).
 
-|**Operator**|**Description**|**Example (int x = 10)**|**Result**|
+|**Operador**|**Descripción**|**Ejemplo (int x = 10)**|**Resultado**|
 |---|---|---|---|
-|`==`|Equal to|`x == 10`|`true`|
-|`!=`|Not equal to|`x != 5`|`true`|
-|`>`|Greater than|`x > 15`|`false`|
-|`<`|Less than|`x < 20`|`true`|
-|`>=`|Greater than or equal to|`x >= 10`|`true`|
-|`<=`|Less than or equal to|`x <= 8`|`false`|
+|`==`|Igual a|`x == 10`|`true`|
+|`!=`|Distinto de|`x != 5`|`true`|
+|`>`|Mayor que|`x > 15`|`false`|
+|`<`|Menor que|`x < 20`|`true`|
+|`>=`|Mayor o igual que|`x >= 10`|`true`|
 
 
 
-## 3. Branching with `else` and `else if`
+## 3. Bifurcación con `else` y `else if`
 
-When multiple potential paths exist, `else` and `else if` allow handling alternative conditions.
+Cuando existen múltiples caminos posibles, `else` y `else if` permiten gestionar condiciones alternativas.
 
-- **`else`**: Executes when all preceding `if` and `else if` conditions evaluate to `false`.
+- **`else`**: Se ejecuta cuando todas las condiciones `if` y `else if` anteriores evalúan a `false`.
     
-- **`else if`**: Evaluates sequential conditions top-to-bottom. Once a condition evaluates to `true`, its block executes and remaining conditions are skipped.
+- **`else if`**: Evalúa condiciones secuenciales de arriba abajo. Una vez que una condición evalúa a `true`, se ejecuta su bloque y se omiten las condiciones restantes.
     
 
 
@@ -74,11 +74,11 @@ else
 ```
 
 
-## 4. Exercises
+## 4. Ejercicios
 
-### Exercise 1: Raid Night
+### Ejercicio 1: Noche de Incursión
 
-Introduction to simple boolean evaluation in control flow.
+Introducción a la evaluación booleana simple en el control de flujo.
 
 
 ```csharp
@@ -98,7 +98,7 @@ class RaidNight
 }
 ```
 
-**Output:**
+**Salida:**
 
 
 ```text
@@ -106,9 +106,9 @@ Let's queue for the raid, yippee!
 ```
 
 
-### Exercise 2: Aggro Meter
+### Ejercicio 2: Medidor de Aggro
 
-Using comparison operators (`>=`) within an `if` statement.
+Usar operadores de comparación (`>=`) dentro de una sentencia `if`.
 
 
 ```csharp
@@ -129,7 +129,7 @@ class AggroMeter
 ```
 
 
-**Output:**
+**Salida:**
 
 
 ```text
@@ -137,9 +137,9 @@ The whole zone is turning red!
 ```
 
 
-### Exercise 3: Critical Roll
+### Ejercicio 3: Tirada Crítica
 
-Implementing binary conditional branching with `if` and `else`.
+Implementar bifurcación condicional binaria con `if` y `else`.
 
 
 ```csharp
@@ -164,7 +164,7 @@ class CriticalRoll
 ```
 
 
-**Output:**
+**Salida:**
 
 
 ```text
@@ -172,9 +172,9 @@ Critical hit! The enemy reels. 💥
 ```
 
 
-### Exercise 4: Danger Level
+### Ejercicio 4: Nivel de Peligro
 
-Handling multi-condition logic using `if`, `else if`, and `else`.
+Manejar lógica de múltiples condiciones usando `if`, `else if` y `else`.
 
 
 ```csharp
@@ -203,7 +203,7 @@ class DangerLevel
 ```
 
 
-**Output:**
+**Salida:**
 
 
 ```text
@@ -215,24 +215,24 @@ Enemies are swarming the camp 🧟
 ---
 
 
-## 5. Logical Operators
-Logical operators allow combining multiple conditions within a single control flow evaluation.
+## 5. Operadores Lógicos
+Los operadores lógicos permiten combinar múltiples condiciones dentro de una misma evaluación de control de flujo.
 
-| Operator | Name | Description | Example |
+| Operador | Nombre | Descripción | Ejemplo |
 | :--- | :--- | :--- | :--- |
-| `&&` | AND | Returns `true` only if **both** conditions evaluate to `true`. | `(age >= 21 && hasInvitation)` |
-| `\|\|` | OR | Returns `true` if **at least one** condition evaluates to `true`. | `(isWeekend \|\| isHoliday)` |
-| `!` | NOT | Reverses (flips) the boolean value of a condition. | `(!isLoggedIn)` |
+| `&&` | Y | Devuelve `true` solo si **ambas** condiciones evalúan a `true`. | `(age >= 21 && hasInvitation)` |
+| `\|\|` | O | Devuelve `true` si **al menos una** condición evalúa a `true`. | `(isWeekend \|\| isHoliday)` |
+| `!` | NO | Invierte (da la vuelta) el valor booleano de una condición. | `(!isLoggedIn)` |
 
 
 ---
 
 
-## 6. Advanced Control Flow Exercises
+## 6. Ejercicios Avanzados de Control de Flujo
 
 
-### Exercise 5: Guild Gate
-Combining conditions using the logical AND (`&&`) operator.
+### Ejercicio 5: Puerta del Gremio
+Combinar condiciones usando el operador lógico AND (`&&`).
 
 ```csharp
 using System;
@@ -257,7 +257,7 @@ class GuildGate
 ```
 
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text
@@ -265,9 +265,9 @@ Welcome to the guild hall!
 ```
 
 
-### Exercise 6: Rarity Pull
+### Ejercicio 6: Tirada de Rareza
 
-Combining user input parsing with conditional evaluations.
+Combinar el análisis de la entrada del usuario con evaluaciones condicionales.
 
 
 ```csharp
@@ -293,7 +293,7 @@ class RarityPull
 ```
 
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text
@@ -302,9 +302,9 @@ LEGENDARY DROP! The whole lobby is staring. ✨
 ```
 
 
-### Exercise 7: Buff or Debuff
+### Ejercicio 7: Beneficio o Perjuicio
 
-A complete program integrating user input, logical checks, and multi-branch control flow.
+Un programa completo que integra entrada del usuario, comprobaciones lógicas y control de flujo de múltiples ramas.
 
 
 ```csharp
@@ -338,7 +338,7 @@ class BuffOrDebuff
 ```
 
 
-**Terminal Output:**
+**Salida de la Terminal:**
 
 
 ```text

@@ -1,24 +1,25 @@
 
 
-# 09. Modules
 
-**Spanish version:** [09 - Módulos.md](09%20-%20M%C3%B3dulos.md)
+# 09. Módulos
 
-**Course:** Python
-**Topic:** Python Modules, Custom Modules (`import`), Built-in `datetime`, Python Packages, Package Management (`pip3`), External Packages (`wikipedia`), The Zen of Python (`import this`)
-**Tags:** `#modules` `#random` `#math` `#import`
+**Versión original en inglés:** [09 - Modules.md](./09%20-%20Modules.md)
+
+**Curso:** Python
+**Tema:** Módulos de Python, módulos personalizados (`import`), módulo integrado `datetime`, paquetes de Python, gestión de paquetes (`pip3`), paquetes externos (`wikipedia`), El Zen de Python (`import this`)
+**Etiquetas:** `#modules` `#random` `#math` `#import`
 
 
-A **Module** is a Python file (`.py`) containing statements, functions, and class definitions that revolve around a shared purpose. Python comes with over 200 built-in modules (e.g., `random`, `math`, `datetime`).
+Un **Módulo** es un archivo de Python (`.py`) que contiene sentencias, funciones y definiciones de clases que giran en torno a un propósito compartido. Python viene con más de 200 módulos integrados (por ejemplo, `random`, `math`, `datetime`).
 
 ---
 
 
-## 01. Importing Modules & Random Choices
+## 01. Importando Módulos y Elecciones Aleatorias
 
-The `import` keyword allows access to external or built-in modules.
+La palabra clave `import` permite acceder a módulos externos o integrados.
 
-* `.choices(sequence, k=N)`: Returns a list of `k` randomly selected items from a sequence (items can be selected more than once).
+* `.choices(sequence, k=N)`: Devuelve una lista de `k` elementos seleccionados al azar de una secuencia (los elementos pueden seleccionarse más de una vez).
 
 ```python
 import random
@@ -31,11 +32,11 @@ print(results)
 ```
 
 
-## 02. Importing Specific Items & Aliasing
+## 02. Importando Elementos Específicos y Creando Alias
 
-- `from module import object`: Imports specific functions, variables, or classes directly into the local namespace.
+- `from module import object`: Importa funciones, variables o clases específicas directamente en el ámbito local.
     
-- `as alias`: Renames an imported module or function with a shorthand alias (aliasing).
+- `as alias`: Renombra un módulo o función importado con un alias abreviado (aliasing).
     
 
 
@@ -50,9 +51,9 @@ from math import pi
 
 
 
-## 03. Exercise: Loot Box Simulator (`loot_box.py`)
+## 03. Ejercicio: Simulador de Caja de Botín (`loot_box.py`)
 
-Simulates a gacha loot box selecting three random rarity symbols using `random.choices()`.
+Simula una caja de botín tipo gacha que selecciona tres símbolos de rareza al azar usando `random.choices()`.
 
 
 ```python
@@ -75,11 +76,11 @@ else:
 
 
 
-## 04. Exercise: Orbital Moons (`moons.py`)
+## 04. Ejercicio: Lunas Orbitales (`moons.py`)
 
-Calculates the surface area of a randomly selected moon using `pi` from the `math` module and an aliased `choice` function from `random`.
+Calcula el área superficial de una luna seleccionada al azar usando `pi` del módulo `math` y una función `choice` con alias de `random`.
 
-Formula for surface area of a sphere:
+Fórmula del área superficial de una esfera:
 
 $$area = 4 \pi r^2$$
 
@@ -118,9 +119,9 @@ print(f'{random_moon} area: {round(area, 2)} sq km')
 ---
 
 
-## 05. Creating Custom Modules
+## 05. Creando Módulos Personalizados
 
-Modules are `.py` files containing statements, functions, and variables. Any Python file created in a project can be imported into another file within the same directory using the `import` keyword.
+Los módulos son archivos `.py` que contienen sentencias, funciones y variables. Cualquier archivo de Python creado en un proyecto se puede importar en otro archivo del mismo directorio usando la palabra clave `import`.
 
 ```python
 # combat_math.py
@@ -156,9 +157,9 @@ combat_math.exp(2, 5)        # 32
 
 
 
-## 06. Exercise: Countdown (`raid_messages.py` & `main.py`)
+## 06. Ejercicio: Cuenta Atrás (`raid_messages.py` y `main.py`)
 
-Calculates the remaining days until the raid release using custom module imports and the built-in `datetime` module.
+Calcula los días restantes hasta el lanzamiento de la incursión usando importaciones de módulos personalizados y el módulo integrado `datetime`.
 
 
 ```python
@@ -195,15 +196,15 @@ else:
 
 
 
-## 07. Python Packages & `pip3`
+## 07. Paquetes de Python y `pip3`
 
-- **Package**: A folder containing related modules along with an `__init__.py` file.
+- **Paquete**: Una carpeta que contiene módulos relacionados junto con un archivo `__init__.py`.
     
-- **Libraries**: Large, specialized packages designed for broader application development.
+- **Bibliotecas**: Paquetes grandes y especializados, diseñados para el desarrollo de aplicaciones más amplias.
     
-- **PyPI**: The official Python Package Index containing external open-source packages.
+- **PyPI**: El Índice de Paquetes de Python oficial, que contiene paquetes de código abierto externos.
     
-- **`pip3`**: The command-line package manager used to install external Python packages.
+- **`pip3`**: El gestor de paquetes de línea de comandos usado para instalar paquetes externos de Python.
     
 
 
@@ -213,7 +214,7 @@ pip3 install wikipedia
 ```
 
 
-### Exercise: Wikipedia Query (`wiki.py`)
+### Ejercicio: Consulta a Wikipedia (`wiki.py`)
 
 
 ```python
@@ -226,9 +227,9 @@ print(result)
 
 
 
-## 08. The Zen of Python
+## 08. El Zen de Python
 
-Python includes an easter egg featuring 19 guiding principles for writing clean and maintainable code, written by Tim Peters.
+Python incluye un huevo de pascua con 19 principios Rectores para escribir código limpio y mantenible, escritos por Tim Peters.
 
 
 ```python

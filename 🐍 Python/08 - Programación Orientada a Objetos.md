@@ -1,28 +1,29 @@
 
 
 
-# 08. Object-Oriented Programming (OOP)
 
-**Spanish version:** [08 - Programación Orientada a Objetos.md](08%20-%20Programaci%C3%B3n%20Orientada%20a%20Objetos.md)
+# 08. Programación Orientada a Objetos (POO)
 
-**Course:** Python
-**Topic:** Object-Oriented Programming (OOP), Classes, Objects & Instances, Constructor Method (__init__), Instance Methods
-**Tags:** `#python` `#oop` `#classes` `#objects` `#data-structures`
+**Versión original en inglés:** [08 - Object-Oriented Programming.md](./08%20-%20Object-Oriented%20Programming.md)
+
+**Curso:** Python
+**Tema:** Programación orientada a objetos (POO), clases, objetos e instancias, método constructor (__init__), métodos de instancia
+**Etiquetas:** `#python` `#oop` `#classes` `#objects` `#data-structures`
 
 
-Object-Oriented Programming (OOP) allows us to model real-world entities by structuring code into reusable templates called **Classes** and creating concrete instances called **Objects**.
+La Programación Orientada a Objetos (POO) nos permite modelar entidades del mundo real estructurando el código en plantillas reutilizables llamadas **Clases** y creando instancias concretas llamadas **Objetos**.
 
 ---
 
 
-## 01. Classes (`class`)
+## 01. Clases (`class`)
 
-A **Class** serves as a blueprint for defining the structure and behaviors that objects created from it will possess.
+Una **Clase** sirve como plano para definir la estructura y los comportamientos que tendrán los objetos creados a partir de ella.
 
-By convention in Python, class names use **PascalCase** (capitalizing the first letter of each word).
+Por convención en Python, los nombres de clase usan **PascalCase** (con la primera letra de cada palabra en mayúscula).
 
 
-### Basic Syntax with Default Values
+### Sintaxis Básica con Valores por Defecto
 
 ```python
 class Guild:
@@ -34,9 +35,9 @@ class Guild:
 
 
 
-## 02. Objects & Instance Creation
+## 02. Objetos y Creación de Instancias
 
-An **Object** is a concrete instance of a class. Attributes can be accessed and modified individually using dot notation (`.`).
+Un **Objeto** es una instancia concreta de una clase. Los atributos se pueden acceder y modificar individualmente usando la notación de punto (`.`).
 
 
 ```python
@@ -54,13 +55,13 @@ print(vars(iron_brothers))
 # Output: {'name': 'The Iron Brothers', 'faction': 'Vanguard Clan', 'level': 42, 'is_recruiting': False}
 ```
 
-**Tip:** `vars()` Function The built-in `vars(object)` function returns a dictionary containing all attributes assigned to that specific instance.
+**Consejo:** Función `vars()` La función integrada `vars(object)` devuelve un diccionario con todos los atributos asignados a esa instancia concreta.
 
 
 
-## 03. The `__init__()` Constructor Method
+## 03. El Método Constructor `__init__()`
 
-Assigning attributes line by line is tedious and inefficient. The `__init__()` constructor method runs automatically when instantiating a class, allowing attributes to be initialized dynamically upon creation.
+Asignar atributos línea a línea es tedioso e ineficiente. El método constructor `__init__()` se ejecuta automáticamente al instanciar una clase, lo que permite inicializar los atributos de forma dinámica en el momento de la creación.
 
 
 ```python
@@ -79,16 +80,16 @@ print(vars(hometown))
 print(vars(destination))
 ```
 
-**Important:** The `self` Parameter The `self` parameter refers implicitly to the current instance of the object being created or manipulated. It must always be the first parameter in methods defined inside a class.
+**Importante:** El Parámetro `self` El parámetro `self` se refiere implícitamente a la instancia actual del objeto que se está creando o manipulando. Siempre debe ser el primer parámetro en los métodos definidos dentro de una clase.
 
 
 ---
 
 
-## 04. Instance Methods
+## 04. Métodos de Instancia
 
 
-**Instance Methods** are functions defined inside a class that operate on instances of that class. They can read or modify the object's attributes and must always take `self` as their first parameter.
+Los **Métodos de Instancia** son funciones definidas dentro de una clase que operan sobre instancias de esa clase. Pueden leer o modificar los atributos del objeto y siempre deben recibir `self` como su primer parámetro.
 
 
 ```python
@@ -116,9 +117,9 @@ kai.unlock_endgame()
 
 
 
-## 05. Exercise: Player Inventory (`player_inventory.py`)
+## 05. Ejercicio: Inventario del Jugador (`player_inventory.py`)
 
-Implementation of a simple inventory class managing gold state through instance methods.
+Implementación de una clase de inventario sencilla que gestiona el estado del oro mediante métodos de instancia.
 
 
 ```python
@@ -151,9 +152,9 @@ player.display_gold()
 
 
 
-## 06. Final Project: Bestiary (`bestiary.py`)
+## 06. Proyecto Final: Bestiario (`bestiary.py`)
 
-A comprehensive model representing bestiary entries using attributes, status checks, and formatted output methods.
+Un modelo completo que representa las entradas de un bestiario usando atributos, comprobaciones de estado y métodos de salida formateada.
 
 
 ```python

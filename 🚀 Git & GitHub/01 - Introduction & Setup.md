@@ -1,6 +1,8 @@
 
 # 01. Introduction & Setup
 
+**Spanish version:** [01 - Introducción y Configuración.md](01%20-%20Introducci%C3%B3n%20y%20Configuraci%C3%B3n.md)
+
 **Course:** Git & GitHub
 **Topic:** Version Control Overview, Environment Verification & Repository Setup
 **Tags:** `#git` `#github` `#setup`

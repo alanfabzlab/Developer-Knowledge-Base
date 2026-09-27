@@ -1,6 +1,8 @@
 
 # 03. Lists & Linear Search
 
+**Spanish version:** [03 - Listas y Búsqueda Lineal.md](03%20-%20Listas%20y%20B%C3%BAsqueda%20Lineal.md)
+
 **Course:** Data Structures & Algorithms
 **Topic:** Lists, Indexing, Slicing, List Methods & Linear Search
 **Tags:** `#dsa` `#lists` `#linear-search`
