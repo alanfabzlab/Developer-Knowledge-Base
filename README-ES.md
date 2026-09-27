@@ -28,14 +28,14 @@ Cada dominio es autónomo y abre con un **MOC** (Mapa de Contenidos): una nota �
 que enumera cada tema con una descripción de una línea, para entrar por el mapa en lugar
 de recorrer una carpeta.
 
-| Dominio / Lenguaje | Descripción | Notas | Estado | Mapa de Contenidos |
+| Domain / Language · Dominio / Lenguaje | Description · Descripción | Notes · Notas | Status · Estado | Map of Content · Mapa de Contenidos |
 | :--- | :--- | :--- | :--- | :--- |
-| 🐍 **Python** | Sintaxis básica, control de flujo, estructuras de datos, POO y ecosistemas | 11 EN · 11 ES | 🟢 Activo | [Ir al MOC](%F0%9F%90%8D%20Python/README-ES.md) |
-| 🚀 **Git & GitHub** | Control de versiones, estrategias de ramificación, colaboración y flujos de PR | 4 EN · 4 ES | 🟢 Activo | [Ir al MOC](%F0%9F%9A%80%20Git%20&%20GitHub/README-ES.md) |
-| 🟣 **CSharp** | Tipado fuerte, POO, ecosistema .NET y arquitectura del motor Unity | 8 EN · 7 ES | 🟢 Activo | [Ir al MOC](%F0%9F%9F%A3%20CSharp/README-ES.md) |
-| 🧮 **Data Structures & Algorithms** | Estructuras de datos fundamentales, eficiencia de algoritmos y resolución de problemas | 3 EN · 3 ES | 🟢 Activo | [Ir al MOC](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
-| ⚙️ **Software Engineering** | Patrones de diseño, algoritmos y arquitectura de sistemas | — | 🟡 Planificado | *Próximamente* |
-| 🎮 **Game Architecture** | Mecánicas interactivas, patrones de motor y física | — | 🟡 Planificado | *Próximamente* |
+| 🐍 **Python** | Core syntax, control flow, data structures, OOP & ecosystems<br>Sintaxis básica, control de flujo, estructuras de datos, POO y ecosistemas | 11 EN · 11 ES | 🟢 Active / Activo | [EN MOC](%F0%9F%90%8D%20Python/README.md)<br>[ES MOC](%F0%9F%90%8D%20Python/README-ES.md) |
+| 🚀 **Git & GitHub** | Version control, branching strategies, collaboration & PR workflows<br>Control de versiones, estrategias de ramificación, colaboración y flujos de PR | 4 EN · 4 ES | 🟢 Active / Activo | [EN MOC](%F0%9F%9A%80%20Git%20&%20GitHub/README.md)<br>[ES MOC](%F0%9F%9A%80%20Git%20&%20GitHub/README-ES.md) |
+| 🟣 **CSharp** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture<br>Tipado fuerte, POO, ecosistema .NET y arquitectura del motor Unity | 8 EN · 7 ES | 🟢 Active / Activo | [EN MOC](%F0%9F%9F%A3%20CSharp/README.md)<br>[ES MOC](%F0%9F%9F%A3%20CSharp/README-ES.md) |
+| 🧮 **Data Structures & Algorithms** | Core data structures, algorithm efficiency & problem solving<br>Estructuras de datos fundamentales, eficiencia de algoritmos y resolución de problemas | 3 EN · 3 ES | 🟢 Active / Activo | [EN MOC](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md)<br>[ES MOC](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
+| ⚙️ **Software Engineering / Ingeniería de Software** | Design patterns, algorithms & system architecture<br>Patrones de diseño, algoritmos y arquitectura de sistemas | — | 🟡 Planned / Planificado | *Coming soon*<br>*Próximamente* |
+| 🎮 **Game Architecture / Arquitectura de Juegos** | Interactive mechanics, engine patterns & physics<br>Mecánicas interactivas, patrones de motor y física | — | 🟡 Planned / Planificado | *Coming soon*<br>*Próximamente* |
 
 > El dominio de C# tiene una nota extra solo en inglés: `00b - CSharp Cheatsheet.md` es un
 > marcador de posición vacío que aún no tiene su pareja en español, por eso figura 8 EN · 7 ES.
@@ -60,10 +60,10 @@ y los nombres de clase permanecen en inglés.
 
 ## 🌍 Idiomas
 
-| Versión | Ruta de entrada | Estado |
+| Version · Versión | Entry point · Ruta de entrada | Status · Estado |
 | :--- | :--- | :--- |
-| 🇬🇧 Inglés (original) | [README.md](README.md) | 🟢 Base de referencia |
-| 🇪🇸 Español (traducción) | [README-ES.md](README-ES.md) | 🟢 Sincronizado |
+| 🇬🇧 English (original) · Inglés (original) | [README.md](README.md) | 🟢 Reference base · Base de referencia |
+| 🇪🇸 Spanish (translation) · Español (traducción) | [README-ES.md](README-ES.md) | 🟢 In sync · Sincronizado |
 
 Cada nota existe en ambos idiomas. Las notas en español incluyen una línea
 `**Versión original en inglés:**` en la parte superior que enlaza a su nota original.
@@ -76,12 +76,12 @@ en inglés y, tras el separador `·`, su traducción al español.
 
 ```text
 Developer-Knowledge-Base/
-├── README.md                              <-- portada en inglés (versión de referencia)
-├── README-ES.md                           <-- portada en español (espejo traducido)
+├── README.md                              <-- English homepage / Portada en inglés (reference / referencia)
+├── README-ES.md                           <-- Spanish homepage / Portada en español (mirror / espejo)
 ├── LICENSE
 ├── .gitignore
 │
-├── 🐍 Python/                             <-- 11 temas · EN + ES
+├── 🐍 Python/                             <-- 11 topics / temas · EN + ES
 │   ├── README.md          ·  README-ES.md
 │   ├── 00b - Python Cheatsheet.md         ·  00b - Chuleta de Python.md
 │   ├── 00c - Python Cheatsheet II.md      ·  00c - Chuleta de Python II.md
@@ -94,18 +94,18 @@ Developer-Knowledge-Base/
 │   ├── 07 - Functions.md                  ·  07 - Funciones.md
 │   ├── 08 - Object-Oriented Programming.md  ·  08 - Programación Orientada a Objetos.md
 │   ├── 09 - Modules.md                    ·  09 - Módulos.md
-│   └── z_attachments/                     <-- carpeta local de recursos (vacía, sin versionar)
+│   └── z_attachments/                     <-- local assets / recursos locales (empty / vacía, untracked)
 │
-├── 🚀 Git & GitHub/                       <-- 4 temas · EN + ES
+├── 🚀 Git & GitHub/                       <-- 4 topics / temas · EN + ES
 │   ├── README.md          ·  README-ES.md
 │   ├── 01 - Introduction & Setup.md        ·  01 - Introducción y Configuración.md
 │   ├── 02 - Core Workflow.md               ·  02 - Flujo de Trabajo Principal.md
 │   ├── 03 - Collaboration & Branching.md   ·  03 - Colaboración y Ramas.md
 │   └── 04 - Advanced Workflow & PRs.md     ·  04 - Flujo Avanzado y PRs.md
 │
-├── 🟣 CSharp/                             <-- 7 temas · EN + ES (+ 1 solo EN)
+├── 🟣 CSharp/                             <-- 7 topics / temas · EN + ES (+ 1 EN-only / solo EN)
 │   ├── README.md          ·  README-ES.md
-│   ├── 00b - CSharp Cheatsheet.md         <-- marcador vacío, sin pareja ES
+│   ├── 00b - CSharp Cheatsheet.md         <-- empty placeholder / marcador vacío, no ES pair / sin pareja ES
 │   ├── 01 - Press Start.md                ·  01 - Pulsa Start.md
 │   ├── 02 - Typecast.md                   ·  02 - Conversión de Tipos.md
 │   ├── 03 - Control Flow.md               ·  03 - Control de Flujo.md
@@ -114,29 +114,34 @@ Developer-Knowledge-Base/
 │   ├── 06 - Methods.md                    ·  06 - Métodos.md
 │   └── Mad Dungeon Master - Checkpoint Project.md  ·  Mad Dungeon Master - Proyecto de Hito.md
 │
-└── 🧮 Data Structures & Algorithms/       <-- 3 temas · EN + ES
+└── 🧮 Data Structures & Algorithms/       <-- 3 topics / temas · EN + ES
     ├── README.md          ·  README-ES.md
     ├── 01 - Introduction to DSA.md        ·  01 - Introducción a Estructuras de Datos y Algoritmos.md
     ├── 02 - Algorithms & Efficiency.md    ·  02 - Algoritmos y Eficiencia.md
     └── 03 - Lists & Linear Search.md      ·  03 - Listas y Búsqueda Lineal.md
 ```
 
-> El árbol anterior muestra la estructura real del repositorio. Cada módulo incluye su
-> `README.md` (inglés) y su `README-ES.md` (español), y cada nota existe en ambos idiomas.
+> The tree above shows the real structure of the repository / El árbol anterior muestra la
+> estructura real del repositorio. Every module ships both a
+> `README.md` (English) and a `README-ES.md` (Spanish), and every note exists in both languages /
+> Cada módulo incluye su `README.md` (inglés) y su `README-ES.md` (español), y cada nota existe
+> en ambos idiomas.
 
-**Convenciones que conviene conocer**
+**Conventions worth knowing / Convenciones que conviene conocer**
 
-| Convención | Significado |
+| Convention · Convención | Meaning · Significado |
 | :--- | :--- |
-| `README.md` / `README-ES.md` | El MOC del dominio. Empieza por aquí. |
-| `NN - Título.md` | Una nota de tema. `NN` indica el orden de aprendizaje. |
-| `00b` / `00c` | Chuletas, para consultar bajo demanda. |
-| `z_attachments/` | Carpeta local para diagramas. Sin versionar. |
-| Emparejamiento | Cada `.md` tiene un original en inglés; la traducción va junto a él. |
+| `README.md` / `README-ES.md` | The MOC of a domain. Start here.<br>El MOC de un dominio. Empieza por aquí. |
+| `NN - Title.md` | A topic note. `NN` encodes the learning order.<br>Una nota de tema. `NN` indica el orden de aprendizaje. |
+| `00b` / `00c` | Cheatsheets, consulted on demand.<br>Chuletas, para consultar bajo demanda. |
+| `z_attachments/` | Local scratch folder for diagrams. Not versioned.<br>Carpeta local para diagramas. Sin versionar. |
+| Pairing · Emparejamiento | Every `.md` has an English original; the Spanish translation sits next to it.<br>Cada `.md` tiene un original en inglés; la traducción va junto a él. |
 
-**No se versiona a propósito** — figura en `.gitignore` para que la vault siga siendo
-portable: `.obsidian/` (estado local de la vault), `.DS_Store` y las carpetas de
-herramientas del asistente `.copilot/`, `.opencode/`, `copilot/`.
+**Not versioned on purpose / No se versiona a propósito** — listed in `.gitignore` so the
+vault stays portable / figura en `.gitignore` para que la vault siga siendo portable:
+`.obsidian/` (local vault state / estado local de la vault), `.DS_Store`, and the assistant
+tooling folders / y las carpetas de herramientas del asistente `.copilot/`, `.opencode/`,
+`copilot/`.
 
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
