@@ -10,11 +10,11 @@
   <img src="https://img.shields.io/badge/Environment-macOS-lightgrey?style=for-the-badge&logo=apple" alt="macOS">
 </p>
 
-> [!NOTE]
-> This repository module serves as the central Map of Content (MOC) for C# syntax, object-oriented design patterns, .NET ecosystem fundamentals, and Unity game architecture notes inside this Obsidian vault. Every example and exercise is framed around video game development (combat, loot, quests, party play, and engine tooling).
+**Note:**
+This repository module serves as the central Map of Content (MOC) for C# syntax, object-oriented design patterns, .NET ecosystem fundamentals, and Unity game architecture notes inside this Obsidian vault. Every example and exercise is framed around video game development (combat, loot, quests, party play, and engine tooling).
 
-> [!TIP]
-> **Learning Roadmap:** Master strong typing and core control structures first, then progress into Object-Oriented Programming (OOP) paradigms, memory management, and real-world game system engineering.
+**Tip:**
+**Learning Roadmap:** Master strong typing and core control structures first, then progress into Object-Oriented Programming (OOP) paradigms, memory management, and real-world game system engineering.
 
 ---
 

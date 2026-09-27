@@ -82,7 +82,7 @@ print('Total items: ' + str(total_items) + ' items collected!')
 
 By default, Python runs code sequentially line by line. **Control Flow** allows programs to execute different code blocks depending on specific conditions.
 
-> [!NOTE] Concept Think of control flow as a crossroads: if a condition evaluates to `True`, the program takes one path; if `False`, it takes another.
+**Note:** Concept Think of control flow as a crossroads: if a condition evaluates to `True`, the program takes one path; if `False`, it takes another.
 
 
 ### 🎲 Damage Roll Simulation (`damage_roll.py`)

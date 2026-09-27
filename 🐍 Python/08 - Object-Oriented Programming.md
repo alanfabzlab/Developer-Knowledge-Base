@@ -52,7 +52,7 @@ print(vars(iron_brothers))
 # Output: {'name': 'The Iron Brothers', 'faction': 'Vanguard Clan', 'level': 42, 'is_recruiting': False}
 ```
 
-> [!TIP] `vars()` Function The built-in `vars(object)` function returns a dictionary containing all attributes assigned to that specific instance.
+**Tip:** `vars()` Function The built-in `vars(object)` function returns a dictionary containing all attributes assigned to that specific instance.
 
 
 
@@ -77,7 +77,7 @@ print(vars(hometown))
 print(vars(destination))
 ```
 
-> [!IMPORTANT] The `self` Parameter The `self` parameter refers implicitly to the current instance of the object being created or manipulated. It must always be the first parameter in methods defined inside a class.
+**Important:** The `self` Parameter The `self` parameter refers implicitly to the current instance of the object being created or manipulated. It must always be the first parameter in methods defined inside a class.
 
 
 ---

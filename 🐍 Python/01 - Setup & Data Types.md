@@ -15,8 +15,8 @@
 
 ## 01. Setting Up & History
 
-> [!NOTE] Key Information
-> **Python** was created by **Guido van Rossum** in the early 1990s. It is designed to be readable, high-level, and versatile.
+**Note:** Key Information
+**Python** was created by **Guido van Rossum** in the early 1990s. It is designed to be readable, high-level, and versatile.
 
 ### Common Use Cases
 - 🎮 Game Development & Engine Scripting
@@ -41,8 +41,8 @@ print('Hello World!')
 
 ```
 
-> [!TIP] Execution Order
-> Python executes code line by line, sequentially from top to bottom.
+**Tip:** Execution Order
+Python executes code line by line, sequentially from top to bottom.
 
 Python
 
@@ -108,11 +108,11 @@ print("Favorite Emoji: 🎮")
 
 ## 05. Variables & Data Types
 
-> [!NOTE] What is a Variable?
-> 
-> A **variable** acts as a named container that holds a data value in memory.
-> 
-> Assign values using the equal sign (`=`): `variable_name = value`.
+**Note:** What is a Variable?
+
+A **variable** acts as a named container that holds a data value in memory.
+
+Assign values using the equal sign (`=`): `variable_name = value`.
 
 
 ```python
@@ -199,8 +199,7 @@ print(c)
 
 To interact with users, Python provides the built-in `input()` function.
 
-> [!WARNING] Default Input Type `input()` **always** returns the user response as a `str` (String). To perform calculations, cast it using `int()` or `float()`.
-> 
+**Warning:** Default Input Type `input()` **always** returns the user response as a `str` (String). To perform calculations, cast it using `int()` or `float()`.
 
 
 ### ⌨️ Standard Input

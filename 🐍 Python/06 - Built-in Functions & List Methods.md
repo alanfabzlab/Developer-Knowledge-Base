@@ -113,14 +113,13 @@ print(party['Nyx'])
 # Output: Mage
 ```
 
-> [!NOTE] Key Rules
-> 
-> - Each **key** must be unique.
->     
-> - **Keys** map directly to values (any data type).
->     
-> - **Keys** are immutable and cannot be modified after creation.
->     
+**Note:** Key Rules
+
+- Each **key** must be unique.
+
+- **Keys** map directly to values (any data type).
+
+- **Keys** are immutable and cannot be modified after creation.
 
 
 ### Dictionary Methods
@@ -149,14 +148,12 @@ loot_favorites = {'Sword', 'Shield', 'Potion', 'Helm', 'Boots'}
 spell_favorites = {'Staff', 'Wand', 'Potion', 'Scroll', 'Rune'}
 ```
 
-> [!WARNING] Creating Empty Sets Declaring `{}` creates an empty **dictionary**, not a set. To initialize an empty set, use `set()`:
-> 
-> 
-> ```python
-> empty_set = set()
-> ```
-> 
-> 
+**Warning:** Creating Empty Sets Declaring `{}` creates an empty **dictionary**, not a set. To initialize an empty set, use `set()`:
+
+
+```python
+empty_set = set()
+```
 
 
 ### Set Methods
@@ -170,7 +167,7 @@ spell_favorites = {'Staff', 'Wand', 'Potion', 'Scroll', 'Rune'}
 
 Python
 
-```
+```python
 # Union
 print(loot_favorites.union(spell_favorites))
 

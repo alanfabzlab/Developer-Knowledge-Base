@@ -10,11 +10,11 @@ _A dynamic knowledge map for transforming Python syntax into functional game pro
 
 </div>
 
-> [!NOTE]
-> This page is the central map for the Python notes in this Obsidian vault. Every exercise and code sample is framed around video game development (combat, loot, quests, party play, and engine tooling).
+**Note:**
+This page is the central map for the Python notes in this Obsidian vault. Every exercise and code sample is framed around video game development (combat, loot, quests, party play, and engine tooling).
 
-> [!TIP]
-> Start with the **Core Language Foundations**, then follow the map toward data structures, architecture, and real-world applications.
+**Tip:**
+Start with the **Core Language Foundations**, then follow the map toward data structures, architecture, and real-world applications.
 
 
 ## 🗺️ Map of Content
