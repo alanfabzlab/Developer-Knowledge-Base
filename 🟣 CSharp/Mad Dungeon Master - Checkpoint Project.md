@@ -2,10 +2,9 @@
 
 # Checkpoint Project: Mad Dungeon Master 👹
 
-> [!INFO] Metadata
-> **Course:** C#
-> **Topic:** Checkpoint Project: Boss Script Generator
-> **Tags:** `#csharp` `#checkpoint` `#console-app`
+**Course:** C#
+**Topic:** Checkpoint Project: Boss Script Generator
+**Tags:** `#csharp` `#checkpoint` `#console-app`
 
 
 - **Language:** C# / .NET

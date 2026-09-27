@@ -5,10 +5,9 @@
 
 ![Status Badge](https://img.shields.io/badge/Topic-Control%20Flow-orange?style=for-the-badge)
 
-> [!INFO] Metadata
-> **Course:** Python
-> **Topic:** Common Errors, Conditional Statements, Relational & Logical Operators
-> **Tags:** `#python` `#control-flow` `#logic` `#fundamentals`
+**Course:** Python
+**Topic:** Common Errors, Conditional Statements, Relational & Logical Operators
+**Tags:** `#python` `#control-flow` `#logic` `#fundamentals`
 
 
 ---

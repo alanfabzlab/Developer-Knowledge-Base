@@ -4,10 +4,9 @@
 
 # 05 - Lists
 
-> [!INFO] Metadata
-> **Course:** Python
-> **Topic:** Python Lists, Indexing & Slicing, Built-in Functions, List Methods, Iterating Over Lists
-> **Tags:** `#python` `#lists` `#data-structures` `#arrays` `#fundamentals`
+**Course:** Python
+**Topic:** Python Lists, Indexing & Slicing, Built-in Functions, List Methods, Iterating Over Lists
+**Tags:** `#python` `#lists` `#data-structures` `#arrays` `#fundamentals`
 
 
 A **list** is an ordered collection of items stored in a single variable. Lists are defined using square brackets `[]` with items separated by commas.

@@ -1,10 +1,9 @@
 
 # 06. Methods in C#
 
-> [!INFO] Metadata
-> **Course:** C#
-> **Topic:** Methods, Parameters & Return Values
-> **Tags:** `#csharp` `#methods` `#functions`
+**Course:** C#
+**Topic:** Methods, Parameters & Return Values
+**Tags:** `#csharp` `#methods` `#functions`
 
 
 A method is a reusable block of code designed to perform a specific task. Methods help organize code, avoid duplication, and break down complex problems into modular pieces.

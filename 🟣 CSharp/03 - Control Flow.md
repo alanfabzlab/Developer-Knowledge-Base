@@ -2,10 +2,9 @@
 
 # 03. Control Flow in C#
 
-> [!INFO] Metadata
-> **Course:** C#
-> **Topic:** Conditionals & Control Flow
-> **Tags:** `#csharp` `#control-flow` `#conditionals`
+**Course:** C#
+**Topic:** Conditionals & Control Flow
+**Tags:** `#csharp` `#control-flow` `#conditionals`
 
 
 Control flow describes the order in which individual statements, instructions, or function calls are executed or evaluated. By default, code executes line-by-line from top to bottom, but control flow statements allow making decisions based on dynamic conditions.

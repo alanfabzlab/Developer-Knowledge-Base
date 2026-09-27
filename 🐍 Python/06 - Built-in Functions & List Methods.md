@@ -1,9 +1,8 @@
 # 06 - Built-in Functions & List Methods
 
-> [!INFO] Metadata
-> **Course:** Python
-> **Topic:** Built-in Functions, List Methods, Nested Lists & Matrices, Dictionaries, Sets
-> **Tags:** `#python` `#list-methods` `#built-in-functions` `#data-structures` `#iteration`
+**Course:** Python
+**Topic:** Built-in Functions, List Methods, Nested Lists & Matrices, Dictionaries, Sets
+**Tags:** `#python` `#list-methods` `#built-in-functions` `#data-structures` `#iteration`
 
 ## 06. Boss Rush Log Project (`boss_rush_log.py`)
 

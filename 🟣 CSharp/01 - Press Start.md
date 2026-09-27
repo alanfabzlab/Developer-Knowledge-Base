@@ -1,10 +1,9 @@
 
 # 01. Press Start
 
-> [!INFO] Metadata
-> **Course:** C#
-> **Topic:** Environment Setup, IDE Configuration & First Program
-> **Tags:** `#csharp` `#setup` `#fundamentals`
+**Course:** C#
+**Topic:** Environment Setup, IDE Configuration & First Program
+**Tags:** `#csharp` `#setup` `#fundamentals`
 
 
 

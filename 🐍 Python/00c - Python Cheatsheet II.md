@@ -2,10 +2,9 @@
 
 # Python Cheatsheet II
 
-> [!INFO] Metadata
-> **Course:** Python
-> **Topic:** Lists, List Functions & Methods, Functions, Parameters, Scope, Classes & Objects, Modules
-> **Tags:** `#python` `#cheatsheet` `#syntax` `#reference`
+**Course:** Python
+**Topic:** Lists, List Functions & Methods, Functions, Parameters, Scope, Classes & Objects, Modules
+**Tags:** `#python` `#cheatsheet` `#syntax` `#reference`
 
 
 

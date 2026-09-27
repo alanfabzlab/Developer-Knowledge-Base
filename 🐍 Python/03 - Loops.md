@@ -1,9 +1,8 @@
 # 03 - Loops
 
-> [!INFO] Metadata
-> **Course:** Python
-> **Topic:** Nested If Statements, while Loops, for Loops & range(), String Interpolation, Rarity Roll
-> **Tags:** `#python` `#loops` `#iteration` `#while-loop` `#for-loop` `#logic`
+**Course:** Python
+**Topic:** Nested If Statements, while Loops, for Loops & range(), String Interpolation, Rarity Roll
+**Tags:** `#python` `#loops` `#iteration` `#while-loop` `#for-loop` `#logic`
 
 ## Bonus: Nested If Statements
 

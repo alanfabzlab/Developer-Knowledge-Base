@@ -5,10 +5,9 @@
 
 ![Status Badge](https://img.shields.io/badge/Topic-Functions-orange?style=for-the-badge&logo=python&logoColor=white)
 
-> [!INFO] Metadata
-> **Course:** Python
-> **Topic:** Function Definition, Parameters, Return Values, Variable Scope & Lambda Functions
-> **Tags:** `#python` `#programming` `#functions` `#dry` `#open-source` `#notes`
+**Course:** Python
+**Topic:** Function Definition, Parameters, Return Values, Variable Scope & Lambda Functions
+**Tags:** `#python` `#programming` `#functions` `#dry` `#open-source` `#notes`
 
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />

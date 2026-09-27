@@ -1,10 +1,9 @@
 
 # 02. Core Workflow & Local Push
 
-> [!INFO] Metadata
-> **Course:** Git & GitHub
-> **Topic:** Working Directory, Staging, Commits & Pushing
-> **Tags:** `#git` `#workflow` `#commits`
+**Course:** Git & GitHub
+**Topic:** Working Directory, Staging, Commits & Pushing
+**Tags:** `#git` `#workflow` `#commits`
 
 
 

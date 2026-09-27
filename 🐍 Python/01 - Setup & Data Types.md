@@ -6,17 +6,16 @@
 ![Python Badge](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)![Status Badge](https://img.shields.io/badge/Difficulty-Beginner-brightgreen?style=for-the-badge)
 
 
-> [!INFO] Metadata
-> **Course:** Python
-> **Topic:** Environment Setup, Output, Variables, Data Types & Arithmetic Operators
-> **Tags:** `#python` `#programming` `#basics` `#open-source` `#notes`
+**Course:** Python
+**Topic:** Environment Setup, Output, Variables, Data Types & Arithmetic Operators
+**Tags:** `#python` `#programming` `#basics` `#open-source` `#notes`
 
 
 ---
 
 ## 01. Setting Up & History
 
-> [!INFO] Key Information
+> [!NOTE] Key Information
 > **Python** was created by **Guido van Rossum** in the early 1990s. It is designed to be readable, high-level, and versatile.
 
 ### Common Use Cases

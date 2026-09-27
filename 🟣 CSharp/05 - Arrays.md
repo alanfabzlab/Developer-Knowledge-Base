@@ -1,10 +1,9 @@
 
 # 05. Arrays in C#
 
-> [!INFO] Metadata
-> **Course:** C#
-> **Topic:** Arrays & Collection Access
-> **Tags:** `#csharp` `#arrays` `#collections`
+**Course:** C#
+**Topic:** Arrays & Collection Access
+**Tags:** `#csharp` `#arrays` `#collections`
 
 
 An array is a fixed-size collection of elements of the same data type stored in contiguous memory positions.

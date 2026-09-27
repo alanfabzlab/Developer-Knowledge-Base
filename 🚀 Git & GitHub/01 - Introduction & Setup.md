@@ -1,10 +1,9 @@
 
 # 01. Introduction & Setup
 
-> [!INFO] Metadata
-> **Course:** Git & GitHub
-> **Topic:** Version Control Overview, Environment Verification & Repository Setup
-> **Tags:** `#git` `#github` `#setup`
+**Course:** Git & GitHub
+**Topic:** Version Control Overview, Environment Verification & Repository Setup
+**Tags:** `#git` `#github` `#setup`
 
 
 
