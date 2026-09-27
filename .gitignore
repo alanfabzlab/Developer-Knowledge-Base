@@ -1,3 +1,9 @@
+# Local vault state
 .obsidian/
 .DS_Store
+
+# Assistant tooling (not portable: requires a local Copilot Plus licence
+# and is updated independently of this vault)
+.copilot/
+.opencode/
 copilot/
