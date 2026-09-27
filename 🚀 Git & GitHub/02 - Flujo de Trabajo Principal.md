@@ -27,13 +27,13 @@ El comando `git add` mueve los cambios del directorio de trabajo al área de pre
 Bash
 
 ```bash
-# Add a single file to staging
+# Añade un solo archivo al área de preparación
 git add boss_ai.cs
 
-# Add all changed files in the working directory
+# Añade todos los archivos modificados del directorio de trabajo
 git add .
 
-# Add all files matching a specific extension
+# Añade todos los archivos con una extensión específica
 git add *.cs
 ```
 
@@ -44,7 +44,7 @@ Un commit captura una instantánea de los archivos preparados junto con un mensa
 Bash
 
 ```bash
-# Create a commit with a message
+# Crea un commit con un mensaje
 git commit -m "feat(combat): agrega tabla de fases de agregacion del jefe"
 ```
 
@@ -58,7 +58,7 @@ _Buena práctica:_ Mantén los mensajes de commit cortos, claros y descriptivos 
 Bash
 
 ```bash
-# Check staged, unstaged, and untracked files
+# Comprueba los archivos preparados, no preparados y sin seguimiento
 git status
 ```
 
@@ -68,10 +68,10 @@ git status
 Bash
 
 ```bash
-# First time pushing a new branch (sets upstream)
+# Primera vez que subes una rama nueva (establece el upstream)
 git push -u origin main
 
-# Subsequent pushes
+# Subidas posteriores
 git push
 ```
 

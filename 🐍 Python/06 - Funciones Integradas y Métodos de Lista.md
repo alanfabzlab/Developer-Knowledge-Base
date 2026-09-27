@@ -40,11 +40,11 @@ for cosa in cosas_derrotar:
 Una **lista anidada** es una lista que contiene otras listas como elementos.
 
 ```python
-# Mixed nested list
+# Lista anidada mixta
 mi_lista = ['a', 'b', 'c', [1, 2, 3]]
 
-# Accessing elements inside a nested list
-print(mi_lista[3][1]) # Output: 2
+# Accediendo a elementos dentro de una lista anidada
+print(mi_lista[3][1]) # Salida: 2
 ```
 
 
@@ -73,12 +73,12 @@ mapa_batalla = [
   ['S', 'B', 'T']
 ]
 
-# Legend: M = mountain, B = boss spawn, S = shop, T = treasure
+# Leyenda: M = montaña, B = aparición de jefe, S = tienda, T = tesoro
 
-# Accessing row 2, column 1
+# Accediendo a la fila 2, columna 1
 fila = 2
 columna = 1
-print(mapa_batalla[fila][columna]) # Output: B
+print(mapa_batalla[fila][columna]) # Salida: B
 ```
 
 
@@ -112,7 +112,7 @@ Los elementos se recuperan usando indexación por clave `[key]` en lugar de índ
 
 ```python
 print(grupo['Nyx']) 
-# Output: Mage
+# Salida: Mago
 ```
 
 **Nota:** Reglas de las Claves
@@ -170,16 +170,16 @@ conjunto_vacio = set()
 Python
 
 ```python
-# Union
+# Unión
 print(favoritos_botin.union(favoritos_hechizos))
 
-# Intersection
+# Intersección
 print(favoritos_botin.intersection(favoritos_hechizos))
-# Output: {'Potion'}
+# Salida: {'Poción'}
 
-# Difference
+# Diferencia
 print(favoritos_botin.difference(favoritos_hechizos))
-# Output: {'Sword', 'Shield', 'Helm', 'Boots'}
+# Salida: {'Espada', 'Escudo', 'Yelmo', 'Botas'}
 ```
 
 ## Resumen: Visión General de Estructuras de Datos

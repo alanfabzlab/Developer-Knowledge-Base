@@ -28,10 +28,10 @@ class ArrayFoundations
 {
     static void Main()
     {
-        // String array containing boss names
+        // Arreglo de strings con nombres de jefes
         string[] jefes = { "Guardián del Tiempo", "Segador del Vacío", "Coloso de Hierro", "Reina de Escarcha" };
 
-        // Integer array containing corresponding threat levels
+        // Arreglo de enteros con los niveles de amenaza correspondientes
         int[] nivelesAmenaza = { 10, 9, 8, 10 };
     }
 }
@@ -60,13 +60,13 @@ class BossThemes
         };
 
         Console.WriteLine("Cinematografía de apertura:");
-        Console.WriteLine(temas[0]); // Output: Overture of the Kingdom
+        Console.WriteLine(temas[0]); // Salida: Obertura del Reino
 
         Console.WriteLine("Ruinas Subterráneas:");
-        Console.WriteLine(temas[2]); // Output: Echoing Caverns
+        Console.WriteLine(temas[2]); // Salida: Cavernas Resonantes
 
         Console.WriteLine("Jefe Final:");
-        Console.WriteLine(temas[4]); // Output: Final Boss Concerto
+        Console.WriteLine(temas[4]); // Salida: Concierto del Jefe Final
     }
 }
 ```
@@ -86,10 +86,10 @@ class QuestBoard
     {
         string[] misiones = { "Mata al Espectro de Arena", "Extrae 5 mineral de hierro", "Entrega una poción de curación" };
 
-        // Update element at index 1
+        // Actualiza el elemento en el índice 1
         misiones[1] = "Extrae 12 mineral de hierro";
 
-        Console.WriteLine(misiones[1]); // Output: Mine 12 iron ore
+        Console.WriteLine(misiones[1]); // Salida: Extrae 12 mineral de hierro
     }
 }
 ```
@@ -107,10 +107,10 @@ class ArenaBracket
 {
     static void Main()
     {
-        // Allocates space for 64 string elements
+        // Reserva espacio para 64 elementos de tipo string
         string[] partidas = new string[64];
 
-        // Assigning values later
+        // Asignando valores después
         partidas[0] = "Gremio de Hierro vs Gremio de Brasa";
         partidas[1] = "Gremio del Vacío vs Gremio de la Tormenta";
     }
@@ -168,7 +168,7 @@ class InventoryBag
             "Llave Dorada"
         };
 
-        // .Length dynamically evaluates to 6
+        // .Length se evalúa dinámicamente a 6
         for (int i = 0; i < objetos.Length; i++)
         {
             Console.WriteLine(objetos[i]);

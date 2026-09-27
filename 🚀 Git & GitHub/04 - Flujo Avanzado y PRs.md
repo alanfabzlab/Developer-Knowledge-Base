@@ -16,7 +16,7 @@ El merge combina los cambios de una rama en otra (por ejemplo, traer las actuali
 Bash
 
 ```bash
-# Bring updates from main into your current working branch
+# Trae las actualizaciones de main a tu rama de trabajo actual
 git checkout main
 git pull
 git checkout <your-feature-branch>

@@ -17,7 +17,7 @@ Clonar descarga una copia completa de un repositorio remoto de GitHub a tu máqu
 Bash
 
 ```bash
-# Clone a repository from GitHub
+# Clona un repositorio de GitHub
 git clone [https://github.com/your-handle/quest-engine.git](https://github.com/your-handle/quest-engine.git)
 ```
 
@@ -44,13 +44,13 @@ Las ramas permiten desarrollo en paralelo sin modificar la línea principal de c
 Bash
 
 ```bash
-# Create a new branch
+# Crea una rama nueva
 git branch feature/boss-ai
 
-# Switch to an existing branch
+# Cambia a una rama existente
 git switch feature/loot-table
 
-# Create and switch to a new branch in a single command
+# Crea y cambia a una rama nueva en un solo comando
 git checkout -b feature/quest-dialogue
 ```
 
@@ -62,7 +62,7 @@ Cuando trabajas con otras personas, actualiza tu rama local para incorporar los 
 Bash
 
 ```bash
-# Fetch and merge changes from the remote branch into your current local branch
+# Obtiene y fusiona los cambios de la rama remota en tu rama local actual
 git pull
 ```
 

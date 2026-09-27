@@ -36,7 +36,7 @@ Un bucle `while` evalúa una condición **antes** de cada iteración. Si la cond
 ```csharp
 while (condicion)
 {
-    // Code block to repeat
+    // Bloque de código a repetir
 }
 ```
 

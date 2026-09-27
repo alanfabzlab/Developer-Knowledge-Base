@@ -42,7 +42,7 @@ def insertion_sort(lista):
 
 velocidades_enemigas = [55, 30, 80, 45, 20, 95]
 print(insertion_sort(velocidades_enemigas))
-# Output: [20, 30, 45, 55, 80, 95]
+# Salida: [20, 30, 45, 55, 80, 95]
 ```
 
 
@@ -64,7 +64,7 @@ Python
 ```python
 import random
 
-# Linear Search: O(N) worst-case
+# Búsqueda Lineal: peor caso O(N)
 def linear_search(lista, objetivo):
     intentos = 0
     for i in range(len(lista)):
@@ -75,7 +75,7 @@ def linear_search(lista, objetivo):
     print(f"{objetivo} no encontrado después de {intentos} intentos usando búsqueda lineal.")
     return -1
 
-# Binary Search: O(log N) worst-case
+# Búsqueda Binaria: peor caso O(log N)
 def binary_search(lista, objetivo):
     izq, der = 0, len(lista) - 1
     intentos = 0
@@ -95,7 +95,7 @@ def binary_search(lista, objetivo):
     print(f"{objetivo} no encontrado después de {intentos} intentos usando búsqueda binaria.")
     return -1
 
-# Comparison Demo
+# Demostración comparativa
 rango_min = 1
 rango_max = 100000
 
@@ -121,7 +121,7 @@ Un reto clásico de optimización en Ciencias de la Computación es la planifica
 Python
 
 ```python
-# Dungeon route planning using an ordered List
+# Planificación de rutas de mazmorra usando una lista ordenada
 ruta = [
     "Fortaleza Hundida (Inicio)",
     "Catacumbas Inundadas",

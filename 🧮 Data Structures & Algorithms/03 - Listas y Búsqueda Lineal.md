@@ -20,15 +20,15 @@ Una **Lista** es una colección ordenada de elementos almacenados en una sola va
 Python
 
 ```python
-bolsa_botin = ['Pocion de Salud', 'Espada de Hierro', 'Runa de Bomba', 'Pergamino de Teletransporte', 'Llave Dorada', 'Piel de Monstruo']
+bolsa_botin = ['Poción de Salud', 'Espada de Hierro', 'Runa de Bomba', 'Pergamino de Teletransporte', 'Llave Dorada', 'Piel de Monstruo']
 
-# Indexing
-print(bolsa_botin[0])  # Output: Health Potion
-print(bolsa_botin[2])  # Output: Bomb Rune
+# Indexación
+print(bolsa_botin[0])  # Salida: Poción de Salud
+print(bolsa_botin[2])  # Salida: Runa de Bomba
 
-# Slicing
+# Rebanado
 zonas = ['Bosque de Cenizas', 'Cascadas Luminosas', 'Pico de Brasa', 'Breva del Ocaso', 'Everest', 'Puerta de Escarcha', 'Puente Dorado']
-print(zonas[1:4])  # Output: ['Brightfalls', 'Cinderpeak', 'Duskmoor']
+print(zonas[1:4])  # Salida: ['Cascadas Luminosas', 'Pico de Brasa', 'Breva del Ocaso']
 ```
 
 
@@ -53,7 +53,7 @@ pendientes.append('Limpiar la Fortaleza Hundida')
 pendientes.insert(2, 'Reclutar a un miembro del grupo')
 pendientes.pop(4)
 
-print(len(pendientes))  # Output: 4
+print(len(pendientes))  # Salida: 4
 ```
 
 
@@ -100,8 +100,8 @@ lista_gremio = [
     'lyra@arcanist.gg'
 ]
 
-print(linear_search(lista_gremio, 'nyx@arcanist.gg'))   # Output: True
-print(linear_search(lista_gremio, 'mark.scout@gg.gg'))  # Output: False
+print(linear_search(lista_gremio, 'nyx@arcanist.gg'))   # Salida: True
+print(linear_search(lista_gremio, 'mark.scout@gg.gg'))  # Salida: False
 ```
 
 

@@ -26,7 +26,7 @@ import random
 
 recompensas = ['Oro', 'Poción', 'Espada', 'Escudo', 'Runa', 'Llave']
 
-# Select 3 random items from the list
+# Selecciona 3 elementos aleatorios de la lista
 resultados = random.choices(recompensas, k=3)
 print(resultados)
 ```
@@ -41,10 +41,10 @@ print(resultados)
 
 
 ```python
-# Direct import
+# Importación directa
 from random import choice, sample
 
-# Aliasing imported functions
+# Asignando alias a las funciones importadas
 from random import choice as ch
 from math import pi
 ```
@@ -61,13 +61,13 @@ import random
 
 simbolos = ['⚔️', '💎', '🍀', '🏆']
 
-# Get 3 random symbols
+# Obtiene 3 símbolos aleatorios
 resultados = random.choices(simbolos, k=3)
 
-# Display formatted result
+# Muestra el resultado formateado
 print(f'{resultados[0]} | {resultados[1]} | {resultados[2]}')
 
-# Check win condition
+# Comprueba la condición de victoria
 if resultados == ['🏆', '🏆', '🏆']:
     print('¡Jackpot! 🏆')
 else:
@@ -91,10 +91,10 @@ from random import choice as ch
 
 lunas = ['Luna', 'Titan', 'Europa', 'Ganymede', 'Io']
 
-# Randomly select a moon
+# Selecciona una luna al azar
 luna_aleatoria = ch(lunas)
 
-# Determine radius based on selected moon
+# Determina el radio según la luna seleccionada
 if luna_aleatoria == 'Luna':
     r = 1737
 elif luna_aleatoria == 'Titan':
@@ -108,10 +108,10 @@ elif luna_aleatoria == 'Io':
 else:
     print('¡Vaya! Se produjo un error.')
 
-# Calculate surface area
+# Calcula el área superficial
 area = 4 * pi * (r ** 2)
 
-# Print result
+# Imprime el resultado
 print(f'{luna_aleatoria} área: {round(area, 2)} km²')
 ```
 
@@ -209,7 +209,7 @@ else:
 
 
 ```bash
-# Installing third-party packages via terminal
+# Instalar paquetes de terceros desde la terminal
 pip3 install wikipedia
 ```
 

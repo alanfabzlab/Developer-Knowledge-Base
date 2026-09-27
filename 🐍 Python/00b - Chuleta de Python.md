@@ -15,13 +15,13 @@ Referencia rápida de la sintaxis básica de Python y de los conceptos fundament
 ## 🔹 Salida y Entrada Básicas
 
 ```python
-# Output
+# Salida
 print('¡Listo Jugador Uno!')
 print(1000)
 print(3.14)
 print(True)
 
-# Input
+# Entrada
 nombre_heroe = input('Introduce el nombre de tu héroe: ')
 nivel = int(input('Introduce tu nivel: '))
 ```
@@ -32,9 +32,9 @@ nivel = int(input('Introduce tu nivel: '))
 Python
 
 ```python
-# I'm a comment!
+# ¡Soy un comentario!
 
-print('Aria') # I'm also one T.T
+print('Aria') # ¡Yo también! T.T
 ```
 
 ## 🔹 Variables y Tipos de Datos
@@ -66,21 +66,21 @@ nivel_botin = 2 ** 3
 
 
 ```python
-a == b  # Equal to
-a != b  # Not equal to
-a > b   # Greater than
-a < b   # Less than
-a >= b  # Greater than or equal to
-a <= b  # Less than or equal to
+a == b  # Igual a
+a != b  # Distinto de
+a > b   # Mayor que
+a < b   # Menor que
+a >= b  # Mayor o igual que
+a <= b  # Menor o igual que
 ```
 
 ### Operadores Lógicos
 
 
 ```python
-a and b # True if both are true
-a or b  # True if at least one is true
-not a   # True if a is false
+a and b # True si ambos son True
+a or b  # True si al menos uno es True
+not a   # True si a es False
 ```
 
 ## 🔹 Control de Flujo
@@ -117,11 +117,11 @@ print(f'El daño de {i} es {i*i}')
 
 
 ```python
-# While loop
+# Bucle while
 while vida < 1:
   print('¡Tu vida es crítica!')
 
-# For loop
+# Bucle for
 for i in range(5):
   print(i)
 ```

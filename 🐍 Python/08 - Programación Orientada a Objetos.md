@@ -41,18 +41,18 @@ Un **Objeto** es una instancia concreta de una clase. Los atributos se pueden ac
 
 
 ```python
-# Instance creation
+# Creación de la instancia
 hermanos_hierro = Guild()
 
-# Manual attribute assignment
+# Asignación manual de atributos
 hermanos_hierro.nombre = 'Los Hermanos de Hierro'
 hermanos_hierro.faccion = 'Clan de la Vanguardia'
 hermanos_hierro.nivel = 42
 hermanos_hierro.reclutando = False
 
-# Inspecting object attributes using vars()
+# Inspeccionando los atributos del objeto usando vars()
 print(vars(hermanos_hierro))
-# Output: {'name': 'The Iron Brothers', 'faction': 'Vanguard Clan', 'level': 42, 'is_recruiting': False}
+# Salida: {'nombre': 'Los Hermanos de Hierro', 'faccion': 'Clan de la Vanguardia', 'nivel': 42, 'reclutando': False}
 ```
 
 **Consejo:** Función `vars()` La función integrada `vars(object)` devuelve un diccionario con todos los atributos asignados a esa instancia concreta.
@@ -72,8 +72,8 @@ class Dungeon:
         self.dificultad = dificultad
         self.monstruos = monstruos
 
-# Direct instantiation with arguments
-ciudad_natal = Dungeon('Fortaleza Hundida', 'Reino de la Caida de Brasa', 'Dificil', ['Espectro Sombrio', 'Golem de Escarcha'])
+# Instanciación directa con argumentos
+ciudad_natal = Dungeon('Fortaleza Hundida', 'Reino de la Caída de Brasa', 'Difícil', ['Espectro Sombrio', 'Golem de Escarcha'])
 destino = Dungeon('Aguja de Cristal', 'Reino del Cielo', 'Pesadilla', ['Guardián del Tiempo', 'Segador del Vacio', 'Devorador de Estrellas'])
 
 print(vars(ciudad_natal))
@@ -107,7 +107,7 @@ class Hero:
         if self.en_grupo and self.poder > 25 and self.nivel == 12:
             print(f"¡{self.nombre} puede acceder al contenido del endgame!")
 
-# Creating instances and calling methods
+# Creando instancias y llamando a métodos
 aria = Hero('Aria', 11, False, 30)
 kai = Hero('Kai', 12, True, 28)
 
@@ -143,7 +143,7 @@ class PlayerInventory:
     def display_gold(self):
         print(f"Oro actual: {self.oro} 🪙")
 
-# Test Operations
+# Operaciones de prueba
 jugador = PlayerInventory('Aria', 'Stormborn', 654321, 'Explorador', 4321, 100.0)
 jugador.collect_gold(96)
 jugador.spend_gold(25)
@@ -173,7 +173,7 @@ class Enemy:
         print(f"Número de Entrada: {self.entrada}")
         print(f"Nombre: {self.nombre}")
         
-        # Formatting list of types
+        # Formateando la lista de tipos
         if isinstance(self.tipos, list):
             print(f"Tipo: {', '.join(self.tipos)}")
         else:
@@ -186,12 +186,12 @@ class Enemy:
         else:
             print(f"{self.nombre} aún no ha sido derrotado.")
 
-# Creating bestiary instances
+# Creando instancias del bestiario
 caballero_brasa = Enemy(25, 'Caballero de Brasa', ['Fuego'], 'Su armadura humea cuando blande su hoja.', True)
 espectro_escarcha = Enemy(1, 'Espectro de Escarcha', ['Hielo', 'Oscuro'], 'Deja un rastro frío por donde sea que se deslice.', True)
 golem_piedra = Enemy(4, 'Golem de Piedra', ['Tierra'], 'Tiene preferencia por las cosas pesadas.', False)
 
-# Testing methods
+# Probando métodos
 caballero_brasa.speak()
 caballero_brasa.display_details()
 

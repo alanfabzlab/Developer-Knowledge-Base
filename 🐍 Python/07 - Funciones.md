@@ -34,19 +34,19 @@ Python incluye 68 funciones integradas listas para usar de inmediato (por ejempl
 ```python
 # dry.py
 
-# print() prints text or values to the console
+# print() imprime texto o valores en la consola
 print('¡Listo Jugador Uno!')
 
-# input() requests user input from the console
+# input() solicita la entrada del usuario desde la consola
 heroe = input('Introduce el nombre de tu héroe: ')
 
-# len() returns the length or number of elements
+# len() devuelve la longitud o el número de elementos
 longitud_nombre = len(heroe)
 
-# int() converts a value into an integer
+# int() convierte un valor en un entero
 nivel = int('25')
 
-# type() returns the data type of an object
+# type() devuelve el tipo de dato de un objeto
 print(type(heroe))
 ```
 
@@ -90,7 +90,7 @@ def loot_box():
     print('¡Ayuda! ¡Estoy atrapado en una cinemática!')
 
 
-# Function calls
+# Llamadas a la función
 loot_box()
 loot_box()
 loot_box()
@@ -108,14 +108,14 @@ Las funciones se vuelven dinámicas cuando aceptan datos de entrada que procesar
 
 
 ```python
-# 'hero' is the parameter
+# 'heroe' es el parámetro
 def level_up(heroe):
   print('Sube de nivel el héroe')
   print('Sube de nivel el héroe')
   print('Sube de nivel, querido ' + heroe)
   print('Sube de nivel el héroe')
 
-# 'Aria' is the argument
+# 'Aria' es el argumento
 level_up('Aria')
 ```
 
@@ -133,7 +133,7 @@ Una función puede devolver un valor a la línea de código que la llamó usando
 
 
 ```python
-# Exercise 31: Damage Calculator
+# Ejercicio 31: Calculadora de Daño
 def add(a, b):
     return a + b
 
@@ -149,12 +149,12 @@ def divide(a, b):
 def exp(a, b):
     return a ** b
 
-# Output execution
-print(add(18, 7))        # Output: 25
-print(subtract(18, 7))   # Output: 11
-print(multiply(18, 7))   # Output: 126
-print(divide(18, 6))     # Output: 3.0
-print(exp(2, 10))        # Output: 1024
+# Ejecución de salida
+print(add(18, 7))        # Salida: 25
+print(subtract(18, 7))   # Salida: 11
+print(multiply(18, 7))   # Salida: 126
+print(divide(18, 6))     # Salida: 3.0
+print(exp(2, 10))        # Salida: 1024
 ```
 
 
@@ -170,11 +170,11 @@ El ámbito determina en qué parte del programa una variable es visible y accesi
 
 
 ```python
-# Exercise 32: Damage Log (Time Series Analysis)
+# Ejercicio 32: Registro de Daño (Análisis de Series Temporales)
 daño_por_turno = [34.68, 36.09, 34.94, 33.97, 34.68, 35.82, 43.41, 44.29, 44.91, 43.87]
 
 def damage_at(x):
-    # 'x' is a local variable, 'damage_per_turn' is global
+    # 'x' es una variable local, 'daño_por_turno' es global
     return daño_por_turno[x - 1]
 
 def max_damage(a, b):
@@ -183,7 +183,7 @@ def max_damage(a, b):
 def min_damage(a, b):
     return min(daño_por_turno[a - 1:b])
 
-# Tests
+# Pruebas
 print(f"Daño en el turno 3: {damage_at(3)}")
 print(f"Daño máximo (turnos 1-5): {max_damage(1, 5)}")
 print(f"Daño mínimo (turnos 5-10): {min_damage(5, 10)}")
@@ -197,7 +197,7 @@ Integra funciones, entrada del usuario, estructuras condicionales y valores de r
 
 
 ```python
-# Exercise 33: Blacksmith
+# Ejercicio 33: Herrero
 def welcome():
     print("¡Bienvenido al Herrero!")
     print("1. ⚔️ Espada de Hierro")
@@ -220,7 +220,7 @@ def get_item(x):
     else:
         return 'Ítem no válido'
 
-# Execution flow
+# Flujo de ejecución
 welcome()
 opcion = int(input('¿Qué quieres comprar? '))
 print(f"Has comprado: {get_item(opcion)}")
@@ -266,7 +266,7 @@ def daño_doble(x):
 ```python
 daño_doble = lambda x: x * 2
 
-print(daño_doble(4)) # Output: 8
+print(daño_doble(4)) # Salida: 8
 ```
 
 
@@ -278,14 +278,14 @@ Las funciones lambda destacan cuando se pasan como argumentos de un solo uso a f
 ```python
 valores_daño = [2, 4, 6, 8, 10]
 
-# Using map() to double each element
+# Usando map() para duplicar cada elemento
 daño_duplicado = list(map(lambda x: x * 2, valores_daño))
 
-# Using filter() to keep only the heavy hits
+# Usando filter() para quedarnos solo con los golpes pesados
 golpes_pesados = list(filter(lambda x: x > 7, valores_daño))
 
-print(daño_duplicado) # Output: [4, 8, 12, 16, 20]
-print(golpes_pesados)     # Output: [8, 10]
+print(daño_duplicado) # Salida: [4, 8, 12, 16, 20]
+print(golpes_pesados)     # Salida: [8, 10]
 ```
 
 
@@ -297,10 +297,10 @@ print(golpes_pesados)     # Output: [8, 10]
 ```python
 lista_heroes = ['Aria', 'Borin', 'Cass', 'Dara', 'Elowen']
 
-# Filter out hero names starting with 'A'
+# Filtra los nombres de héroes que empiezan por 'A'
 heroes_filtrados = list(filter(lambda nombre: nombre[0].upper() != 'A', lista_heroes))
 
-print(heroes_filtrados) # Output: ['Borin', 'Cass', 'Dara', 'Elowen']
+print(heroes_filtrados) # Salida: ['Borin', 'Cass', 'Dara', 'Elowen']
 ```
 
 
@@ -311,5 +311,5 @@ print(heroes_filtrados) # Output: ['Borin', 'Cass', 'Dara', 'Elowen']
 nombre_hechizo = lambda cadena1, cadena2: cadena1 + cadena2
 
 nombre = nombre_hechizo('fuego', 'bola')
-print(f'El nombre del hechizo es: {nombre}') # Output: The spell name is: fireball
+print(f'El nombre del hechizo es: {nombre}') # Salida: El nombre del hechizo es: fuegobola
 ```

@@ -33,7 +33,7 @@ Python
 ```python
 mapa_mazmorra = ['Bosque de Cenizas', 'Cascadas Luminosas', 'Pico de Brasa', 'Breva del Ocaso', 'Puerta de Escarcha']
 mapa_mazmorra.append('Puente Dorado')
-print(mapa_mazmorra[2])  # Output: Cinderpeak
+print(mapa_mazmorra[2])  # Salida: Pico de Brasa
 ```
 
 
@@ -45,12 +45,12 @@ Python
 
 ```python
 archivo_guardado = {
-    'ranura': 'Guardian del Tiempo',
+    'ranura': 'Guardián del Tiempo',
     'region': 'Fortaleza Hundida',
     'dificultad': 'Pesadilla',
     'tiempo_jugado': 2041
 }
-print(archivo_guardado['ranura'])  # Output: Chrono Warden
+print(archivo_guardado['ranura'])  # Salida: Guardián del Tiempo
 ```
 
 
@@ -63,7 +63,7 @@ Python
 ```python
 jefes = {'Caballero de Brasa', 'Espectro de Escarcha', 'Golem de Piedra'}
 jefes.add('Segador del Vacio')
-print('Caballero de Brasa' in jefes)  # Output: True
+print('Caballero de Brasa' in jefes)  # Salida: True
 ```
 
 
@@ -72,7 +72,7 @@ print('Caballero de Brasa' in jefes)  # Output: True
 Python
 
 ```python
-# Working with built-in data structures
+# Trabajando con estructuras de datos integradas
 grupo = ['Aria', 'Kai', 'Nyx']
 
 tema_jefe = {
@@ -83,7 +83,7 @@ tema_jefe = {
 
 biomas = {'Bosque de Cenizas', 'Puerta de Escarcha', 'Puente Dorado'}
 
-# Sorting a list alphabetically using built-in algorithm
+# Ordenando una lista alfabéticamente usando un algoritmo integrado
 mecanicas = ['botin', 'busqueda_de_rutas', 'colas', 'recursion', "algoritmo de dijkstra"]
 mecanicas.sort()
 print(mecanicas)

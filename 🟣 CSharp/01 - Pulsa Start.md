@@ -171,9 +171,9 @@ class NerdyRant
 {
     static void Main()
     {
-        /* Boss rush mode is the purest expression of skill.
-           You only bring one build, so you better know it! */
-        // I think the hardest difficulty should unlock after your first clear.
+        /* El modo boss rush es la expresión más pura de la habilidad.
+           Solo traes una build, así que te conviene conocerla bien! */
+        // Creo que la dificultad más alta debería desbloquearse tras tu primera limpieza.
     }
 }
 ```
@@ -197,24 +197,24 @@ class RecruitmentPoster
     static void Main()
     {
         /* 
-        Recruitment poster for a gaming guild
-        I wanna find my dream party
-        So I made this poster!
+        Cartel de reclutamiento para un gremio de videojuegos
+        Quiero encontrar mi equipo ideal
+        ¡Así que hice este cartel!
         */
 
-        // Headline to grab attention
+        // Titular para llamar la atención
         Console.WriteLine("¡ÚNETE A MI GREMIO! 🤝");
 
-        // Introduce yourself
+        // Preséntate
         Console.WriteLine("¡Hola, soy Aria!");
 
-        // State your interest
+        // Expresa tu interés
         Console.WriteLine("Me encanta el diseño de juegos y la creación de niveles.");
 
-        // Favorite pastime
+        // Pasatiempo favorito
         Console.WriteLine("Me gusta hacer speedruns de Hollow Knight y modificar juegos clásicos.");
 
-        // Call to action
+        // Llamado a la acción
         Console.WriteLine("¡Reúnete con tu escuadrón y construyamos mundos geniales juntos! 🚀");
     }
 }

@@ -31,7 +31,7 @@ Los errores son una parte natural de la programación. Reconocer los tipos de er
 #### ❌ Ejemplo de SyntaxError
 
 ```python
-# Error: Missing closing quote and proper syntax
+# Error: Falta la comilla de cierre y la sintaxis adecuada
 print(Welcome to the Kingdom!
 
 # SyntaxError: invalid syntax
@@ -40,34 +40,34 @@ print(Welcome to the Kingdom!
 #### ❌ Ejemplo de NameError
 
 ```python
-# Error: Referencing an undefined variable
+# Error: Referencia a una variable indefinida
 print(hp_goblin)
 
-# NameError: name 'goblin_hp' is not defined
+# NameError: name 'hp_goblin' is not defined
 
-# Fix: Define the variable before referencing it
+# Solución: Define la variable antes de referenciarla
 hp_goblin = 40
-print(hp_goblin)  # Output: 40
+print(hp_goblin)  # Salida: 40
 ```
 
 #### ❌ Ejemplo de TypeError
 
 ```python
-# Error: Attempting string concatenation with an integer directly
+# Error: Intento de concatenar una cadena con un entero directamente
 estado = 'Nivel del Jugador: '
 print(estado + 5)
 
 # TypeError: can only concatenate str (not "int") to str
 
-# Fix: Cast integer using str()
+# Solución: Convierte el entero usando str()
 estado = 'Nivel del Jugador: '
-print(estado + str(5))  # Output: Player Level: 5
+print(estado + str(5))  # Salida: Nivel del Jugador: 5
 ```
 
 🐛 Reto de Depuración: Cazador de Errores (`bug_catcher.py`)
 
 ```python
-# Fixed version of loot tracking script
+# Versión corregida del script de rastreo de botín
 pociones_salud = 5
 pociones_mana = 8
 runas_bomba = 12
@@ -95,7 +95,7 @@ Usa el módulo `random` para ejecutar bloques de código condicionales según un
 # damage_roll.py
 import random
 
-# Generate a random integer between 1 and 6 (a d6 roll)
+# Genera un entero aleatorio entre 1 y 6 (una tirada de d6)
 num = random.randint(1, 6)
 
 if num > 3:
@@ -140,7 +140,7 @@ Comprueba si la puntuación de una partida alcanza el umbral mínimo para desblo
 ```python
 # ranks.py
 
-# Match score (Range 0-100)
+# Puntuación de la partida (Rango 0-100)
 puntuacion = 78
 
 if puntuacion >= 55:
@@ -206,7 +206,7 @@ El módulo integrado `random` de Python proporciona funciones como `randint(a, b
 ```python
 import random
 
-# Generate a result between 1 and 9
+# Genera un resultado entre 1 y 9
 opcion = random.randint(1, 9)
 
 pregunta = input('Haz una pregunta de decisión: ')
@@ -256,7 +256,7 @@ Los operadores lógicos evalúan y combinan múltiples expresiones booleanas:
 
 
 ```python
-# Practical Examples
+# Ejemplos Prácticos
 resistencia = 8
 puntería = 6
 

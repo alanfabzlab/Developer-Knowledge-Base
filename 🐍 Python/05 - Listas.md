@@ -21,7 +21,7 @@ Una **lista** es una colección ordenada de elementos guardada en una sola varia
 Las listas pueden contener múltiples elementos de datos, valores duplicados y tipos de datos mixtos sin límite de tamaño.
 
 ```python
-# Storing data using lists
+# Almacenar datos usando listas
 hp_jefe = [980, 870, 920, 960]
 daño_ola = [9, 6, 8]
 ```
@@ -47,11 +47,11 @@ Los elementos de una lista se acceden mediante su índice de posición basado en
 
 ```python
 elementos = ['Fuego', 'Hielo', 'Rayo', 'Tierra', 'Viento']
-# Positive Index: 0, 1, 2, 3, 4
-# Negative Index: -5, -4, -3, -2, -1
+# Índice Positivo: 0, 1, 2, 3, 4
+# Índice Negativo: -5, -4, -3, -2, -1
 
-print(elementos[0])   # Output: Fire
-print(elementos[-1])  # Output: Wind
+print(elementos[0])   # Salida: Fuego
+print(elementos[-1])  # Salida: Viento
 ```
 
 
@@ -63,8 +63,8 @@ El rebanado recupera una subsecuencia de elementos usando `[start:end]`. Incluye
 ```python
 elementos = ['Fuego', 'Hielo', 'Rayo', 'Tierra', 'Viento']
 
-print(elementos[0:3]) # Output: ['Fire', 'Ice', 'Lightning']
-print(elementos[1:3]) # Output: ['Ice', 'Lightning']
+print(elementos[0:3]) # Salida: ['Fuego', 'Hielo', 'Rayo']
+print(elementos[1:3]) # Salida: ['Hielo', 'Rayo']
 ```
 
 
@@ -74,7 +74,7 @@ Un `IndexError` ocurre al intentar acceder a un índice que supera los límites 
 
 
 ```python
-# Causes Traceback: IndexError: list index out of range
+# Provoca Traceback: IndexError: list index out of range
 print(elementos[5]) 
 ```
 
@@ -96,14 +96,14 @@ registro_misiones = [
   'Escapa del templo que se derrumba.'
 ]
 
-# Print first and second items
+# Imprime el primer y el segundo elemento
 print(registro_misiones[0])
 print(registro_misiones[1])
 
-# Slice third, fourth, and fifth items
+# Rebana el tercer, cuarto y quinto elemento
 print(registro_misiones[2:5])
 
-# Accessing index 9 causes IndexError
+# Acceder al índice 9 provoca IndexError
 # print(registro_misiones[9])
 ```
 
@@ -122,9 +122,9 @@ Python incluye varias funciones integradas diseñadas para trabajar directamente
 precios_pociones = [12.50, 9.75, 15.20, 9.75, 18.40, 11.30, 13.60]
 precios_runas = [45.10, 32.80, 51.25, 28.40, 39.95, 28.40, 33.60]
 
-print(len(precios_pociones)) # Output: 7
-print(max(precios_pociones)) # Output: 18.4
-print(min(precios_runas)) # Output: 28.4
+print(len(precios_pociones)) # Salida: 7
+print(max(precios_pociones)) # Salida: 18.4
+print(min(precios_runas)) # Salida: 28.4
 ```
 
 
@@ -137,10 +137,10 @@ print(min(precios_runas)) # Output: 28.4
 
 enemigos_derrotados = [452, 318, 197, 806, 645, 274, 903, 261]
 
-# Lowest kill count enemy
+# Enemigo con menos bajas
 print(min(enemigos_derrotados))
 
-# Highest kill count enemy
+# Enemigo con más bajas
 print(max(enemigos_derrotados))
 ```
 

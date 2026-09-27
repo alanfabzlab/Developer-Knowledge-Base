@@ -37,7 +37,7 @@ En Python, usamos la función integrada `print()` para enviar texto o datos a la
 
 ```python
 
-# Basic Output
+# Salida básica
 print('¡Hola Mundo!')
 
 ```
@@ -82,7 +82,7 @@ Crea iniciales de letras de bloque en ASCII acompañadas de un comentario de có
 
 
 ```python
-# Fun fact: My favorite genre is dungeon crawler RPGs!
+# Dato curioso: ¡Mi género favorito son los RPG de mazmorra!
 
 print(" DDD   DDD ")
 print("D   D D   D")
@@ -97,8 +97,8 @@ Usa comentarios (`#`) para la documentación junto a las sentencias de salida:
 
 
 ```python
-# Goal: Note to my future game developer self
-# Date: 2026
+# Objetivo: Nota para mi yo futuro desarrollador de juegos
+# Fecha: 2026
 
 print("Fecha: 13 de septiembre de 2026")
 print("Estado: Construyendo un dungeon crawler roguelike en Obsidian.")
@@ -117,17 +117,17 @@ Asigna valores usando el signo igual (`=`): `variable_name = value`.
 
 
 ```python
-# Variable declarations & reassignment
+# Declaración de variables y reasignación
 nombre_heroe = 'Aria Stormborn'
 guardado = 2
 progreso = 0.85
 experiencia = 120
 tiene_mapa = True
 
-# Value Reassignment
+# Reasignación de valor
 experiencia = 150
 experiencia = 200
-print(experiencia)  # Output: 200
+print(experiencia)  # Salida: 200
 ```
 
 | Tipo        | Nombre            | Descripción             | Ejemplo |
@@ -164,7 +164,7 @@ bonus_arma = 15
 total = daño_base + bonus_arma
 daño_critico = total * 0.25
 
-print(daño_critico)  # Output: 15.0
+print(daño_critico)  # Salida: 15.0
 ```
 
 
@@ -174,8 +174,8 @@ $$bmi = \frac{mass}{height^2}$$
 
 ```python
 # encumbrance.py
-peso_cargado = 80     # in kilograms of carried loot
-altura_heroe = 1.86    # in meters
+peso_cargado = 80     # en kilogramos de botín transportado
+altura_heroe = 1.86    # en metros
 
 carga = peso_cargado / (altura_heroe ** 2)
 print(carga)
@@ -215,7 +215,7 @@ print(heroe)
 
 ```python
 nivel = int(input('¿Cuál es tu nivel actual? '))
-print(nivel)  # Stored as integer 30, not string "30"
+print(nivel)  # Almacenado como entero 30, no como cadena "30"
 ```
 
 
@@ -230,7 +230,7 @@ cobre = int(input('Cantidad en monedas de cobre: '))
 plata = int(input('Cantidad en monedas de plata: '))
 esmeraldas = int(input('Cantidad de esmeraldas: '))
 
-# Standard exchange rate factors
+# Factores de cambio estándar
 oro_del_cobre = cobre * 0.0001
 oro_de_la_plata = plata * 0.1
 oro_de_las_esmeraldas = esmeraldas * 5

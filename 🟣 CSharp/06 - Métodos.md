@@ -27,7 +27,7 @@ class LootHoarder
         string[] suministros = { "Pociónes de Salud", "Pociónes de Maná", "Elixires", "Antídotos", "Runas de Bomba" };
         int[] cantidades = { 12, 30, 8, 25, 16 };
 
-        // Updating an inventory value directly via index
+        // Actualizando un valor del inventario directamente por índice
         cantidades[0] = 15;
 
         int totalSuministros = 0;
@@ -56,11 +56,11 @@ class LevelUpFanfare
 {
     static void Main()
     {
-        // Calling the custom method
+        // Llamando al método personalizado
         VictoryPose();
     }
 
-    // Method declaration
+    // Declaración del método
     static void VictoryPose()
     {
         Console.WriteLine("¡El campeón levanta el trofeo!");
@@ -82,7 +82,7 @@ class CrowdChant
 {
     static void Main()
     {
-        // Calling Chant() 5 times
+        // Llamando a Chant() 5 veces
         Chant();
         Chant();
         Chant();
@@ -117,13 +117,13 @@ class BuffMenu
 {
     static void Main()
     {
-        // "ember 🔥", "frost ❄️", and "lightning ⚡" are ARGUMENTS
+        // "ember 🔥", "frost ❄️" y "lightning ⚡" son ARGUMENTOS
         BrewElixir("ember 🔥");
         BrewElixir("frost ❄️");
         BrewElixir("lightning ⚡");
     }
 
-    // 'elixir' is the PARAMETER
+    // 'elixir' es el PARÁMETRO
     static void BrewElixir(string elixir)
     {
         Console.WriteLine($"¡Preparando un {elixir} para todo el grupo!");

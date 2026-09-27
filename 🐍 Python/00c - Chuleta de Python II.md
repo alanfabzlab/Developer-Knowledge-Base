@@ -18,14 +18,14 @@
 ```python
 hp_enemigo = [320, 280, 410, 190, 540, 260, 130]
 
-# Index
+# Índice
 jefe_1 = hp_enemigo[0]  # 320
 jefe_7 = hp_enemigo[6]  # 130
 
-# Negative index
+# Índice negativo
 jefe_7 = hp_enemigo[-1] # 130
 
-# Slicing
+# Rebanado
 olas_iniciales = hp_enemigo[0:5]
 olas_finales = hp_enemigo[5:7]
 ```
@@ -38,12 +38,12 @@ olas_finales = hp_enemigo[5:7]
 ```python
 tiempos_fase = [140, 95, 180, 120]
 
-# Built-in functions
-len(tiempos_fase)  # Output: 4
-max(tiempos_fase)  # Output: 180
-min(tiempos_fase)  # Output: 95
+# Funciones integradas
+len(tiempos_fase)  # Salida: 4
+max(tiempos_fase)  # Salida: 180
+min(tiempos_fase)  # Salida: 95
 
-# Built-in methods
+# Métodos integrados
 tiempos_fase.append(205)
 # [140, 95, 180, 120, 205]
 
@@ -65,7 +65,7 @@ tiempos_fase.pop(0)
 def announce_wave():
     print('¡Aparece el jefe! 👹')
 
-announce_wave()  # Output: The boss spawns! 👹
+announce_wave()  # Salida: ¡Aparece el jefe! 👹
 ```
 
 
@@ -76,8 +76,8 @@ announce_wave()  # Output: The boss spawns! 👹
 def add(x, y):
     return x + y
 
-print(add(2, 3))    # Output: 5
-print(add(21, 56))  # Output: 77
+print(add(2, 3))    # Salida: 5
+print(add(21, 56))  # Salida: 77
 ```
 
 
@@ -85,14 +85,14 @@ print(add(21, 56))  # Output: 77
 
 
 ```python
-experiencia = 29  # Global scope
+experiencia = 29  # Ámbito global
 
 def func():
-    experiencia = 42  # Local scope
+    experiencia = 42  # Ámbito local
     print(experiencia)
 
-print(experiencia)  # Output: 29
-func()    # Output: 42
+print(experiencia)  # Salida: 29
+func()    # Salida: 42
 ```
 
 
@@ -111,7 +111,7 @@ class Hero:
 aria = Hero('Aria', 22)
 kai = Hero('Kai', 23)
 
-aria.say_hi()  # 👋 My name is Aria
+aria.say_hi()  # 👋 Mi nombre es Aria
 ```
 
 

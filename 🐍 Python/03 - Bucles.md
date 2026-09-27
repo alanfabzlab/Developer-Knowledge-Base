@@ -60,7 +60,7 @@ Un bucle `while` ejecuta continuamente el código dentro de su bloque mientras s
 
 ```python
 while condition:
-  # code inside executes repeatedly while condition is True
+  # el código interior se ejecuta repetidamente mientras la condición sea True
 ```
 
 
@@ -92,7 +92,7 @@ Demuestra el control de la ejecución del bucle y la limitación del número tot
 
 
 ```python
-# guess.py (Basic Version)
+# guess.py (Versión Básica)
 
 adivina = 0
 
@@ -110,7 +110,7 @@ Incorporando una variable contadora `tries` junto con operadores lógicos para a
 
 
 ```python
-# guess.py (Limited Attempts Version)
+# guess.py (Versión con Intentos Limitados)
 
 adivina = 0
 intentos = 0
@@ -177,7 +177,7 @@ La interpolación de cadenas sustituye valores de variables en marcadores de pos
 
 
 ```python
-# String Interpolation Example
+# Ejemplo de Interpolación de Cadenas
 for i in range(5):
   print(f'El daño de {i} es {i*i}')
 ```

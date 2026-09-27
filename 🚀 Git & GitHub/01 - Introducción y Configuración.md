@@ -30,7 +30,7 @@ Antes de trabajar con Git, verifica la instalación en la terminal de tu sistema
 Bash
 
 ```bash
-# Check installed Git version
+# Comprueba la versión de Git instalada
 git --version
 ```
 
@@ -50,10 +50,10 @@ Navega al directorio de tu proyecto e inicializa el seguimiento:
 Bash
 
 ```bash
-# Verify current directory path
+# Verifica la ruta del directorio actual
 pwd
 
-# Initialize empty Git repository
+# Inicializa un repositorio Git vacío
 git init
 ```
 
@@ -67,7 +67,7 @@ Adjunta la URL de GitHub como el remoto `origin`:
 Bash
 
 ```bash
-# Add connection to remote repository
+# Añade la conexión al repositorio remoto
 git remote add origin [https://github.com/your-handle/quest-engine.git](https://github.com/your-handle/quest-engine.git)
 ```
 
@@ -79,7 +79,7 @@ Cambia el nombre de la rama por defecto a `main`:
 Bash
 
 ```bash
-# Rename active branch to main
+# Renombra la rama activa a main
 git branch -M main
 ```
 
@@ -91,7 +91,7 @@ Comprueba que la configuración de la rama fue exitosa:
 Bash
 
 ```bash
-# List local branches
+# Lista las ramas locales
 git branch
 ```
 
