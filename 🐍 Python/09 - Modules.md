@@ -1,6 +1,7 @@
 ---
 course: Python
 topic: Python Modules, Custom Modules (`import`), Built-in `datetime`, Python Packages, Package Management (`pip3`), External Packages (`wikipedia`), The Zen of Python (`import this`)
+tags:
   - modules
   - random
   - math
@@ -24,10 +25,10 @@ The `import` keyword allows access to external or built-in modules.
 ```python
 import random
 
-dice = [1, 2, 3, 4, 5, 6]
+rewards = ['Gold', 'Potion', 'Sword', 'Shield', 'Rune', 'Key']
 
 # Select 3 random items from the list
-results = random.choices(dice, k=3)
+results = random.choices(rewards, k=3)
 print(results)
 ```
 
@@ -51,15 +52,15 @@ from math import pi
 
 
 
-## 03. Exercise: Slot Machine (`slot_machine.py`)
+## 03. Exercise: Loot Box Simulator (`loot_box.py`)
 
-Simulates a classic slot machine selecting three random fruit/seven symbols using `random.choices()`.
+Simulates a gacha loot box selecting three random rarity symbols using `random.choices()`.
 
 
 ```python
 import random
 
-symbols = ['🎰', '🍇', '🍉', '7️⃣']
+symbols = ['⚔️', '💎', '🍀', '🏆']
 
 # Get 3 random symbols
 results = random.choices(symbols, k=3)
@@ -68,17 +69,17 @@ results = random.choices(symbols, k=3)
 print(f'{results[0]} | {results[1]} | {results[2]}')
 
 # Check win condition
-if results == ['7️⃣', '7️⃣', '7️⃣']:
-    print('Jackpot! 💰')
+if results == ['🏆', '🏆', '🏆']:
+    print('Jackpot! 🏆')
 else:
     print('Thanks for playing!')
 ```
 
 
 
-## 04. Exercise: Solar System (`solar_system.py`)
+## 04. Exercise: Orbital Moons (`moons.py`)
 
-Calculates the surface area of a randomly selected planet using `pi` from the `math` module and an aliased `choice` function from `random`.
+Calculates the surface area of a randomly selected moon using `pi` from the `math` module and an aliased `choice` function from `random`.
 
 Formula for surface area of a sphere:
 
@@ -89,22 +90,22 @@ $$area = 4 \pi r^2$$
 from math import pi
 from random import choice as ch
 
-planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Saturn']
+moons = ['Luna', 'Titan', 'Europa', 'Ganymede', 'Io']
 
-# Randomly select a planet
-random_planet = ch(planets)
+# Randomly select a moon
+random_moon = ch(moons)
 
-# Determine radius based on selected planet
-if random_planet == 'Mercury':
-    r = 2440
-elif random_planet == 'Venus':
-    r = 6052
-elif random_planet == 'Earth':
-    r = 6371
-elif random_planet == 'Mars':
-    r = 3390
-elif random_planet == 'Saturn':
-    r = 58232
+# Determine radius based on selected moon
+if random_moon == 'Luna':
+    r = 1737
+elif random_moon == 'Titan':
+    r = 2574
+elif random_moon == 'Europa':
+    r = 1560
+elif random_moon == 'Ganymede':
+    r = 2634
+elif random_moon == 'Io':
+    r = 1821
 else:
     print('Oops! An error occurred.')
 
@@ -112,7 +113,7 @@ else:
 area = 4 * pi * (r ** 2)
 
 # Print result
-print(f'{random_planet} area: {round(area, 2)} sq km')
+print(f'{random_moon} area: {round(area, 2)} sq km')
 ```
 
 
@@ -124,7 +125,7 @@ print(f'{random_planet} area: {round(area, 2)} sq km')
 Modules are `.py` files containing statements, functions, and variables. Any Python file created in a project can be imported into another file within the same directory using the `import` keyword.
 
 ```python
-# calculator.py
+# combat_math.py
 def add(a, b):
     return a + b
 
@@ -145,53 +146,53 @@ def exp(a, b):
 
 ```python
 # main.py
-import calculator
+import combat_math
 import datetime
 
-calculator.add(3, 4)       # 7
-calculator.subtract(3, 4)  # -1
-calculator.multiply(3, 4)  # 12
-calculator.divide(3, 4)    # 0.75
-calculator.exp(3, 4)       # 81
+combat_math.add(12, 8)       # 20
+combat_math.subtract(12, 8)  # 4
+combat_math.multiply(12, 8)  # 96
+combat_math.divide(12, 8)    # 1.5
+combat_math.exp(2, 5)        # 32
 ```
 
 
 
-## 06. Exercise: Countdown (`bday_messages.py` & `main.py`)
+## 06. Exercise: Countdown (`raid_messages.py` & `main.py`)
 
-Calculates the remaining days until a birthday using custom module imports and the built-in `datetime` module.
+Calculates the remaining days until the raid release using custom module imports and the built-in `datetime` module.
 
 
 ```python
-# bday_messages.py
+# raid_messages.py
 import random
 
-bday_messages = [
-    'Hope you have a very Happy Birthday! 🎉',
-    "It's your special day - get out there and celebrate! 🥳",
-    'You were born and the world got better - everybody wins! 👏',
-    'Have lots of fun on your special day! 🎁',
-    'Another year of you going around the sun! ☀️'
+raid_messages = [
+    'The gates open at dawn. Sharpen your blade! ⚔️',
+    "The raid launches at midnight - don't be late! 🕛",
+    'The whole server is waiting on you - bring potions! 👏',
+    'Have a glorious first clear, champion! 🎁',
+    'One more wipe before the patch lands! ⚙️'
 ]
 
-random_message = random.choice(bday_messages)
+random_message = random.choice(raid_messages)
 ```
 
 
 ```python
 # main.py
 import datetime
-import bday_messages
+import raid_messages
 
 today = datetime.date.today()
-next_birthday = datetime.date(2027, 4, 15)
+raid_release = datetime.date(2027, 11, 3)
 
-days_away = (next_birthday - today).days
+days_away = (raid_release - today).days
 
-if today == next_birthday:
-    print(bday_messages.random_message)
+if today == raid_release:
+    print(raid_messages.random_message)
 else:
-    print(f'My next birthday is {days_away} days away!')
+    print(f'The raid launches in {days_away} days!')
 ```
 
 
@@ -221,9 +222,10 @@ pip3 install wikipedia
 # wiki.py
 import wikipedia
 
-result = wikipedia.summary("Philosophy of life", sentences=2)
+result = wikipedia.summary("History of video games", sentences=2)
 print(result)
 ```
+
 
 
 ## 08. The Zen of Python

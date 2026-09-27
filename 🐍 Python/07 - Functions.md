@@ -39,24 +39,24 @@ Python includes 68 built-in functions ready to use out of the box (e.g., `print(
 # dry.py
 
 # print() prints text or values to the console
-print('Hola, Codédex!')
+print('Ready Player One!')
 
 # input() requests user input from the console
-nombre = input('¿Cuál es tu nombre? ')
+hero = input('Enter your hero name: ')
 
 # len() returns the length or number of elements
-longitud = len(nombre)
+name_length = len(hero)
 
 # int() converts a value into an integer
-edad = int('25')
+level = int('25')
 
 # type() returns the data type of an object
-print(type(nombre))
+print(type(hero))
 ```
 
 
 
-## 02. Defining & Calling Functions (`fortune_cookie.py`)
+## 02. Defining & Calling Functions (`loot_box.py`)
 
 User-defined functions require two key steps:
 
@@ -67,37 +67,38 @@ User-defined functions require two key steps:
 
 
 
-### 📝 Fortune Cookie Exercise (`fortune_cookie.py`)
+### 📝 Loot Box Oracle Exercise (`loot_box.py`)
 
 
 ```python
-# fortune_cookie.py
+# loot_box.py
 import random
 
-def fortune():
+def loot_box():
   random_fortune = random.randint(1, 8)
 
   if random_fortune == 1:
-    print('Don\'t pursue happiness - create it.')
+    print('Don\'t grind for the meta build - invent one.')
   elif random_fortune == 2:
-    print('All things are difficult before they are easy.')
+    print('All bosses are hard before they are farmed.')
   elif random_fortune == 3:
-    print('The early bird gets the worm, but the second mouse gets the cheese.')
+    print('The early bird gets the loot, but the second raid gets the legend.')
   elif random_fortune == 4:
-    print('Someone in your life needs a letter from you.')
+    print('Someone in your party needs a health potion from you.')
   elif random_fortune == 5:
-    print('Don\'t just think. Act!')
+    print('Don\'t just think. Press attack!')
   elif random_fortune == 6:
-    print('Your heart will skip a beat.')
+    print('Your heart will skip a beat at 1 HP.')
   elif random_fortune == 7:
-    print('The fortune you search for is in another cookie.')
+    print('The drop you are grinding for is in another chest.')
   else:
-    print('Help! I\'m being held prisoner in a Chinese bakery!')
+    print('Help! I\'m trapped in a cutscene!')
+
 
 # Function calls
-fortune()
-fortune()
-fortune()
+loot_box()
+loot_box()
+loot_box()
 ```
 
 
@@ -112,15 +113,15 @@ Functions become dynamic when they accept input data to process.
 
 
 ```python
-# 'name' is the parameter
-def happy_birthday(name):
-  print('Happy birthday to you')
-  print('Happy birthday to you')
-  print('Happy birthday dear ' + name)
-  print('Happy birthday to you')
+# 'hero' is the parameter
+def level_up(hero):
+  print('Level up for the hero')
+  print('Level up for the hero')
+  print('Level up, dear ' + hero)
+  print('Level up for the hero')
 
-# 'Lillian' is the argument
-happy_birthday('Lillian')
+# 'Aria' is the argument
+level_up('Aria')
 ```
 
 
@@ -137,7 +138,7 @@ A function can return a value back to the line of code that called it using the 
 
 
 ```python
-# Exercise 31: Calculator
+# Exercise 31: Damage Calculator
 def add(a, b):
     return a + b
 
@@ -154,11 +155,11 @@ def exp(a, b):
     return a ** b
 
 # Output execution
-print(add(10, 5))       # Output: 15
-print(subtract(10, 5))  # Output: 5
-print(multiply(10, 5))  # Output: 50
-print(divide(10, 5))    # Output: 2.0
-print(exp(2, 3))        # Output: 8
+print(add(18, 7))        # Output: 25
+print(subtract(18, 7))   # Output: 11
+print(multiply(18, 7))   # Output: 126
+print(divide(18, 6))     # Output: 3.0
+print(exp(2, 10))        # Output: 1024
 ```
 
 
@@ -174,60 +175,60 @@ Scope determines where in the program a variable is visible and accessible.
 
 
 ```python
-# Exercise 32: Stonks (Time Series Analysis)
-stock_prices = [34.68, 36.09, 34.94, 33.97, 34.68, 35.82, 43.41, 44.29, 44.91, 43.87]
+# Exercise 32: Damage Log (Time Series Analysis)
+damage_per_turn = [34.68, 36.09, 34.94, 33.97, 34.68, 35.82, 43.41, 44.29, 44.91, 43.87]
 
-def price_at(x):
-    # 'x' is a local variable, 'stock_prices' is global
-    return stock_prices[x - 1]
+def damage_at(x):
+    # 'x' is a local variable, 'damage_per_turn' is global
+    return damage_per_turn[x - 1]
 
-def max_price(a, b):
-    return max(stock_prices[a - 1:b])
+def max_damage(a, b):
+    return max(damage_per_turn[a - 1:b])
 
-def min_price(a, b):
-    return min(stock_prices[a - 1:b])
+def min_damage(a, b):
+    return min(damage_per_turn[a - 1:b])
 
 # Tests
-print(f"Price on day 3: {price_at(3)}")
-print(f"Max price (days 1-5): {max_price(1, 5)}")
-print(f"Min price (days 5-10): {min_price(5, 10)}")
+print(f"Damage on turn 3: {damage_at(3)}")
+print(f"Max damage (turns 1-5): {max_damage(1, 5)}")
+print(f"Min damage (turns 5-10): {min_damage(5, 10)}")
 ```
 
 
 
-## 06. Checkpoint Project: Drive-Thru
+## 06. Checkpoint Project: Blacksmith
 
 Integrating functions, user input, conditional structures, and returned values into a single program.
 
 
 ```python
-# Exercise 33: Drive-Thru
+# Exercise 33: Blacksmith
 def welcome():
-    print("Welcome to Fast Food Drive-Thru!")
-    print("1. 🍔 Cheeseburger")
-    print("2. 🍟 Fries")
-    print("3. 🥤 Soda")
-    print("4. 🍦 Ice Cream")
-    print("5. 🍪 Cookie")
+    print("Welcome to the Blacksmith!")
+    print("1. ⚔️ Iron Sword")
+    print("2. 🛡️ Leather Shield")
+    print("3. 🧪 Health Potion")
+    print("4. 🌀 Teleport Scroll")
+    print("5. 🔑 Golden Key")
 
 def get_item(x):
     if x == 1:
-        return 'Cheeseburger'
+        return 'Iron Sword'
     elif x == 2:
-        return 'Fries'
+        return 'Leather Shield'
     elif x == 3:
-        return 'Soda'
+        return 'Health Potion'
     elif x == 4:
-        return 'Ice Cream'
+        return 'Teleport Scroll'
     elif x == 5:
-        return 'Cookie'
+        return 'Golden Key'
     else:
         return 'Invalid item'
 
 # Execution flow
 welcome()
-option = int(input('What would you like to order? '))
-print(f"You ordered: {get_item(option)}")
+option = int(input('What would you like to buy? '))
+print(f"You bought: {get_item(option)}")
 ```
 
 
@@ -252,13 +253,14 @@ lambda arguments: expression
     
 
 
+
 ### Basic Example vs. Standard Function
 
 **Standard Function:**
 
 
 ```python
-def double(x):
+def double_damage(x):
     return x * 2
 ```
 
@@ -267,9 +269,9 @@ def double(x):
 
 
 ```python
-double = lambda x: x * 2
+double_damage = lambda x: x * 2
 
-print(double(4)) # Output: 8
+print(double_damage(4)) # Output: 8
 ```
 
 
@@ -279,16 +281,16 @@ Lambda functions shine when passed as one-time arguments to high-order functions
 
 
 ```python
-numbers = [1, 2, 3, 4, 5]
+damage_values = [2, 4, 6, 8, 10]
 
-# Using map() to multiply each element by 3
-tripled_numbers = list(map(lambda x: x * 3, numbers))
+# Using map() to double each element
+doubled_damage = list(map(lambda x: x * 2, damage_values))
 
-# Using filter() to keep only odd numbers
-odd_numbers = list(filter(lambda x: x % 2 == 1, numbers))
+# Using filter() to keep only the heavy hits
+heavy_hits = list(filter(lambda x: x > 7, damage_values))
 
-print(tripled_numbers) # Output: [3, 6, 9, 12, 15]
-print(odd_numbers)     # Output: [1, 3, 5]
+print(doubled_damage) # Output: [4, 8, 12, 16, 20]
+print(heavy_hits)     # Output: [8, 10]
 ```
 
 
@@ -298,12 +300,12 @@ print(odd_numbers)     # Output: [1, 3, 5]
 
 
 ```python
-names = ['Anthony', 'Benedict', 'Colin', 'Daphne', 'Eloise']
+heroes = ['Aria', 'Borin', 'Cass', 'Dara', 'Elowen']
 
-# Filter out names starting with 'A'
-filtered_names = list(filter(lambda name: name[0].upper() != 'A', names))
+# Filter out hero names starting with 'A'
+filtered_heroes = list(filter(lambda name: name[0].upper() != 'A', heroes))
 
-print(filtered_names) # Output: ['Benedict', 'Colin', 'Daphne', 'Eloise']
+print(filtered_heroes) # Output: ['Borin', 'Cass', 'Dara', 'Elowen']
 ```
 
 
@@ -311,11 +313,8 @@ print(filtered_names) # Output: ['Benedict', 'Colin', 'Daphne', 'Eloise']
 
 
 ```python
-compound_word = lambda str1, str2: str1 + str2
+spell_name = lambda str1, str2: str1 + str2
 
-word = compound_word('fire', 'fly')
-print(f'The compound word is: {word}') # Output: The compound word is: firefly
+name = spell_name('fire', 'ball')
+print(f'The spell name is: {name}') # Output: The spell name is: fireball
 ```
-
-
-

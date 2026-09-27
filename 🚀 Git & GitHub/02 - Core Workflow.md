@@ -21,14 +21,14 @@ Bash
 
 ```bash
 # Add a single file to staging
-git add file_name.ext
+git add boss_ai.cs
 
 # Add all changed files in the working directory
 git add .
 
 # Add all files matching a specific extension
-git add *.ext
-````
+git add *.cs
+```
 
 ## 3. Saving Snapshots (`git commit`)
 
@@ -38,7 +38,7 @@ Bash
 
 ```bash
 # Create a commit with a message
-git commit -m "feat(scope): descriptive message"
+git commit -m "feat(combat): add boss aggro phase table"
 ```
 
 _Good practice:_ Keep commit messages short, clear, and descriptive (e.g., using Conventional Commits).

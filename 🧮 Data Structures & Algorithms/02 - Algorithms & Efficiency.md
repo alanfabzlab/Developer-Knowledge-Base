@@ -7,8 +7,8 @@
 An **algorithm** is a step-by-step procedure that takes an input, processes it through structured steps, and produces an expected output.
 
 ### Examples of Real-World Algorithms
-- **Recommendation Systems (e.g., TikTok, Instagram):** Takes user activity (watch time, likes) as input and outputs predicted content.
-- **Shortest Path Algorithms (e.g., Google Maps):** Takes start/end locations and traffic conditions as input to compute the quickest route.
+- **Matchmaking Systems (e.g., skill-based queues):** Takes player history (win rate, K/D) as input and outputs balanced matches.
+- **Shortest Path Algorithms (e.g., NPC navigation):** Takes start/end positions and terrain data as input to compute the quickest route.
 - **Sorting Algorithms:** Takes an unordered collection of items and arranges them in alphabetical or numerical order.
 
 ---
@@ -33,10 +33,10 @@ def insertion_sort(arr):
         
     return arr
 
-input_list = [5, 3, 8, 4, 2, 10]
-print(insertion_sort(input_list))
-# Output: [2, 3, 4, 5, 8, 10]
-````
+enemy_speeds = [55, 30, 80, 45, 20, 95]
+print(insertion_sort(enemy_speeds))
+# Output: [20, 30, 45, 55, 80, 95]
+```
 
 
 ## 3. Algorithmic Efficiency & Worst-Case Scenario
@@ -95,33 +95,33 @@ range_high = 100000
 numbers = [i for i in range(range_low, range_high + 1)]
 random_num = random.randint(range_low, range_high)
 
-print(f"Your secret number is {random_num}")
+print(f"Your secret boss HP roll is {random_num}")
 linear_search(numbers, random_num)
 binary_search(numbers, random_num)
 ```
 
 
-## 4. Practical Application: Amazon Delivery Route Optimization
+## 4. Practical Application: Dungeon Route Optimization
 
 A classic optimization challenge in Computer Science is route planning (known historically as the **Traveling Salesman Problem**).
 
 - **Data Structure Choice:** A **List** is ideal when execution sequence and order matter.
     
-- **Algorithm Goal:** Minimize total distance/time traveled across multiple destination stops.
+- **Algorithm Goal:** Minimize total distance/time traveled across multiple dungeon stops.
     
 
 
 Python
 
 ```python
-# Delivery route planning using an ordered List
+# Dungeon route planning using an ordered List
 route = [
-    "Jersey City (Start)",
-    "Ellis Island",
-    "Financial District",
-    "Lower Manhattan",
-    "Brooklyn",
-    "Kosciuszko Bridge"
+    "Sunken Keep (Start)",
+    "Flooded Catacombs",
+    "Crystal Spire",
+    "Emberfall Forge",
+    "Ashen Barrens",
+    "Gate of the Twin Moons"
 ]
 
 print("Planned route:")

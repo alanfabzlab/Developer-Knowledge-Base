@@ -20,35 +20,35 @@ A variable is a named storage container that holds data in memory. Every variabl
 
 ## 2. Practice Exercises
 
-### Exercise 1: Desk Environment Variables
-Declaring basic variables (`int`, `string`, `bool`) and printing their values to the console using string interpolation.
+### Exercise 1: Loadout Screen
+Declaring basic variables (`int`, `string`, `bool`) for a character screen and printing their values to the console using string interpolation.
 
 ```csharp
 using System;
 
-class Typecast
+class LoadoutScreen
 {
     static void Main()
     {
-        int monitors = 2;
-        string currentDrink = "Coffee";
-        bool isHeadphonesOn = true;
+        int controllers = 2;
+        string currentClass = "Paladin";
+        bool isHeadsetOn = true;
 
-        Console.WriteLine($"Monitors: {monitors}");
-        Console.WriteLine($"Drink: {currentDrink}");
-        Console.WriteLine($"Headphones on: {isHeadphonesOn}");
+        Console.WriteLine($"Controllers: {controllers}");
+        Console.WriteLine($"Class: {currentClass}");
+        Console.WriteLine($"Headset on: {isHeadsetOn}");
     }
 }
-````
+```
 
 
 **Terminal Output:**
 
 
 ```text
-Monitors: 2
-Drink: Coffee
-Headphones on: True
+Controllers: 2
+Class: Paladin
+Headset on: True
 ```
 
 
@@ -60,27 +60,27 @@ In C#, variables store data that can be joined with text using string concatenat
 
 ## 4. Additional Practice Exercises
 
-### Exercise 2: Party Animal
+### Exercise 2: Raid Planning
 
-Declaring and initializing variables with different primitive types (`string`, `int`, `double`, `bool`) to plan an event.
+Declaring and initializing variables with different primitive types (`string`, `int`, `double`, `bool`) to plan a dungeon run.
 
 
 ```csharp
 using System;
 
-class PartyAnimal
+class RaidPlanning
 {
     static void Main()
     {
-        string partyTheme = "Retro Gaming";
-        int numberOfGuests = 15;
-        double costPerGuest = 25.50;
-        bool isSurpriseParty = true;
+        string raidTarget = "Void Hydra";
+        int squadSize = 15;
+        double costPerPlayer = 25.50;
+        bool isBlindRaid = true;
 
-        Console.WriteLine($"Party Theme: {partyTheme}");
-        Console.WriteLine($"Guests: {numberOfGuests}");
-        Console.WriteLine($"Cost per Guest: ${costPerGuest}");
-        Console.WriteLine($"Surprise Party: {isSurpriseParty}");
+        Console.WriteLine($"Raid Target: {raidTarget}");
+        Console.WriteLine($"Squad Size: {squadSize}");
+        Console.WriteLine($"Cost per Player: ${costPerPlayer}");
+        Console.WriteLine($"Blind Raid: {isBlindRaid}");
     }
 }
 ```
@@ -90,14 +90,14 @@ class PartyAnimal
 
 
 ```text
-Party Theme: Retro Gaming
-Guests: 15
-Cost per Guest: $25.5
-Surprise Party: True
+Raid Target: Void Hydra
+Squad Size: 15
+Cost per Player: $25.5
+Blind Raid: True
 ```
 
 
-### Exercise 3: Celebrity Crush
+### Exercise 3: Legend Origins
 
 Demonstrating string concatenation by combining text strings with integer variables.
 
@@ -105,15 +105,15 @@ Demonstrating string concatenation by combining text strings with integer variab
 ```csharp
 using System;
 
-class CelebrityCrush
+class LegendOrigins
 {
     static void Main()
     {
-        string name = "Lady Gaga";
-        int year = 2008;
+        string name = "Aria the Bold";
+        int year = 1994;
 
-        Console.WriteLine(name + " is an incredibly talented artist.");
-        Console.WriteLine("She rose to fame in " + year + " with her hit album The Fame.");
+        Console.WriteLine(name + " is an incredibly legendary hero.");
+        Console.WriteLine("She rose to fame in " + year + " during the Siege of Emberfall.");
     }
 }
 ```
@@ -123,31 +123,31 @@ class CelebrityCrush
 
 
 ```text
-Lady Gaga is an incredibly talented artist.
-She rose to fame in 2008 with her hit album The Fame.
+Aria the Bold is an incredibly legendary hero.
+She rose to fame in 1994 during the Siege of Emberfall.
 ```
 
 
-### Exercise 4: Math Is Mathing
+### Exercise 4: Loot Split
 
-Performing integer division and using the modulo (`%`) operator to calculate bundle distribution and remainder.
+Performing integer division and using the modulo (`%`) operator to distribute gold between chests and find the remainder.
 
 
 ```csharp
 using System;
 
-class MathIsMathing
+class LootSplit
 {
     static void Main()
     {
-        int totalPeople = 23;
-        int ticketsPerBundle = 5;
+        int totalGold = 23;
+        int goldPerChest = 5;
 
-        int fullBundles = totalPeople / ticketsPerBundle;
-        int peopleWithoutTickets = totalPeople % ticketsPerBundle;
+        int fullChests = totalGold / goldPerChest;
+        int leftoverGold = totalGold % goldPerChest;
 
-        Console.WriteLine($"Full bundles: {fullBundles}");
-        Console.WriteLine($"People without tickets: {peopleWithoutTickets}");
+        Console.WriteLine($"Full chests: {fullChests}");
+        Console.WriteLine($"Gold left over: {leftoverGold}");
     }
 }
 ```
@@ -157,8 +157,8 @@ class MathIsMathing
 
 
 ```text
-Full bundles: 4
-People without tickets: 3
+Full chests: 4
+Gold left over: 3
 ```
 
 
@@ -171,10 +171,10 @@ In C#, user input is collected from the console using `Console.ReadLine()`. The 
 ### Standard String Input
 
 ```csharp
-Console.WriteLine("What's your name?");
-string name = Console.ReadLine();
-Console.WriteLine($"Nice to meet you, {name}!");
-````
+Console.Write("What's your hero name?");
+string heroName = Console.ReadLine();
+Console.WriteLine($"Welcome to the party, {heroName}!");
+```
 
 
 ### Converting String Input to Integer (`int`)
@@ -183,35 +183,35 @@ When numeric operations are required on user input, the captured `string` must b
 
 
 ```csharp
-Console.Write("Enter a number: ");
+Console.Write("Enter a damage value: ");
 string input = Console.ReadLine();
-int convertedValue = Convert.ToInt32(input);
+int damage = Convert.ToInt32(input);
 ```
 
 
 ## 6. Input & Conversion Exercises
 
 
-### Exercise 5: Year of the X
+### Exercise 5: Rune Cycle
 
-Asking the user for their birth year, parsing the string input to an integer, and calculating the years remaining until their Chinese Zodiac year repeats (12-year cycle).
+Asking the user for the birth year of their character, parsing the string input to an integer, and calculating the years remaining until the twelve-rune cycle realigns for their sign (12-year cycle).
 
 
 ```csharp
 using System;
 
-class YearOfTheX
+class RuneCycle
 {
     static void Main()
     {
-        Console.Write("Enter your birth year: ");
+        Console.Write("Enter your character's birth year: ");
         int birthYear = Convert.ToInt32(Console.ReadLine());
 
         int currentYear = 2026;
-        int yearsPassed = (currentYear - birthYear) % 12;
-        int yearsUntilNext = (12 - yearsPassed) % 12;
+        int yearsIntoCycle = (currentYear - birthYear) % 12;
+        int yearsUntilAlignment = (12 - yearsIntoCycle) % 12;
 
-        Console.WriteLine($"Years until your zodiac year happens again: {yearsUntilNext}");
+        Console.WriteLine($"Years until the runes realign for your sign: {yearsUntilAlignment}");
     }
 }
 ```
@@ -221,34 +221,34 @@ class YearOfTheX
 
 
 ```text
-Enter your birth year: 1996
-Years until your zodiac year happens again: 2
+Enter your character's birth year: 2004
+Years until the runes realign for your sign: 2
 ```
 
 
-### Exercise 6: Giant Plushie
+### Exercise 6: Gacha Summon
 
-Calculating how many giant plushies a user can redeem based on their arcade ticket balance and finding the remaining ticket count using division and modulo operations.
+Calculating how many times a player can pull on a summoning banner based on their crystal balance and finding the leftover crystals using division and modulo operations.
 
 
 ```csharp
 using System;
 
-class GiantPlushie
+class GachaSummon
 {
     static void Main()
     {
-        Console.Write("How many tickets do you have? ");
+        Console.Write("How many crystals do you have? ");
         string input = Console.ReadLine();
-        int userTickets = Convert.ToInt32(input);
+        int crystals = Convert.ToInt32(input);
 
-        int plushieCost = 50;
+        int summonCost = 50;
 
-        int totalPlushies = userTickets / plushieCost;
-        int remainingTickets = userTickets % plushieCost;
+        int totalSummons = crystals / summonCost;
+        int remainingCrystals = crystals % summonCost;
 
-        Console.WriteLine($"You can redeem: {totalPlushies} plushie(s)");
-        Console.WriteLine($"Tickets left over: {remainingTickets}");
+        Console.WriteLine($"You can summon: {totalSummons} time(s)");
+        Console.WriteLine($"Crystals left over: {remainingCrystals}");
     }
 }
 ```
@@ -257,7 +257,7 @@ class GiantPlushie
 
 
 ```text
-How many tickets do you have? 125
-You can redeem: 2 plushie(s)
-Tickets left over: 25
+How many crystals do you have? 275
+You can summon: 5 time(s)
+Crystals left over: 25
 ```

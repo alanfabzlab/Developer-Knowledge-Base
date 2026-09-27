@@ -6,22 +6,22 @@ A method is a reusable block of code designed to perform a specific task. Method
 ---
 
 
-## 1. Array Processing Example (Doomsday Prepper)
+## 1. Array Processing Example (Loot Hoarder)
 
 Before creating standalone methods, here is how multiple arrays are combined with loops to process data dynamically.
 
 ```csharp
 using System;
 
-class DoomsdayPrepper
+class LootHoarder
 {
     static void Main()
     {
-        string[] supplies = { "Water bottles", "Canned food", "Batteries", "First aid kits", "Flashlights" };
-        int[] quantities = { 20, 18, 32, 8, 10 };
+        string[] supplies = { "Health Potions", "Mana Potions", "Elixirs", "Antidotes", "Bomb Runes" };
+        int[] quantities = { 12, 30, 8, 25, 16 };
 
         // Updating an inventory value directly via index
-        quantities[0] = 24;
+        quantities[0] = 15;
 
         int totalSupplies = 0;
 
@@ -34,7 +34,7 @@ class DoomsdayPrepper
         Console.WriteLine($"Total supplies: {totalSupplies}");
     }
 }
-````
+```
 
 
 ## 2. Declaring and Calling Methods
@@ -45,19 +45,19 @@ Every C# executable starts in the `Main()` method. Custom methods are defined ou
 ```csharp
 using System;
 
-class MeetTheMethods
+class LevelUpFanfare
 {
     static void Main()
     {
         // Calling the custom method
-        MoodRing();
+        VictoryPose();
     }
 
     // Method declaration
-    static void MoodRing()
+    static void VictoryPose()
     {
-        Console.WriteLine("Feeling unbothered!");
-        Console.WriteLine("Blue 💙");
+        Console.WriteLine("The champion raises the trophy!");
+        Console.WriteLine("Victory! 🏆");
     }
 }
 ```
@@ -71,21 +71,21 @@ Calling a method multiple times executes its encapsulated logic without duplicat
 ```csharp
 using System;
 
-class MakeSomeNoise
+class CrowdChant
 {
     static void Main()
     {
-        // Calling Hype() 5 times
-        Hype();
-        Hype();
-        Hype();
-        Hype();
-        Hype();
+        // Calling Chant() 5 times
+        Chant();
+        Chant();
+        Chant();
+        Chant();
+        Chant();
     }
 
-    static void Hype()
+    static void Chant()
     {
-        Console.WriteLine("Make some noise!");
+        Console.WriteLine("Chant with me!");
     }
 }
 ```
@@ -97,29 +97,29 @@ Methods can accept external data to customize their execution using parameters.
 
 ### Definitions
 
-- **Parameter:** The placeholder variable defined in the method signature (e.g., `string food`).
+- **Parameter:** The placeholder variable defined in the method signature (e.g., `string elixir`).
     
-- **Argument:** The actual value passed into the method during its call (e.g., `"peanuts 🥜"`).
+- **Argument:** The actual value passed into the method during its call (e.g., `"ember 🔥"`).
     
 
 
 ```csharp
 using System;
 
-class TheCookout
+class BuffMenu
 {
     static void Main()
     {
-        // "wheat 🌾", "peanuts 🥜", and "cheese 🧀" are ARGUMENTS
-        Allergies("wheat 🌾");
-        Allergies("peanuts 🥜");
-        Allergies("cheese 🧀");
+        // "ember 🔥", "frost ❄️", and "lightning ⚡" are ARGUMENTS
+        BrewElixir("ember 🔥");
+        BrewElixir("frost ❄️");
+        BrewElixir("lightning ⚡");
     }
 
-    // 'food' is the PARAMETER
-    static void Allergies(string food)
+    // 'elixir' is the PARAMETER
+    static void BrewElixir(string elixir)
     {
-        Console.WriteLine($"We'll make sure to provide snacks that don't contain {food}!");
+        Console.WriteLine($"Brewing a {elixir} elixir for the whole party!");
     }
 }
 ```
@@ -133,21 +133,21 @@ Methods can accept multiple parameters of different data types, separated by com
 ```csharp
 using System;
 
-class TicketPool
+class PrizeSplit
 {
     static void Main()
     {
-        CalculateCost("Bad Bunny", 150, 4, 4);
-        CalculateCost("Dua Lipa", 200, 3, 3);
+        CalculateCost("Sunken Keep", 150, 4, 4);
+        CalculateCost("Shadow Crypt", 200, 3, 3);
     }
 
-    static void CalculateCost(string artist, int ticketPrice, int numberOfTickets, int people)
+    static void CalculateCost(string dungeonName, int goldPerFloor, int floorsCleared, int partySize)
     {
-        int totalCost = ticketPrice * numberOfTickets;
-        int costPerPerson = totalCost / people;
+        int totalGold = goldPerFloor * floorsCleared;
+        int goldPerHero = totalGold / partySize;
 
-        Console.WriteLine($"Artist: {artist}");
-        Console.WriteLine($"Cost per person: ${costPerPerson}");
+        Console.WriteLine($"Dungeon: {dungeonName}");
+        Console.WriteLine($"Gold per hero: ${goldPerHero}");
     }
 }
 ```
@@ -161,23 +161,23 @@ By default, methods marked with `void` do not return a value. To send data back 
 ```csharp
 using System;
 
-class ReturnToSender
+class QuestProgress
 {
     static void Main()
     {
-        int remainingPoints = PointsLeft(50000, 35000);
-        Console.WriteLine(remainingPoints);
+        int xpRemaining = XpToNextLevel(35000, 50000);
+        Console.WriteLine(xpRemaining);
     }
 
-    static int PointsLeft(int startingPoints, int pointsNeeded)
+    static int XpToNextLevel(int currentXp, int xpToNextLevel)
     {
-        return startingPoints - pointsNeeded;
+        return xpToNextLevel - currentXp;
     }
 }
 ```
 
 
-## 7. Modular Composition (Calling All Hackers)
+## 7. Modular Composition (Calling All Raiders)
 
 Breaking complex applications into specialized methods improves code maintainability and testability.
 
@@ -185,20 +185,20 @@ Breaking complex applications into specialized methods improves code maintainabi
 ```csharp
 using System;
 
-class CallingAllHackers
+class CallingAllRaiders
 {
     static void Main()
     {
-        int teams = CalculateTeams(36, 6);
+        int squads = CalculateSquads(36, 6);
         int hours = CalculateHours(12, 18);
-        string invite = CreateInvite("Boba and Booleans", teams, hours);
+        string briefing = CreateBriefing("Dragon Siege", squads, hours);
 
-        Console.WriteLine(invite);
+        Console.WriteLine(briefing);
     }
 
-    static int CalculateTeams(int attendees, int teamSize)
+    static int CalculateSquads(int raiders, int squadSize)
     {
-        return attendees / teamSize;
+        return raiders / squadSize;
     }
 
     static int CalculateHours(int startHour, int endHour)
@@ -206,10 +206,9 @@ class CallingAllHackers
         return endHour - startHour;
     }
 
-    static string CreateInvite(string eventName, int teams, int hours)
+    static string CreateBriefing(string eventName, int squads, int hours)
     {
-        return $"{eventName} starts at 6 PM!\nWe'll hack for {hours} hours in {teams} teams. See you there!";
+        return $"{eventName} starts at 6 PM!\nWe'll raid for {hours} hours with {squads} squads. See you at the gate!";
     }
 }
 ```
-

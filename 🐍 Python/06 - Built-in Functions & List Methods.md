@@ -11,30 +11,30 @@ tags:
 
 
 
-## 06. Bucket List Project (`bucket_list.py`)
+## 06. Boss Rush Log Project (`boss_rush_log.py`)
 
-Combining concepts of list creation and iteration to output a bucket list.
+Combining concepts of list creation and iteration to output a boss rush log.
 
 
-### 📝 Bucket List Exercise (`bucket_list.py`)
+### 📝 Boss Rush Log Exercise (`boss_rush_log.py`)
 
 ```python
-# bucket_list.py
+# boss_rush_log.py
 
-things_to_do = [
-  'Create the dopest learn to code platform ever.',
-  'Hike the Pacific Crest Trail.',
-  'Build an A-frame house and raise some goats.',
-  'Live somewhere in Asia for a year.',
-  'Release an album.',
-  'Write a book.',
-  'Reach 100k subscribers on YouTube.',
-  'Road trip with the fam.',
-  'Open a cozy diner upstate.',
-  'Grow old with no regrets.'
+things_to_beat = [
+  'Slay the Chrono Warden with a pistol only.',
+  'Clear the Sunken Keep without healing items.',
+  'Beat the entire raid with four players.',
+  'Finish the campaign on Nightmare difficulty.',
+  'Speedrun the Ashwood Mines under 10 minutes.',
+  'Collect every golden key in the kingdom.',
+  'Survive 100 waves of the endless mode.',
+  'Build a working game and ship it.',
+  'Playtest with strangers and take notes.',
+  'Never rage quit. Never again.'
 ]
 
-for thing in things_to_do:
+for thing in things_to_beat:
   print(thing)
 ```
 
@@ -68,33 +68,25 @@ matrix = [
 ```
 
 
-#### Tic-Tac-Toe Board Example
+#### Battle Map Example
 
 
 ```python
-board = [
-  ['x', ' ', ' '],
-  [' ', 'x', ' '],
-  ['o', 'x', 'o']
+battle_map = [
+  ['M', 'M', 'M'],
+  ['M', 'B', 'M'],
+  ['S', 'B', 'T']
 ]
+
+# Legend: M = mountain, B = boss spawn, S = shop, T = treasure
 
 # Accessing row 2, column 1
 row = 2
 column = 1
-print(board[row][column]) # Output: x
+print(battle_map[row][column]) # Output: B
 ```
 
 
----
-type: note
-course: Codedex Python
-chapter: Lists
-topic: Dictionaries and Sets
-tags:
-  - python
-  - data-structures
-  - dictionaries
-  - sets
 ---
 
 
@@ -110,10 +102,10 @@ Python offers structures beyond standard ordered lists that enable faster search
 A **dictionary** connects a unique `key` to a `value`. They are ordered collections storing data as `key: value` pairs.
 
 ```python
-contacts = {
-    'Taylor': '626-242-1072',
-    'Xin Xin': '614-555-5678',
-    'Hans': '614-555-9999'
+party = {
+    'Aria': 'Ranger',
+    'Kai': 'Paladin',
+    'Nyx': 'Mage'
 }
 ```
 
@@ -124,8 +116,8 @@ Items are retrieved using key indexing `[key]` instead of zero-based numerical i
 
 
 ```python
-print(contacts['Xin Xin']) 
-# Output: 614-555-5678
+print(party['Nyx']) 
+# Output: Mage
 ```
 
 > [!NOTE] Key Rules
@@ -142,15 +134,15 @@ print(contacts['Xin Xin'])
 
 |Method|Description|Example Output|
 |---|---|---|
-|`.keys()`|Returns all dictionary keys|`dict_keys(['Taylor', 'Xin Xin', 'Hans'])`|
-|`.values()`|Returns all values|`dict_values(['626-242-1072', ...])`|
-|`.items()`|Returns a list of `(key, value)` tuples|`dict_items([('Taylor', '626-242-1072'), ...])`|
+|`.keys()`|Returns all dictionary keys|`dict_keys(['Aria', 'Kai', 'Nyx'])`|
+|`.values()`|Returns all values|`dict_values(['Ranger', 'Paladin', 'Mage'], ...)`|
+|`.items()`|Returns a list of `(key, value)` tuples|`dict_items([('Aria', 'Ranger'), ...])`|
 
 
 ```python
-print(contacts.keys())
-print(contacts.values())
-print(contacts.items())
+print(party.keys())
+print(party.values())
+print(party.items())
 ```
 
 
@@ -160,16 +152,16 @@ A **set** is an unordered collection of **unique items** with no duplicates.
 
 
 ```python
-mochi_favorites = {'Tuna', 'Chestnuts', 'Corn', 'Valerian Root Tea', 'Catnip'}
-cloud_favorites = {'Salmon', 'Chicken', 'Catnip', 'Sweet Potato', 'Rice'}
+loot_favorites = {'Sword', 'Shield', 'Potion', 'Helm', 'Boots'}
+spell_favorites = {'Staff', 'Wand', 'Potion', 'Scroll', 'Rune'}
 ```
 
 > [!WARNING] Creating Empty Sets Declaring `{}` creates an empty **dictionary**, not a set. To initialize an empty set, use `set()`:
 > 
 > 
-```python
-empty_set = set()
-```
+> ```python
+> empty_set = set()
+> ```
 > 
 > 
 
@@ -187,23 +179,21 @@ Python
 
 ```
 # Union
-print(mochi_favorites.union(cloud_favorites))
+print(loot_favorites.union(spell_favorites))
 
 # Intersection
-print(mochi_favorites.intersection(cloud_favorites))
-# Output: {'Catnip'}
+print(loot_favorites.intersection(spell_favorites))
+# Output: {'Potion'}
 
 # Difference
-print(mochi_favorites.difference(cloud_favorites))
-# Output: {'Tuna', 'Chestnuts', 'Corn', 'Valerian Root Tea'}
+print(loot_favorites.difference(spell_favorites))
+# Output: {'Sword', 'Shield', 'Helm', 'Boots'}
 ```
 
 ## Summary: Data Structures Overview
 
 |Data Structure|Characteristics|Common Use Case|
 |---|---|---|
-|**List**|Ordered, index-accessible, allows duplicates|Grocery lists, chronological logs|
-|**Dictionary**|Key-value pairs, fast key lookups|Contact lists, configuration profiles|
-|**Set**|Unordered, unique elements, fast membership checks|Filtering duplicates, comparing categories|
-
-
+|**List**|Ordered, index-accessible, allows duplicates|Loot bags, combat logs|
+|**Dictionary**|Key-value pairs, fast key lookups|Save files, ability loadouts|
+|**Set**|Unordered, unique elements, fast membership checks|Filtering duplicate buffs, comparing loadouts|

@@ -18,29 +18,29 @@ A **list** is an ordered collection of items stored in a single variable. Lists 
 
 ---
 
-## 01. Introduction to Lists (`grocery.py`)
+## 01. Introduction to Lists (`boss_stats.py`)
 
 Lists can hold multiple data items, duplicate values, and mixed data types without a size limit.
 
 ```python
 # Storing data using lists
-hw_grades = [98, 87, 92, 96]
-quiz_grades = [9, 6, 8]
-````
-
-
-### 📝 Grocery List Exercise (`grocery.py`)
-
-
-```python
-# grocery.py
-
-grocery = ['Eggs', 'Avocados', 'Cookies', 'Hot Pepper Jam', 'Blueberries', 'Broccoli']
-print(grocery)
+boss_hp = [980, 870, 920, 960]
+wave_damage = [9, 6, 8]
 ```
 
 
-## 02. Indexing, Slicing & Errors (`todo.py`)
+### 📝 Loot Bag Exercise (`loot_bag.py`)
+
+
+```python
+# loot_bag.py
+
+loot_bag = ['Health Potion', 'Iron Sword', 'Bomb Rune', 'Teleport Scroll', 'Golden Key', 'Monster Pelt']
+print(loot_bag)
+```
+
+
+## 02. Indexing, Slicing & Errors (`quest_log.py`)
 
 ### 🔹 Indexing
 
@@ -48,12 +48,12 @@ List items are accessed via their zero-based position index `[index]`. Negative 
 
 
 ```python
-vowels = ['a', 'e', 'i', 'o', 'u']
+elements = ['Fire', 'Ice', 'Lightning', 'Earth', 'Wind']
 # Positive Index: 0, 1, 2, 3, 4
 # Negative Index: -5, -4, -3, -2, -1
 
-print(vowels[0])   # Output: a
-print(vowels[-1])  # Output: u
+print(elements[0])   # Output: Fire
+print(elements[-1])  # Output: Wind
 ```
 
 
@@ -63,10 +63,10 @@ Slicing retrieves a sub-sequence of items using `[start:end]`. It includes the `
 
 
 ```python
-vowels = ['a', 'e', 'i', 'o', 'u']
+elements = ['Fire', 'Ice', 'Lightning', 'Earth', 'Wind']
 
-print(vowels[0:3]) # Output: ['a', 'e', 'i']
-print(vowels[1:3]) # Output: ['e', 'i']
+print(elements[0:3]) # Output: ['Fire', 'Ice', 'Lightning']
+print(elements[1:3]) # Output: ['Ice', 'Lightning']
 ```
 
 
@@ -77,36 +77,36 @@ An `IndexError` occurs when attempting to access an index that exceeds the seque
 
 ```python
 # Causes Traceback: IndexError: list index out of range
-print(vowels[5]) 
+print(elements[5]) 
 ```
 
 
-### 📝 To-Do List Exercise (`todo.py`)
+### 📝 Quest Log Exercise (`quest_log.py`)
 
 
 ```python
-# todo.py
+# quest_log.py
 
-todo = [
-  'Get quarters.',
-  'Do laundry.',
-  'Take a walk.',
-  'Get a haircut.',
-  'Make some tea.',
-  'Complete Lists chapter.',
-  'Call mom.',
-  'Watch My Hero Academia.'
+quest_log = [
+  'Defeat the goblin camp.',
+  'Find the Sunken Key.',
+  'Rescue the lost merchant.',
+  'Collect 10 iron ore.',
+  'Brew a healing elixir.',
+  'Clear the Ashwood Mines.',
+  'Defeat the Frost Golem.',
+  'Escape the collapsing temple.'
 ]
 
 # Print first and second items
-print(todo[0])
-print(todo[1])
+print(quest_log[0])
+print(quest_log[1])
 
 # Slice third, fourth, and fifth items
-print(todo[2:5])
+print(quest_log[2:5])
 
 # Accessing index 9 causes IndexError
-# print(todo[9])
+# print(quest_log[9])
 ```
 
 
@@ -121,33 +121,33 @@ Python includes several built-in functions designed to work directly with lists:
 
 
 ```python
-stock1_prices = [2.52, 2.44, 2.32, 2.41, 2.51, 2.50, 2.44]
-stock2_prices = [8.36, 8.31, 8.21, 8.21, 8.25, 8.11, 8.13]
+potion_prices = [12.50, 9.75, 15.20, 9.75, 18.40, 11.30, 13.60]
+rune_prices = [45.10, 32.80, 51.25, 28.40, 39.95, 28.40, 33.60]
 
-print(len(stock1_prices)) # Output: 7
-print(max(stock1_prices)) # Output: 2.52
-print(min(stock2_prices)) # Output: 8.11
+print(len(potion_prices)) # Output: 7
+print(max(potion_prices)) # Output: 18.4
+print(min(rune_prices)) # Output: 28.4
 ```
 
 
 
-### 📝 Inventory Exercise (`inventory.py`)
+### 📝 Loot Tracker Exercise (`loot_tracker.py`)
 
 
 ```python
-# inventory.py
+# loot_tracker.py
 
-lego_parts = [8980, 7323, 5343, 82700, 92232, 1203, 7319, 8903, 2328, 1203]
+enemy_kills = [452, 318, 197, 806, 645, 274, 903, 261]
 
-# Lowest quantity LEGO part
-print(min(lego_parts))
+# Lowest kill count enemy
+print(min(enemy_kills))
 
-# Highest quantity LEGO part
-print(max(lego_parts))
+# Highest kill count enemy
+print(max(enemy_kills))
 ```
 
 
-## 04. List Methods (`reading_list.py`)
+## 04. List Methods (`spellbook.py`)
 
 List methods are called using dot notation (`list_name.method()`).
 
@@ -171,38 +171,38 @@ List methods are called using dot notation (`list_name.method()`).
 
 
 ```python
-dna = ['AUG', 'AUC', 'UCG']
+loot_codes = ['SWD', 'SHT', 'BOW', 'POT']
 
-dna.append('UAA')       # ['AUG', 'AUC', 'UCG', 'UAA']
-dna.insert(2, 'GAU')    # ['AUG', 'AUC', 'GAU', 'UCG', 'UAA']
-dna.remove('AUC')       # ['AUG', 'GAU', 'UCG', 'UAA']
-dna.pop(0)              # ['GAU', 'UCG', 'UAA']
+loot_codes.append('RIN')      # ['SWD', 'SHT', 'BOW', 'POT', 'RIN']
+loot_codes.insert(2, 'HEL')   # ['SWD', 'SHT', 'HEL', 'BOW', 'POT', 'RIN']
+loot_codes.remove('SHT')      # ['SWD', 'HEL', 'BOW', 'POT', 'RIN']
+loot_codes.pop(0)             # ['HEL', 'BOW', 'POT', 'RIN']
 ```
 
 
-### 📝 Reading List Exercise (`reading_list.py`)
+### 📝 Spellbook Exercise (`spellbook.py`)
 
 
 ```python
-# reading_list.py
+# spellbook.py
 
-books = [
-  'Harry Potter',
-  '1984',
-  'The Fault in Our Stars',
-  'The Mom Test',
-  'Life in Code'
+spellbook = [
+  'Fireball',
+  'Frost Nova',
+  'Chain Lightning',
+  'Healing Word',
+  'Shadow Step'
 ]
 
-books.append('Pachinko')
-books.remove('The Fault in Our Stars')
-books.pop(1)
+spellbook.append('Time Stop')
+spellbook.remove('Healing Word')
+spellbook.pop(1)
 
-print(books)
+print(spellbook)
 ```
 
 
-## 05. Iterating Over a List (`mixtape.py`)
+## 05. Iterating Over a List (`soundtrack.py`)
 
 ### 🔹 Direct Iteration (`for-in`)
 
@@ -210,9 +210,9 @@ Iterates directly over the items of the list.
 
 
 ```python
-snowfall = [0.3, 0.0, 0.0, 1.2, 3.9, 2.2, 0.8]
+boss_health = [320, 280, 410, 190, 540, 260, 130]
 
-for i in snowfall:
+for i in boss_health:
   print(i)
 ```
 
@@ -223,30 +223,28 @@ Iterates through indices using `range(len(list))`.
 
 
 ```python
-snowfall = [0.3, 0.0, 0.0, 1.2, 3.9, 2.2, 0.8]
+boss_health = [320, 280, 410, 190, 540, 260, 130]
 
-for i in range(len(snowfall)):
-  print(snowfall[i])
+for i in range(len(boss_health)):
+  print(boss_health[i])
 ```
 
 
-### 📝 Mixtape Exercise (`mixtape.py`)
+### 📝 Soundtrack Exercise (`soundtrack.py`)
 
 
 ```python
-# mixtape.py
+# soundtrack.py
 
 playlist = [
-  'Porches - rangerover',
-  'Mount Eerie - You Swan, Go On',
-  'Hank Heaven - Threads',
-  'Pinegrove - Darkness',
-  'LVL UP - Spirit Was',
-  'Mitski - First Love / Late Spring'
+  'Boss Rush Overture',
+  'Overture of the Kingdom',
+  'Tavern at Dusk',
+  'Echoing Caverns',
+  'Final Boss Concerto',
+  'Victory Fanfare'
 ]
 
 for song in playlist:
   print(song)
 ```
-
-

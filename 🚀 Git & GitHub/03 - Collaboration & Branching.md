@@ -11,8 +11,8 @@ Bash
 
 ```bash
 # Clone a repository from GitHub
-git clone [https://github.com/username/repository-name.git](https://github.com/username/repository-name.git)
-````
+git clone [https://github.com/your-handle/quest-engine.git](https://github.com/your-handle/quest-engine.git)
+```
 
 
 ### GitHub Access Levels
@@ -38,13 +38,13 @@ Bash
 
 ```bash
 # Create a new branch
-git branch <branch-name>
+git branch feature/boss-ai
 
 # Switch to an existing branch
-git switch <branch-name>
+git switch feature/loot-table
 
 # Create and switch to a new branch in a single command
-git checkout -b <branch-name>
+git checkout -b feature/quest-dialogue
 ```
 
 

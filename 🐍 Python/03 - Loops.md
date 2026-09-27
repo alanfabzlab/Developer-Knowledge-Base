@@ -1,6 +1,6 @@
 ---
 course: Python
-topic: Nested If Statements, while Loops, for Loops & range(), String Interpolation, FizzBuzz
+topic: Nested If Statements, while Loops, for Loops & range(), String Interpolation, Rarity Roll
 tags:
   - python
   - loops
@@ -18,35 +18,36 @@ A **nested if statement** is an `if` statement placed inside another `if` statem
 ### Syntax & Visual Logic
 
 ```python
-age = 20
-income = 25000
+level = 20
+gold = 25000
 
-if age >= 18:
-  if income >= 20000:
-    print('You are eligible for a loan.')
+if level >= 18:
+  if gold >= 20000:
+    print('You are eligible to buy the legendary blade.')
   else:
-    print('Your income is too low to be eligible for a loan.')
+    print('Your gold is too low for the legendary blade.')
 else:
-  print('You are too young to apply for a loan.')
+  print('You must reach level 18 to equip legendary gear.')
 ```
 
 
 > **Note:** Avoid nesting conditions deeper than 2-3 levels to maintain code readability.
 > 
 
-### Practical Example: Weather Decision
+
+### Practical Example: Difficulty Decision
 
 ```python
-weather = 'Sunny'
-humidity = 35
+difficulty = 'Nightmare'
+gear_score = 35
 
-if weather == 'Sunny':
-  if humidity < 60:
-    print("Let's go to the beach! 🏖️")
+if difficulty == 'Nightmare':
+  if gear_score < 60:
+    print("You barely survive the dungeon! 💀")
   else:
-    print("Hmmm, it's a little humid for a beach day.")
+    print("Even overpowered gear struggles here.")
 else:
-  print("It's not sunny today... let's try for another day.")
+  print("This difficulty is too easy... let's try a harder one.")
 ```
 
 
@@ -67,27 +68,27 @@ while condition:
 ```
 
 
-### 🏦 ATM Verification Demo (`enter_pin.py`)
+### 🏦 Save File Unlock (`unlock_save.py`)
 
-Simulates PIN verification using a `while` loop:
+Simulates passcode verification for a locked dungeon gate using a `while` loop:
 
 
 ```python
-# enter_pin.py
+# unlock_save.py
 
-print('BANK OF CODÉDEX')
+print('GATE OF THE SUNKEN KEEP')
 
-pin = int(input('Enter your PIN: '))
+passcode = int(input('Enter the passcode: '))
 
-while pin != 1234:
-  pin = int(input('Incorrect PIN. Enter your PIN again: '))
+while passcode != 2468:
+  passcode = int(input('Incorrect passcode. Enter the passcode again: '))
 
-if pin == 1234:
-  print('PIN accepted!')
+if passcode == 2468:
+  print('Gate unlocked!')
 ```
 
 
-## 02. Guessing Game (`guess.py`)
+## 02. Boss HP Guessing Game (`guess.py`)
 
 Demonstrates loop execution control and limiting total attempts using a try counter.
 
@@ -99,8 +100,8 @@ Demonstrates loop execution control and limiting total attempts using a try coun
 
 guess = 0
 
-while guess != 6:
-  guess = int(input('Guess the number: '))
+while guess != 250:
+  guess = int(input('Guess the boss HP: '))
 
 print('You got it!')
 ```
@@ -118,11 +119,11 @@ Incorporating a counter variable `tries` along with logical operators to bound e
 guess = 0
 tries = 0
 
-while guess != 6 and tries < 5:
-  guess = int(input('Guess the number: '))
+while guess != 250 and tries < 5:
+  guess = int(input('Guess the boss HP: '))
   tries += 1
 
-if guess == 6:
+if guess == 250:
   print('You got it!')
 else:
   print('Too many attempts! Better luck next time.')
@@ -158,21 +159,21 @@ for i in range(6):
 > **Note:** `range(6)` generates numbers from `0` to `5` (6 numbers total). The upper bound is excluded.
 
 
-### 📝 Detention Assignment (`detention.py`)
+### 📝 Grounding Loop (`grinding.py`)
 
-To write a phrase 100 times using a loop:
+To print a message 100 times using a loop:
 
 
 ```python
-# detention.py
+# grinding.py
 
 for i in range(100):
-  print('I will not use Snapchat in class')
+  print('I will not skip the boss cutscene')
 ```
 
 
 
-## 04. String Interpolation & `for` Loops (`99_bottles.py`)
+## 04. String Interpolation & `for` Loops (`99_bosses.py`)
 
 ### 🔹 String Interpolation (f-strings)
 
@@ -182,42 +183,41 @@ String interpolation substitutes variable values into placeholders within a stri
 ```python
 # String Interpolation Example
 for i in range(5):
-  print(f'The square of {i} is {i*i}')
+  print(f'The damage of {i} is {i*i}')
 ```
 
 
 
-### 🍻 99 Bottles of Beer (`99_bottles.py`)
+### 🏹 99 Bosses (`99_bosses.py`)
 
-Prints all verses of the traditional road trip song using a `for` loop, `range()`, and f-strings:
+Prints all verses of the traditional dungeon-crawl chant using a `for` loop, `range()`, and f-strings:
 
 
 ```python
-# 99_bottles.py
+# 99_bosses.py
 
 for i in range(99, 0, -1):
-  print(f'{i} bottles of beer on the wall')
-  print(f'{i} bottles of beer')
-  print('Take one down, pass it around')
-  print(f'{i-1} bottles of beer on the wall\n')
+  print(f'{i} skeletons left in the dungeon')
+  print(f'{i} skeletons remain')
+  print('Slay one down, and the next spawns')
+  print(f'{i-1} skeletons left in the dungeon\n')
 ```
 
 
 
-## 05. The Fizz Buzz Challenge (`fizz_buzz.py`)
+## 05. The Rarity Roll Challenge (`rarity_roll.py`)
 
-A classic programming challenge that tests conditional logic inside a loop.
-
+A classic challenge that tests conditional logic inside a loot table.
 
 ### 📋 Challenge Rules
 
 Loop through numbers from `1` to `100`:
 
-- For multiples of **3**, print `"Fizz"`.
+- For multiples of **3**, print `"Common"`.
     
-- For multiples of **5**, print `"Buzz"`.
+- For multiples of **5**, print `"Rare"`.
     
-- For multiples of **both 3 and 5**, print `"FizzBuzz"`.
+- For multiples of **both 3 and 5**, print `"Legendary"`.
     
 - For all other numbers, print the number itself.
     
@@ -226,24 +226,15 @@ Loop through numbers from `1` to `100`:
 
 
 ```python
-# fizz_buzz.py
+# rarity_roll.py
 
 for i in range(1, 101):
   if i % 3 == 0 and i % 5 == 0:
-    print('FizzBuzz')
+    print('Legendary')
   elif i % 3 == 0:
-    print('Fizz')
+    print('Common')
   elif i % 5 == 0:
-    print('Buzz')
+    print('Rare')
   else:
     print(i)
 ```
-
-
-
-
-
-
-
-
-

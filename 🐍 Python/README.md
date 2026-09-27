@@ -6,12 +6,12 @@
 [![Obsidian](https://img.shields.io/badge/Obsidian-483699?logo=obsidian&logoColor=white)](https://obsidian.md/)
 [![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)](https://www.apple.com/macos/)
 
-_A dynamic knowledge map for transforming Python syntax into functional projects, architectures, and systems._
+_A dynamic knowledge map for transforming Python syntax into functional game projects, architectures, and systems._
 
 </div>
 
 > [!NOTE]
-> This page is the central map for the Python notes in this Obsidian vault.
+> This page is the central map for the Python notes in this Obsidian vault. Every exercise and code sample is framed around video game development (combat, loot, quests, party play, and engine tooling).
 
 > [!TIP]
 > Start with the **Core Language Foundations**, then follow the map toward data structures, architecture, and real-world applications.
@@ -31,7 +31,7 @@ _A dynamic knowledge map for transforming Python syntax into functional projects
 * **Variables & Data Types:** [01 - Setup & Data Types](./01%20-%20Setup%20%26%20Data%20Types.md) — Fundamentals, print output, and initial canvas (`str`, `int`, `float`, `bool`).
 * **Control Flow Systems:** [02 - Control Flow](./02%20-%20Control%20Flow.md) — Decision-making with `if` / `elif` / `else` and boolean operators (`and`, `or`, `not`).
 * **Iterative Logic (Loops):** [03 - Loops](./03%20-%20Loops.md) — Automated iteration with `for` and `while`, control via `break`, `continue`, and `pass`.
-* **Projects:** [04 - Terminal Adventure Game](./04%20-%20Terminal%20Adventure%20Game.md) — Interactive CLI control flow project.
+* **Projects:** [04 - Terminal Dungeon Crawl](./04%20-%20Terminal%20Dungeon%20Crawl.md) — Interactive CLI dungeon-crawl project.
 
 
 ### 📦 2. Data Structures (Organization & Storage)
@@ -58,3 +58,4 @@ flowchart LR
     A[Python Fundamentals] --> B[Data Structures & OOP]
     B --> C[Ecosystem & Modules]
     C --> D[Advanced Core Topics]
+```

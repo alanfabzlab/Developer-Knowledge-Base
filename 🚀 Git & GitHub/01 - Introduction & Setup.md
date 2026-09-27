@@ -25,7 +25,7 @@ Bash
 ```bash
 # Check installed Git version
 git --version
-````
+```
 
 
 _Expected output example:_ `git version 2.39.3` (or higher).
@@ -33,7 +33,7 @@ _Expected output example:_ `git version 2.39.3` (or higher).
 
 ## 3. Local Initialization & Remote Linkage
 
-Connecting a local project folder to a newly created empty GitHub repository involves four fundamental steps.
+Connecting a local game project folder (for example, a Unity or Godot codebase) to a newly created empty GitHub repository involves four fundamental steps.
 
 
 ### Step 1: Initialize Local Repository
@@ -61,7 +61,7 @@ Bash
 
 ```bash
 # Add connection to remote repository
-git remote add origin [https://github.com/username/repository-name.git](https://github.com/username/repository-name.git)
+git remote add origin [https://github.com/your-handle/quest-engine.git](https://github.com/your-handle/quest-engine.git)
 ```
 
 

@@ -21,14 +21,14 @@ class ArrayFoundations
 {
     static void Main()
     {
-        // String array containing movie titles
-        string[] movies = { "Interstellar", "Inception", "The Dark Knight", "Oppenheimer" };
+        // String array containing boss names
+        string[] bosses = { "Chrono Warden", "Void Reaper", "Iron Colossus", "Frost Queen" };
 
-        // Integer array containing corresponding ratings
-        int[] ratings = { 10, 9, 9, 10 };
+        // Integer array containing corresponding threat levels
+        int[] threatLevels = { 10, 9, 8, 10 };
     }
 }
-````
+```
 
 
 ## 2. Zero-Based Indexing
@@ -39,27 +39,27 @@ Elements inside an array are accessed using their numerical position (index) wit
 ```csharp
 using System;
 
-class Soundtracks
+class BossThemes
 {
     static void Main()
     {
-        string[] songs = 
+        string[] themes = 
         {
-            "Starlight",
-            "Midnight City",
-            "Resonance",
-            "Time",
-            "Veridis Quo"
+            "Overture of the Kingdom",
+            "Tavern at Dusk",
+            "Echoing Caverns",
+            "Shop Menu Theme",
+            "Final Boss Concerto"
         };
 
-        Console.WriteLine("Driving Scene:");
-        Console.WriteLine(songs[0]); // Output: Starlight
+        Console.WriteLine("Opening Cutscene:");
+        Console.WriteLine(themes[0]); // Output: Overture of the Kingdom
 
-        Console.WriteLine("Sad Scene:");
-        Console.WriteLine(songs[2]); // Output: Resonance
+        Console.WriteLine("Underground Ruins:");
+        Console.WriteLine(themes[2]); // Output: Echoing Caverns
 
-        Console.WriteLine("Closing Credits:");
-        Console.WriteLine(songs[4]); // Output: Veridis Quo
+        Console.WriteLine("Final Boss:");
+        Console.WriteLine(themes[4]); // Output: Final Boss Concerto
     }
 }
 ```
@@ -73,16 +73,16 @@ Array elements can be updated after initialization by reassigning a new value di
 ```csharp
 using System;
 
-class LocalRecommendations
+class QuestBoard
 {
     static void Main()
     {
-        string[] recommendations = { "Visit Palace of Fine Arts", "Eat Tacos", "Visit Frida Kahlo Museum" };
+        string[] quests = { "Slay the Sand Wraith", "Mine 5 iron ore", "Deliver a healing potion" };
 
         // Update element at index 1
-        recommendations[1] = "Eat Churros at El Moro";
+        quests[1] = "Mine 12 iron ore";
 
-        Console.WriteLine(recommendations[1]); // Output: Eat Churros at El Moro
+        Console.WriteLine(quests[1]); // Output: Mine 12 iron ore
     }
 }
 ```
@@ -96,16 +96,16 @@ When the size of an array is known in advance but values are not yet available, 
 ```csharp
 using System;
 
-class WorldCup
+class ArenaBracket
 {
     static void Main()
     {
-        // Allocates space for 104 string elements
-        string[] matches = new string[104];
+        // Allocates space for 64 string elements
+        string[] matches = new string[64];
 
         // Assigning values later
-        matches[0] = "Team A vs Team B";
-        matches[1] = "Team C vs Team D";
+        matches[0] = "Guild Iron vs Guild Ember";
+        matches[1] = "Guild Void vs Guild Storm";
     }
 }
 ```
@@ -119,16 +119,16 @@ Instead of manually accessing each index, a `for` loop automates traversal throu
 ```csharp
 using System;
 
-class NotificationOverload
+class PartyChat
 {
     static void Main()
     {
         string[] messages = {
-            "Michael: who's going dancing tonight???",
-            "Sara: not meeeeee I gotta work on this project",
-            "Nate: join usssssss",
-            "Syd: i should rly stay in too tbh",
-            "Alex: see you all there!"
+            "Kaz: who brings frost potions tonight???",
+            "Mira: not meeee i gotta craft the new staff",
+            "Dev: join usssssss",
+            "Sol: i should rly grind the raid instead tbh",
+            "Rin: see you all at the gate!"
         };
 
         for (int i = 0; i < 5; i++)
@@ -148,23 +148,23 @@ Hardcoding loop boundaries makes code rigid. The built-in `.Length` property ret
 ```csharp
 using System;
 
-class EmotionalSupportPlushie
+class InventoryBag
 {
     static void Main()
     {
-        string[] toys = {
-            "Teddy Bear",
-            "Racecar",
-            "Action Figure",
-            "Bouncy Ball",
-            "Doll",
-            "Play Food"
+        string[] items = {
+            "Health Potion",
+            "Mana Potion",
+            "Bomb Rune",
+            "Iron Ore",
+            "Teleport Scroll",
+            "Golden Key"
         };
 
         // .Length dynamically evaluates to 6
-        for (int i = 0; i < toys.Length; i++)
+        for (int i = 0; i < items.Length; i++)
         {
-            Console.WriteLine(toys[i]);
+            Console.WriteLine(items[i]);
         }
     }
 }

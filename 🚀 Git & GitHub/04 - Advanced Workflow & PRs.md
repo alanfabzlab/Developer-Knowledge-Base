@@ -14,7 +14,7 @@ git checkout main
 git pull
 git checkout <your-feature-branch>
 git merge main
-````
+```
 
 
 ### Merge Conflicts
@@ -28,13 +28,14 @@ Occur when changes are made to the same part of a file across different branches
 - **Accept Both Changes:** Retains both versions of the modified code.
     
 
+
 After resolving conflicts, stage and commit the merged code:
 
 Bash
 
 ```bash
 git add .
-git commit -m "fix: resolve merge conflicts"
+git commit -m "fix(combat): resolve merge conflicts in boss state"
 git push origin <your-feature-branch>
 ```
 
@@ -47,9 +48,9 @@ A **Pull Request (PR)** proposes merging code from one branch/repository into an
 
 1. **Pull Latest Changes:** Update local code (`git pull origin main`).
     
-2. **Test:** Verify feature execution and build integrity.
+2. **Test:** Verify the game builds and the feature runs without crashes.
     
-3. **Review:** Clean up temporary code, logs, and unnecessary files.
+3. **Review:** Clean up temporary code, debug logs, and unnecessary files.
     
 4. **Resolve Conflicts:** Ensure no open merge conflicts remain.
     
@@ -57,7 +58,7 @@ A **Pull Request (PR)** proposes merging code from one branch/repository into an
 
 ## 3. Open Source Contribution Workflow
 
-Standard process for contributing to external or team repositories:
+Standard process for contributing to external game engine or team repositories:
 
 1. **Fork** the original repository to your GitHub account.
     

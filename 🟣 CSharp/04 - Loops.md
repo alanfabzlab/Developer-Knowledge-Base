@@ -30,30 +30,30 @@ while (condition)
 {
     // Code block to repeat
 }
-````
+```
 
 
 ## 3. Exercises
 
 
-### Exercise 1: Tickle Monster
+### Exercise 1: Goblin Brawl
 
-Demonstrating an interactive `while` loop controlled by user input until a specific exit keyword ("stop") is encountered.
+Demonstrating an interactive `while` loop controlled by user input until a specific exit keyword ("retreat") is encountered.
 
 
 ```csharp
 using System;
 
-class TickleMonster
+class GoblinBrawl
 {
     static void Main()
     {
-        Console.WriteLine("Tickle tickle 🧌");
+        Console.WriteLine("Goblin incoming! 🧌");
         string input = Console.ReadLine();
 
-        while (input != "stop")
+        while (input != "retreat")
         {
-            Console.WriteLine("Tickle tickle 🧌");
+            Console.WriteLine("Goblin incoming! 🧌");
             input = Console.ReadLine();
         }
     }
@@ -65,44 +65,44 @@ class TickleMonster
 
 
 ```text
-Tickle tickle 🧌
+Goblin incoming! 🧌
 ahhh!
-Tickle tickle 🧌
+Goblin incoming! 🧌
 no no no
-Tickle tickle 🧌
-stop
+Goblin incoming! 🧌
+retreat
 ```
 
 
 
-### Exercise 2: Disappearing Act
+### Exercise 2: Poison Stacks
 
-Demonstrating an interactive `while` loop that increments a variable (`invisibilityLevel`) and continues until the user inputs a specific string (`"compose yourself!"`).
+Demonstrating an interactive `while` loop that increments a variable (`poisonStacks`) and continues until the player inputs a specific string (`"antidote!"`).
 
 ```csharp
 using System;
 
-class DisappearingAct
+class PoisonStacks
 {
     static void Main()
     {
-        int invisibilityLevel = 1;
+        int poisonStacks = 1;
 
-        Console.WriteLine($"You fade further out of existence... level {invisibilityLevel}");
+        Console.WriteLine($"The toxin spreads... stack {poisonStacks}");
         string input = Console.ReadLine();
 
-        while (input != "compose yourself!")
+        while (input != "antidote!")
         {
-            invisibilityLevel++;
-            Console.WriteLine($"You fade further out of existence... level {invisibilityLevel}");
+            poisonStacks++;
+            Console.WriteLine($"The toxin spreads... stack {poisonStacks}");
             input = Console.ReadLine();
         }
     }
 }
-````
+```
 
 
-### Exercise 3: Robocaller
+### Exercise 3: Spawn Wave
 
 Demonstrating a counter-controlled `while` loop executing code a fixed number of times (4 iterations) using an incrementing counter (`count++`).
 
@@ -110,7 +110,7 @@ Demonstrating a counter-controlled `while` loop executing code a fixed number of
 ```csharp
 using System;
 
-class Robocaller
+class SpawnWave
 {
     static void Main()
     {
@@ -118,7 +118,7 @@ class Robocaller
 
         while (count <= 4)
         {
-            Console.WriteLine("This is Macintosh. We detected a virus on your computer.");
+            Console.WriteLine("A skeleton spawns down the corridor! 💀");
             count++;
         }
     }
@@ -126,7 +126,7 @@ class Robocaller
 ```
 
 
-### Exercise 4: In The Spotlight
+### Exercise 4: Stage Lights
 
 Demonstrating a `for` loop combined with conditional statements (`if/else`) and the modulo operator (`%`) to alternate output based on odd and even iterations.
 
@@ -134,7 +134,7 @@ Demonstrating a `for` loop combined with conditional statements (`if/else`) and 
 ```csharp
 using System;
 
-class InTheSpotlight
+class StageLights
 {
     static void Main()
     {
@@ -142,11 +142,11 @@ class InTheSpotlight
         {
             if (i % 2 != 0)
             {
-                Console.WriteLine("Flash! 📸");
+                Console.WriteLine("Spotlight on! 💡");
             }
             else
             {
-                Console.WriteLine("Flash! 📸 Flash! 📸");
+                Console.WriteLine("Spotlight on! 💡 Spotlight on! 💡");
             }
         }
     }
@@ -154,73 +154,73 @@ class InTheSpotlight
 ```
 
 
-### Exercise 5: Uno Reverse
+### Exercise 5: Pit Descent
 
-Demonstrating a decrementing `for` loop that counts down from `0` to `-13` using the decrement operator (`floor--`).
+Demonstrating a decrementing `for` loop that counts down from `0` to `-20` using the decrement operator (`depth--`).
 
 
 ```csharp
 using System;
 
-class UnoReverse
+class PitDescent
 {
     static void Main()
     {
-        for (int floor = 0; floor >= -13; floor--)
+        for (int depth = 0; depth >= -20; depth--)
         {
-            Console.WriteLine(floor);
+            Console.WriteLine(depth);
         }
 
-        Console.WriteLine("The doors open to something unfamiliar...");
+        Console.WriteLine("The elevator crashes into the flooded basement...");
     }
 }
 ```
 
 
 
-### Exercise 6: Mystery Machine
+### Exercise 6: Rage Meter
 
 Demonstrating state mutation and compound operations inside a `for` loop to accumulate values across fixed iterations.
 
 ```csharp
 using System;
 
-class MysteryMachine
+class RageMeter
 {
     static void Main()
     {
-        int timeDistortion = 0;
+        int rageCharge = 0;
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 4; i++)
         {
-            timeDistortion += 3;
-            Console.WriteLine($"Time distortion: {timeDistortion}");
+            rageCharge += 7;
+            Console.WriteLine($"Rage charge: {rageCharge}");
         }
     }
 }
-````
+```
 
 
 
-### Exercise 7: Say Uncle
+### Exercise 7: Say Proceed
 
-Demonstrating dynamic loop control using user input inside a `while` loop, filtering output conditionally until a specific termination string is provided.
+Demonstrating dynamic loop control using user input inside a `while` loop, echoing every line the player types until a specific termination string is provided.
 
 
 ```csharp
 using System;
 
-class SayUncle
+class SayProceed
 {
     static void Main()
     {
         string response = "";
 
-        while (response != "uncle")
+        while (response != "proceed")
         {
             response = Console.ReadLine();
 
-            if (response != "uncle")
+            if (response != "proceed")
             {
                 Console.WriteLine(response);
             }
@@ -230,19 +230,19 @@ class SayUncle
 ```
 
 
-### Exercise 8: Best Kept Secret
+### Exercise 8: Locked Vault
 
-Demonstrating a comprehensive `while` loop that tracks iteration attempts while evaluating dynamic user input against a hardcoded secret phrase.
+Demonstrating a comprehensive `while` loop that tracks attempt counts while evaluating dynamic user input against a hardcoded secret phrase.
 
 
 ```csharp
 using System;
 
-class BestKeptSecret
+class LockedVault
 {
     static void Main()
     {
-        string secretPhrase = "open sesame";
+        string secretPhrase = "press start";
         string userInput = "";
         int attempts = 0;
 
@@ -253,8 +253,8 @@ class BestKeptSecret
             attempts++;
         }
 
-        Console.WriteLine("The bookshelf shifts aside, revealing a hidden passageway.");
-        Console.WriteLine($"It took {attempts} attempts to discover the passage.");
+        Console.WriteLine("The vault door slides open, revealing a legendary blade.");
+        Console.WriteLine($"It took {attempts} attempts to crack the safe.");
     }
 }
 ```

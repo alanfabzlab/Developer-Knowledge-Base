@@ -24,10 +24,10 @@ tags:
 > **Python** was created by **Guido van Rossum** in the early 1990s. It is designed to be readable, high-level, and versatile.
 
 ### Common Use Cases
-- 📊 Data Analysis & Visualization
+- 🎮 Game Development & Engine Scripting
 - 🤖 Artificial Intelligence (AI) & Machine Learning (ML)
+- 📊 Data Analysis & Visualization
 - 🌐 Web Development
-- 🕹️ Game Development & Scripting
 
 ### Core Tools
 - **Files:** Code is stored in text files with the `.py` extension.
@@ -54,9 +54,11 @@ Python
 ```python
 print('👾 Hello Developer!')
 print('🚀 Systems Ready!')
+```
 
 **Output:**
 
+```
 👾 Hello Developer!
 🚀 Systems Ready!
 ```
@@ -64,33 +66,33 @@ print('🚀 Systems Ready!')
 
 ## 03. Practice Challenges & Patterns
 
-### 📐 Pattern Printing Challenge (`pattern.py`)
+### 📐 Damage Counter Challenge (`damage_board.py`)
 
 To output formatted shapes or text lines, stack multiple `print()` statements:
 
 Python
 
 ```python
-# pattern.py
+# damage_board.py
 print('   1')
 print('  2 3')
 print(' 4 5 6')
 print('7 8 9 10')
 ```
 
-### 🅰️ Block Letters Challenge (`initials.py`)
+### 🎮 Block Letters Challenge (`initials.py`)
 
 Create ASCII block initials accompanied by a code comment.
 
 
 ```python
-# Fun fact: Developing immersive tools and software projects!
+# Fun fact: My favorite genre is dungeon crawler RPGs!
 
-print(" AAA   FFFFFF")
-print("A   A  F     ")
-print("AAAAA  FFF   ")
-print("A   A  F     ")
-print("A   A  F     ")
+print(" DDD   DDD ")
+print("D   D D   D")
+print("D   D D   D")
+print("D   D D   D")
+print(" DDD   DDD ")
 ```
 
 ## 04. Future Self Letter (`letter.py`)
@@ -103,9 +105,9 @@ Using comments (`#`) for documentation alongside output statements:
 # Date: 2026
 
 print("Date: September 13, 2026")
-print("Status: Building personal knowledge base in Obsidian.")
+print("Status: Building a roguelike dungeon crawler in Obsidian.")
 print("Goal: Master software engineering and game development.")
-print("Message: Keep pushing code every single day!")
+print("Message: Ship one dungeon every single day!")
 print("Favorite Emoji: 🎮")
 ```
 
@@ -120,11 +122,11 @@ print("Favorite Emoji: 🎮")
 
 ```python
 # Variable declarations & reassignment
-name = 'Alan Fabricio'
-user_id = 9876543210
+hero_name = 'Aria Stormborn'
+save_slot = 2
 progress = 0.85
 xp = 120
-verified = True
+has_map = True
 
 # Value Reassignment
 xp = 150
@@ -134,7 +136,7 @@ print(xp)  # Output: 200
 
 | Type        | Name            | Description             | Example |
 | :--- | :--- | :--- | :--- |
-| **String** | `str` | Text wrapped in single or double quotes | `'Hello'`, `"Python"` |
+| **String** | `str` | Text wrapped in single or double quotes | `'Level 12'`, `"Ranger"` |
 | **Integer** | `int` | Whole numbers (positive, negative, or zero) | `2026`, `-42` |
 | **Float** | `float` | Decimal numbers | `0.75`, `3.14159` |
 | **Boolean** | `bool` | Logical truth values | `True`, `False` |
@@ -158,40 +160,40 @@ Python includes standard arithmetic operators for performing mathematical calcul
 ### 🧮 Practical Examples & Formula Challenges
 
 
-#### 💡 Tip Calculation (`tip.py`)
+#### 💡 Critical Damage Calculation (`crit.py`)
 ```python
-americano = 4.50
-muffin = 3.20
+base_damage = 45
+weapon_bonus = 15
 
-total = americano + muffin
-tip = total * 0.15
+total = base_damage + weapon_bonus
+crit_damage = total * 0.25
 
-print(tip)  # Output: 1.155
+print(crit_damage)  # Output: 15.0
 ```
 
 
-#### ⚖️ Body Mass Index (`bmi.py`)
+#### ⚖️ Carry Weight Ratio (`encumbrance.py`)
 
 $$bmi = \frac{mass}{height^2}$$
 
 ```python
-# bmi.py
-mass = 80     # in kilograms
-height = 1.86 # in meters
+# encumbrance.py
+carry_weight = 80     # in kilograms of carried loot
+hero_height = 1.86    # in meters
 
-bmi = mass / (height ** 2)
-print(bmi)
+encumbrance = carry_weight / (hero_height ** 2)
+print(encumbrance)
 ```
 
 
-#### 📐 Pythagorean Theorem (`hypotenuse.py`)
+#### 📐 Spell Trajectory (`spell_range.py`)
 
 $$c = \sqrt{a^2 + b^2}$$
 
 ```python
-# hypotenuse.py
-a = int(input('Enter length of base side a: '))
-b = int(input('Enter length of height side b: '))
+# spell_range.py
+a = int(input('Enter the horizontal cast distance a: '))
+b = int(input('Enter the vertical cast distance b: '))
 
 c = (a**2 + b**2) ** 0.5
 print(c)
@@ -205,11 +207,12 @@ To interact with users, Python provides the built-in `input()` function.
 > [!WARNING] Default Input Type `input()` **always** returns the user response as a `str` (String). To perform calculations, cast it using `int()` or `float()`.
 > 
 
+
 ### ⌨️ Standard Input
 
 ```python
-username = input('Enter your developer handle: ')
-print(username)
+hero = input('Enter your hero name: ')
+print(hero)
 ```
 
 
@@ -221,25 +224,23 @@ print(level)  # Stored as integer 30, not string "30"
 ```
 
 
-## 08. Chapter Recap Challenge: Currency Converter (`currency.py`)
+## 08. Chapter Recap Challenge: In-Gold Converter (`gold_converter.py`)
 
-A multi-currency converter program converting Colombian Pesos, Peruvian Soles, and Brazilian Reais to USD:
-
+A multi-currency converter program converting Copper Coins, Silver Coins, and Emeralds to Gold:
 
 ```python
-# currency.py
+# gold_converter.py
 
-pesos = int(input('Amount in Colombian pesos: '))
-soles = int(input('Amount in Peruvian soles: '))
-reais = int(input('Amount in Brazilian reais: '))
+copper = int(input('Amount in copper coins: '))
+silver = int(input('Amount in silver coins: '))
+emeralds = int(input('Amount of emeralds: '))
 
 # Standard exchange rate factors
-usd_from_pesos = pesos * 0.00025
-usd_from_soles = soles * 0.27
-usd_from_reais = reais * 0.18
+gold_from_copper = copper * 0.0001
+gold_from_silver = silver * 0.1
+gold_from_emeralds = emeralds * 5
 
-total_usd = usd_from_pesos + usd_from_soles + usd_from_reais
+total_gold = gold_from_copper + gold_from_silver + gold_from_emeralds
 
-print(total_usd)
+print(total_gold)
 ```
-

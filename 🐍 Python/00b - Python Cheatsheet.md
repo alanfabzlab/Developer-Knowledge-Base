@@ -11,7 +11,7 @@ tags:
 
 # Python Cheatsheet
 
-Quick reference for basic Python syntax and core language concepts.
+Quick reference for basic Python syntax and core language concepts, using video game data as running examples.
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
@@ -19,14 +19,14 @@ Quick reference for basic Python syntax and core language concepts.
 
 ```python
 # Output
-print('Hello World!')
+print('Ready Player One!')
 print(1000)
 print(3.14)
 print(True)
 
 # Input
-username = input('Enter your name: ')
-age = int(input('Enter your age: '))
+hero_name = input('Enter your hero name: ')
+level = int(input('Enter your level: '))
 ```
 
 
@@ -37,7 +37,7 @@ Python
 ```python
 # I'm a comment!
 
-print('Gabby') # I'm also one T.T
+print('Aria') # I'm also one T.T
 ```
 
 ## 🔹 Variables & Data Types
@@ -45,10 +45,10 @@ print('Gabby') # I'm also one T.T
 Python
 
 ```python
-secret_num = 42         # int
+starting_gold = 150       # int
 gravity = 9.81          # float
-username = '@snoopdogg' # str
-earth_is_flat = False   # bool
+player_tag = '@nightowl' # str
+is_game_over = False   # bool
 ```
 
 ## 🔹 Operators
@@ -57,12 +57,12 @@ earth_is_flat = False   # bool
 
 
 ```python
-sum = 23 + 18
-difference = 30 - 8
-product = 10 * 2.5
-quotient = 81 / 9
-remainder = 76 % 4
-exponent = 2 ** 3
+damage_taken = 23 + 18
+hp_remaining = 30 - 8
+crit_chance = 10 * 2.5
+gold_rate = 81 / 9
+wave_number = 76 % 4
+loot_tier = 2 ** 3
 ```
 
 ### Relational Operators
@@ -90,14 +90,14 @@ not a   # True if a is false
 
 
 ```python
-if grade >= 90:
+if rank_score >= 90:
+  print('S')
+elif rank_score >= 80:
   print('A')
-elif grade >= 80:
+elif rank_score >= 70:
   print('B')
-elif grade >= 70:
-  print('C')
 else:
-  print('D')
+  print('C')
 ```
 
 ## 🔹 Random Number
@@ -106,14 +106,14 @@ else:
 ```python
 import random
 
-num = random.randint(1, 9)
+roll = random.randint(1, 20)
 ```
 
 ## 🔹 String Interpolation
 
 
 ```python
-print(f'The square of {i} is {i*i}')
+print(f'The damage of {i} is {i*i}')
 ```
 
 ## 🔹 Loops
@@ -121,17 +121,10 @@ print(f'The square of {i} is {i*i}')
 
 ```python
 # While loop
-while coffee < 1:
-  print('Tired of Python')
+while health < 1:
+  print('Your health is critical!')
 
 # For loop
-for i in range(10):
+for i in range(5):
   print(i)
 ```
-
-
-
-
-
-
-

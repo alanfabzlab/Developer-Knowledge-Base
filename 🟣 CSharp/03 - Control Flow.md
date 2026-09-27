@@ -15,13 +15,13 @@ An `if` statement executes a block of code only when a specified condition evalu
 ### Basic Syntax
 
 ```csharp
-bool isConditionTrue = true;
+bool isGateOpen = true;
 
-if (isConditionTrue)
+if (isGateOpen)
 {
-    Console.WriteLine("This code will execute.");
+    Console.WriteLine("The party steps into the dungeon.");
 }
-````
+```
 
 
 ## 2. Comparison Operators
@@ -54,22 +54,22 @@ int score = 85;
 
 if (score >= 90)
 {
-    Console.WriteLine("Grade: A");
+    Console.WriteLine("Rank: Platinum");
 }
 else if (score >= 80)
 {
-    Console.WriteLine("Grade: B");
+    Console.WriteLine("Rank: Gold");
 }
 else
 {
-    Console.WriteLine("Grade: C or lower");
+    Console.WriteLine("Rank: Silver or lower");
 }
 ```
 
 
 ## 4. Exercises
 
-### Exercise 1: Weekend Plans
+### Exercise 1: Raid Night
 
 Introduction to simple boolean evaluation in control flow.
 
@@ -77,15 +77,15 @@ Introduction to simple boolean evaluation in control flow.
 ```csharp
 using System;
 
-class WeekendPlans
+class RaidNight
 {
     static void Main()
     {
-        bool rinkOpen = true;
+        bool squadIsReady = true;
 
-        if (rinkOpen)
+        if (squadIsReady)
         {
-            Console.WriteLine("Let's go skating, yippee!");
+            Console.WriteLine("Let's queue for the raid, yippee!");
         }
     }
 }
@@ -95,11 +95,11 @@ class WeekendPlans
 
 
 ```text
-Let's go skating, yippee!
+Let's queue for the raid, yippee!
 ```
 
 
-### Exercise 2: The Reaper
+### Exercise 2: Aggro Meter
 
 Using comparison operators (`>=`) within an `if` statement.
 
@@ -107,15 +107,15 @@ Using comparison operators (`>=`) within an `if` statement.
 ```csharp
 using System;
 
-class TheReaper
+class AggroMeter
 {
     static void Main()
     {
-        int spiceLevel = 7;
+        int aggroLevel = 7;
 
-        if (spiceLevel >= 5)
+        if (aggroLevel >= 5)
         {
-            Console.WriteLine("Ouch! My mouth is burning!");
+            Console.WriteLine("The whole zone is turning red!");
         }
     }
 }
@@ -126,11 +126,11 @@ class TheReaper
 
 
 ```text
-Ouch! My mouth is burning!
+The whole zone is turning red!
 ```
 
 
-### Exercise 3: Plot Twist
+### Exercise 3: Critical Roll
 
 Implementing binary conditional branching with `if` and `else`.
 
@@ -138,19 +138,19 @@ Implementing binary conditional branching with `if` and `else`.
 ```csharp
 using System;
 
-class PlotTwist
+class CriticalRoll
 {
     static void Main()
     {
-        double compatibility = 0.85;
+        double critChance = 0.85;
 
-        if (compatibility > 0.75)
+        if (critChance > 0.75)
         {
-            Console.WriteLine("Be vigilant. I love you. 💖");
+            Console.WriteLine("Critical hit! The enemy reels. 💥");
         }
         else
         {
-            Console.WriteLine("You're not a threat. You're just a man pretending to be one. ⚔️");
+            Console.WriteLine("Glancing blow. The enemy staggers. ⚔️");
         }
     }
 }
@@ -161,11 +161,11 @@ class PlotTwist
 
 
 ```text
-Be vigilant. I love you. 💖
+Critical hit! The enemy reels. 💥
 ```
 
 
-### Exercise 4: Basement Show
+### Exercise 4: Danger Level
 
 Handling multi-condition logic using `if`, `else if`, and `else`.
 
@@ -173,23 +173,23 @@ Handling multi-condition logic using `if`, `else if`, and `else`.
 ```csharp
 using System;
 
-class BasementShow
+class DangerLevel
 {
     static void Main()
     {
-        int noiseLevel = 55;
+        int dangerLevel = 55;
 
-        if (noiseLevel < 40)
+        if (dangerLevel < 40)
         {
-            Console.WriteLine("No complaints yet 🤫");
+            Console.WriteLine("Quiet zone, nothing spawns yet 🤫");
         }
-        else if (noiseLevel <= 70)
+        else if (dangerLevel <= 70)
         {
-            Console.WriteLine("The neighbors are getting annoyed 🤨");
+            Console.WriteLine("Enemies are swarming the camp 🧟");
         }
         else
         {
-            Console.WriteLine("We're gonna get shut down! 🚨");
+            Console.WriteLine("We are about to get wiped out! 🚨");
         }
     }
 }
@@ -200,7 +200,7 @@ class BasementShow
 
 
 ```text
-The neighbors are getting annoyed 🤨
+Enemies are swarming the camp 🧟
 ```
 
 
@@ -209,7 +209,6 @@ The neighbors are getting annoyed 🤨
 
 
 ## 5. Logical Operators
-
 Logical operators allow combining multiple conditions within a single control flow evaluation.
 
 | Operator | Name | Description | Example |
@@ -225,41 +224,41 @@ Logical operators allow combining multiple conditions within a single control fl
 ## 6. Advanced Control Flow Exercises
 
 
-### Exercise 5: Invite Only
+### Exercise 5: Guild Gate
 Combining conditions using the logical AND (`&&`) operator.
 
 ```csharp
 using System;
 
-class InviteOnly
+class GuildGate
 {
     static void Main()
     {
-        int age = 22;
-        bool hasInvitation = true;
+        int playerLevel = 22;
+        bool hasGuildPass = true;
 
-        if (age > 21 && hasInvitation)
+        if (playerLevel > 21 && hasGuildPass)
         {
-            Console.WriteLine("Come on in!");
+            Console.WriteLine("Welcome to the guild hall!");
         }
         else
         {
-            Console.WriteLine("Not tonight, buddy");
+            Console.WriteLine("Come back when you are stronger, newbie");
         }
     }
 }
-````
+```
 
 
 **Terminal Output:**
 
 
 ```text
-Come on in!
+Welcome to the guild hall!
 ```
 
 
-### Exercise 6: Aura Checker
+### Exercise 6: Rarity Pull
 
 Combining user input parsing with conditional evaluations.
 
@@ -267,20 +266,20 @@ Combining user input parsing with conditional evaluations.
 ```csharp
 using System;
 
-class AuraChecker
+class RarityPull
 {
     static void Main()
     {
-        Console.Write("Enter a number from 1 to 10: ");
-        int auraScore = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter your rarity tier from 1 to 10: ");
+        int rarityTier = Convert.ToInt32(Console.ReadLine());
 
-        if (auraScore >= 8)
+        if (rarityTier >= 8)
         {
-            Console.WriteLine("Immaculate vibes ✨");
+            Console.WriteLine("LEGENDARY DROP! The whole lobby is staring. ✨");
         }
         else
         {
-            Console.WriteLine("I'm detecting some dark energy, but we can turn this around. 🔮");
+            Console.WriteLine("Common trash... the summoning circle laughs at you. 🔮");
         }
     }
 }
@@ -291,12 +290,12 @@ class AuraChecker
 
 
 ```text
-Enter a number from 1 to 10: 9
-Immaculate vibes ✨
+Enter your rarity tier from 1 to 10: 9
+LEGENDARY DROP! The whole lobby is staring. ✨
 ```
 
 
-### Exercise 7: Love Hate Relationship
+### Exercise 7: Buff or Debuff
 
 A complete program integrating user input, logical checks, and multi-branch control flow.
 
@@ -304,28 +303,28 @@ A complete program integrating user input, logical checks, and multi-branch cont
 ```csharp
 using System;
 
-class LoveHateRelationship
+class BuffOrDebuff
 {
     static void Main()
     {
-        Console.WriteLine("Do you prefer sweet or savory foods?");
+        Console.Write("Do you wield a sword or a staff?");
         string answer = Console.ReadLine();
 
-        if (answer == "sweet")
+        if (answer == "sword")
         {
-            Console.WriteLine("THINGS YOU LOVE:");
-            Console.WriteLine("1. Hot ramen on rainy days");
-            Console.WriteLine("2. Clean code without bugs");
-            Console.WriteLine("3. Quiet coffee shops");
-            Console.WriteLine("4. Cozy mechanical keyboards");
+            Console.WriteLine("YOUR BUFFS:");
+            Console.WriteLine("1. Crit damage on the final hit");
+            Console.WriteLine("2. Frame-perfect parries");
+            Console.WriteLine("3. Campfire resting bonuses");
+            Console.WriteLine("4. A save point in every dungeon");
         }
         else
         {
-            Console.WriteLine("THINGS YOU HATE:");
-            Console.WriteLine("1. Unhandled exceptions");
-            Console.WriteLine("2. Slow Wi-Fi connections");
-            Console.WriteLine("3. Unnecessary meetings");
-            Console.WriteLine("4. Missing semicolons");
+            Console.WriteLine("YOUR DEBUFFS:");
+            Console.WriteLine("1. Missing jump inputs");
+            Console.WriteLine("2. Lag spikes on the final boss");
+            Console.WriteLine("3. Grindy filler quests");
+            Console.WriteLine("4. Soft-locked cutscenes");
         }
     }
 }
@@ -336,11 +335,11 @@ class LoveHateRelationship
 
 
 ```text
-Do you prefer sweet or savory foods?
-sweet
-THINGS YOU LOVE:
-1. Hot ramen on rainy days
-2. Clean code without bugs
-3. Quiet coffee shops
-4. Cozy mechanical keyboards
+Do you wield a sword or a staff?
+sword
+YOUR BUFFS:
+1. Crit damage on the final hit
+2. Frame-perfect parries
+3. Campfire resting bonuses
+4. A save point in every dungeon
 ```

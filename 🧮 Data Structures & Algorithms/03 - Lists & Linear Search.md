@@ -13,16 +13,16 @@ A **List** is an ordered collection of items stored in a single variable. Items 
 Python
 
 ```python
-grocery = ['Eggs', 'Avocados', 'Cookies', 'Hot Pepper Jam', 'Blueberries', 'Broccoli']
+loot_bag = ['Health Potion', 'Iron Sword', 'Bomb Rune', 'Teleport Scroll', 'Golden Key', 'Monster Pelt']
 
 # Indexing
-print(grocery[0])  # Output: Eggs
-print(grocery[2])  # Output: Cookies
+print(loot_bag[0])  # Output: Health Potion
+print(loot_bag[2])  # Output: Bomb Rune
 
 # Slicing
-signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra']
-print(signs[1:4])  # Output: ['Taurus', 'Gemini', 'Cancer']
-````
+zones = ['Ashwood', 'Brightfalls', 'Cinderpeak', 'Duskmoor', 'Everest', 'Frostgate', 'Goldspan']
+print(zones[1:4])  # Output: ['Brightfalls', 'Cinderpeak', 'Duskmoor']
+```
 
 
 ### Common List Methods
@@ -40,10 +40,10 @@ print(signs[1:4])  # Output: ['Taurus', 'Gemini', 'Cancer']
 Python
 
 ```python
-to_do = ['Put on laundry', 'Take a walk', 'Make some tea']
+to_do = ['Craft a health potion', 'Explore the Ashwood', 'Level up at the bonfire']
 
-to_do.append('Complete DSA chapter 2')
-to_do.insert(2, 'FaceTime mom')
+to_do.append('Clear the Sunken Keep')
+to_do.insert(2, 'Recruit a party member')
 to_do.pop(4)
 
 print(len(to_do))  # Output: 4
@@ -77,24 +77,24 @@ def linear_search(input_list, target_value):
             return True
     return False
 
-email_list = [
-    'dwight.schrute@dundermiffin.com',
-    'michael.scott@dundermiffin.com',
-    'mgoodyear@lumonindustries.com',
-    'walter.white@jpwynnehigh.edu',
-    'hank@dea.gov',
-    'kimberly.finkle@essexedu.edu',
-    'sheldon@caltech.edu',
-    'elliot@allsafe.com',
-    'mr.robot@fsociety.com',
-    'mulder@fbi.gov',
-    'carrie@sexandthecity.tvs',
-    'pleasecallmebarney@yahoo.com',
-    'buffy@sunnydale.edu'
+guild_roster = [
+    'aria@stormborn.gg',
+    'kai@vanguard.clan',
+    'nyx@arcanist.gg',
+    'borin@ranger.gg',
+    'dara@shadow.gg',
+    'elowen@arcanist.gg',
+    'cass@ranger.gg',
+    'jorund@vanguard.clan',
+    'vex@shadow.gg',
+    'rhea@stormborn.gg',
+    'soren@ranger.gg',
+    'pleaseaddmeplease@gg.gg',
+    'lyra@arcanist.gg'
 ]
 
-print(linear_search(email_list, 'mgoodyear@lumonindustries.com'))  # Output: True
-print(linear_search(email_list, 'mark.scout@lumonindustries.com'))     # Output: False
+print(linear_search(guild_roster, 'nyx@arcanist.gg'))   # Output: True
+print(linear_search(guild_roster, 'mark.scout@gg.gg'))  # Output: False
 ```
 
 

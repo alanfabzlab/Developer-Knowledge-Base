@@ -1,6 +1,6 @@
 
 
-# 🟣 C#: Object-Oriented Foundations & Systems Architecture (MOC)
+# 🟣 C#: Object-Oriented Foundations & Game Systems Architecture (MOC)
 
 <p align="left">
   <img src="https://img.shields.io/badge/Language-C%23_12.0-purple?style=for-the-badge&logo=csharp" alt="C#">
@@ -11,7 +11,7 @@
 </p>
 
 > [!NOTE]
-> This repository module serves as the central Map of Content (MOC) for C# syntax, object-oriented design patterns, .NET ecosystem fundamentals, and Unity game architecture notes inside this Obsidian vault.
+> This repository module serves as the central Map of Content (MOC) for C# syntax, object-oriented design patterns, .NET ecosystem fundamentals, and Unity game architecture notes inside this Obsidian vault. Every example and exercise is framed around video game development (combat, loot, quests, party play, and engine tooling).
 
 > [!TIP]
 > **Learning Roadmap:** Master strong typing and core control structures first, then progress into Object-Oriented Programming (OOP) paradigms, memory management, and real-world game system engineering.
@@ -28,13 +28,13 @@
 
 ### 🧠 1. Core Language Foundations
 
-* **Language Overview:** [01 - Playing It COOL](01%20-%20Playing%20It%20COOL.md) - C# lineage, .NET CLR architecture, compilation pipeline, and top-level statements in Program.cs.
+* **Language Overview:** [01 - Press Start](01%20-%20Press%20Start.md) - C# lineage, .NET CLR architecture, compilation pipeline, and top-level statements in Program.cs.
 * **Type System & Memory:** [02 - Typecast](02%20-%20Typecast.md) - Value types vs. reference types, explicit/implicit conversion, and string immutability.
 * **Control Flow Systems:** [03 - Control Flow](03%20-%20Control%20Flow.md) - Decision making with if/else statements, logical operators (&&, ||, !), and user input evaluation.
 * **Iterative Logic & Loops:** [04 - Loops](04%20-%20Loops.md) - Executing repetitive control flow blocks with while/for loops and user-driven exit conditions.
 * **Data Collections & Memory:** [05 - Arrays](05%20-%20Arrays.md) - Single-dimensional arrays, indexing, element iteration, and multi-array parallel data processing.
 * **Functional Modularity:** [06 - Methods](06%20-%20Methods.md) - Reusable code blocks, parameter passing, return values, and method composition.
-* **Checkpoint Project:** [Mad Lyricist - Checkpoint Project](Mad%20Lyricist%20-%20Checkpoint%20Project.md) - Interactive C# lyrics generator applying loops, logic operators, and user input.
+* **Checkpoint Project:** [Mad Dungeon Master - Checkpoint Project](Mad%20Dungeon%20Master%20-%20Checkpoint%20Project.md) - Interactive C# boss-battle script generator applying loops, logic operators, and user input.
 ---
 
 ### 🏗️ 2. Object-Oriented & Software Architecture
@@ -58,6 +58,7 @@
 - [ ] Control flow & Pattern matching
 - [ ] OOP Core (Classes, Interfaces, Polymorphism)
 - [ ] Unity MonoBehaviour integration
+- [ ] Combat, loot & quest systems in C#
 </details>
 
 ```mermaid
@@ -68,3 +69,4 @@ flowchart LR
     click A "#" "Data types, control flow, methods & memory"
     click B "#" "Classes, inheritance, LINQ & interfaces"
     click C "#" "MonoBehaviour lifecycle & ScriptableObjects"
+```

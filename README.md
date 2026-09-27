@@ -7,7 +7,7 @@
 ![Environment](https://img.shields.io/badge/Environment-macOS_M4-000000?style=for-the-badge&logo=apple&logoColor=white)
 ![Version Control](https://img.shields.io/badge/Git-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-<p>A structured, multi-language technical repository for computer science foundations, software architecture patterns, and engineering workflows.</p>
+<p>A structured, multi-language technical repository for computer science foundations, software architecture patterns, and engineering workflows — with every exercise framed around building video games.</p>
 
 </div>
 
@@ -81,3 +81,4 @@ gitGraph
    checkout main
    merge feature/csharp
    commit id: "Release: Knowledge Base v1.0"
+```

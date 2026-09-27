@@ -17,18 +17,18 @@ tags:
 ### Lists
 
 ```python
-snow = [0.3, 0.0, 0.0, 1.2, 3.9, 2.2, 0.8]
+enemy_hp = [320, 280, 410, 190, 540, 260, 130]
 
 # Index
-day_1 = snow[0]  # 0.3
-day_7 = snow[6]  # 0.8
+boss_1 = enemy_hp[0]  # 320
+boss_7 = enemy_hp[6]  # 130
 
 # Negative index
-day_7 = snow[-1] # 0.8
+boss_7 = enemy_hp[-1] # 130
 
 # Slicing
-snow_weekday = snow[0:5]
-snow_weekend = snow[5:7]
+early_waves = enemy_hp[0:5]
+late_waves = enemy_hp[5:7]
 ```
 
 
@@ -37,25 +37,25 @@ snow_weekend = snow[5:7]
 
 
 ```python
-film_runtimes = [121, 142, 131, 124]
+stage_runtimes = [140, 95, 180, 120]
 
 # Built-in functions
-len(film_runtimes)  # Output: 4
-max(film_runtimes)  # Output: 142
-min(film_runtimes)  # Output: 121
+len(stage_runtimes)  # Output: 4
+max(stage_runtimes)  # Output: 180
+min(stage_runtimes)  # Output: 95
 
 # Built-in methods
-film_runtimes.append(152)
-# [121, 142, 131, 124, 152]
+stage_runtimes.append(205)
+# [140, 95, 180, 120, 205]
 
-film_runtimes.insert(3, 138)
-# [121, 142, 131, 138, 124, 152]
+stage_runtimes.insert(3, 160)
+# [140, 95, 180, 160, 120, 205]
 
-film_runtimes.remove(142)
-# [121, 131, 138, 124, 152]
+stage_runtimes.remove(95)
+# [140, 180, 160, 120, 205]
 
-film_runtimes.pop(0)
-# [131, 138, 124, 152]
+stage_runtimes.pop(0)
+# [180, 160, 120, 205]
 ```
 
 
@@ -63,10 +63,10 @@ film_runtimes.pop(0)
 
 
 ```python
-def greetings():
-    print('Hello, World!')
+def announce_wave():
+    print('The boss spawns! 👹')
 
-greetings()  # Output: Hello, World!
+announce_wave()  # Output: The boss spawns! 👹
 ```
 
 
@@ -86,13 +86,13 @@ print(add(21, 56))  # Output: 77
 
 
 ```python
-t = 29  # Global scope
+xp = 29  # Global scope
 
 def func():
-    t = 42  # Local scope
-    print(t)
+    xp = 42  # Local scope
+    print(xp)
 
-print(t)  # Output: 29
+print(xp)  # Output: 29
 func()    # Output: 42
 ```
 
@@ -101,18 +101,18 @@ func()    # Output: 42
 
 
 ```python
-class Person:
-    def __init__(self, name, age):
+class Hero:
+    def __init__(self, name, level):
         self.name = name
-        self.age = age
+        self.level = level
 
     def say_hi(self):
         print(f'👋 My name is {self.name}')
 
-ellie = Person('Ellie', 22)
-gabby = Person('Gabby', 23)
+aria = Hero('Aria', 22)
+kai = Hero('Kai', 23)
 
-ellie.say_hi()  # 👋 My name is Ellie
+aria.say_hi()  # 👋 My name is Aria
 ```
 
 
@@ -126,7 +126,7 @@ import random
 print(random.randint(1, 10))
 
 x = [1, 2, 3]
-y = [4, 6, 8]
+y = [4, 9, 16]
 
 plt.plot(x, y)
 plt.show()

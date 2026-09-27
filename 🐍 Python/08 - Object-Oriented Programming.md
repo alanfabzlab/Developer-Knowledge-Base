@@ -28,11 +28,11 @@ By convention in Python, class names use **PascalCase** (capitalizing the first 
 ### Basic Syntax with Default Values
 
 ```python
-class Restaurant:
+class Guild:
     name = ''
-    category = ''
-    rating = 0.0
-    delivery = False
+    faction = ''
+    level = 0
+    is_recruiting = False
 ```
 
 
@@ -44,17 +44,17 @@ An **Object** is a concrete instance of a class. Attributes can be accessed and 
 
 ```python
 # Instance creation
-bobs_burgers = Restaurant()
+iron_brothers = Guild()
 
 # Manual attribute assignment
-bobs_burgers.name = 'Bob\'s Burgers'
-bobs_burgers.category = 'American Diner'
-bobs_burgers.rating = 4.7
-bobs_burgers.delivery = False
+iron_brothers.name = 'The Iron Brothers'
+iron_brothers.faction = 'Vanguard Clan'
+iron_brothers.level = 42
+iron_brothers.is_recruiting = False
 
 # Inspecting object attributes using vars()
-print(vars(bobs_burgers))
-# Output: {'name': "Bob's Burgers", 'category': 'American Diner', 'rating': 4.7, 'delivery': False}
+print(vars(iron_brothers))
+# Output: {'name': 'The Iron Brothers', 'faction': 'Vanguard Clan', 'level': 42, 'is_recruiting': False}
 ```
 
 > [!TIP] `vars()` Function The built-in `vars(object)` function returns a dictionary containing all attributes assigned to that specific instance.
@@ -67,16 +67,16 @@ Assigning attributes line by line is tedious and inefficient. The `__init__()` c
 
 
 ```python
-class City:
-    def __init__(self, name, country, population, landmarks):
+class Dungeon:
+    def __init__(self, name, region, difficulty, monsters):
         self.name = name
-        self.country = country
-        self.population = population
-        self.landmarks = landmarks
+        self.region = region
+        self.difficulty = difficulty
+        self.monsters = monsters
 
 # Direct instantiation with arguments
-hometown = City('Mexico City', 'Mexico', 9200000, ['Zocalo', 'Angel de la Independencia'])
-destination = City('Tokyo', 'Japan', 14000000, ['Shinjuku', 'Tokyo Tower', 'Senso-ji'])
+hometown = Dungeon('Sunken Keep', 'Kingdom of Emberfall', 'Hard', ['Gloom Wraith', 'Frost Golem'])
+destination = Dungeon('Crystal Spire', 'Sky Realm', 'Nightmare', ['Chrono Warden', 'Void Reaper', 'Star Devourer'])
 
 print(vars(hometown))
 print(vars(destination))
@@ -95,78 +95,78 @@ print(vars(destination))
 
 
 ```python
-class Student:
-    def __init__(self, name, year, enrolled, gpa):
+class Hero:
+    def __init__(self, name, level, in_party, power):
         self.name = name
-        self.year = year
-        self.enrolled = enrolled
-        self.gpa = gpa
+        self.level = level
+        self.in_party = in_party
+        self.power = power
 
     def display_info(self):
-        print(f"The student {self.name}'s GPA is {self.gpa}!")
+        print(f"The hero {self.name}'s power rating is {self.power}!")
 
-    def graduation(self):
-        if self.enrolled and self.gpa > 2.5 and self.year == 12:
-            print(f"{self.name} will be able to graduate this year!")
+    def unlock_endgame(self):
+        if self.in_party and self.power > 25 and self.level == 12:
+            print(f"{self.name} can enter the endgame content!")
 
 # Creating instances and calling methods
-mitsuha = Student('Mitsuha', 11, False, 4.0)
-taki = Student('Taki', 12, True, 3.8)
+aria = Hero('Aria', 11, False, 30)
+kai = Hero('Kai', 12, True, 28)
 
-mitsuha.display_info()
-taki.graduation()
+aria.display_info()
+kai.unlock_endgame()
 ```
 
 
 
-## 05. Exercise: Bank Account (`bank_accounts.py`)
+## 05. Exercise: Player Inventory (`player_inventory.py`)
 
-Implementation of a simple bank account class managing balance state through instance methods.
+Implementation of a simple inventory class managing gold state through instance methods.
 
 
 ```python
-class BankAccount:
-    def __init__(self, first_name, last_name, account_id, account_type, pin, balance):
+class PlayerInventory:
+    def __init__(self, first_name, last_name, player_id, character_class, pin, gold):
         self.first_name = first_name
         self.last_name = last_name
-        self.account_id = account_id
-        self.account_type = account_type
+        self.player_id = player_id
+        self.character_class = character_class
         self.pin = pin
-        self.balance = balance
+        self.gold = gold
 
-    def deposit(self, amount):
-        self.balance += amount
-        return self.balance
+    def collect_gold(self, amount):
+        self.gold += amount
+        return self.gold
 
-    def withdraw(self, amount):
-        self.balance -= amount
+    def spend_gold(self, amount):
+        self.gold -= amount
         return amount
 
-    def display_balance(self):
-        print(f"Current balance: ${self.balance}")
+    def display_gold(self):
+        print(f"Current gold: {self.gold} 🪙")
 
 # Test Operations
-account = BankAccount('Alan', 'Fabricio', 123456, 'Checking', 4321, 100.0)
-account.deposit(96)
-account.withdraw(25)
-account.display_balance()
+player = PlayerInventory('Aria', 'Stormborn', 654321, 'Ranger', 4321, 100.0)
+player.collect_gold(96)
+player.spend_gold(25)
+player.display_gold()
 ```
 
 
 
-## 06. Final Project: Pokédex (`pokedex.py`)
+## 06. Final Project: Bestiary (`bestiary.py`)
 
-A comprehensive model representing Pokémon entries using attributes, status checks, and formatted output methods.
+A comprehensive model representing bestiary entries using attributes, status checks, and formatted output methods.
 
 
 ```python
-class Pokemon:
-    def __init__(self, entry, name, types, description, is_caught):
+class Enemy:
+    def __init__(self, entry, name, types, description, is_defeated):
         self.entry = entry
         self.name = name
         self.types = types
         self.description = description
-        self.is_caught = is_caught
+        self.is_defeated = is_defeated
 
     def speak(self):
         print(f"{self.name} {self.name}!")
@@ -183,26 +183,21 @@ class Pokemon:
 
         print(f"Description: {self.description}")
         
-        if self.is_caught:
-            print(f"{self.name} has already been caught!")
+        if self.is_defeated:
+            print(f"{self.name} has already been defeated!")
         else:
-            print(f"{self.name} has not been caught yet.")
+            print(f"{self.name} has not been defeated yet.")
 
-# Creating Pokémon instances
-pikachu = Pokemon(25, 'Pikachu', ['Electric'], 'It has small electric sacs on both its cheeks.', True)
-bulbasaur = Pokemon(1, 'Bulbasaur', ['Grass', 'Poison'], 'There is a plant seed on its back since birth.', True)
-charmander = Pokemon(4, 'Charmander', ['Fire'], 'It has a preference for hot things.', False)
+# Creating bestiary instances
+ember_knight = Enemy(25, 'Ember Knight', ['Fire'], 'Its armor smolders when it swings its blade.', True)
+frost_wraith = Enemy(1, 'Frost Wraith', ['Ice', 'Dark'], 'It leaves a cold trail wherever it drifts.', True)
+stone_golem = Enemy(4, 'Stone Golem', ['Earth'], 'It has a preference for heavy things.', False)
 
 # Testing methods
-pikachu.speak()
-pikachu.display_details()
+ember_knight.speak()
+ember_knight.display_details()
 
 print()
-bulbasaur.speak()
-bulbasaur.display_details()
+frost_wraith.speak()
+frost_wraith.display_details()
 ```
-
-
-
-
-

@@ -34,7 +34,7 @@ Errors are a natural part of programming. Recognizing error types helps debug co
 
 ```python
 # Error: Missing closing quote and proper syntax
-print(Welcome to Python!
+print(Welcome to the Kingdom!
 
 # SyntaxError: invalid syntax
 ```
@@ -43,43 +43,43 @@ print(Welcome to Python!
 
 ```python
 # Error: Referencing an undefined variable
-print(player_score)
+print(goblin_hp)
 
-# NameError: name 'player_score' is not defined
+# NameError: name 'goblin_hp' is not defined
 
 # Fix: Define the variable before referencing it
-player_score = 100
-print(player_score)  # Output: 100
+goblin_hp = 40
+print(goblin_hp)  # Output: 40
 ```
 
 #### ❌ TypeError Example
 
 ```python
 # Error: Attempting string concatenation with an integer directly
-status = 'Current Level: '
+status = 'Player Level: '
 print(status + 5)
 
 # TypeError: can only concatenate str (not "int") to str
 
 # Fix: Cast integer using str()
-status = 'Current Level: '
-print(status + str(5))  # Output: Current Level: 5
+status = 'Player Level: '
+print(status + str(5))  # Output: Player Level: 5
 ```
 
 🐛 Bug Catcher Debugging Challenge (`bug_catcher.py`)
 
 ```python
-# Fixed version of inventory tracking script
+# Fixed version of loot tracking script
 health_potions = 5
 mana_potions = 8
-stamina_potions = 12
+bomb_runes = 12
 
-print('Inventory: ' + str(health_potions) + ' Health Potions')
-print('Inventory: ' + str(mana_potions) + ' Mana Potions')
-print('Inventory: ' + str(stamina_potions) + ' Stamina Potions')
+print('Loot Bag: ' + str(health_potions) + ' Health Potions')
+print('Loot Bag: ' + str(mana_potions) + ' Mana Potions')
+print('Loot Bag: ' + str(bomb_runes) + ' Bomb Runes')
 
-total_potions = health_potions + mana_potions + stamina_potions
-print('Total items: ' + str(total_potions) + ' potions collected!')
+total_items = health_potions + mana_potions + bomb_runes
+print('Total items: ' + str(total_items) + ' items collected!')
 ```
 
 ## 02. Control Flow & Decision Making
@@ -89,21 +89,21 @@ By default, Python runs code sequentially line by line. **Control Flow** allows 
 > [!NOTE] Concept Think of control flow as a crossroads: if a condition evaluates to `True`, the program takes one path; if `False`, it takes another.
 
 
-### 🪙 Coin Flip Simulation (`coin_flip.py`)
+### 🎲 Damage Roll Simulation (`damage_roll.py`)
 
 Using the `random` module to execute conditional code blocks based on a generated number:
 
 ```python
-# coin_flip.py
+# damage_roll.py
 import random
 
-# Generate a random integer: 0 or 1
-num = random.randint(0, 1)
+# Generate a random integer between 1 and 6 (a d6 roll)
+num = random.randint(1, 6)
 
-if num > 0.5:
-  print('Heads 🪙')
+if num > 3:
+  print('Critical Hit! ⚔️')
 else:
-  print('Tails 🪙')
+  print('Normal Hit 🛡️')
 ```
 
 
@@ -114,10 +114,10 @@ else:
 Evaluates a condition. If the condition is `True`, the indented block underneath runs.
 
 ```python
-score = 75
+xp = 75
 
-if score >= 60:
-  print('Requirement Met! ✅')
+if xp >= 60:
+  print('Level Up Available! ✅')
 ```
 
 
@@ -126,29 +126,29 @@ if score >= 60:
 Provides an alternative execution block when the `if` condition evaluates to `False`.
 
 ```python
-score = 45
+xp = 45
 
-if score >= 60:
-  print('Requirement Met! ✅')
+if xp >= 60:
+  print('Level Up Available! ✅')
 else:
-  print('Requirement Not Met! ❌')
+  print('Not Enough XP Yet ❌')
 ```
 
 
-### 📊 Academic Grade Checker (`grades.py`)
+### 🏆 Rank Threshold Checker (`ranks.py`)
 
-Checks whether a student's grade meets the minimum passing threshold (55):
+Checks whether a match score meets the minimum threshold to unlock the ranked queue (55):
 
 ```python
-# grades.py
+# ranks.py
 
-# Assigned test score (Range 0-100)
-grade = 78
+# Match score (Range 0-100)
+score = 78
 
-if grade >= 55:
-  print('You passed!')
+if score >= 55:
+  print('Ranked queue unlocked!')
 else:
-  print('You failed.')
+  print('Keep grinding the campaign.')
 ```
 
 
@@ -170,70 +170,70 @@ Relational operators compare two values and return a boolean result (`True` or `
 When checking more than two conditions, append `elif` (else if) blocks between `if` and `else`.
 
 ```python
-rating = 4.8
+rarity = 4.8
 
-if rating >= 4.5:
-  print('Masterpiece 🌟')
-elif rating >= 3.5:
-  print('Recommended 👍')
-elif rating >= 2.5:
-  print('Average 😐')
+if rarity >= 4.5:
+  print('Mythic Weapon 🌟')
+elif rarity >= 3.5:
+  print('Legendary Weapon 👍')
+elif rarity >= 2.5:
+  print('Rare Weapon 😐')
 else:
-  print('Needs Improvement 👎')
+  print('Common Junk 👎')
 ```
 
 
-### 🧪 Chemical Solution Analysis (`ph_levels.py`)
+### 🧪 Potion Purity Analysis (`potion_purity.py`)
 
-Checks liquid pH levels to determine chemical properties:
+Checks elixir purity levels to determine how overpowered a brew is:
 
 ```python
-# ph_levels.py
+# potion_purity.py
 
-ph = float(input('Enter pH level (0-14): '))
+purity = float(input('Enter purity level (0-100): '))
 
-if ph > 7:
-  print('Basic')
-elif ph < 7:
-  print('Acidic')
+if purity > 70:
+  print('Overpowered')
+elif purity < 30:
+  print('Sludge')
 else:
-  print('Neutral')
+  print('Balanced')
 ```
 
 
-## 05. Generating Random Values (`magic8.py`)
+## 05. Generating Random Values (`loot_box.py`)
 
 Python's built-in `random` module provides functions like `randint(a, b)` to produce random integers within a range $[a, b]$ inclusive.
 
 ```python
 import random
 
-# Generate an option between 1 and 9
+# Generate a result between 1 and 9
 option = random.randint(1, 9)
 
 prompt = input('Ask a decision question: ')
 
 if option == 1:
-  answer = 'Yes - definitely.'
+  answer = 'Legendary blade dropped. Definitely.'
 elif option == 2:
-  answer = 'It is decidedly so.'
+  answer = 'It is a crit. Decidedly so.'
 elif option == 3:
-  answer = 'Without a doubt.'
+  answer = 'Without a doubt, it crits.'
 elif option == 4:
-  answer = 'Reply hazy, try again.'
+  answer = 'Reroll pending, try again.'
 elif option == 5:
-  answer = 'Ask again later.'
+  answer = 'Ask again after the patch notes.'
 elif option == 6:
   answer = 'Better not tell you now.'
 elif option == 7:
-  answer = 'My sources say no.'
+  answer = 'My patch notes say no.'
 elif option == 8:
-  answer = 'Outlook not so good.'
+  answer = 'DPS check not so good.'
 else:
-  answer = 'Very doubtful.'
+  answer = 'Very doubtful, disconnected.'
 
 print('Question: ' + prompt)
-print('Magic 8 Ball: ' + answer)
+print('Loot Box Oracle: ' + answer)
 ```
 
 
@@ -259,116 +259,110 @@ Logical operators evaluate and combine multiple boolean expressions:
 
 ```python
 # Practical Examples
-energy = 8
-focus = 6
+stamina = 8
+aim = 6
 
-if energy > 5 and focus > 5:
-  print('Optimal coding session!')
+if stamina > 5 and aim > 5:
+  print('Perfect headshot window!')
 
-has_coffee = True
-has_tea = False
+has_potion = True
+has_ether = False
 
-if has_coffee or has_tea:
-  print('Caffeine acquired ☕')
+if has_potion or has_ether:
+  print('Buffs acquired ☕')
 
-is_busy = False
+is_paused = False
 
-if not is_busy:
-  print('Ready to commit code!')
+if not is_paused:
+  print('Ready to grind the boss!')
 ```
 
 
 
+### 🎢 Boss Rush Access Checker (`boss_rush.py`)
 
-### 🎢 Theme Park Access Checker (`the_cyclone.py`)
-
-Evaluates height requirement ($140\text{ cm}$) and entry credits ($15\text{ credits}$):
+Evaluates level requirement (Level $40$) and entry tokens ($15\text{ tokens}$):
 
 ```python
-# the_cyclone.py
+# boss_rush.py
 
-height = int(input('Enter your height in cm: '))
-credits = int(input('Enter your available credits: '))
+level = int(input('Enter your level: '))
+tokens = int(input('Enter your available tokens: '))
 
-if height >= 140 and credits >= 15:
-  print('Enjoy the ride!')
-elif credits >= 15 and height < 140:
-  print('You are not tall enough to ride.')
-elif height >= 140 and credits < 15:
-  print("You don't have enough credits.")
+if level >= 40 and tokens >= 15:
+  print('Boss Rush unlocked!')
+elif tokens >= 15 and level < 40:
+  print('You are not high enough level to enter.')
+elif level >= 40 and tokens < 15:
+  print("You don't have enough tokens.")
 else:
   print('Requirements not met for entry.')
 ```
 
 
-## 7. Capstone Project: Guild Sorting Quiz (`sorting_hat.py`)
+## 7. Capstone Project: Playstyle Sorting Quiz (`playstyle_quiz.py`)
 
 ```python
-# sorting_hat.py
+# playstyle_quiz.py
 
-gryffindor = 0
-ravenclaw = 0
-hufflepuff = 0
-slytherin = 0
+vanguard = 0
+ranger = 0
+arcanist = 0
+shadow = 0
 
-print('Q1) Do you prefer Dawn or Dusk?')
-print('  1) Dawn')
-print('  2) Dusk')
+print('Q1) Do you prefer the frontlines or the backline?')
+print('  1) Frontlines')
+print('  2) Backline')
 q1_answer = int(input('Answer (1-2): '))
 
 if q1_answer == 1:
-  gryffindor += 1
-  ravenclaw += 1
+  vanguard += 1
+  arcanist += 1
 elif q1_answer == 2:
-  hufflepuff += 1
-  slytherin += 1
+  ranger += 1
+  shadow += 1
 else:
   print('Invalid input.')
 
-print('\nQ2) When I am done with a project, I want to be remembered as:')
-print('  1) The Good')
-print('  2) The Great')
-print('  3) The Wise')
-print('  4) The Bold')
+print('\nQ2) In a party, I want to be remembered as:')
+print('  1) The Protector')
+print('  2) The Duelist')
+print('  3) The Scholar')
+print('  4) The Hunter')
 q2_answer = int(input('Answer (1-4): '))
 
 if q2_answer == 1:
-  hufflepuff += 2
+  vanguard += 2
 elif q2_answer == 2:
-  slytherin += 2
+  shadow += 2
 elif q2_answer == 3:
-  ravenclaw += 2
+  arcanist += 2
 elif q2_answer == 4:
-  gryffindor += 2
+  ranger += 2
 else:
   print('Invalid input.')
 
-print('\nQ3) Which style of sound inspires your creative focus?')
-print('  1) Classical Violin')
-print('  2) Energetic Brass')
-print('  3) Ambient Piano')
-print('  4) Rhythm Drums')
+print('\nQ3) Which soundtrack gets you focused while grinding?')
+print('  1) Orchestral Score')
+print('  2) Heavy Metal')
+print('  3) Lo-Fi Beats')
+print('  4) Drum & Bass')
 q3_answer = int(input('Answer (1-4): '))
 
 if q3_answer == 1:
-  slytherin += 4
+  arcanist += 4
 elif q3_answer == 2:
-  hufflepuff += 4
+  vanguard += 4
 elif q3_answer == 3:
-  ravenclaw += 4
+  ranger += 4
 elif q3_answer == 4:
-  gryffindor += 4
+  shadow += 4
 else:
   print('Invalid input.')
 
 print('\n--- Final Scores ---')
-print('Gryffindor:', gryffindor)
-print('Ravenclaw:', ravenclaw)
-print('Hufflepuff:', hufflepuff)
-print('Slytherin:', slytherin)
+print('Vanguard:', vanguard)
+print('Ranger:', ranger)
+print('Arcanist:', arcanist)
+print('Shadow:', shadow)
 ```
-
-
-
-
-
