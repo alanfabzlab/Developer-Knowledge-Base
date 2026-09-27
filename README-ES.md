@@ -1,19 +1,24 @@
 <div align="center">
 
-# 🧠 Base de Conocimiento para Desarrolladores
+# 🧠 Developer Knowledge Base · Base de Conocimiento para Desarrolladores
 
 ![Architecture](https://img.shields.io/badge/Architecture-Modular-blue?style=for-the-badge&logo=structure)
 ![Obsidian](https://img.shields.io/badge/Obsidian-Vault-7F6DF2?style=for-the-badge&logo=obsidian&logoColor=white)
 ![Environment](https://img.shields.io/badge/Environment-macOS_M4-000000?style=for-the-badge&logo=apple&logoColor=white)
 ![Version Control](https://img.shields.io/badge/Git-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
+<p>A structured, multi-language technical repository for computer science foundations, software architecture patterns, and engineering workflows — with every exercise framed around building video games.</p>
+
 <p>Un repositorio técnico estructurado y multilenguaje sobre fundamentos de ciencias de la computación, patrones de arquitectura de software y flujos de trabajo de ingeniería — con cada ejercicio planteado alrededor de la creación de videojuegos.</p>
 
 </div>
 
-**Versión original en inglés:** [README.md](README.md)
+**English:** [README.md](README.md) · **Español:** [README-ES.md](README-ES.md)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
+
+**Note:**
+This knowledge base acts as a central repository for documentation, reference architectures, and code notes authored in **Obsidian** and rendered directly on **GitHub**.
 
 **Nota:**
 Esta base de conocimiento funciona como un repositorio central de documentación, arquitecturas de referencia y notas de código escritas en **Obsidian** y renderizadas directamente en **GitHub**. Las notas en español son traducciones de las originales en inglés y se mantienen como un espejo: el inglés es la versión de referencia.
@@ -22,7 +27,11 @@ Esta base de conocimiento funciona como un repositorio central de documentación
 
 
 
-## 🗺️ Dominios de Conocimiento y MOCs
+## 🗺️ Knowledge Domains & MOCs · Dominios de Conocimiento y MOCs
+
+Every domain is self-contained and opens with a **MOC** (Map of Content): an index note
+that lists each topic with a one-line description, so you enter through the map instead
+of scrolling a folder.
 
 Cada dominio es autónomo y abre con un **MOC** (Mapa de Contenidos): una nota índice
 que enumera cada tema con una descripción de una línea, para entrar por el mapa en lugar
@@ -37,17 +46,33 @@ de recorrer una carpeta.
 | ⚙️ **Software Engineering / Ingeniería de Software** | Design patterns, algorithms & system architecture<br>Patrones de diseño, algoritmos y arquitectura de sistemas | — | 🟡 Planned / Planificado | *Coming soon*<br>*Próximamente* |
 | 🎮 **Game Architecture / Arquitectura de Juegos** | Interactive mechanics, engine patterns & physics<br>Mecánicas interactivas, patrones de motor y física | — | 🟡 Planned / Planificado | *Coming soon*<br>*Próximamente* |
 
+> The C# domain carries one extra English note: `00b - CSharp Cheatsheet.md` is an empty
+> placeholder with no Spanish pair yet, which is why it reads 8 EN · 7 ES.
+>
 > El dominio de C# tiene una nota extra solo en inglés: `00b - CSharp Cheatsheet.md` es un
 > marcador de posición vacío que aún no tiene su pareja en español, por eso figura 8 EN · 7 ES.
+
+**Topic numbering.** Notes are prefixed so a domain reads in learning order — `01`, `02`,
+`03`… Cheatsheets use a `00b` / `00c` prefix and sit *before* the numbered sequence,
+because they are meant to be consulted while working rather than read front to back.
 
 **Numeración de los temas.** Las notas llevan un prefijo para que el dominio se lea en orden
 de aprendizaje — `01`, `02`, `03`… Las chuletas usan el prefijo `00b` / `00c` y se sitúan
 *antes* de la secuencia numerada, porque están pensadas para consultarse mientras se trabaja
 y no para leerse de principio a fin.
 
+**How to read a note.** Each one is a self-contained lesson: a concept, a runnable
+example, its printed output, and the traps worth knowing. Code blocks are executable as
+written — the comments state the output you should actually get.
+
 **Cómo leer una nota.** Cada una es una lección autónoma: un concepto, un ejemplo
 ejecutable, su salida por consola y las trampas que conviene conocer. Los bloques de código
 se ejecutan tal cual — los comentarios indican la salida que deberías obtener realmente.
+
+**The Spanish mirror.** Every topic exists in both languages. English is the reference
+version; the Spanish note carries a `**Versión original en inglés:**` line at the top
+linking back to it. Inside Spanish code blocks, variables and string literals are
+localized, while language keywords, API names and class names stay in English.
 
 **El espejo en español.** Todos los temas existen en ambos idiomas. El inglés es la versión
 de referencia; la nota en español incluye una línea `**Versión original en inglés:**` al
@@ -58,21 +83,29 @@ y los nombres de clase permanecen en inglés.
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
 
 
-## 🌍 Idiomas
+## 🌍 Languages · Idiomas
 
 | Version · Versión | Entry point · Ruta de entrada | Status · Estado |
 | :--- | :--- | :--- |
 | 🇬🇧 English (original) · Inglés (original) | [README.md](README.md) | 🟢 Reference base · Base de referencia |
 | 🇪🇸 Spanish (translation) · Español (traducción) | [README-ES.md](README-ES.md) | 🟢 In sync · Sincronizado |
 
+Every note exists in both languages. The Spanish note includes a
+`**Versión original en inglés:**` line at the top linking back to its English original.
+English is the reference version; the Spanish one is kept as a mirror of it.
+
 Cada nota existe en ambos idiomas. Las notas en español incluyen una línea
 `**Versión original en inglés:**` en la parte superior que enlaza a su nota original.
+El inglés es la versión de referencia y el español se mantiene como su espejo.
 
 
-## 🛠️ Arquitectura del Repositorio
+## 🛠️ Repository Architecture · Arquitectura del Repositorio
 
-Las notas se guardan como **pares de nombres de archivo** en la misma línea: primero la nota
-en inglés y, tras el separador `·`, su traducción al español.
+Notes are stored as **filename pairs** on the same line: the English note first, its
+Spanish translation after the `·` separator.
+
+Las notas se guardan como **pares de nombres de archivo** en la misma línea: primero la
+nota en inglés y, tras el separador `·`, su traducción al español.
 
 ```text
 Developer-Knowledge-Base/
@@ -121,11 +154,11 @@ Developer-Knowledge-Base/
     └── 03 - Lists & Linear Search.md      ·  03 - Listas y Búsqueda Lineal.md
 ```
 
-> The tree above shows the real structure of the repository / El árbol anterior muestra la
-> estructura real del repositorio. Every module ships both a
-> `README.md` (English) and a `README-ES.md` (Spanish), and every note exists in both languages /
-> Cada módulo incluye su `README.md` (inglés) y su `README-ES.md` (español), y cada nota existe
-> en ambos idiomas.
+> The tree above shows the real structure of the repository. Every module ships both a
+> `README.md` (English) and a `README-ES.md` (Spanish), and every note exists in both languages.
+>
+> El árbol anterior muestra la estructura real del repositorio. Cada módulo incluye su
+> `README.md` (inglés) y su `README-ES.md` (español), y cada nota existe en ambos idiomas.
 
 **Conventions worth knowing / Convenciones que conviene conocer**
 
@@ -147,26 +180,30 @@ tooling folders / y las carpetas de herramientas del asistente `.copilot/`, `.op
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
 
 
-## ⚙️ Flujo de Trabajo de Ingeniería
+## ⚙️ Engineering Workflow · Flujo de Trabajo de Ingeniería
 
+- **Vault Management:** Written and interlinked in [Obsidian](https://obsidian.md).
 - **Gestión de la vault:** escrita y enlazada en [Obsidian](https://obsidian.md).
+- **Layout & Rendering:** Designed and formatted using **Visual Studio Code / Trae** + **GitHub Copilot**.
 - **Maquetación y renderizado:** diseñada y formateada con **Visual Studio Code / Trae** + **GitHub Copilot**.
+- **Version Control:** Sourced, tracked, and hosted via **Git** & **GitHub**.
 - **Control de versiones:** creado, rastreado y alojado con **Git** y **GitHub**.
-- **Traducción:** la versión en español se mantiene como espejo de la inglesa. Dentro de los bloques de código se traducen las variables, las cadenas y los comentarios; las palabras clave, los nombres de API y los nombres de clase permanecen en inglés. Los bloques se ejecutan con el mismo resultado que sus originales.
+- **Translation / Traducción:** the Spanish version is kept as a mirror of the English one. Variables, string literals and comments are translated; language keywords, API names and class names stay in English. Code blocks run with the same result as their originals.
+- **Traducción:** la versión en español se mantiene como espejo de la inglesa. Las variables, las cadenas y los comentarios se traducen; las palabras clave, los nombres de API y los nombres de clase permanecen en inglés. Los bloques de código se ejecutan con el mismo resultado que sus originales.
 
 ```mermaid
 gitGraph
-   commit id: "Initial commit"
-   commit id: "Vault Setup: Obsidian & Structure"
+   commit id: "Initial commit / Commit inicial"
+   commit id: "Vault Setup: Obsidian & Structure / Vault: Obsidian y estructura"
    branch feature/python
    checkout feature/python
-   commit id: "Docs: Python Core & MOC"
+   commit id: "Docs: Python Core & MOC / Docs: núcleo de Python y MOC"
    checkout main
    merge feature/python
    branch feature/csharp
    checkout feature/csharp
-   commit id: "Docs: C# Architecture & Unity"
+   commit id: "Docs: C# Architecture & Unity / Docs: arquitectura de C# y Unity"
    checkout main
    merge feature/csharp
-   commit id: "Release: Knowledge Base v1.0"
+   commit id: "Release: Knowledge Base v1.0 / Lanzamiento: base v1.0"
 ```
