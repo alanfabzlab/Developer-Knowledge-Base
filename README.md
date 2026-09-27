@@ -19,7 +19,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=60&section=header" width="100%" alt="Slow Neon Wave" />
 
 
-## 🗺️ Knowledge Domains & MOCs
 
 ## 🗺️ Knowledge Domains & MOCs
 
