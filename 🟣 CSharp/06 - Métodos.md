@@ -24,21 +24,21 @@ class LootHoarder
 {
     static void Main()
     {
-        string[] supplies = { "Health Potions", "Mana Potions", "Elixirs", "Antidotes", "Bomb Runes" };
-        int[] quantities = { 12, 30, 8, 25, 16 };
+        string[] suministros = { "Pociónes de Salud", "Pociónes de Maná", "Elixires", "Antídotos", "Runas de Bomba" };
+        int[] cantidades = { 12, 30, 8, 25, 16 };
 
         // Updating an inventory value directly via index
-        quantities[0] = 15;
+        cantidades[0] = 15;
 
-        int totalSupplies = 0;
+        int totalSuministros = 0;
 
-        for (int i = 0; i < supplies.Length; i++)
+        for (int i = 0; i < suministros.Length; i++)
         {
-            Console.WriteLine($"{supplies[i]} - {quantities[i]}");
-            totalSupplies += quantities[i];
+            Console.WriteLine($"{suministros[i]} - {cantidades[i]}");
+            totalSuministros += cantidades[i];
         }
 
-        Console.WriteLine($"Total supplies: {totalSupplies}");
+        Console.WriteLine($"Suministros totales: {totalSuministros}");
     }
 }
 ```
@@ -63,8 +63,8 @@ class LevelUpFanfare
     // Method declaration
     static void VictoryPose()
     {
-        Console.WriteLine("The champion raises the trophy!");
-        Console.WriteLine("Victory! 🏆");
+        Console.WriteLine("¡El campeón levanta el trofeo!");
+        Console.WriteLine("¡Victoria! 🏆");
     }
 }
 ```
@@ -92,7 +92,7 @@ class CrowdChant
 
     static void Chant()
     {
-        Console.WriteLine("Chant with me!");
+        Console.WriteLine("¡Canta conmigo!");
     }
 }
 ```
@@ -126,7 +126,7 @@ class BuffMenu
     // 'elixir' is the PARAMETER
     static void BrewElixir(string elixir)
     {
-        Console.WriteLine($"Brewing a {elixir} elixir for the whole party!");
+        Console.WriteLine($"¡Preparando un {elixir} para todo el grupo!");
     }
 }
 ```
@@ -144,17 +144,17 @@ class PrizeSplit
 {
     static void Main()
     {
-        CalculateCost("Sunken Keep", 150, 4, 4);
-        CalculateCost("Shadow Crypt", 200, 3, 3);
+        CalculateCost("Fortaleza Hundida", 150, 4, 4);
+        CalculateCost("Cripta Sombría", 200, 3, 3);
     }
 
-    static void CalculateCost(string dungeonName, int goldPerFloor, int floorsCleared, int partySize)
+    static void CalculateCost(string nombreMazmorra, int oroPorPiso, int pisosSuperados, int tamañoGrupo)
     {
-        int totalGold = goldPerFloor * floorsCleared;
-        int goldPerHero = totalGold / partySize;
+        int oroTotal = oroPorPiso * pisosSuperados;
+        int oroPorHeroe = oroTotal / tamañoGrupo;
 
-        Console.WriteLine($"Dungeon: {dungeonName}");
-        Console.WriteLine($"Gold per hero: ${goldPerHero}");
+        Console.WriteLine($"Mazmorra: {nombreMazmorra}");
+        Console.WriteLine($"Oro por héroe: ${oroPorHeroe}");
     }
 }
 ```
@@ -172,13 +172,13 @@ class QuestProgress
 {
     static void Main()
     {
-        int xpRemaining = XpToNextLevel(35000, 50000);
-        Console.WriteLine(xpRemaining);
+        int xpRestante = XpToNextLevel(35000, 50000);
+        Console.WriteLine(xpRestante);
     }
 
-    static int XpToNextLevel(int currentXp, int xpToNextLevel)
+    static int XpToNextLevel(int xpActual, int xpParaSiguienteNivel)
     {
-        return xpToNextLevel - currentXp;
+        return xpParaSiguienteNivel - xpActual;
     }
 }
 ```
@@ -196,26 +196,26 @@ class CallingAllRaiders
 {
     static void Main()
     {
-        int squads = CalculateSquads(36, 6);
-        int hours = CalculateHours(12, 18);
-        string briefing = CreateBriefing("Dragon Siege", squads, hours);
+        int escuadrones = CalculateSquads(36, 6);
+        int horas = CalculateHours(12, 18);
+        string informe = CreateBriefing("Asedio del Dragón", escuadrones, horas);
 
-        Console.WriteLine(briefing);
+        Console.WriteLine(informe);
     }
 
-    static int CalculateSquads(int raiders, int squadSize)
+    static int CalculateSquads(int incursores, int tamañoEscuadra)
     {
-        return raiders / squadSize;
+        return incursores / tamañoEscuadra;
     }
 
-    static int CalculateHours(int startHour, int endHour)
+    static int CalculateHours(int horaInicio, int horaFin)
     {
-        return endHour - startHour;
+        return horaFin - horaInicio;
     }
 
-    static string CreateBriefing(string eventName, int squads, int hours)
+    static string CreateBriefing(string nombreEvento, int escuadrones, int horas)
     {
-        return $"{eventName} starts at 6 PM!\nWe'll raid for {hours} hours with {squads} squads. See you at the gate!";
+        return $"{nombreEvento} empieza a las 6 PM!\n¡Incursionaremos durante {horas} horas con {escuadrones} escuadrones. ¡Nos vemos en la puerta!";
     }
 }
 ```

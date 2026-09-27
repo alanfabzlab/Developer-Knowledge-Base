@@ -13,16 +13,16 @@ Una **sentencia if anidada** es una sentencia `if` colocada dentro de otra sente
 ### Sintaxis y Lógica Visual
 
 ```python
-level = 20
-gold = 25000
+nivel = 20
+oro = 25000
 
-if level >= 18:
-  if gold >= 20000:
-    print('You are eligible to buy the legendary blade.')
+if nivel >= 18:
+  if oro >= 20000:
+    print('Puedes comprar la hoja legendaria.')
   else:
-    print('Your gold is too low for the legendary blade.')
+    print('Tu oro es demasiado bajo para la hoja legendaria.')
 else:
-  print('You must reach level 18 to equip legendary gear.')
+  print('Debes alcanzar el nivel 18 para equipar equipo legendario.')
 ```
 
 
@@ -34,16 +34,16 @@ else:
 ### Ejemplo Práctico: Decisión de Dificultad
 
 ```python
-difficulty = 'Nightmare'
-gear_score = 35
+dificultad = 'Pesadilla'
+puntuacion_equipo = 35
 
-if difficulty == 'Nightmare':
-  if gear_score < 60:
-    print("You barely survive the dungeon! 💀")
+if dificultad == 'Pesadilla':
+  if puntuacion_equipo < 60:
+    print("¡Apenas sobrevives a la mazmorra! 💀")
   else:
-    print("Even overpowered gear struggles here.")
+    print("Incluso el equipo sobredimensionado sufre aquí.")
 else:
-  print("This difficulty is too easy... let's try a harder one.")
+  print("Esta dificultad es demasiado fácil... probemos una más difícil.")
 ```
 
 
@@ -72,15 +72,15 @@ Simula la verificación de un código de acceso para una puerta de mazmorra bloq
 ```python
 # unlock_save.py
 
-print('GATE OF THE SUNKEN KEEP')
+print('PUERTA DE LA FORTALEZA HUNDIDA')
 
-passcode = int(input('Enter the passcode: '))
+codigo = int(input('Introduce el código de acceso: '))
 
-while passcode != 2468:
-  passcode = int(input('Incorrect passcode. Enter the passcode again: '))
+while codigo != 2468:
+  codigo = int(input('Código incorrecto. Introduce el código de nuevo: '))
 
-if passcode == 2468:
-  print('Gate unlocked!')
+if codigo == 2468:
+  print('¡Puerta desbloqueada!')
 ```
 
 
@@ -94,12 +94,12 @@ Demuestra el control de la ejecución del bucle y la limitación del número tot
 ```python
 # guess.py (Basic Version)
 
-guess = 0
+adivina = 0
 
-while guess != 250:
-  guess = int(input('Guess the boss HP: '))
+while adivina != 250:
+  adivina = int(input('Adivina el HP del jefe: '))
 
-print('You got it!')
+print('¡Lo has conseguido!')
 ```
 
 
@@ -112,17 +112,17 @@ Incorporando una variable contadora `tries` junto con operadores lógicos para a
 ```python
 # guess.py (Limited Attempts Version)
 
-guess = 0
-tries = 0
+adivina = 0
+intentos = 0
 
-while guess != 250 and tries < 5:
-  guess = int(input('Guess the boss HP: '))
-  tries += 1
+while adivina != 250 and intentos < 5:
+  adivina = int(input('Adivina el HP del jefe: '))
+  intentos += 1
 
-if guess == 250:
-  print('You got it!')
+if adivina == 250:
+  print('¡Lo has conseguido!')
 else:
-  print('Too many attempts! Better luck next time.')
+  print('¡Demasiados intentos! Mejor suerte la próxima vez.')
 ```
 
 
@@ -164,7 +164,7 @@ Para imprimir un mensaje 100 veces usando un bucle:
 # grinding.py
 
 for i in range(100):
-  print('I will not skip the boss cutscene')
+  print('No me saltaré la cinemática del jefe')
 ```
 
 
@@ -179,7 +179,7 @@ La interpolación de cadenas sustituye valores de variables en marcadores de pos
 ```python
 # String Interpolation Example
 for i in range(5):
-  print(f'The damage of {i} is {i*i}')
+  print(f'El daño de {i} es {i*i}')
 ```
 
 
@@ -193,10 +193,10 @@ Imprime todos los versos del canto tradicional de mazmorra usando un bucle `for`
 # 99_bosses.py
 
 for i in range(99, 0, -1):
-  print(f'{i} skeletons left in the dungeon')
-  print(f'{i} skeletons remain')
-  print('Slay one down, and the next spawns')
-  print(f'{i-1} skeletons left in the dungeon\n')
+  print(f'{i} esqueletos quedan en la mazmorra')
+  print(f'{i} esqueletos quedan')
+  print('Mata a uno, y aparece el siguiente')
+  print(f'{i-1} esqueletos quedan en la mazmorra\n')
 ```
 
 
@@ -226,11 +226,11 @@ Itera sobre los números del `1` al `100`:
 
 for i in range(1, 101):
   if i % 3 == 0 and i % 5 == 0:
-    print('Legendary')
+    print('Legendario')
   elif i % 3 == 0:
-    print('Common')
+    print('Común')
   elif i % 5 == 0:
-    print('Rare')
+    print('Raro')
   else:
     print(i)
 ```

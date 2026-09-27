@@ -38,7 +38,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Hello, Champion!");
+        Console.WriteLine("¡Hola, Campeón!");
     }
 }
 ```
@@ -73,7 +73,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Welcome to the Realm!");
+        Console.WriteLine("¡Bienvenido al Reino!");
     }
 }
 ```
@@ -82,7 +82,7 @@ class Program
 
 
 ```text
-Welcome to the Realm!
+¡Bienvenido al Reino!
 ```
 
 ### Ejercicio 2: Perfil del Héroe
@@ -97,7 +97,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Aria - Half-Elf Ranger");
+        Console.WriteLine("Aria - Exploradora Semielfa");
     }
 }
 ```
@@ -107,7 +107,7 @@ class Program
 
 
 ```text
-Aria - Half-Elf Ranger
+Aria - Exploradora Semielfa
 ```
 
 
@@ -123,12 +123,12 @@ class QuestLog
 {
     static void Main()
     {
-        Console.WriteLine("Quest Log - Day 27 of Emberfall");
+        Console.WriteLine("Registro de Misiones - Día 27 de la Caída de Brasa");
         Console.WriteLine("-------------------------------");
-        Console.WriteLine("A floating citadel rose above the Glass Sea.");
-        Console.WriteLine("Its towers were forged from crystal and storm.");
-        Console.WriteLine("I found a sealed gate behind the moon fountain.");
-        Console.WriteLine("Before I could reach the boss room, I got disconnected.");
+        Console.WriteLine("Una ciudadela flotante surgió sobre el Mar de Cristal.");
+        Console.WriteLine("Sus torres fueron forjadas con cristal y tormenta.");
+        Console.WriteLine("Encontré una puerta sellada detrás de la fuente lunar.");
+        Console.WriteLine("Antes de llegar a la sala del jefe, me desconecté.");
     }
 }
 ```
@@ -138,12 +138,12 @@ class QuestLog
 
 
 ```text
-Quest Log - Day 27 of Emberfall
+Registro de Misiones - Día 27 de la Caída de Brasa
 -------------------------------
-A floating citadel rose above the Glass Sea.
-Its towers were forged from crystal and storm.
-I found a sealed gate behind the moon fountain.
-Before I could reach the boss room, I got disconnected.
+Una ciudadela flotante surgió sobre el Mar de Cristal.
+Sus torres fueron forjadas con cristal y tormenta.
+Encontré una puerta sellada detrás de la fuente lunar.
+Antes de llegar a la sala del jefe, me desconecté.
 ```
 
 
@@ -203,19 +203,19 @@ class RecruitmentPoster
         */
 
         // Headline to grab attention
-        Console.WriteLine("JOIN MY GUILD! 🤝");
+        Console.WriteLine("¡ÚNETE A MI GREMIO! 🤝");
 
         // Introduce yourself
-        Console.WriteLine("Hi, I'm Aria!");
+        Console.WriteLine("¡Hola, soy Aria!");
 
         // State your interest
-        Console.WriteLine("I love game design and level building.");
+        Console.WriteLine("Me encanta el diseño de juegos y la creación de niveles.");
 
         // Favorite pastime
-        Console.WriteLine("I enjoy speedrunning Hollow Knight and modding classic games.");
+        Console.WriteLine("Me gusta hacer speedruns de Hollow Knight y modificar juegos clásicos.");
 
         // Call to action
-        Console.WriteLine("Let's squad up and build cool worlds together! 🚀");
+        Console.WriteLine("¡Reúnete con tu escuadrón y construyamos mundos geniales juntos! 🚀");
     }
 }
 ```
@@ -225,9 +225,9 @@ class RecruitmentPoster
 
 
 ```text
-JOIN MY GUILD! 🤝
-Hi, I'm Aria!
-I love game design and level building.
-I enjoy speedrunning Hollow Knight and modding classic games.
-Let's squad up and build cool worlds together! 🚀
+¡ÚNETE A MI GREMIO! 🤝
+¡Hola, soy Aria!
+Me encanta el diseño de juegos y la creación de niveles.
+Me gusta hacer speedruns de Hollow Knight y modificar juegos clásicos.
+¡Reúnete con tu escuadrón y construyamos mundos geniales juntos! 🚀
 ```

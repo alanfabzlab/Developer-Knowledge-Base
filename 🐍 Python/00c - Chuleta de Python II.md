@@ -16,18 +16,18 @@
 ### Listas
 
 ```python
-enemy_hp = [320, 280, 410, 190, 540, 260, 130]
+hp_enemigo = [320, 280, 410, 190, 540, 260, 130]
 
 # Index
-boss_1 = enemy_hp[0]  # 320
-boss_7 = enemy_hp[6]  # 130
+jefe_1 = hp_enemigo[0]  # 320
+jefe_7 = hp_enemigo[6]  # 130
 
 # Negative index
-boss_7 = enemy_hp[-1] # 130
+jefe_7 = hp_enemigo[-1] # 130
 
 # Slicing
-early_waves = enemy_hp[0:5]
-late_waves = enemy_hp[5:7]
+olas_iniciales = hp_enemigo[0:5]
+olas_finales = hp_enemigo[5:7]
 ```
 
 
@@ -36,24 +36,24 @@ late_waves = enemy_hp[5:7]
 
 
 ```python
-stage_runtimes = [140, 95, 180, 120]
+tiempos_fase = [140, 95, 180, 120]
 
 # Built-in functions
-len(stage_runtimes)  # Output: 4
-max(stage_runtimes)  # Output: 180
-min(stage_runtimes)  # Output: 95
+len(tiempos_fase)  # Output: 4
+max(tiempos_fase)  # Output: 180
+min(tiempos_fase)  # Output: 95
 
 # Built-in methods
-stage_runtimes.append(205)
+tiempos_fase.append(205)
 # [140, 95, 180, 120, 205]
 
-stage_runtimes.insert(3, 160)
+tiempos_fase.insert(3, 160)
 # [140, 95, 180, 160, 120, 205]
 
-stage_runtimes.remove(95)
+tiempos_fase.remove(95)
 # [140, 180, 160, 120, 205]
 
-stage_runtimes.pop(0)
+tiempos_fase.pop(0)
 # [180, 160, 120, 205]
 ```
 
@@ -63,7 +63,7 @@ stage_runtimes.pop(0)
 
 ```python
 def announce_wave():
-    print('The boss spawns! 👹')
+    print('¡Aparece el jefe! 👹')
 
 announce_wave()  # Output: The boss spawns! 👹
 ```
@@ -85,13 +85,13 @@ print(add(21, 56))  # Output: 77
 
 
 ```python
-xp = 29  # Global scope
+experiencia = 29  # Global scope
 
 def func():
-    xp = 42  # Local scope
-    print(xp)
+    experiencia = 42  # Local scope
+    print(experiencia)
 
-print(xp)  # Output: 29
+print(experiencia)  # Output: 29
 func()    # Output: 42
 ```
 
@@ -101,12 +101,12 @@ func()    # Output: 42
 
 ```python
 class Hero:
-    def __init__(self, name, level):
-        self.name = name
-        self.level = level
+    def __init__(self, nombre, nivel):
+        self.nombre = nombre
+        self.nivel = nivel
 
     def say_hi(self):
-        print(f'👋 My name is {self.name}')
+        print(f'👋 Mi nombre es {self.nombre}')
 
 aria = Hero('Aria', 22)
 kai = Hero('Kai', 23)

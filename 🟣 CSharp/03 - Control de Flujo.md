@@ -23,11 +23,11 @@ Una sentencia `if` ejecuta un bloque de código solo cuando una condición espec
 ### Sintaxis Básica
 
 ```csharp
-bool isGateOpen = true;
+bool puertaAbierta = true;
 
-if (isGateOpen)
+if (puertaAbierta)
 {
-    Console.WriteLine("The party steps into the dungeon.");
+    Console.WriteLine("El grupo entra en la mazmorra.");
 }
 ```
 
@@ -57,19 +57,19 @@ Cuando existen múltiples caminos posibles, `else` y `else if` permiten gestiona
 
 
 ```csharp
-int score = 85;
+int puntuacion = 85;
 
-if (score >= 90)
+if (puntuacion >= 90)
 {
-    Console.WriteLine("Rank: Platinum");
+    Console.WriteLine("Rango: Platino");
 }
-else if (score >= 80)
+else if (puntuacion >= 80)
 {
-    Console.WriteLine("Rank: Gold");
+    Console.WriteLine("Rango: Oro");
 }
 else
 {
-    Console.WriteLine("Rank: Silver or lower");
+    Console.WriteLine("Rango: Plata o inferior");
 }
 ```
 
@@ -88,11 +88,11 @@ class RaidNight
 {
     static void Main()
     {
-        bool squadIsReady = true;
+        bool escuadraLista = true;
 
-        if (squadIsReady)
+        if (escuadraLista)
         {
-            Console.WriteLine("Let's queue for the raid, yippee!");
+            Console.WriteLine("¡Vamos a hacer cola para la incursión, arriba!");
         }
     }
 }
@@ -102,7 +102,7 @@ class RaidNight
 
 
 ```text
-Let's queue for the raid, yippee!
+¡Vamos a hacer cola para la incursión, arriba!
 ```
 
 
@@ -118,11 +118,11 @@ class AggroMeter
 {
     static void Main()
     {
-        int aggroLevel = 7;
+        int nivelAggro = 7;
 
-        if (aggroLevel >= 5)
+        if (nivelAggro >= 5)
         {
-            Console.WriteLine("The whole zone is turning red!");
+            Console.WriteLine("¡Toda la zona se está poniendo roja!");
         }
     }
 }
@@ -133,7 +133,7 @@ class AggroMeter
 
 
 ```text
-The whole zone is turning red!
+¡Toda la zona se está poniendo roja!
 ```
 
 
@@ -149,15 +149,15 @@ class CriticalRoll
 {
     static void Main()
     {
-        double critChance = 0.85;
+        double probCritica = 0.85;
 
-        if (critChance > 0.75)
+        if (probCritica > 0.75)
         {
-            Console.WriteLine("Critical hit! The enemy reels. 💥");
+            Console.WriteLine("¡Golpe crítico! El enemigo se marea. 💥");
         }
         else
         {
-            Console.WriteLine("Glancing blow. The enemy staggers. ⚔️");
+            Console.WriteLine("Golpe de refilón. El enemigo da un traspié. ⚔️");
         }
     }
 }
@@ -168,7 +168,7 @@ class CriticalRoll
 
 
 ```text
-Critical hit! The enemy reels. 💥
+¡Golpe crítico! El enemigo se marea. 💥
 ```
 
 
@@ -184,19 +184,19 @@ class DangerLevel
 {
     static void Main()
     {
-        int dangerLevel = 55;
+        int nivelPeligro = 55;
 
-        if (dangerLevel < 40)
+        if (nivelPeligro < 40)
         {
-            Console.WriteLine("Quiet zone, nothing spawns yet 🤫");
+            Console.WriteLine("Zona tranquila, todavía no aparece nada 🤫");
         }
-        else if (dangerLevel <= 70)
+        else if (nivelPeligro <= 70)
         {
-            Console.WriteLine("Enemies are swarming the camp 🧟");
+            Console.WriteLine("¡Los enemigos están inundando el campamento! 🧟");
         }
         else
         {
-            Console.WriteLine("We are about to get wiped out! 🚨");
+            Console.WriteLine("¡Estamos a punto de ser aniquilados! 🚨");
         }
     }
 }
@@ -207,7 +207,7 @@ class DangerLevel
 
 
 ```text
-Enemies are swarming the camp 🧟
+¡Los enemigos están inundando el campamento! 🧟
 ```
 
 
@@ -241,16 +241,16 @@ class GuildGate
 {
     static void Main()
     {
-        int playerLevel = 22;
-        bool hasGuildPass = true;
+        int nivelJugador = 22;
+        bool tienePaseGremio = true;
 
-        if (playerLevel > 21 && hasGuildPass)
+        if (nivelJugador > 21 && tienePaseGremio)
         {
-            Console.WriteLine("Welcome to the guild hall!");
+            Console.WriteLine("¡Bienvenido al salón del gremio!");
         }
         else
         {
-            Console.WriteLine("Come back when you are stronger, newbie");
+            Console.WriteLine("Vuelve cuando seas más fuerte, novato");
         }
     }
 }
@@ -261,7 +261,7 @@ class GuildGate
 
 
 ```text
-Welcome to the guild hall!
+¡Bienvenido al salón del gremio!
 ```
 
 
@@ -277,16 +277,16 @@ class RarityPull
 {
     static void Main()
     {
-        Console.Write("Enter your rarity tier from 1 to 10: ");
-        int rarityTier = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Introduce tu nivel de rareza del 1 al 10: ");
+        int nivelRareza = Convert.ToInt32(Console.ReadLine());
 
-        if (rarityTier >= 8)
+        if (nivelRareza >= 8)
         {
-            Console.WriteLine("LEGENDARY DROP! The whole lobby is staring. ✨");
+            Console.WriteLine("¡BOTÍN LEGENDARIO! Toda la sala está mirando. ✨");
         }
         else
         {
-            Console.WriteLine("Common trash... the summoning circle laughs at you. 🔮");
+            Console.WriteLine("Basura común... el círculo de invocación se ríe de ti. 🔮");
         }
     }
 }
@@ -297,8 +297,8 @@ class RarityPull
 
 
 ```text
-Enter your rarity tier from 1 to 10: 9
-LEGENDARY DROP! The whole lobby is staring. ✨
+Introduce tu nivel de rareza del 1 al 10: 9
+¡BOTÍN LEGENDARIO! Toda la sala está mirando. ✨
 ```
 
 
@@ -314,24 +314,24 @@ class BuffOrDebuff
 {
     static void Main()
     {
-        Console.Write("Do you wield a sword or a staff?");
-        string answer = Console.ReadLine();
+        Console.Write("¿Empuntas una espada o un bastón?");
+        string respuesta = Console.ReadLine();
 
-        if (answer == "sword")
+        if (respuesta == "espada")
         {
-            Console.WriteLine("YOUR BUFFS:");
-            Console.WriteLine("1. Crit damage on the final hit");
-            Console.WriteLine("2. Frame-perfect parries");
-            Console.WriteLine("3. Campfire resting bonuses");
-            Console.WriteLine("4. A save point in every dungeon");
+            Console.WriteLine("TUS BUFFS:");
+            Console.WriteLine("1. Daño crítico en el golpe final");
+            Console.WriteLine("2. Parryas perfectas cuadro a cuadro");
+            Console.WriteLine("3. Bonificaciones por descansar en la hoguera");
+            Console.WriteLine("4. Un punto de guardado en cada mazmorra");
         }
         else
         {
-            Console.WriteLine("YOUR DEBUFFS:");
-            Console.WriteLine("1. Missing jump inputs");
-            Console.WriteLine("2. Lag spikes on the final boss");
-            Console.WriteLine("3. Grindy filler quests");
-            Console.WriteLine("4. Soft-locked cutscenes");
+            Console.WriteLine("TUS DEBUFFS:");
+            Console.WriteLine("1. Pulsaciones de salto perdidas");
+            Console.WriteLine("2. Tirones de lag en el jefe final");
+            Console.WriteLine("3. Misiones de relleno tediosas");
+            Console.WriteLine("4. Cinemáticas con bloqueo suave");
         }
     }
 }
@@ -342,11 +342,11 @@ class BuffOrDebuff
 
 
 ```text
-Do you wield a sword or a staff?
-sword
-YOUR BUFFS:
-1. Crit damage on the final hit
-2. Frame-perfect parries
-3. Campfire resting bonuses
-4. A save point in every dungeon
+¿Empuntas una espada o un bastón?
+espada
+TUS BUFFS:
+1. Daño crítico en el golpe final
+2. Parryas perfectas cuadro a cuadro
+3. Bonificaciones por descansar en la hoguera
+4. Un punto de guardado en cada mazmorra
 ```

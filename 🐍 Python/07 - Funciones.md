@@ -35,19 +35,19 @@ Python incluye 68 funciones integradas listas para usar de inmediato (por ejempl
 # dry.py
 
 # print() prints text or values to the console
-print('Ready Player One!')
+print('¡Listo Jugador Uno!')
 
 # input() requests user input from the console
-hero = input('Enter your hero name: ')
+heroe = input('Introduce el nombre de tu héroe: ')
 
 # len() returns the length or number of elements
-name_length = len(hero)
+longitud_nombre = len(heroe)
 
 # int() converts a value into an integer
-level = int('25')
+nivel = int('25')
 
 # type() returns the data type of an object
-print(type(hero))
+print(type(heroe))
 ```
 
 
@@ -70,24 +70,24 @@ Las funciones definidas por el usuario requieren dos pasos clave:
 import random
 
 def loot_box():
-  random_fortune = random.randint(1, 8)
+  fortuna_aleatoria = random.randint(1, 8)
 
-  if random_fortune == 1:
-    print('Don\'t grind for the meta build - invent one.')
-  elif random_fortune == 2:
-    print('All bosses are hard before they are farmed.')
-  elif random_fortune == 3:
-    print('The early bird gets the loot, but the second raid gets the legend.')
-  elif random_fortune == 4:
-    print('Someone in your party needs a health potion from you.')
-  elif random_fortune == 5:
-    print('Don\'t just think. Press attack!')
-  elif random_fortune == 6:
-    print('Your heart will skip a beat at 1 HP.')
-  elif random_fortune == 7:
-    print('The drop you are grinding for is in another chest.')
+  if fortuna_aleatoria == 1:
+    print('No farmees por la build meta: inventa una.')
+  elif fortuna_aleatoria == 2:
+    print('Todos los jefes son difíciles antes de ser farmados.')
+  elif fortuna_aleatoria == 3:
+    print('El que madruga se lleva el botín, pero la segunda incursión se lleva la leyenda.')
+  elif fortuna_aleatoria == 4:
+    print('Alguien en tu grupo necesita una poción de salud de tu parte.')
+  elif fortuna_aleatoria == 5:
+    print('¡Deja de pensar. ¡Pulsa atacar!')
+  elif fortuna_aleatoria == 6:
+    print('Tu corazón dará un vuelco a 1 HP.')
+  elif fortuna_aleatoria == 7:
+    print('El objeto por el que farmeas está en otro cofre.')
   else:
-    print('Help! I\'m trapped in a cutscene!')
+    print('¡Ayuda! ¡Estoy atrapado en una cinemática!')
 
 
 # Function calls
@@ -109,11 +109,11 @@ Las funciones se vuelven dinámicas cuando aceptan datos de entrada que procesar
 
 ```python
 # 'hero' is the parameter
-def level_up(hero):
-  print('Level up for the hero')
-  print('Level up for the hero')
-  print('Level up, dear ' + hero)
-  print('Level up for the hero')
+def level_up(heroe):
+  print('Sube de nivel el héroe')
+  print('Sube de nivel el héroe')
+  print('Sube de nivel, querido ' + heroe)
+  print('Sube de nivel el héroe')
 
 # 'Aria' is the argument
 level_up('Aria')
@@ -171,22 +171,22 @@ El ámbito determina en qué parte del programa una variable es visible y accesi
 
 ```python
 # Exercise 32: Damage Log (Time Series Analysis)
-damage_per_turn = [34.68, 36.09, 34.94, 33.97, 34.68, 35.82, 43.41, 44.29, 44.91, 43.87]
+daño_por_turno = [34.68, 36.09, 34.94, 33.97, 34.68, 35.82, 43.41, 44.29, 44.91, 43.87]
 
 def damage_at(x):
     # 'x' is a local variable, 'damage_per_turn' is global
-    return damage_per_turn[x - 1]
+    return daño_por_turno[x - 1]
 
 def max_damage(a, b):
-    return max(damage_per_turn[a - 1:b])
+    return max(daño_por_turno[a - 1:b])
 
 def min_damage(a, b):
-    return min(damage_per_turn[a - 1:b])
+    return min(daño_por_turno[a - 1:b])
 
 # Tests
-print(f"Damage on turn 3: {damage_at(3)}")
-print(f"Max damage (turns 1-5): {max_damage(1, 5)}")
-print(f"Min damage (turns 5-10): {min_damage(5, 10)}")
+print(f"Daño en el turno 3: {damage_at(3)}")
+print(f"Daño máximo (turnos 1-5): {max_damage(1, 5)}")
+print(f"Daño mínimo (turnos 5-10): {min_damage(5, 10)}")
 ```
 
 
@@ -199,31 +199,31 @@ Integra funciones, entrada del usuario, estructuras condicionales y valores de r
 ```python
 # Exercise 33: Blacksmith
 def welcome():
-    print("Welcome to the Blacksmith!")
-    print("1. ⚔️ Iron Sword")
-    print("2. 🛡️ Leather Shield")
-    print("3. 🧪 Health Potion")
-    print("4. 🌀 Teleport Scroll")
-    print("5. 🔑 Golden Key")
+    print("¡Bienvenido al Herrero!")
+    print("1. ⚔️ Espada de Hierro")
+    print("2. 🛡️ Escudo de Cuero")
+    print("3. 🧪 Poción de Salud")
+    print("4. 🌀 Pergamino de Teletransporte")
+    print("5. 🔑 Llave Dorada")
 
 def get_item(x):
     if x == 1:
-        return 'Iron Sword'
+        return 'Espada de Hierro'
     elif x == 2:
-        return 'Leather Shield'
+        return 'Escudo de Cuero'
     elif x == 3:
-        return 'Health Potion'
+        return 'Poción de Salud'
     elif x == 4:
-        return 'Teleport Scroll'
+        return 'Pergamino de Teletransporte'
     elif x == 5:
-        return 'Golden Key'
+        return 'Llave Dorada'
     else:
-        return 'Invalid item'
+        return 'Ítem no válido'
 
 # Execution flow
 welcome()
-option = int(input('What would you like to buy? '))
-print(f"You bought: {get_item(option)}")
+opcion = int(input('¿Qué quieres comprar? '))
+print(f"Has comprado: {get_item(opcion)}")
 ```
 
 
@@ -236,7 +236,7 @@ Las funciones lambda (también conocidas como funciones anónimas) son funciones
 ### Sintaxis
 
 ```python
-lambda arguments: expression
+lambda argumentos: expresion
 ```
 
 
@@ -255,7 +255,7 @@ lambda arguments: expression
 
 
 ```python
-def double_damage(x):
+def daño_doble(x):
     return x * 2
 ```
 
@@ -264,9 +264,9 @@ def double_damage(x):
 
 
 ```python
-double_damage = lambda x: x * 2
+daño_doble = lambda x: x * 2
 
-print(double_damage(4)) # Output: 8
+print(daño_doble(4)) # Output: 8
 ```
 
 
@@ -276,16 +276,16 @@ Las funciones lambda destacan cuando se pasan como argumentos de un solo uso a f
 
 
 ```python
-damage_values = [2, 4, 6, 8, 10]
+valores_daño = [2, 4, 6, 8, 10]
 
 # Using map() to double each element
-doubled_damage = list(map(lambda x: x * 2, damage_values))
+daño_duplicado = list(map(lambda x: x * 2, valores_daño))
 
 # Using filter() to keep only the heavy hits
-heavy_hits = list(filter(lambda x: x > 7, damage_values))
+golpes_pesados = list(filter(lambda x: x > 7, valores_daño))
 
-print(doubled_damage) # Output: [4, 8, 12, 16, 20]
-print(heavy_hits)     # Output: [8, 10]
+print(daño_duplicado) # Output: [4, 8, 12, 16, 20]
+print(golpes_pesados)     # Output: [8, 10]
 ```
 
 
@@ -295,12 +295,12 @@ print(heavy_hits)     # Output: [8, 10]
 
 
 ```python
-heroes = ['Aria', 'Borin', 'Cass', 'Dara', 'Elowen']
+lista_heroes = ['Aria', 'Borin', 'Cass', 'Dara', 'Elowen']
 
 # Filter out hero names starting with 'A'
-filtered_heroes = list(filter(lambda name: name[0].upper() != 'A', heroes))
+heroes_filtrados = list(filter(lambda nombre: nombre[0].upper() != 'A', lista_heroes))
 
-print(filtered_heroes) # Output: ['Borin', 'Cass', 'Dara', 'Elowen']
+print(heroes_filtrados) # Output: ['Borin', 'Cass', 'Dara', 'Elowen']
 ```
 
 
@@ -308,8 +308,8 @@ print(filtered_heroes) # Output: ['Borin', 'Cass', 'Dara', 'Elowen']
 
 
 ```python
-spell_name = lambda str1, str2: str1 + str2
+nombre_hechizo = lambda cadena1, cadena2: cadena1 + cadena2
 
-name = spell_name('fire', 'ball')
-print(f'The spell name is: {name}') # Output: The spell name is: fireball
+nombre = nombre_hechizo('fuego', 'bola')
+print(f'El nombre del hechizo es: {nombre}') # Output: The spell name is: fireball
 ```

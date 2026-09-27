@@ -38,7 +38,7 @@ En Python, usamos la función integrada `print()` para enviar texto o datos a la
 ```python
 
 # Basic Output
-print('Hello World!')
+print('¡Hola Mundo!')
 
 ```
 
@@ -48,8 +48,8 @@ Python ejecuta el código línea por línea, de forma secuencial de arriba abajo
 Python
 
 ```python
-print('👾 Hello Developer!')
-print('🚀 Systems Ready!')
+print('👾 ¡Hola Desarrollador!')
+print('🚀 ¡Sistemas Listos!')
 ```
 
 **Salida:**
@@ -100,11 +100,11 @@ Usa comentarios (`#`) para la documentación junto a las sentencias de salida:
 # Goal: Note to my future game developer self
 # Date: 2026
 
-print("Date: September 13, 2026")
-print("Status: Building a roguelike dungeon crawler in Obsidian.")
-print("Goal: Master software engineering and game development.")
-print("Message: Ship one dungeon every single day!")
-print("Favorite Emoji: 🎮")
+print("Fecha: 13 de septiembre de 2026")
+print("Estado: Construyendo un dungeon crawler roguelike en Obsidian.")
+print("Meta: Dominar la ingeniería de software y el desarrollo de juegos.")
+print("Mensaje: ¡Publica una mazmorra todos los días!")
+print("Emoji Favorito: 🎮")
 ```
 
 ## 05. Variables y Tipos de Datos
@@ -118,16 +118,16 @@ Asigna valores usando el signo igual (`=`): `variable_name = value`.
 
 ```python
 # Variable declarations & reassignment
-hero_name = 'Aria Stormborn'
-save_slot = 2
-progress = 0.85
-xp = 120
-has_map = True
+nombre_heroe = 'Aria Stormborn'
+guardado = 2
+progreso = 0.85
+experiencia = 120
+tiene_mapa = True
 
 # Value Reassignment
-xp = 150
-xp = 200
-print(xp)  # Output: 200
+experiencia = 150
+experiencia = 200
+print(experiencia)  # Output: 200
 ```
 
 | Tipo        | Nombre            | Descripción             | Ejemplo |
@@ -158,13 +158,13 @@ Python incluye operadores aritméticos estándar para realizar cálculos matemá
 
 #### 💡 Cálculo de Daño Crítico (`crit.py`)
 ```python
-base_damage = 45
-weapon_bonus = 15
+daño_base = 45
+bonus_arma = 15
 
-total = base_damage + weapon_bonus
-crit_damage = total * 0.25
+total = daño_base + bonus_arma
+daño_critico = total * 0.25
 
-print(crit_damage)  # Output: 15.0
+print(daño_critico)  # Output: 15.0
 ```
 
 
@@ -174,11 +174,11 @@ $$bmi = \frac{mass}{height^2}$$
 
 ```python
 # encumbrance.py
-carry_weight = 80     # in kilograms of carried loot
-hero_height = 1.86    # in meters
+peso_cargado = 80     # in kilograms of carried loot
+altura_heroe = 1.86    # in meters
 
-encumbrance = carry_weight / (hero_height ** 2)
-print(encumbrance)
+carga = peso_cargado / (altura_heroe ** 2)
+print(carga)
 ```
 
 
@@ -188,8 +188,8 @@ $$c = \sqrt{a^2 + b^2}$$
 
 ```python
 # spell_range.py
-a = int(input('Enter the horizontal cast distance a: '))
-b = int(input('Enter the vertical cast distance b: '))
+a = int(input('Introduce la distancia horizontal del lanzamiento a: '))
+b = int(input('Introduce la distancia vertical del lanzamiento b: '))
 
 c = (a**2 + b**2) ** 0.5
 print(c)
@@ -206,16 +206,16 @@ Para interactuar con los usuarios, Python proporciona la función integrada `inp
 ### ⌨️ Entrada Estándar
 
 ```python
-hero = input('Enter your hero name: ')
-print(hero)
+heroe = input('Introduce el nombre de tu héroe: ')
+print(heroe)
 ```
 
 
 🔢 Conversión de Tipos (`int()`)
 
 ```python
-level = int(input('What is your current level? '))
-print(level)  # Stored as integer 30, not string "30"
+nivel = int(input('¿Cuál es tu nivel actual? '))
+print(nivel)  # Stored as integer 30, not string "30"
 ```
 
 
@@ -226,16 +226,16 @@ Un programa convertidor de múltiples monedas que convierte Monedas de Cobre, Mo
 ```python
 # gold_converter.py
 
-copper = int(input('Amount in copper coins: '))
-silver = int(input('Amount in silver coins: '))
-emeralds = int(input('Amount of emeralds: '))
+cobre = int(input('Cantidad en monedas de cobre: '))
+plata = int(input('Cantidad en monedas de plata: '))
+esmeraldas = int(input('Cantidad de esmeraldas: '))
 
 # Standard exchange rate factors
-gold_from_copper = copper * 0.0001
-gold_from_silver = silver * 0.1
-gold_from_emeralds = emeralds * 5
+oro_del_cobre = cobre * 0.0001
+oro_de_la_plata = plata * 0.1
+oro_de_las_esmeraldas = esmeraldas * 5
 
-total_gold = gold_from_copper + gold_from_silver + gold_from_emeralds
+oro_total = oro_del_cobre + oro_de_la_plata + oro_de_las_esmeraldas
 
-print(total_gold)
+print(oro_total)
 ```

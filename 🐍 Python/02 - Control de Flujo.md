@@ -41,43 +41,43 @@ print(Welcome to the Kingdom!
 
 ```python
 # Error: Referencing an undefined variable
-print(goblin_hp)
+print(hp_goblin)
 
 # NameError: name 'goblin_hp' is not defined
 
 # Fix: Define the variable before referencing it
-goblin_hp = 40
-print(goblin_hp)  # Output: 40
+hp_goblin = 40
+print(hp_goblin)  # Output: 40
 ```
 
 #### ❌ Ejemplo de TypeError
 
 ```python
 # Error: Attempting string concatenation with an integer directly
-status = 'Player Level: '
-print(status + 5)
+estado = 'Nivel del Jugador: '
+print(estado + 5)
 
 # TypeError: can only concatenate str (not "int") to str
 
 # Fix: Cast integer using str()
-status = 'Player Level: '
-print(status + str(5))  # Output: Player Level: 5
+estado = 'Nivel del Jugador: '
+print(estado + str(5))  # Output: Player Level: 5
 ```
 
 🐛 Reto de Depuración: Cazador de Errores (`bug_catcher.py`)
 
 ```python
 # Fixed version of loot tracking script
-health_potions = 5
-mana_potions = 8
-bomb_runes = 12
+pociones_salud = 5
+pociones_mana = 8
+runas_bomba = 12
 
-print('Loot Bag: ' + str(health_potions) + ' Health Potions')
-print('Loot Bag: ' + str(mana_potions) + ' Mana Potions')
-print('Loot Bag: ' + str(bomb_runes) + ' Bomb Runes')
+print('Bolsa de Botín: ' + str(pociones_salud) + ' Pociones de Salud')
+print('Bolsa de Botín: ' + str(pociones_mana) + ' Pociones de Mana')
+print('Bolsa de Botín: ' + str(runas_bomba) + ' Runas de Bomba')
 
-total_items = health_potions + mana_potions + bomb_runes
-print('Total items: ' + str(total_items) + ' items collected!')
+total_objetos = pociones_salud + pociones_mana + runas_bomba
+print('Objetos totales: ' + str(total_objetos) + ' ¡objetos recogidos!')
 ```
 
 ## 02. Control de Flujo y Toma de Decisiones
@@ -99,9 +99,9 @@ import random
 num = random.randint(1, 6)
 
 if num > 3:
-  print('Critical Hit! ⚔️')
+  print('¡Golpe Crítico! ⚔️')
 else:
-  print('Normal Hit 🛡️')
+  print('Golpe Normal 🛡️')
 ```
 
 
@@ -112,10 +112,10 @@ else:
 Evalúa una condición. Si la condición es `True`, se ejecuta el bloque indentado que hay debajo.
 
 ```python
-xp = 75
+experiencia = 75
 
-if xp >= 60:
-  print('Level Up Available! ✅')
+if experiencia >= 60:
+  print('¡Subida de Nivel Disponible! ✅')
 ```
 
 
@@ -124,12 +124,12 @@ if xp >= 60:
 Proporciona un bloque de ejecución alternativo cuando la condición `if` se evalúa como `False`.
 
 ```python
-xp = 45
+experiencia = 45
 
-if xp >= 60:
-  print('Level Up Available! ✅')
+if experiencia >= 60:
+  print('¡Subida de Nivel Disponible! ✅')
 else:
-  print('Not Enough XP Yet ❌')
+  print('Aún no tienes suficiente XP ❌')
 ```
 
 
@@ -141,12 +141,12 @@ Comprueba si la puntuación de una partida alcanza el umbral mínimo para desblo
 # ranks.py
 
 # Match score (Range 0-100)
-score = 78
+puntuacion = 78
 
-if score >= 55:
-  print('Ranked queue unlocked!')
+if puntuacion >= 55:
+  print('¡Cola clasificada desbloqueada!')
 else:
-  print('Keep grinding the campaign.')
+  print('Sigue farmando la campaña.')
 ```
 
 
@@ -168,16 +168,16 @@ Los operadores relacionales comparan dos valores y devuelven un resultado boolea
 Cuando compruebes más de dos condiciones, añade bloques `elif` (else if) entre `if` y `else`.
 
 ```python
-rarity = 4.8
+rareza = 4.8
 
-if rarity >= 4.5:
-  print('Mythic Weapon 🌟')
-elif rarity >= 3.5:
-  print('Legendary Weapon 👍')
-elif rarity >= 2.5:
-  print('Rare Weapon 😐')
+if rareza >= 4.5:
+  print('Arma Mítica 🌟')
+elif rareza >= 3.5:
+  print('Arma Legendaria 👍')
+elif rareza >= 2.5:
+  print('Arma Rara 😐')
 else:
-  print('Common Junk 👎')
+  print('Basura Común 👎')
 ```
 
 
@@ -188,14 +188,14 @@ Comprueba los niveles de pureza de los elixires para determinar qué tan sobrepo
 ```python
 # potion_purity.py
 
-purity = float(input('Enter purity level (0-100): '))
+pureza = float(input('Introduce el nivel de pureza (0-100): '))
 
-if purity > 70:
-  print('Overpowered')
-elif purity < 30:
-  print('Sludge')
+if pureza > 70:
+  print('Sobredimensionado')
+elif pureza < 30:
+  print('Lodo')
 else:
-  print('Balanced')
+  print('Equilibrado')
 ```
 
 
@@ -207,31 +207,31 @@ El módulo integrado `random` de Python proporciona funciones como `randint(a, b
 import random
 
 # Generate a result between 1 and 9
-option = random.randint(1, 9)
+opcion = random.randint(1, 9)
 
-prompt = input('Ask a decision question: ')
+pregunta = input('Haz una pregunta de decisión: ')
 
-if option == 1:
-  answer = 'Legendary blade dropped. Definitely.'
-elif option == 2:
-  answer = 'It is a crit. Decidedly so.'
-elif option == 3:
-  answer = 'Without a doubt, it crits.'
-elif option == 4:
-  answer = 'Reroll pending, try again.'
-elif option == 5:
-  answer = 'Ask again after the patch notes.'
-elif option == 6:
-  answer = 'Better not tell you now.'
-elif option == 7:
-  answer = 'My patch notes say no.'
-elif option == 8:
-  answer = 'DPS check not so good.'
+if opcion == 1:
+  respuesta = 'Cayó una hoja legendaria. Seguro.'
+elif opcion == 2:
+  respuesta = 'Es un crítico. Definitivamente.'
+elif opcion == 3:
+  respuesta = 'Sin ninguna duda, hace crítico.'
+elif opcion == 4:
+  respuesta = 'Reinicio pendiente, inténtalo de nuevo.'
+elif opcion == 5:
+  respuesta = 'Pregunta de nuevo después de las notas del parche.'
+elif opcion == 6:
+  respuesta = 'Mejor no te lo cuento ahora.'
+elif opcion == 7:
+  respuesta = 'Mis notas del parche dicen que no.'
+elif opcion == 8:
+  respuesta = 'La prueba de DPS no sale bien.'
 else:
-  answer = 'Very doubtful, disconnected.'
+  respuesta = 'Muy dudoso, desconectado.'
 
-print('Question: ' + prompt)
-print('Loot Box Oracle: ' + answer)
+print('Pregunta: ' + pregunta)
+print('Oráculo de la Caja de Botín: ' + respuesta)
 ```
 
 
@@ -257,22 +257,22 @@ Los operadores lógicos evalúan y combinan múltiples expresiones booleanas:
 
 ```python
 # Practical Examples
-stamina = 8
-aim = 6
+resistencia = 8
+puntería = 6
 
-if stamina > 5 and aim > 5:
-  print('Perfect headshot window!')
+if resistencia > 5 and puntería > 5:
+  print('¡Ventana perfecta de headshot!')
 
-has_potion = True
-has_ether = False
+tiene_pocion = True
+tiene_eter = False
 
-if has_potion or has_ether:
-  print('Buffs acquired ☕')
+if tiene_pocion or tiene_eter:
+  print('Bufs obtenidos ☕')
 
-is_paused = False
+en_pausa = False
 
-if not is_paused:
-  print('Ready to grind the boss!')
+if not en_pausa:
+  print('¡Listo para farmear al jefe!')
 ```
 
 
@@ -284,17 +284,17 @@ Evalúa el requisito de nivel (Nivel $40$) y los tokens de entrada ($15\text{ to
 ```python
 # boss_rush.py
 
-level = int(input('Enter your level: '))
-tokens = int(input('Enter your available tokens: '))
+nivel = int(input('Introduce tu nivel: '))
+tokens = int(input('Introduce tus tokens disponibles: '))
 
-if level >= 40 and tokens >= 15:
-  print('Boss Rush unlocked!')
-elif tokens >= 15 and level < 40:
-  print('You are not high enough level to enter.')
-elif level >= 40 and tokens < 15:
-  print("You don't have enough tokens.")
+if nivel >= 40 and tokens >= 15:
+  print('¡Boss Rush desbloqueado!')
+elif tokens >= 15 and nivel < 40:
+  print('No tienes nivel suficiente para entrar.')
+elif nivel >= 40 and tokens < 15:
+  print("No tienes suficientes tokens.")
 else:
-  print('Requirements not met for entry.')
+  print('Requisitos no cumplidos para entrar.')
 ```
 
 
@@ -303,64 +303,64 @@ else:
 ```python
 # playstyle_quiz.py
 
-vanguard = 0
-ranger = 0
-arcanist = 0
-shadow = 0
+vanguardia = 0
+explorador = 0
+arcanista = 0
+sombra = 0
 
-print('Q1) Do you prefer the frontlines or the backline?')
-print('  1) Frontlines')
-print('  2) Backline')
-q1_answer = int(input('Answer (1-2): '))
+print('Q1) ¿Prefieres el frente o la retaguardia?')
+print('  1) Frontal')
+print('  2) Retaguardia')
+respuesta_1 = int(input('Respuesta (1-2): '))
 
-if q1_answer == 1:
-  vanguard += 1
-  arcanist += 1
-elif q1_answer == 2:
-  ranger += 1
-  shadow += 1
+if respuesta_1 == 1:
+  vanguardia += 1
+  arcanista += 1
+elif respuesta_1 == 2:
+  explorador += 1
+  sombra += 1
 else:
-  print('Invalid input.')
+  print('Entrada no válida.')
 
-print('\nQ2) In a party, I want to be remembered as:')
-print('  1) The Protector')
-print('  2) The Duelist')
-print('  3) The Scholar')
-print('  4) The Hunter')
-q2_answer = int(input('Answer (1-4): '))
+print('\nQ2) En un grupo, quiero que me recuerden como:')
+print('  1) El Protector')
+print('  2) El Duelista')
+print('  3) El Erudito')
+print('  4) El Cazador')
+respuesta_2 = int(input('Respuesta (1-4): '))
 
-if q2_answer == 1:
-  vanguard += 2
-elif q2_answer == 2:
-  shadow += 2
-elif q2_answer == 3:
-  arcanist += 2
-elif q2_answer == 4:
-  ranger += 2
+if respuesta_2 == 1:
+  vanguardia += 2
+elif respuesta_2 == 2:
+  sombra += 2
+elif respuesta_2 == 3:
+  arcanista += 2
+elif respuesta_2 == 4:
+  explorador += 2
 else:
-  print('Invalid input.')
+  print('Entrada no válida.')
 
-print('\nQ3) Which soundtrack gets you focused while grinding?')
-print('  1) Orchestral Score')
+print('\nQ3) ¿Qué banda sonora te mantiene concentrado mientras farmeas?')
+print('  1) Banda Sonora Orquestal')
 print('  2) Heavy Metal')
 print('  3) Lo-Fi Beats')
 print('  4) Drum & Bass')
-q3_answer = int(input('Answer (1-4): '))
+respuesta_3 = int(input('Respuesta (1-4): '))
 
-if q3_answer == 1:
-  arcanist += 4
-elif q3_answer == 2:
-  vanguard += 4
-elif q3_answer == 3:
-  ranger += 4
-elif q3_answer == 4:
-  shadow += 4
+if respuesta_3 == 1:
+  arcanista += 4
+elif respuesta_3 == 2:
+  vanguardia += 4
+elif respuesta_3 == 3:
+  explorador += 4
+elif respuesta_3 == 4:
+  sombra += 4
 else:
-  print('Invalid input.')
+  print('Entrada no válida.')
 
-print('\n--- Final Scores ---')
-print('Vanguard:', vanguard)
-print('Ranger:', ranger)
-print('Arcanist:', arcanist)
-print('Shadow:', shadow)
+print('\n--- Puntuaciones Finales ---')
+print('Vanguardia:', vanguardia)
+print('Explorador:', explorador)
+print('Arcanista:', arcanista)
+print('Sombra:', sombra)
 ```

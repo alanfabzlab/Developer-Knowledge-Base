@@ -16,14 +16,14 @@ Referencia rápida de la sintaxis básica de Python y de los conceptos fundament
 
 ```python
 # Output
-print('Ready Player One!')
+print('¡Listo Jugador Uno!')
 print(1000)
 print(3.14)
 print(True)
 
 # Input
-hero_name = input('Enter your hero name: ')
-level = int(input('Enter your level: '))
+nombre_heroe = input('Introduce el nombre de tu héroe: ')
+nivel = int(input('Introduce tu nivel: '))
 ```
 
 
@@ -42,10 +42,10 @@ print('Aria') # I'm also one T.T
 Python
 
 ```python
-starting_gold = 150       # int
-gravity = 9.81          # float
-player_tag = '@nightowl' # str
-is_game_over = False   # bool
+oro_inicial = 150       # int
+gravedad = 9.81          # float
+etiqueta_jugador = '@nightowl' # str
+juego_terminado = False   # bool
 ```
 
 ## 🔹 Operadores
@@ -54,12 +54,12 @@ is_game_over = False   # bool
 
 
 ```python
-damage_taken = 23 + 18
-hp_remaining = 30 - 8
-crit_chance = 10 * 2.5
-gold_rate = 81 / 9
-wave_number = 76 % 4
-loot_tier = 2 ** 3
+daño_recibido = 23 + 18
+hp_restante = 30 - 8
+prob_crit = 10 * 2.5
+tasa_oro = 81 / 9
+num_ola = 76 % 4
+nivel_botin = 2 ** 3
 ```
 
 ### Operadores Relacionales
@@ -87,11 +87,11 @@ not a   # True if a is false
 
 
 ```python
-if rank_score >= 90:
+if puntuacion_rango >= 90:
   print('S')
-elif rank_score >= 80:
+elif puntuacion_rango >= 80:
   print('A')
-elif rank_score >= 70:
+elif puntuacion_rango >= 70:
   print('B')
 else:
   print('C')
@@ -103,14 +103,14 @@ else:
 ```python
 import random
 
-roll = random.randint(1, 20)
+tirada = random.randint(1, 20)
 ```
 
 ## 🔹 Interpolación de Cadenas
 
 
 ```python
-print(f'The damage of {i} is {i*i}')
+print(f'El daño de {i} es {i*i}')
 ```
 
 ## 🔹 Bucles
@@ -118,8 +118,8 @@ print(f'The damage of {i} is {i*i}')
 
 ```python
 # While loop
-while health < 1:
-  print('Your health is critical!')
+while vida < 1:
+  print('¡Tu vida es crítica!')
 
 # For loop
 for i in range(5):

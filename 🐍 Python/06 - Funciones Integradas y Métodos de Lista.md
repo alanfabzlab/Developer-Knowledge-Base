@@ -16,21 +16,21 @@ Combina los conceptos de creación e iteración de listas para producir un regis
 ```python
 # boss_rush_log.py
 
-things_to_beat = [
-  'Slay the Chrono Warden with a pistol only.',
-  'Clear the Sunken Keep without healing items.',
-  'Beat the entire raid with four players.',
-  'Finish the campaign on Nightmare difficulty.',
-  'Speedrun the Ashwood Mines under 10 minutes.',
-  'Collect every golden key in the kingdom.',
-  'Survive 100 waves of the endless mode.',
-  'Build a working game and ship it.',
-  'Playtest with strangers and take notes.',
-  'Never rage quit. Never again.'
+cosas_derrotar = [
+  'Derrota al Guardián del Tiempo solo con una pistola.',
+  'Limpia la Fortaleza Hundida sin objetos de curación.',
+  'Supera toda la incursión con cuatro jugadores.',
+  'Termina la campaña en dificultad Pesadilla.',
+  'Completa las Minas del Bosque de Cenizas en menos de 10 minutos.',
+  'Recoge todas las llaves doradas del reino.',
+  'Sobrevive a 100 olas del modo infinito.',
+  'Construye un juego que funcione y publícalo.',
+  'Haz pruebas de juego con desconocidos y toma notas.',
+  'Nunca abandones por rage quit. Nunca más.'
 ]
 
-for thing in things_to_beat:
-  print(thing)
+for cosa in cosas_derrotar:
+  print(cosa)
 ```
 
 
@@ -41,10 +41,10 @@ Una **lista anidada** es una lista que contiene otras listas como elementos.
 
 ```python
 # Mixed nested list
-my_list = ['a', 'b', 'c', [1, 2, 3]]
+mi_lista = ['a', 'b', 'c', [1, 2, 3]]
 
 # Accessing elements inside a nested list
-print(my_list[3][1]) # Output: 2
+print(mi_lista[3][1]) # Output: 2
 ```
 
 
@@ -55,7 +55,7 @@ Cuando todos los elementos de una lista son listas anidadas de la misma longitud
 
 
 ```python
-matrix = [
+matriz = [
   [1, 2, 3, 4],
   [5, 6, 7, 8],
   [9, 10, 11, 12]
@@ -67,7 +67,7 @@ matrix = [
 
 
 ```python
-battle_map = [
+mapa_batalla = [
   ['M', 'M', 'M'],
   ['M', 'B', 'M'],
   ['S', 'B', 'T']
@@ -76,9 +76,9 @@ battle_map = [
 # Legend: M = mountain, B = boss spawn, S = shop, T = treasure
 
 # Accessing row 2, column 1
-row = 2
-column = 1
-print(battle_map[row][column]) # Output: B
+fila = 2
+columna = 1
+print(mapa_batalla[fila][columna]) # Output: B
 ```
 
 
@@ -97,10 +97,10 @@ Python ofrece estructuras más allá de las listas ordenadas estándar que permi
 Un **diccionario** conecta una `key` única con un `value`. Son colecciones ordenadas que almacenan datos como pares `key: value`.
 
 ```python
-party = {
-    'Aria': 'Ranger',
+grupo = {
+    'Aria': 'Explorador',
     'Kai': 'Paladin',
-    'Nyx': 'Mage'
+    'Nyx': 'Mago'
 }
 ```
 
@@ -111,7 +111,7 @@ Los elementos se recuperan usando indexación por clave `[key]` en lugar de índ
 
 
 ```python
-print(party['Nyx']) 
+print(grupo['Nyx']) 
 # Output: Mage
 ```
 
@@ -134,9 +134,9 @@ print(party['Nyx'])
 
 
 ```python
-print(party.keys())
-print(party.values())
-print(party.items())
+print(grupo.keys())
+print(grupo.values())
+print(grupo.items())
 ```
 
 
@@ -146,15 +146,15 @@ Un **conjunto** es una colección no ordenada de **elementos únicos** sin dupli
 
 
 ```python
-loot_favorites = {'Sword', 'Shield', 'Potion', 'Helm', 'Boots'}
-spell_favorites = {'Staff', 'Wand', 'Potion', 'Scroll', 'Rune'}
+favoritos_botin = {'Espada', 'Escudo', 'Poción', 'Yelmo', 'Botas'}
+favoritos_hechizos = {'Bastón', 'Varita', 'Poción', 'Pergamino', 'Runa'}
 ```
 
 **Advertencia:** Crear Conjuntos Vacíos Declarar `{}` crea un **diccionario** vacío, no un conjunto. Para inicializar un conjunto vacío, usa `set()`:
 
 
 ```python
-empty_set = set()
+conjunto_vacio = set()
 ```
 
 
@@ -171,14 +171,14 @@ Python
 
 ```python
 # Union
-print(loot_favorites.union(spell_favorites))
+print(favoritos_botin.union(favoritos_hechizos))
 
 # Intersection
-print(loot_favorites.intersection(spell_favorites))
+print(favoritos_botin.intersection(favoritos_hechizos))
 # Output: {'Potion'}
 
 # Difference
-print(loot_favorites.difference(spell_favorites))
+print(favoritos_botin.difference(favoritos_hechizos))
 # Output: {'Sword', 'Shield', 'Helm', 'Boots'}
 ```
 

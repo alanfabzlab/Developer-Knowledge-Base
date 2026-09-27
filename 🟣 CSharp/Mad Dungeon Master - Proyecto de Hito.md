@@ -31,60 +31,60 @@ class MadDungeonMaster
 {
     static void Main(string[] args)
     {
-        bool keepRunning = true;
+        bool seguirEjecutando = true;
 
-        while (keepRunning)
+        while (seguirEjecutando)
         {
             Console.Clear();
-            Console.WriteLine("👹 Welcome to Mad Dungeon Master! ⚔️\n");
+            Console.WriteLine("👹 ¡Bienvenido a Mad Dungeon Master! ⚔️\n");
 
-            Console.Write("Enter a boss name: ");
-            string bossName = Console.ReadLine();
+            Console.Write("Introduce el nombre del jefe: ");
+            string nombreJefe = Console.ReadLine();
 
-            Console.Write("Enter a dark deed: ");
-            string darkDeed = Console.ReadLine();
+            Console.Write("Introduce un crimen oscuro: ");
+            string crimenOscuro = Console.ReadLine();
 
-            Console.Write("Enter an adjective: ");
-            string adjective = Console.ReadLine();
+            Console.Write("Introduce un adjetivo: ");
+            string adjetivo = Console.ReadLine();
 
-            Console.Write("Enter a hero weapon: ");
-            string heroWeapon = Console.ReadLine();
+            Console.Write("Introduce el arma del héroe: ");
+            string armaHeroe = Console.ReadLine();
 
-            Console.Write("Enter a dungeon name: ");
-            string place = Console.ReadLine();
+            Console.Write("Introduce el nombre de la mazmorra: ");
+            string lugar = Console.ReadLine();
 
-            Console.Write("Enter a time of day (e.g. night, morning): ");
-            string timeOfDay = Console.ReadLine();
+            Console.Write("Introduce una hora del día (p. ej., noche, mañana): ");
+            string horaDelDia = Console.ReadLine();
 
-            Console.WriteLine("\n✨ Generating Your Boss Script ✨\n");
+            Console.WriteLine("\n✨ Generando tu Guion de Jefe ✨\n");
 
-            Console.WriteLine($"Hear ye, travelers of {place}!");
-            Console.WriteLine($"I am {bossName}, and I will {darkDeed} your hopes.");
-            Console.WriteLine($"Bow before my {adjective} crown,");
-            Console.WriteLine($"while your {heroWeapon} lies shattered at my feet.");
+            Console.WriteLine($"¡Oid, viajeros de {lugar}!");
+            Console.WriteLine($"Soy {nombreJefe}, y con {crimenOscuro} destruiré tus esperanzas.");
+            Console.WriteLine($"Inclínate ante mi corona {adjetivo},");
+            Console.WriteLine($"mientras tu {armaHeroe} yace hecho pedazos a mis pies.");
 
-            if (timeOfDay.ToLower() == "night" || timeOfDay.ToLower() == "midnight")
+            if (horaDelDia.ToLower() == "noche" || horaDelDia.ToLower() == "medianoche")
             {
-                Console.WriteLine($"When the twin moons rise, my reign begins at the {timeOfDay}.");
+                Console.WriteLine($"Cuando las lunas gemelas se alcen, mi reinado comienza en la {horaDelDia}.");
             }
-            else if (timeOfDay.ToLower() == "morning" && adjective.ToLower() != "dark")
+            else if (horaDelDia.ToLower() == "mañana" && adjetivo.ToLower() != "oscuro")
             {
-                Console.WriteLine($"Good morning, hero! Even at this {timeOfDay}, you cannot outlevel me.");
+                Console.WriteLine($"¡Buenos días, héroe! Ni siquiera a esta {horaDelDia} puedes superarme.");
             }
             else
             {
-                Console.WriteLine($"Whatever the hour, the {timeOfDay} will not save you from my phase three.");
+                Console.WriteLine($"Sea cual sea la hora, la {horaDelDia} no te salvará de mi fase tres.");
             }
 
-            Console.WriteLine("\n⚔️ Your boss script is complete and ready for the arena!");
+            Console.WriteLine("\n⚔️ ¡Tu guion de jefe está completo y listo para la arena!");
 
-            Console.Write("\nWould you like to forge another encounter? (y/n): ");
-            string response = Console.ReadLine().ToLower();
+            Console.Write("\n¿Quieres forjar otro enfrentamiento? (y/n): ");
+            string respuesta = Console.ReadLine().ToLower();
 
-            if (response != "y" && response != "yes")
+            if (respuesta != "y" && respuesta != "sí")
             {
-                keepRunning = false;
-                Console.WriteLine("\nThanks for using Mad Dungeon Master! 🚀");
+                seguirEjecutando = false;
+                Console.WriteLine("\n¡Gracias por usar Mad Dungeon Master! 🚀");
             }
         }
     }

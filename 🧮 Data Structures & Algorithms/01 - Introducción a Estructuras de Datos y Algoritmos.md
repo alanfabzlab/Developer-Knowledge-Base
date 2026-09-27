@@ -31,9 +31,9 @@ Colecciones ordenadas que permiten agregar, eliminar y acceder a elementos por �
 Python
 
 ```python
-dungeon_map = ['Ashwood', 'Brightfalls', 'Cinderpeak', 'Duskmoor', 'Frostgate']
-dungeon_map.append('Goldspan')
-print(dungeon_map[2])  # Output: Cinderpeak
+mapa_mazmorra = ['Bosque de Cenizas', 'Cascadas Luminosas', 'Pico de Brasa', 'Breva del Ocaso', 'Puerta de Escarcha']
+mapa_mazmorra.append('Puente Dorado')
+print(mapa_mazmorra[2])  # Output: Cinderpeak
 ```
 
 
@@ -44,13 +44,13 @@ Colecciones de pares clave-valor que permiten una búsqueda eficiente mediante c
 Python
 
 ```python
-save_file = {
-    'slot': 'Chrono Warden',
-    'region': 'Sunken Keep',
-    'difficulty': 'Nightmare',
-    'playtime': 2041
+archivo_guardado = {
+    'ranura': 'Guardian del Tiempo',
+    'region': 'Fortaleza Hundida',
+    'dificultad': 'Pesadilla',
+    'tiempo_jugado': 2041
 }
-print(save_file['slot'])  # Output: Chrono Warden
+print(archivo_guardado['ranura'])  # Output: Chrono Warden
 ```
 
 
@@ -61,9 +61,9 @@ Colecciones no ordenadas de elementos únicos, sin duplicados `{}`.
 Python
 
 ```python
-bosses = {'ember_knight', 'frost_wraith', 'stone_golem'}
-bosses.add('void_reaper')
-print('ember_knight' in bosses)  # Output: True
+jefes = {'Caballero de Brasa', 'Espectro de Escarcha', 'Golem de Piedra'}
+jefes.add('Segador del Vacio')
+print('Caballero de Brasa' in jefes)  # Output: True
 ```
 
 
@@ -73,18 +73,18 @@ Python
 
 ```python
 # Working with built-in data structures
-party = ['Aria', 'Kai', 'Nyx']
+grupo = ['Aria', 'Kai', 'Nyx']
 
-boss_theme = {
-    'name': 'Final Boss Concerto',
-    'composer': 'R. Vale',
-    'year': 2011
+tema_jefe = {
+    'nombre': 'Concierto del Jefe Final',
+    'compositor': 'R. Vale',
+    'anio': 2011
 }
 
-biomes = {'Ashwood', 'Frostgate', 'Goldspan'}
+biomas = {'Bosque de Cenizas', 'Puerta de Escarcha', 'Puente Dorado'}
 
 # Sorting a list alphabetically using built-in algorithm
-mechanics = ['loot', 'pathfinding', 'queues', 'recursion', "dijkstra's algorithm"]
-mechanics.sort()
-print(mechanics)
+mecanicas = ['botin', 'busqueda_de_rutas', 'colas', 'recursion', "algoritmo de dijkstra"]
+mecanicas.sort()
+print(mecanicas)
 ```

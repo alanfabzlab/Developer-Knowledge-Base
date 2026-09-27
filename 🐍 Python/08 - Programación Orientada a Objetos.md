@@ -27,10 +27,10 @@ Por convención en Python, los nombres de clase usan **PascalCase** (con la prim
 
 ```python
 class Guild:
-    name = ''
-    faction = ''
-    level = 0
-    is_recruiting = False
+    nombre = ''
+    faccion = ''
+    nivel = 0
+    reclutando = False
 ```
 
 
@@ -42,16 +42,16 @@ Un **Objeto** es una instancia concreta de una clase. Los atributos se pueden ac
 
 ```python
 # Instance creation
-iron_brothers = Guild()
+hermanos_hierro = Guild()
 
 # Manual attribute assignment
-iron_brothers.name = 'The Iron Brothers'
-iron_brothers.faction = 'Vanguard Clan'
-iron_brothers.level = 42
-iron_brothers.is_recruiting = False
+hermanos_hierro.nombre = 'Los Hermanos de Hierro'
+hermanos_hierro.faccion = 'Clan de la Vanguardia'
+hermanos_hierro.nivel = 42
+hermanos_hierro.reclutando = False
 
 # Inspecting object attributes using vars()
-print(vars(iron_brothers))
+print(vars(hermanos_hierro))
 # Output: {'name': 'The Iron Brothers', 'faction': 'Vanguard Clan', 'level': 42, 'is_recruiting': False}
 ```
 
@@ -66,18 +66,18 @@ Asignar atributos línea a línea es tedioso e ineficiente. El método construct
 
 ```python
 class Dungeon:
-    def __init__(self, name, region, difficulty, monsters):
-        self.name = name
+    def __init__(self, nombre, region, dificultad, monstruos):
+        self.nombre = nombre
         self.region = region
-        self.difficulty = difficulty
-        self.monsters = monsters
+        self.dificultad = dificultad
+        self.monstruos = monstruos
 
 # Direct instantiation with arguments
-hometown = Dungeon('Sunken Keep', 'Kingdom of Emberfall', 'Hard', ['Gloom Wraith', 'Frost Golem'])
-destination = Dungeon('Crystal Spire', 'Sky Realm', 'Nightmare', ['Chrono Warden', 'Void Reaper', 'Star Devourer'])
+ciudad_natal = Dungeon('Fortaleza Hundida', 'Reino de la Caida de Brasa', 'Dificil', ['Espectro Sombrio', 'Golem de Escarcha'])
+destino = Dungeon('Aguja de Cristal', 'Reino del Cielo', 'Pesadilla', ['Guardián del Tiempo', 'Segador del Vacio', 'Devorador de Estrellas'])
 
-print(vars(hometown))
-print(vars(destination))
+print(vars(ciudad_natal))
+print(vars(destino))
 ```
 
 **Importante:** El Parámetro `self` El parámetro `self` se refiere implícitamente a la instancia actual del objeto que se está creando o manipulando. Siempre debe ser el primer parámetro en los métodos definidos dentro de una clase.
@@ -94,18 +94,18 @@ Los **Métodos de Instancia** son funciones definidas dentro de una clase que op
 
 ```python
 class Hero:
-    def __init__(self, name, level, in_party, power):
-        self.name = name
-        self.level = level
-        self.in_party = in_party
-        self.power = power
+    def __init__(self, nombre, nivel, en_grupo, poder):
+        self.nombre = nombre
+        self.nivel = nivel
+        self.en_grupo = en_grupo
+        self.poder = poder
 
     def display_info(self):
-        print(f"The hero {self.name}'s power rating is {self.power}!")
+        print(f"El héroe {self.nombre} tiene una potencia de {self.poder}!")
 
     def unlock_endgame(self):
-        if self.in_party and self.power > 25 and self.level == 12:
-            print(f"{self.name} can enter the endgame content!")
+        if self.en_grupo and self.poder > 25 and self.nivel == 12:
+            print(f"¡{self.nombre} puede acceder al contenido del endgame!")
 
 # Creating instances and calling methods
 aria = Hero('Aria', 11, False, 30)
@@ -124,30 +124,30 @@ Implementación de una clase de inventario sencilla que gestiona el estado del o
 
 ```python
 class PlayerInventory:
-    def __init__(self, first_name, last_name, player_id, character_class, pin, gold):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.player_id = player_id
-        self.character_class = character_class
+    def __init__(self, nombre, apellido, id_jugador, clase_personaje, pin, oro):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.id_jugador = id_jugador
+        self.clase_personaje = clase_personaje
         self.pin = pin
-        self.gold = gold
+        self.oro = oro
 
-    def collect_gold(self, amount):
-        self.gold += amount
-        return self.gold
+    def collect_gold(self, cantidad):
+        self.oro += cantidad
+        return self.oro
 
-    def spend_gold(self, amount):
-        self.gold -= amount
-        return amount
+    def spend_gold(self, cantidad):
+        self.oro -= cantidad
+        return cantidad
 
     def display_gold(self):
-        print(f"Current gold: {self.gold} 🪙")
+        print(f"Oro actual: {self.oro} 🪙")
 
 # Test Operations
-player = PlayerInventory('Aria', 'Stormborn', 654321, 'Ranger', 4321, 100.0)
-player.collect_gold(96)
-player.spend_gold(25)
-player.display_gold()
+jugador = PlayerInventory('Aria', 'Stormborn', 654321, 'Explorador', 4321, 100.0)
+jugador.collect_gold(96)
+jugador.spend_gold(25)
+jugador.display_gold()
 ```
 
 
@@ -159,43 +159,43 @@ Un modelo completo que representa las entradas de un bestiario usando atributos,
 
 ```python
 class Enemy:
-    def __init__(self, entry, name, types, description, is_defeated):
-        self.entry = entry
-        self.name = name
-        self.types = types
-        self.description = description
-        self.is_defeated = is_defeated
+    def __init__(self, entrada, nombre, tipos, descripcion, derrotado):
+        self.entrada = entrada
+        self.nombre = nombre
+        self.tipos = tipos
+        self.descripcion = descripcion
+        self.derrotado = derrotado
 
     def speak(self):
-        print(f"{self.name} {self.name}!")
+        print(f"{self.nombre} {self.nombre}!")
 
     def display_details(self):
-        print(f"Entry Number: {self.entry}")
-        print(f"Name: {self.name}")
+        print(f"Número de Entrada: {self.entrada}")
+        print(f"Nombre: {self.nombre}")
         
         # Formatting list of types
-        if isinstance(self.types, list):
-            print(f"Type: {', '.join(self.types)}")
+        if isinstance(self.tipos, list):
+            print(f"Tipo: {', '.join(self.tipos)}")
         else:
-            print(f"Type: {self.types}")
+            print(f"Tipo: {self.tipos}")
 
-        print(f"Description: {self.description}")
+        print(f"Descripción: {self.descripcion}")
         
-        if self.is_defeated:
-            print(f"{self.name} has already been defeated!")
+        if self.derrotado:
+            print(f"{self.nombre} ¡ya ha sido derrotado!")
         else:
-            print(f"{self.name} has not been defeated yet.")
+            print(f"{self.nombre} aún no ha sido derrotado.")
 
 # Creating bestiary instances
-ember_knight = Enemy(25, 'Ember Knight', ['Fire'], 'Its armor smolders when it swings its blade.', True)
-frost_wraith = Enemy(1, 'Frost Wraith', ['Ice', 'Dark'], 'It leaves a cold trail wherever it drifts.', True)
-stone_golem = Enemy(4, 'Stone Golem', ['Earth'], 'It has a preference for heavy things.', False)
+caballero_brasa = Enemy(25, 'Caballero de Brasa', ['Fuego'], 'Su armadura humea cuando blande su hoja.', True)
+espectro_escarcha = Enemy(1, 'Espectro de Escarcha', ['Hielo', 'Oscuro'], 'Deja un rastro frío por donde sea que se deslice.', True)
+golem_piedra = Enemy(4, 'Golem de Piedra', ['Tierra'], 'Tiene preferencia por las cosas pesadas.', False)
 
 # Testing methods
-ember_knight.speak()
-ember_knight.display_details()
+caballero_brasa.speak()
+caballero_brasa.display_details()
 
 print()
-frost_wraith.speak()
-frost_wraith.display_details()
+espectro_escarcha.speak()
+espectro_escarcha.display_details()
 ```

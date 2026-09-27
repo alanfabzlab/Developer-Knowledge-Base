@@ -20,15 +20,15 @@ Una **Lista** es una colección ordenada de elementos almacenados en una sola va
 Python
 
 ```python
-loot_bag = ['Health Potion', 'Iron Sword', 'Bomb Rune', 'Teleport Scroll', 'Golden Key', 'Monster Pelt']
+bolsa_botin = ['Pocion de Salud', 'Espada de Hierro', 'Runa de Bomba', 'Pergamino de Teletransporte', 'Llave Dorada', 'Piel de Monstruo']
 
 # Indexing
-print(loot_bag[0])  # Output: Health Potion
-print(loot_bag[2])  # Output: Bomb Rune
+print(bolsa_botin[0])  # Output: Health Potion
+print(bolsa_botin[2])  # Output: Bomb Rune
 
 # Slicing
-zones = ['Ashwood', 'Brightfalls', 'Cinderpeak', 'Duskmoor', 'Everest', 'Frostgate', 'Goldspan']
-print(zones[1:4])  # Output: ['Brightfalls', 'Cinderpeak', 'Duskmoor']
+zonas = ['Bosque de Cenizas', 'Cascadas Luminosas', 'Pico de Brasa', 'Breva del Ocaso', 'Everest', 'Puerta de Escarcha', 'Puente Dorado']
+print(zonas[1:4])  # Output: ['Brightfalls', 'Cinderpeak', 'Duskmoor']
 ```
 
 
@@ -47,13 +47,13 @@ print(zones[1:4])  # Output: ['Brightfalls', 'Cinderpeak', 'Duskmoor']
 Python
 
 ```python
-to_do = ['Craft a health potion', 'Explore the Ashwood', 'Level up at the bonfire']
+pendientes = ['Fabricar una poción de salud', 'Explorar el Bosque de Cenizas', 'Subir de nivel en la hoguera']
 
-to_do.append('Clear the Sunken Keep')
-to_do.insert(2, 'Recruit a party member')
-to_do.pop(4)
+pendientes.append('Limpiar la Fortaleza Hundida')
+pendientes.insert(2, 'Reclutar a un miembro del grupo')
+pendientes.pop(4)
 
-print(len(to_do))  # Output: 4
+print(len(pendientes))  # Output: 4
 ```
 
 
@@ -78,13 +78,13 @@ La **Búsqueda Lineal** es la técnica de búsqueda más simple. Inspecciona cad
 Python
 
 ```python
-def linear_search(input_list, target_value):
-    for item in input_list:
-        if item == target_value:
+def linear_search(lista_entrada, valor_objetivo):
+    for elemento in lista_entrada:
+        if elemento == valor_objetivo:
             return True
     return False
 
-guild_roster = [
+lista_gremio = [
     'aria@stormborn.gg',
     'kai@vanguard.clan',
     'nyx@arcanist.gg',
@@ -100,8 +100,8 @@ guild_roster = [
     'lyra@arcanist.gg'
 ]
 
-print(linear_search(guild_roster, 'nyx@arcanist.gg'))   # Output: True
-print(linear_search(guild_roster, 'mark.scout@gg.gg'))  # Output: False
+print(linear_search(lista_gremio, 'nyx@arcanist.gg'))   # Output: True
+print(linear_search(lista_gremio, 'mark.scout@gg.gg'))  # Output: False
 ```
 
 

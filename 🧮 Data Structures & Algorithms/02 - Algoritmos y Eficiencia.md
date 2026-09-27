@@ -27,21 +27,21 @@ El ordenamiento por inserción es un algoritmo de ordenamiento simple basado en 
 Python
 
 ```python
-def insertion_sort(arr):
-    for i in range(1, len(arr)):
-        key = arr[i]
+def insertion_sort(lista):
+    for i in range(1, len(lista)):
+        clave = lista[i]
         j = i - 1
         
-        while j >= 0 and arr[j] > key:
-            arr[j + 1] = arr[j]
+        while j >= 0 and lista[j] > clave:
+            lista[j + 1] = lista[j]
             j -= 1
             
-        arr[j + 1] = key
+        lista[j + 1] = clave
         
-    return arr
+    return lista
 
-enemy_speeds = [55, 30, 80, 45, 20, 95]
-print(insertion_sort(enemy_speeds))
+velocidades_enemigas = [55, 30, 80, 45, 20, 95]
+print(insertion_sort(velocidades_enemigas))
 # Output: [20, 30, 45, 55, 80, 95]
 ```
 
@@ -65,46 +65,46 @@ Python
 import random
 
 # Linear Search: O(N) worst-case
-def linear_search(arr, target):
-    guesses = 0
-    for i in range(len(arr)):
-        guesses += 1
-        if arr[i] == target:
-            print(f"Found {target} in {guesses} guesses using linear search.")
+def linear_search(lista, objetivo):
+    intentos = 0
+    for i in range(len(lista)):
+        intentos += 1
+        if lista[i] == objetivo:
+            print(f"Encontrado {objetivo} en {intentos} intentos usando búsqueda lineal.")
             return i
-    print(f"{target} not found after {guesses} guesses using linear search.")
+    print(f"{objetivo} no encontrado después de {intentos} intentos usando búsqueda lineal.")
     return -1
 
 # Binary Search: O(log N) worst-case
-def binary_search(arr, target):
-    left, right = 0, len(arr) - 1
-    guesses = 0
+def binary_search(lista, objetivo):
+    izq, der = 0, len(lista) - 1
+    intentos = 0
     
-    while left <= right:
-        guesses += 1
-        mid = (left + right) // 2
+    while izq <= der:
+        intentos += 1
+        medio = (izq + der) // 2
         
-        if arr[mid] == target:
-            print(f"Found {target} in {guesses} guesses using binary search.")
-            return mid
-        elif arr[mid] < target:
-            left = mid + 1
+        if lista[medio] == objetivo:
+            print(f"Encontrado {objetivo} en {intentos} intentos usando búsqueda binaria.")
+            return medio
+        elif lista[medio] < objetivo:
+            izq = medio + 1
         else:
-            right = mid - 1
+            der = medio - 1
             
-    print(f"{target} not found after {guesses} guesses using binary search.")
+    print(f"{objetivo} no encontrado después de {intentos} intentos usando búsqueda binaria.")
     return -1
 
 # Comparison Demo
-range_low = 1
-range_high = 100000
+rango_min = 1
+rango_max = 100000
 
-numbers = [i for i in range(range_low, range_high + 1)]
-random_num = random.randint(range_low, range_high)
+numeros = [i for i in range(rango_min, rango_max + 1)]
+numero_aleatorio = random.randint(rango_min, rango_max)
 
-print(f"Your secret boss HP roll is {random_num}")
-linear_search(numbers, random_num)
-binary_search(numbers, random_num)
+print(f"Tu tirada secreta de PV de jefe es {numero_aleatorio}")
+linear_search(numeros, numero_aleatorio)
+binary_search(numeros, numero_aleatorio)
 ```
 
 
@@ -122,16 +122,16 @@ Python
 
 ```python
 # Dungeon route planning using an ordered List
-route = [
-    "Sunken Keep (Start)",
-    "Flooded Catacombs",
-    "Crystal Spire",
-    "Emberfall Forge",
-    "Ashen Barrens",
-    "Gate of the Twin Moons"
+ruta = [
+    "Fortaleza Hundida (Inicio)",
+    "Catacumbas Inundadas",
+    "Aguja de Cristal",
+    "Forja de la Caída de Brasa",
+    "Yermos Cenicientos",
+    "Puerta de las Lunas Gemelas"
 ]
 
-print("Planned route:")
-for stop in route:
-    print(stop)
+print("Ruta planificada:")
+for parada in ruta:
+    print(parada)
 ```

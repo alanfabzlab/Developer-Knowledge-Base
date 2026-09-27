@@ -42,7 +42,7 @@ Bash
 
 ```bash
 git add .
-git commit -m "fix(combat): resolve merge conflicts in boss state"
+git commit -m "fix(combat): resuelve conflictos de merge en el estado del jefe"
 git push origin <your-feature-branch>
 ```
 

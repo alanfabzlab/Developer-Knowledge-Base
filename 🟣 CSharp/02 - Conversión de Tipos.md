@@ -37,13 +37,13 @@ class LoadoutScreen
 {
     static void Main()
     {
-        int controllers = 2;
-        string currentClass = "Paladin";
-        bool isHeadsetOn = true;
+        int mandos = 2;
+        string claseActual = "Paladín";
+        bool auricularesPuestos = true;
 
-        Console.WriteLine($"Controllers: {controllers}");
-        Console.WriteLine($"Class: {currentClass}");
-        Console.WriteLine($"Headset on: {isHeadsetOn}");
+        Console.WriteLine($"Mandos: {mandos}");
+        Console.WriteLine($"Clase: {claseActual}");
+        Console.WriteLine($"Auriculares puestos: {auricularesPuestos}");
     }
 }
 ```
@@ -53,9 +53,9 @@ class LoadoutScreen
 
 
 ```text
-Controllers: 2
-Class: Paladin
-Headset on: True
+Mandos: 2
+Clase: Paladín
+Auriculares puestos: True
 ```
 
 
@@ -79,15 +79,15 @@ class RaidPlanning
 {
     static void Main()
     {
-        string raidTarget = "Void Hydra";
-        int squadSize = 15;
-        double costPerPlayer = 25.50;
-        bool isBlindRaid = true;
+        string objetivoIncursion = "Hidra del Vacío";
+        int tamanoEscuadra = 15;
+        double costoPorJugador = 25.50;
+        bool incursionACiegas = true;
 
-        Console.WriteLine($"Raid Target: {raidTarget}");
-        Console.WriteLine($"Squad Size: {squadSize}");
-        Console.WriteLine($"Cost per Player: ${costPerPlayer}");
-        Console.WriteLine($"Blind Raid: {isBlindRaid}");
+        Console.WriteLine($"Objetivo de la incursión: {objetivoIncursion}");
+        Console.WriteLine($"Tamaño de la escuadra: {tamanoEscuadra}");
+        Console.WriteLine($"Costo por jugador: ${costoPorJugador}");
+        Console.WriteLine($"Incursión a ciegas: {incursionACiegas}");
     }
 }
 ```
@@ -97,10 +97,10 @@ class RaidPlanning
 
 
 ```text
-Raid Target: Void Hydra
-Squad Size: 15
-Cost per Player: $25.5
-Blind Raid: True
+Objetivo de la incursión: Hidra del Vacío
+Tamaño de la escuadra: 15
+Costo por jugador: $25.5
+Incursión a ciegas: True
 ```
 
 
@@ -116,11 +116,11 @@ class LegendOrigins
 {
     static void Main()
     {
-        string name = "Aria the Bold";
-        int year = 1994;
+        string nombre = "Aria la Audaz";
+        int anio = 1994;
 
-        Console.WriteLine(name + " is an incredibly legendary hero.");
-        Console.WriteLine("She rose to fame in " + year + " during the Siege of Emberfall.");
+        Console.WriteLine(nombre + " es un héroe increíblemente legendario.");
+        Console.WriteLine("Alcanzó la fama en " + anio + " durante el Asedio de la Caída de Brasa.");
     }
 }
 ```
@@ -130,8 +130,8 @@ class LegendOrigins
 
 
 ```text
-Aria the Bold is an incredibly legendary hero.
-She rose to fame in 1994 during the Siege of Emberfall.
+Aria la Audaz es un héroe increíblemente legendario.
+Alcanzó la fama en 1994 durante el Asedio de la Caída de Brasa.
 ```
 
 
@@ -147,14 +147,14 @@ class LootSplit
 {
     static void Main()
     {
-        int totalGold = 23;
-        int goldPerChest = 5;
+        int oroTotal = 23;
+        int oroPorCofre = 5;
 
-        int fullChests = totalGold / goldPerChest;
-        int leftoverGold = totalGold % goldPerChest;
+        int cofresLlenos = oroTotal / oroPorCofre;
+        int oroRestante = oroTotal % oroPorCofre;
 
-        Console.WriteLine($"Full chests: {fullChests}");
-        Console.WriteLine($"Gold left over: {leftoverGold}");
+        Console.WriteLine($"Cofres llenos: {cofresLlenos}");
+        Console.WriteLine($"Oro restante: {oroRestante}");
     }
 }
 ```
@@ -164,8 +164,8 @@ class LootSplit
 
 
 ```text
-Full chests: 4
-Gold left over: 3
+Cofres llenos: 4
+Oro restante: 3
 ```
 
 
@@ -178,9 +178,9 @@ En C#, la entrada del usuario se recopila desde la consola usando `Console.ReadL
 ### Entrada de Cadena Estándar
 
 ```csharp
-Console.Write("What's your hero name?");
-string heroName = Console.ReadLine();
-Console.WriteLine($"Welcome to the party, {heroName}!");
+Console.Write("¿Cuál es el nombre de tu héroe?");
+string nombreHeroe = Console.ReadLine();
+Console.WriteLine($"¡Bienvenido a la fiesta, {nombreHeroe}!");
 ```
 
 
@@ -190,9 +190,9 @@ Cuando se requieren operaciones numéricas sobre la entrada del usuario, la cade
 
 
 ```csharp
-Console.Write("Enter a damage value: ");
-string input = Console.ReadLine();
-int damage = Convert.ToInt32(input);
+Console.Write("Introduce un valor de daño: ");
+string entrada = Console.ReadLine();
+int danio = Convert.ToInt32(entrada);
 ```
 
 
@@ -211,14 +211,14 @@ class RuneCycle
 {
     static void Main()
     {
-        Console.Write("Enter your character's birth year: ");
-        int birthYear = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Introduce el año de nacimiento de tu personaje: ");
+        int anioNacimiento = Convert.ToInt32(Console.ReadLine());
 
-        int currentYear = 2026;
-        int yearsIntoCycle = (currentYear - birthYear) % 12;
-        int yearsUntilAlignment = (12 - yearsIntoCycle) % 12;
+        int anioActual = 2026;
+        int aniosEnCiclo = (anioActual - anioNacimiento) % 12;
+        int aniosParaAlineacion = (12 - aniosEnCiclo) % 12;
 
-        Console.WriteLine($"Years until the runes realign for your sign: {yearsUntilAlignment}");
+        Console.WriteLine($"Años hasta que las runas se realineen con tu signo: {aniosParaAlineacion}");
     }
 }
 ```
@@ -228,8 +228,8 @@ class RuneCycle
 
 
 ```text
-Enter your character's birth year: 2004
-Years until the runes realign for your sign: 2
+Introduce el año de nacimiento de tu personaje: 2004
+Años hasta que las runas se realineen con tu signo: 2
 ```
 
 
@@ -245,17 +245,17 @@ class GachaSummon
 {
     static void Main()
     {
-        Console.Write("How many crystals do you have? ");
-        string input = Console.ReadLine();
-        int crystals = Convert.ToInt32(input);
+        Console.Write("¿Cuántos cristales tienes? ");
+        string entrada = Console.ReadLine();
+        int cristales = Convert.ToInt32(entrada);
 
-        int summonCost = 50;
+        int costoInvocacion = 50;
 
-        int totalSummons = crystals / summonCost;
-        int remainingCrystals = crystals % summonCost;
+        int invocacionesTotales = cristales / costoInvocacion;
+        int cristalesRestantes = cristales % costoInvocacion;
 
-        Console.WriteLine($"You can summon: {totalSummons} time(s)");
-        Console.WriteLine($"Crystals left over: {remainingCrystals}");
+        Console.WriteLine($"Puedes invocar: {invocacionesTotales} vez/veces");
+        Console.WriteLine($"Cristales restantes: {cristalesRestantes}");
     }
 }
 ```
@@ -264,7 +264,7 @@ class GachaSummon
 
 
 ```text
-How many crystals do you have? 275
-You can summon: 5 time(s)
-Crystals left over: 25
+¿Cuántos cristales tienes? 275
+Puedes invocar: 5 vez/veces
+Cristales restantes: 25
 ```

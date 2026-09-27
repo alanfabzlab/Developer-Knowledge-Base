@@ -31,56 +31,56 @@ Un mini crawler de mazmorras basado en texto, creado en la terminal como Proyect
 import random
 
 print("=================================")
-print("  🏰 SUNKEN VAULT HEIST 🏰       ")
+print("  🏰 ASALTO A LA BÓVEDA HUNDIDA 🏰       ")
 print("=================================\n")
 
 hp = 100
-has_key = False
+tiene_llave = False
 
-print("You drop through a grate into a flooded sunken vault.")
-print("Your main objective is to escape with the Golden Key.\n")
+print("Caes por una rejilla hasta una bóveda hundida e inundada.")
+print("Tu objetivo principal es escapar con la Llave Dorada.\n")
 
 while hp > 0:
-    print(f"Current HP: {hp}")
-    print("What do you want to do?")
-    print("1. Search the flooded halls")
-    print("2. Try to open the vault door")
-    print("3. Rest by a burning torch")
+    print(f"HP Actual: {hp}")
+    print("¿Qué quieres hacer?")
+    print("1. Explorar los pasillos inundados")
+    print("2. Intentar abrir la puerta de la bóveda")
+    print("3. Descansar junto a una antorcha ardiendo")
     
-    choice = input("Enter your choice (1-3): ")
+    eleccion = input("Introduce tu elección (1-3): ")
     print()
 
-    if choice == '1':
-        print("You wade through the dark water...")
-        event = random.randint(1, 3)
-        if event == 1:
-            print("You pry a rusted Golden Key off a skeleton! 🔑")
-            has_key = True
-        elif event == 2:
-            print("A trap springs! You take 15 trap damage. ❄️")
+    if eleccion == '1':
+        print("Caminas por el agua oscura...")
+        evento = random.randint(1, 3)
+        if evento == 1:
+            print("¡Arrancas una Llave Dorada oxidada del esqueleto! 🔑")
+            tiene_llave = True
+        elif evento == 2:
+            print("¡Se dispara una trampa! Recibes 15 de daño. ❄️")
             hp -= 15
         else:
-            print("You find nothing, but the vault is silent.")
+            print("No encuentras nada, pero la bóveda está en silencio.")
             
-    elif choice == '2':
-        if has_key:
-            print("You unlock the vault door with the Golden Key and escape into the night.")
-            print("🎉 VICTORY! You looted the Sunken Vault!")
+    elif eleccion == '2':
+        if tiene_llave:
+            print("Desbloqueas la puerta de la bóveda con la Llave Dorada y escapas hacia la noche.")
+            print("🎉 ¡VICTORIA! ¡Has saqueado la Bóveda Hundida!")
             break
         else:
-            print("The door is sealed tight. You need to find a key first!")
+            print("¡La puerta está sellada! Primero necesitas encontrar una llave.")
             
-    elif choice == '3':
-        print("You rest by the torch and recover 10 HP. 🔥")
+    elif eleccion == '3':
+        print("Descansas junto a la antorcha y recuperas 10 HP. 🔥")
         hp = min(100, hp + 10)
         
     else:
-        print("Invalid choice. Please pick 1, 2, or 3.")
+        print("Elección no válida. Elige 1, 2 o 3.")
         
     print("-" * 40)
 
 if hp <= 0:
-    print("\n💀 Game Over! The vault claimed another treasure hunter.")
+    print("\n💀 ¡Fin del Juego! La bóveda reclamó a otro cazador de tesoros.")
 ```
 
 

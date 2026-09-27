@@ -29,10 +29,10 @@ class ArrayFoundations
     static void Main()
     {
         // String array containing boss names
-        string[] bosses = { "Chrono Warden", "Void Reaper", "Iron Colossus", "Frost Queen" };
+        string[] jefes = { "Guardián del Tiempo", "Segador del Vacío", "Coloso de Hierro", "Reina de Escarcha" };
 
         // Integer array containing corresponding threat levels
-        int[] threatLevels = { 10, 9, 8, 10 };
+        int[] nivelesAmenaza = { 10, 9, 8, 10 };
     }
 }
 ```
@@ -50,23 +50,23 @@ class BossThemes
 {
     static void Main()
     {
-        string[] themes = 
+        string[] temas = 
         {
-            "Overture of the Kingdom",
-            "Tavern at Dusk",
-            "Echoing Caverns",
-            "Shop Menu Theme",
-            "Final Boss Concerto"
+            "Obertura del Reino",
+            "Taberna del Ocaso",
+            "Cavernas Resonantes",
+            "Tema del Menú de Tienda",
+            "Concierto del Jefe Final"
         };
 
-        Console.WriteLine("Opening Cutscene:");
-        Console.WriteLine(themes[0]); // Output: Overture of the Kingdom
+        Console.WriteLine("Cinematografía de apertura:");
+        Console.WriteLine(temas[0]); // Output: Overture of the Kingdom
 
-        Console.WriteLine("Underground Ruins:");
-        Console.WriteLine(themes[2]); // Output: Echoing Caverns
+        Console.WriteLine("Ruinas Subterráneas:");
+        Console.WriteLine(temas[2]); // Output: Echoing Caverns
 
-        Console.WriteLine("Final Boss:");
-        Console.WriteLine(themes[4]); // Output: Final Boss Concerto
+        Console.WriteLine("Jefe Final:");
+        Console.WriteLine(temas[4]); // Output: Final Boss Concerto
     }
 }
 ```
@@ -84,12 +84,12 @@ class QuestBoard
 {
     static void Main()
     {
-        string[] quests = { "Slay the Sand Wraith", "Mine 5 iron ore", "Deliver a healing potion" };
+        string[] misiones = { "Mata al Espectro de Arena", "Extrae 5 mineral de hierro", "Entrega una poción de curación" };
 
         // Update element at index 1
-        quests[1] = "Mine 12 iron ore";
+        misiones[1] = "Extrae 12 mineral de hierro";
 
-        Console.WriteLine(quests[1]); // Output: Mine 12 iron ore
+        Console.WriteLine(misiones[1]); // Output: Mine 12 iron ore
     }
 }
 ```
@@ -108,11 +108,11 @@ class ArenaBracket
     static void Main()
     {
         // Allocates space for 64 string elements
-        string[] matches = new string[64];
+        string[] partidas = new string[64];
 
         // Assigning values later
-        matches[0] = "Guild Iron vs Guild Ember";
-        matches[1] = "Guild Void vs Guild Storm";
+        partidas[0] = "Gremio de Hierro vs Gremio de Brasa";
+        partidas[1] = "Gremio del Vacío vs Gremio de la Tormenta";
     }
 }
 ```
@@ -130,17 +130,17 @@ class PartyChat
 {
     static void Main()
     {
-        string[] messages = {
-            "Kaz: who brings frost potions tonight???",
-            "Mira: not meeee i gotta craft the new staff",
-            "Dev: join usssssss",
-            "Sol: i should rly grind the raid instead tbh",
-            "Rin: see you all at the gate!"
+        string[] mensajes = {
+            "Kaz: ¿quién trae pociones de escarcha esta noche???",
+            "Mira: yo no, tengo que fabricar el bastón nuevo",
+            "Dev: únansesssss",
+            "Sol: mejor hago la incursión sin parar la verdad",
+            "Rin: ¡nos vemos a todos en la puerta!"
         };
 
         for (int i = 0; i < 5; i++)
         {
-            Console.WriteLine(messages[i]);
+            Console.WriteLine(mensajes[i]);
         }
     }
 }
@@ -159,19 +159,19 @@ class InventoryBag
 {
     static void Main()
     {
-        string[] items = {
-            "Health Potion",
-            "Mana Potion",
-            "Bomb Rune",
-            "Iron Ore",
-            "Teleport Scroll",
-            "Golden Key"
+        string[] objetos = {
+            "Poción de Salud",
+            "Poción de Maná",
+            "Runa de Bomba",
+            "Mineral de Hierro",
+            "Pergamino de Teletransporte",
+            "Llave Dorada"
         };
 
         // .Length dynamically evaluates to 6
-        for (int i = 0; i < items.Length; i++)
+        for (int i = 0; i < objetos.Length; i++)
         {
-            Console.WriteLine(items[i]);
+            Console.WriteLine(objetos[i]);
         }
     }
 }

@@ -45,7 +45,7 @@ Bash
 
 ```bash
 # Create a commit with a message
-git commit -m "feat(combat): add boss aggro phase table"
+git commit -m "feat(combat): agrega tabla de fases de agregacion del jefe"
 ```
 
 _Buena práctica:_ Mantén los mensajes de commit cortos, claros y descriptivos (por ejemplo, usando Conventional Commits).

@@ -34,7 +34,7 @@ Un bucle `while` evalúa una condición **antes** de cada iteración. Si la cond
 ### Sintaxis
 
 ```csharp
-while (condition)
+while (condicion)
 {
     // Code block to repeat
 }
@@ -46,7 +46,7 @@ while (condition)
 
 ### Ejercicio 1: Pelea con Goblins
 
-Demostrar un bucle `while` interactivo controlado por la entrada del usuario hasta que se encuentre una palabra clave de salida específica ("retreat").
+Demostrar un bucle `while` interactivo controlado por la entrada del usuario hasta que se encuentre una palabra clave de salida específica ("retirada").
 
 
 ```csharp
@@ -56,13 +56,13 @@ class GoblinBrawl
 {
     static void Main()
     {
-        Console.WriteLine("Goblin incoming! 🧌");
-        string input = Console.ReadLine();
+        Console.WriteLine("¡Llega un duende! 🧌");
+        string entrada = Console.ReadLine();
 
-        while (input != "retreat")
+        while (entrada != "retirada")
         {
-            Console.WriteLine("Goblin incoming! 🧌");
-            input = Console.ReadLine();
+            Console.WriteLine("¡Llega un duende! 🧌");
+            entrada = Console.ReadLine();
         }
     }
 }
@@ -73,19 +73,19 @@ class GoblinBrawl
 
 
 ```text
-Goblin incoming! 🧌
+¡Llega un duende! 🧌
 ahhh!
-Goblin incoming! 🧌
+¡Llega un duende! 🧌
 no no no
-Goblin incoming! 🧌
-retreat
+¡Llega un duende! 🧌
+retirada
 ```
 
 
 
 ### Ejercicio 2: Acumulaciones de Veneno
 
-Demostrar un bucle `while` interactivo que incrementa una variable (`poisonStacks`) y continúa hasta que el jugador introduce una cadena específica (`"antidote!"`).
+Demostrar un bucle `while` interactivo que incrementa una variable (`acumulacionVeneno`) y continúa hasta que el jugador introduce una cadena específica (`"antídoto!"`).
 
 ```csharp
 using System;
@@ -94,16 +94,16 @@ class PoisonStacks
 {
     static void Main()
     {
-        int poisonStacks = 1;
+        int acumulacionVeneno = 1;
 
-        Console.WriteLine($"The toxin spreads... stack {poisonStacks}");
-        string input = Console.ReadLine();
+        Console.WriteLine($"La toxina se extiende... acumulación {acumulacionVeneno}");
+        string entrada = Console.ReadLine();
 
-        while (input != "antidote!")
+        while (entrada != "antídoto!")
         {
-            poisonStacks++;
-            Console.WriteLine($"The toxin spreads... stack {poisonStacks}");
-            input = Console.ReadLine();
+            acumulacionVeneno++;
+            Console.WriteLine($"La toxina se extiende... acumulación {acumulacionVeneno}");
+            entrada = Console.ReadLine();
         }
     }
 }
@@ -112,7 +112,7 @@ class PoisonStacks
 
 ### Ejercicio 3: Ola de Aparición
 
-Demostrar un bucle `while` controlado por un contador que ejecuta el código un número fijo de veces (4 iteraciones) usando un contador que se incrementa (`count++`).
+Demostrar un bucle `while` controlado por un contador que ejecuta el código un número fijo de veces (4 iteraciones) usando un contador que se incrementa (`contador++`).
 
 
 ```csharp
@@ -122,12 +122,12 @@ class SpawnWave
 {
     static void Main()
     {
-        int count = 1;
+        int contador = 1;
 
-        while (count <= 4)
+        while (contador <= 4)
         {
-            Console.WriteLine("A skeleton spawns down the corridor! 💀");
-            count++;
+            Console.WriteLine("¡Aparece un esqueleto al final del pasillo! 💀");
+            contador++;
         }
     }
 }
@@ -150,11 +150,11 @@ class StageLights
         {
             if (i % 2 != 0)
             {
-                Console.WriteLine("Spotlight on! 💡");
+                Console.WriteLine("¡Foco encendido! 💡");
             }
             else
             {
-                Console.WriteLine("Spotlight on! 💡 Spotlight on! 💡");
+                Console.WriteLine("¡Foco encendido! 💡 ¡Foco encendido! 💡");
             }
         }
     }
@@ -164,7 +164,7 @@ class StageLights
 
 ### Ejercicio 5: Descenso al Foso
 
-Demostrar un bucle `for` con decremento que cuenta hacia atrás desde `0` hasta `-20` usando el operador de decremento (`depth--`).
+Demostrar un bucle `for` con decremento que cuenta hacia atrás desde `0` hasta `-20` usando el operador de decremento (`profundidad--`).
 
 
 ```csharp
@@ -174,12 +174,12 @@ class PitDescent
 {
     static void Main()
     {
-        for (int depth = 0; depth >= -20; depth--)
+        for (int profundidad = 0; profundidad >= -20; profundidad--)
         {
-            Console.WriteLine(depth);
+            Console.WriteLine(profundidad);
         }
 
-        Console.WriteLine("The elevator crashes into the flooded basement...");
+        Console.WriteLine("El ascensor se estrella contra el sótano inundado...");
     }
 }
 ```
@@ -197,12 +197,12 @@ class RageMeter
 {
     static void Main()
     {
-        int rageCharge = 0;
+        int cargaFuria = 0;
 
         for (int i = 0; i < 4; i++)
         {
-            rageCharge += 7;
-            Console.WriteLine($"Rage charge: {rageCharge}");
+            cargaFuria += 7;
+            Console.WriteLine($"Carga de furia: {cargaFuria}");
         }
     }
 }
@@ -222,15 +222,15 @@ class SayProceed
 {
     static void Main()
     {
-        string response = "";
+        string respuesta = "";
 
-        while (response != "proceed")
+        while (respuesta != "proceder")
         {
-            response = Console.ReadLine();
+            respuesta = Console.ReadLine();
 
-            if (response != "proceed")
+            if (respuesta != "proceder")
             {
-                Console.WriteLine(response);
+                Console.WriteLine(respuesta);
             }
         }
     }
@@ -250,19 +250,19 @@ class LockedVault
 {
     static void Main()
     {
-        string secretPhrase = "press start";
-        string userInput = "";
-        int attempts = 0;
+        string fraseSecreta = "pulsa start";
+        string entradaUsuario = "";
+        int intentos = 0;
 
-        while (userInput != secretPhrase)
+        while (entradaUsuario != fraseSecreta)
         {
-            Console.Write("Enter the secret phrase: ");
-            userInput = Console.ReadLine();
-            attempts++;
+            Console.Write("Introduce la frase secreta: ");
+            entradaUsuario = Console.ReadLine();
+            intentos++;
         }
 
-        Console.WriteLine("The vault door slides open, revealing a legendary blade.");
-        Console.WriteLine($"It took {attempts} attempts to crack the safe.");
+        Console.WriteLine("La puerta de la bóveda se desliza y revela una hoja legendaria.");
+        Console.WriteLine($"Hicieron falta {intentos} intentos para abrir la caja fuerte.");
     }
 }
 ```

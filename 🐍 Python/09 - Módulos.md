@@ -24,11 +24,11 @@ La palabra clave `import` permite acceder a módulos externos o integrados.
 ```python
 import random
 
-rewards = ['Gold', 'Potion', 'Sword', 'Shield', 'Rune', 'Key']
+recompensas = ['Oro', 'Poción', 'Espada', 'Escudo', 'Runa', 'Llave']
 
 # Select 3 random items from the list
-results = random.choices(rewards, k=3)
-print(results)
+resultados = random.choices(recompensas, k=3)
+print(resultados)
 ```
 
 
@@ -59,19 +59,19 @@ Simula una caja de botín tipo gacha que selecciona tres símbolos de rareza al 
 ```python
 import random
 
-symbols = ['⚔️', '💎', '🍀', '🏆']
+simbolos = ['⚔️', '💎', '🍀', '🏆']
 
 # Get 3 random symbols
-results = random.choices(symbols, k=3)
+resultados = random.choices(simbolos, k=3)
 
 # Display formatted result
-print(f'{results[0]} | {results[1]} | {results[2]}')
+print(f'{resultados[0]} | {resultados[1]} | {resultados[2]}')
 
 # Check win condition
-if results == ['🏆', '🏆', '🏆']:
-    print('Jackpot! 🏆')
+if resultados == ['🏆', '🏆', '🏆']:
+    print('¡Jackpot! 🏆')
 else:
-    print('Thanks for playing!')
+    print('¡Gracias por jugar!')
 ```
 
 
@@ -89,30 +89,30 @@ $$area = 4 \pi r^2$$
 from math import pi
 from random import choice as ch
 
-moons = ['Luna', 'Titan', 'Europa', 'Ganymede', 'Io']
+lunas = ['Luna', 'Titan', 'Europa', 'Ganymede', 'Io']
 
 # Randomly select a moon
-random_moon = ch(moons)
+luna_aleatoria = ch(lunas)
 
 # Determine radius based on selected moon
-if random_moon == 'Luna':
+if luna_aleatoria == 'Luna':
     r = 1737
-elif random_moon == 'Titan':
+elif luna_aleatoria == 'Titan':
     r = 2574
-elif random_moon == 'Europa':
+elif luna_aleatoria == 'Europa':
     r = 1560
-elif random_moon == 'Ganymede':
+elif luna_aleatoria == 'Ganymede':
     r = 2634
-elif random_moon == 'Io':
+elif luna_aleatoria == 'Io':
     r = 1821
 else:
-    print('Oops! An error occurred.')
+    print('¡Vaya! Se produjo un error.')
 
 # Calculate surface area
 area = 4 * pi * (r ** 2)
 
 # Print result
-print(f'{random_moon} area: {round(area, 2)} sq km')
+print(f'{luna_aleatoria} área: {round(area, 2)} km²')
 ```
 
 
@@ -166,15 +166,15 @@ Calcula los días restantes hasta el lanzamiento de la incursión usando importa
 # raid_messages.py
 import random
 
-raid_messages = [
-    'The gates open at dawn. Sharpen your blade! ⚔️',
-    "The raid launches at midnight - don't be late! 🕛",
-    'The whole server is waiting on you - bring potions! 👏',
-    'Have a glorious first clear, champion! 🎁',
-    'One more wipe before the patch lands! ⚙️'
+mensajes_incision = [
+    'Las puertas se abren al amanecer. ¡Afila tu hoja! ⚔️',
+    "La incursión se lanza a medianoche: ¡no llegues tarde! 🕛",
+    'Todo el servidor te espera: ¡trae pociones! 👏',
+    '¡Felicidades por tu primera partida superada, campeón! 🎁',
+    '¡Un wipe más antes de que llegue el parche! ⚙️'
 ]
 
-random_message = random.choice(raid_messages)
+mensaje_aleatorio = random.choice(mensajes_incision)
 ```
 
 
@@ -183,15 +183,15 @@ random_message = random.choice(raid_messages)
 import datetime
 import raid_messages
 
-today = datetime.date.today()
-raid_release = datetime.date(2027, 11, 3)
+hoy = datetime.date.today()
+lanzamiento_incision = datetime.date(2027, 11, 3)
 
-days_away = (raid_release - today).days
+dias_restantes = (lanzamiento_incision - hoy).days
 
-if today == raid_release:
-    print(raid_messages.random_message)
+if hoy == lanzamiento_incision:
+    print(raid_messages.mensaje_aleatorio)
 else:
-    print(f'The raid launches in {days_away} days!')
+    print(f'¡La incursión se lanza en {dias_restantes} días!')
 ```
 
 
@@ -221,8 +221,8 @@ pip3 install wikipedia
 # wiki.py
 import wikipedia
 
-result = wikipedia.summary("History of video games", sentences=2)
-print(result)
+resultado = wikipedia.summary("Historia de los videojuegos", sentences=2)
+print(resultado)
 ```
 
 

@@ -22,8 +22,8 @@ Las listas pueden contener múltiples elementos de datos, valores duplicados y t
 
 ```python
 # Storing data using lists
-boss_hp = [980, 870, 920, 960]
-wave_damage = [9, 6, 8]
+hp_jefe = [980, 870, 920, 960]
+daño_ola = [9, 6, 8]
 ```
 
 
@@ -33,8 +33,8 @@ wave_damage = [9, 6, 8]
 ```python
 # loot_bag.py
 
-loot_bag = ['Health Potion', 'Iron Sword', 'Bomb Rune', 'Teleport Scroll', 'Golden Key', 'Monster Pelt']
-print(loot_bag)
+bolsa_botin = ['Poción de Salud', 'Espada de Hierro', 'Runa de Bomba', 'Pergamino de Teletransporte', 'Llave Dorada', 'Piel de Monstruo']
+print(bolsa_botin)
 ```
 
 
@@ -46,12 +46,12 @@ Los elementos de una lista se acceden mediante su índice de posición basado en
 
 
 ```python
-elements = ['Fire', 'Ice', 'Lightning', 'Earth', 'Wind']
+elementos = ['Fuego', 'Hielo', 'Rayo', 'Tierra', 'Viento']
 # Positive Index: 0, 1, 2, 3, 4
 # Negative Index: -5, -4, -3, -2, -1
 
-print(elements[0])   # Output: Fire
-print(elements[-1])  # Output: Wind
+print(elementos[0])   # Output: Fire
+print(elementos[-1])  # Output: Wind
 ```
 
 
@@ -61,10 +61,10 @@ El rebanado recupera una subsecuencia de elementos usando `[start:end]`. Incluye
 
 
 ```python
-elements = ['Fire', 'Ice', 'Lightning', 'Earth', 'Wind']
+elementos = ['Fuego', 'Hielo', 'Rayo', 'Tierra', 'Viento']
 
-print(elements[0:3]) # Output: ['Fire', 'Ice', 'Lightning']
-print(elements[1:3]) # Output: ['Ice', 'Lightning']
+print(elementos[0:3]) # Output: ['Fire', 'Ice', 'Lightning']
+print(elementos[1:3]) # Output: ['Ice', 'Lightning']
 ```
 
 
@@ -75,7 +75,7 @@ Un `IndexError` ocurre al intentar acceder a un índice que supera los límites 
 
 ```python
 # Causes Traceback: IndexError: list index out of range
-print(elements[5]) 
+print(elementos[5]) 
 ```
 
 
@@ -85,26 +85,26 @@ print(elements[5])
 ```python
 # quest_log.py
 
-quest_log = [
-  'Defeat the goblin camp.',
-  'Find the Sunken Key.',
-  'Rescue the lost merchant.',
-  'Collect 10 iron ore.',
-  'Brew a healing elixir.',
-  'Clear the Ashwood Mines.',
-  'Defeat the Frost Golem.',
-  'Escape the collapsing temple.'
+registro_misiones = [
+  'Derrota al campamento de gobins.',
+  'Encuentra la Llave Hundida.',
+  'Rescata al comerciante perdido.',
+  'Recolecta 10 minerales de hierro.',
+  'Prepara un elixir de curación.',
+  'Limpia las Minas del Bosque de Cenizas.',
+  'Derrota al Golem de Escarcha.',
+  'Escapa del templo que se derrumba.'
 ]
 
 # Print first and second items
-print(quest_log[0])
-print(quest_log[1])
+print(registro_misiones[0])
+print(registro_misiones[1])
 
 # Slice third, fourth, and fifth items
-print(quest_log[2:5])
+print(registro_misiones[2:5])
 
 # Accessing index 9 causes IndexError
-# print(quest_log[9])
+# print(registro_misiones[9])
 ```
 
 
@@ -119,12 +119,12 @@ Python incluye varias funciones integradas diseñadas para trabajar directamente
 
 
 ```python
-potion_prices = [12.50, 9.75, 15.20, 9.75, 18.40, 11.30, 13.60]
-rune_prices = [45.10, 32.80, 51.25, 28.40, 39.95, 28.40, 33.60]
+precios_pociones = [12.50, 9.75, 15.20, 9.75, 18.40, 11.30, 13.60]
+precios_runas = [45.10, 32.80, 51.25, 28.40, 39.95, 28.40, 33.60]
 
-print(len(potion_prices)) # Output: 7
-print(max(potion_prices)) # Output: 18.4
-print(min(rune_prices)) # Output: 28.4
+print(len(precios_pociones)) # Output: 7
+print(max(precios_pociones)) # Output: 18.4
+print(min(precios_runas)) # Output: 28.4
 ```
 
 
@@ -135,13 +135,13 @@ print(min(rune_prices)) # Output: 28.4
 ```python
 # loot_tracker.py
 
-enemy_kills = [452, 318, 197, 806, 645, 274, 903, 261]
+enemigos_derrotados = [452, 318, 197, 806, 645, 274, 903, 261]
 
 # Lowest kill count enemy
-print(min(enemy_kills))
+print(min(enemigos_derrotados))
 
 # Highest kill count enemy
-print(max(enemy_kills))
+print(max(enemigos_derrotados))
 ```
 
 
@@ -169,12 +169,12 @@ Los métodos de lista se llaman usando la notación de punto (`list_name.method(
 
 
 ```python
-loot_codes = ['SWD', 'SHT', 'BOW', 'POT']
+codigos_botin = ['SWD', 'SHT', 'BOW', 'POT']
 
-loot_codes.append('RIN')      # ['SWD', 'SHT', 'BOW', 'POT', 'RIN']
-loot_codes.insert(2, 'HEL')   # ['SWD', 'SHT', 'HEL', 'BOW', 'POT', 'RIN']
-loot_codes.remove('SHT')      # ['SWD', 'HEL', 'BOW', 'POT', 'RIN']
-loot_codes.pop(0)             # ['HEL', 'BOW', 'POT', 'RIN']
+codigos_botin.append('RIN')      # ['SWD', 'SHT', 'BOW', 'POT', 'RIN']
+codigos_botin.insert(2, 'HEL')   # ['SWD', 'SHT', 'HEL', 'BOW', 'POT', 'RIN']
+codigos_botin.remove('SHT')      # ['SWD', 'HEL', 'BOW', 'POT', 'RIN']
+codigos_botin.pop(0)             # ['HEL', 'BOW', 'POT', 'RIN']
 ```
 
 
@@ -184,19 +184,19 @@ loot_codes.pop(0)             # ['HEL', 'BOW', 'POT', 'RIN']
 ```python
 # spellbook.py
 
-spellbook = [
-  'Fireball',
-  'Frost Nova',
-  'Chain Lightning',
-  'Healing Word',
-  'Shadow Step'
+libro_hechizos = [
+  'Bola de Fuego',
+  'Nova de Escarcha',
+  'Relámpago en Cadena',
+  'Palabra de Cura',
+  'Paso Sombrío'
 ]
 
-spellbook.append('Time Stop')
-spellbook.remove('Healing Word')
-spellbook.pop(1)
+libro_hechizos.append('Detención del Tiempo')
+libro_hechizos.remove('Palabra de Cura')
+libro_hechizos.pop(1)
 
-print(spellbook)
+print(libro_hechizos)
 ```
 
 
@@ -208,9 +208,9 @@ Itera directamente sobre los elementos de la lista.
 
 
 ```python
-boss_health = [320, 280, 410, 190, 540, 260, 130]
+salud_jefe = [320, 280, 410, 190, 540, 260, 130]
 
-for i in boss_health:
+for i in salud_jefe:
   print(i)
 ```
 
@@ -221,10 +221,10 @@ Itera a través de los índices usando `range(len(list))`.
 
 
 ```python
-boss_health = [320, 280, 410, 190, 540, 260, 130]
+salud_jefe = [320, 280, 410, 190, 540, 260, 130]
 
-for i in range(len(boss_health)):
-  print(boss_health[i])
+for i in range(len(salud_jefe)):
+  print(salud_jefe[i])
 ```
 
 
@@ -234,15 +234,15 @@ for i in range(len(boss_health)):
 ```python
 # soundtrack.py
 
-playlist = [
-  'Boss Rush Overture',
-  'Overture of the Kingdom',
-  'Tavern at Dusk',
-  'Echoing Caverns',
-  'Final Boss Concerto',
-  'Victory Fanfare'
+lista_reproduccion = [
+  'Obertura de la Carrera de Jefes',
+  'Obertura del Reino',
+  'Taberna del Ocaso',
+  'Cavernas Resonantes',
+  'Concierto del Jefe Final',
+  'Fanfarria de Victoria'
 ]
 
-for song in playlist:
-  print(song)
+for cancion in lista_reproduccion:
+  print(cancion)
 ```
