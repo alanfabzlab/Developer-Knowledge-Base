@@ -1,15 +1,12 @@
----
-course: Python
-topic: Lists, List Functions & Methods, Functions, Parameters, Scope, Classes & Objects, Modules
-tags:
-  - python
-  - cheatsheet
-  - syntax
-  - reference
----
 
 
 # Python Cheatsheet II
+
+> [!INFO] Metadata
+> **Course:** Python
+> **Topic:** Lists, List Functions & Methods, Functions, Parameters, Scope, Classes & Objects, Modules
+> **Tags:** `#python` `#cheatsheet` `#syntax` `#reference`
+
 
 
 ---

@@ -1,17 +1,13 @@
----
-course: Python
-topic: Object-Oriented Programming (OOP), Classes, Objects & Instances, Constructor Method (__init__), Instance Methods
-tags:
-  - python
-  - oop
-  - classes
-  - objects
-  - data-structures
----
 
 
 
 # 08. Object-Oriented Programming (OOP)
+
+> [!INFO] Metadata
+> **Course:** Python
+> **Topic:** Object-Oriented Programming (OOP), Classes, Objects & Instances, Constructor Method (__init__), Instance Methods
+> **Tags:** `#python` `#oop` `#classes` `#objects` `#data-structures`
+
 
 Object-Oriented Programming (OOP) allows us to model real-world entities by structuring code into reusable templates called **Classes** and creating concrete instances called **Objects**.
 

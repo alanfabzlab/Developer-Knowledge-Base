@@ -2,6 +2,12 @@
 
 # 02. Typecast
 
+> [!INFO] Metadata
+> **Course:** C#
+> **Topic:** Variables, Primitive Data Types, Typecast & Operators
+> **Tags:** `#csharp` `#typecast` `#variables` `#operators`
+
+
 
 ## 1. Variables & Primitive Data Types
 

@@ -1,6 +1,12 @@
 
 # 01. Introduction to Data Structures & Algorithms
 
+> [!INFO] Metadata
+> **Course:** Data Structures & Algorithms
+> **Topic:** Core Concepts, Built-in Data Structures & Problem Solving
+> **Tags:** `#dsa` `#data-structures` `#fundamentals`
+
+
 
 ## 1. What are Data Structures & Algorithms?
 

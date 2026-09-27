@@ -1,18 +1,15 @@
----
-course: Python
-topic: Common Errors, Conditional Statements, Relational & Logical Operators
-tags:
-  - python
-  - control-flow
-  - logic
-  - fundamentals
----
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
 # 🔀 Python Control Flow & Error Handling
 
 ![Status Badge](https://img.shields.io/badge/Topic-Control%20Flow-orange?style=for-the-badge)
+
+> [!INFO] Metadata
+> **Course:** Python
+> **Topic:** Common Errors, Conditional Statements, Relational & Logical Operators
+> **Tags:** `#python` `#control-flow` `#logic` `#fundamentals`
+
 
 ---
 

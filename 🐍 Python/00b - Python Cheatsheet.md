@@ -1,15 +1,11 @@
----
-course: Python
-topic: Syntax, Basic I/O, Data Types & Quick Reference
-tags:
-  - python
-  - cheatsheet
-  - syntax
-  - basics
-  - reference
----
 
 # Python Cheatsheet
+
+> [!INFO] Metadata
+> **Course:** Python
+> **Topic:** Syntax, Basic I/O, Data Types & Quick Reference
+> **Tags:** `#python` `#cheatsheet` `#syntax` `#basics` `#reference`
+
 
 Quick reference for basic Python syntax and core language concepts, using video game data as running examples.
 

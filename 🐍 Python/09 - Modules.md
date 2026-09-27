@@ -1,15 +1,12 @@
----
-course: Python
-topic: Python Modules, Custom Modules (`import`), Built-in `datetime`, Python Packages, Package Management (`pip3`), External Packages (`wikipedia`), The Zen of Python (`import this`)
-tags:
-  - modules
-  - random
-  - math
-  - import
----
 
 
 # 09. Modules
+
+> [!INFO] Metadata
+> **Course:** Python
+> **Topic:** Python Modules, Custom Modules (`import`), Built-in `datetime`, Python Packages, Package Management (`pip3`), External Packages (`wikipedia`), The Zen of Python (`import this`)
+> **Tags:** `#modules` `#random` `#math` `#import`
+
 
 A **Module** is a Python file (`.py`) containing statements, functions, and class definitions that revolve around a shared purpose. Python comes with over 200 built-in modules (e.g., `random`, `math`, `datetime`).
 

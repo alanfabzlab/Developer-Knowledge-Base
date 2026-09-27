@@ -1,13 +1,3 @@
----
-course: Python
-topic: Environment Setup, Output, Variables, Data Types & Arithmetic Operators
-tags:
-  - python
-  - programming
-  - basics
-  - open-source
-  - notes
----
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
@@ -15,6 +5,12 @@ tags:
 
 ![Python Badge](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Status Badge](https://img.shields.io/badge/Difficulty-Beginner-brightgreen?style=for-the-badge)
+
+> [!INFO] Metadata
+> **Course:** Python
+> **Topic:** Environment Setup, Output, Variables, Data Types & Arithmetic Operators
+> **Tags:** `#python` `#programming` `#basics` `#open-source` `#notes`
+
 
 ---
 

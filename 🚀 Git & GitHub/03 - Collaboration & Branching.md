@@ -2,6 +2,12 @@
 
 # 03. Collaboration & Branching
 
+> [!INFO] Metadata
+> **Course:** Git & GitHub
+> **Topic:** Cloning, Permissions, Forking & Branch Management
+> **Tags:** `#git` `#branching` `#collaboration`
+
+
 
 ## 1. Repository Cloning & Permissions
 

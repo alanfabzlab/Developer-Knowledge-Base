@@ -1,16 +1,12 @@
----
-course: Python
-topic: Terminal Dungeon Crawl, Control Flow, Game Loop & State Management
-tags:
-  - python
-  - project
-  - cli
-  - game-dev
-  - control-flow
----
 
 
 # 04. Terminal Dungeon Crawl (`terminal_game.py`)
+
+> [!INFO] Metadata
+> **Course:** Python
+> **Topic:** Terminal Dungeon Crawl, Control Flow, Game Loop & State Management
+> **Tags:** `#python` `#project` `#cli` `#game-dev` `#control-flow`
+
 
 A text-based mini-dungeon crawler built in the terminal as a Checkpoint Project, integrating fundamental Python concepts: variables, conditional logic, loops, and the `random` module.
 

@@ -1,6 +1,12 @@
 
 # 04. Advanced Workflow & PRs
 
+> [!INFO] Metadata
+> **Course:** Git & GitHub
+> **Topic:** Merging, Conflict Resolution & Pull Requests
+> **Tags:** `#git` `#pull-requests` `#merging`
+
+
 
 ## 1. Merging Branches & Handling Conflicts
 

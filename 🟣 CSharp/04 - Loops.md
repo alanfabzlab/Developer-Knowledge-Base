@@ -2,6 +2,12 @@
 
 # 04. Loops in C#
 
+> [!INFO] Metadata
+> **Course:** C#
+> **Topic:** Loop Structures
+> **Tags:** `#csharp` `#loops` `#iteration`
+
+
 Loops are control flow structures used to repeat a block of code multiple times based on a specified condition. Instead of manually duplicating statements, loops automate execution cycles.
 
 

@@ -1,6 +1,12 @@
 
 # 02. Algorithms & Algorithmic Efficiency
 
+> [!INFO] Metadata
+> **Course:** Data Structures & Algorithms
+> **Topic:** Insertion Sort, Linear & Binary Search, Complexity Analysis
+> **Tags:** `#dsa` `#algorithms` `#sorting` `#complexity`
+
+
 
 ## 1. What is an Algorithm?
 

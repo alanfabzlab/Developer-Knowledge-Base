@@ -1,6 +1,12 @@
 
 # 03. Lists & Linear Search
 
+> [!INFO] Metadata
+> **Course:** Data Structures & Algorithms
+> **Topic:** Lists, Indexing, Slicing, List Methods & Linear Search
+> **Tags:** `#dsa` `#lists` `#linear-search`
+
+
 
 ## 1. Quick Recap: Python Lists
 

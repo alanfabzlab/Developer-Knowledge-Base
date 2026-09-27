@@ -1,15 +1,9 @@
----
-course: Python
-topic: Built-in Functions, List Methods, Nested Lists & Matrices, Dictionaries, Sets
-tags:
-  - python
-  - list-methods
-  - built-in-functions
-  - data-structures
-  - iteration
----
+# 06 - Built-in Functions & List Methods
 
-
+> [!INFO] Metadata
+> **Course:** Python
+> **Topic:** Built-in Functions, List Methods, Nested Lists & Matrices, Dictionaries, Sets
+> **Tags:** `#python` `#list-methods` `#built-in-functions` `#data-structures` `#iteration`
 
 ## 06. Boss Rush Log Project (`boss_rush_log.py`)
 
@@ -90,7 +84,7 @@ print(battle_map[row][column]) # Output: B
 ---
 
 
-# Bonus: Dictionaries & Sets in Python
+## Bonus: Dictionaries & Sets in Python
 
 Python offers structures beyond standard ordered lists that enable faster searches, optimized organization, and direct value retrieval.
 

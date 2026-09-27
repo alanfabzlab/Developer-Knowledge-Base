@@ -2,6 +2,12 @@
 
 # Checkpoint Project: Mad Dungeon Master 👹
 
+> [!INFO] Metadata
+> **Course:** C#
+> **Topic:** Checkpoint Project: Boss Script Generator
+> **Tags:** `#csharp` `#checkpoint` `#console-app`
+
+
 - **Language:** C# / .NET
 - **Concepts Applied:** `Console.ReadLine()`, string interpolation and concatenation, conditional statements (`if/else`), logical operators (`&&`, `||`), relational operators (`==`, `!=`), `while` loops.
 - **Repository:** [MadDungeonMaster on GitHub](git@github.com:alanfabzlab/MadDungeonMaster.git)
