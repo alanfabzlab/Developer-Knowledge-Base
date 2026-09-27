@@ -55,8 +55,8 @@ print('🚀 ¡Sistemas Listos!')
 **Salida:**
 
 ```
-👾 Hello Developer!
-🚀 Systems Ready!
+👾 ¡Hola Desarrollador!
+🚀 ¡Sistemas Listos!
 ```
 
 

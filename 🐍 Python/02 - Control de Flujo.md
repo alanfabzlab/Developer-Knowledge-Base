@@ -247,7 +247,7 @@ Los operadores lógicos evalúan y combinan múltiples expresiones booleanas:
 - `not`: Invierte el estado booleano (`True` se convierte en `False`).
     
 
-|**A**|**B**|**A and B**|**A or B**|
+|**A**|**B**|**A y B**|**A o B**|
 |---|---|---|---|
 |`False`|`False`|`False`|`False`|
 |`False`|`True`|`False`|`True`|
