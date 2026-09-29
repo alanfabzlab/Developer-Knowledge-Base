@@ -23,7 +23,7 @@ Este módulo del repositorio sirve como mapa de contenidos (MOC) central para la
 ### 📚 Referencia y Guías Rápidas
 
 * **Chuletas y Reglas de Sintaxis:**
-  * [00b - CSharp Cheatsheet](./00b%20-%20CSharp%20Cheatsheet.md) — Sistema de tipos, tipos por valor y por referencia, pila vs. montón, tipos anulables, cadenas, arreglos, listas, control de flujo, métodos, errores comunes y un puente desde Python. *(solo en inglés por ahora)*
+  * [00b - Chuleta de CSharp](./00b%20-%20Chuleta%20de%20CSharp.md) — Sistema de tipos, tipos por valor y por referencia, pila vs. montón, tipos anulables, cadenas, arreglos, listas, control de flujo, métodos, errores comunes y un puente desde Python.
 
 ---
 

@@ -1,11 +1,11 @@
 
 # C# Cheatsheet
 
+**Spanish version:** [00b - Chuleta de CSharp.md](00b%20-%20Chuleta%20de%20CSharp.md)
+
 **Course:** C#
 **Topic:** Type System, Value vs Reference Types, Stack vs Heap, Syntax & Core Gotchas
 **Tags:** `#csharp` `#cheatsheet` `#types` `#syntax` `#reference`
-
-*English only for now — the Spanish translation is pending.*
 
 Quick reference for C# syntax and the type-system rules that trip up newcomers, using video game data as running examples.
 
