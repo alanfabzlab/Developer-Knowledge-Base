@@ -174,7 +174,14 @@ def run_block(project, home, capdir, block_steps, start):
         body = f'{cmd}; pwd' if cmd.strip() == 'cd -' else cmd
         script.append(f'{{ {body}\n}} > {cap} 2>&1')
         script.append(f'__rc=$?; print -r -- "{MARK}{len(owners) - 1} $__rc"; cat {cap}')
-    env = dict(os.environ, HOME=home, PS1='$ ', TERM='dumb')
+    # The locale is pinned instead of inherited. `ls` sorts by locale, and
+    # under en_US.UTF-8 (what a macOS terminal gives you by default) `assets`
+    # comes before `README.md`, while under LC_COLLATE=C it is the other way
+    # round. The notes document the default, so the runner has to use it too —
+    # otherwise the same commit passes on one machine and fails on another, and
+    # the only way to find out which is to be the machine it fails on.
+    env = dict(os.environ, HOME=home, PS1='$ ', TERM='dumb',
+               LC_ALL='en_US.UTF-8', LANG='en_US.UTF-8')
     scriptfile = os.path.join(capdir, 'script.zsh')
     with open(scriptfile, 'w') as fh:
         fh.write('\n'.join(script) + '\n')

@@ -55,7 +55,7 @@ $ cd -
 
 ```bash
 $ ls
-README.md  assets  saves  src
+assets  README.md  saves  src
 ```
 
 That single line is the whole project at a glance. The problem is that plain `ls` tells you nothing about the entries themselves: no type, no size, no date.
@@ -65,8 +65,8 @@ Two flags fix that:
 ```bash
 $ ls -l
 total 24
--rw-r--r--  1 dev  staff    37 Jan  9 09:14 README.md
 drwxr-xr-x  5 dev  staff   160 Jan  9 09:14 assets
+-rw-r--r--  1 dev  staff    37 Jan  9 09:14 README.md
 drwxr-xr-x  4 dev  staff   128 Jan  9 09:14 saves
 drwxr-xr-x  4 dev  staff   128 Jan  9 09:14 src
 ```
@@ -78,8 +78,8 @@ $ ls -la
 total 32
 drwxr-xr-x  6 dev  staff   192 Jan  9 09:14 .
 drwxr-xr-x  3 dev  staff    96 Jan  9 09:14 ..
--rw-r--r--  1 dev  staff    37 Jan  9 09:14 README.md
 drwxr-xr-x  5 dev  staff   160 Jan  9 09:14 assets
+-rw-r--r--  1 dev  staff    37 Jan  9 09:14 README.md
 drwxr-xr-x  4 dev  staff   128 Jan  9 09:14 saves
 drwxr-xr-x  4 dev  staff   128 Jan  9 09:14 src
 ```
