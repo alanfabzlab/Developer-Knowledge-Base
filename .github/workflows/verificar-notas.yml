@@ -38,9 +38,9 @@ jobs:
     name: Estructura, paridad e indice
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -60,16 +60,15 @@ jobs:
       # siempre. Aqui se rompen las notas a proposito en una copia y se exige
       # que cada verificador lo note.
       - name: Autoprueba de los verificadores
-        run: tools/ci_verify.sh "Autoprueba de los verificadores" \
-             python3 tools/selftest.py --sin-transcripciones
+        run: tools/ci_verify.sh "Autoprueba de los verificadores" python3 tools/selftest.py --sin-transcripciones
 
   transcripciones:
     name: Transcripciones (macOS)
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -88,5 +87,4 @@ jobs:
       # que no crea el directorio, o un `ls` cuya salida no coincide, aparecen
       # aqui como un fallo de codigo, no como un fallo de formato.
       - name: Ejecutar transcripciones documentadas
-        run: tools/ci_verify.sh "Transcripciones documentadas" \
-             python3 tools/check_transcripts.py
+        run: tools/ci_verify.sh "Transcripciones documentadas" python3 tools/check_transcripts.py
