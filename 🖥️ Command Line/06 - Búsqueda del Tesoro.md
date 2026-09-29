@@ -124,7 +124,8 @@ Ese último paso merece una pausa: `Tab` completó el nombre perfectamente y el 
 
 El segundo `pwd` es justamente lo que busca la pista. Un `cd` fallido te deja exactamente donde estabas, y por eso conviene adquirir el hábito de comprobar tu ubicación después de un error.
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > `cd -` alterna entre los dos últimos directorios, así que ejecutarlo dos veces te devuelve al punto de partida. También es la forma más fácil de acabar donde no querías, porque anula cualquier `cd` que tenías intención de hacer.
 
 ---

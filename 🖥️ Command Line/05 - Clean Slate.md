@@ -63,7 +63,8 @@ $ Ctrl + R, then type "slot"
 
 Press `Enter` to run it, or `Ctrl + R` again to look for the next match.
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > History is per session. Close the terminal and the log is gone — there is no way to recover a command from a session you already ended.
 
 ---
@@ -86,7 +87,8 @@ That second example is the useful one: two presses show you every option instead
 
 Completion applies to command names, file names, and directory paths — which makes long project paths a two-keystroke affair.
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > If nothing completes, there is no match for what you typed. The most common cause is being in the wrong directory; a path that resolves from somewhere else looks identical here. Confirm with `pwd`.
 
 ---

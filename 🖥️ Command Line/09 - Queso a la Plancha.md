@@ -63,7 +63,8 @@ La primera línea sobrevivió. Esa es toda la diferencia:
 | `>` | Contenido **reemplazado** | Creado |
 | `>>` | Líneas **añadidas** al final | Creado |
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > Ambos operadores añaden un salto de línea final, y por eso `echo` se combina con ellos limpiamente. Usar `printf` sin `\n` produce un archivo cuya última línea se pega con la siguiente.
 
 ---
@@ -102,7 +103,8 @@ Y con varias fuentes a la vez:
 $ cat saves/slot-1.dat saves/slot-2.dat > design/all-runs.txt
 ```
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > Usar `>` con un archivo fuente que es también destino lo trunca antes de la lectura, así que el resultado queda vacío. `cat notes.txt > notes.txt` produce un archivo vacío. La forma segura para reordenar un solo archivo es un nombre temporal, o una append con `>>`.
 
 ---

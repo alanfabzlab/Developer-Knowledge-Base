@@ -43,7 +43,8 @@ $ cd -
 /Users/dev/SunkenKeep/assets
 ```
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > `cd` cannot create anything. Typing `cd build` into a directory that does not exist reports `no such file or directory` — and the fix is `mkdir build`, covered in [[07 - Recipes]]. The two errors share a message but mean opposite things.
 
 ---
@@ -90,7 +91,8 @@ drwxr-xr-x  4 dev  staff   128 Jan  9 09:14 src
 
 The first character of each line is the type: `-` for a file, `d` for a directory. `drwxr-xr-x` on `assets` is your confirmation that it is a folder.
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > `ll` is not `ls -l` on macOS. Some Linux distributions define it as an alias; macOS does not, and the shell reports `command not found`. Type the flags out.
 
 ---

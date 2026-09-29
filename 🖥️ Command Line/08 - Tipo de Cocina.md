@@ -75,7 +75,8 @@ $ ls assets/maps
 level-01.tmx  level-02.tmx
 ```
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > `touch` no crea los directorios intermedios. `touch new-folder/notes.txt` falla con `No such file or directory` si `new-folder` no existe. Crea la carpeta primero con `mkdir -p new-folder`, y luego el archivo.
 
 ---

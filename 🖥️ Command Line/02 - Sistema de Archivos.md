@@ -70,7 +70,8 @@ La salida se divide en tres partes legibles:
 | `/Users/dev/SunkenKeep` | home | Tu carpeta de usuario |
 | `assets` | actual | Donde estás ahora mismo |
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > `pwd` no acepta argumentos. Cualquier cosa que le pases se ignora, así que `pwd assets` imprime la misma línea que `pwd` — y si crees que te movió, tu siguiente comando caerá en el directorio equivocado.
 
 ---
@@ -93,7 +94,8 @@ $ cat ../saves/slot-1.dat
 
 En una ruta relativa, `.` significa *este directorio* y `..` significa *el directorio padre*. El `../` inicial del segundo ejemplo es la forma de subir desde `assets/` hasta `saves/`.
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > Una ruta relativa se resuelve contra tu **directorio actual**, que cambia en el momento en que haces `cd`. Un comando que funcionaba hace cinco minutos puede estar señalando en silencio a otro sitio. Si dudas, pregunta con `pwd`.
 
 ---
@@ -106,7 +108,8 @@ Las rutas que contienen espacios deben entrecomillarse como un todo, o el shell 
 $ cd "My Game Assets"
 ```
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > Esto muerde también en sentido contrario. `cd My Game Assets` falla porque el shell intenta entrar a un directorio llamado `My`. Prefiere `snake_case` o `kebab-case` para los directorios del proyecto y te ahorras el problema — los motores de juegos y el control de versiones también lo prefieren.
 
 ---

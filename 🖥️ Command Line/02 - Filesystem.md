@@ -70,7 +70,8 @@ The output breaks into three readable parts:
 | `/Users/dev/SunkenKeep` | home | Your user folder |
 | `assets` | current | Where you are right now |
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > `pwd` has no arguments. Anything you pass it is ignored, so `pwd assets` prints the same line as `pwd` — and if you think it moved you, your next command lands in the wrong directory.
 
 ---
@@ -93,7 +94,8 @@ $ cat ../saves/slot-1.dat
 
 In a relative path, `.` means *this directory* and `..` means *the parent*. The leading `../` in the second example is how you climb out of `assets/` and into `saves/`.
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > A relative path is resolved against your **current directory**, which changes the moment you `cd`. A command that worked five minutes ago can quietly point somewhere else now. When in doubt, ask `pwd`.
 
 ---
@@ -106,7 +108,8 @@ Paths containing spaces must be quoted as a whole, or the shell will read the sp
 $ cd "My Game Assets"
 ```
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > This bites in reverse too. `cd My Game Assets` fails because the shell tries to enter a directory called `My`. Prefer `snake_case` or `kebab-case` for project directories and sidestep the issue entirely — game engines and version control both prefer it anyway.
 
 ---

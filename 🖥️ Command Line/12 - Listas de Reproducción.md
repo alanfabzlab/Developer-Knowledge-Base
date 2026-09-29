@@ -159,7 +159,8 @@ Léelo como un árbol indentado: cada bloque es un directorio, y el prefijo repe
 
 Fíjate en que el nuevo `01-drowned-gallery` queda vacío — `mv` se llevó su contenido, y el `mkdir -p` de nuevo solo repuso la carpeta. Así es como un nivel suele reiniciarse antes de rehacerse.
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > `ls -R` no tiene límite de profundidad, así que en un proyecto grande puede imprimir miles de líneas. Añade `| head -50` cuando solo quieras la forma, o `| less` para paginarlo.
 
 ---

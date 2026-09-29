@@ -46,7 +46,8 @@ $ ls design/archive
 level-notes.txt
 ```
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > El reemplazo es lo que hay que vigilar. `cp importante.txt respaldo.txt` es inofensivo, pero `cp importante.txt importante.txt` trunca el archivo antes de leerlo — la misma trampa de sobrescritura consigo mismo que `cat a > a` en [[09 - Queso a la Plancha]].
 
 ---
@@ -93,7 +94,8 @@ $ ls backup
 saves
 ```
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > Copiar un directorio dentro de otro que ya contiene una copia de él produce `builds/linux and builds/linux are identical (not copied)`. Inofensivo aquí, pero significa que el comando no hizo nada mientras parecía ejecutarse — comprueba dónde acabaron los archivos con `ls` antes de asumir que tienes un respaldo.
 
 ---

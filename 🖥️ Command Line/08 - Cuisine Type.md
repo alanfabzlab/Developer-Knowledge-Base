@@ -75,7 +75,8 @@ $ ls assets/maps
 level-01.tmx  level-02.tmx
 ```
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > `touch` will not create the directories on the way. `touch new-folder/notes.txt` fails with `No such file or directory` when `new-folder` does not exist. Create the folder first with `mkdir -p new-folder`, then the file.
 
 ---

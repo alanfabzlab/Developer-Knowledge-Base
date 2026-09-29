@@ -33,7 +33,8 @@ $ pwd
 
 The rule is mechanical: one `..` per level of depth. If you are three directories deep and need the root, you need three.
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > Climbing above `/` is not possible. From `/`, `cd ..` leaves you at `/` and reports nothing — the filesystem root is its own parent.
 
 ---
@@ -85,7 +86,8 @@ embers: 1
 
 Both save files print one after the other, with no separator. That is precisely what *concatenate* means, and it is why `cat` is better at reading than at combining — for that, redirect the output instead, as in [[09 - Grilled Cheese]].
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > `cat` on a directory reports `Is a directory`. And on a large file — a generated asset dump, a log with ten thousand lines — it floods your terminal with no way to stop early. `head` shows just the first few lines, `tail` the last, and `less` pages through it. Reach for those when a file is large.
 
 ---

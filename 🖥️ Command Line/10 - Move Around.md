@@ -52,7 +52,8 @@ $ ls builds
 darwin  linux  web  windows
 ```
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > A directory destination that does not exist is treated as a **new name**, not as a location. `mv saves saved` renames the folder; `mv saves archive/` fails unless `archive/` already exists. Create it first with `mkdir -p archive`.
 
 ---

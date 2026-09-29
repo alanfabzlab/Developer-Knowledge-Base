@@ -29,7 +29,8 @@ A graphical interface is a layer painted over the shell. The shell is the layer 
 - **Precision.** A filename with a space in it is unambiguous when you quote it.
 - **Remote work.** A server with no desktop is still fully usable.
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > A GUI hides the filesystem. The shell shows it. That visibility is the whole point — and it is also why a mistyped `rm` can be just as unforgiving as a mistyped click.
 
 ---
@@ -53,7 +54,8 @@ $ echo "Level   02 - Flooded Halls"
 Level   02 - Flooded Halls
 ```
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > Quote anything with **two spaces in a row**, a **tab**, or a **special character** like `*` or `$`. Unquoted, those are expanded by the shell before `echo` ever sees them.
 
 On macOS, `say` reads its argument out loud — genuinely useful when a build log needs your eyes on something else:
@@ -92,7 +94,8 @@ The shell keeps a log of everything you have run, and the arrow keys walk throug
 
 Press `↑` repeatedly to walk backwards until you find the one you want, then edit it. Re-typing a long path is wasted work when the shell already remembers it for you.
 
-> [!warning] Trap
+> [!WARNING]
+> **Trap**
 > History is per shell session. The `history` command lists it, but a closed terminal discards it — there is no undo across sessions for a command that went wrong.
 
 ---

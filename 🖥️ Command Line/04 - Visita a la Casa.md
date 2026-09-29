@@ -33,7 +33,8 @@ $ pwd
 
 La regla es mecánica: un `..` por nivel de profundidad. Si estás tres directorios abajo y necesitas la raíz, necesitas tres.
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > Subir por encima de `/` no es posible. Desde `/`, `cd ..` te deja en `/` y no informa nada — la raíz del sistema de archivos es su propio padre.
 
 ---
@@ -85,7 +86,8 @@ embers: 1
 
 Ambos archivos se imprimen seguidos, sin separador. Eso es precisamente lo que significa *concatenar*, y es la razón por la que `cat` sirve mejor para leer que para combinar — para eso, redirige la salida, como se explica en [[09 - Queso a la Plancha]].
 
-> [!warning] Trampa
+> [!WARNING]
+> **Trampa**
 > `cat` sobre un directorio informa `Is a directory`. Y sobre un archivo grande —un volcado de assets generado, un log de diez mil líneas— inunda tu terminal sin forma de detenerte a tiempo. `head` muestra solo las primeras líneas, `tail` las últimas, y `less` permite paginar. Recurre a ellos cuando el archivo es grande.
 
 ---
