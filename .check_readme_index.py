@@ -11,7 +11,7 @@ Detecta los dos fallos que aparecen solos con el tiempo:
              (%C3%Asqueda falla, %C3%BAsqueda pasa).
 
 También informa de notas enlazadas en un solo idioma: es información,
-no fallo — el marcador vacío de C# es EN-only por diseño.
+no fallo — una nota de un solo idioma es EN-only por diseño.
 
 Uso:  python3 check_readme_index.py [raíz]     (por defecto, cwd)
 Salida: 0 si todo cuadra; 1 si hay huérfanas o enlaces rotos.

@@ -28,6 +28,7 @@ Every domain is self-contained and opens with a **MOC** (Map of Content): an ind
 | 🚀 **Git & GitHub** | Version control, branching strategies, collaboration & PR workflows | 4 EN · 4 ES | 🟢 Active | [EN](%F0%9F%9A%80%20Git%20&%20GitHub/README.md) · [ES](%F0%9F%9A%80%20Git%20&%20GitHub/README-ES.md) |
 | 🟣 **CSharp** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 8 EN · 8 ES | 🟢 Active | [EN](%F0%9F%9F%A3%20CSharp/README.md) · [ES](%F0%9F%9F%A3%20CSharp/README-ES.md) |
 | 🧮 **Data Structures & Algorithms** | Core data structures, algorithm efficiency & problem solving | 5 EN · 5 ES | 🟢 Active | [EN](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md) · [ES](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
+| 🖥️ **Command Line** | Terminal navigation, file management, permissions & shell workflow | 13 EN · 13 ES | 🟢 Active | [EN](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README.md) · [ES](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README-ES.md) |
 | ⚙️ **Software Engineering** | Design patterns, algorithms & system architecture | — | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | — | 🟡 Planned | *Coming soon* |
 
@@ -100,13 +101,29 @@ Developer-Knowledge-Base/
 │   ├── 06 - Methods.md                    ·  06 - Métodos.md
 │   └── Mad Dungeon Master - Checkpoint Project.md  ·  Mad Dungeon Master - Proyecto de Hito.md
 │
-└── 🧮 Data Structures & Algorithms/       <-- 5 topics · EN + ES
+├── 🧮 Data Structures & Algorithms/       <-- 5 topics · EN + ES
+│   ├── README.md          ·  README-ES.md
+│   ├── 01 - Introduction to DSA.md        ·  01 - Introducción a Estructuras de Datos y Algoritmos.md
+│   ├── 02 - Algorithms & Efficiency.md    ·  02 - Algoritmos y Eficiencia.md
+│   ├── 03 - Lists & Linear Search.md      ·  03 - Listas y Búsqueda Lineal.md
+│   ├── 04 - Binary Search.md              ·  04 - Búsqueda Binaria.md
+│   └── 05 - Selection Sort.md             ·  05 - Ordenamiento por Selección.md
+│
+└── 🖥️ Command Line/                       <-- 13 topics · EN + ES
     ├── README.md          ·  README-ES.md
-    ├── 01 - Introduction to DSA.md        ·  01 - Introducción a Estructuras de Datos y Algoritmos.md
-    ├── 02 - Algorithms & Efficiency.md    ·  02 - Algoritmos y Eficiencia.md
-    ├── 03 - Lists & Linear Search.md      ·  03 - Listas y Búsqueda Lineal.md
-    ├── 04 - Binary Search.md              ·  04 - Búsqueda Binaria.md
-    └── 05 - Selection Sort.md             ·  05 - Ordenamiento por Selección.md
+    ├── 00b - Command Line Cheatsheet.md   ·  00b - Chuleta de Línea de Comandos.md
+    ├── 01 - In The Beginning.md           ·  01 - En los Orígenes.md
+    ├── 02 - Filesystem.md                 ·  02 - Sistema de Archivos.md
+    ├── 03 - Moving Day.md                 ·  03 - Día de Mudanza.md
+    ├── 04 - House Tour.md                 ·  04 - Visita a la Casa.md
+    ├── 05 - Clean Slate.md                ·  05 - Hoja en Blanco.md
+    ├── 06 - Scavenger Hunt.md             ·  06 - Búsqueda del Tesoro.md
+    ├── 07 - Recipes.md                    ·  07 - Recetas.md
+    ├── 08 - Cuisine Type.md               ·  08 - Tipo de Cocina.md
+    ├── 09 - Grilled Cheese.md             ·  09 - Queso a la Plancha.md
+    ├── 10 - Move Around.md                ·  10 - Mover y Renombrar.md
+    ├── 11 - Copy That.md                  ·  11 - Copia Eso.md
+    └── 12 - Music Playlists.md            ·  12 - Listas de Reproducción.md
 ```
 
 > The tree above shows the real structure of the repository. Every module ships both a
