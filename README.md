@@ -26,13 +26,10 @@ Every domain is self-contained and opens with a **MOC** (Map of Content): an ind
 | :--- | :--- | :--- | :--- | :--- |
 | 🐍 **Python** | Core syntax, control flow, data structures, OOP & ecosystems | 11 EN · 11 ES | 🟢 Active | [EN](%F0%9F%90%8D%20Python/README.md) · [ES](%F0%9F%90%8D%20Python/README-ES.md) |
 | 🚀 **Git & GitHub** | Version control, branching strategies, collaboration & PR workflows | 4 EN · 4 ES | 🟢 Active | [EN](%F0%9F%9A%80%20Git%20&%20GitHub/README.md) · [ES](%F0%9F%9A%80%20Git%20&%20GitHub/README-ES.md) |
-| 🟣 **CSharp** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 8 EN · 7 ES | 🟢 Active | [EN](%F0%9F%9F%A3%20CSharp/README.md) · [ES](%F0%9F%9F%A3%20CSharp/README-ES.md) |
+| 🟣 **CSharp** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 8 EN · 8 ES | 🟢 Active | [EN](%F0%9F%9F%A3%20CSharp/README.md) · [ES](%F0%9F%9F%A3%20CSharp/README-ES.md) |
 | 🧮 **Data Structures & Algorithms** | Core data structures, algorithm efficiency & problem solving | 5 EN · 5 ES | 🟢 Active | [EN](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md) · [ES](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
 | ⚙️ **Software Engineering** | Design patterns, algorithms & system architecture | — | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | — | 🟡 Planned | *Coming soon* |
-
-> **Why C# reads 8 EN · 7 ES**
-> `00b - CSharp Cheatsheet.md` is an empty placeholder with no Spanish pair yet.
 
 **Topic numbering.** Notes are prefixed so a domain reads in learning order — `01`, `02`,
 `03`… Cheatsheets use a `00b` / `00c` prefix and sit *before* the numbered sequence,
@@ -92,9 +89,9 @@ Developer-Knowledge-Base/
 │   ├── 03 - Collaboration & Branching.md   ·  03 - Colaboración y Ramas.md
 │   └── 04 - Advanced Workflow & PRs.md     ·  04 - Flujo Avanzado y PRs.md
 │
-├── 🟣 CSharp/                             <-- 7 topics · EN + ES (+ 1 EN-only)
+├── 🟣 CSharp/                             <-- 8 topics · EN + ES
 │   ├── README.md          ·  README-ES.md
-│   ├── 00b - CSharp Cheatsheet.md         <-- empty placeholder, no ES pair
+│   ├── 00b - CSharp Cheatsheet.md         ·  00b - Chuleta de CSharp.md
 │   ├── 01 - Press Start.md                ·  01 - Pulsa Start.md
 │   ├── 02 - Typecast.md                   ·  02 - Conversión de Tipos.md
 │   ├── 03 - Control Flow.md               ·  03 - Control de Flujo.md
