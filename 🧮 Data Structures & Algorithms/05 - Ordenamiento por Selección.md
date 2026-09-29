@@ -164,3 +164,112 @@ Al aproximarnos a las operaciones del peor caso a medida que crece el tamaño de
     
 
 > **Conclusión:** Los algoritmos cuadráticos se ralentizan de forma dramática a medida que crece el tamaño de la entrada. Para conjuntos de datos grandes, algoritmos como el **Ordenamiento por Mezcla** ($O(N \log N)$) son significativamente más rápidos. La única ventaja del Ordenamiento por Selección es que realiza como máximo $n - 1$ intercambios, lo cual importa cuando escribir en memoria es costoso — pero las comparaciones siguen dominando, así que es un algoritmo para enseñar más que para usar en producción.
+
+
+---
+
+## 4. Demo de Eficiencia y Análisis Comparativo
+
+La fórmula anterior predice el total, así que vale la pena confirmarla — y revisar cómo se comparan entre sí los tres ordenamientos cuadráticos sobre los mismos datos.
+
+Python
+
+```python
+# Cada variante solo cuenta comparaciones; el ordenamiento sigue reordenando la lista
+def ordenamiento_seleccion_contado(mi_lista):
+    comparaciones = 0
+    for j in range(len(mi_lista)):
+        indice_minimo = j
+
+        for i in range(j + 1, len(mi_lista)):
+            comparaciones += 1
+            if mi_lista[i] < mi_lista[indice_minimo]:
+                indice_minimo = i
+
+        mi_lista = intercambiar(mi_lista, j, indice_minimo)
+
+    return comparaciones
+
+def ordenamiento_burbuja_contado(mi_lista):
+    comparaciones = 0
+
+    for j in range(len(mi_lista) - 1):
+        for i in range(0, len(mi_lista) - 1 - j):
+            comparaciones += 1
+            if mi_lista[i] > mi_lista[i + 1]:
+                mi_lista = intercambiar(mi_lista, i, i + 1)
+
+    return comparaciones
+
+def ordenamiento_insercion_contado(mi_lista):
+    comparaciones = 0
+
+    for i in range(1, len(mi_lista)):
+        clave = mi_lista[i]
+        k = i - 1
+
+        while k >= 0:
+            comparaciones += 1
+            if mi_lista[k] <= clave:
+                break
+            mi_lista[k + 1] = mi_lista[k]
+            k -= 1
+
+        mi_lista[k + 1] = clave
+
+    return comparaciones
+```
+
+Ejecutando los tres sobre la misma lista de 10 elementos, primero ya ordenada y luego al revés:
+
+```python
+ordenado = [20, 30, 45, 55, 60, 70, 80, 85, 90, 95]
+orden_inverso = ordenado[::-1]
+
+print('n = 10, ya ordenado')
+print('Selección:', ordenamiento_seleccion_contado(ordenado[:]))
+print('Burbuja:   ', ordenamiento_burbuja_contado(ordenado[:]))
+print('Inserción:', ordenamiento_insercion_contado(ordenado[:]))
+
+print('\nn = 10, orden inverso')
+print('Selección:', ordenamiento_seleccion_contado(orden_inverso[:]))
+print('Burbuja:   ', ordenamiento_burbuja_contado(orden_inverso[:]))
+print('Inserción:', ordenamiento_insercion_contado(orden_inverso[:]))
+```
+
+```text
+n = 10, ya ordenado
+Selección: 45
+Burbuja:    45
+Inserción: 9
+
+n = 10, orden inverso
+Selección: 45
+Burbuja:    45
+Inserción: 45
+```
+
+
+### Conclusiones Clave del Demo
+
+- **Fórmula Exacta de Comparaciones:** Para $n = 10$, el Ordenamiento por Selección realiza exactamente $(10 \times 9) / 2 = 45$ comparaciones, y el total es idéntico en ambas ejecuciones. Solo $n$ decide la cantidad, nunca el orden de los datos.
+    
+- **Ordenamiento por Burbuja frente a Inserción:** El Ordenamiento por Burbuja también reporta 45 en los dos casos, porque la versión ingenua siempre ejecuta las $n - 1$ pasadas. El Ordenamiento por Inserción baja a 9 con la lista ordenada — exactamente el caso de $n - 1$ — y sube a 45 cuando los datos vienen al revés.
+    
+- **La Distinción Real:** Los tres comparten el peor caso $O(N^2)$, pero solo el Ordenamiento por Inserción mejora con una entrada ya ordenada, y por eso es el que vale la pena elegir cuando es probable que haya un orden parcial.
+
+
+---
+
+## 5. Repaso del Capítulo y Patrones Algorítmicos
+
+Este capítulo completa la comparación central de los fundamentos de búsqueda y ordenamiento:
+
+- **Búsqueda Lineal:** Recorre cada elemento de forma secuencial y funciona sobre una lista sin ordenar ($O(N)$).
+    
+- **Búsqueda Binaria:** Divide a la mitad repetidamente una lista ordenada ($O(\log N)$), pagando de antemano el ordenamiento.
+    
+- **Ordenamiento por Selección:** Usa **bucles `for` anidados** para hacer crecer una sección ordenada y colocar en cada pasada el elemento mínimo del resto sin ordenar, con un trabajo cuadrático ($O(N^2)$).
+
+El patrón que recorre los tres es el mismo canje: cuanta más estructura se le permita asumir al algoritmo sobre la entrada, menos trabajo tiene que hacer. La Búsqueda Lineal no asume nada y paga $O(N)$. La Búsqueda Binaria asume que la lista está ordenada y paga $O(\log N)$. El Ordenamiento por Selección no asume nada y paga $O(N^2)$.
+

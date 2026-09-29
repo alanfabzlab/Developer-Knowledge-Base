@@ -162,5 +162,113 @@ Approximating worst-case operations as list size grows:
     
 - **Space Complexity:** $O(1)$ (Auxiliary Space — sorted in-place).
     
-
 > **Takeaway:** Quadratic algorithms slow down dramatically as input size grows. For large datasets, algorithms like **Merge Sort** ($O(N \log N)$) are significantly faster. Selection Sort's one advantage is that it performs at most $n - 1$ swaps, which matters when writing to memory is expensive — but the comparisons still dominate, so it is a teaching algorithm rather than a production one.
+
+
+---
+
+## 4. Efficiency Demo & Comparative Analysis
+
+The formula above predicts the count, so it is worth confirming it — and checking how the three quadratic sorts compare against each other on identical data.
+
+Python
+
+```python
+# Each variant only counts comparisons; the sort still reorders the list
+def selection_sort_counted(my_list):
+    comparisons = 0
+    for j in range(len(my_list)):
+        lowest_index = j
+
+        for i in range(j + 1, len(my_list)):
+            comparisons += 1
+            if my_list[i] < my_list[lowest_index]:
+                lowest_index = i
+
+        my_list = swap(my_list, j, lowest_index)
+
+    return comparisons
+
+def bubble_sort_counted(my_list):
+    comparisons = 0
+
+    for j in range(len(my_list) - 1):
+        for i in range(0, len(my_list) - 1 - j):
+            comparisons += 1
+            if my_list[i] > my_list[i + 1]:
+                my_list = swap(my_list, i, i + 1)
+
+    return comparisons
+
+def insertion_sort_counted(my_list):
+    comparisons = 0
+
+    for i in range(1, len(my_list)):
+        key = my_list[i]
+        k = i - 1
+
+        while k >= 0:
+            comparisons += 1
+            if my_list[k] <= key:
+                break
+            my_list[k + 1] = my_list[k]
+            k -= 1
+
+        my_list[k + 1] = key
+
+    return comparisons
+```
+
+Running all three over the same 10-element list, first already ordered and then reversed:
+
+```python
+ordered = [20, 30, 45, 55, 60, 70, 80, 85, 90, 95]
+reversed_scan = ordered[::-1]
+
+print('n = 10, already ordered')
+print('Selection:', selection_sort_counted(ordered[:]))
+print('Bubble:   ', bubble_sort_counted(ordered[:]))
+print('Insertion:', insertion_sort_counted(ordered[:]))
+
+print('\nn = 10, reverse ordered')
+print('Selection:', selection_sort_counted(reversed_scan[:]))
+print('Bubble:   ', bubble_sort_counted(reversed_scan[:]))
+print('Insertion:', insertion_sort_counted(reversed_scan[:]))
+```
+
+```text
+n = 10, already ordered
+Selection: 45
+Bubble:    45
+Insertion: 9
+
+n = 10, reverse ordered
+Selection: 45
+Bubble:    45
+Insertion: 45
+```
+
+
+### Key Takeaways from the Demo
+
+- **Exact Comparison Formula:** For $n = 10$, Selection Sort performs exactly $(10 \times 9) / 2 = 45$ comparisons, and the count is identical in both runs. Only $n$ decides the total, never the input order.
+    
+- **Bubble Sort vs. Insertion Sort:** Bubble Sort also reports 45 both times, because the naive version always runs all $n - 1$ passes. Insertion Sort drops to 9 on the ordered list — exactly the $n - 1$ case — and climbs to 45 when the data is reversed.
+    
+- **The Real Distinction:** All three share the $O(N^2)$ worst case, but only Insertion Sort improves on already-sorted input, which is why it is the one worth reaching for when partial order is likely.
+
+
+---
+
+## 5. Chapter Review & Algorithmic Patterns
+
+This chapter completes the core comparison of search and sorting fundamentals:
+
+- **Linear Search:** Scans every item sequentially and works on an unsorted list ($O(N)$).
+    
+- **Binary Search:** Repeatedly divides a sorted list in half ($O(\log N)$), paying for a sort up front.
+    
+- **Selection Sort:** Uses **nested `for` loops** to grow a sorted section and place the minimum element of the unsorted remainder on every pass, for quadratic work ($O(N^2)$).
+
+The pattern running through all three is the same trade: the more structure the algorithm is allowed to assume about the input, the less work it has to do. Linear Search assumes nothing and pays $O(N)$. Binary Search assumes sortedness and pays $O(\log N)$. Selection Sort makes no assumptions and pays $O(N^2)$.
+
