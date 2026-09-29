@@ -121,7 +121,11 @@ def main():
                  if os.path.getsize(norm(os.path.join(d, b))) == 0]
         if n_en != n_es:
             notes.append('descuadre EN/ES')
-        label = os.path.basename(d) if os.path.basename(d) else '(raíz)'
+        # The vault root holds a README too, so it lands in `mods` alongside the
+        # real modules. Its row is worth keeping — it says whether the root
+        # index reaches every note — but naming it after the folder makes it
+        # look like a sixth module whose name happens to be the checkout.
+        label = '(raíz del vault)' if d == root else os.path.basename(d)
         print(f'{label[:33]:<34}{n_en:>3}{n_es:>4}  {", ".join(notes) or "-"}')
 
     print(f'READMEs: {len(readmes)}  '

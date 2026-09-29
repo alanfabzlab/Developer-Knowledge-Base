@@ -68,6 +68,9 @@ Developer-Knowledge-Base/
 ├── LICENSE
 ├── .gitignore
 │
+├── tools/                                 <-- vault verifiers (see below)
+├── .github/workflows/                      <-- runs them on every push
+│
 ├── 🐍 Python/                             <-- 11 topics · EN + ES
 │   ├── README.md          ·  README-ES.md
 │   ├── 00b - Python Cheatsheet.md         ·  00b - Chuleta de Python.md
@@ -142,6 +145,45 @@ Developer-Knowledge-Base/
 **Not versioned on purpose** — listed in `.gitignore` so the vault stays portable:
 `.obsidian/` (local vault state), `.DS_Store`, and the assistant tooling folders
 `.copilot/`, `.opencode/`, `copilot/`.
+
+## ✅ Automatic Verification
+
+The vault drifts quietly: a note gets a new section, a code block stops matching
+its documented output, the Spanish mirror falls a step behind. These four
+verifiers catch that on every push, without anyone having to remember to look.
+
+| Verifier | What it proves | Runs on |
+| :--- | :--- | :--- |
+| `.check_readme_index.py` | Every note is reachable from a README; no broken links; EN/ES totals match per module. | Linux |
+| `tools/check_notes.py` | Fences close, tables keep their column count, wikilinks resolve, alerts use the five types GitHub renders. | Linux |
+| `tools/check_parity.py` | Every note has a mirror in the other language, with the same commands in the same order. | Linux |
+| `tools/check_transcripts.py` | Every documented bash block actually produces the output it claims, executed for real against a real file tree. | macOS |
+
+```bash
+python3 .check_readme_index.py     # index
+python3 tools/check_notes.py       # structure
+python3 tools/check_parity.py      # EN/ES mirror
+python3 tools/check_transcripts.py # run the transcripts (macOS, zsh)
+python3 tools/selftest.py          # prove the verifiers still catch faults
+```
+
+`tools/selftest.py` is the one worth knowing about. A verifier nobody has ever
+seen fail proves nothing: it may be checking the wrong condition and still
+report `OK` forever. The selftest breaks the notes on purpose in a throwaway
+copy and fails if any verifier fails to notice.
+
+**A red check does not block anything.** The workflow is not a required status
+check, so a pull request merges regardless. That is deliberate: one person
+writes this vault, and a gate that gets in the way of saving work eventually
+gets switched off. To close that door later it is a single checkbox under
+*Settings → Branches → Branch protection rules* — no change to the workflow,
+since the verifiers already exit non-zero on failure.
+
+Two jobs, because the costs differ: the three Linux verifiers take seconds and
+cover the whole vault, while the transcript runner needs macOS (zsh and the BSD
+tools) and only covers the modules whose transcripts have been audited. To add a
+module to it, append its folder to `MODS` in `tools/check_transcripts.py` and
+document the file tree its notes start from.
 
 ## ⚙️ Engineering Workflow
 

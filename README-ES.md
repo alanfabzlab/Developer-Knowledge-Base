@@ -72,6 +72,9 @@ Developer-Knowledge-Base/
 ├── LICENSE
 ├── .gitignore
 │
+├── tools/                                 <-- verificadores de la vault (ver abajo)
+├── .github/workflows/                      <-- los ejecuta en cada push
+│
 ├── 🐍 Python/                             <-- 11 temas · EN + ES
 │   ├── README.md          ·  README-ES.md
 │   ├── 00b - Python Cheatsheet.md         ·  00b - Chuleta de Python.md
@@ -146,6 +149,44 @@ Developer-Knowledge-Base/
 **No se versiona a propósito** — figura en `.gitignore` para que la vault siga siendo portable:
 `.obsidian/` (estado local de la vault), `.DS_Store` y las carpetas de herramientas del
 asistente `.copilot/`, `.opencode/`, `copilot/`.
+
+## ✅ Verificación Automática
+
+La vault se descoloca en silencio: una nota gana una sección, un bloque de código deja de
+coincidir con la salida que documenta, el espejo español se queda un paso atrás. Estos
+cuatro verificadores lo detectan en cada push, sin que nadie tenga que acordarse de mirar.
+
+| Verificador | Qué demuestra | Corre en |
+| :--- | :--- | :--- |
+| `.check_readme_index.py` | Que toda nota se alcanza desde algún README; que no hay enlaces rotos; que los totales EN/ES cuadran por módulo. | Linux |
+| `tools/check_notes.py` | Que los ``` cierra, que las tablas conservan sus columnas, que los wikilinks resuelven y que las alertas usan los cinco tipos que GitHub dibuja. | Linux |
+| `tools/check_parity.py` | Que cada nota tiene su espejo en el otro idioma, con los mismos comandos en el mismo orden. | Linux |
+| `tools/check_transcripts.py` | Que cada bloque bash documentado produce de verdad la salida que dice, ejecutándolo contra un árbol de archivos real. | macOS |
+
+```bash
+python3 .check_readme_index.py     # índice
+python3 tools/check_notes.py       # estructura
+python3 tools/check_parity.py      # espejo EN/ES
+python3 tools/check_transcripts.py # ejecutar las transcripciones (macOS, zsh)
+python3 tools/selftest.py          # comprobar que los verificadores siguen detectando fallos
+```
+
+`tools/selftest.py` es el que conviene conocer. Un verificador al que nunca se le ha visto
+fallar no demuestra nada: puede estar comprobando la condición equivocada y aun así
+informar `OK` para siempre. La autoprueba rompe las notas a propósito en una copia
+descartable y falla si algún verificador no se entera.
+
+**Un check en rojo no bloquea nada.** El workflow no es un required status check, así que
+un pull request se mergea igual. Es deliberado: escribe esta vault una sola persona, y una
+puerta que se interpone a la hora de guardar el trabajo acaba desactivándose. Para cerrarla
+más adelante basta una casilla en *Settings → Branches → Branch protection rules*, sin tocar
+el workflow: los verificadores ya salen con código distinto de cero cuando algo falla.
+
+Son dos jobs porque los costes son distintos: los tres verificadores de Linux tardan segundos
+y cubren toda la vault, mientras que el de transcripciones necesita macOS (zsh y las
+herramientas de BSD) y solo cubre los módulos cuyas transcripciones están auditadas. Para
+sumar un módulo, añade su carpeta a `MODS` en `tools/check_transcripts.py` y documenta el
+árbol de archivos del que parten sus notas.
 
 ## ⚙️ Flujo de Trabajo de Ingeniería
 

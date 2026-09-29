@@ -1,0 +1,80 @@
+name: Verificar notas
+
+# Control de deriva del vault. Se ejecuta solo, en cada push a main y en cada
+# pull request, y avisa de lo que se haya descolocado.
+#
+# Que un check salga en rojo NO bloquea nada: no es un required check, asi que
+# el pull request se puede mergear igual. Es deliberado. Un vault de notas lo
+# escribe una sola persona, y un gate que le impede guardar su trabajo se
+# acaba desactivando. Si algun dia se quiere cerrar la puerta, es una sola
+# casilla en Settings > Branches > Branch protection rules, sin tocar este
+# fichero: los verificadores ya salen con codigo 1 cuando algo falla.
+#
+# Dos jobs porque los verificadores tienen costes distintos:
+#
+#   notas          Linux, segundos. Escribe en disco lo que sea; no depende del
+#                  sistema. Aqui cabe todo el vault entero.
+#   transcripciones macOS, mas lento. Ejecuta cada bloque bash de verdad contra
+#                  un arbol de archivos real, y su resultado depende de zsh y de
+#                  las herramientas de BSD. Por eso va aparte, y por eso solo
+#                  cubre el modulo cuyas transcripciones estan auditadas.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Un push nuevo hace obsoleto el run anterior del mismo ref.
+concurrency:
+  group: notas-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  notas:
+    name: Estructura, paridad e indice
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Indice de los README
+        run: python3 .check_readme_index.py
+
+      - name: Estructura de las notas
+        run: python3 tools/check_notes.py
+
+      - name: Paridad EN/ES
+        run: python3 tools/check_parity.py
+
+      # Un verificador que nunca se ha visto fallar no prueba nada: puede
+      # estar comprobando la condicion equivocada y aun asi decir OK para
+      # siempre. Aqui se rompen las notas a proposito en una copia y se exige
+      # que cada verificador lo note.
+      - name: Autoprueba de los verificadores
+        run: python3 tools/selftest.py --sin-transcripciones
+
+  transcripciones:
+    name: Transcripciones (macOS)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Version de zsh
+        run: zsh --version
+
+      # Cada bloque de cada nota se ejecuta de verdad. Un `mkdir` documentado
+      # que no crea el directorio, o un `ls` cuya salida no coincide, aparecen
+      # aqui como un fallo de codigo, no como un fallo de formato.
+      - name: Ejecutar transcripciones documentadas
+        run: python3 tools/check_transcripts.py
