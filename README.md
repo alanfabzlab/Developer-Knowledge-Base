@@ -29,12 +29,18 @@ Every domain is self-contained and opens with a **MOC** (Map of Content): an ind
 | 🟣 **CSharp** | Strongly typed, OOP, .NET ecosystem & Unity engine architecture | 8 EN · 8 ES | 🟢 Active | [EN](%F0%9F%9F%A3%20CSharp/README.md) · [ES](%F0%9F%9F%A3%20CSharp/README-ES.md) |
 | 🧮 **Data Structures & Algorithms** | Core data structures, algorithm efficiency & problem solving | 5 EN · 5 ES | 🟢 Active | [EN](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md) · [ES](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
 | 🖥️ **Command Line** | Terminal navigation, file management, permissions & shell workflow | 13 EN · 13 ES | 🟢 Active | [EN](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README.md) · [ES](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README-ES.md) |
+| 🤖 **GenAI** | How LLMs work, prompt engineering, embeddings & AI failure modes | 6 EN · 6 ES | 🟢 Active | [EN](%F0%9F%A4%96%20GenAI/README.md) · [ES](%F0%9F%A4%96%20GenAI/README-ES.md) |
 | ⚙️ **Software Engineering** | Design patterns, algorithms & system architecture | — | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | — | 🟡 Planned | *Coming soon* |
 
 **Topic numbering.** Notes are prefixed so a domain reads in learning order — `01`, `02`,
 `03`… Cheatsheets use a `00b` / `00c` prefix and sit *before* the numbered sequence,
 because they are meant to be consulted while working rather than read front to back.
+
+**The one module that builds on another.** 🤖 **GenAI** is the AI layer of this vault: it
+starts from the Python of 🐍 **Python** and builds a next-token predictor, a prompt library
+and a semantic search engine in pure Python, so the AI tooling is understood from the
+inside rather than borrowed from an API.
 
 **How to read a note.** Each one is a self-contained lesson: a concept, a runnable
 example, its printed output, and the traps worth knowing. Code blocks are executable as
@@ -112,21 +118,31 @@ Developer-Knowledge-Base/
 │   ├── 04 - Binary Search.md              ·  04 - Búsqueda Binaria.md
 │   └── 05 - Selection Sort.md             ·  05 - Ordenamiento por Selección.md
 │
-└── 🖥️ Command Line/                       <-- 13 topics · EN + ES
+├── 🖥️ Command Line/                       <-- 13 topics · EN + ES
+│   ├── README.md          ·  README-ES.md
+│   ├── 00b - Command Line Cheatsheet.md   ·  00b - Chuleta de Línea de Comandos.md
+│   ├── 01 - In The Beginning.md           ·  01 - En los Orígenes.md
+│   ├── 02 - Filesystem.md                 ·  02 - Sistema de Archivos.md
+│   ├── 03 - Moving Day.md                 ·  03 - Día de Mudanza.md
+│   ├── 04 - House Tour.md                 ·  04 - Visita a la Casa.md
+│   ├── 05 - Clean Slate.md                ·  05 - Hoja en Blanco.md
+│   ├── 06 - Scavenger Hunt.md             ·  06 - Búsqueda del Tesoro.md
+│   ├── 07 - Recipes.md                    ·  07 - Recetas.md
+│   ├── 08 - Cuisine Type.md               ·  08 - Tipo de Cocina.md
+│   ├── 09 - Grilled Cheese.md             ·  09 - Queso a la Plancha.md
+│   ├── 10 - Move Around.md                ·  10 - Mover y Renombrar.md
+│   ├── 11 - Copy That.md                  ·  11 - Copia Eso.md
+│   └── 12 - Music Playlists.md            ·  12 - Listas de Reproducción.md
+│
+└── 🤖 GenAI/                              <-- 6 topics · EN + ES
     ├── README.md          ·  README-ES.md
-    ├── 00b - Command Line Cheatsheet.md   ·  00b - Chuleta de Línea de Comandos.md
-    ├── 01 - In The Beginning.md           ·  01 - En los Orígenes.md
-    ├── 02 - Filesystem.md                 ·  02 - Sistema de Archivos.md
-    ├── 03 - Moving Day.md                 ·  03 - Día de Mudanza.md
-    ├── 04 - House Tour.md                 ·  04 - Visita a la Casa.md
-    ├── 05 - Clean Slate.md                ·  05 - Hoja en Blanco.md
-    ├── 06 - Scavenger Hunt.md             ·  06 - Búsqueda del Tesoro.md
-    ├── 07 - Recipes.md                    ·  07 - Recetas.md
-    ├── 08 - Cuisine Type.md               ·  08 - Tipo de Cocina.md
-    ├── 09 - Grilled Cheese.md             ·  09 - Queso a la Plancha.md
-    ├── 10 - Move Around.md                ·  10 - Mover y Renombrar.md
-    ├── 11 - Copy That.md                  ·  11 - Copia Eso.md
-    └── 12 - Music Playlists.md            ·  12 - Listas de Reproducción.md
+    ├── 00b - GenAI Cheatsheet.md          ·  00b - Chuleta de GenAI.md
+    ├── 00c - GenAI Cheatsheet II.md       ·  00c - Chuleta de GenAI II.md
+    ├── 01 - How AI Thinks.md              ·  01 - Cómo Piensa la IA.md
+    ├── 02 - Prompt Engineering.md         ·  02 - Ingeniería de Prompts.md
+    ├── 03 - Embeddings & Semantic Search.md  ·  03 - Embeddings y Búsqueda Semántica.md
+    ├── 04 - Limits & Risks.md             ·  04 - Límites y Riesgos.md
+    └── z_attachments/                     <-- local assets (empty, untracked)
 ```
 
 > The tree above shows the real structure of the repository. Every module ships both a

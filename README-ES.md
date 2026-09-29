@@ -31,6 +31,7 @@ recorrer una carpeta.
 | 🟣 **CSharp** | Tipado fuerte, POO, ecosistema .NET y arquitectura del motor Unity | 8 EN · 8 ES | 🟢 Activo | [EN](%F0%9F%9F%A3%20CSharp/README.md) · [ES](%F0%9F%9F%A3%20CSharp/README-ES.md) |
 | 🧮 **Estructuras de Datos y Algoritmos** | Estructuras de datos fundamentales, eficiencia de algoritmos y resolución de problemas | 5 EN · 5 ES | 🟢 Activo | [EN](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md) · [ES](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
 | 🖥️ **Línea de Comandos** | Navegación en la terminal, gestión de archivos, permisos y flujo de trabajo en la shell | 13 EN · 13 ES | 🟢 Activo | [EN](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README.md) · [ES](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README-ES.md) |
+| 🤖 **GenAI** | Cómo funcionan los LLM, ingeniería de prompts, embeddings y modos de fallo de la IA | 6 EN · 6 ES | 🟢 Activo | [EN](%F0%9F%A4%96%20GenAI/README.md) · [ES](%F0%9F%A4%96%20GenAI/README-ES.md) |
 | ⚙️ **Ingeniería de Software** | Patrones de diseño, algoritmos y arquitectura de sistemas | — | 🟡 Planificado | *Próximamente* |
 | 🎮 **Arquitectura de Juegos** | Mecánicas interactivas, patrones de motor y física | — | 🟡 Planificado | *Próximamente* |
 
@@ -38,6 +39,11 @@ recorrer una carpeta.
 de aprendizaje — `01`, `02`, `03`… Las chuletas usan el prefijo `00b` / `00c` y se sitúan
 *antes* de la secuencia numerada, porque están pensadas para consultarse mientras se trabaja
 y no para leerse de principio a fin.
+
+**El único módulo que se apoya en otro.** 🤖 **GenAI** es la capa de IA de esta vault: parte
+del Python de 🐍 **Python** y construye un predictor del siguiente token, una biblioteca de
+prompts y un motor de búsqueda semántica en Python puro, de modo que las herramientas de IA
+se entiendan por dentro en lugar de pedirlas prestadas a una API.
 
 **Cómo leer una nota.** Cada una es una lección autónoma: un concepto, un ejemplo ejecutable,
 su salida por consola y las trampas que conviene conocer. Los bloques de código se ejecutan
@@ -116,21 +122,31 @@ Developer-Knowledge-Base/
 │   ├── 04 - Binary Search.md              ·  04 - Búsqueda Binaria.md
 │   └── 05 - Selection Sort.md             ·  05 - Ordenamiento por Selección.md
 │
-└── 🖥️ Command Line/                       <-- 13 temas · EN + ES
+├── 🖥️ Command Line/                       <-- 13 temas · EN + ES
+│   ├── README.md          ·  README-ES.md
+│   ├── 00b - Command Line Cheatsheet.md   ·  00b - Chuleta de Línea de Comandos.md
+│   ├── 01 - In The Beginning.md           ·  01 - En los Orígenes.md
+│   ├── 02 - Filesystem.md                 ·  02 - Sistema de Archivos.md
+│   ├── 03 - Moving Day.md                 ·  03 - Día de Mudanza.md
+│   ├── 04 - House Tour.md                 ·  04 - Visita a la Casa.md
+│   ├── 05 - Clean Slate.md                ·  05 - Hoja en Blanco.md
+│   ├── 06 - Scavenger Hunt.md             ·  06 - Búsqueda del Tesoro.md
+│   ├── 07 - Recipes.md                    ·  07 - Recetas.md
+│   ├── 08 - Cuisine Type.md               ·  08 - Tipo de Cocina.md
+│   ├── 09 - Grilled Cheese.md             ·  09 - Queso a la Plancha.md
+│   ├── 10 - Move Around.md                ·  10 - Mover y Renombrar.md
+│   ├── 11 - Copy That.md                  ·  11 - Copia Eso.md
+│   └── 12 - Music Playlists.md            ·  12 - Listas de Reproducción.md
+│
+└── 🤖 GenAI/                              <-- 6 temas · EN + ES
     ├── README.md          ·  README-ES.md
-    ├── 00b - Command Line Cheatsheet.md   ·  00b - Chuleta de Línea de Comandos.md
-    ├── 01 - In The Beginning.md           ·  01 - En los Orígenes.md
-    ├── 02 - Filesystem.md                 ·  02 - Sistema de Archivos.md
-    ├── 03 - Moving Day.md                 ·  03 - Día de Mudanza.md
-    ├── 04 - House Tour.md                 ·  04 - Visita a la Casa.md
-    ├── 05 - Clean Slate.md                ·  05 - Hoja en Blanco.md
-    ├── 06 - Scavenger Hunt.md             ·  06 - Búsqueda del Tesoro.md
-    ├── 07 - Recipes.md                    ·  07 - Recetas.md
-    ├── 08 - Cuisine Type.md               ·  08 - Tipo de Cocina.md
-    ├── 09 - Grilled Cheese.md             ·  09 - Queso a la Plancha.md
-    ├── 10 - Move Around.md                ·  10 - Mover y Renombrar.md
-    ├── 11 - Copy That.md                  ·  11 - Copia Eso.md
-    └── 12 - Music Playlists.md            ·  12 - Listas de Reproducción.md
+    ├── 00b - GenAI Cheatsheet.md          ·  00b - Chuleta de GenAI.md
+    ├── 00c - GenAI Cheatsheet II.md       ·  00c - Chuleta de GenAI II.md
+    ├── 01 - How AI Thinks.md              ·  01 - Cómo Piensa la IA.md
+    ├── 02 - Prompt Engineering.md         ·  02 - Ingeniería de Prompts.md
+    ├── 03 - Embeddings & Semantic Search.md  ·  03 - Embeddings y Búsqueda Semántica.md
+    ├── 04 - Limits & Risks.md             ·  04 - Límites y Riesgos.md
+    └── z_attachments/                     <-- recursos locales (vacía, sin versionar)
 ```
 
 > El árbol anterior muestra la estructura real del repositorio. Cada módulo incluye su
