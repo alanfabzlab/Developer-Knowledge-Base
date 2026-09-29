@@ -73,8 +73,16 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Version de zsh
-        run: zsh --version
+      # Un fallo aqui puede venir de la maquina y no de las notas, asi que el
+      # entorno se publica como anotacion. Un `TMPDIR` sin resolver, por
+      # ejemplo, cambia como el shell imprime las rutas y el verificador
+      # acabaria comparando /var/... contra /private/var/...
+      - name: Entorno de ejecucion
+        run: |
+          echo "::notice title=macOS runner::zsh $(zsh --version), $(uname -sr), python $(python3 --version 2>&1)"
+          echo "::notice title=macOS runner::TMPDIR=${TMPDIR:-<sin definir>} -> real $(cd "${TMPDIR:-/tmp}" && pwd -P)"
+          echo "::notice title=macOS runner::LANG=${LANG:-<sin definir>}, SHELL=${SHELL:-<sin definir>}"
+          zsh --version
 
       # Cada bloque de cada nota se ejecuta de verdad. Un `mkdir` documentado
       # que no crea el directorio, o un `ls` cuya salida no coincide, aparecen
