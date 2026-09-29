@@ -96,12 +96,12 @@ lista_gremio = [
     'vex@shadow.gg',
     'rhea@stormborn.gg',
     'soren@ranger.gg',
-    'pleaseaddmeplease@gg.gg',
+    'oren@shadow.gg',
     'lyra@arcanist.gg'
 ]
 
 print(linear_search(lista_gremio, 'nyx@arcanist.gg'))   # Salida: True
-print(linear_search(lista_gremio, 'mark.scout@gg.gg'))  # Salida: False
+print(linear_search(lista_gremio, 'zara@vanguard.clan'))  # Salida: False
 ```
 
 

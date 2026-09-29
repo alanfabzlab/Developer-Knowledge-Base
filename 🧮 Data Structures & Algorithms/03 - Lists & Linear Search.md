@@ -96,12 +96,12 @@ guild_roster = [
     'vex@shadow.gg',
     'rhea@stormborn.gg',
     'soren@ranger.gg',
-    'pleaseaddmeplease@gg.gg',
+    'oren@shadow.gg',
     'lyra@arcanist.gg'
 ]
 
 print(linear_search(guild_roster, 'nyx@arcanist.gg'))   # Output: True
-print(linear_search(guild_roster, 'mark.scout@gg.gg'))  # Output: False
+print(linear_search(guild_roster, 'zara@vanguard.clan'))  # Output: False
 ```
 
 
