@@ -12,3 +12,4 @@ Welcome to the Data Structures & Algorithms knowledge base. This directory cover
 2. **[02 - Algorithms & Efficiency](./02%20-%20Algorithms%20&%20Efficiency.md)** — Algorithmic thinking, Insertion Sort, Linear vs. Binary Search performance, worst-case analysis, and dungeon route optimization.
 3. **[03 - Lists & Linear Search](./03%20-%20Lists%20&%20Linear%20Search.md)** — Review of Python Lists, indexing, slicing, common list methods, Linear Search algorithm implementation, and worst-case performance analysis.
 4. **[04 - Binary Search](./04%20-%20Binary%20Search.md)** — Concept of divide and conquer, searching in sorted arrays, iterative and recursive implementations, and edge case handling.
+5. **[05 - Selection Sort](./05%20-%20Selection%20Sort.md)** — Nested loops, building a sorted section in-place, swapping minimum elements, and quadratic time complexity analysis ($O(N^2)$).
