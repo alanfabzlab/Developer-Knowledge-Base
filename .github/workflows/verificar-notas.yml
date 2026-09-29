@@ -44,21 +44,24 @@ jobs:
         with:
           python-version: '3.12'
 
+      # Cada verificador pasa por ci_verify.sh: si falla, el motivo queda como
+      # anotación del commit y se lee sin abrir el log del job.
       - name: Indice de los README
-        run: python3 .check_readme_index.py
+        run: tools/ci_verify.sh "Índice de los README" python3 .check_readme_index.py
 
       - name: Estructura de las notas
-        run: python3 tools/check_notes.py
+        run: tools/ci_verify.sh "Estructura de las notas" python3 tools/check_notes.py
 
       - name: Paridad EN/ES
-        run: python3 tools/check_parity.py
+        run: tools/ci_verify.sh "Paridad EN/ES" python3 tools/check_parity.py
 
       # Un verificador que nunca se ha visto fallar no prueba nada: puede
       # estar comprobando la condicion equivocada y aun asi decir OK para
       # siempre. Aqui se rompen las notas a proposito en una copia y se exige
       # que cada verificador lo note.
       - name: Autoprueba de los verificadores
-        run: python3 tools/selftest.py --sin-transcripciones
+        run: tools/ci_verify.sh "Autoprueba de los verificadores" \
+             python3 tools/selftest.py --sin-transcripciones
 
   transcripciones:
     name: Transcripciones (macOS)
@@ -77,4 +80,5 @@ jobs:
       # que no crea el directorio, o un `ls` cuya salida no coincide, aparecen
       # aqui como un fallo de codigo, no como un fallo de formato.
       - name: Ejecutar transcripciones documentadas
-        run: python3 tools/check_transcripts.py
+        run: tools/ci_verify.sh "Transcripciones documentadas" \
+             python3 tools/check_transcripts.py
