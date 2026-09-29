@@ -47,7 +47,8 @@ de macOS. Corre solo sobre el módulo de Línea de Comandos, que es el único
 cuyas transcripciones están auditadas contra una ejecución real; los demás
 módulos aún no tienen un árbol de referencia, y ejecutarlos aquí produciría
 fallos que nadie ha revisado. Cuando un módulo se audite, se añade su
-directorio a MODS y su README documentando el árbol que se espera.
+directorio a MODS, su slug a SLUGS y su README documentando el árbol que se
+espera.
 """
 import os
 import re
@@ -57,6 +58,12 @@ import sys
 import tempfile
 
 MODS = ['🖥️ Command Line']
+
+# El dispatch manual habla en slugs ASCII y no en nombres de carpeta: los
+# nombres llevan emoji, que no viajan comodos por un input de workflow ni por
+# una variable de entorno. La traduccion vive aqui, en un solo sitio, para que
+# añadir un módulo no obligue a tocar el workflow.
+SLUGS = {'command-line': '🖥️ Command Line'}
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MOD = os.path.join(ROOT, '🖥️ Command Line')
@@ -299,10 +306,36 @@ def audit(mod):
     return checked, skipped, failures
 
 
+def selected_modules():
+    """Los módulos que se auditan en esta ejecución.
+
+    Sin `MODULOS` —push, pull request, o un dispatch en `todos`— se audita
+    todo MODS, que es el comportamiento de siempre. Con `MODULOS` se audita
+    solo ese, para cuando un módulo concreto falla y interesa aislarlo sin
+    tener que arreglar los demás para ver el resultado.
+
+    Un slug desconocido es un error, no un módulo vacío. Auditar cero módulos
+    imprimiría "0 pasos ejecutados" y "RESULTADO: OK": un falso verde
+    silencioso, que es exactamente la forma más discreta de no estar
+    comprobando nada.
+    """
+    raw = os.environ.get('MODULOS', '').strip()
+    if not raw or raw == 'todos':
+        return MODS
+    if raw not in SLUGS:
+        print(f'\n=== MODULO DESCONOCIDO: {raw} ===')
+        print(f'admitidos: todos, {", ".join(sorted(SLUGS))}')
+        return []
+    return [SLUGS[raw]]
+
+
 def main():
     total = skipped = 0
     failures = []
-    for mod in MODS:
+    mods = selected_modules()
+    if not mods:
+        return 1
+    for mod in mods:
         path = os.path.join(ROOT, mod)
         if not os.path.isdir(path):
             print(f'\n=== MODULO AUSENTE: {mod} ===')

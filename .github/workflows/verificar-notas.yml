@@ -18,12 +18,25 @@ name: Verificar notas
 #                  un arbol de archivos real, y su resultado depende de zsh y de
 #                  las herramientas de BSD. Por eso va aparte, y por eso solo
 #                  cubre el modulo cuyas transcripciones estan auditadas.
+#
+# El dispatch manual añade un parametro, `modulo`, que acota el job de
+# transcripciones a un solo modulo. Sirve para aislar un fallo sin tener que
+# arreglar antes los demas, que es cuando mas caro sale reproducirlos. En push
+# y en pull request el parametro no existe y el job va entero, como siempre.
 
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      modulo:
+        description: 'Módulo a auditar en el job de transcripciones'
+        type: choice
+        default: 'todos'
+        options:
+          - todos
+          - command-line
 
 # Un push nuevo hace obsoleto el run anterior del mismo ref.
 concurrency:
@@ -86,5 +99,12 @@ jobs:
       # Cada bloque de cada nota se ejecuta de verdad. Un `mkdir` documentado
       # que no crea el directorio, o un `ls` cuya salida no coincide, aparecen
       # aqui como un fallo de codigo, no como un fallo de formato.
+      #
+      # MODULOS solo lo rellena el dispatch manual; en push y pull request la
+      # expresion resuelve a 'todos' y el job se comporta como siempre. El slug
+      # lo traduce check_transcripts.py, que es quien sabe que 'command-line'
+      # quiere decir una carpeta con emoji en el nombre.
       - name: Ejecutar transcripciones documentadas
+        env:
+          MODULOS: ${{ inputs.modulo || 'todos' }}
         run: tools/ci_verify.sh "Transcripciones documentadas" python3 tools/check_transcripts.py
