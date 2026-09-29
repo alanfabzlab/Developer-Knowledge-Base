@@ -23,7 +23,7 @@ This repository module serves as the central Map of Content (MOC) for C# syntax,
 ### 📚 Reference & Quick Guides
 
 * **Cheatsheets & Syntax Rules:**
-  * [00b - CSharp Cheatsheet](./00b%20-%20CSharp%20Cheatsheet.md) — Type system, memory stack vs. heap... *(empty file — content pending; no Spanish version yet)*
+  * [00b - CSharp Cheatsheet](./00b%20-%20CSharp%20Cheatsheet.md) — Type system, value vs reference types, stack vs heap, nullables, strings, arrays, lists, control flow, methods, common gotchas, and a Python bridge. *(English only for now)*
 
 ---
 
