@@ -29,7 +29,7 @@ recorrer una carpeta.
 | 🐍 **Python** | Sintaxis básica, control de flujo, estructuras de datos, POO y ecosistemas | 11 EN · 11 ES | 🟢 Activo | [EN](%F0%9F%90%8D%20Python/README.md) · [ES](%F0%9F%90%8D%20Python/README-ES.md) |
 | 🚀 **Git & GitHub** | Control de versiones, estrategias de ramificación, colaboración y flujos de PR | 4 EN · 4 ES | 🟢 Activo | [EN](%F0%9F%9A%80%20Git%20&%20GitHub/README.md) · [ES](%F0%9F%9A%80%20Git%20&%20GitHub/README-ES.md) |
 | 🟣 **CSharp** | Tipado fuerte, POO, ecosistema .NET y arquitectura del motor Unity | 8 EN · 7 ES | 🟢 Activo | [EN](%F0%9F%9F%A3%20CSharp/README.md) · [ES](%F0%9F%9F%A3%20CSharp/README-ES.md) |
-| 🧮 **Estructuras de Datos y Algoritmos** | Estructuras de datos fundamentales, eficiencia de algoritmos y resolución de problemas | 3 EN · 3 ES | 🟢 Activo | [EN](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md) · [ES](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
+| 🧮 **Estructuras de Datos y Algoritmos** | Estructuras de datos fundamentales, eficiencia de algoritmos y resolución de problemas | 5 EN · 5 ES | 🟢 Activo | [EN](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md) · [ES](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
 | ⚙️ **Ingeniería de Software** | Patrones de diseño, algoritmos y arquitectura de sistemas | — | 🟡 Planificado | *Próximamente* |
 | 🎮 **Arquitectura de Juegos** | Mecánicas interactivas, patrones de motor y física | — | 🟡 Planificado | *Próximamente* |
 
@@ -107,11 +107,13 @@ Developer-Knowledge-Base/
 │   ├── 06 - Methods.md                    ·  06 - Métodos.md
 │   └── Mad Dungeon Master - Checkpoint Project.md  ·  Mad Dungeon Master - Proyecto de Hito.md
 │
-└── 🧮 Data Structures & Algorithms/       <-- 3 temas · EN + ES
+└── 🧮 Data Structures & Algorithms/       <-- 5 temas · EN + ES
     ├── README.md          ·  README-ES.md
     ├── 01 - Introduction to DSA.md        ·  01 - Introducción a Estructuras de Datos y Algoritmos.md
     ├── 02 - Algorithms & Efficiency.md    ·  02 - Algoritmos y Eficiencia.md
-    └── 03 - Lists & Linear Search.md      ·  03 - Listas y Búsqueda Lineal.md
+    ├── 03 - Lists & Linear Search.md      ·  03 - Listas y Búsqueda Lineal.md
+    ├── 04 - Binary Search.md              ·  04 - Búsqueda Binaria.md
+    └── 05 - Selection Sort.md             ·  05 - Ordenamiento por Selección.md
 ```
 
 > El árbol anterior muestra la estructura real del repositorio. Cada módulo incluye su
