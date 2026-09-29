@@ -55,7 +55,7 @@ $ cd -
 
 ```bash
 $ ls
-README.md assets saves src
+assets  README.md  saves  src
 ```
 
 Esa única línea es todo el proyecto de un vistazo. El problema es que `ls` a secas no te dice nada sobre las entradas en sí: ni tipo, ni tamaño, ni fecha.
@@ -65,10 +65,10 @@ Dos flags lo arreglan:
 ```bash
 $ ls -l
 total 24
--rw-r--r-- 1 dev staff  37 Jan 9 09:14 README.md
-drwxr-xr-x 5 dev staff 160 Jan 9 09:14 assets
-drwxr-xr-x 4 dev staff 128 Jan 9 09:14 saves
-drwxr-xr-x 4 dev staff 128 Jan 9 09:14 src
+drwxr-xr-x  5 dev  staff   160 Jan  9 09:14 assets
+-rw-r--r--  1 dev  staff    37 Jan  9 09:14 README.md
+drwxr-xr-x  4 dev  staff   128 Jan  9 09:14 saves
+drwxr-xr-x  4 dev  staff   128 Jan  9 09:14 src
 ```
 
 Suma `-a` y aparecen las dos entradas que nadie recuerda:
