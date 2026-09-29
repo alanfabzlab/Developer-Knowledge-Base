@@ -29,7 +29,8 @@ Una interfaz gráfica es una capa pintada encima del shell. El shell es la capa 
 - **Precisión.** Un nombre de archivo con un espacio es inequívoco cuando lo entrecomillas.
 - **Trabajo remoto.** Un servidor sin escritorio sigue siendo plenamente utilizable.
 
-> **Trampa:** Una GUI oculta el sistema de archivos. El shell lo muestra. Esa visibilidad es justo el punto — y también la razón por la que un `rm` mal escrito puede ser igual de despiadado que un clic mal puesto.
+> [!warning] Trampa
+> Una GUI oculta el sistema de archivos. El shell lo muestra. Esa visibilidad es justo el punto — y también la razón por la que un `rm` mal escrito puede ser igual de despiadado que un clic mal puesto.
 
 ---
 
@@ -52,7 +53,8 @@ $ echo "Level   02 - Flooded Halls"
 Level   02 - Flooded Halls
 ```
 
-> **Trampa:** Entrecomilla cualquier cosa con **dos espacios seguidos**, una **tabulación** o un **carácter especial** como `*` o `$`. Sin comillas, el shell los expande antes de que `echo` los vea siquiera.
+> [!warning] Trampa
+> Entrecomilla cualquier cosa con **dos espacios seguidos**, una **tabulación** o un **carácter especial** como `*` o `$`. Sin comillas, el shell los expande antes de que `echo` los vea siquiera.
 
 En macOS, `say` lee su argumento en voz alta — realmente útil cuando un log de compilación necesita que tus ojos estén en otra cosa:
 
@@ -90,7 +92,8 @@ El shell guarda un registro de todo lo que has ejecutado, y las flechas lo recor
 
 Pulsa `↑` repetidamente para retroceder hasta encontrar el que quieres, edítalo y ejecútalo. Reescribir una ruta larga es trabajo desperdiciado cuando el shell ya la recuerda por ti.
 
-> **Trampa:** El historial es por sesión de shell. El comando `history` lo lista, pero una terminal cerrada lo descarta — no hay forma de deshacer entre sesiones un comando que salió mal.
+> [!warning] Trampa
+> El historial es por sesión de shell. El comando `history` lo lista, pero una terminal cerrada lo descarta — no hay forma de deshacer entre sesiones un comando que salió mal.
 
 ---
 

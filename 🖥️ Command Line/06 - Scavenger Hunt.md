@@ -124,7 +124,8 @@ That last step is worth pausing on: `Tab` completed the name perfectly and the c
 
 The second `pwd` is the point of the clue. A failed `cd` leaves you exactly where you were, which is why checking your location after a mistake is a habit worth keeping.
 
-> **Trap:** `cd -` toggles between the last two directories, so running it twice returns you to where you started. It is also the easiest way to end up somewhere you did not mean to be, since it overrides wherever your `cd` was heading.
+> [!warning] Trap
+> `cd -` toggles between the last two directories, so running it twice returns you to where you started. It is also the easiest way to end up somewhere you did not mean to be, since it overrides wherever your `cd` was heading.
 
 ---
 

@@ -63,7 +63,8 @@ The first line survived. That is the whole difference:
 | `>` | Contents **replaced** | Created |
 | `>>` | Lines **added** at the end | Created |
 
-> **Trap:** Both operators add a trailing newline, which is why `echo` pairs cleanly with them. Using `printf` without `\n` produces a file whose last line runs into the next one.
+> [!warning] Trap
+> Both operators add a trailing newline, which is why `echo` pairs cleanly with them. Using `printf` without `\n` produces a file whose last line runs into the next one.
 
 ---
 
@@ -101,7 +102,8 @@ And with several sources at once:
 $ cat saves/slot-1.dat saves/slot-2.dat > design/all-runs.txt
 ```
 
-> **Trap:** Using `>` with a source file that is also the destination truncates it before the read happens, so the result is empty. `cat notes.txt > notes.txt` produces an empty file. The safe form for rearranging a single file is a temporary name, or an append with `>>`.
+> [!warning] Trap
+> Using `>` with a source file that is also the destination truncates it before the read happens, so the result is empty. `cat notes.txt > notes.txt` produces an empty file. The safe form for rearranging a single file is a temporary name, or an append with `>>`.
 
 ---
 

@@ -55,7 +55,8 @@ $ cd build
 cd: no such file or directory: build
 ```
 
-> **Trampa:** `no such file or directory` viniendo de `cd` significa que falta la carpeta; viniendo de `mkdir` con una ruta anidada significa que falta el **padre**. Mismas palabras, soluciones opuestas — `mkdir` del padre, o quita la parte anidada.
+> [!warning] Trampa
+> `no such file or directory` viniendo de `cd` significa que falta la carpeta; viniendo de `mkdir` con una ruta anidada significa que falta el **padre**. Mismas palabras, soluciones opuestas — `mkdir` del padre, o quita la parte anidada.
 
 ---
 
@@ -88,7 +89,8 @@ $ echo "exit code: $?"
 exit code: 0
 ```
 
-> **Trampa:** La indulgencia corta en ambas direcciones. `mkdir -p` construirá encantada una ruta con un error tipográfico, creando `builids/linux` y dejándote preguntándote por qué tu script de compilación ignora la carpeta nueva. El flag no perdona lo *incorrecto*, solo lo *ya existente*.
+> [!warning] Trampa
+> La indulgencia corta en ambas direcciones. `mkdir -p` construirá encantada una ruta con un error tipográfico, creando `builids/linux` y dejándote preguntándote por qué tu script de compilación ignora la carpeta nueva. El flag no perdona lo *incorrecto*, solo lo *ya existente*.
 
 ---
 

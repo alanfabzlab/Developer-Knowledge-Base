@@ -55,7 +55,8 @@ $ cd build
 cd: no such file or directory: build
 ```
 
-> **Trap:** `no such file or directory` from `cd` means the folder is missing; from `mkdir` with a nested path it means the **parent** is missing. Same words, opposite fixes — `mkdir` the parent, or drop the nested part.
+> [!warning] Trap
+> `no such file or directory` from `cd` means the folder is missing; from `mkdir` with a nested path it means the **parent** is missing. Same words, opposite fixes — `mkdir` the parent, or drop the nested part.
 
 ---
 
@@ -88,7 +89,8 @@ $ echo "exit code: $?"
 exit code: 0
 ```
 
-> **Trap:** The leniency cuts both ways. `mkdir -p` will happily build a path with a typo in it, creating `builids/linux` and leaving you wondering why the build script ignores your new folder. The flag is not forgiving about *wrong*, only about *already there*.
+> [!warning] Trap
+> The leniency cuts both ways. `mkdir -p` will happily build a path with a typo in it, creating `builids/linux` and leaving you wondering why the build script ignores your new folder. The flag is not forgiving about *wrong*, only about *already there*.
 
 ---
 

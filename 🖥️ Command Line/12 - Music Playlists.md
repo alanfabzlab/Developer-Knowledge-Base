@@ -159,7 +159,8 @@ Read it as an indented tree: each block is one directory, and the repeated prefi
 
 Note the new `01-drowned-gallery` sits empty — `mv` carried its contents away, and the fresh `mkdir -p` put back only the folder. That is the usual way a level gets reset before being rebuilt.
 
-> **Trap:** `ls -R` has no depth limit, so on a large project it can print thousands of lines. Add `| head -50` when you only want the shape, or `| less` to page through it.
+> [!warning] Trap
+> `ls -R` has no depth limit, so on a large project it can print thousands of lines. Add `| head -50` when you only want the shape, or `| less` to page through it.
 
 ---
 

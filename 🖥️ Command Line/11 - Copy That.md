@@ -46,7 +46,8 @@ $ ls design/archive
 level-notes.txt
 ```
 
-> **Trap:** The overwrite is the one to watch. `cp important.txt backup.txt` is harmless, but `cp important.txt important.txt` truncates the file before reading it — same self-overwrite trap as `cat a > a` in [[09 - Grilled Cheese]].
+> [!warning] Trap
+> The overwrite is the one to watch. `cp important.txt backup.txt` is harmless, but `cp important.txt important.txt` truncates the file before reading it — same self-overwrite trap as `cat a > a` in [[09 - Grilled Cheese]].
 
 ---
 
@@ -92,7 +93,8 @@ $ ls backup
 saves
 ```
 
-> **Trap:** Copying a directory into a directory that already contains a copy of it produces `builds/linux and builds/linux are identical (not copied)`. Harmless here, but it means the command did nothing while appearing to run — check where the files landed with `ls` before assuming a backup exists.
+> [!warning] Trap
+> Copying a directory into a directory that already contains a copy of it produces `builds/linux and builds/linux are identical (not copied)`. Harmless here, but it means the command did nothing while appearing to run — check where the files landed with `ls` before assuming a backup exists.
 
 ---
 

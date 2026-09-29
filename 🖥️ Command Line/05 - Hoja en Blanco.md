@@ -63,7 +63,8 @@ $ Ctrl + R, y luego escribe "slot"
 
 Pulsa `Enter` para ejecutarlo, o `Ctrl + R` otra vez para buscar la siguiente coincidencia.
 
-> **Trampa:** El historial es por sesión. Cierra el terminal y el registro desaparece — no hay forma de recuperar un comando de una sesión que ya terminó.
+> [!warning] Trampa
+> El historial es por sesión. Cierra el terminal y el registro desaparece — no hay forma de recuperar un comando de una sesión que ya terminó.
 
 ---
 
@@ -85,7 +86,8 @@ Ese segundo ejemplo es el útil: dos pulsaciones te muestran todas las opciones 
 
 El autocompletado funciona con nombres de comandos, archivos y rutas de directorios — lo que convierte las rutas largas del proyecto en un asunto de dos teclas.
 
-> **Trampa:** Si no se completa nada, no hay coincidencia para lo que escribiste. La causa más común es estar en el directorio equivocado; una ruta que resuelve desde otro sitio se ve igual aquí. Confírmalo con `pwd`.
+> [!warning] Trampa
+> Si no se completa nada, no hay coincidencia para lo que escribiste. La causa más común es estar en el directorio equivocado; una ruta que resuelve desde otro sitio se ve igual aquí. Confírmalo con `pwd`.
 
 ---
 

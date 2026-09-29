@@ -43,7 +43,8 @@ $ cd -
 /Users/dev/SunkenKeep/assets
 ```
 
-> **Trampa:** `cd` no puede crear nada. Escribir `cd build` en un directorio que no existe informa `no such file or directory` — y la solución es `mkdir build`, que se cubre en [[07 - Recetas]]. Los dos errores comparten el mensaje pero significan lo contrario.
+> [!warning] Trampa
+> `cd` no puede crear nada. Escribir `cd build` en un directorio que no existe informa `no such file or directory` — y la solución es `mkdir build`, que se cubre en [[07 - Recetas]]. Los dos errores comparten el mensaje pero significan lo contrario.
 
 ---
 
@@ -89,7 +90,8 @@ drwxr-xr-x  4 dev  staff   128 Jan  9 09:14 src
 
 El primer carácter de cada línea es el tipo: `-` para archivo, `d` para directorio. El `drwxr-xr-x` en `assets` es tu confirmación de que es una carpeta.
 
-> **Trampa:** `ll` no es `ls -l` en macOS. Algunas distribuciones de Linux lo definen como alias; macOS no, y el shell informa `command not found`. Escribe los flags.
+> [!warning] Trampa
+> `ll` no es `ls -l` en macOS. Algunas distribuciones de Linux lo definen como alias; macOS no, y el shell informa `command not found`. Escribe los flags.
 
 ---
 

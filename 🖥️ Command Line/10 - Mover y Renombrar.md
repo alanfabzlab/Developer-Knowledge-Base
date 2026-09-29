@@ -52,7 +52,8 @@ $ ls builds
 darwin  linux  web  windows
 ```
 
-> **Trampa:** Un destino directorio que no existe se trata como un **nombre nuevo**, no como una ubicación. `mv saves saved` renombra la carpeta; `mv saves archive/` falla salvo que `archive/` ya exista. Créala antes con `mkdir -p archive`.
+> [!warning] Trampa
+> Un destino directorio que no existe se trata como un **nombre nuevo**, no como una ubicación. `mv saves saved` renombra la carpeta; `mv saves archive/` falla salvo que `archive/` ya exista. Créala antes con `mkdir -p archive`.
 
 ---
 
