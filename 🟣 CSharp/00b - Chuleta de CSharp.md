@@ -415,22 +415,22 @@ int nivelBotin = rng.Next(0, 4);               // 0, 1, 2 o 3
 
 ## 🔹 Viniendo de Python
 
-| Python | C# |
-| --- | --- |
-| `print(x)` | `Console.WriteLine(x)` |
-| `input("Nombre? ")` | `Console.Write("Nombre? ")` y luego `Console.ReadLine()` |
-| `int(x)` / `str(x)` | `Convert.ToInt32(x)` / `x.ToString()` |
-| `True` / `False` / `None` | `true` / `false` / `null` |
-| `len(s)` / `len(a)` / `len(lst)` | `s.Length` / `a.Length` / `lst.Count` |
-| `for i in range(n)` | `for (int i = 0; i < n; i++)` |
-| `a ** b` | `Math.Pow(a, b)` |
-| `a % b` | `a % b` — idéntico |
-| `f"{x}"` | `$"{x}"` |
-| `list` / `dict` | `List<T>` / `Dictionary<K, V>` |
-| `# comentario` | `// comentario` — y `/* bloque */` también funciona |
-| `"12"` -> `int` | `int.Parse(s)` o `int.TryParse(s, out int n)` |
-| `len(x) == 0` en una lista | `list.Count == 0` |
-| `//` (división entera) | `23 / 2` da `11` — C# no tiene operador `//` |
+| Python                           | C#                                                       |
+| -------------------------------- | -------------------------------------------------------- |
+| `print(x)`                       | `Console.WriteLine(x)`                                   |
+| `input("Nombre? ")`              | `Console.Write("Nombre? ")` y luego `Console.ReadLine()` |
+| `int(x)` / `str(x)`              | `Convert.ToInt32(x)` / `x.ToString()`                    |
+| `True` / `False` / `None`        | `true` / `false` / `null`                                |
+| `len(s)` / `len(a)` / `len(lst)` | `s.Length` / `a.Length` / `lst.Count`                    |
+| `for i in range(n)`              | `for (int i = 0; i < n; i++)`                            |
+| `a ** b`                         | `Math.Pow(a, b)`                                         |
+| `a % b`                          | `a % b` — idéntico                                       |
+| `f"{x}"`                         | `$"{x}"`                                                 |
+| `list` / `dict`                  | `List<T>` / `Dictionary<K, V>`                           |
+| `# comentario`                   | `// comentario` — y `/* bloque */` también funciona      |
+| `"12"` -> `int`                  | `int.Parse(s)` o `int.TryParse(s, out int n)`            |
+| `len(x) == 0` en una lista       | `list.Count == 0`                                        |
+| `//` (división entera)           | `23 / 2` da `11` — C# no tiene operador `//`             |
 
 ## 🔹 Constantes Útiles
 
