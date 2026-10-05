@@ -37,7 +37,7 @@ Empieza por [[01 - Fundamentos de HTML]]. Aprende a leer el marcado antes de apr
 
 ### 🏛️ 2. Estructura y Atributos (Capítulo 2)
 
-* **Estructura y Atributos:** [02 - Estructura y Atributos](./02%20-%20Estructura%20y%20Atributos.md) — Estructura de HTML, árbol genealógico (padres/hijos/hermanos), comentarios, atributos, `class`/`id`, `<div>`, estilos en línea y el elemento `<style>`.
+* **Estructura y Atributos:** [02 - Estructura y Atributos](./02%20-%20Estructura%20y%20Atributos.md) — Estructura de HTML, árbol del clan (padres/hijos/hermanos), comentarios, atributos, `class`/`id`, `<div>`, estilos en línea y el elemento `<style>`.
 
 ### 📝 3. Formularios (Capítulo 3)
 

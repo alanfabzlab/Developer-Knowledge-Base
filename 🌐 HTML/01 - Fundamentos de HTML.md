@@ -52,7 +52,7 @@ Este curso se centra en HTML. Los archivos que crearemos usan la extensión **`.
 
 Un **editor de código** es un editor de texto con el que podemos escribir, editar y ejecutar código.
 
-### Ejercicio: Mi primera página web
+### Ejercicio: Misión 01: Generar tu primera página
 
 Escribe estas dos líneas en tu editor, cambia el texto de ejemplo y pulsa **Run**:
 
@@ -110,7 +110,7 @@ Sangrar el HTML no es obligatorio, pero sí una buena práctica: facilita la lec
 </body>
 ```
 
-### Ejercicio: Elemental
+### Misión: Pergamino Elemental
 
 Crea `elemental.html` para mostrar los cuatro elementos de la antigua Grecia (Fuego, Agua, Tierra, Aire) en el navegador, bien sangrado.
 
@@ -168,7 +168,7 @@ Una **etiqueta autocerrada** no necesita una etiqueta de cierre separada (no exi
 > espacios, tabuladores y saltos de línea dentro de un elemento se convierte en un único
 > espacio. El único modo de romper una línea desde HTML es con `<br>`.
 
-### Ejercicio: Periódico
+### Misión: Crónica de la Taberna
 
 Crea `newspaper.html` con lo que ocurría en las noticias el día en que naciste:
 
@@ -218,7 +218,7 @@ Se celebrará el <u>lunes 14 de octubre</u> a las <s>19:00</s> 20:00 (hora EST).
 > Estas etiquetas sirven para aprender, pero **no son la mejor práctica actual**. En el curso
 > de CSS veremos la forma moderna de aplicar estilos.
 
-### Ejercicio: Charla Corporativa
+### Misión: Anuncio del Gremio
 
 Recrea un texto con jerga corporativa en `corporate.html` usando `<p>`, `<b>`, `<i>`, `<s>` y `<u>`.
 
@@ -263,9 +263,9 @@ Usamos `<ul>` cuando el orden no importa. Para numerar los pasos, usamos `<ol>`:
 </ol>
 ```
 
-### Ejercicio: Sous-Chef
+### Misión: Receta de Poción
 
-Crea `chef.html` con una receta que te apetezca: una lista **desordenada** para los ingredientes y una lista **ordenada** para los pasos.
+Crea `chef.html` con una receta de poción que te apetezca: una lista **desordenada** para los ingredientes y una lista **ordenada** para los pasos.
 
 ```html
 <h2>Ingredientes</h2>
@@ -285,7 +285,7 @@ Crea `chef.html` con una receta que te apetezca: una lista **desordenada** para 
 
 > [!TIP]
 > Esta estructura aparece en casi todas las pantallas de juego: un `<ul>` para estadísticas,
-> un `<ol>` para pasos, una `<table>` para el resto. Un diario de misiones, una receta, una
+> un `<ol>` para pasos, una `<table>` para el resto. Un diario de misiones, una receta de poción, una
 > lista de habilidades y una baraja siguen exactamente esta forma.
 
 ---
@@ -333,12 +333,12 @@ Usamos el elemento de imagen `<img>`:
 > roto y no sabe qué debería aparecer — y un lector de pantalla anuncia el nombre del
 > archivo en voz alta.
 
-### Ejercicio: Mascota Perdida
+### Misión Secundaria: Compañero Desaparecido
 
-Un amigo ha perdido a su mascota. Crea `pet.html` con:
+Un amigo ha perdido a su compañero. Crea `pet.html` con:
 
-- El nombre de la mascota.
-- Una foto de la mascota con `<img>`.
+- El nombre de la compañero.
+- Una foto de la compañero con `<img>`.
 - Una breve descripción.
 - Información de contacto con `<a>`.
 
@@ -353,7 +353,7 @@ Un amigo ha perdido a su mascota. Crea `pet.html` con:
 
 ## 07. Grupo Favorito
 
-### Recapitulación del capítulo
+### Punto de Control: Recapitulación
 
 - Elementos HTML, etiquetas y sangría.
 - Encabezados: `<h1>` a `<h6>`.
@@ -399,14 +399,14 @@ Crea `band.html` sobre tu artista favorito, usando **todos** los elementos apren
 
 > [!TIP]
 > **Versión para desarrollo de videojuegos**
-> Esta página de un grupo musical es igual que una ficha de enemigo o de personaje. Cambia el
+> Esta ficha de banda de taberna es igual que una ficha de enemigo o de personaje. Cambia el
 > encabezado por el nombre de la criatura, la descripción por el lore, la lista desordenada
 > por sus habilidades y la lista ordenada por su botín. El capítulo [[02 - Estructura y Atributos]]
 > toma esa ficha y le añade `class` e `id` para que una hoja de estilos pueda darle forma.
 
 ---
 
-## Artículo extra: Herramientas de desarrollo
+## Botín Extra:: Consola de Depuración
 
 ### Inspeccionar
 
@@ -447,7 +447,7 @@ Desde el panel "Elements" (Elementos) puedes hacer doble clic en el código HTML
 
 ---
 
-## Conclusiones clave
+## XP Obtenida: Conclusiones clave
 
 - 🧱 **Elementos** = etiqueta de apertura + contenido + etiqueta de cierre.
 - 📐 **Sangría** con dos espacios para mostrar el anidamiento.
@@ -460,7 +460,7 @@ Desde el panel "Elements" (Elementos) puedes hacer doble clic en el código HTML
 
 ---
 
-## Casos de uso habituales
+## Botín: Casos de uso reales
 
 - 📰 Artículos, blogs y páginas de noticias
 - 📋 Recetas, listas de tareas y menús
@@ -470,7 +470,7 @@ Desde el panel "Elements" (Elementos) puedes hacer doble clic en el código HTML
 
 ---
 
-## Ejercicios prácticos
+## Misiones Secundarias: Ejercicios prácticos
 
 1. Crea `bio.html` con un `<h1>`, dos párrafos y una lista con tus aficiones.
 2. Añade un enlace a tu sitio favorito y otro con `mailto:` para enviarte un correo.

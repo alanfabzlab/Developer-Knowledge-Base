@@ -83,7 +83,7 @@ Por defecto, el botón de enviar dice "Submit" (Enviar). Podemos cambiar ese tex
 > recarga y no ocurre nada visible. Mientras no tengamos un backend, ese comportamiento es
 > correcto, no es un error.
 
-### Ejercicio: Google
+### Misión: Portal de Búsqueda
 
 Vamos a recrear la barra de búsqueda original de Google en `google.html`. Partimos de este código:
 
@@ -150,7 +150,7 @@ Hay muchos más tipos de `<input>` en HTML. Puedes consultar el resto en la docu
 > Todos los campos `<input>` deben estar dentro de **un único** elemento `<form>`. Piensa en
 > `<form>` como un sobre: recoge todos los datos y los envía juntos.
 
-### Ejercicio: Registro v1
+### Misión: Creación de Personaje I
 
 Crea `sign_up.html` con un formulario clásico de registro: un encabezado "Regístrate", campos para nombre de usuario, correo electrónico y contraseña, y un botón de enviar. Parte de este código:
 
@@ -245,7 +245,7 @@ En este ejemplo, "Nombre" es obligatorio. Si se deja vacío, el navegador impide
 > sí bloquea el envío si no se alcanza. Usa ambos cuando quieras imponer un rango de
 > caracteres.
 
-### Ejercicio: Registro v2
+### Misión: Creación de Personaje II
 
 Vuelve a editar `sign_up.html` y añade validación:
 
@@ -362,7 +362,7 @@ El ejercicio `rsvp.html` pedirá: nombre, si vienes o no (botones de opción `ra
 
 ---
 
-## Conclusiones clave
+## XP Obtenida: Conclusiones clave
 
 - 📝 Un **formulario** recoge datos y los envía a algún sitio (`action`) de una forma determinada (`method`).
 - 🔤 Los tipos básicos: `text`, `email`, `password`, `number` y `submit`.
@@ -371,7 +371,7 @@ El ejercicio `rsvp.html` pedirá: nombre, si vienes o no (botones de opción `ra
 
 ---
 
-## Casos de uso habituales
+## Botín: Casos de uso reales
 
 - 🔍 Barras de búsqueda
 - 👤 Formularios de registro e inicio de sesión
@@ -381,7 +381,7 @@ El ejercicio `rsvp.html` pedirá: nombre, si vienes o no (botones de opción `ra
 
 ---
 
-## Ejercicios prácticos
+## Misiones Secundarias: Ejercicios prácticos
 
 1. Crea una página de inicio de sesión con correo y contraseña, ambos obligatorios.
 2. Haz un campo numérico para la edad que solo acepte valores entre 0 y 120.

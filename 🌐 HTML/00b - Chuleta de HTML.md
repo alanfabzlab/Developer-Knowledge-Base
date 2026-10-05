@@ -180,7 +180,7 @@ durante años.
 
 ---
 
-## 🪄 Atajos de las herramientas de desarrollo
+## 🪄 Atajos de Consola de Depuración
 
 | Navegador | Windows / Linux | macOS |
 | :--- | :--- | :--- |

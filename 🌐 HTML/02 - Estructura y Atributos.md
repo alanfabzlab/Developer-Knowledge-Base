@@ -16,7 +16,7 @@
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #E34F26, #2DD4BF, #E34F26, transparent); margin: 24px 0;" />
 
-El capítulo 01 nos enseñó a escribir páginas que funcionaban. Este capítulo las hace **mantenibles**: un esqueleto real de documento, comentarios que explican la intención, etiquetas `class` e `id` para que otros elementos puedan dirigirse a ellas y nuestros primeros pasos con CSS. Terminamos con el "MySpace Top 8", que es el momento en el que varios `<div>` pasan a formar un diseño.
+El capítulo 01 nos enseñó a escribir páginas que funcionaban. Este capítulo las hace **mantenibles**: un esqueleto real de documento, comentarios que explican la intención, etiquetas `class` e `id` para que otros elementos puedan dirigirse a ellas y nuestros primeros pasos con CSS. Terminamos con el "MySpace Plantilla de Grupo", que es el momento en el que varios `<div>` pasan a formar un diseño.
 
 > [!NOTE]
 > **Por qué este capítulo es más importante de lo que parece**
@@ -67,7 +67,7 @@ El elemento `<title>` va dentro de `<head>` y define el texto que aparece en la 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Codédex | Empieza tu aventura de programación</title>
+    <title>GameForge | Empieza tu aventura de programación</title>
   </head>
   <body>
     Aquí va el contenido
@@ -80,7 +80,7 @@ Todo el contenido principal va dentro de `<body>`.
 > [!WARNING]
 > Un archivo sin `<title>` muestra la ruta del archivo en la pestaña — `file:///Users/tu-nombre/index.html` — lo cual es muy poco profesional. Pon siempre un `<title>` que describa la página.
 
-### Ejercicio: Plano
+### Misión: Plano del Mapa
 
 Crea `blueprint.html` con la declaración `<!DOCTYPE html>`, el elemento `<html>`, dentro un `<head>` con un título y un `<body>` con un párrafo. Así tienes el esqueleto para todas tus páginas HTML.
 
@@ -146,7 +146,7 @@ Dos o más elementos son **hermanos** si comparten el mismo padre directo.
 
 Los dos elementos `<li>` son hermanos, porque ambos son hijos del mismo padre: `<ul>`.
 
-### Ejercicio: Árbol Genealógico
+### Misión: Árbol del Clan
 
 Crea `family_tree.html` sobre tu familia (o una famosa: los Simpson, los Stark, los Kardashian...) usando listas anidadas con `<ul>` y `<li>`. Usa siempre la estructura completa con `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`.
 
@@ -228,7 +228,7 @@ También pueden estar dentro de un elemento:
 > **por qué** lo hace es oro puro: `<!-- cerrar el diálogo al éxito, no al cancelar -->` sobrevive
 > a cualquier refactor; `<!-- incrementa i -->` no.
 
-### Ejercicio: Anuncio de Craigslist
+### Misión: Tablero del Gremio
 
 Necesitamos limpiar este código. Pega este ejemplo en `craigslist_ad.html`, ejecútalo y sigue los comentarios para corregirlo:
 
@@ -314,8 +314,8 @@ Por defecto, `<ol>` numera sus elementos con 1, 2, 3... El atributo `type` cambi
 ### Atributos de la etiqueta `<img>`
 
 ```html
-<img src="https://www.codedex.io/images/tier1.png">
-<img alt="Chica con portátil pixelado" src="https://www.codedex.io/images/tier1.png">
+<img src="https://gameforge.example/images/tier1.png">
+<img alt="Chica con portátil pixelado" src="https://gameforge.example/images/tier1.png">
 ```
 
 - `src` indica la ruta de la imagen.
@@ -325,8 +325,8 @@ Por defecto, `<ol>` numera sus elementos con 1, 2, 3... El atributo `type` cambi
 ### Atributos de la etiqueta `<a>`
 
 ```html
-<a href="https://www.codedex.io/">Codédex</a>
-<a href="https://www.codedex.io/" target="_blank">Codédex</a>
+<a href="https://gameforge.example/">GameForge</a>
+<a href="https://gameforge.example/" target="_blank">GameForge</a>
 ```
 
 - `href` es la URL a la que lleva el enlace.
@@ -337,7 +337,7 @@ Por defecto, `<ol>` numera sus elementos con 1, 2, 3... El atributo `type` cambi
 > Lo que sí importa son las **comillas**: sin ellas el navegador adivina y, si el valor tiene
 > espacios, el atributo se rompe.
 
-### Ejercicio: Artículo de Wikipedia
+### Misión: Entrada del Bestiario
 
 Escribe un artículo tipo "Wikipedia" sobre uno de tus héroes en `wiki_article.html`. Debe incluir:
 
@@ -430,7 +430,7 @@ Los valores de `class` e `id` deben escribirse siempre en **minúsculas**. Si ti
 > adecuado (`section`, `article`, `nav`, `ul`...). Un montón de `<div>` apilados es lo que
 > se conoce como "div soup" (sopa de divs).
 
-### Ejercicio: Lorem Ipsum
+### Misión: Pergamino de Lore
 
 **Lorem Ipsum** es texto de relleno que usamos para ver cómo quedará el diseño antes de tener el texto definitivo. Crea `lorem_ipsum.html`:
 
@@ -469,7 +469,7 @@ Los valores de `class` e `id` deben escribirse siempre en **minúsculas**. Si ti
 
 ---
 
-## 13. Power Rangers
+## 13. Escuadrón de Héroes
 
 ### El atributo `style`
 
@@ -564,9 +564,9 @@ Tipos de selectores:
 > delante: `.ranger-div` apunta a `class="ranger-div"`, `#red-ranger` apunta a
 > `id="red-ranger"`. Ese emparejamiento es el mecanismo entero.
 
-### Ejercicio: Power Rangers
+### Misión: Formación del Equipo
 
-En 1993 se estrenó "Mighty Morphin' Power Rangers". Los cinco Power Rangers originales tenían cada uno un color: rojo, azul, negro, amarillo y rosa. Crea `power_rangers.html`. Coloca esto en `<body>`:
+En 1993 se estrenó "Mighty Morphin' Escuadrón de Héroes". Los cinco Escuadrón de Héroes originales tenían cada uno un color: rojo, azul, negro, amarillo y rosa. Crea `power_rangers.html`. Coloca esto en `<body>`:
 
 ```html
 <div class="ranger-div" id="red-ranger"></div>
@@ -585,7 +585,7 @@ Añade un elemento `<style>` en `<head>` y aplica:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Power Rangers</title>
+    <title>Escuadrón de Héroes</title>
     <style>
       .ranger-div {
         width: 50%;
@@ -625,9 +625,9 @@ Añade un elemento `<style>` en `<head>` y aplica:
 
 ---
 
-## 14. MySpace Top 8
+## 14. MySpace Plantilla de Grupo
 
-### Recapitulación del capítulo
+### Punto de Control: Recapitulación
 
 - Toda página HTML necesita `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`.
 - `<head>` contiene información del documento, como `<title>`.
@@ -635,9 +635,9 @@ Añade un elemento `<style>` en `<head>` y aplica:
 - Los atributos (`class`, `id`, `src`, `href`...) personalizan los elementos.
 - Podemos dar estilo con el atributo `style` o con el elemento `<style>` (CSS viene después).
 
-### Proyecto: MySpace Top 8
+### Proyecto: MySpace Plantilla de Grupo
 
-El **Top 8** era una función muy famosa de MySpace: permitía elegir a 8 amigos para mostrarlos en tu perfil. Crea `top_8.html`.
+El **Plantilla de Grupo** era una función muy famosa de MySpace: permitía elegir a 8 amigos para mostrarlos en tu perfil. Crea `top_8.html`.
 
 Pega este bloque `<style>` en `<head>`:
 
@@ -685,7 +685,7 @@ Si no quieres usar nombres reales, usa apodos divertidos.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MySpace Top 8</title>
+    <title>MySpace Plantilla de Grupo</title>
     <style>
       /* ...estilos... */
     </style>
@@ -745,7 +745,7 @@ Si no quieres usar nombres reales, usa apodos divertidos.
 
 ---
 
-## Conclusiones clave
+## XP Obtenida: Conclusiones clave
 
 - 🧬 Toda página: `<!DOCTYPE html>` → `<html>` → `<head>` + `<body>`.
 - 🗂️ Los elementos forman un **árbol**: padres, hijos y hermanos.
@@ -758,7 +758,7 @@ Si no quieres usar nombres reales, usa apodos divertidos.
 
 ---
 
-## Casos de uso habituales
+## Botín: Casos de uso reales
 
 - 🗺️ Páginas con varias secciones y navegación interna
 - 📚 Artículos tipo Wikipedia
@@ -768,13 +768,13 @@ Si no quieres usar nombres reales, usa apodos divertidos.
 
 ---
 
-## Ejercicios prácticos
+## Misiones Secundarias: Ejercicios prácticos
 
 1. Añade una tercera sección a `lorem_ipsum.html` con su propio enlace en la parte superior.
 2. Crea una página en la que todos los `<p>` tengan el mismo estilo desde un bloque `<style>`.
 3. Convierte una imagen en enlace: envuelve un `<img>` dentro de un `<a>`.
 4. Añade comentarios a un archivo antiguo explicando qué hace cada sección.
-5. **Desafío final:** rehace el ejercicio de Power Rangers como una pantalla de equipo: usa una clase `.slot-equipo` y cuatro IDs (`#miembro-1` a `#miembro-4`), con una regla común para que todos tengan el mismo tamaño.
+5. **Desafío final:** rehace el ejercicio de Escuadrón de Héroes como una pantalla de equipo: usa una clase `.slot-equipo` y cuatro IDs (`#miembro-1` a `#miembro-4`), con una regla común para que todos tengan el mismo tamaño.
 
 ---
 

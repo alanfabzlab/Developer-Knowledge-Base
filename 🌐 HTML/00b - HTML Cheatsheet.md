@@ -178,7 +178,7 @@ easiest place to leave a lie behind: `<!-- fix this later -->` survives for year
 
 ---
 
-## 🪄 Developer Tools Shortcuts
+## 🪄 Debug Console Shortcuts
 
 | Browser | Windows / Linux | macOS |
 | :--- | :--- | :--- |

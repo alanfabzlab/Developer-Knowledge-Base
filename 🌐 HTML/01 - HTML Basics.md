@@ -3,7 +3,7 @@
 **Spanish version:** [01 - Fundamentos de HTML.md](01%20-%20Fundamentos%20de%20HTML.md)
 
 **Course:** HTML
-**Topic:** What HTML is, Elements & Tags, Headings, Line Breaks, Text Formatting, Lists, Links, Images & Developer Tools
+**Topic:** What HTML is, Elements & Tags, Headings, Line Breaks, Text Formatting, Lists, Links, Images & Debug Console
 **Tags:** `#html` `#web-development` `#basics` `#game-dev`
 
 <p align="left">
@@ -17,7 +17,7 @@
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #E34F26, #2DD4BF, #E34F26, transparent); margin: 24px 0;" />
 
 The first chapter of the language that gives every web page its bones. By the end of it you
-will have written a band page from scratch — headings, formatted text, lists, a link and an
+will have written a tavern roster page from scratch — headings, formatted text, lists, a link and an
 image — and you will know how to inspect any page on the internet to find out how it was
 built. Element and tag reference: [[00b - HTML Cheatsheet]].
 
@@ -51,7 +51,7 @@ This course focuses on HTML. The files we create use the **`.html`** file extens
 
 A **code editor** is a text editor that can write, edit and run code.
 
-### Exercise: First Web Page
+### Exercise: Quest 01: Spawn Your First Page
 
 Type these two lines into the editor, replace the placeholder text, and press **Run**:
 
@@ -109,7 +109,7 @@ Indenting HTML isn't required, but it's good practice because it makes code easi
 </body>
 ```
 
-### Exercise: Elemental
+### Quest: The Elemental Scroll
 
 Create `elemental.html` that shows the four ancient Greek elements (Fire, Water, Earth, Air) in the browser, nicely indented.
 
@@ -165,7 +165,7 @@ A **self-closing tag** doesn't need a separate closing tag (there is no `</br>`)
 > the browser. Whitespace is **collapsed**: any run of spaces, tabs and newlines inside an
 > element becomes one space. `<br>` is the only way to break a line from HTML.
 
-### Exercise: Newspaper
+### Quest: Tavern Chronicle
 
 Create `newspaper.html` with what was happening in the news on the day you were born:
 
@@ -213,7 +213,7 @@ It will be held on <u>Monday, October 14th</u> at <s>7PM</s> 8PM EST.</p>
 > [!NOTE]
 > These tags are good for learning basic styling, but are **no longer best practice**. Other ways to style text are covered with CSS.
 
-### Exercise: Corporate Talk
+### Quest: Guild Announcement
 
 Recreate the exact format of some corporate jargon in `corporate.html` using `<p>`, `<b>`, `<i>`, `<s>` and `<u>`.
 
@@ -258,9 +258,9 @@ Each item is wrapped in a `<li>` **list item** element.
 </ol>
 ```
 
-### Exercise: Sous-Chef
+### Quest: Potion Recipe
 
-Create `chef.html` with a recipe you've been craving: an **unordered** list for the ingredients and an **ordered** list for the cooking instructions.
+Create `chef.html` with a potion recipe you've been craving: an **unordered** list for the ingredients and an **ordered** list for the cooking instructions.
 
 ```html
 <h2>Ingredients</h2>
@@ -280,7 +280,7 @@ Create `chef.html` with a recipe you've been craving: an **unordered** list for 
 
 > [!TIP]
 > This is the shape of almost every game data screen: a `<ul>` of stats, an `<ol>` of steps,
-> a `<table>` for the rest. A quest log, a recipe, a skill list and a deck of cards are the
+> a `<table>` for the rest. A quest log, a potion recipe, a skill list and a deck of cards are the
 > same three elements in a different order.
 
 ---
@@ -326,12 +326,12 @@ Use the `<img>` image element:
 > An `<img>` without `alt` is a bug. If the image fails to load, the visitor sees a broken
 > icon and no explanation — and a screen reader announces the file path out loud.
 
-### Exercise: Lost Pet
+### Quest: Missing Pet Side Quest
 
-Your friend lost their pet. Create `pet.html` that includes:
+Your friend lost their companion. Create `companion.html` that includes:
 
-- The pet name.
-- A pet picture with `<img>`.
+- The companion name.
+- A companion picture with `<img>`.
 - A short description.
 - Contact info with `<a>`.
 
@@ -346,7 +346,7 @@ Your friend lost their pet. Create `pet.html` that includes:
 
 ## 07. Favorite Band
 
-### Chapter Recap
+### Checkpoint: Chapter Recap
 
 - HTML elements, tags and indentation.
 - Heading tags: `<h1>` - `<h6>`.
@@ -392,30 +392,30 @@ Create `band.html` for your favorite artist using **all** the elements learned a
 
 > [!TIP]
 > **Game dev version**
-> The band page is the same page as an enemy card or a character sheet. Swap the heading for
+> The tavern roster page is the same page as an enemy card or a character sheet. Swap the heading for
 > the creature name, the blurb for the lore, the unordered list for the ability list and the
 > ordered list for the drop table. Chapter [[02 - Structure & Attributes]] takes that card
 > and gives it `class` and `id` so a stylesheet can target it.
 
 ---
 
-## Bonus Article: Developer Tools
+## Bonus Loot:: Debug Console
 
 ### Inspect
 
-**Developer Tools** allow us to create, test and debug web development software. Current browsers provide integrated developer tools, which let us **inspect** a website and see the code of virtually every site in the world. You can now see the complete HTML code of the page you are on.
+**Debug Console** allow us to create, test and debug web development software. Current browsers provide integrated developer tools, which let us **inspect** a website and see the code of virtually every site in the world. You can now see the complete HTML code of the page you are on.
 
 | Browser | Tool Name | How To Open | Keyboard Shortcut |
 | :--- | :--- | :--- | :--- |
 | **Google Chrome** | DevTools | Right-click > "Inspect" | `ctrl` + `shift` + `c` (Windows/Linux); `cmd` + `option` + `i` (macOS) |
 | **Apple Safari** | Safari Develop menu | Menu > Preferences > Developer > Show JavaScript Console | `option` + `cmd` + `c` |
-| **Mozilla Firefox** | Firefox Developer Tools | Tools > Web Developer > Web Developer Tools | `ctrl` + `shift` + `i` (Windows/Linux); `cmd` + `option` + `i` (macOS) |
+| **Mozilla Firefox** | Firefox Debug Console | Tools > Web Developer > Web Debug Console | `ctrl` + `shift` + `i` (Windows/Linux); `cmd` + `option` + `i` (macOS) |
 
 How to open them:
 
 - **Chrome:** right-click and choose "Inspect". Click the pointer icon in the top-left corner of the dev tools and hover over an element to inspect it.
 - **Safari:** Safari > Preferences > **Advanced** tab > check "Show Develop menu in menu bar". Then Develop > Show Web Inspector.
-- **Firefox:** hamburger menu (upper right) > More Tools > Web Developer Tools.
+- **Firefox:** hamburger menu (upper right) > More Tools > Web Debug Console.
 
 ### Common Features
 
@@ -430,16 +430,16 @@ Click into the HTML code in the Elements panel, change the content of an element
 ### More Resources
 
 - Google Chrome DevTools (documentation)
-- Safari Developer Tools Overview
+- Safari Debug Console Overview
 - Firefox DevTools User Docs
 
 > [!TIP]
-> Developer Tools are the fastest way to learn HTML. Find any page you like, inspect it, and
+> Debug Console are the fastest way to learn HTML. Find any page you like, inspect it, and
 > read the tags the author chose. Ten minutes of that teaches more than an hour of guessing.
 
 ---
 
-## Key Takeaways
+## XP Earned: Key Takeaways
 
 - 🧱 **Elements** = opening tag + content + closing tag.
 - 📐 **Indent** with two spaces to show nesting.
@@ -448,11 +448,11 @@ Click into the HTML code in the Elements panel, change the content of an element
 - 🖍️ `<b>`, `<i>`, `<u>`, `<s>` format text (CSS is the modern way).
 - 📋 `<ul>` for bullets, `<ol>` for numbers, `<li>` for each item.
 - 🔗 `<a href>` links, `<img src>` images.
-- 🔍 Developer Tools let you inspect any page.
+- 🔍 Debug Console let you inspect any page.
 
 ---
 
-## Common Use Cases
+## Loot Table: Real-World Use Cases
 
 - 📰 Articles, blogs and news pages
 - 📋 Recipes, to-do lists and menus
@@ -462,12 +462,12 @@ Click into the HTML code in the Elements panel, change the content of an element
 
 ---
 
-## 🎮 Practice Exercises
+## 🎮 Side Quests: Practice Exercises
 
 1. Make a `bio.html` page with an `<h1>`, two paragraphs and a list of your hobbies.
 2. Add a link that opens your favorite site and an email link with `mailto:`.
 3. Use all four text formatting tags in one paragraph.
-4. Open Developer Tools on any site and change a heading's text.
+4. Open Debug Console on any site and change a heading's text.
 5. **Boss fight:** build `bestiary.html` with one `<h1>`, an `<h2>` per creature, an `<img>` with `alt`, and a `<ul>` of weaknesses plus an `<ol>` of drops for each of three creatures.
 
 ---

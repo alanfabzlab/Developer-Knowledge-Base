@@ -83,7 +83,7 @@ By default the submit button says "Submit". Change its text with the `value` att
 > happens — which looks exactly like "my form is broken". Until a backend exists, that is
 > correct behavior, not a bug.
 
-### Exercise: Google
+### Quest: Search Portal
 
 Recreate the original Google search bar in `google.html`. Starting from this code:
 
@@ -149,7 +149,7 @@ There are many other `<input>` types in HTML forms (check the complete list in t
 > [!IMPORTANT]
 > All the `<input>` elements should be placed inside a **single** `<form>` element. Think of the `<form>` as an **envelope** that contains all the data we want to send to the server.
 
-### Exercise: Sign Up v1
+### Quest: Character Creation I
 
 Create `sign_up.html` with a classic sign up page: a "Sign Up" heading, Username, Email and Password fields, and a Submit button. Start from:
 
@@ -245,7 +245,7 @@ Here the "Name" `<input>` is marked as required. If it is left blank, the browse
 > value is any good. `minlength` is the attribute that blocks submission. Use both when you
 > want the keystroke cap *and* the rule enforced.
 
-### Exercise: Sign Up v2
+### Quest: Character Creation II
 
 Revisit `sign_up.html` and add some form validation:
 
@@ -310,7 +310,7 @@ Try entering `1000` in an input with `max="67"` and see what happens: the browse
 > `max` and `min` do not stop you from *typing* `1000` — they flag the value as invalid when
 > you submit. The arrows respect them; the keyboard does not.
 
-### Exercise Preview: RSVP
+### Quest Preview: Raid RSVP
 
 The starter file for `rsvp.html` hints at what comes next in the chapter: a text input for the name, a group of **radio inputs** ("Are you coming?"), **checkbox inputs** (dietary restrictions) and a submit button.
 
@@ -363,7 +363,7 @@ The starter file for `rsvp.html` hints at what comes next in the chapter: a text
 
 ---
 
-## Key Takeaways
+## XP Earned: Key Takeaways
 
 - 📝 A **form** collects input and sends it somewhere (`action`) in a certain way (`method`).
 - 🔤 `<input type="text">`, `"email"`, `"password"`, `"number"` and `"submit"` cover the basics.
@@ -372,7 +372,7 @@ The starter file for `rsvp.html` hints at what comes next in the chapter: a text
 
 ---
 
-## Common Use Cases
+## Loot Table: Real-World Use Cases
 
 - 🔍 Search bars
 - 👤 Sign up and login pages
@@ -382,7 +382,7 @@ The starter file for `rsvp.html` hints at what comes next in the chapter: a text
 
 ---
 
-## 🎮 Practice Exercises
+## 🎮 Side Quests: Practice Exercises
 
 1. Build a login page with email and password, both required.
 2. Make a number input for age that only accepts 0 to 120.

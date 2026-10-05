@@ -33,11 +33,11 @@ Start at [[01 - HTML Basics]]. Learn to read the markup before you learn to styl
 
 ### 🧱 1. HTML Basics (Chapter 1)
 
-* **HTML Basics:** [01 - HTML Basics](./01%20-%20HTML%20Basics.md) — Elements & tags, headings, line breaks, text formatting, lists, links, images and Developer Tools.
+* **HTML Basics:** [01 - HTML Basics](./01%20-%20HTML%20Basics.md) — Elements & tags, headings, line breaks, text formatting, lists, links, images and Debug Console.
 
 ### 🏛️ 2. Structure & Attributes (Chapter 2)
 
-* **Structure & Attributes:** [02 - Structure & Attributes](./02%20-%20Structure%20&%20Attributes.md) — HTML structure, family tree (parents/children/siblings), comments, attributes, `class`/`id`, `<div>`, inline styles and the `<style>` element.
+* **Structure & Attributes:** [02 - Structure & Attributes](./02%20-%20Structure%20&%20Attributes.md) — HTML structure, clan tree (parents/children/siblings), comments, attributes, `class`/`id`, `<div>`, inline styles and the `<style>` element.
 
 ### 📝 3. Forms (Chapter 3)
 
@@ -67,7 +67,7 @@ Start at [[01 - HTML Basics]]. Learn to read the markup before you learn to styl
 | Tool | Why |
 | :--- | :--- |
 | Any code editor (VS Code recommended) | Write and save `.html` files |
-| A modern browser with Developer Tools | Run, inspect and debug your pages |
+| A modern browser with Debug Console | Run, inspect and debug your pages |
 | Obsidian (this vault) | Keep your notes, cheatsheets and exercises in one place |
 
 ---
@@ -78,15 +78,15 @@ Start at [[01 - HTML Basics]]. Learn to read the markup before you learn to styl
 | --- | --- | --- | --- |
 | 00b | [00b - HTML Cheatsheet](./00b%20-%20HTML%20Cheatsheet.md) | — | Elements, tags and link types |
 | 00c | [00c - HTML Cheatsheet II](./00c%20-%20HTML%20Cheatsheet%20II.md) | — | Attributes, `class` vs `id`, CSS basics, form inputs |
-| 01 | [01 - HTML Basics](./01%20-%20HTML%20Basics.md) | 01–07 + Bonus | Elements, headings, text formatting, lists, links, images, Developer Tools |
-| 02 | [02 - Structure & Attributes](./02%20-%20Structure%20&%20Attributes.md) | 08–14 | Page structure, family tree, comments, attributes, `class`/`id`, `<div>`, styles |
+| 01 | [01 - HTML Basics](./01%20-%20HTML%20Basics.md) | 01–07 + Bonus | Elements, headings, text formatting, lists, links, images, Debug Console |
+| 02 | [02 - Structure & Attributes](./02%20-%20Structure%20&%20Attributes.md) | 08–14 | Page structure, clan tree, comments, attributes, `class`/`id`, `<div>`, styles |
 | 03 | [03 - Forms](./03%20-%20Forms.md) | 15–18 *(partial)* | Forms, inputs, email/password, validation, number inputs |
 
 ---
 
 ## 🎮 Practice Philosophy
 
-A web page is readable text. If you can read the markup, you can write it. The exercises keep that principle: open the file in a browser after every tiny change. When something looks wrong, use Developer Tools to inspect the element and compare the actual HTML to what you typed.
+A web page is readable text. If you can read the markup, you can write it. The exercises keep that principle: open the file in a browser after every tiny change. When something looks wrong, use Debug Console to inspect the element and compare the actual HTML to what you typed.
 
 ---
 

@@ -18,7 +18,7 @@
 
 Chapter 01 wrote pages that worked. This chapter makes them **maintainable**: a real document
 skeleton, comments that explain intent, `class` and `id` labels that other code can target, and
-the first taste of CSS. It ends with the MySpace Top 8, which is the moment a stack of `<div>`s
+the first taste of CSS. It ends with the Party Roster, which is the moment a stack of `<div>`s
 turns into a layout.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ The `<title>` element goes in the `<head>` and assigns text to the **browser tab
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Codédex | Start your coding adventure</title>
+    <title>GameForge | Start your coding adventure</title>
   </head>
   <body>
     Code goes here
@@ -87,7 +87,7 @@ All the "main" code goes in the `<body>` element.
 > which is how half the "is my site finished?" bugs start. One `<title>` per file, and it
 > names the page, not the folder.
 
-### Exercise: Blueprint
+### Quest: Map Blueprint
 
 Create `blueprint.html` with a `<!DOCTYPE html>` declaration and an `<html>` element containing a `<head>` with a page title and a `<body>` with a paragraph. You now have the blueprint for all future HTML files.
 
@@ -109,7 +109,7 @@ Create `blueprint.html` with a `<!DOCTYPE html>` declaration and an `<html>` ele
 
 ### Parents & Children
 
-The elements in an HTML file are arranged like a **family tree**. Most elements can be **parents** with one or more **child** elements.
+The elements in an HTML file are arranged like a **clan tree**. Most elements can be **parents** with one or more **child** elements.
 
 ```html
 <!DOCTYPE html>
@@ -153,7 +153,7 @@ Elements are **siblings** if they share a direct parent element.
 
 The two `<li>` elements are siblings because both are children of the same parent, the `<ul>` element.
 
-### Exercise: Family Tree
+### Quest: Clan Tree
 
 "The apple doesn't fall far from the tree." Create `family_tree.html` for your family (or a famous one: the British Royal Family, the Kardashians, the Starks or the Simpsons) using list elements such as `<ul>` and `<li>`. Set up the page properly with `<!DOCTYPE html>`, `<html>`, etc.
 
@@ -187,7 +187,7 @@ Then ask yourself: which elements are parents? Which are children? Which are sib
 ```
 
 > [!TIP]
-> A nested `<ul>` inside an `<li>` is the classic family tree — and it is also the classic
+> A nested `<ul>` inside an `<li>` is the classic clan tree — and it is also the classic
 > party tree, tech tree and folder tree. The pattern is recursive: a container holding items
 > that are themselves containers holding items. The same shape describes a game scene graph.
 
@@ -235,7 +235,7 @@ They can also be used within an element:
 > comment that explains **why** is gold. `<!-- close the dialog on success, not on cancel -->`
 > survives a refactor; `<!-- increments i -->` does not.
 
-### Exercise: Craigslist Ad
+### Quest: Guild Notice Board
 
 Craig needs help cleaning up the codebase. Paste this starter code into `craigslist_ad.html`, run it, then edit the HTML following the comments:
 
@@ -321,8 +321,8 @@ By default, `<ol>` uses numbers to label its `<li>` elements. The `type` attribu
 ### Attributes in the Image Tag
 
 ```html
-<img src="https://www.codedex.io/images/tier1.png">
-<img alt="pixel girl using a laptop" src="https://www.codedex.io/images/tier1.png">
+<img src="https://gameforge.example/images/tier1.png">
+<img alt="pixel girl using a laptop" src="https://gameforge.example/images/tier1.png">
 ```
 
 - `src` specifies the file path of the image.
@@ -332,8 +332,8 @@ By default, `<ol>` uses numbers to label its `<li>` elements. The `type` attribu
 ### Attributes in the Anchor Tag
 
 ```html
-<a href="https://www.codedex.io/">Codédex</a>
-<a href="https://www.codedex.io/" target="_blank">Codédex</a>
+<a href="https://gameforge.example/">GameForge</a>
+<a href="https://gameforge.example/" target="_blank">GameForge</a>
 ```
 
 - `href` is the URL visited when the hyperlinked text is clicked.
@@ -344,7 +344,7 @@ By default, `<ol>` uses numbers to label its `<li>` elements. The `type` attribu
 > the same element. What does matter is the **quotes**: without them the browser guesses, and
 > a value with a space silently breaks the tag into two attributes.
 
-### Exercise: Wiki Article
+### Quest: Bestiary Entry
 
 Write a "Wikipedia" article about one of your heroes in `wiki_article.html`. Include:
 
@@ -436,7 +436,7 @@ The values of `class` and `id` must always be **lowercase**. If the name has mul
 > `<section>`, `<article>`, `<nav>` or `<ul>` when one of those says what you mean — a stack
 > of `<div>`s with `class` names is a page no one can navigate.
 
-### Exercise: Lorem Ipsum
+### Quest: Lore Scroll
 
 **Lorem Ipsum** is placeholder content commonly used to visualize how a page's text should look in the final copy. Create `lorem_ipsum.html`:
 
@@ -475,7 +475,7 @@ The values of `class` and `id` must always be **lowercase**. If the name has mul
 
 ---
 
-## 13. Power Rangers
+## 13. Hero Squad
 
 ### The `style` Attribute
 
@@ -570,9 +570,9 @@ Selectors:
 > character in front: `.ranger-div` targets `class="ranger-div"`, `#red-ranger` targets
 > `id="red-ranger"`. That correspondence is the entire mechanism.
 
-### Exercise: Power Rangers
+### Quest: Party Loadout
 
-In 1993, "Mighty Morphin' Power Rangers" premiered on TV. The five original rangers were each represented by a color: red, blue, black, yellow and pink. Create `power_rangers.html`. Put this in the `<body>`:
+In 1993, "Mighty Morphin' Hero Squad" premiered on TV. The five original rangers were each represented by a color: red, blue, black, yellow and pink. Create `power_rangers.html`. Put this in the `<body>`:
 
 ```html
 <div class="ranger-div" id="red-ranger"></div>
@@ -591,7 +591,7 @@ Insert a `<style>` element in the `<head>` and apply:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Power Rangers</title>
+    <title>Hero Squad</title>
     <style>
       .ranger-div {
         width: 50%;
@@ -631,9 +631,9 @@ Insert a `<style>` element in the `<head>` and apply:
 
 ---
 
-## 14. MySpace Top 8
+## 14. Party Roster
 
-### Chapter Recap
+### Checkpoint: Chapter Recap
 
 - Every HTML file should have a `<!DOCTYPE html>` declaration and an `<html>` element.
 - The `<head>` element contains important info for the page, such as the `<title>`.
@@ -641,7 +641,7 @@ Insert a `<style>` element in the `<head>` and apply:
 - Attributes like `class`/`id` or `src` enhance the way elements are organized, presented and work on the page.
 - We can add styles with either the `<style>` element or the `style` attribute.
 
-### Project: MySpace Top 8
+### Project: Party Roster
 
 The **Top 8** was an iconic feature of MySpace: it let users pick eight friends to display on their profile page. Create `top_8.html`.
 
@@ -691,7 +691,7 @@ If you don't want to use real names, use funny usernames or superlatives ("class
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MySpace Top 8</title>
+    <title>Party Roster</title>
     <style>
       /* ...styles above... */
     </style>
@@ -751,10 +751,10 @@ If you don't want to use real names, use funny usernames or superlatives ("class
 
 ---
 
-## Key Takeaways
+## XP Earned: Key Takeaways
 
 - 🧬 Every page: `<!DOCTYPE html>` → `<html>` → `<head>` + `<body>`.
-- 🗂️ Elements form a **family tree**: parents, children, siblings.
+- 🗂️ Elements form a **clan tree**: parents, children, siblings.
 - 💬 Comments `<!-- -->` document code and hide code.
 - 🏷️ Attributes are `name="value"` pairs: `src`, `alt`, `href`, `target`, `type`, `class`, `id`, `style`.
 - 🆔 One `id` per element (unique), many elements can share a `class`.
@@ -764,7 +764,7 @@ If you don't want to use real names, use funny usernames or superlatives ("class
 
 ---
 
-## Common Use Cases
+## Loot Table: Real-World Use Cases
 
 - 🗺️ Multi-section landing pages with in-page navigation
 - 📚 Wiki-style article pages
@@ -774,13 +774,13 @@ If you don't want to use real names, use funny usernames or superlatives ("class
 
 ---
 
-## 🎮 Practice Exercises
+## 🎮 Side Quests: Practice Exercises
 
 1. Add a third section to `lorem_ipsum.html` with its own link at the top.
 2. Create a page where every `<p>` is styled by one `<style>` rule.
 3. Make an `<img>` into a link by wrapping it in an `<a>`.
 4. Add comments to an old file explaining what every section does.
-5. **Boss fight:** rebuild the Power Rangers exercise as a party screen — one `.party-slot` class, four `#member-1` … `#member-4` ids, and a shared rule that gives every slot the same size.
+5. **Boss fight:** rebuild the Hero Squad exercise as a party screen — one `.party-slot` class, four `#member-1` … `#member-4` ids, and a shared rule that gives every slot the same size.
 
 ---
 
