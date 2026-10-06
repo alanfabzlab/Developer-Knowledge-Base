@@ -32,8 +32,8 @@ recorrer una carpeta.
 | 🧮 **Estructuras de Datos y Algoritmos** | Estructuras de datos fundamentales, eficiencia de algoritmos y resolución de problemas | 5 EN · 5 ES | 🟢 Activo | [EN](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md) · [ES](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
 | 🖥️ **Línea de Comandos** | Navegación en la terminal, gestión de archivos, permisos y flujo de trabajo en la shell | 13 EN · 13 ES | 🟢 Activo | [EN](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README.md) · [ES](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README-ES.md) |
 | 🤖 **GenAI** | Cómo funcionan los LLM, ingeniería de prompts, embeddings y modos de fallo de la IA | 6 EN · 6 ES | 🟢 Activo | [EN](%F0%9F%A4%96%20GenAI/README.md) · [ES](%F0%9F%A4%96%20GenAI/README-ES.md) |
-| 🌐 **HTML** | Estructura de páginas web, elementos, atributos, estilos y formularios | 5 EN · 5 ES | 🟢 Activo | [EN](%F0%9F%8C%90%20HTML/README.md) · [ES](%F0%9F%8C%90%20HTML/README-ES.md) |
-| 🎨 **CSS** | Estilos, maquetación, responsive y sistemas de diseño | — | 🟡 Planificado | [EN](%F0%9F%8E%A8%20CSS/README.md) · [ES](%F0%9F%8E%A8%20CSS/README-ES.md) |
+| 🌐 **HTML** | Estructura de páginas web, elementos, atributos, estilos y formularios | 6 EN · 6 ES | 🟢 Activo | [EN](%F0%9F%8C%90%20HTML/README.md) · [ES](%F0%9F%8C%90%20HTML/README-ES.md) |
+| 🎨 **CSS** | Estilos, selectores, colores, el modelo de caja, posicionamiento y maquetación flexbox | 14 EN · 14 ES | 🟢 Activo | [EN](%F0%9F%8E%A8%20CSS/README.md) · [ES](%F0%9F%8E%A8%20CSS/README-ES.md) |
 | ⚙️ **Ingeniería de Software** | Patrones de diseño, algoritmos y arquitectura de sistemas | — | 🟡 Planificado | *Próximamente* |
 | 🎮 **Arquitectura de Juegos** | Mecánicas interactivas, patrones de motor y física | — | 🟡 Planificado | *Próximamente* |
 
@@ -148,6 +148,23 @@ Developer-Knowledge-Base/
 │   ├── 02 - Structure & Attributes.md    ·  02 - Estructura y Atributos.md
 │   ├── 03 - Forms.md                     ·  03 - Formularios.md
 │   └── 04 - Semantic HTML.md             ·  04 - HTML Semántico.md
+│
+├── 🎨 CSS/                                <-- 14 temas · EN + ES
+│   ├── README.md          ·  README-ES.md
+│   ├── 00b - CSS Cheatsheet.md           ·  00b - Chuleta de CSS.md
+│   ├── 00c - CSS Cheatsheet II.md        ·  00c - Chuleta de CSS II.md
+│   ├── 01 - CSS Basics.md                ·  01 - Fundamentos de CSS.md
+│   ├── 02 - Colors & Measurements.md     ·  02 - Colores y Medidas.md
+│   ├── 03 - Selectors Pt. 1.md           ·  03 - Selectores Pt. 1.md
+│   ├── 04 - Selectors Pt. 2.md           ·  04 - Selectores Pt. 2.md
+│   ├── 05 - Pseudo-elements.md           ·  05 - Pseudoelementos.md
+│   ├── 06 - Pseudo-classes.md            ·  06 - Pseudoclases.md
+│   ├── 07 - Fonts & Text.md              ·  07 - Fuentes y Texto.md
+│   ├── 08 - Backgrounds & Shorthands.md  ·  08 - Fondos y Shorthands.md
+│   ├── 09 - Box Model & Borders.md       ·  09 - Modelo de Caja y Bordes.md
+│   ├── 10 - Spacing & Box Sizing.md      ·  10 - Espaciado y Box Sizing.md
+│   ├── 11 - Display & Positioning.md     ·  11 - Display y Posicionamiento.md
+│   └── 12 - Flexbox.md                   ·  12 - Flexbox ES.md
 │
 └── 🤖 GenAI/                              <-- 6 temas · EN + ES
     ├── README.md          ·  README-ES.md

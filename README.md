@@ -31,7 +31,7 @@ Every domain is self-contained and opens with a **MOC** (Map of Content): an ind
 | 🖥️ **Command Line** | Terminal navigation, file management, permissions & shell workflow | 13 EN · 13 ES | 🟢 Active | [EN](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README.md) · [ES](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README-ES.md) |
 | 🤖 **GenAI** | How LLMs work, prompt engineering, embeddings & AI failure modes | 6 EN · 6 ES | 🟢 Active | [EN](%F0%9F%A4%96%20GenAI/README.md) · [ES](%F0%9F%A4%96%20GenAI/README-ES.md) |
 | 🌐 **HTML** | Web page structure, elements, attributes, styles, forms & semantic regions | 6 EN · 6 ES | 🟢 Active | [EN](%F0%9F%8C%90%20HTML/README.md) · [ES](%F0%9F%8C%90%20HTML/README-ES.md) |
-| 🎨 **CSS** | Styling, layouts, responsiveness & design systems | — | 🟡 Planned | [EN](%F0%9F%8E%A8%20CSS/README.md) · [ES](%F0%9F%8E%A8%20CSS/README-ES.md) |
+| 🎨 **CSS** | Styling, selectors, colors, the box model, positioning & flexbox layouts | 14 EN · 14 ES | 🟢 Active | [EN](%F0%9F%8E%A8%20CSS/README.md) · [ES](%F0%9F%8E%A8%20CSS/README-ES.md) |
 | ⚙️ **Software Engineering** | Design patterns, algorithms & system architecture | — | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | — | 🟡 Planned | *Coming soon* |
 
@@ -144,6 +144,23 @@ Developer-Knowledge-Base/
 │   ├── 02 - Structure & Attributes.md    ·  02 - Estructura y Atributos.md
 │   ├── 03 - Forms.md                     ·  03 - Formularios.md
 │   └── 04 - Semantic HTML.md             ·  04 - HTML Semántico.md
+│
+├── 🎨 CSS/                                <-- 14 topics · EN + ES
+│   ├── README.md          ·  README-ES.md
+│   ├── 00b - CSS Cheatsheet.md           ·  00b - Chuleta de CSS.md
+│   ├── 00c - CSS Cheatsheet II.md        ·  00c - Chuleta de CSS II.md
+│   ├── 01 - CSS Basics.md                ·  01 - Fundamentos de CSS.md
+│   ├── 02 - Colors & Measurements.md     ·  02 - Colores y Medidas.md
+│   ├── 03 - Selectors Pt. 1.md           ·  03 - Selectores Pt. 1.md
+│   ├── 04 - Selectors Pt. 2.md           ·  04 - Selectores Pt. 2.md
+│   ├── 05 - Pseudo-elements.md           ·  05 - Pseudoelementos.md
+│   ├── 06 - Pseudo-classes.md            ·  06 - Pseudoclases.md
+│   ├── 07 - Fonts & Text.md              ·  07 - Fuentes y Texto.md
+│   ├── 08 - Backgrounds & Shorthands.md  ·  08 - Fondos y Shorthands.md
+│   ├── 09 - Box Model & Borders.md       ·  09 - Modelo de Caja y Bordes.md
+│   ├── 10 - Spacing & Box Sizing.md      ·  10 - Espaciado y Box Sizing.md
+│   ├── 11 - Display & Positioning.md     ·  11 - Display y Posicionamiento.md
+│   └── 12 - Flexbox.md                   ·  12 - Flexbox ES.md
 │
 └── 🤖 GenAI/                              <-- 6 topics · EN + ES
     ├── README.md          ·  README-ES.md
