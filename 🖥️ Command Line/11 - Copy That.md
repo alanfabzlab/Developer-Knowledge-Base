@@ -48,7 +48,7 @@ level-notes.txt
 
 > [!WARNING]
 > **Trap**
-> The overwrite is the one to watch. `cp important.txt backup.txt` is harmless, but `cp important.txt important.txt` truncates the file before reading it — same self-overwrite trap as `cat a > a` in [[09 - Grilled Cheese]].
+> The overwrite is the one to watch. `cp important.txt backup.txt` is harmless, but `cp important.txt important.txt` truncates the file before reading it — same self-overwrite trap as `cat a > a` in [[09 - Grilled Cheese|09. Writing the Lore]].
 
 ---
 

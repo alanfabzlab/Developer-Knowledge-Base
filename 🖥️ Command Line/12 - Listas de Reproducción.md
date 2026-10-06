@@ -1,5 +1,5 @@
 
-# 12. Listas de Reproducción
+# 12. Construyendo la Mazmorra
 
 **Versión original en inglés:** [12 - Music Playlists.md](12%20-%20Music%20Playlists.md)
 
@@ -68,7 +68,7 @@ enemies
 content/scripts/enemies:
 ```
 
-Fíjate en el directorio de nivel vacío. `mkdir -p` lo produjo, y por sí solo no sobrevivirá a un commit — el truco de `.gitkeep` de [[08 - Tipo de Cocina]] se aplica aquí.
+Fíjate en el directorio de nivel vacío. `mkdir -p` lo produjo, y por sí solo no sobrevivirá a un commit — el truco de `.gitkeep` de [[08 - Tipo de Cocina|08. Forjando Archivos]] se aplica aquí.
 
 ---
 

@@ -1,5 +1,5 @@
 
-# 09. Grilled Cheese
+# 09. Writing the Lore
 
 **Spanish version:** [09 - Queso a la Plancha.md](09%20-%20Queso%20a%20la%20Plancha.md)
 

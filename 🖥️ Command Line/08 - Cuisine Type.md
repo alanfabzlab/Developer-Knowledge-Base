@@ -1,5 +1,5 @@
 
-# 08. Cuisine Type
+# 08. Forging Files
 
 **Spanish version:** [08 - Tipo de Cocina.md](08%20-%20Tipo%20de%20Cocina.md)
 

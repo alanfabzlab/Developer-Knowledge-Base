@@ -1,5 +1,5 @@
 
-# 09. Queso a la Plancha
+# 09. Escribiendo el Lore
 
 **Versión original en inglés:** [09 - Grilled Cheese.md](09%20-%20Grilled%20Cheese.md)
 

@@ -45,7 +45,7 @@ $ cd -
 
 > [!WARNING]
 > **Trap**
-> `cd` cannot create anything. Typing `cd build` into a directory that does not exist reports `no such file or directory` — and the fix is `mkdir build`, covered in [[07 - Recipes]]. The two errors share a message but mean opposite things.
+> `cd` cannot create anything. Typing `cd build` into a directory that does not exist reports `no such file or directory` — and the fix is `mkdir build`, covered in [[07 - Recipes|07. Project Blueprints]]. The two errors share a message but mean opposite things.
 
 ---
 

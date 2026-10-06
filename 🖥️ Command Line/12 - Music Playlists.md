@@ -1,5 +1,5 @@
 
-# 12. Music Playlists
+# 12. Dungeon Build
 
 **Spanish version:** [12 - Listas de Reproducción.md](12%20-%20Listas%20de%20Reproducci%C3%B3n.md)
 
@@ -68,7 +68,7 @@ enemies
 content/scripts/enemies:
 ```
 
-Note the empty level directory. `mkdir -p` produced it, and it will not survive a version-control commit on its own — the `.gitkeep` trick from [[08 - Cuisine Type]] applies.
+Note the empty level directory. `mkdir -p` produced it, and it will not survive a version-control commit on its own — the `.gitkeep` trick from [[08 - Cuisine Type|08. Forging Files]] applies.
 
 ---
 

@@ -1,5 +1,5 @@
 
-# 07. Recipes
+# 07. Project Blueprints
 
 **Spanish version:** [07 - Recetas.md](07%20-%20Recetas.md)
 

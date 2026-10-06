@@ -1,5 +1,5 @@
 
-# 07. Recetas
+# 07. Planos del Proyecto
 
 **Versión original en inglés:** [07 - Recipes.md](07%20-%20Recipes.md)
 

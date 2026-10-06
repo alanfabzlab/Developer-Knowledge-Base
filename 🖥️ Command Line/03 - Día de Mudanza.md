@@ -45,7 +45,7 @@ $ cd -
 
 > [!WARNING]
 > **Trampa**
-> `cd` no puede crear nada. Escribir `cd build` en un directorio que no existe informa `no such file or directory` — y la solución es `mkdir build`, que se cubre en [[07 - Recetas]]. Los dos errores comparten el mensaje pero significan lo contrario.
+> `cd` no puede crear nada. Escribir `cd build` en un directorio que no existe informa `no such file or directory` — y la solución es `mkdir build`, que se cubre en [[07 - Recetas|07. Planos del Proyecto]]. Los dos errores comparten el mensaje pero significan lo contrario.
 
 ---
 

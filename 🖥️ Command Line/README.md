@@ -41,12 +41,12 @@ Start with **01** if the terminal is new to you. If you already navigate comfort
 
 ### 📁 2. File Management (Chapter 2)
 
-* **Creating Directories:** [07 - Recipes](./07%20-%20Recipes.md) — `mkdir`, the missing-parent error, and why `mkdir -p` is the right choice in scripts.
-* **Creating Files:** [08 - Cuisine Type](./08%20-%20Cuisine%20Type.md) — `touch`, how extensions are a naming convention, and the `.gitkeep` placeholder.
-* **Writing & Appending:** [09 - Grilled Cheese](./09%20-%20Grilled%20Cheese.md) — Redirection with `>` and `>>`, combining files with `cat`, and the self-overwrite trap.
+* **Creating Directories:** [07 - Project Blueprints](./07%20-%20Recipes.md) — `mkdir`, the missing-parent error, and why `mkdir -p` is the right choice in scripts.
+* **Creating Files:** [08 - Forging Files](./08%20-%20Cuisine%20Type.md) — `touch`, how extensions are a naming convention, and the `.gitkeep` placeholder.
+* **Writing & Appending:** [09 - Writing the Lore](./09%20-%20Grilled%20Cheese.md) — Redirection with `>` and `>>`, combining files with `cat`, and the self-overwrite trap.
 * **Moving & Deleting:** [10 - Move Around](./10%20-%20Move%20Around.md) — `mv` move vs. rename, `rm`, `rmdir`, `rm -r`, and the habits that make deletion survivable.
 * **Copying:** [11 - Copy That](./11%20-%20Copy%20That.md) — `cp`, destination rules, `cp -r`, and backing up before you delete.
-* **Chapter 2 Review:** [12 - Music Playlists](./12%20-%20Music%20Playlists.md) — Building a level workspace end to end, `ls -R`, and session cleanup.
+* **Chapter 2 Review:** [12 - Dungeon Build](./12%20-%20Music%20Playlists.md) — Building a level workspace end to end, `ls -R`, and session cleanup.
 
 ---
 
@@ -83,10 +83,10 @@ flowchart TD
     C --> D[04 - House Tour]
     D --> E[05 - Clean Slate]
     E --> F[06 - Scavenger Hunt]
-    F --> G[07 - Recipes]
-    G --> H[08 - Cuisine Type]
-    H --> I[09 - Grilled Cheese]
+    F --> G[07 - Project Blueprints]
+    G --> H[08 - Forging Files]
+    H --> I[09 - Writing the Lore]
     I --> J[10 - Move Around]
     J --> K[11 - Copy That]
-    K --> L[12 - Music Playlists]
+    K --> L[12 - Dungeon Build]
 ```
