@@ -462,7 +462,7 @@ Click into the HTML code in the Elements panel, change the content of an element
 ## Loot Table: Real-World Use Cases
 
 - 📰 Articles, blogs and news pages
-- 📋 Recipes, to-do lists and menus
+- 📋 Crafting recipes, quest logs and merchant menus
 - 🧑‍🎤 Profile and fan pages
 - 🔗 Link pages and simple portfolios
 - 🎮 Boss pages, item catalogs and patch notes — the same markup, different words

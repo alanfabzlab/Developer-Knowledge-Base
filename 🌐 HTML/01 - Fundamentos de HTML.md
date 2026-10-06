@@ -470,7 +470,7 @@ Desde el panel "Elements" (Elementos) puedes hacer doble clic en el código HTML
 ## Botín: Casos de uso reales
 
 - 📰 Artículos, blogs y páginas de noticias
-- 📋 Recetas, listas de tareas y menús
+- 📋 Recetas de crafteo, registros de misiones y menús de mercader
 - 🧑‍🎤 Páginas de perfil o de fans
 - 🔗 Páginas de enlaces y portfolios sencillos
 - 🎮 Fichas de jefe, catálogos de objetos y notas de parche — el mismo marcado, otras palabras
