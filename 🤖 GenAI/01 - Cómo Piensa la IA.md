@@ -69,7 +69,7 @@ Los humanos leemos palabras. La IA no. Parte el texto en trozos más pequeños, 
 > Un token es uno de los trozos pequeños de texto que un modelo de IA lee y genera.
 
 ```text
-"I am learning Generative AI"  ->  ["I", " am", " learning", " Gener", "ative", " AI"]
+"I am casting a Fireball"  ->  ["I", " am", " casting", " a", " Fire", "ball"]
 ```
 
 Esa frase se convirtió en seis tokens. El corte exacto depende del modelo — el tuyo lo partirá de otra forma.

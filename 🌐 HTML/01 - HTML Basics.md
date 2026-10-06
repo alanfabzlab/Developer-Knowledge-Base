@@ -96,7 +96,7 @@ The `<p>` **paragraph** element tells the browser that the content inside is par
 ### The `<body>` Element
 
 ```html
-<body><p>👋 I'm a new web developer!</p></body>
+<body><p>👋 New hero ready for Emberfall v1.0.</p></body>
 ```
 
 The `<body>` element defines an HTML document's "body": it holds any content we want to display to the user.
@@ -110,7 +110,7 @@ Indenting HTML isn't required, but it's good practice because it makes code easi
 
 ```html
 <body>
-  <p>👋 I'm a new web developer!</p>
+  <p>👋 New hero ready for Emberfall v1.0.</p>
 </body>
 ```
 

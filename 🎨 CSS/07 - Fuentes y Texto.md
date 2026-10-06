@@ -210,7 +210,7 @@ Crea `index.html`:
   <title>Revisión Ortográfica</title>
 </head>
 <body>
-  <h4>The quick <span>brwn</span> fox jumped <span>overthe</span> lazy dogs.</h4>
+  <h4>El <span>gerrero</span> <span>recivira</span> su reliquia en el salón del gremio.</h4>
 </body>
 </html>
 ```
@@ -246,7 +246,7 @@ y no necesita más HTML que los `<span>` que señalan los fallos.
 - 📏 `font-size`: absoluto (`px`) fijo, relativo (`em`/`rem`) accesible.
 - ⚖️ `font-weight`: 100–900; 400 normal, 700 negrita.
 - 🧭 `text-align` coloca las líneas; `text-decoration` las decora.
-- 🦊 Una línea — `underline wavy red 2px` — es un resaltado de revisión completo.
+- 🎯 Una línea — `underline wavy red 2px` — es un resaltado de revisión completo.
 
 ---
 

@@ -202,7 +202,7 @@ Style a deliberately misspelled line the way a text editor flags errors. Create 
   <title>Spellcheck</title>
 </head>
 <body>
-  <h4>The quick <span>brwn</span> fox jumped <span>overthe</span> lazy dogs.</h4>
+  <h4>The <span>marskman</span> will <span>recieve</span> the relic at the guild hall.</h4>
 </body>
 </html>
 ```
@@ -238,7 +238,7 @@ besides the `<span>`s that point at the mistakes.
 - 📏 `font-size`: absolute (`px`) fixed, relative (`em`/`rem`) accessible.
 - ⚖️ `font-weight`: 100–900; 400 normal, 700 bold.
 - 🧭 `text-align` places lines; `text-decoration` decorates them.
-- 🦊 One line — `underline wavy red 2px` — is a full spellcheck highlight.
+- 🎯 One line — `underline wavy red 2px` — is a full spellcheck highlight.
 
 ---
 

@@ -66,7 +66,7 @@ Humans read words. AI does not. It breaks text into smaller chunks, and those ch
 > A token is one of the small chunks of text that an AI model reads and generates.
 
 ```text
-"I am learning Generative AI"  ->  ["I", " am", " learning", " Gener", "ative", " AI"]
+"I am casting a Fireball"  ->  ["I", " am", " casting", " a", " Fire", "ball"]
 ```
 
 That sentence became six tokens. The exact split depends on the model — yours will split it differently.

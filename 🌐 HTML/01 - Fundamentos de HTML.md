@@ -97,7 +97,7 @@ El elemento **párrafo** `<p>` le indica al navegador que ese contenido es un p�
 ### El elemento `<body>`
 
 ```html
-<body><p>👋 ¡Soy un nuevo desarrollador web!</p></body>
+<body><p>👋 ¡Nuevo héroe listo para Emberfall v1.0!</p></body>
 ```
 
 El elemento `<body>` define el "cuerpo" del documento HTML: contiene todo el contenido que queremos mostrar al usuario.
@@ -111,7 +111,7 @@ Sangrar el HTML no es obligatorio, pero sí una buena práctica: facilita la lec
 
 ```html
 <body>
-  <p>👋 ¡Soy un nuevo desarrollador web!</p>
+  <p>👋 ¡Nuevo héroe listo para Emberfall v1.0!</p>
 </body>
 ```
 
