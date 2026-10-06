@@ -3,33 +3,42 @@
 **Spanish version:** [03 - Formularios.md](03%20-%20Formularios.md)
 
 **Course:** HTML
-**Topic:** Forms, `<input>` Types, Email & Password, Validation (`minlength`, `maxlength`, `required`), Number Inputs
+**Topic:** Forms, `<input>` Types, Email & Password, Validation (`minlength`, `maxlength`, `required`), Number Inputs, Radio & Checkbox
 **Tags:** `#html` `#web-development` `#forms` `#inputs` `#game-dev`
 
 <p align="left">
   <img src="https://img.shields.io/badge/HTML-5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML 5">
   <img src="https://img.shields.io/badge/Difficulty-BEGINNER-6CC24A?style=for-the-badge" alt="Beginner">
-  <img src="https://img.shields.io/badge/Lessons-15_--_18_Partial-7C5CFF?style=for-the-badge" alt="Lessons 15 to 18">
-  <img src="https://img.shields.io/badge/Status-Work_in_progress-FFA500?style=for-the-badge" alt="Work in progress">
+  <img src="https://img.shields.io/badge/Lessons-15_--_18-7C5CFF?style=for-the-badge" alt="Lessons 15 to 18">
+  <img src="https://img.shields.io/badge/Status-Complete-00C2A8?style=for-the-badge" alt="Complete">
+  <img src="https://img.shields.io/badge/Lore-Emberfall-FF6B35?style=for-the-badge" alt="Emberfall">
   <img src="https://img.shields.io/badge/Vault-Obsidian-7B3FE4?style=for-the-badge&logo=obsidian" alt="Obsidian">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FF6B35&height=70&section=header" width="100%" alt="Ember wave" />
 </p>
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #E34F26, #2DD4BF, #E34F26, transparent); margin: 24px 0;" />
 
-The chapter where a web page stops being a document and starts **asking the visitor something**. Every Sign Up, Login, Checkout and character-creation screen you have ever used is a `<form>` with `<input>`s inside. The best news in this chapter: the browser validates most of it for free, before a single line of your code runs.
+The chapter where a web page stops being a document and starts **asking the player something**.
+Every Sign Up, Login, character creator and loadout builder you have ever used is a `<form>`
+with `<input>`s inside. The best news in this chapter: the browser validates most of it for
+free, before a single line of your code runs.
 
-> [!WARNING]
-> **Work in progress:** this note covers lessons 15 to 18 (partially). Lesson 18 (RSVP) is
-> still in flight — radio and checkbox inputs are announced, not yet documented — and the rest
-> of the chapter will be added later.
+> [!NOTE]
+> **Why game studios love native forms**
+> A character sheet, a party invite, a loadout editor, a mod upload form — all of them are the
+> same problem: collect typed data, check it is sane, send it somewhere. HTML has shipped that
+> machinery since 1995, and your engine's UI layer is very likely a wrapper around it.
 
 ---
 
-## 15. Google
+## 15. Search Portal
 
 ### Forms
 
-What do Sign Up, Login and Checkout pages have in common? They all **collect user input data**. From a search bar to signing in to your favorite app, forms are part of everyday digital life.
+What do Sign Up, Login and character creation pages have in common? They all **collect user input data**. From a search bar to signing in to your favorite game, forms are part of everyday digital life.
 
 How a form works:
 
@@ -72,7 +81,7 @@ The `<input>` element is an **interactive control** for entering data. Its `type
 By default the submit button says "Submit". Change its text with the `value` attribute:
 
 ```html
-<input type="submit" value="Submit Form!">
+<input type="submit" value="Enter the Forge!">
 ```
 
 > [!NOTE]
@@ -91,7 +100,7 @@ Recreate the original Google search bar in `google.html`. Starting from this cod
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Google</title>
+    <title>Emberfall Wiki Search</title>
   </head>
   <body>
     <!-- Form code goes here -->
@@ -101,17 +110,17 @@ Recreate the original Google search bar in `google.html`. Starting from this cod
 
 Replace the comment with a `<form>` element (set `action` and `method` to `""` or leave them out) and add inside:
 
-- A `<p>` with "Search the web using Google!"
+- A `<p>` with "Search the Emberfall wiki!"
 - An `<input>` with the `type` set to `"text"`.
 - One or two `<br>` line breaks.
-- Another `<input>` with `type="submit"` (its text should say "Google Search").
+- Another `<input>` with `type="submit"` (its text should say "Search the Wiki").
 
 ```html
 <form action="" method="">
-  <p>Search the web using Google!</p>
+  <p>Search the Emberfall wiki!</p>
   <input type="text">
   <br><br>
-  <input type="submit" value="Google Search">
+  <input type="submit" value="Search the Wiki">
 </form>
 ```
 
@@ -120,7 +129,7 @@ Replace the comment with a `<form>` element (set `action` and `method` to `""` o
 
 ---
 
-## 16. Sign Up v1
+## 16. Character Creation I
 
 ### Input Types
 
@@ -151,7 +160,7 @@ There are many other `<input>` types in HTML forms (check the complete list in t
 
 ### Quest: Character Creation I
 
-Create `sign_up.html` with a classic sign up page: a "Sign Up" heading, Username, Email and Password fields, and a Submit button. Start from:
+Create `sign_up.html` with a classic account creation page: a "Sign Up" heading, Username, Email and Password fields, and a Submit button. Start from:
 
 ```html
 <!DOCTYPE html>
@@ -210,7 +219,7 @@ Replace the comments with `<input>` elements (a username, an email, a password a
 
 ---
 
-## 17. Sign Up v2
+## 17. Character Creation II
 
 ### Minlength & Maxlength
 
@@ -231,14 +240,14 @@ Some forms require input before they can be submitted. The `required` attribute 
 
 ```html
 <form>
-  Name: <input type="text" required>
+  Hero name: <input type="text" required>
   <br><br>
-  Favorite Color: <input type="text">
+  Favorite element: <input type="text">
   <input type="submit">
 </form>
 ```
 
-Here the "Name" `<input>` is marked as required. If it is left blank, the browser blocks the submission and points at the empty field.
+Here the "Hero name" `<input>` is marked as required. If it is left blank, the browser blocks the submission and points at the empty field.
 
 > [!WARNING]
 > `maxlength` is **not** validation. It stops the keystroke; it says nothing about whether the
@@ -280,11 +289,11 @@ Password:<br>
 
 ---
 
-## 18. RSVP *(in progress)*
+## 18. Raid RSVP
 
 ### Input Type: Number
 
-Numbers may be involved in forms, from a person's age to the number of items bought at a store. To prompt for numbers:
+Numbers may be involved in forms, from a character's level to the quantity of potions bought at a store. To prompt for numbers:
 
 ```html
 <input type="number">
@@ -310,9 +319,66 @@ Try entering `1000` in an input with `max="67"` and see what happens: the browse
 > `max` and `min` do not stop you from *typing* `1000` — they flag the value as invalid when
 > you submit. The arrows respect them; the keyboard does not.
 
-### Quest Preview: Raid RSVP
+### Input Type: Radio
 
-The starter file for `rsvp.html` hints at what comes next in the chapter: a text input for the name, a group of **radio inputs** ("Are you coming?"), **checkbox inputs** (dietary restrictions) and a submit button.
+Radio inputs let users select **one** option from a list. This is called "selecting one of many".
+
+```html
+<form>
+  <p>Are you coming to the raid?</p>
+
+  <label for="yes">Yes 🗡️</label>
+  <input type="radio" id="yes" name="answer" value="yes">
+
+  <label for="no">No 😴</label>
+  <input type="radio" id="no" name="answer" value="no">
+
+  <input type="submit">
+</form>
+```
+
+The two things that make radios work as a group:
+
+- The same `name` value (`answer`) — that is what ties the options together as one exclusive choice.
+- A **different `id`** for each one — that is what the `label` points at.
+
+Clicking a `<label>` toggles the input it points to, which is why every radio needs a `for`.
+
+> [!IMPORTANT]
+> Radios with the same `name` but no `label` are unusable with a mouse: you can only hit a
+> 13-pixel dot. Labels are not decoration for radios and checkboxes — they are the hit target.
+
+### Input Type: Checkbox
+
+Checkboxes let users select **one, several, or no** options. This is called "selecting many of many".
+
+```html
+<form>
+  <p>Which loadout items are you bringing?</p>
+
+  <input type="checkbox" id="potion" name="items" value="potion">
+  <label for="potion">Health potion 🧪</label>
+
+  <input type="checkbox" id="rope" name="items" value="rope">
+  <label for="rope">Rope 🪢</label>
+
+  <input type="checkbox" id="torch" name="items" value="torch">
+  <label for="torch">Torch 🔦</label>
+
+  <input type="submit">
+</form>
+```
+
+Checkboxes keep the same `name="items"` to belong to the same group, but unlike radios they are **independent** — you can tick all three.
+
+> [!TIP]
+> The rule of thumb: radios are **mutually exclusive**, checkboxes are **cumulative**. If
+> choosing one option should deselect the others, it is a radio. If the options stack up, it
+> is a checkbox.
+
+### Quest: Raid RSVP
+
+Create `rsvp.html` — the party sign-up for the next Emberfall run. Starting from this code:
 
 ```html
 <!DOCTYPE html>
@@ -323,14 +389,14 @@ The starter file for `rsvp.html` hints at what comes next in the chapter: a text
   <body>
     <form>
       <h2>RSVP</h2>
-      <p>Come and make our special day ...</p>
+      <p>Join the raid and carve your name into the Emberfall hall of fame ...</p>
       <br>
       Name: <!-- Text input here -->
       <br><br>
       Are you coming?<br>
-      <!-- 3 radio inputs here, sharing ... -->
+      <!-- 3 radio inputs here, sharing the same name -->
       <br><br>
-      Any dietary restrictions for main ...
+      Any items you're bringing for the run ...<br>
       <!-- 3 or 5 checkbox inputs here -->
       <br><br>
       <!-- Submit input here -->
@@ -339,7 +405,58 @@ The starter file for `rsvp.html` hints at what comes next in the chapter: a text
 </html>
 ```
 
-*(Text is cut off in the original screenshots. The solution and the rest of the chapter are still pending.)*
+Add:
+
+1. A **text input** for the name.
+2. **Three radio inputs** for "Are you coming?" — `"definitely"`, `"maybe"`, `"need a build first"` — all sharing the `name="attendance"`.
+3. **Three or five checkbox inputs** for the items your party brings, all sharing a `name="items"`.
+4. Give every input a `<label>` with a matching `for`, and a **submit** input.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSVP</title>
+  </head>
+  <body>
+    <form>
+      <h2>RSVP</h2>
+      <p>Join the raid and carve your name into the Emberfall hall of fame ...</p>
+      <br>
+      Name: <input type="text" id="player-name" required>
+      <br><br>
+      Are you coming?<br>
+      <input type="radio" id="attendance-yes" name="attendance" value="yes">
+      <label for="attendance-yes">Definitely ⚔️</label>
+      <input type="radio" id="attendance-maybe" name="attendance" value="maybe">
+      <label for="attendance-maybe">Maybe 😐</label>
+      <input type="radio" id="attendance-no" name="attendance" value="no">
+      <label for="attendance-no">Need a build first 📖</label>
+      <br><br>
+      Any items you're bringing for the run ...<br>
+      <input type="checkbox" id="item-potion" name="items" value="potion">
+      <label for="item-potion">Health potion 🧪</label>
+      <input type="checkbox" id="item-rope" name="items" value="rope">
+      <label for="item-rope">Rope 🪢</label>
+      <input type="checkbox" id="item-torch" name="items" value="torch">
+      <label for="item-torch">Torch 🔦</label>
+      <input type="checkbox" id="item-map" name="items" value="map">
+      <label for="item-map">Dungeon map 🗺️</label>
+      <input type="checkbox" id="item-bell" name="items" value="bell">
+      <label for="item-bell">Warning bell 🔔</label>
+      <br><br>
+      <input type="submit" value="Sign me up!">
+    </form>
+  </body>
+</html>
+```
+
+> [!TIP]
+> **Game dev version**
+> `name="attendance"` is a key, and `value` is what gets stored against it. When this form is
+> submitted, the browser serializes it into a plain text payload — `attendance=maybe&items=rope&items=torch`.
+> That key/value format is the ancestor of every save file, config file and network request
+> your engine ever wrote.
 
 ---
 
@@ -351,6 +468,8 @@ The starter file for `rsvp.html` hints at what comes next in the chapter: a text
 | Email | `<input type="email">` | Must contain a valid-looking address |
 | Password | `<input type="password">` | Hidden; pair with `minlength` |
 | Number | `<input type="number">` | Digits, with `min` / `max` / `step` |
+| Radio | `<input type="radio" name="x" id="y">` | Exclusive choice inside the group |
+| Checkbox | `<input type="checkbox" name="x" id="y">` | Independent on/off switch |
 | Submit | `<input type="submit" value="Send">` | — |
 
 | Constraint | Applies to | What it does |
@@ -360,14 +479,18 @@ The starter file for `rsvp.html` hints at what comes next in the chapter: a text
 | `maxlength` | Text-like inputs | Caps how many characters can be typed |
 | `min` / `max` | `<input type="number">` | Lowest and highest accepted value |
 | `step` | `<input type="number">` | Increment for the arrows, and the gap the value must fall on |
+| `name` | Radio, checkbox | Groups inputs into one submitted set |
+| `for` | `<label>` | Points the label at the input it describes |
 
 ---
 
 ## XP Earned: Key Takeaways
 
 - 📝 A **form** collects input and sends it somewhere (`action`) in a certain way (`method`).
-- 🔤 `<input type="text">`, `"email"`, `"password"`, `"number"` and `"submit"` cover the basics.
+- 🔤 `<input type="text">`, `"email"`, `"password"`, `"number"`, `"radio"`, `"checkbox"` and `"submit"` cover the basics.
 - ✅ Browsers validate for free: `email` checks the `@`, `minlength`/`maxlength` check length, `required` blocks empty fields, `min`/`max` limit numbers.
+- 🎯 Radios share a `name` to become mutually exclusive; checkboxes share a `name` but stay independent.
+- 🏷️ Every radio and checkbox needs a `<label>` whose `for` matches the input's `id`.
 - 📦 Keep all `<input>` elements inside one `<form>`.
 
 ---
@@ -387,8 +510,9 @@ The starter file for `rsvp.html` hints at what comes next in the chapter: a text
 1. Build a login page with email and password, both required.
 2. Make a number input for age that only accepts 0 to 120.
 3. Create a contact form with name, email and a custom submit button text.
-4. Try submitting each form with invalid data and read the browser messages.
-5. **Boss fight:** build `character_sheet.html` — a text input for the name (`minlength="2"`, `maxlength="16"`), an email input for the account, a number input for level (`min="1"`, `max="99"`), a password input (`minlength="8"`) and a submit button that says "Create Character".
+4. Add a "difficulty" radio group (Story / Normal / Nightmare) and make sure only one can be picked.
+5. Try submitting each form with invalid data and read the browser messages.
+6. **Boss fight:** build `character_sheet.html` — a text input for the name (`minlength="2"`, `maxlength="16"`), an email input for the account, a number input for level (`min="1"`, `max="99"`), a radio group for class (Ranger / Tank / Mage), a password input (`minlength="8"`) and a submit button that says "Create Character".
 
 ---
 
@@ -397,5 +521,6 @@ The starter file for `rsvp.html` hints at what comes next in the chapter: a text
 - [[00c - HTML Cheatsheet II]] — the input and constraint reference table
 - [[02 - Structure & Attributes]] — `class` and `id` for grouping and styling a form
 - [[01 - HTML Basics]] — the elements a form is built from
+- [[04 - Semantic HTML]] — why a form belongs inside a `<section>`, and labels you can trust
 
 ---

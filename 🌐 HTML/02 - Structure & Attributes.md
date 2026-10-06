@@ -11,14 +11,19 @@
   <img src="https://img.shields.io/badge/Difficulty-BEGINNER-6CC24A?style=for-the-badge" alt="Beginner">
   <img src="https://img.shields.io/badge/Lessons-08_--_14-7C5CFF?style=for-the-badge" alt="Lessons 08 to 14">
   <img src="https://img.shields.io/badge/Status-Complete-00C2A8?style=for-the-badge" alt="Complete">
+  <img src="https://img.shields.io/badge/Lore-Emberfall-FF6B35?style=for-the-badge" alt="Emberfall">
   <img src="https://img.shields.io/badge/Vault-Obsidian-7B3FE4?style=for-the-badge&logo=obsidian" alt="Obsidian">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FF6B35&height=70&section=header" width="100%" alt="Ember wave" />
 </p>
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #E34F26, #2DD4BF, #E34F26, transparent); margin: 24px 0;" />
 
 Chapter 01 wrote pages that worked. This chapter makes them **maintainable**: a real document
 skeleton, comments that explain intent, `class` and `id` labels that other code can target, and
-the first taste of CSS. It ends with the Party Roster, which is the moment a stack of `<div>`s
+the first taste of CSS. It ends with the Loadout Grid, which is the moment a stack of `<div>`s
 turns into a layout.
 
 > [!NOTE]
@@ -72,7 +77,7 @@ The `<title>` element goes in the `<head>` and assigns text to the **browser tab
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GameForge | Start your coding adventure</title>
+    <title>Emberfall Devlog | Notes from the forge</title>
   </head>
   <body>
     Code goes here
@@ -87,7 +92,7 @@ All the "main" code goes in the `<body>` element.
 > which is how half the "is my site finished?" bugs start. One `<title>` per file, and it
 > names the page, not the folder.
 
-### Quest: Map Blueprint
+### Quest: Project Blueprint
 
 Create `blueprint.html` with a `<!DOCTYPE html>` declaration and an `<html>` element containing a `<head>` with a page title and a `<body>` with a paragraph. You now have the blueprint for all future HTML files.
 
@@ -95,30 +100,30 @@ Create `blueprint.html` with a `<!DOCTYPE html>` declaration and an `<html>` ele
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Blueprint Page</title>
+    <title>Emberfall — Patch 1.4</title>
   </head>
   <body>
-    <p>This is the basic blueprint structure for an HTML page.</p>
+    <p>This is the blueprint every Emberfall page starts from.</p>
   </body>
 </html>
 ```
 
 ---
 
-## 09. Family Tree
+## 09. Party Tree
 
 ### Parents & Children
 
-The elements in an HTML file are arranged like a **clan tree**. Most elements can be **parents** with one or more **child** elements.
+The elements in an HTML file are arranged like a **scene tree**. Most elements can be **parents** with one or more **child** elements.
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
+    <title>Emberfall Party</title>
   </head>
   <body>
-    <p>Well, <i>howdy</i> there!</p>
+    <p>Party of <i>four</i> adventurers.</p>
   </body>
 </html>
 ```
@@ -145,55 +150,60 @@ Elements are **siblings** if they share a direct parent element.
 ```html
 <body>
   <ul>
-    <li>🍄 Mario</li>
-    <li>🐢 Luigi</li>
+    <li>🍄 Ranger Prime</li>
+    <li>🐢 Tank Wanda</li>
   </ul>
 </body>
 ```
 
 The two `<li>` elements are siblings because both are children of the same parent, the `<ul>` element.
 
-### Quest: Clan Tree
+### Quest: Party Tree
 
-"The apple doesn't fall far from the tree." Create `family_tree.html` for your family (or a famous one: the British Royal Family, the Kardashians, the Starks or the Simpsons) using list elements such as `<ul>` and `<li>`. Set up the page properly with `<!DOCTYPE html>`, `<html>`, etc.
+"A hero is defined by the party they fall with." Create `party_tree.html` for your own party — or a famous one: the Star Wars crew, the Stardew valley farmers, the Emberfall original party — using list elements such as `<ul>` and `<li>`. Set up the page properly with `<!DOCTYPE html>`, `<html>`, etc.
 
 Then ask yourself: which elements are parents? Which are children? Which are siblings?
 
 ```html
-<!-- Family Tree 🌳 -->
+<!-- Party Tree 🌳 -->
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Family Tree</title>
+    <title>Party Tree</title>
   </head>
   <body>
-    <h1>The Simpsons</h1>
-    <p>🏡 Hometown: Springfield, IL</p>
+    <h1>The Emberfall Crew</h1>
+    <p>🏠 Base: Forge Hall, Floor 1</p>
     <ul>
       <li>
-        Homer & Marge Simpson
+        Ranger Prime
         <ul>
-          <li>Bart Simpson</li>
-          <li>Lisa Simpson</li>
-          <li>Maggie Simpson</li>
+          <li>Skill: Volley</li>
+          <li>Skill: Trap Setting</li>
         </ul>
       </li>
-      <li>Patty Bouvier (Twin)</li>
-      <li>Selma Bouvier (Twin)</li>
+      <li>
+        Tank Wanda
+        <ul>
+          <li>Skill: Shield Wall</li>
+          <li>Skill: Taunt</li>
+        </ul>
+      </li>
+      <li>Mage Sol (guest)</li>
     </ul>
   </body>
 </html>
 ```
 
 > [!TIP]
-> A nested `<ul>` inside an `<li>` is the classic clan tree — and it is also the classic
-> party tree, tech tree and folder tree. The pattern is recursive: a container holding items
+> A nested `<ul>` inside an `<li>` is the classic party tree — and it is also the classic
+> skill tree, tech tree and folder tree. The pattern is recursive: a container holding items
 > that are themselves containers holding items. The same shape describes a game scene graph.
 
 ---
 
-## 10. Craigslist Ad
+## 10. Marketplace Listing
 
 ### Comments
 
@@ -235,22 +245,22 @@ They can also be used within an element:
 > comment that explains **why** is gold. `<!-- close the dialog on success, not on cancel -->`
 > survives a refactor; `<!-- increments i -->` does not.
 
-### Quest: Guild Notice Board
+### Quest: Mod Marketplace Listing
 
-Craig needs help cleaning up the codebase. Paste this starter code into `craigslist_ad.html`, run it, then edit the HTML following the comments:
+The Emberfall mod marketplace needs its skin listing cleaned up. Paste this starter code into `marketplace.html`, run it, then edit the HTML following the comments:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Hi, it's Craig! Can you add "For Sale" in the title below? -->
-    <title>Didgeridoo. Needs work</title>
+    <!-- Hi, it's Jun! Can you add "For Sale" in the title below? -->
+    <title>Wobbly Sword. Needs work</title>
   </head>
   <body>
     <!-- Add some comments below to document what each line means! -->
-    <h2>Didgeridoo. Needs work</h2>
+    <h2>Wobbly Sword. Needs work</h2>
     <img src="https://i.imgur.com/TrXO7Sa.png" width="250">
-    <p>Australian Aboriginal Didgeridoo. Needs work. Free to good home</p>
+    <p>Community-made sword skin. Needs work. Free to good home</p>
 
     <!-- Add the bullet point in the picture and then uncomment the code below! -->
     <!-- <ul>
@@ -263,25 +273,25 @@ Craig needs help cleaning up the codebase. Paste this starter code into `craigsl
 Finished version:
 
 ```html
-<!-- Craigslist Ad 🪵 -->
+<!-- Mod Marketplace Listing 🪵 -->
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>For Sale: Didgeridoo. Needs work</title>
+    <title>For Sale: Wobbly Sword. Needs work</title>
   </head>
   <body>
-    <!-- This is a level 2 heading. -->
-    <h2>Didgeridoo. Needs work</h2>
+    <!-- This is a level 2 heading: the name of the mod. -->
+    <h2>Wobbly Sword. Needs work</h2>
 
-    <!-- This is an image of a didgeridoo, a musical instrument. -->
+    <!-- This is an image of the mod preview. -->
     <img src="https://i.imgur.com/TrXO7Sa.png" width="250">
 
-    <!-- This paragraph describes the image above. -->
-    <p>Australian Aboriginal Didgeridoo. Needs work. Free to good home</p>
+    <!-- This paragraph describes the mod above. -->
+    <p>Community-made sword skin. Needs work. Free to good home</p>
 
     <ul>
-      <li>do NOT contact me with unsolicited services or offers</li>
+      <li>do NOT contact me with unsolicited offers</li>
     </ul>
   </body>
 </html>
@@ -289,7 +299,7 @@ Finished version:
 
 ---
 
-## 11. Wiki Article
+## 11. Codex Entry
 
 ### Attributes
 
@@ -306,9 +316,9 @@ By default, `<ol>` uses numbers to label its `<li>` elements. The `type` attribu
 
 ```html
 <ol type="a">   <!-- a. b. c. -->
-  <li>Power ⚡</li>
-  <li>Courage 🔥</li>
-  <li>Wisdom 🦉</li>
+  <li>Ember Blade 🔥</li>
+  <li>Frost Staff ❄️</li>
+  <li>Iron Buckler 🛡️</li>
 </ol>
 ```
 
@@ -321,8 +331,8 @@ By default, `<ol>` uses numbers to label its `<li>` elements. The `type` attribu
 ### Attributes in the Image Tag
 
 ```html
-<img src="https://gameforge.example/images/tier1.png">
-<img alt="pixel girl using a laptop" src="https://gameforge.example/images/tier1.png">
+<img src="https://emberfall.example/images/warden.png">
+<img alt="The Warden holding a lantern" src="https://emberfall.example/images/warden.png">
 ```
 
 - `src` specifies the file path of the image.
@@ -332,8 +342,8 @@ By default, `<ol>` uses numbers to label its `<li>` elements. The `type` attribu
 ### Attributes in the Anchor Tag
 
 ```html
-<a href="https://gameforge.example/">GameForge</a>
-<a href="https://gameforge.example/" target="_blank">GameForge</a>
+<a href="https://emberfall.example/">Emberfall</a>
+<a href="https://emberfall.example/" target="_blank">Emberfall</a>
 ```
 
 - `href` is the URL visited when the hyperlinked text is clicked.
@@ -344,9 +354,9 @@ By default, `<ol>` uses numbers to label its `<li>` elements. The `type` attribu
 > the same element. What does matter is the **quotes**: without them the browser guesses, and
 > a value with a space silently breaks the tag into two attributes.
 
-### Quest: Bestiary Entry
+### Quest: Codex Entry
 
-Write a "Wikipedia" article about one of your heroes in `wiki_article.html`. Include:
+Write a "codex" article about one of your heroes in `codex.html`. Include:
 
 - One heading that says "Biography".
 - An image of that person that includes alternative text.
@@ -359,7 +369,7 @@ Write a "Wikipedia" article about one of your heroes in `wiki_article.html`. Inc
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wiki Article</title>
+    <title>Codex Entry</title>
   </head>
   <body>
     <h2>Biography</h2>
@@ -372,7 +382,7 @@ Write a "Wikipedia" article about one of your heroes in `wiki_article.html`. Inc
 
 ---
 
-## 12. Lorem Ipsum
+## 12. Layout Wireframe
 
 ### Classes and IDs
 
@@ -381,52 +391,53 @@ The two attributes we'll come across most are `class` and `id`. Any element can 
 An element can have **multiple `class` values** in a space-separated list:
 
 ```html
-<p class="first-value second-value third-value">Hello, World</p>
+<p class="stat-line stat-line--odd">Health: 84 / 100</p>
 ```
 
 Each element can only have **one `id`** value, with no spaces, and every `id` should be **unique** in the entire page:
 
 ```html
-<p id="value">Hello, World</p>
+<p id="player-health">Health: 84 / 100</p>
 ```
 
 `id` can also be used to **link to another part of the same page**. Match it with an `<a>` element's `href` through a `#` hashtag followed by the identifier:
 
 ```html
-<a href="#medellin">Link to Medellín</a>
+<a href="#deep-halls">Link to the Deep Halls</a>
 
-<h2 class="city" id="medellin">Medellín 🇨🇴</h2>
+<h2 class="zone" id="deep-halls">Deep Halls 🕯️</h2>
 ```
 
 Where only one `id` can be assigned to a single element, a `class` can be assigned to many:
 
 ```html
-<h2 class="city" id="medellin">Medellín 🇨🇴</h2>
-<h2 class="city" id="lisbon">Lisbon 🇵🇹</h2>
-<h2 class="city" id="bali">Bali 🇮🇩</h2>
+<h2 class="zone" id="deep-halls">Deep Halls 🕯️</h2>
+<h2 class="zone" id="ember-vault">Ember Vault 🔥</h2>
+<h2 class="zone" id="frozen-cistern">Frozen Cistern ❄️</h2>
 ```
 
 The values of `class` and `id` must always be **lowercase**. If the name has multiple words, separate them with **dashes** (`-`).
 
 > [!TIP]
-> A good way to remember: there can be multiple students in a **class**, but each student should have a unique **id**. 💡
+> A good way to remember: there can be multiple players in a **party** (`class`), but each one
+> needs a unique **id**. 💡
 
 ### Division Element
 
 `<div>` (short for "division") is a generic container with no particular meaning, used to create sections. It goes hand in hand with `class` and `id`:
 
 ```html
-<div class="page-section" id="about-me">
-  <h2>About Me</h2>
-  <p>Ness is an aspiring web developer!</p>
+<div class="hud-panel" id="player-stats">
+  <h2>Stats</h2>
+  <p>Level 7 ranger, unspent skill points.</p>
 </div>
 
-<div class="page-section" id="social-media">
-  <h2>Social:</h2>
+<div class="hud-panel" id="inventory">
+  <h2>Inventory:</h2>
   <ul>
-    <li>GitHub</li>
-    <li>Twitter</li>
-    <li>LinkedIn</li>
+    <li>Ember Blade</li>
+    <li>Frost Staff</li>
+    <li>Iron Buckler</li>
   </ul>
 </div>
 ```
@@ -436,38 +447,38 @@ The values of `class` and `id` must always be **lowercase**. If the name has mul
 > `<section>`, `<article>`, `<nav>` or `<ul>` when one of those says what you mean — a stack
 > of `<div>`s with `class` names is a page no one can navigate.
 
-### Quest: Lore Scroll
+### Quest: Wireframe
 
-**Lorem Ipsum** is placeholder content commonly used to visualize how a page's text should look in the final copy. Create `lorem_ipsum.html`:
+A wireframe is placeholder layout you use before the final content exists. Create `wireframe.html`:
 
 - An `<h1>` heading that says "Untitled".
-- Two `<a>` anchors: `href="#heading-1"` with text "Heading 1" and `href="#heading-2"` with text "Heading 2".
-- Underneath, two `<div>` elements with a `class` of `"section"`. Each `<div>` contains:
-  - 1 `<h2>` with `class="heading"` and `id="heading-x"`.
-  - 2 `<p>` elements with Lorem ipsum text.
+- Two `<a>` anchors: `href="#panel-1"` with text "Panel 1" and `href="#panel-2"` with text "Panel 2".
+- Underneath, two `<div>` elements with a `class` of `"hud-panel"`. Each `<div>` contains:
+  - 1 `<h2>` with `class="panel-title"` and `id="panel-x"`.
+  - 2 `<p>` elements with placeholder text.
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lorem Ipsum</title>
+    <title>Wireframe</title>
   </head>
   <body>
     <h1>Untitled</h1>
 
-    <a href="#heading-1">Heading 1</a>
-    <a href="#heading-2">Heading 2</a>
+    <a href="#panel-1">Panel 1</a>
+    <a href="#panel-2">Panel 2</a>
 
-    <div class="section">
-      <h2 class="heading" id="heading-1">Heading 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="hud-panel">
+      <h2 class="panel-title" id="panel-1">Panel 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
-    <div class="section">
-      <h2 class="heading" id="heading-2">Heading 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="hud-panel">
+      <h2 class="panel-title" id="panel-2">Panel 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </body>
 </html>
@@ -475,7 +486,7 @@ The values of `class` and `id` must always be **lowercase**. If the name has mul
 
 ---
 
-## 13. Hero Squad
+## 13. Elemental Party
 
 ### The `style` Attribute
 
@@ -483,8 +494,8 @@ So far, the appearance of our pages has been pretty skeletal. We can apply a `st
 
 ```html
 <p>
-  Roses are <span style="color:red;">red</span>.<br />
-  Violets are <span style="color:blue;">blue</span>.
+  The Warden is <span style="color:red;">hostile</span>.<br />
+  Sol is <span style="color:blue;">friendly</span>.
 </p>
 ```
 
@@ -492,8 +503,8 @@ A style is made of a **property** (like `color`) and a **value** (like `red`), s
 
 ```html
 <p>
-  Roses are <span style="color:red; text-decoration:underline;">red</span>.<br />
-  Violets are <span style="color:blue; text-decoration:underline;">blue</span>.
+  The Warden is <span style="color:red; text-decoration:underline;">hostile</span>.<br />
+  Sol is <span style="color:blue; text-decoration:underline;">friendly</span>.
 </p>
 ```
 
@@ -547,19 +558,19 @@ Selectors:
         text-decoration: underline;
       }
 
-      #red-word {
+      #hostile-word {
         color: red;
       }
 
-      #blue-word {
+      #friendly-word {
         color: blue;
       }
     </style>
   </head>
   <body>
     <p>
-      Roses are <span id="red-word">red</span>.<br />
-      Violets are <span id="blue-word">blue</span>.<br />
+      The Warden is <span id="hostile-word">hostile</span>.<br />
+      Sol is <span id="friendly-word">friendly</span>.<br />
     </p>
   </body>
 </html>
@@ -567,59 +578,59 @@ Selectors:
 
 > [!NOTE]
 > The selector in `<style>` is the **same value** as the attribute in the body, with a
-> character in front: `.ranger-div` targets `class="ranger-div"`, `#red-ranger` targets
-> `id="red-ranger"`. That correspondence is the entire mechanism.
+> character in front: `.party-slot` targets `class="party-slot"`, `#ember-slot` targets
+> `id="ember-slot"`. That correspondence is the entire mechanism.
 
-### Quest: Party Loadout
+### Quest: Elemental Party
 
-In 1993, "Mighty Morphin' Hero Squad" premiered on TV. The five original rangers were each represented by a color: red, blue, black, yellow and pink. Create `power_rangers.html`. Put this in the `<body>`:
+Five party members, each with a color identity. Create `party.html`. Put this in the `<body>`:
 
 ```html
-<div class="ranger-div" id="red-ranger"></div>
-<div class="ranger-div" id="blue-ranger"></div>
-<div class="ranger-div" id="black-ranger"></div>
-<div class="ranger-div" id="yellow-ranger"></div>
-<div class="ranger-div" id="pink-ranger"></div>
+<div class="party-slot" id="ember-slot"></div>
+<div class="party-slot" id="frost-slot"></div>
+<div class="party-slot" id="stone-slot"></div>
+<div class="party-slot" id="gale-slot"></div>
+<div class="party-slot" id="dusk-slot"></div>
 ```
 
 Insert a `<style>` element in the `<head>` and apply:
 
-- A `width` of `50%` and `height` of `100px` for `<div>` elements with the `ranger-div` class.
+- A `width` of `50%` and `height` of `100px` for `<div>` elements with the `party-slot` class.
 - A different `background-color` for each `<div>` based on its `id`.
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hero Squad</title>
+    <title>Elemental Party</title>
     <style>
-      .ranger-div {
+      .party-slot {
         width: 50%;
         height: 100px;
       }
-      #red-ranger {
+      #ember-slot {
         background-color: red;
       }
-      #blue-ranger {
+      #frost-slot {
         background-color: blue;
       }
-      #black-ranger {
+      #stone-slot {
         background-color: black;
       }
-      #yellow-ranger {
+      #gale-slot {
         background-color: yellow;
       }
-      #pink-ranger {
+      #dusk-slot {
         background-color: pink;
       }
     </style>
   </head>
   <body>
-    <div class="ranger-div" id="red-ranger"></div>
-    <div class="ranger-div" id="blue-ranger"></div>
-    <div class="ranger-div" id="black-ranger"></div>
-    <div class="ranger-div" id="yellow-ranger"></div>
-    <div class="ranger-div" id="pink-ranger"></div>
+    <div class="party-slot" id="ember-slot"></div>
+    <div class="party-slot" id="frost-slot"></div>
+    <div class="party-slot" id="stone-slot"></div>
+    <div class="party-slot" id="gale-slot"></div>
+    <div class="party-slot" id="dusk-slot"></div>
   </body>
 </html>
 ```
@@ -631,7 +642,7 @@ Insert a `<style>` element in the `<head>` and apply:
 
 ---
 
-## 14. Party Roster
+## 14. Loadout Grid
 
 ### Checkpoint: Chapter Recap
 
@@ -641,11 +652,11 @@ Insert a `<style>` element in the `<head>` and apply:
 - Attributes like `class`/`id` or `src` enhance the way elements are organized, presented and work on the page.
 - We can add styles with either the `<style>` element or the `style` attribute.
 
-### Project: Party Roster
+### Project: Loadout Grid
 
-The **Top 8** was an iconic feature of MySpace: it let users pick eight friends to display on their profile page. Create `top_8.html`.
+An eight-slot loadout is the screen you stare at before every raid. Create `loadout.html`.
 
-Paste this `<style>` element into the `<head>` (provided by the course):
+Paste this `<style>` element into the `<head>`:
 
 ```html
 <style>
@@ -662,17 +673,17 @@ Paste this `<style>` element into the `<head>` (provided by the course):
     border: 3px solid blue;
   }
 
-  #top-8-wrapper {
+  #loadout-wrapper {
     text-align: center;
   }
 
-  .friend-card {
+  .slot-card {
     display: inline-block;
     margin: 1px;
     text-align: center;
   }
 
-  .friend-name {
+  .slot-name {
     color: blue;
   }
 </style>
@@ -680,61 +691,61 @@ Paste this `<style>` element into the `<head>` (provided by the course):
 
 Then add the HTML:
 
-1. A `<div>` with an `id` of `"top-8-wrapper"`.
-2. Inside, an `<h1>` that says "My Top Friends!", followed by two `<div>` elements with a class of `"top-8-row"`.
-3. Inside each `top-8-row`, four `<div>` elements with a class of `"friend-card"`.
-4. Inside each `friend-card`: an `<h2>` with a `"friend-name"` class and the friend's name, plus an `<img>` with `src` and `alt`.
+1. A `<div>` with an `id` of `"loadout-wrapper"`.
+2. Inside, an `<h1>` that says "My Raid Loadout!", followed by two `<div>` elements with a class of `"loadout-row"`.
+3. Inside each `loadout-row`, four `<div>` elements with a class of `"slot-card"`.
+4. Inside each `slot-card`: an `<h2>` with a `"slot-name"` class and the item name, plus an `<img>` with `src` and `alt`.
 
-If you don't want to use real names, use funny usernames or superlatives ("class clown", "life of the party", "best hair"...).
+If you don't want to use real item names, use funny placeholders ("Pants of Holding", "Lag spikes", "Debug sword"...).
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Party Roster</title>
+    <title>Loadout Grid</title>
     <style>
       /* ...styles above... */
     </style>
   </head>
   <body>
-    <div id="top-8-wrapper">
-      <h1>My Top Friends!</h1>
+    <div id="loadout-wrapper">
+      <h1>My Raid Loadout!</h1>
 
-      <div class="top-8-row">
-        <div class="friend-card">
-          <h2 class="friend-name">Tom</h2>
-          <img src="https://placehold.co/100" alt="Tom">
+      <div class="loadout-row">
+        <div class="slot-card">
+          <h2 class="slot-name">Ember Blade</h2>
+          <img src="https://placehold.co/100" alt="Ember Blade">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Sarah</h2>
-          <img src="https://placehold.co/100" alt="Sarah">
+        <div class="slot-card">
+          <h2 class="slot-name">Frost Staff</h2>
+          <img src="https://placehold.co/100" alt="Frost Staff">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Alex</h2>
-          <img src="https://placehold.co/100" alt="Alex">
+        <div class="slot-card">
+          <h2 class="slot-name">Iron Buckler</h2>
+          <img src="https://placehold.co/100" alt="Iron Buckler">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Taylor</h2>
-          <img src="https://placehold.co/100" alt="Taylor">
+        <div class="slot-card">
+          <h2 class="slot-name">Lantern</h2>
+          <img src="https://placehold.co/100" alt="Lantern">
         </div>
       </div>
 
-      <div class="top-8-row">
-        <div class="friend-card">
-          <h2 class="friend-name">Jordan</h2>
-          <img src="https://placehold.co/100" alt="Jordan">
+      <div class="loadout-row">
+        <div class="slot-card">
+          <h2 class="slot-name">Rope</h2>
+          <img src="https://placehold.co/100" alt="Rope">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Morgan</h2>
-          <img src="https://placehold.co/100" alt="Morgan">
+        <div class="slot-card">
+          <h2 class="slot-name">Health Potion</h2>
+          <img src="https://placehold.co/100" alt="Health Potion">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Casey</h2>
-          <img src="https://placehold.co/100" alt="Casey">
+        <div class="slot-card">
+          <h2 class="slot-name">Debug Sword</h2>
+          <img src="https://placehold.co/100" alt="Debug Sword">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Riley</h2>
-          <img src="https://placehold.co/100" alt="Riley">
+        <div class="slot-card">
+          <h2 class="slot-name">Spare Key</h2>
+          <img src="https://placehold.co/100" alt="Spare Key">
         </div>
       </div>
     </div>
@@ -744,8 +755,8 @@ If you don't want to use real names, use funny usernames or superlatives ("class
 
 > [!TIP]
 > **Game dev version**
-> `friend-card` is a component: a repeated box of image + name + styling that appears eight
-> times. Swap the names for party members, the `<h2>` for a level, the `<img>` for the
+> `slot-card` is a component: a repeated box of image + name + styling that appears eight
+> times. Swap the items for party members, the `<h2>` for a level, the `<img>` for the
 > portrait and you have an inventory screen. `display: inline-block` is the whole trick
 > behind "cards in a row", and it is the same idea as a grid in any UI framework.
 
@@ -754,7 +765,7 @@ If you don't want to use real names, use funny usernames or superlatives ("class
 ## XP Earned: Key Takeaways
 
 - 🧬 Every page: `<!DOCTYPE html>` → `<html>` → `<head>` + `<body>`.
-- 🗂️ Elements form a **clan tree**: parents, children, siblings.
+- 🗂️ Elements form a **scene tree**: parents, children, siblings.
 - 💬 Comments `<!-- -->` document code and hide code.
 - 🏷️ Attributes are `name="value"` pairs: `src`, `alt`, `href`, `target`, `type`, `class`, `id`, `style`.
 - 🆔 One `id` per element (unique), many elements can share a `class`.
@@ -770,17 +781,17 @@ If you don't want to use real names, use funny usernames or superlatives ("class
 - 📚 Wiki-style article pages
 - 🧑‍🤝‍🧑 Profile pages with card layouts
 - 🎨 First experiments with colors and layout
-- 🎮 Character sheets, party screens and skill trees built from repeated card components
+- 🎮 Loadout grids, party screens and skill trees built from repeated card components
 
 ---
 
 ## 🎮 Side Quests: Practice Exercises
 
-1. Add a third section to `lorem_ipsum.html` with its own link at the top.
+1. Add a third section to `wireframe.html` with its own link at the top.
 2. Create a page where every `<p>` is styled by one `<style>` rule.
 3. Make an `<img>` into a link by wrapping it in an `<a>`.
 4. Add comments to an old file explaining what every section does.
-5. **Boss fight:** rebuild the Hero Squad exercise as a party screen — one `.party-slot` class, four `#member-1` … `#member-4` ids, and a shared rule that gives every slot the same size.
+5. **Boss fight:** rebuild the Elemental Party exercise as a party screen — one `.party-slot` class, four `#member-1` … `#member-4` ids, and a shared rule that gives every slot the same size.
 
 ---
 
@@ -789,5 +800,6 @@ If you don't want to use real names, use funny usernames or superlatives ("class
 - [[00c - HTML Cheatsheet II]] — the attribute and selector reference for this chapter
 - [[01 - HTML Basics]] — the elements used here, introduced from scratch
 - [[03 - Forms]] — collecting the input these pages display
+- [[04 - Semantic HTML]] — replacing `<div>` soup with elements that carry meaning
 
 ---

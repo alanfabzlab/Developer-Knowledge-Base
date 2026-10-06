@@ -3,15 +3,20 @@
 **Versión original en inglés:** [00c - HTML Cheatsheet II.md](00c%20-%20HTML%20Cheatsheet%20II.md)
 
 **Curso:** HTML
-**Tema:** Atributos, `class` frente a `id`, bases de CSS dentro de HTML y campos de formulario
-**Tags:** `#html` `#web-development` `#chuleta` `#atributos` `#formularios` `#game-dev`
+**Tema:** Atributos, `class` frente a `id`, bases de CSS dentro de HTML, campos de formulario, textarea y etiquetas
+**Tags:** `#html` `#web-development` `#chuleta` `#atributos` `#formularios` `#etiquetas` `#game-dev`
 
 <p align="left">
   <img src="https://img.shields.io/badge/HTML-5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML 5">
   <img src="https://img.shields.io/badge/Dificultad-PRINCIPIANTE-6CC24A?style=for-the-badge" alt="Principiante">
   <img src="https://img.shields.io/badge/Cubre-Cap%C3%ADtulos_02_y_03-7C5CFF?style=for-the-badge" alt="Capítulos 02 y 03">
   <img src="https://img.shields.io/badge/Tipo-Chuleta-00C2A8?style=for-the-badge" alt="Chuleta">
+  <img src="https://img.shields.io/badge/Trama-Emberfall-FF6B35?style=for-the-badge" alt="Emberfall">
   <img src="https://img.shields.io/badge/Vault-Obsidian-7B3FE4?style=for-the-badge&logo=obsidian" alt="Obsidian">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=2DD4BF&height=70&section=header" width="100%" alt="Ola turquesa" />
 </p>
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #E34F26, #2DD4BF, #E34F26, transparent); margin: 24px 0;" />
@@ -46,16 +51,20 @@ Un atributo es un par `nombre="valor"` dentro de la etiqueta de apertura:
 | `class` | cualquier elemento | Etiqueta compartida por muchos elementos (lista separada por espacios) |
 | `id` | cualquier elemento | Etiqueta única (un solo elemento, sin espacios) |
 | `style` | cualquier elemento | CSS en línea |
-| `value` | `<input type="submit">` | Texto del botón |
-| `minlength` / `maxlength` | `<input>` de texto | Número mínimo / máximo de caracteres |
+| `value` | `<input>` | Texto del botón de enviar, o el dato que envía un radio / checkbox |
+| `minlength` / `maxlength` | `<input>` de texto, `<textarea>` | Número mínimo / máximo de caracteres |
 | `required` | `<input>` | Debe rellenarse antes de enviar el formulario |
 | `min` / `max` / `step` | `<input type="number">` | Rango y paso del número |
 | `action` / `method` | `<form>` | Dónde y cómo se envían los datos del formulario |
+| `name` | `<input>` | Los radios con el mismo `name` forman un grupo (una sola opción) |
+| `rows` / `cols` | `<textarea>` | Filas visibles / columnas de caracteres (2 / 20 por defecto) |
+| `placeholder` | `<textarea>` | Texto de ayuda mostrado mientras está vacío |
+| `for` | `<label>` | Debe coincidir con el `id` del campo que etiqueta |
 
 Varios atributos pueden ir en la misma etiqueta, separados por espacios:
 
 ```html
-<img src="limo-de-brasa.png" alt="Limo de brasa" width="300">
+<img src="limo-de-brasa.png" alt="Limo de Brasa" width="300">
 ```
 
 ---
@@ -69,11 +78,12 @@ Varios atributos pueden ir en la misma etiqueta, separados por espacios:
 | Selector CSS | `.nombre` | `#nombre` |
 | Destino de enlace | no | sí, con `href="#nombre"` |
 
-Convención de nombres: minúsculas y palabras separadas por guiones (`tarjeta-amigo`).
+Convención de nombres: minúsculas y palabras separadas por guiones (`tarjeta-habilidad`).
 
 > [!TIP]
-> Puede haber muchos alumnos en una **clase**, pero cada alumno debe tener un **ID**
-> único. Esa frase basta para recordar la diferencia.
+> Puede haber muchos jugadores en un **grupo** (`class`), pero cada jugador tiene un **ID**
+> único. Esa frase basta para recordar la diferencia y sobrevive más que cualquier regla que
+> leas después sobre especificidad.
 
 ---
 
@@ -87,9 +97,9 @@ Convención de nombres: minúsculas y palabras separadas por guiones (`tarjeta-a
 ```text
 <html>
 └── <body>
-    └── <ul>                <-- padre de los <li>
-        ├── <li>Mario</li>  <-- hermano de los demás <li>
-        └── <li>Luigi</li>
+    └── <ul>                       <-- padre de los <li>
+        ├── <li>Ranger Prime</li>  <-- hermano de los demás <li>
+        └── <li>Espectro de Ceniza</li>
 ```
 
 ```mermaid
@@ -113,7 +123,7 @@ En ese árbol, `<head>` y `<body>` son hijos de `<html>`, `<i>` es hijo de `<p>`
 ### En línea, con el atributo `style`
 
 ```html
-<span style="color:red; text-decoration:underline;">rojo</span>
+<span style="color:red; text-decoration:underline;">golpe crítico</span>
 ```
 
 La propiedad y el valor se separan con `:`; varios estilos se separan con `;`.
@@ -123,16 +133,18 @@ La propiedad y el valor se separan con `:`; varios estilos se separan con `;`.
 ```html
 <style>
   span { text-decoration: underline; }    /* por elemento */
-  .ranger-div { width: 50%; }             /* por clase    */
-  #red-ranger { background-color: red; }   /* por id       */
+  .slot { width: 50%; }                   /* por clase    */
+  #slot-brasa { background-color: red; }   /* por id       */
+  * { margin: 0; padding: 0; }             /* todos        */
 </style>
 ```
 
 | Selector | Coincide con |
 | :--- | :--- |
 | `span` | Todos los elementos `<span>` |
-| `.ranger-div` | Elementos con `class="ranger-div"` |
-| `#red-ranger` | El elemento con `id="red-ranger"` |
+| `.slot` | Elementos con `class="slot"` |
+| `#slot-brasa` | El elemento con `id="slot-brasa"` |
+| `*` | Todos los elementos de la página |
 
 ### Propiedades imprescindibles al principio
 
@@ -144,7 +156,8 @@ La propiedad y el valor se separan con `:`; varios estilos se separan con `;`.
 | `text-align` | `text-align: center;` | Alineación del texto |
 | `border` | `border: 3px solid blue;` | Borde |
 | `margin` | `margin: auto;` | Espacio exterior |
-| `display` | `display: inline-block;` | Cómo se distribuye el elemento |
+| `padding` | `padding: 0;` | Espacio interior |
+| `display` | `display: inline-block;` / `display: inline;` | Cómo se distribuye (`inline` pone los elementos de lista en fila) |
 | `text-decoration` | `text-decoration: underline;` | Subrayado, tachado, etc. |
 
 > [!WARNING]
@@ -162,11 +175,13 @@ La propiedad y el valor se separan con `:`; varios estilos se separan con `;`.
 | Correo | `<input type="email">` | Comprueba que haya un `@` válido |
 | Contraseña | `<input type="password">` | Oculta el texto con puntos |
 | Número | `<input type="number" min="0" max="67" step="2">` | Permite números con flechas y límites |
+| Casilla | `<input type="checkbox">` | Casilla: se pueden marcar **varias** opciones |
+| Radio | `<input type="radio" name="grupo">` | Botón redondo: **una** opción por grupo `name` |
 | Enviar | `<input type="submit" value="Enviar">` | Botón para enviar el formulario |
 
 ```html
 <form>
-  Nombre de usuario:<br>
+  Nombre del jugador:<br>
   <input type="text" minlength="3" maxlength="20" required>
   <br><br>
   Correo electrónico:<br>
@@ -175,7 +190,7 @@ La propiedad y el valor se separan con `:`; varios estilos se separan con `;`.
   Contraseña:<br>
   <input type="password" minlength="8" maxlength="64" required>
   <br><br>
-  <input type="submit">
+  <input type="submit" value="Crear cuenta">
 </form>
 ```
 
@@ -189,6 +204,52 @@ que lleva todos los valores al servidor.
 
 ---
 
+## 🎛️ Radio, checkbox, textarea y etiquetas
+
+```html
+<form>
+  ¿Vienes a la incursión de esta noche?<br>
+  <input type="radio" name="incursion" value="Sí"> Sí
+  <input type="radio" name="incursion" value="No"> No
+  <input type="radio" name="incursion" value="Quizá"> Quizá
+  <br><br>
+
+  ¿Qué clases llevas?<br>
+  <input type="checkbox" name="rol" value="Explorador"> Explorador
+  <input type="checkbox" name="rol" value="Mago"> Mago
+  <input type="checkbox" name="rol" value="Tanque"> Tanque
+  <br><br>
+
+  <label for="build">Describe tu build:</label><br>
+  <textarea id="build" name="build" rows="4" cols="42" placeholder="Agilidad 18, bastón de hielo…" maxlength="250"></textarea>
+  <br><br>
+
+  <label for="robot">
+    <input type="checkbox" id="robot" name="robot"> No soy un robot
+  </label>
+  <br><br>
+
+  <input type="submit" value="Enviar">
+</form>
+```
+
+| | `"checkbox"` | `"radio"` |
+| :--- | :--- | :--- |
+| Opciones permitidas | Una o varias | Solo una por grupo |
+| Ejemplo en Emberfall | Roles del grupo, opciones de accesibilidad | ¿Asistes? Sí / No / Quizá |
+
+| Estilo de etiqueta | Código |
+| :--- | :--- |
+| Explícito | `<label for="name">Name:</label> <input type="text" id="name">` |
+| Implícito | `<label>Name: <input type="text"></label>` |
+
+> [!WARNING]
+> Los radios **sin** `name` no forman un grupo: puedes marcar todos a la vez. Mismo `name`, una
+> sola opción. Los checkbox no necesitan un `name` compartido para funcionar: lo comparten para
+> que el servidor sepa qué opciones se eligieron.
+
+---
+
 ## ✅ Buenas prácticas
 
 - Indentar con **dos espacios**.
@@ -197,6 +258,8 @@ que lleva todos los valores al servidor.
 - Usar comentarios con moderación y eliminarlos cuando ya no sirven.
 - Mantener cada `<input>` dentro de un solo `<form>`.
 - Preferir CSS a `<b>`, `<i>`, `<u>` y `<s>` para el estilo (se ve en el curso de CSS).
+- Enlazar cada `<label>` con su campo (`for` = `id`), o envolver el campo dentro de la etiqueta.
+- Dar a los radios de una misma pregunta el mismo `name`.
 
 ---
 
@@ -205,19 +268,64 @@ que lleva todos los valores al servidor.
 | Trampa | Qué ocurre realmente |
 | :--- | :--- |
 | Dos elementos comparten un `id` | El salto `href="#id"` y el selector `#id` solo alcanzan el primero |
-| Usar mayúsculas en `id` o `class` | El selector `.ciudad` no coincide con `class="Ciudad"` |
+| Usar mayúsculas en `id` o `class` | El selector `.slot` no coincide con `class="Slot"` |
 | `id="mi id"` con un espacio | El destino del enlace se rompe — `id` no admite espacios |
 | `style="color:red"` sin comillas | Funciona en muchos navegadores, pero falla si el valor lleva espacios |
 | Olvidar `:` o `;` en `style` | La declaración siguiente se descarta en silencio |
+| Radios sin `name` compartido | Se pueden marcar todas las opciones a la vez |
+| Usar checkbox para una sola elección | El jugador puede marcar tres clases para un grupo de tres |
+| `<label for="build">` apuntando a un `id` inexistente | Al pulsar el texto no se enfoca nada |
 | `<input>` fuera de `<form>` | Se muestra, pero pulsar Intro no envía nada |
 | Pensar que `maxlength` valida | Solo limita la escritura; para bloquear el envío necesitas `minlength` |
 | Dar estilo con `<b>` e `<i>` | Mal uso semántico que tendrás que deshacer en el curso de CSS |
 
 ---
 
+## 🎮 La versión en una sola página
+
+Todos los atributos de esta hoja, en el formulario de invitación del sitio de Emberfall:
+
+```html
+<form action="" method="post">
+  <h2>Invitación a la incursión</h2>
+
+  <label for="nombre-jugador">Nombre del jugador:</label>
+  <input type="text" id="nombre-jugador" name="nombre-jugador" minlength="3" maxlength="16" required>
+  <br><br>
+
+  <p>Nivel del personaje:</p>
+  <input type="number" id="nivel" name="nivel" min="1" max="99" step="1" required>
+  <br><br>
+
+  <p>¿Asistes?</p>
+  <input type="radio" id="si" name="incursion" value="Sí">
+  <label for="si">Sí</label>
+  <input type="radio" id="no" name="incursion" value="No">
+  <label for="no">No</label>
+  <input type="radio" id="quiza" name="incursion" value="Quizá">
+  <label for="quiza">Quizá</label>
+  <br><br>
+
+  <p>Clases del grupo:</p>
+  <input type="checkbox" name="rol" value="Explorador"> Explorador
+  <input type="checkbox" name="rol" value="Mago"> Mago
+  <input type="checkbox" name="rol" value="Tanque"> Tanque
+  <input type="checkbox" name="rol" value="Curandero"> Curandero
+  <br><br>
+
+  <label for="build">Notas del build:</label><br>
+  <textarea id="build" name="build" rows="4" cols="42" placeholder="Bastón de hielo, build de evasión" maxlength="250"></textarea>
+  <br><br>
+
+  <input type="submit" value="Enviar invitación">
+</form>
+```
+
+---
+
 ## 🔗 Ver también
 
-- [[00b - Chuleta de HTML]] — elementos, etiquetas, comentarios y tipos de enlace
+- [[00b - Chuleta de HTML]] — elementos, etiquetas, diseño semántico y tipos de enlace
 - [[02 - Estructura y Atributos]] — dónde se introducen `class`, `id` y `<style>`
 - [[03 - Formularios]] — campos, tipos y validación, lección a lección
 

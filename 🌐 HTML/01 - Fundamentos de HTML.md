@@ -11,15 +11,20 @@
   <img src="https://img.shields.io/badge/Dificultad-PRINCIPIANTE-6CC24A?style=for-the-badge" alt="Principiante">
   <img src="https://img.shields.io/badge/Lecciones-01_--_07_%2B_Bonus-7C5CFF?style=for-the-badge" alt="Lecciones 01 a 07">
   <img src="https://img.shields.io/badge/Estado-Completado-00C2A8?style=for-the-badge" alt="Completado">
+  <img src="https://img.shields.io/badge/Trama-Emberfall-FF6B35?style=for-the-badge" alt="Emberfall">
   <img src="https://img.shields.io/badge/Vault-Obsidian-7B3FE4?style=for-the-badge&logo=obsidian" alt="Obsidian">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=70&section=header" width="100%" alt="Ola violeta" />
 </p>
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #E34F26, #2DD4BF, #E34F26, transparent); margin: 24px 0;" />
 
 El primer capítulo del lenguaje que da estructura a cualquier página web. Al terminarlo
-escribirás una página de tu grupo favorito desde cero — con encabezados, texto formateado,
-listas, un enlace y una imagen — y sabrás cómo inspeccionar cualquier página de Internet
-para averiguar cómo está construida. La referencia de elementos y etiquetas está en
+escribirás desde cero una **ficha de jefe** de Emberfall — con encabezados, texto formateado,
+listas, un enlace y una imagen — y sabrás cómo inspeccionar cualquier página de Internet para
+averiguar cómo está construida. La referencia de elementos y etiquetas está en
 [[00b - Chuleta de HTML]].
 
 > [!NOTE]
@@ -30,7 +35,7 @@ para averiguar cómo está construida. La referencia de elementos y etiquetas es
 
 ---
 
-## 01. Shooting Star
+## 01. Moneda
 
 > [!NOTE]
 > **Información clave**
@@ -40,11 +45,11 @@ HTML es un **lenguaje de marcado**: marca el contenido de una página web y le d
 
 ### Las tres tecnologías principales de la web
 
-| Tecnología | Rol |
-| :--- | :--- |
-| **HTML** | Crea la **estructura** de una página web |
-| **CSS** | Da **estilo** a la página |
-| **JavaScript** | La hace **interactiva** |
+| Tecnología | Rol | En la web de un juego |
+| :--- | :--- | :--- |
+| **HTML** | Crea la **estructura** de una página web | El esqueleto: qué paneles existen |
+| **CSS** | Da **estilo** a la página | La piel: colores, tipografías, maquetación |
+| **JavaScript** | La hace **interactiva** | El motor: barras de vida que se actualizan |
 
 Este curso se centra en HTML. Los archivos que crearemos usan la extensión **`.html`**.
 
@@ -52,39 +57,39 @@ Este curso se centra en HTML. Los archivos que crearemos usan la extensión **`.
 
 Un **editor de código** es un editor de texto con el que podemos escribir, editar y ejecutar código.
 
-### Ejercicio: Misión 01: Generar tu primera página
+### Misión: Secuencia de Arranque
 
 Escribe estas dos líneas en tu editor, cambia el texto de ejemplo y pulsa **Run**:
 
 ```html
-<h2>Escribe la fecha</h2>
-<p>Escribe tu deseo</p>
+<h2>Emberfall 1.0 — fecha de lanzamiento</h2>
+<p>Escribe tu frase de venta</p>
 ```
 
-- Sustituye `Escribe la fecha` por la fecha de hoy.
-- Sustituye `Escribe tu deseo` por un deseo.
+- Sustituye `Emberfall 1.0 — fecha de lanzamiento` por la fecha de hoy.
+- Sustituye `Escribe tu frase de venta` por la frase de venta de tu juego.
 
 Acabas de crear tu primera página web con HTML.
 
 > [!TIP]
 > Los archivos de este módulo son simples `.html` en una carpeta. No necesitas instalar nada
-> ni compilar nada — en [[02 - Sistema de Archivos]] ves cómo navegar a esa carpeta y abrir
-> el archivo en el navegador.
+> ni compilar nada — en [[02 - Sistema de Archivos]] del módulo de Línea de Comandos ves cómo
+> navegar a esa carpeta y abrir el archivo en el navegador.
 
 ---
 
-## 02. Elemental
+## 02. Sistemas Centrales
 
 ### Elementos
 
 Los **elementos** son los bloques más pequeños del lenguaje. Un elemento suele estar formado por una **etiqueta de apertura**, el **contenido** y una **etiqueta de cierre**. Una **etiqueta** va entre corchetes angulares.
 
 ```html
-<p>¡Hola Mundo!</p>
+<p>Emberfall v1.0 ya está disponible.</p>
 ```
 
 - `<p>` es la etiqueta de apertura.
-- `¡Hola Mundo!` es el contenido.
+- `Emberfall v1.0 ya está disponible.` es el contenido.
 - `</p>` es la etiqueta de cierre.
 
 El elemento **párrafo** `<p>` le indica al navegador que ese contenido es un párrafo.
@@ -110,34 +115,34 @@ Sangrar el HTML no es obligatorio, pero sí una buena práctica: facilita la lec
 </body>
 ```
 
-### Misión: Pergamino Elemental
+### Misión: Los Cuatro Sistemas
 
-Crea `elemental.html` para mostrar los cuatro elementos de la antigua Grecia (Fuego, Agua, Tierra, Aire) en el navegador, bien sangrado.
+Crea `systems.html` para mostrar los cuatro sistemas que todo juego necesita (Entrada, Física, Audio, Renderizado) en el navegador, bien sangrado.
 
 ```html
 <body>
-  <p>Fuego</p>
-  <p>Agua</p>
-  <p>Tierra</p>
-  <p>Aire</p>
+  <p>Entrada</p>
+  <p>Física</p>
+  <p>Audio</p>
+  <p>Renderizado</p>
 </body>
 ```
 
 ---
 
-## 03. Periódico
+## 03. Notas del Parche
 
 ### Encabezados
 
 HTML tiene **seis niveles de encabezados**, de `<h1>` a `<h6>`. `<h1>` es el más grande y `<h6>` el más pequeño.
 
 ```html
-<h1>Encabezado nivel 1</h1>
-<h2>Encabezado nivel 2</h2>
-<h3>Encabezado nivel 3</h3>
-<h4>Encabezado nivel 4</h4>
-<h5>Encabezado nivel 5</h5>
-<h6>Encabezado nivel 6</h6>
+<h1>Emberfall 1.4 — Las Salas Profundas</h1>
+<h2>Contenido nuevo</h2>
+<h3>Pasillos 5 a 9</h3>
+<h4>Enemigos con farol</h4>
+<h5>Notas del parche</h5>
+<h6>Corregida una errata</h6>
 ```
 
 > [!NOTE]
@@ -153,8 +158,8 @@ Pulsar `enter` dentro de un elemento no crea una nueva línea, porque **HTML col
 
 ```html
 <body>
-  <h1>Noticia de última hora</h1>
-  <p>Un hombre de Florida roba una tienda con un caimán.<br>Deja unas Crocs de bebé atrás.</p>
+  <h1>Parche 1.4</h1>
+  <p>Se añadió el ala de las Salas Profundas.<br>Se corrigió el farol que no se apagaba.</p>
 </body>
 ```
 
@@ -168,24 +173,24 @@ Una **etiqueta autocerrada** no necesita una etiqueta de cierre separada (no exi
 > espacios, tabuladores y saltos de línea dentro de un elemento se convierte en un único
 > espacio. El único modo de romper una línea desde HTML es con `<br>`.
 
-### Misión: Crónica de la Taberna
+### Misión: Notas de Lanzamiento
 
-Crea `newspaper.html` con lo que ocurría en las noticias el día en que naciste:
+Crea `patch_notes.html` con el registro de cambios del lanzamiento de tu juego:
 
-- Un encabezado `<h1>` con el título.
+- Un encabezado `<h1>` con el número de versión.
 - Un encabezado `<h3>` con la fecha.
-- Uno o varios párrafos `<p>` con la noticia.
+- Uno o varios párrafos `<p>` con el resumen.
 - Saltos de línea `<br>` donde corresponda.
 
 ```html
-<h1>El Diario</h1>
-<h3>1 de enero de 2000</h3>
-<p>Hoy ocurrieron grandes acontecimientos en el mundo.<br>Sustituye esto por titulares reales de tu fecha de nacimiento.</p>
+<h1>Emberfall 1.4</h1>
+<h3>14 de marzo de 2026</h3>
+<p>Añade el ala de las Salas Profundas y dos minijefes nuevos.<br>Sustituye esto por tus propios cambios.</p>
 ```
 
 ---
 
-## 04. Charla Corporativa
+## 04. Anuncio de Lanzamiento
 
 ### Formato de texto
 
@@ -197,44 +202,44 @@ Crea `newspaper.html` con lo que ocurría en las noticias el día en que naciste
 | `<s>` | Texto ~~tachado~~ |
 
 ```html
-<b>Este texto está en negrita.</b><br>
-<i>Este texto está en cursiva.</i><br>
-<u>Este texto está subrayado.</u><br>
-<s>Este texto está tachado.</s><br>
+<b>Emberfall ya está disponible.</b><br>
+<i>El mejor roguelike del año.</i><br>
+<u>Demo gratuita disponible.</u><br>
+<s>Precio de lanzamiento -90%</s><br>
 ```
 
 > [!NOTE]
 > `<b>` solo pone el texto en negrita por estilo. HTML también tiene `<strong>`, que indica
 > que el contenido es **importante** y, además, lo muestra en negrita.
 
-Todos los elementos juntos en un anuncio:
+Todos los elementos juntos en un anuncio de tienda:
 
 ```html
-<p>Recuerda que el <i>examen final</i> es <b>obligatorio</b>.<br>
-Se celebrará el <u>lunes 14 de octubre</u> a las <s>19:00</s> 20:00 (hora EST).</p>
+<p>Este parche añade <i>Las Salas Profundas</i> y un <b>nuevo jefe</b>.<br>
+El <u>bundle de reserva</u> ahora incluye el artebook, a <s>50€</s> 30€.</p>
 ```
 
 > [!NOTE]
 > Estas etiquetas sirven para aprender, pero **no son la mejor práctica actual**. En el curso
 > de CSS veremos la forma moderna de aplicar estilos.
 
-### Misión: Anuncio del Gremio
+### Misión: Texto Promocional
 
-Recrea un texto con jerga corporativa en `corporate.html` usando `<p>`, `<b>`, `<i>`, `<s>` y `<u>`.
+Recrea el formato exacto del texto de una página de tienda en `announcement.html` usando `<p>`, `<b>`, `<i>`, `<s>` y `<u>`.
 
 ```html
 <p>
-  <b>Aumentamos el ritmo y recortamos:</b> Tenemos una estrategia sólida para pasar de las <s>frutas bajas</s> a objetivos <i>críticos para la misión</i> que realmente marcan la diferencia. Es hora de <b>aumentar los ingresos</b> y, al mismo tiempo, <u>reducir los costes</u>. Esto es una victoria para todos: una victoria para nosotros y para <i>nuestros increíbles accionistas</i>.
+  <b>Salas Profundas, ya disponibles:</b> Reconvertimos <s>el relleno de pasillos viejo</s> en un ala entero que te hará <i>grindear de verdad</i>. Botín nuevo, jefes nuevos y <b>un farol muy enfadado</b>. Consigue el <u>DLC Salas Profundas</u> con <i>descuento de lanzamiento</i>.
 </p>
 
 <p>
-  <b>P.D.</b> Tras varios meses con ventas récord, ¡estamos imprimiendo <b>camisetas de agradecimiento a los empleados</b>! Saldrán a la venta el lunes.
+  <b>P.D.</b> Tras tres meses de beta, ¡estamos imprimiendo <b>los libros de arte de Emberfall</b>! Las reservas abren el lunes.
 </p>
 ```
 
 ---
 
-## 05. Sous-Chef
+## 05. Receta de Forja
 
 ### Listas
 
@@ -247,9 +252,9 @@ Cada elemento se envuelve en un `<li>` (**elemento de lista**).
 
 ```html
 <ul>
-  <li>🧺 Ir a la lavandería.</li>
-  <li>🖥️ Programar 45 minutos.</li>
-  <li>🛁 Darse un baño de espuma.</li>
+  <li>🪨 Fragmento de brasa</li>
+  <li>🍄 Champiñón de ceniza</li>
+  <li>💧 Agua profunda</li>
 </ul>
 ```
 
@@ -257,40 +262,41 @@ Usamos `<ul>` cuando el orden no importa. Para numerar los pasos, usamos `<ol>`:
 
 ```html
 <ol>
-  <li>🧺 Ir a la lavandería.</li>
-  <li>🖥️ Programar 45 minutos.</li>
-  <li>🛁 Darse un baño de espuma.</li>
+  <li>🪨 Fragmento de brasa</li>
+  <li>🍄 Champiñón de ceniza</li>
+  <li>💧 Agua profunda</li>
 </ol>
 ```
 
-### Misión: Receta de Poción
+### Misión: Plano de Forja
 
-Crea `chef.html` con una receta de poción que te apetezca: una lista **desordenada** para los ingredientes y una lista **ordenada** para los pasos.
+Crea `recipe.html` con un objeto que te gustaría fabricar en tu juego: una lista **desordenada** para los ingredientes y una lista **ordenada** para los pasos de forja.
 
 ```html
 <h2>Ingredientes</h2>
 <ul>
-  <li>2 rebanadas de pan</li>
-  <li>2 rebanadas de queso</li>
-  <li>1 cucharada de mantequilla</li>
+  <li>1 fragmento de brasa</li>
+  <li>2 champiñones de ceniza</li>
+  <li>3 medidas de agua profunda</li>
 </ul>
 
-<h2>Instrucciones</h2>
+<h2>Pasos</h2>
 <ol>
-  <li>Unta mantequilla en una cara de cada rebanada de pan.</li>
-  <li>Coloca el queso entre las caras sin mantequilla.</li>
-  <li>Calienta en una sartén a fuego medio hasta que esté dorado por ambos lados.</li>
+  <li>Funde el fragmento de brasa hasta que brille en naranja.</li>
+  <li>Tritura los champiñones de ceniza hasta hacer un polvo fino.</li>
+  <li>Vierte el agua profunda sobre el polvo y deja que reaccione.</li>
+  <li>Martilla la mezcla hasta darle forma de hoja mientras aún está caliente.</li>
 </ol>
 ```
 
 > [!TIP]
 > Esta estructura aparece en casi todas las pantallas de juego: un `<ul>` para estadísticas,
-> un `<ol>` para pasos, una `<table>` para el resto. Un diario de misiones, una receta de poción, una
-> lista de habilidades y una baraja siguen exactamente esta forma.
+> un `<ol>` para pasos, una `<table>` para el resto. Un diario de misiones, una lista de
+> habilidades y una baraja siguen exactamente esta forma.
 
 ---
 
-## 06. Mascota Perdida
+## 06. Jefe Escapado
 
 ### Enlaces
 
@@ -303,14 +309,14 @@ Usamos el elemento **ancla** `<a>` para crear un enlace a un texto:
 ```
 
 - El texto dentro es lo que se ve.
-- `href` (hiperlink reference) indica adónde lleva el enlace. Al hacer clic, el navegador va a esa dirección.
+- `href` (hyperlink reference) indica adónde lleva el enlace. Al hacer clic, el navegador va a esa dirección.
 
 > [!NOTE]
 > `href` también puede apuntar a un correo, a un teléfono o a un mensaje de texto con
 > `mailto:`, `tel:` o `sms:`:
 
 ```html
-<a href="mailto:frankie@example.com">📧</a>
+<a href="mailto:parche@example.com">📧</a>
 <a href="tel:212-555-0100">🤙</a>
 <a href="sms:212-555-0123">💬</a>
 ```
@@ -320,8 +326,8 @@ Usamos el elemento **ancla** `<a>` para crear un enlace a un texto:
 Usamos el elemento de imagen `<img>`:
 
 ```html
-<p>Aquí hay una foto bonita:</p>
-<img src="https://example.com/foto-bonita.jpg">
+<p>Aquí hay una captura:</p>
+<img src="https://example.com/jefe.png">
 ```
 
 - `<img>` es otra **etiqueta autocerrada**.
@@ -330,28 +336,28 @@ Usamos el elemento de imagen `<img>`:
 
 > [!IMPORTANT]
 > Una imagen `<img>` sin `alt` es un error. Si la imagen no carga, el visitante ve un icono
-> roto y no sabe qué debería aparecer — y un lector de pantalla anuncia el nombre del
-> archivo en voz alta.
+> roto y no sabe qué debería aparecer — y un lector de pantalla anuncia la ruta del archivo
+> en voz alta.
 
-### Misión Secundaria: Compañero Desaparecido
+### Misión: Tablero de Recompensas
 
-Un amigo ha perdido a su compañero. Crea `pet.html` con:
+El jefe de Emberfall "Guardián de la Novena Planta" se ha escapado de los archivos del juego. Crea `boss.html` con:
 
-- El nombre de la compañero.
-- Una foto de la compañero con `<img>`.
+- El nombre del jefe.
+- Una imagen del jefe con `<img>`.
 - Una breve descripción.
 - Información de contacto con `<a>`.
 
 ```html
-<h1>Mascota perdida: Barnaby</h1>
-<img src="https://placehold.co/300" alt="Perro perdido llamado Barnaby">
-<p>Barnaby es un perro marrón y amistoso que desapareció anoche mientras llevaba un collar rojo.</p>
-<a href="mailto:propietario@example.com">Contactar con el propietario</a>
+<h1>Jefe desaparecido: Guardián de la Novena Planta</h1>
+<img src="https://placehold.co/300" alt="Un guardián alto y blindado con un farol">
+<p>Vista por última vez en las Salas Profundas. Suelta la Llave de Brasa al derrotarlo y está muy enfadado por ello.</p>
+<a href="mailto:archivista@example.com">Informar de un avistamiento</a>
 ```
 
 ---
 
-## 07. Grupo Favorito
+## 07. Ficha de Jefe
 
 ### Punto de Control: Recapitulación
 
@@ -362,51 +368,52 @@ Un amigo ha perdido a su compañero. Crea `pet.html` con:
 - Listas desordenadas y ordenadas: `<ul>`, `<ol>`, `<li>`.
 - Enlaces e imágenes: `<a>`, `<img>`.
 
-### Proyecto: Grupo Favorito
+### Proyecto: Ficha de Jefe
 
-Crea `band.html` sobre tu artista favorito, usando **todos** los elementos aprendidos y **al menos dos tipos de formato de texto**. Debe incluir:
+Crea `boss.html` sobre el jefe de tu propio juego, usando **todos** los elementos aprendidos y **al menos dos tipos de formato de texto**. Debe incluir:
 
-- El nombre del artista.
-- Una foto del artista o de su disco.
-- Una breve descripción del artista.
-- Un enlace a su sitio web oficial.
-- Una lista desordenada con los miembros del grupo.
-- Una lista ordenada con sus 5 canciones favoritas.
+- El nombre del jefe.
+- Una imagen del jefe.
+- Una breve descripción de su lore.
+- Un enlace a la wiki o al devlog.
+- Las fases en una lista desordenada.
+- Sus 5 ataques principales en una lista ordenada.
 
 ```html
-<h1>Daft Punk</h1>
-<img src="https://placehold.co/300" alt="Daft Punk">
+<h1>Guardián de la Novena Planta</h1>
+<img src="https://placehold.co/300" alt="Guardián de la Novena Planta">
 
-<p>Daft Punk fue un <b>icónico dúo francés de música electrónica</b> formado en París. Alcanzaron un <i>éxito mundial</i> tanto en el synthpop como en la música house.</p>
+<p>El Guardián es un <b>minijefe de dos fases</b> que custodia la última puerta de las Salas Profundas. <i>Cambia de comportamiento al 50% de vida</i> y suelta el farol para luchar a oscuras.</p>
 
-<a href="https://daftpunk.com">Visitar su web oficial</a>
+<a href="https://example.com/emberfall/guardian">Lee la entrada completa del códex</a>
 
-<h2>Miembros</h2>
+<h2>Fases</h2>
 <ul>
-  <li>Thomas Bangalter</li>
-  <li>Guy-Manuel de Homem-Christo</li>
+  <li>Fase 1 — Farol</li>
+  <li>Fase 2 — Oscuridad</li>
 </ul>
 
-<h2>Mis 5 canciones favoritas</h2>
+<h2>Mis 5 ataques principales</h2>
 <ol>
-  <li>One More Time</li>
-  <li>Digital Love</li>
-  <li>Harder, Better, Faster, Stronger</li>
-  <li>Around the World</li>
-  <li>Get Lucky</li>
+  <li>Barrido de farol</li>
+  <li>Proyectil de brasa</li>
+  <li>Tajo de suelo</li>
+  <li>Embestida a ciegas</li>
+  <li>Colapso de la Novena Planta</li>
 </ol>
 ```
 
 > [!TIP]
 > **Versión para desarrollo de videojuegos**
-> Esta ficha de banda de taberna es igual que una ficha de enemigo o de personaje. Cambia el
-> encabezado por el nombre de la criatura, la descripción por el lore, la lista desordenada
-> por sus habilidades y la lista ordenada por su botín. El capítulo [[02 - Estructura y Atributos]]
-> toma esa ficha y le añade `class` e `id` para que una hoja de estilos pueda darle forma.
+> Una ficha de jefe es una hoja de personaje: cambia el encabezado por el nombre del enemigo,
+> la descripción por el lore, la lista desordenada por las fases y la ordenada por la lista de
+> movimientos. Cada pantalla de datos de un juego es esta página con otras palabras. El
+> capítulo [[02 - Estructura y Atributos]] toma esa ficha y le añade `class` e `id` para que
+> una hoja de estilos pueda darle forma.
 
 ---
 
-## Botín Extra:: Consola de Depuración
+## Botín Extra:: Herramientas de Desarrollo
 
 ### Inspeccionar
 
@@ -442,8 +449,8 @@ Desde el panel "Elements" (Elementos) puedes hacer doble clic en el código HTML
 
 > [!TIP]
 > Las herramientas de desarrollo son la forma más rápida de aprender HTML. Inspecciona
-> cualquier página que te guste y lee las etiquetas que ha usado su creador. Diez minutos
-> inspeccionando enseñan más que una hora adivinando.
+> cualquier página de un juego que te guste y lee las etiquetas que ha usado su creador. Diez
+> minutos inspeccionando enseñan más que una hora adivinando.
 
 ---
 
@@ -466,13 +473,13 @@ Desde el panel "Elements" (Elementos) puedes hacer doble clic en el código HTML
 - 📋 Recetas, listas de tareas y menús
 - 🧑‍🎤 Páginas de perfil o de fans
 - 🔗 Páginas de enlaces y portfolios sencillos
-- 🎮 Fichas de enemigo, catálogos de objetos y diarios de misiones — el mismo marcado, otras palabras
+- 🎮 Fichas de jefe, catálogos de objetos y notas de parche — el mismo marcado, otras palabras
 
 ---
 
 ## Misiones Secundarias: Ejercicios prácticos
 
-1. Crea `bio.html` con un `<h1>`, dos párrafos y una lista con tus aficiones.
+1. Crea un `bio.html` con un `<h1>`, dos párrafos y una lista con tus aficiones.
 2. Añade un enlace a tu sitio favorito y otro con `mailto:` para enviarte un correo.
 3. Usa los cuatro elementos de formato de texto en un mismo párrafo.
 4. Abre las herramientas de desarrollo en cualquier página y cambia el texto de un encabezado.
@@ -485,5 +492,6 @@ Desde el panel "Elements" (Elementos) puedes hacer doble clic en el código HTML
 - [[00b - Chuleta de HTML]] — todos los elementos de este capítulo en una sola página
 - [[02 - Estructura y Atributos]] — siguiente capítulo: esqueleto de página, comentarios y atributos
 - [[03 - Formularios]] — para recoger datos del usuario
+- [[04 - HTML Semántico]] — para darle a la página una maquetación con sentido
 
 ---

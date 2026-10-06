@@ -3,61 +3,71 @@
 **Versión original en inglés:** [03 - Forms.md](03%20-%20Forms.md)
 
 **Curso:** HTML
-**Tema:** Formularios, tipos de `<input>`, correo y contraseña, validación (`minlength`, `maxlength`, `required`), campos numéricos
-**Tags:** `#html` `#web-development` `#forms` `#inputs` `#game-dev`
+**Tema:** Formularios, tipos de `<input>`, email y contraseña, validación (`minlength`, `maxlength`, `required`), campos numéricos, radio y checkbox
+**Tags:** `#html` `#web-development` `#formularios` `#inputs` `#game-dev`
 
 <p align="left">
   <img src="https://img.shields.io/badge/HTML-5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML 5">
   <img src="https://img.shields.io/badge/Dificultad-PRINCIPIANTE-6CC24A?style=for-the-badge" alt="Principiante">
-  <img src="https://img.shields.io/badge/Lecciones-15_--_18_Parcial-7C5CFF?style=for-the-badge" alt="Lecciones 15 a 18">
-  <img src="https://img.shields.io/badge/Estado-En_progreso-FFA500?style=for-the-badge" alt="En progreso">
+  <img src="https://img.shields.io/badge/Lecciones-15_--_18-7C5CFF?style=for-the-badge" alt="Lecciones 15 a 18">
+  <img src="https://img.shields.io/badge/Estado-Completado-00C2A8?style=for-the-badge" alt="Completado">
+  <img src="https://img.shields.io/badge/Trama-Emberfall-FF6B35?style=for-the-badge" alt="Emberfall">
   <img src="https://img.shields.io/badge/Vault-Obsidian-7B3FE4?style=for-the-badge&logo=obsidian" alt="Obsidian">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FF6B35&height=70&section=header" width="100%" alt="Ola de brasa" />
 </p>
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #E34F26, #2DD4BF, #E34F26, transparent); margin: 24px 0;" />
 
-Llegamos al capítulo en el que una página web deja de ser un documento y empieza a **preguntar algo al visitante**. Todos los formularios de registro, inicio de sesión, compra o creación de personaje que has usado alguna vez son un `<form>` con varios `<input>` dentro. La mejor noticia de este capítulo: el navegador hace gran parte de la validación **solo**, antes de ejecutar ni una línea de código.
+El capítulo donde una página web deja de ser un documento y empieza a **preguntarle algo al
+jugador**. Cada pantalla de registro, login, creación de personaje o editor de equipamiento
+que has usado es un `<form>` con `<input>`s dentro. La mejor noticia de este capítulo: el
+navegador valida casi todo gratis, antes incluso de que se ejecute una sola línea de tu código.
 
-> [!WARNING]
-> **En progreso:** Esta nota cubre parcialmente las lecciones 15 a 18. La lección 18 (RSVP) aún
-> está por completar — los campos `radio` y `checkbox` se mencionan, pero no están documentados
-> en detalle todavía. El resto del capítulo se irá ampliando más adelante.
+> [!NOTE]
+> **Por qué a los estudios les encantan los formularios nativos**
+> Una ficha de personaje, una invitación al grupo, un editor de loadout, un formulario para
+> subir mods: todos son el mismo problema — recoger datos escritos, comprobar que tienen
+> sentido y enviarlos a algún sitio. HTML lleva esta maquinaria desde 1995, y la capa de UI de
+> tu motor de juegos es casi siempre un envoltorio alrededor de esto.
 
 ---
 
-## 15. Google
+## 15. Portal de Búsqueda
 
 ### Formularios
 
-¿Qué tienen en común las páginas de registro, inicio de sesión y compra? Todas **recogen datos del usuario**. Desde una barra de búsqueda hasta el inicio de sesión en una app, los formularios forman parte de nuestra vida digital diaria.
+¿Qué tienen en común las páginas de registro, login y creación de personaje? Todos **recogen datos del usuario**. Desde una barra de búsqueda hasta iniciar sesión en tu juego favorito, los formularios son parte de la vida digital cotidiana.
 
-¿Cómo funciona un formulario?
+Así funciona un formulario:
 
-1. El usuario introduce información.
-2. Pulsa el botón "Enviar" ("Submit").
-3. Esa información se envía a algún sitio para procesarse.
+1. El usuario escribe cierta información.
+2. El usuario pulsa un botón de "Enviar".
+3. La información se envía a algún sitio y se procesa.
 
-Para crear un formulario usamos el elemento `<form>`:
+Para crear un formulario, usamos el elemento `<form>`:
 
 ```html
 <form action="" method="">
-  <!-- Aquí irán los campos del formulario -->
+  <!-- Aquí irá más código -->
 </form>
 ```
 
-Dos atributos importantes en `<form>`:
+Se usan dos atributos con `<form>`:
 
-| Atributo | Propósito |
+| Atributo | Función |
 | :--- | :--- |
-| `action` | Indica **a dónde** se envían los datos al pulsar Enviar |
-| `method` | Indica **cómo** se envían los datos (normalmente `"post"` o `"get"`) |
+| `action` | Especifica **dónde** se envían los datos al enviar el formulario |
+| `method` | Especifica **cómo** se procesan los datos (normalmente `"post"` o `"get"`) |
 
 > [!NOTE]
-> En los ejemplos de este capítulo dejaremos `action` y `method` vacíos. El formulario se seguirá mostrando correctamente.
+> En el resto del capítulo, `action` y `method` no aparecerán en los ejemplos. Los formularios se siguen viendo bien.
 
-### Campos de entrada (`input`)
+### Los campos `<input>`
 
-El elemento `<input>` es un **control interactivo** para introducir datos. Su atributo `type` determina qué tipo de campo es. Los dos más comunes:
+El elemento `<input>` es un **control interactivo** para introducir datos. Su atributo `type` determina qué tipo de campo es. Los dos más usados:
 
 ```html
 <form>
@@ -66,110 +76,116 @@ El elemento `<input>` es un **control interactivo** para introducir datos. Su at
 </form>
 ```
 
-- `"text"` crea una caja de texto sencilla.
-- `"submit"` convierte ese `<input>` en un botón para enviar el formulario.
+- `"text"` crea una caja de texto normal.
+- `"submit"` convierte el `<input>` en un botón para enviar los datos.
 
-Por defecto, el botón de enviar dice "Submit" (Enviar). Podemos cambiar ese texto con el atributo `value`:
+Por defecto, el botón dice "Submit". Cambia su texto con el atributo `value`:
 
 ```html
-<input type="submit" value="¡Enviar formulario!">
+<input type="submit" value="¡Entrar en la Forja!">
 ```
 
 > [!NOTE]
-> El elemento `<input>` es **autocerrado** (no lleva etiqueta de cierre).
+> El elemento `<input>` usa una etiqueta **auto-cerrada**.
 
 > [!WARNING]
-> Si `action` está vacío (`""`), el formulario no se envía a ningún sitio: la página se
-> recarga y no ocurre nada visible. Mientras no tengamos un backend, ese comportamiento es
-> correcto, no es un error.
+> `action=""` con valor vacío significa "enviar a ninguna parte". La página se recarga y no
+> ocurre nada — que es exactamente lo que parece "mi formulario está roto". Hasta que exista
+> un backend, ese es el comportamiento correcto, no un error.
 
 ### Misión: Portal de Búsqueda
 
-Vamos a recrear la barra de búsqueda original de Google en `google.html`. Partimos de este código:
+Recrea la barra de búsqueda original de Google en `google.html`. Parte de este código:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Google</title>
+    <title>Búsqueda en la wiki de Emberfall</title>
   </head>
   <body>
-    <!-- Aquí va el formulario -->
+    <!-- Aquí va el código del formulario -->
   </body>
 </html>
 ```
 
-Sustituye el comentario por un `<form>` (puedes dejar `action` y `method` vacíos) y añade dentro:
+Sustituye el comentario por un elemento `<form>` (pon `action` y `method` a `""` o quítalos) y añade dentro:
 
-- Un párrafo `<p>` con el texto "¡Busca en la web con Google!"
-- Un `<input type="text">` para la búsqueda.
+- Un `<p>` con "¡Busca en la wiki de Emberfall!"
+- Un `<input>` con el `type` puesto a `"text"`.
 - Uno o dos saltos de línea `<br>`.
-- Un `<input type="submit" value="Buscar con Google">`.
+- Otro `<input>` con `type="submit"` (el texto debe decir "Buscar en la wiki").
 
 ```html
 <form action="" method="">
-  <p>¡Busca en la web con Google!</p>
+  <p>¡Busca en la wiki de Emberfall!</p>
   <input type="text">
   <br><br>
-  <input type="submit" value="Buscar con Google">
+  <input type="submit" value="Buscar en la wiki">
 </form>
 ```
 
 > [!NOTE]
-> Al enviar este formulario no pasa nada, porque aún no le hemos indicado a dónde enviar los datos.
+> Si enviamos este formulario, no ocurre nada, porque no le hemos dicho adónde enviar los datos.
 
 ---
 
-## 16. Registro v1
+## 16. Creación de Personaje I
 
 ### Tipos de `input`
 
-¿Cómo nos aseguramos de que el usuario introduce el tipo de dato correcto? Por ejemplo, si pedimos un correo electrónico, ¿cómo comprobamos que contiene un `@`? HTML tiene varios **tipos de `input`** con validación integrada.
+¿Cómo nos aseguramos de que los datos correctos lleguen a un formulario? Si un formulario pide
+un email, ¿cómo sabe si es un email *válido* que contiene una `@`? Los formularios de HTML
+tienen varios **tipos de campo integrados**. Dos de ellos:
 
-### Correo electrónico (`email`)
+### Email
 
 ```html
 <input type="email">
 <input type="submit">
 ```
 
-Este tipo comprueba que el valor introducido tenga aspecto de correo electrónico (que contenga `@`). Si falta, el navegador muestra un mensaje de error: "Por favor, incluye un `@` en la dirección de correo electrónico...".
+Comprueba si el valor enviado es una dirección de email válida. Si falta la `@`, el navegador
+muestra un error ("Por favor, incluye una '@' en la dirección de correo electrónico...").
 
-### Contraseña (`password`)
+### Contraseña
 
 ```html
 <input type="password">
 <input type="submit">
 ```
 
-El texto que escribes queda **oculto** y se muestra con puntos.
+El texto escrito queda **oculto** y se muestra como puntos.
 
-Hay muchos más tipos de `<input>` en HTML. Puedes consultar el resto en la documentación de MDN.
+Existen muchos más tipos de `<input>` en los formularios de HTML (consulta la lista completa
+en la documentación de MDN).
 
 > [!IMPORTANT]
-> Todos los campos `<input>` deben estar dentro de **un único** elemento `<form>`. Piensa en
-> `<form>` como un sobre: recoge todos los datos y los envía juntos.
+> Todos los elementos `<input>` deben colocarse dentro de un **único** elemento `<form>`.
+> Piensa en `<form>` como un **sobre** que contiene todos los datos que queremos enviar al
+> servidor.
 
 ### Misión: Creación de Personaje I
 
-Crea `sign_up.html` con un formulario clásico de registro: un encabezado "Regístrate", campos para nombre de usuario, correo electrónico y contraseña, y un botón de enviar. Parte de este código:
+Crea `sign_up.html` con una página de registro clásica: un encabezado "Sign Up", campos de
+Usuario, Email y Contraseña, y un botón de enviar. Parte de:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Registro</title>
+    <title>Sign Up</title>
   </head>
   <body>
     <form>
-      <h2>Regístrate</h2>
+      <h2>Sign Up</h2>
 
-      Nombre de usuario:<br>
+      Usuario:<br>
       <!-- Campo de texto -->
       <br><br>
 
-      Correo electrónico:<br>
-      <!-- Campo de correo -->
+      Email:<br>
+      <!-- Campo de email -->
       <br><br>
 
       Contraseña:<br>
@@ -182,17 +198,18 @@ Crea `sign_up.html` con un formulario clásico de registro: un encabezado "Regí
 </html>
 ```
 
-Sustituye los comentarios por los `<input>` correspondientes:
+Sustituye los comentarios por elementos `<input>` (uno de texto, uno de email, uno de
+contraseña y un botón de enviar):
 
 ```html
 <form>
-  <h2>Regístrate</h2>
+  <h2>Sign Up</h2>
 
-  Nombre de usuario:<br>
+  Usuario:<br>
   <input type="text">
   <br><br>
 
-  Correo electrónico:<br>
+  Email:<br>
   <input type="email">
   <br><br>
 
@@ -205,62 +222,65 @@ Sustituye los comentarios por los `<input>` correspondientes:
 ```
 
 > [!TIP]
-> `type="email"` y `type="password"` son la validación más barata que existe: un solo
-> atributo y el navegador ya bloquea envíos incorrectos. Esto nos ahorra muchísimo trabajo.
+> `type="email"` y `type="password"` son la validación más barata del desarrollo web: un
+> atributo cada uno y el navegador bloquea el envío por su cuenta. `type="number"` hará lo
+> mismo con los dígitos en la lección 18.
 
 ---
 
-## 17. Registro v2
+## 17. Creación de Personaje II
 
-### Longitud mínima y máxima (`minlength` y `maxlength`)
+### Minlength y Maxlength
 
-Podemos afinar la validación con estos atributos:
+Además de los tipos de campo, podemos **validar** con estos atributos:
 
-- `minlength`: número **mínimo** de caracteres obligatorios.
-- `maxlength`: número **máximo** de caracteres permitidos.
+- `minlength`: fija el número **mínimo** de caracteres.
+- `maxlength`: fija el número **máximo** de caracteres.
 
 ```html
 <input type="password" minlength="4" maxlength="10">
 ```
 
-Con esto, el usuario no podrá escribir más de 10 caracteres, y si intenta enviar el formulario con menos de 4, el navegador le mostrará un error.
+El usuario no puede escribir más de 10 caracteres, y aparece un error si intenta enviar menos
+de 4.
 
-### Campo obligatorio (`required`)
+### Datos obligatorios
 
-Para que un campo sea obligatorio antes de enviar el formulario, usamos el atributo `required`:
+Algunos formularios exigen datos antes de poder enviarse. El atributo `required` lo impone:
 
 ```html
 <form>
-  Nombre: <input type="text" required>
+  Nombre del héroe: <input type="text" required>
   <br><br>
-  Color favorito: <input type="text">
+  Elemento favorito: <input type="text">
   <input type="submit">
 </form>
 ```
 
-En este ejemplo, "Nombre" es obligatorio. Si se deja vacío, el navegador impide el envío y resalta ese campo.
+El `<input>` de "Nombre del héroe" está marcado como obligatorio. Si se deja vacío, el
+navegador bloquea el envío y señala el campo vacío.
 
 > [!WARNING]
-> `maxlength` **no es validación de envío**: solo limita lo que puedes teclear. `minlength`
-> sí bloquea el envío si no se alcanza. Usa ambos cuando quieras imponer un rango de
-> caracteres.
+> `maxlength` **no es validación**. Detiene la pulsación de teclas; no dice nada sobre si el
+> valor tiene sentido. `minlength` es el atributo que bloquea el envío. Usa ambos cuando
+> quieras el tope de teclas *y* la regla aplicada.
 
 ### Misión: Creación de Personaje II
 
-Vuelve a editar `sign_up.html` y añade validación:
+Vuelve a `sign_up.html` y añade validación:
 
-- Al **nombre de usuario**: `minlength="3"` y `maxlength="20"`.
-- A la **contraseña**: `minlength="8"` y `maxlength="64"`.
-- Haz que el nombre de usuario, el correo electrónico y la contraseña sean **obligatorios** (`required`).
+- Da al campo **usuario** un `minlength` de 3 y un `maxlength` de 20.
+- Da a **contraseña** un `minlength` de 8 y un `maxlength` de 64.
+- Marca usuario, email y contraseña como **obligatorios**.
 
-¡Prueba a enviar el formulario con datos incorrectos para ver los mensajes del navegador!
+¡Después intenta enviar el formulario con datos incorrectos!
 
 ```html
-Nombre de usuario:<br>
+Usuario:<br>
 <input type="text" minlength="3" maxlength="20" required>
 <br><br>
 
-Correo electrónico:<br>
+Email:<br>
 <input type="email" required>
 <br><br>
 
@@ -273,17 +293,19 @@ Contraseña:<br>
 
 > [!TIP]
 > **Versión para videojuegos**
-> Esto es exactamente una pantalla de creación de personaje: `minlength="3"` para el nombre
-> del jugador y `minlength="8"` para la contraseña. El navegador lo valida gratis, en cualquier
-> idioma y sin código extra.
+> Esta es la pantalla de creación de personaje. Un `minlength="3"` en el nombre del jugador
+> y un `minlength="8"` en la contraseña son las mismas dos líneas que un cliente validaría
+> antes de abrir un socket... salvo que el navegador las hace gratis, en todos los idiomas y
+> sin dependencias.
 
 ---
 
-## 18. RSVP *(en progreso)*
+## 18. Confirmación de Raid
 
 ### Campo numérico (`number`)
 
-En muchos formularios necesitamos pedir números: edad, número de asistentes, cantidad de objetos, etc. Para eso usamos `type="number"`:
+En muchos formularios necesitamos pedir números: el nivel de un personaje, la cantidad de
+botiquines que compras en una tienda, etc. Para eso usamos `type="number"`:
 
 ```html
 <input type="number">
@@ -291,7 +313,7 @@ En muchos formularios necesitamos pedir números: edad, número de asistentes, c
 
 Al pasar el cursor por encima, aparecen dos flechitas (arriba y abajo) para aumentar o disminuir el valor.
 
-Por defecto, esas flechas aumentan/disminuyen en **1**. Podemos cambiar ese paso con el atributo `step`:
+Por defecto, esas flechas aumentan o disminuyen en **1**. Podemos cambiar ese paso con el atributo `step`:
 
 ```html
 <input type="number" step="2">
@@ -303,34 +325,94 @@ También podemos establecer un valor mínimo y máximo con `min` y `max`:
 <input type="number" min="0" max="67">
 ```
 
-Prueba a introducir `1000` en un campo con `max="67"`: el navegador marcará ese valor como inválido al intentar enviarlo.
+Prueba a introducir `1000` en un campo con `max="67"` y mira qué pasa: el navegador lo marca
+como inválido.
 
 > [!NOTE]
 > `min` y `max` **no impiden escribir** un número mayor o menor con el teclado: solo lo marcan
 > como inválido en el envío. Las flechas sí respetan esos límites.
 
-### Vista previa del ejercicio: RSVP
+### Campo de opción (`radio`)
 
-El ejercicio `rsvp.html` pedirá: nombre, si vienes o no (botones de opción `radio`), restricciones alimentarias (casillas `checkbox`) y un botón de enviar. Ese contenido se ampliará en próximas versiones de esta nota.
+Los campos `radio` permiten elegir **una** opción de una lista. Es lo que se llama "elegir una de varias".
+
+```html
+<form>
+  <p>¿Vienes a la incursión?</p>
+
+  <label for="si">Sí 🗡️</label>
+  <input type="radio" id="si" name="asistencia" value="si">
+
+  <label for="no">No 😴</label>
+  <input type="radio" id="no" name="asistencia" value="no">
+
+  <input type="submit">
+</form>
+```
+
+Dos cosas hacen que los radios funcionen como grupo:
+
+- El **mismo valor de `name`** (`asistencia`): es lo que los une como una elección exclusiva.
+- Un **`id` diferente** para cada uno: es lo que apunta la `<label>`.
+
+Al pulsar una `<label>` se activa el campo al que apunta, y por eso cada radio necesita su `for`.
+
+> [!IMPORTANT]
+> Los radios con el mismo `name` pero sin `<label>` son inútiles con el ratón: solo puedes
+> acertar a un punto de 13 píxeles. En los radios y checkboxes las etiquetas no son
+> decoración, son el área de clic.
+
+### Casilla de verificación (`checkbox`)
+
+Los checkboxes permiten elegir **una, varias o ninguna** opción. Es lo que se llama "elegir varias de varias".
+
+```html
+<form>
+  <p>¿Qué objetos llevas a la incursión?</p>
+
+  <input type="checkbox" id="pocion" name="objetos" value="pocion">
+  <label for="pocion">Poción de vida 🧪</label>
+
+  <input type="checkbox" id="cuerda" name="objetos" value="cuerda">
+  <label for="cuerda">Cuerda 🪢</label>
+
+  <input type="checkbox" id="antorcha" name="objetos" value="antorcha">
+  <label for="antorcha">Antorcha 🔦</label>
+
+  <input type="submit">
+</form>
+```
+
+Los checkboxes comparten `name="objetos"` para pertenecer al mismo grupo, pero a diferencia de
+los radios son **independientes**: puedes marcar los tres.
+
+> [!TIP]
+> La regla práctica: los radios son **excluyentes entre sí**, los checkboxes se **acumulan**.
+> Si elegir una opción debería desmarcar las demás, es un radio. Si las opciones se suman, es
+> un checkbox.
+
+### Misión: Confirmación de Raid
+
+Crea `rsvp.html`: la inscripción del grupo para la próxima partida de Emberfall. Parte de:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Confirmación de asistencia</title>
+    <title>RSVP</title>
   </head>
   <body>
     <form>
       <h2>RSVP</h2>
-      <p>¡Ven a celebrar este día tan especial!</p>
+      <p>¡Únete a la incursión y graba tu nombre en el salón de la fama de Emberfall ...</p>
       <br>
       Nombre: <!-- Campo de texto aquí -->
       <br><br>
       ¿Vas a venir?<br>
-      <!-- 3 botones radio aquí -->
+      <!-- 3 campos radio aquí, compartiendo el mismo name -->
       <br><br>
-      ¿Alguna restricción alimentaria?<br>
-      <!-- Casillas checkbox aquí -->
+      Algo que quieras traer para la partida ...<br>
+      <!-- 3 o 5 casillas checkbox aquí -->
       <br><br>
       <!-- Botón de enviar aquí -->
     </form>
@@ -338,63 +420,122 @@ El ejercicio `rsvp.html` pedirá: nombre, si vienes o no (botones de opción `ra
 </html>
 ```
 
-*(Este ejercicio se completará en una futura actualización de la nota.)*
+Añade:
+
+1. Un **campo de texto** para el nombre.
+2. **Tres campos `radio`** para "¿Vas a venir?": `"si"`, `"quiza"` y `"necesito una build primero"`, todos con `name="asistencia"`.
+3. **Tres o cinco casillas `checkbox`** para los objetos que lleva tu grupo, todas con `name="objetos"`.
+4. Dale a cada campo una `<label>` con su `for` correspondiente, y añade un **botón de enviar**.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSVP</title>
+  </head>
+  <body>
+    <form>
+      <h2>RSVP</h2>
+      <p>¡Únete a la incursión y graba tu nombre en el salón de la fama de Emberfall ...</p>
+      <br>
+      Nombre: <input type="text" id="nombre-jugador" required>
+      <br><br>
+      ¿Vas a venir?<br>
+      <input type="radio" id="asistencia-si" name="asistencia" value="si">
+      <label for="asistencia-si">Definitivamente ⚔️</label>
+      <input type="radio" id="asistencia-quiza" name="asistencia" value="quiza">
+      <label for="asistencia-quiza">A ver 😐</label>
+      <input type="radio" id="asistencia-no" name="asistencia" value="no">
+      <label for="asistencia-no">Necesito una build primero 📖</label>
+      <br><br>
+      Algo que quieras traer para la partida ...<br>
+      <input type="checkbox" id="objeto-pocion" name="objetos" value="pocion">
+      <label for="objeto-pocion">Poción de vida 🧪</label>
+      <input type="checkbox" id="objeto-cuerda" name="objetos" value="cuerda">
+      <label for="objeto-cuerda">Cuerda 🪢</label>
+      <input type="checkbox" id="objeto-antorcha" name="objetos" value="antorcha">
+      <label for="objeto-antorcha">Antorcha 🔦</label>
+      <input type="checkbox" id="objeto-mapa" name="objetos" value="mapa">
+      <label for="objeto-mapa">Mapa de la mazmorra 🗺️</label>
+      <input type="checkbox" id="objeto-campana" name="objetos" value="campana">
+      <label for="objeto-campana">Campana de aviso 🔔</label>
+      <br><br>
+      <input type="submit" value="¡Apúntame!">
+    </form>
+  </body>
+</html>
+```
+
+> [!TIP]
+> **Versión para videojuegos**
+> `name="asistencia"` es la clave y `value` es lo que se guarda asociado a ella. Al enviar
+> este formulario, el navegador lo serializa en texto plano — `asistencia=quiza&objetos=cuerda&objetos=antorcha`.
+> Ese formato clave/valor es el antepasado de cada archivo de guardado, archivo de
+> configuración y petición de red que tu motor haya escrito.
 
 ---
 
-## Vocabulario de formularios (resumen)
+## 🧩 El Vocabulario de los Formularios
 
-| Tipo | Código | Qué valida |
+| Campo | Código | Valida |
 | :--- | :--- | :--- |
-| Texto | `<input type="text">` | Nada por defecto |
-| Correo | `<input type="email">` | Debe tener formato de correo válido |
-| Contraseña | `<input type="password">` | Oculta el texto (úsalo con `minlength`) |
-| Número | `<input type="number">` | Solo números, con `min`, `max` y `step` |
-| Enviar | `<input type="submit" value="Enviar">` | Envía el formulario |
+| Texto | `<input type="text">` | Nada por sí solo |
+| Email | `<input type="email">` | Debe parecer una dirección válida |
+| Contraseña | `<input type="password">` | Oculta el texto; combínalo con `minlength` |
+| Número | `<input type="number">` | Dígitos, con `min` / `max` / `step` |
+| Radio | `<input type="radio" name="x" id="y">` | Elección exclusiva dentro del grupo |
+| Checkbox | `<input type="checkbox" name="x" id="y">` | Interruptor independiente |
+| Enviar | `<input type="submit" value="Enviar">` | — |
 
-| Atributo de validación | Aplica a | Qué hace |
+| Restricción | Se aplica a | Qué hace |
 | :--- | :--- | :--- |
-| `required` | Cualquier `<input>` | Hace el campo obligatorio |
-| `minlength` | Campos de texto | Longitud mínima para poder enviar |
-| `maxlength` | Campos de texto | Longitud máxima permitida al escribir |
-| `min` / `max` | `<input type="number">` | Valor mínimo/máximo permitido |
-| `step` | `<input type="number">` | Paso para las flechas |
+| `required` | Cualquier `<input>` | Bloquea el envío si está vacío |
+| `minlength` | Campos de texto | Caracteres mínimos antes de poder enviar |
+| `maxlength` | Campos de texto | Tope de caracteres que se pueden escribir |
+| `min` / `max` | `<input type="number">` | Valor mínimo y máximo aceptado |
+| `step` | `<input type="number">` | Incremento de las flechas y salto obligatorio del valor |
+| `name` | Radio, checkbox | Agrupa campos en un mismo conjunto enviado |
+| `for` | `<label>` | Apunta la etiqueta al campo que describe |
 
 ---
 
 ## XP Obtenida: Conclusiones clave
 
-- 📝 Un **formulario** recoge datos y los envía a algún sitio (`action`) de una forma determinada (`method`).
-- 🔤 Los tipos básicos: `text`, `email`, `password`, `number` y `submit`.
-- ✅ El navegador valida gratis: `email` comprueba el `@`, `minlength`/`maxlength` controlan la longitud, `required` impide campos vacíos, `min`/`max` limitan números.
-- 📦 Todos los `<input>` deben estar dentro de un único `<form>`.
+- 📝 Un **formulario** recoge datos y los envía a algún sitio (`action`) de cierta manera (`method`).
+- 🔤 `<input type="text">`, `"email"`, `"password"`, `"number"`, `"radio"`, `"checkbox"` y `"submit"` cubren lo básico.
+- ✅ El navegador valida gratis: `email` comprueba la `@`, `minlength`/`maxlength` la longitud, `required` bloquea campos vacíos, `min`/`max` limitan los números.
+- 🎯 Los radios comparten `name` para volverse excluyentes; los checkboxes comparten `name` pero siguen siendo independientes.
+- 🏷️ Cada radio y cada checkbox necesita una `<label>` cuyo `for` coincida con el `id` del campo.
+- 📦 Mantén todos los `<input>` dentro de un mismo `<form>`.
 
 ---
 
 ## Botín: Casos de uso reales
 
 - 🔍 Barras de búsqueda
-- 👤 Formularios de registro e inicio de sesión
-- 🎟️ RSVP y formularios de inscripción
-- 🛒 Páginas de compra
-- 🎮 Creación de personaje, invitaciones al equipo o selección de equipamiento
+- 👤 Páginas de registro y login
+- 🎟️ Formularios de inscripción y confirmación (RSVP)
+- 🛒 Páginas de pago
+- 🎮 Creación de personajes, invitaciones de grupo y editores de equipamiento: todo formulario es una mini ficha de personaje
 
 ---
 
 ## Misiones Secundarias: Ejercicios prácticos
 
-1. Crea una página de inicio de sesión con correo y contraseña, ambos obligatorios.
-2. Haz un campo numérico para la edad que solo acepte valores entre 0 y 120.
-3. Crea un formulario de contacto con nombre, correo y un botón de enviar personalizado.
-4. Prueba a enviar cada formulario con datos inválidos y lee los mensajes del navegador.
-5. **Desafío final:** crea `hoja_de_personaje.html` — un campo de texto para el nombre (`minlength="2"`, `maxlength="16"`), un campo de correo, un campo numérico para el nivel (`min="1"`, `max="99"`), un campo de contraseña (`minlength="8"`) y un botón que diga "Crear personaje".
+1. Construye una página de login con email y contraseña, ambos obligatorios.
+2. Haz un campo numérico para la edad que solo acepte valores del 0 al 120.
+3. Crea un formulario de contacto con nombre, email y un texto personalizado para el botón.
+4. Añade un grupo de radios "dificultad" (Historia / Normal / Pesadilla) y comprueba que solo se puede elegir uno.
+5. Intenta enviar cada formulario con datos inválidos y lee los mensajes del navegador.
+6. **Desafío final:** construye `character_sheet.html` — un campo de texto para el nombre (`minlength="2"`, `maxlength="16"`), un campo de email para la cuenta, un campo numérico para el nivel (`min="1"`, `max="99"`), un grupo de radios para la clase (Exploradora / Tanque / Mago), un campo de contraseña (`minlength="8"`) y un botón que diga "Crear personaje".
 
 ---
 
 ## Ver también
 
-- [[00c - Chuleta de HTML II]] — tabla de referencia con campos y restricciones
-- [[02 - Estructura y Atributos]] — `class` e `id` para organizar y dar estilo a formularios
-- [[01 - Fundamentos de HTML]] — los elementos con los que construimos un formulario
+- [[00c - Chuleta de HTML II]] — tabla de referencia de campos y restricciones
+- [[02 - Estructura y Atributos]] — `class` e `id` para agrupar y dar estilo a un formulario
+- [[01 - Fundamentos de HTML]] — los elementos con los que se construye un formulario
+- [[04 - HTML Semántico]] — por qué un formulario va dentro de un `<section>` y por qué las etiquetas importan
 
 ---

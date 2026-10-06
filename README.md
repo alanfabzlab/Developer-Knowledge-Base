@@ -30,7 +30,7 @@ Every domain is self-contained and opens with a **MOC** (Map of Content): an ind
 | 🧮 **Data Structures & Algorithms** | Core data structures, algorithm efficiency & problem solving | 5 EN · 5 ES | 🟢 Active | [EN](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README.md) · [ES](%F0%9F%A7%AE%20Data%20Structures%20&%20Algorithms/README-ES.md) |
 | 🖥️ **Command Line** | Terminal navigation, file management, permissions & shell workflow | 13 EN · 13 ES | 🟢 Active | [EN](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README.md) · [ES](%F0%9F%96%A5%EF%B8%8F%20Command%20Line/README-ES.md) |
 | 🤖 **GenAI** | How LLMs work, prompt engineering, embeddings & AI failure modes | 6 EN · 6 ES | 🟢 Active | [EN](%F0%9F%A4%96%20GenAI/README.md) · [ES](%F0%9F%A4%96%20GenAI/README-ES.md) |
-| 🌐 **HTML** | Web page structure, elements, attributes, styles & forms | 5 EN · 5 ES | 🟢 Active | [EN](%F0%9F%8C%90%20HTML/README.md) · [ES](%F0%9F%8C%90%20HTML/README-ES.md) |
+| 🌐 **HTML** | Web page structure, elements, attributes, styles, forms & semantic regions | 6 EN · 6 ES | 🟢 Active | [EN](%F0%9F%8C%90%20HTML/README.md) · [ES](%F0%9F%8C%90%20HTML/README-ES.md) |
 | 🎨 **CSS** | Styling, layouts, responsiveness & design systems | — | 🟡 Planned | [EN](%F0%9F%8E%A8%20CSS/README.md) · [ES](%F0%9F%8E%A8%20CSS/README-ES.md) |
 | ⚙️ **Software Engineering** | Design patterns, algorithms & system architecture | — | 🟡 Planned | *Coming soon* |
 | 🎮 **Game Architecture** | Interactive mechanics, engine patterns & physics | — | 🟡 Planned | *Coming soon* |
@@ -135,6 +135,15 @@ Developer-Knowledge-Base/
 │   ├── 10 - Move Around.md                ·  10 - Mover y Renombrar.md
 │   ├── 11 - Copy That.md                  ·  11 - Copia Eso.md
 │   └── 12 - Music Playlists.md            ·  12 - Listas de Reproducción.md
+│
+├── 🌐 HTML/                           <-- 6 topics · EN + ES
+│   ├── README.md          ·  README-ES.md
+│   ├── 00b - HTML Cheatsheet.md          ·  00b - Chuleta de HTML.md
+│   ├── 00c - HTML Cheatsheet II.md       ·  00c - Chuleta de HTML II.md
+│   ├── 01 - HTML Basics.md               ·  01 - Fundamentos de HTML.md
+│   ├── 02 - Structure & Attributes.md    ·  02 - Estructura y Atributos.md
+│   ├── 03 - Forms.md                     ·  03 - Formularios.md
+│   └── 04 - Semantic HTML.md             ·  04 - HTML Semántico.md
 │
 └── 🤖 GenAI/                              <-- 6 topics · EN + ES
     ├── README.md          ·  README-ES.md

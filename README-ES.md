@@ -140,6 +140,15 @@ Developer-Knowledge-Base/
 │   ├── 11 - Copy That.md                  ·  11 - Copia Eso.md
 │   └── 12 - Music Playlists.md            ·  12 - Listas de Reproducción.md
 │
+├── 🌐 HTML/                           <-- 6 temas · EN + ES
+│   ├── README.md          ·  README-ES.md
+│   ├── 00b - HTML Cheatsheet.md          ·  00b - Chuleta de HTML.md
+│   ├── 00c - HTML Cheatsheet II.md       ·  00c - Chuleta de HTML II.md
+│   ├── 01 - HTML Basics.md               ·  01 - Fundamentos de HTML.md
+│   ├── 02 - Structure & Attributes.md    ·  02 - Estructura y Atributos.md
+│   ├── 03 - Forms.md                     ·  03 - Formularios.md
+│   └── 04 - Semantic HTML.md             ·  04 - HTML Semántico.md
+│
 └── 🤖 GenAI/                              <-- 6 temas · EN + ES
     ├── README.md          ·  README-ES.md
     ├── 00b - GenAI Cheatsheet.md          ·  00b - Chuleta de GenAI.md

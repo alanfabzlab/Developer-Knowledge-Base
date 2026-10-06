@@ -4,23 +4,35 @@
 
 **Curso:** HTML
 **Tema:** Estructura de HTML, padres e hijos, comentarios, atributos, clases e IDs, `<div>`, estilos en línea y el elemento `<style>`
-**Tags:** `#html` `#web-development` `#structure` `#attributes` `#game-dev`
+**Tags:** `#html` `#web-development` `#estructura` `#atributos` `#game-dev`
 
 <p align="left">
   <img src="https://img.shields.io/badge/HTML-5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML 5">
   <img src="https://img.shields.io/badge/Dificultad-PRINCIPIANTE-6CC24A?style=for-the-badge" alt="Principiante">
   <img src="https://img.shields.io/badge/Lecciones-08_--_14-7C5CFF?style=for-the-badge" alt="Lecciones 08 a 14">
   <img src="https://img.shields.io/badge/Estado-Completado-00C2A8?style=for-the-badge" alt="Completado">
+  <img src="https://img.shields.io/badge/Trama-Emberfall-FF6B35?style=for-the-badge" alt="Emberfall">
   <img src="https://img.shields.io/badge/Vault-Obsidian-7B3FE4?style=for-the-badge&logo=obsidian" alt="Obsidian">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FF6B35&height=70&section=header" width="100%" alt="Ola de brasa" />
 </p>
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #E34F26, #2DD4BF, #E34F26, transparent); margin: 24px 0;" />
 
-El capítulo 01 nos enseñó a escribir páginas que funcionaban. Este capítulo las hace **mantenibles**: un esqueleto real de documento, comentarios que explican la intención, etiquetas `class` e `id` para que otros elementos puedan dirigirse a ellas y nuestros primeros pasos con CSS. Terminamos con el "MySpace Plantilla de Grupo", que es el momento en el que varios `<div>` pasan a formar un diseño.
+El capítulo 01 nos enseñó a escribir páginas que funcionaban. Este capítulo las hace
+**mantenibles**: un esqueleto real de documento, comentarios que explican la intención, etiquetas
+`class` e `id` para que otros elementos puedan dirigirse a ellas y nuestros primeros pasos con
+CSS. Terminamos con la "Cuadrícula de Equipamiento", que es el momento en el que varios `<div>`
+pasan a formar un diseño.
 
 > [!NOTE]
 > **Por qué este capítulo es más importante de lo que parece**
-> Todo lo que vemos aquí existe para que una **hoja de estilos** pueda encontrar nuestros elementos más adelante. `class` e `id` no son decoración: son asas a las que CSS, JavaScript y las herramientas de accesibilidad pueden agarrarse. Un elemento sin etiqueta es un elemento al que nadie puede llegar.
+> Todo lo que vemos aquí existe para que una **hoja de estilos** pueda encontrar nuestros
+> elementos más adelante. `class` e `id` no son decoración: son asas a las que CSS, JavaScript
+> y las herramientas de accesibilidad pueden agarrarse. Un elemento sin etiqueta es un elemento
+> al que nadie puede llegar.
 
 ---
 
@@ -67,7 +79,7 @@ El elemento `<title>` va dentro de `<head>` y define el texto que aparece en la 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GameForge | Empieza tu aventura de programación</title>
+    <title>Devlog de Emberfall | Notas desde la forja</title>
   </head>
   <body>
     Aquí va el contenido
@@ -78,9 +90,9 @@ El elemento `<title>` va dentro de `<head>` y define el texto que aparece en la 
 Todo el contenido principal va dentro de `<body>`.
 
 > [!WARNING]
-> Un archivo sin `<title>` muestra la ruta del archivo en la pestaña — `file:///Users/tu-nombre/index.html` — lo cual es muy poco profesional. Pon siempre un `<title>` que describa la página.
+> Un archivo sin `<title>` muestra la ruta del archivo en la pestaña — `file:///Users/tu-nombre/index.html` — lo cual es el punto de partida de la mitad de los errores de "¿mi web está terminada?". Un `<title>` por archivo, y debe nombrar la página, no la carpeta.
 
-### Misión: Plano del Mapa
+### Misión: Plano del Proyecto
 
 Crea `blueprint.html` con la declaración `<!DOCTYPE html>`, el elemento `<html>`, dentro un `<head>` con un título y un `<body>` con un párrafo. Así tienes el esqueleto para todas tus páginas HTML.
 
@@ -88,30 +100,30 @@ Crea `blueprint.html` con la declaración `<!DOCTYPE html>`, el elemento `<html>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mi página base</title>
+    <title>Emberfall — Parche 1.4</title>
   </head>
   <body>
-    <p>Este es el esqueleto básico de una página HTML.</p>
+    <p>Este es el esqueleto del que parte cada página de Emberfall.</p>
   </body>
 </html>
 ```
 
 ---
 
-## 09. Árbol Genealógico
+## 09. Árbol del Grupo
 
 ### Padres e hijos
 
-Los elementos de un archivo HTML forman un **árbol**. Muchos elementos pueden ser **padres** y contener uno o varios elementos **hijos**.
+Los elementos de un archivo HTML forman un **árbol de escena**. Muchos elementos pueden ser **padres** y contener uno o varios elementos **hijos**.
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mi sitio web</title>
+    <title>Grupo de Emberfall</title>
   </head>
   <body>
-    <p>Hola, <i>¿qué tal?</i></p>
+    <p>Un grupo de <i>cuatro</i> aventureros.</p>
   </body>
 </html>
 ```
@@ -138,55 +150,61 @@ Dos o más elementos son **hermanos** si comparten el mismo padre directo.
 ```html
 <body>
   <ul>
-    <li>🍄 Mario</li>
-    <li>🐢 Luigi</li>
+    <li>🍄 Exploradora Prime</li>
+    <li>🐢 Tanque Wanda</li>
   </ul>
 </body>
 ```
 
 Los dos elementos `<li>` son hermanos, porque ambos son hijos del mismo padre: `<ul>`.
 
-### Misión: Árbol del Clan
+### Misión: Árbol del Grupo
 
-Crea `family_tree.html` sobre tu familia (o una famosa: los Simpson, los Stark, los Kardashian...) usando listas anidadas con `<ul>` y `<li>`. Usa siempre la estructura completa con `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`.
+"Un héroe se define por el grupo en el que cae." Crea `party_tree.html` para tu propio grupo — o uno famoso: el elenco de Star Wars, los granjeros de Stardew Valley, el grupo original de Emberfall — usando listas anidadas con `<ul>` y `<li>`. Usa siempre la estructura completa con `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`.
 
 Pregúntate: ¿qué elementos son padres? ¿Qué son hijos? ¿Qué son hermanos?
 
 ```html
-<!-- Árbol genealógico 🌳 -->
+<!-- Árbol del grupo 🌳 -->
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Árbol Genealógico</title>
+    <title>Árbol del Grupo</title>
   </head>
   <body>
-    <h1>Los Simpson</h1>
-    <p>🏡 Ciudad: Springfield, IL</p>
+    <h1>El grupo de Emberfall</h1>
+    <p>🏠 Base: Sala de la Forja, Planta 1</p>
     <ul>
       <li>
-        Homer y Marge Simpson
+        Exploradora Prime
         <ul>
-          <li>Bart Simpson</li>
-          <li>Lisa Simpson</li>
-          <li>Maggie Simpson</li>
+          <li>Habilidad: Andanada</li>
+          <li>Habilidad: Poner Trampas</li>
         </ul>
       </li>
-      <li>Patty Bouvier (Gemela)</li>
-      <li>Selma Bouvier (Gemela)</li>
+      <li>
+        Tanque Wanda
+        <ul>
+          <li>Habilidad: Muro de Escudo</li>
+          <li>Habilidad: Provocar</li>
+        </ul>
+      </li>
+      <li>Mago Sol (invitado)</li>
     </ul>
   </body>
 </html>
 ```
 
 > [!TIP]
-> Una lista anidada es una estructura recursiva: un elemento que contiene otros elementos que,
-> a su vez, pueden contener más. Es la misma forma que usan los árboles de archivos, los mapas
-> de juego o las habilidades en un árbol de talentos.
+> Una lista anidada dentro de un `<li>` es el árbol de grupo clásico — y también el árbol de
+> habilidades, el árbol tecnológico y el árbol de carpetas. El patrón es recursivo: un
+> contenedor con elementos que son a su vez contenedores con más elementos. La misma forma
+> describe un grafo de escena de un juego.
 
 ---
 
-## 10. Anuncio de Craigslist
+## 10. Anuncio del Mercado de Mods
 
 ### Comentarios
 
@@ -228,22 +246,23 @@ También pueden estar dentro de un elemento:
 > **por qué** lo hace es oro puro: `<!-- cerrar el diálogo al éxito, no al cancelar -->` sobrevive
 > a cualquier refactor; `<!-- incrementa i -->` no.
 
-### Misión: Tablero del Gremio
+### Misión: Ficha del Mercado de Mods
 
-Necesitamos limpiar este código. Pega este ejemplo en `craigslist_ad.html`, ejecútalo y sigue los comentarios para corregirlo:
+El mercado de mods de Emberfall necesita limpiar la ficha de una skin. Pega este ejemplo en
+`marketplace.html`, ejecútalo y sigue los comentarios para corregirlo:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- ¡Hola, soy Craig! ¿Puedes añadir "En venta" al título de abajo? -->
-    <title>Didgeridoo. Necesita arreglo</title>
+    <!-- ¡Hola, soy Jun! ¿Puedes añadir "En venta" al título de abajo? -->
+    <title>Espada wobble. Necesita arreglo</title>
   </head>
   <body>
     <!-- Añade comentarios para explicar cada línea -->
-    <h2>Didgeridoo. Necesita arreglo</h2>
+    <h2>Espada wobble. Necesita arreglo</h2>
     <img src="https://i.imgur.com/TrXO7Sa.png" width="250">
-    <p>Didgeridoo aborigen australiano. Necesita arreglo. Gratis a buen hogar.</p>
+    <p>Skin de espada hecha por la comunidad. Necesita arreglo. Gratis a buen hogar.</p>
 
     <!-- Descomenta el código de abajo y añade algo al punto de la lista -->
     <!-- <ul>
@@ -256,22 +275,22 @@ Necesitamos limpiar este código. Pega este ejemplo en `craigslist_ad.html`, eje
 Versión corregida:
 
 ```html
-<!-- Anuncio de Craigslist 🪵 -->
+<!-- Ficha del mercado de mods 🪵 -->
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>En venta: Didgeridoo. Necesita arreglo</title>
+    <title>En venta: Espada wobble. Necesita arreglo</title>
   </head>
   <body>
-    <!-- Encabezado de nivel 2 -->
-    <h2>Didgeridoo. Necesita arreglo</h2>
+    <!-- Encabezado de nivel 2: el nombre del mod. -->
+    <h2>Espada wobble. Necesita arreglo</h2>
 
-    <!-- Imagen de un didgeridoo, un instrumento musical -->
+    <!-- Imagen de la vista previa del mod. -->
     <img src="https://i.imgur.com/TrXO7Sa.png" width="250">
 
-    <!-- Descripción del anuncio -->
-    <p>Didgeridoo aborigen australiano. Necesita arreglo. Gratis a buen hogar.</p>
+    <!-- Descripción del mod. -->
+    <p>Skin de espada hecha por la comunidad. Necesita arreglo. Gratis a buen hogar.</p>
 
     <ul>
       <li>No contactes conmigo con ofertas no solicitadas</li>
@@ -282,7 +301,7 @@ Versión corregida:
 
 ---
 
-## 11. Artículo de Wikipedia
+## 11. Entrada del Códex
 
 ### Atributos
 
@@ -299,9 +318,9 @@ Por defecto, `<ol>` numera sus elementos con 1, 2, 3... El atributo `type` cambi
 
 ```html
 <ol type="a">   <!-- a. b. c. -->
-  <li>Poder ⚡</li>
-  <li>Coraje 🔥</li>
-  <li>Sabiduría 🦉</li>
+  <li>Hoja de Brasa 🔥</li>
+  <li>Bastón de Hielo ❄️</li>
+  <li>Escudo de Hierro 🛡️</li>
 </ol>
 ```
 
@@ -314,8 +333,8 @@ Por defecto, `<ol>` numera sus elementos con 1, 2, 3... El atributo `type` cambi
 ### Atributos de la etiqueta `<img>`
 
 ```html
-<img src="https://gameforge.example/images/tier1.png">
-<img alt="Chica con portátil pixelado" src="https://gameforge.example/images/tier1.png">
+<img src="https://emberfall.example/images/guardian.png">
+<img alt="El Guardián sosteniendo un farol" src="https://emberfall.example/images/guardian.png">
 ```
 
 - `src` indica la ruta de la imagen.
@@ -325,8 +344,8 @@ Por defecto, `<ol>` numera sus elementos con 1, 2, 3... El atributo `type` cambi
 ### Atributos de la etiqueta `<a>`
 
 ```html
-<a href="https://gameforge.example/">GameForge</a>
-<a href="https://gameforge.example/" target="_blank">GameForge</a>
+<a href="https://emberfall.example/">Emberfall</a>
+<a href="https://emberfall.example/" target="_blank">Emberfall</a>
 ```
 
 - `href` es la URL a la que lleva el enlace.
@@ -337,9 +356,9 @@ Por defecto, `<ol>` numera sus elementos con 1, 2, 3... El atributo `type` cambi
 > Lo que sí importa son las **comillas**: sin ellas el navegador adivina y, si el valor tiene
 > espacios, el atributo se rompe.
 
-### Misión: Entrada del Bestiario
+### Misión: Entrada del Códex
 
-Escribe un artículo tipo "Wikipedia" sobre uno de tus héroes en `wiki_article.html`. Debe incluir:
+Escribe un artículo tipo "códex" sobre uno de tus héroes en `codex.html`. Debe incluir:
 
 - Un encabezado `<h2>` que diga "Biografía".
 - Una imagen de esa persona con su `alt` correspondiente.
@@ -352,7 +371,7 @@ Escribe un artículo tipo "Wikipedia" sobre uno de tus héroes en `wiki_article.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Artículo de Wikipedia</title>
+    <title>Entrada del Códex</title>
   </head>
   <body>
     <h2>Biografía</h2>
@@ -365,7 +384,7 @@ Escribe un artículo tipo "Wikipedia" sobre uno de tus héroes en `wiki_article.
 
 ---
 
-## 12. Lorem Ipsum
+## 12. Maqueta en Groso
 
 ### Clases e IDs
 
@@ -374,53 +393,53 @@ Los dos atributos más usados son `class` e `id`. Cualquier elemento puede usarl
 Un elemento puede tener **varios valores en `class`**, separados por espacios:
 
 ```html
-<p class="valor-uno valor-dos valor-tres">¡Hola, Mundo!</p>
+<p class="stat-line stat-line--odd">Vida: 84 / 100</p>
 ```
 
 Cada elemento solo puede tener **un solo `id`**, sin espacios, y ese `id` debe ser **único** en toda la página:
 
 ```html
-<p id="valor">¡Hola, Mundo!</p>
+<p id="vida-jugador">Vida: 84 / 100</p>
 ```
 
 El `id` también sirve para **enlazar a una parte concreta de la misma página**. Para eso, usamos un enlace `<a>` con `href="#nombre-del-id"`:
 
 ```html
-<a href="#medellin">Ir a Medellín</a>
+<a href="#salas-profundas">Ir a las Salas Profundas</a>
 
-<h2 class="ciudad" id="medellin">Medellín 🇨🇴</h2>
+<h2 class="zona" id="salas-profundas">Salas Profundas 🕯️</h2>
 ```
 
 Mientras que `id` es único por elemento, `class` puede reutilizarse en muchos elementos:
 
 ```html
-<h2 class="ciudad" id="medellin">Medellín 🇨🇴</h2>
-<h2 class="ciudad" id="lisboa">Lisboa 🇵🇹</h2>
-<h2 class="ciudad" id="bali">Bali 🇮🇩</h2>
+<h2 class="zona" id="salas-profundas">Salas Profundas 🕯️</h2>
+<h2 class="zona" id="boveda-de-brasa">Bóveda de Brasa 🔥</h2>
+<h2 class="zona" id="cisterna-congelada">Cisterna Congelada ❄️</h2>
 ```
 
 Los valores de `class` e `id` deben escribirse siempre en **minúsculas**. Si tienen varias palabras, sepáralas con **guiones** (`-`).
 
 > [!TIP]
-> Truco para recordarlo: puede haber muchos alumnos en una **clase** (`class`), pero cada
-> alumno tiene un **ID** (`id`) único.
+> Truco para recordarlo: puede haber muchos jugadores en un **grupo** (`class`), pero cada
+> jugador necesita un **ID** (`id`) único.
 
 ### El elemento `<div>`
 
 `<div>` (abreviatura de "division") es un contenedor genérico sin significado propio. Se usa mucho junto con `class` e `id` para organizar secciones:
 
 ```html
-<div class="seccion" id="sobre-mi">
-  <h2>Sobre mí</h2>
-  <p>¡Ness quiere ser desarrollador web!</p>
+<div class="panel-hud" id="estadisticas">
+  <h2>Estadísticas</h2>
+  <p>Exploradora de nivel 7, puntos de habilidad sin gastar.</p>
 </div>
 
-<div class="seccion" id="redes-sociales">
-  <h2>Redes sociales:</h2>
+<div class="panel-hud" id="inventario">
+  <h2>Inventario:</h2>
   <ul>
-    <li>GitHub</li>
-    <li>Twitter</li>
-    <li>LinkedIn</li>
+    <li>Hoja de Brasa</li>
+    <li>Bastón de Hielo</li>
+    <li>Escudo de Hierro</li>
   </ul>
 </div>
 ```
@@ -430,38 +449,39 @@ Los valores de `class` e `id` deben escribirse siempre en **minúsculas**. Si ti
 > adecuado (`section`, `article`, `nav`, `ul`...). Un montón de `<div>` apilados es lo que
 > se conoce como "div soup" (sopa de divs).
 
-### Misión: Pergamino de Lore
+### Misión: Maqueta en Grueso
 
-**Lorem Ipsum** es texto de relleno que usamos para ver cómo quedará el diseño antes de tener el texto definitivo. Crea `lorem_ipsum.html`:
+Una maqueta en grueso es la maquetación provisional que usas antes de que exista el contenido
+definitivo. Crea `wireframe.html`:
 
 - Un encabezado `<h1>` con el texto "Sin título".
-- Dos enlaces `<a>`: uno con `href="#encabezado-1"` y texto "Encabezado 1", y otro con `href="#encabezado-2"` y texto "Encabezado 2".
-- Debajo, dos elementos `<div>` con `class="seccion"`. Cada `<div>` debe contener:
-  - Un `<h2>` con `class="encabezado"` e `id="encabezado-x"`.
-  - Dos párrafos `<p>` con texto Lorem Ipsum.
+- Dos enlaces `<a>`: uno con `href="#panel-1"` y texto "Panel 1", y otro con `href="#panel-2"` y texto "Panel 2".
+- Debajo, dos elementos `<div>` con `class="panel-hud"`. Cada `<div>` debe contener:
+  - Un `<h2>` con `class="titulo-panel"` e `id="panel-x"`.
+  - Dos párrafos `<p>` con texto de relleno.
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lorem Ipsum</title>
+    <title>Maqueta</title>
   </head>
   <body>
     <h1>Sin título</h1>
 
-    <a href="#encabezado-1">Encabezado 1</a>
-    <a href="#encabezado-2">Encabezado 2</a>
+    <a href="#panel-1">Panel 1</a>
+    <a href="#panel-2">Panel 2</a>
 
-    <div class="seccion">
-      <h2 class="encabezado" id="encabezado-1">Encabezado 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="panel-hud">
+      <h2 class="titulo-panel" id="panel-1">Panel 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
-    <div class="seccion">
-      <h2 class="encabezado" id="encabezado-2">Encabezado 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="panel-hud">
+      <h2 class="titulo-panel" id="panel-2">Panel 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </body>
 </html>
@@ -469,7 +489,7 @@ Los valores de `class` e `id` deben escribirse siempre en **minúsculas**. Si ti
 
 ---
 
-## 13. Escuadrón de Héroes
+## 13. Grupo de los Elementos
 
 ### El atributo `style`
 
@@ -477,8 +497,8 @@ Hasta ahora nuestras páginas eran muy simples visualmente. Podemos añadir el a
 
 ```html
 <p>
-  Las rosas son <span style="color:red;">rojas</span>.<br />
-  Los violetas son <span style="color:blue;">azules</span>.
+  El Guardián es <span style="color:red;">hostil</span>.<br />
+  Sol es <span style="color:blue;">amistoso</span>.
 </p>
 ```
 
@@ -486,8 +506,8 @@ Un estilo está formado por una **propiedad** (como `color`) y un **valor** (com
 
 ```html
 <p>
-  Las rosas son <span style="color:red; text-decoration:underline;">rojas</span>.<br />
-  Los violetas son <span style="color:blue; text-decoration:underline;">azules</span>.
+  El Guardián es <span style="color:red; text-decoration:underline;">hostil</span>.<br />
+  Sol es <span style="color:blue; text-decoration:underline;">amistoso</span>.
 </p>
 ```
 
@@ -541,19 +561,19 @@ Tipos de selectores:
         text-decoration: underline;
       }
 
-      #palabra-roja {
+      #palabra-hostil {
         color: red;
       }
 
-      #palabra-azul {
+      #palabra-amistosa {
         color: blue;
       }
     </style>
   </head>
   <body>
     <p>
-      Las rosas son <span id="palabra-roja">rojas</span>.<br />
-      Los violetas son <span id="palabra-azul">azules</span>.
+      El Guardián es <span id="palabra-hostil">hostil</span>.<br />
+      Sol es <span id="palabra-amistosa">amistoso</span>.
     </p>
   </body>
 </html>
@@ -561,59 +581,59 @@ Tipos de selectores:
 
 > [!NOTE]
 > El selector en `<style>` es exactamente el mismo valor que el atributo, con un carácter
-> delante: `.ranger-div` apunta a `class="ranger-div"`, `#red-ranger` apunta a
-> `id="red-ranger"`. Ese emparejamiento es el mecanismo entero.
+> delante: `.slot-grupo` apunta a `class="slot-grupo"`, `#slot-brasa` apunta a
+> `id="slot-brasa"`. Ese emparejamiento es el mecanismo entero.
 
-### Misión: Formación del Equipo
+### Misión: Formación del Grupo
 
-En 1993 se estrenó "Mighty Morphin' Escuadrón de Héroes". Los cinco Escuadrón de Héroes originales tenían cada uno un color: rojo, azul, negro, amarillo y rosa. Crea `power_rangers.html`. Coloca esto en `<body>`:
+Cinco miembros del grupo, cada uno con una identidad de color. Crea `party.html`. Coloca esto en `<body>`:
 
 ```html
-<div class="ranger-div" id="red-ranger"></div>
-<div class="ranger-div" id="blue-ranger"></div>
-<div class="ranger-div" id="black-ranger"></div>
-<div class="ranger-div" id="yellow-ranger"></div>
-<div class="ranger-div" id="pink-ranger"></div>
+<div class="slot-grupo" id="slot-brasa"></div>
+<div class="slot-grupo" id="slot-hielo"></div>
+<div class="slot-grupo" id="slot-piedra"></div>
+<div class="slot-grupo" id="slot-viento"></div>
+<div class="slot-grupo" id="slot-crepusculo"></div>
 ```
 
 Añade un elemento `<style>` en `<head>` y aplica:
 
-- Un `width` del `50%` y un `height` de `100px` para todos los `<div>` con la clase `ranger-div`.
+- Un `width` del `50%` y un `height` de `100px` para todos los `<div>` con la clase `slot-grupo`.
 - Un `background-color` distinto para cada `<div>` según su `id` (rojo, azul, negro, amarillo y rosa).
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Escuadrón de Héroes</title>
+    <title>Grupo de los Elementos</title>
     <style>
-      .ranger-div {
+      .slot-grupo {
         width: 50%;
         height: 100px;
       }
-      #red-ranger {
+      #slot-brasa {
         background-color: red;
       }
-      #blue-ranger {
+      #slot-hielo {
         background-color: blue;
       }
-      #black-ranger {
+      #slot-piedra {
         background-color: black;
       }
-      #yellow-ranger {
+      #slot-viento {
         background-color: yellow;
       }
-      #pink-ranger {
+      #slot-crepusculo {
         background-color: pink;
       }
     </style>
   </head>
   <body>
-    <div class="ranger-div" id="red-ranger"></div>
-    <div class="ranger-div" id="blue-ranger"></div>
-    <div class="ranger-div" id="black-ranger"></div>
-    <div class="ranger-div" id="yellow-ranger"></div>
-    <div class="ranger-div" id="pink-ranger"></div>
+    <div class="slot-grupo" id="slot-brasa"></div>
+    <div class="slot-grupo" id="slot-hielo"></div>
+    <div class="slot-grupo" id="slot-piedra"></div>
+    <div class="slot-grupo" id="slot-viento"></div>
+    <div class="slot-grupo" id="slot-crepusculo"></div>
   </body>
 </html>
 ```
@@ -625,7 +645,7 @@ Añade un elemento `<style>` en `<head>` y aplica:
 
 ---
 
-## 14. MySpace Plantilla de Grupo
+## 14. Cuadrícula de Equipamiento
 
 ### Punto de Control: Recapitulación
 
@@ -635,9 +655,9 @@ Añade un elemento `<style>` en `<head>` y aplica:
 - Los atributos (`class`, `id`, `src`, `href`...) personalizan los elementos.
 - Podemos dar estilo con el atributo `style` o con el elemento `<style>` (CSS viene después).
 
-### Proyecto: MySpace Plantilla de Grupo
+### Proyecto: Cuadrícula de Equipamiento
 
-El **Plantilla de Grupo** era una función muy famosa de MySpace: permitía elegir a 8 amigos para mostrarlos en tu perfil. Crea `top_8.html`.
+Una cuadrícula de ocho huecos de equipamiento es la pantalla que miras antes de cada incursión. Crea `loadout.html`.
 
 Pega este bloque `<style>` en `<head>`:
 
@@ -656,17 +676,17 @@ Pega este bloque `<style>` en `<head>`:
     border: 3px solid blue;
   }
 
-  #top-8-wrapper {
+  #contenedor-equipamiento {
     text-align: center;
   }
 
-  .friend-card {
+  .tarjeta-hueco {
     display: inline-block;
     margin: 1px;
     text-align: center;
   }
 
-  .friend-name {
+  .nombre-hueco {
     color: blue;
   }
 </style>
@@ -674,61 +694,61 @@ Pega este bloque `<style>` en `<head>`:
 
 Ahora añade el HTML:
 
-1. Un `<div>` con `id="top-8-wrapper"`.
-2. Dentro, un `<h1>` con el texto "Mis 8 mejores amigos", seguido de dos `<div>` con `class="top-8-row"`.
-3. Dentro de cada `top-8-row`, cuatro `<div>` con `class="friend-card"`.
-4. Dentro de cada `friend-card`: un `<h2>` con `class="friend-name"` y el nombre del amigo, más un `<img>` con `src` y `alt`.
+1. Un `<div>` con `id="contenedor-equipamiento"`.
+2. Dentro, un `<h1>` con el texto "¡Mi equipamiento de incursión!", seguido de dos `<div>` con `class="fila-equipamiento"`.
+3. Dentro de cada `fila-equipamiento`, cuatro `<div>` con `class="tarjeta-hueco"`.
+4. Dentro de cada `tarjeta-hueco`: un `<h2>` con `class="nombre-hueco"` y el nombre del objeto, más un `<img>` con `src` y `alt`.
 
-Si no quieres usar nombres reales, usa apodos divertidos.
+Si no quieres usar nombres reales, usa nombres bromas: "Falda infinita", "Lag de 200 ms", "Espada de depuración"...
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MySpace Plantilla de Grupo</title>
+    <title>Cuadrícula de Equipamiento</title>
     <style>
       /* ...estilos... */
     </style>
   </head>
   <body>
-    <div id="top-8-wrapper">
-      <h1>¡Mis 8 mejores amigos!</h1>
+    <div id="contenedor-equipamiento">
+      <h1>¡Mi equipamiento de incursión!</h1>
 
-      <div class="top-8-row">
-        <div class="friend-card">
-          <h2 class="friend-name">Tom</h2>
-          <img src="https://placehold.co/100" alt="Tom">
+      <div class="fila-equipamiento">
+        <div class="tarjeta-hueco">
+          <h2 class="nombre-hueco">Hoja de Brasa</h2>
+          <img src="https://placehold.co/100" alt="Hoja de Brasa">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Sara</h2>
-          <img src="https://placehold.co/100" alt="Sara">
+        <div class="tarjeta-hueco">
+          <h2 class="nombre-hueco">Bastón de Hielo</h2>
+          <img src="https://placehold.co/100" alt="Bastón de Hielo">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Álex</h2>
-          <img src="https://placehold.co/100" alt="Álex">
+        <div class="tarjeta-hueco">
+          <h2 class="nombre-hueco">Escudo de Hierro</h2>
+          <img src="https://placehold.co/100" alt="Escudo de Hierro">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Taylor</h2>
-          <img src="https://placehold.co/100" alt="Taylor">
+        <div class="tarjeta-hueco">
+          <h2 class="nombre-hueco">Farol</h2>
+          <img src="https://placehold.co/100" alt="Farol">
         </div>
       </div>
 
-      <div class="top-8-row">
-        <div class="friend-card">
-          <h2 class="friend-name">Jordi</h2>
-          <img src="https://placehold.co/100" alt="Jordi">
+      <div class="fila-equipamiento">
+        <div class="tarjeta-hueco">
+          <h2 class="nombre-hueco">Cuerda</h2>
+          <img src="https://placehold.co/100" alt="Cuerda">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Marta</h2>
-          <img src="https://placehold.co/100" alt="Marta">
+        <div class="tarjeta-hueco">
+          <h2 class="nombre-hueco">Poción de vida</h2>
+          <img src="https://placehold.co/100" alt="Poción de vida">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Casey</h2>
-          <img src="https://placehold.co/100" alt="Casey">
+        <div class="tarjeta-hueco">
+          <h2 class="nombre-hueco">Espada de depuración</h2>
+          <img src="https://placehold.co/100" alt="Espada de depuración">
         </div>
-        <div class="friend-card">
-          <h2 class="friend-name">Riley</h2>
-          <img src="https://placehold.co/100" alt="Riley">
+        <div class="tarjeta-hueco">
+          <h2 class="nombre-hueco">Llave de repuesto</h2>
+          <img src="https://placehold.co/100" alt="Llave de repuesto">
         </div>
       </div>
     </div>
@@ -738,7 +758,7 @@ Si no quieres usar nombres reales, usa apodos divertidos.
 
 > [!TIP]
 > **Versión para videojuegos**
-> `friend-card` es un componente reutilizable: una caja con imagen + nombre + estilo que se
+> `tarjeta-hueco` es un componente reutilizable: una caja con imagen + nombre + estilo que se
 > repite ocho veces. Cámbialo por miembros del equipo, con su retrato y nivel, y tendrás
 > una pantalla de grupo perfecta. `display: inline-block` es el truco para colocar tarjetas
 > en fila, igual que un grid muy básico.
@@ -748,7 +768,7 @@ Si no quieres usar nombres reales, usa apodos divertidos.
 ## XP Obtenida: Conclusiones clave
 
 - 🧬 Toda página: `<!DOCTYPE html>` → `<html>` → `<head>` + `<body>`.
-- 🗂️ Los elementos forman un **árbol**: padres, hijos y hermanos.
+- 🗂️ Los elementos forman un **árbol de escena**: padres, hijos y hermanos.
 - 💬 Los comentarios `<!-- -->` documentan u ocultan código.
 - 🏷️ Los atributos son pares `nombre="valor"`: `src`, `alt`, `href`, `target`, `type`, `class`, `id`, `style`.
 - 🆔 Un solo `id` por elemento (único), muchos elementos pueden compartir una `class`.
@@ -764,17 +784,17 @@ Si no quieres usar nombres reales, usa apodos divertidos.
 - 📚 Artículos tipo Wikipedia
 - 🧑‍🤝‍🧑 Perfiles con tarjetas (cards)
 - 🎨 Primeros experimentos con colores y diseño
-- 🎮 Hojas de personaje, pantallas de equipo y árboles de habilidades
+- 🎮 Cuadrículas de equipamiento, pantallas de grupo y árboles de habilidades
 
 ---
 
 ## Misiones Secundarias: Ejercicios prácticos
 
-1. Añade una tercera sección a `lorem_ipsum.html` con su propio enlace en la parte superior.
+1. Añade una tercera sección a `wireframe.html` con su propio enlace en la parte superior.
 2. Crea una página en la que todos los `<p>` tengan el mismo estilo desde un bloque `<style>`.
 3. Convierte una imagen en enlace: envuelve un `<img>` dentro de un `<a>`.
 4. Añade comentarios a un archivo antiguo explicando qué hace cada sección.
-5. **Desafío final:** rehace el ejercicio de Escuadrón de Héroes como una pantalla de equipo: usa una clase `.slot-equipo` y cuatro IDs (`#miembro-1` a `#miembro-4`), con una regla común para que todos tengan el mismo tamaño.
+5. **Desafío final:** rehace el ejercicio del Grupo de los Elementos como una pantalla de equipo: usa una clase `.slot-equipo` y cuatro IDs (`#miembro-1` a `#miembro-4`), con una regla común para que todos tengan el mismo tamaño.
 
 ---
 
@@ -783,5 +803,6 @@ Si no quieres usar nombres reales, usa apodos divertidos.
 - [[00c - Chuleta de HTML II]] — referencia de atributos y selectores para este capítulo
 - [[01 - Fundamentos de HTML]] — los elementos que usamos aquí, explicados desde cero
 - [[03 - Formularios]] — cómo recoger datos de entrada
+- [[04 - HTML Semántico]] — sustituir la sopa de `<div>` por elementos con significado
 
 ---

@@ -3,7 +3,7 @@
 **Spanish version:** [01 - Fundamentos de HTML.md](01%20-%20Fundamentos%20de%20HTML.md)
 
 **Course:** HTML
-**Topic:** What HTML is, Elements & Tags, Headings, Line Breaks, Text Formatting, Lists, Links, Images & Debug Console
+**Topic:** What HTML is, Elements & Tags, Headings, Line Breaks, Text Formatting, Lists, Links, Images & Developer Tools
 **Tags:** `#html` `#web-development` `#basics` `#game-dev`
 
 <p align="left">
@@ -11,15 +11,20 @@
   <img src="https://img.shields.io/badge/Difficulty-BEGINNER-6CC24A?style=for-the-badge" alt="Beginner">
   <img src="https://img.shields.io/badge/Lessons-01_--_07_%2B_Bonus-7C5CFF?style=for-the-badge" alt="Lessons 01 to 07">
   <img src="https://img.shields.io/badge/Status-Complete-00C2A8?style=for-the-badge" alt="Complete">
+  <img src="https://img.shields.io/badge/Lore-Emberfall-FF6B35?style=for-the-badge" alt="Emberfall">
   <img src="https://img.shields.io/badge/Vault-Obsidian-7B3FE4?style=for-the-badge&logo=obsidian" alt="Obsidian">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=7C5CFF&height=70&section=header" width="100%" alt="Violet wave" />
 </p>
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #E34F26, #2DD4BF, #E34F26, transparent); margin: 24px 0;" />
 
 The first chapter of the language that gives every web page its bones. By the end of it you
-will have written a tavern roster page from scratch — headings, formatted text, lists, a link and an
-image — and you will know how to inspect any page on the internet to find out how it was
-built. Element and tag reference: [[00b - HTML Cheatsheet]].
+will have written a **boss showcase page** for Emberfall from scratch — headings, formatted
+text, lists, a link and an image — and you will know how to inspect any page on the internet to
+find out how it was built. Element and tag reference: [[00b - HTML Cheatsheet]].
 
 > [!NOTE]
 > **The whole chapter in one sentence**
@@ -29,7 +34,7 @@ built. Element and tag reference: [[00b - HTML Cheatsheet]].
 
 ---
 
-## 01. Shooting Star
+## 01. Insert Coin
 
 > [!NOTE]
 > **Key information**
@@ -39,11 +44,11 @@ HTML is a **markup language**: it marks up content on a web page and tells the b
 
 ### The Three Core Web Technologies
 
-| Technology | Role |
-| :--- | :--- |
-| **HTML** | Creates the **structure** of a web page |
-| **CSS** | Styles the **appearance** of a page |
-| **JavaScript** | Makes it **interactive** |
+| Technology | Role | In a game site |
+| :--- | :--- | :--- |
+| **HTML** | Creates the **structure** of a web page | The skeleton: which HUD panels exist |
+| **CSS** | Styles the **appearance** of a page | The skin: colors, fonts, layout |
+| **JavaScript** | Makes it **interactive** | The engine: health bars that update |
 
 This course focuses on HTML. The files we create use the **`.html`** file extension.
 
@@ -51,17 +56,17 @@ This course focuses on HTML. The files we create use the **`.html`** file extens
 
 A **code editor** is a text editor that can write, edit and run code.
 
-### Exercise: Quest 01: Spawn Your First Page
+### Quest: Boot Sequence
 
 Type these two lines into the editor, replace the placeholder text, and press **Run**:
 
 ```html
-<h2>Write the date</h2>
-<p>Write your wish</p>
+<h2>Emberfall 1.0 — launch date</h2>
+<p>Write your one-line pitch</p>
 ```
 
-- Replace `Write the date` with today's date.
-- Replace `Write your wish` with a wish.
+- Replace `Emberfall 1.0 — launch date` with today's date.
+- Replace `Write your one-line pitch` with the pitch of your game.
 
 You just created your first web page with HTML.
 
@@ -72,18 +77,18 @@ You just created your first web page with HTML.
 
 ---
 
-## 02. Elemental
+## 02. Core Systems
 
 ### Elements
 
 **Elements** are the smallest building blocks of the language. An element usually consists of an **opening tag**, the **content**, and a **closing tag**. A **tag** is enclosed in angle brackets.
 
 ```html
-<p>Hello World!</p>
+<p>Emberfall v1.0 is out now.</p>
 ```
 
 - `<p>` is the opening tag.
-- `Hello World!` is the content.
+- `Emberfall v1.0 is out now.` is the content.
 - `</p>` is the closing tag.
 
 The `<p>` **paragraph** element tells the browser that the content inside is paragraph text.
@@ -109,34 +114,34 @@ Indenting HTML isn't required, but it's good practice because it makes code easi
 </body>
 ```
 
-### Quest: The Elemental Scroll
+### Quest: The Four Systems
 
-Create `elemental.html` that shows the four ancient Greek elements (Fire, Water, Earth, Air) in the browser, nicely indented.
+Create `systems.html` that lists the four systems every game needs (Input, Physics, Audio, Rendering) in the browser, nicely indented.
 
 ```html
 <body>
-  <p>Fire</p>
-  <p>Water</p>
-  <p>Earth</p>
-  <p>Air</p>
+  <p>Input</p>
+  <p>Physics</p>
+  <p>Audio</p>
+  <p>Rendering</p>
 </body>
 ```
 
 ---
 
-## 03. Newspaper
+## 03. Patch Notes
 
 ### Headings
 
 HTML has **six levels of headings**, from `<h1>` to `<h6>`. `<h1>` is the largest and `<h6>` is the smallest.
 
 ```html
-<h1>Heading level 1</h1>
-<h2>Heading level 2</h2>
-<h3>Heading level 3</h3>
-<h4>Heading level 4</h4>
-<h5>Heading level 5</h5>
-<h6>Heading level 6</h6>
+<h1>Emberfall 1.4 — The Deep Halls</h1>
+<h2>New content</h2>
+<h3>Corridors 5 to 9</h3>
+<h4>Lantern enemies</h4>
+<h5>Patch notes</h5>
+<h6>Fixed a typo</h6>
 ```
 
 > [!NOTE]
@@ -152,8 +157,8 @@ Pressing `enter` inside an element doesn't create a new line, because **HTML ign
 
 ```html
 <body>
-  <h1>Breaking News</h1>
-  <p>Florida man robs convenience store with an alligator.<br>Leaves a baby Crocs behind.</p>
+  <h1>Patch 1.4</h1>
+  <p>Added the Deep Halls wing.<br>Fixed the lantern that would not turn off.</p>
 </body>
 ```
 
@@ -165,24 +170,24 @@ A **self-closing tag** doesn't need a separate closing tag (there is no `</br>`)
 > the browser. Whitespace is **collapsed**: any run of spaces, tabs and newlines inside an
 > element becomes one space. `<br>` is the only way to break a line from HTML.
 
-### Quest: Tavern Chronicle
+### Quest: Release Notes
 
-Create `newspaper.html` with what was happening in the news on the day you were born:
+Create `patch_notes.html` with the changelog of your game's launch:
 
-- `<h1>` heading for the title.
+- `<h1>` heading for the version number.
 - `<h3>` heading for the date.
-- `<p>` paragraph(s) for the blurb.
+- `<p>` paragraph(s) for the summary.
 - `<br>` for line breaks.
 
 ```html
-<h1>The Daily News</h1>
-<h3>January 1, 2000</h3>
-<p>Major events were happening around the world today.<br>Replace this with real headlines from your own date.</p>
+<h1>Emberfall 1.4</h1>
+<h3>March 14, 2026</h3>
+<p>Adds the Deep Halls wing and two new mini-bosses.<br>Replace this with your own changes.</p>
 ```
 
 ---
 
-## 04. Corporate Talk
+## 04. Launch Announcement
 
 ### Text Formatting
 
@@ -194,42 +199,42 @@ Create `newspaper.html` with what was happening in the news on the day you were 
 | `<s>` | ~~strikethrough~~ text |
 
 ```html
-<b>This text is using bold formatting.</b><br>
-<i>This text is using italics formatting.</i><br>
-<u>This text is using underline formatting.</u><br>
-<s>This text is using strikethrough formatting.</s><br>
+<b>Emberfall is out now.</b><br>
+<i>Best roguelike of the year.</i><br>
+<u>Free demo available.</u><br>
+<s>Launch price 90% off</s><br>
 ```
 
 > [!NOTE]
 > `<b>` is just for bolding text stylistically. HTML also has `<strong>`, which conveys that the content is **important** and also styles it as bold.
 
-All four tags together in a classroom announcement:
+All four tags together in a store announcement:
 
 ```html
-<p>This is the reminder that the <i>final exam</i> is <b>mandatory</b>.<br>
-It will be held on <u>Monday, October 14th</u> at <s>7PM</s> 8PM EST.</p>
+<p>This week's patch adds the <i>Deep Halls</i> and a <b>new boss</b>.<br>
+The <u>pre-order bundle</u> now includes the artbook, at <s>50€</s> 30€.</p>
 ```
 
 > [!NOTE]
 > These tags are good for learning basic styling, but are **no longer best practice**. Other ways to style text are covered with CSS.
 
-### Quest: Guild Announcement
+### Quest: Marketing Copy
 
-Recreate the exact format of some corporate jargon in `corporate.html` using `<p>`, `<b>`, `<i>`, `<s>` and `<u>`.
+Recreate the exact format of a store page hype text in `announcement.html` using `<p>`, `<b>`, `<i>`, `<s>` and `<u>`.
 
 ```html
 <p>
-  <b>Cutting Down, Ramping Up:</b> We have a robust strategy for <s>low-hanging fruits</s> mission-critical objectives that move the needle <i>at all costs</i>. It's time to double down on <b>revenue growth</b> while <u>cutting costs</u>. This is a win-win initiative, a win for us and <i>our amazing shareholders!</i>
+  <b>Deep Halls, now live:</b> We rebuilt <s>the old corridor filler</s> into a full wing that will make you <i>grind for real</i>. New loot, new bosses, and <b>one very angry lantern</b>. Grab the <u>Deep Halls DLC</u> at a <i>launch discount</i>.
 </p>
 
 <p>
-  <b>P.S.</b> After several strong sales months, we are printing <b>Employee Appreciation Tees</b>! Will go on sale Monday.
+  <b>P.S.</b> After three months of beta, we are printing <b>Emberfall Artbooks</b>! Pre-orders open Monday.
 </p>
 ```
 
 ---
 
-## 05. Sous-Chef
+## 05. Crafting Recipe
 
 ### Lists
 
@@ -242,50 +247,51 @@ Each item is wrapped in a `<li>` **list item** element.
 
 ```html
 <ul>
-  <li>🧺 Go to laundromat.</li>
-  <li>🖥️ Code for 45 min.</li>
-  <li>🛁 Take a bubble bath.</li>
+  <li>🪨 Ember Shard</li>
+  <li>🍄 Ash Mushroom</li>
+  <li>💧 Deep Water</li>
 </ul>
 ```
 
-`<ul>` is great for listing things in any order. To number the list, use `<ol>`:
+`<ul>` is great for listing things in any order. To number the crafting steps, use `<ol>`:
 
 ```html
 <ol>
-  <li>🧺 Go to laundromat.</li>
-  <li>🖥️ Code for 45 min.</li>
-  <li>🛁 Take a bubble bath.</li>
+  <li>🪨 Ember Shard</li>
+  <li>🍄 Ash Mushroom</li>
+  <li>💧 Deep Water</li>
 </ol>
 ```
 
-### Quest: Potion Recipe
+### Quest: Forge Blueprint
 
-Create `chef.html` with a potion recipe you've been craving: an **unordered** list for the ingredients and an **ordered** list for the cooking instructions.
+Create `recipe.html` with an item you would craft in your own game: an **unordered** list for the ingredients and an **ordered** list for the forging steps.
 
 ```html
 <h2>Ingredients</h2>
 <ul>
-  <li>2 slices of bread</li>
-  <li>2 slices of cheese</li>
-  <li>1 tbsp butter</li>
+  <li>1 Ember Shard</li>
+  <li>2 Ash Mushrooms</li>
+  <li>3 Deep Water</li>
 </ul>
 
-<h2>Instructions</h2>
+<h2>Steps</h2>
 <ol>
-  <li>Butter one side of each bread slice.</li>
-  <li>Place cheese between the unbuttered sides of the bread.</li>
-  <li>Cook on a skillet over medium heat until golden brown on both sides.</li>
+  <li>Smelt the Ember Shard until it glows orange.</li>
+  <li>Grind the Ash Mushrooms into a fine powder.</li>
+  <li>Pour the Deep Water over the powder and let it react.</li>
+  <li>Hammer the mixture into a blade while it is still warm.</li>
 </ol>
 ```
 
 > [!TIP]
 > This is the shape of almost every game data screen: a `<ul>` of stats, an `<ol>` of steps,
-> a `<table>` for the rest. A quest log, a potion recipe, a skill list and a deck of cards are the
-> same three elements in a different order.
+> a `<table>` for the rest. A quest log, an ability list, a skill tree and a deck of cards are
+> the same three elements in a different order.
 
 ---
 
-## 06. Lost Pet
+## 06. Missing Boss
 
 ### Links
 
@@ -304,7 +310,7 @@ Use the `<a>` **anchor** element to add a hyperlink to a piece of text:
 > `href` can also point to an email address, phone number or text message using `mailto:`, `tel:` or `sms:`:
 
 ```html
-<a href="mailto:frankie@example.com">📧</a>
+<a href="mailto:patch@example.com">📧</a>
 <a href="tel:212-555-0100">🤙</a>
 <a href="sms:212-555-0123">💬</a>
 ```
@@ -314,8 +320,8 @@ Use the `<a>` **anchor** element to add a hyperlink to a piece of text:
 Use the `<img>` image element:
 
 ```html
-<p>Here's a cute pic:</p>
-<img src="https://example.com/cute-pic.jpg">
+<p>Here's a screenshot:</p>
+<img src="https://example.com/boss.png">
 ```
 
 - `<img>` is another **self-closing** tag.
@@ -326,25 +332,25 @@ Use the `<img>` image element:
 > An `<img>` without `alt` is a bug. If the image fails to load, the visitor sees a broken
 > icon and no explanation — and a screen reader announces the file path out loud.
 
-### Quest: Missing Pet Side Quest
+### Quest: Bounty Board
 
-Your friend lost their companion. Create `companion.html` that includes:
+The Emberfall boss "Warden of the Ninth Floor" escaped the data files. Create `boss.html` that includes:
 
-- The companion name.
-- A companion picture with `<img>`.
+- The boss name.
+- A boss picture with `<img>`.
 - A short description.
 - Contact info with `<a>`.
 
 ```html
-<h1>Lost Dog: Barnaby</h1>
-<img src="https://placehold.co/300" alt="Lost dog Barnaby">
-<p>Barnaby is a friendly brown dog who went missing last night wearing a red collar.</p>
-<a href="mailto:owner@example.com">Contact Owner</a>
+<h1>Missing Boss: Warden of the Ninth Floor</h1>
+<img src="https://placehold.co/300" alt="A tall armored warden holding a lantern">
+<p>Last seen in the Deep Halls. Drops the Ember Key on defeat and is very angry about it.</p>
+<a href="mailto:archivist@example.com">Report a sighting</a>
 ```
 
 ---
 
-## 07. Favorite Band
+## 07. Boss Showcase
 
 ### Checkpoint: Chapter Recap
 
@@ -355,67 +361,67 @@ Your friend lost their companion. Create `companion.html` that includes:
 - Unordered and ordered lists: `<ul>`, `<ol>`.
 - Links and images: `<a>`, `<img>`.
 
-### Project: Favorite Band
+### Project: Boss Showcase
 
-Create `band.html` for your favorite artist using **all** the elements learned and **at least two types of text formatting**. It should include:
+Create `boss.html` for the boss of your own game using **all** the elements learned and **at least two types of text formatting**. It should include:
 
-- The name of the artist.
-- A picture of the artist or album cover.
-- A short blurb about the artist.
-- A link to the artist's website.
-- The members in an unordered list.
-- Top 5 favorite songs in an ordered list.
+- The name of the boss.
+- A picture of the boss.
+- A short blurb about its lore.
+- A link to the wiki or devlog.
+- The phases in an unordered list.
+- Top 5 attacks in an ordered list.
 
 ```html
-<h1>Daft Punk</h1>
-<img src="https://placehold.co/300" alt="Daft Punk">
+<h1>Warden of the Ninth Floor</h1>
+<img src="https://placehold.co/300" alt="Warden of the Ninth Floor">
 
-<p>Daft Punk was an <b>iconic French electronic music duo</b> formed in Paris. They achieved <i>immense success</i> worldwide in the synthpop and house genres.</p>
+<p>The Warden is a <b>two-phase mini-boss</b> guarding the last door of the Deep Halls. It <i>changes behaviour at 50% health</i>, dropping the lantern to fight in the dark.</p>
 
-<a href="https://daftpunk.com">Visit Official Website</a>
+<a href="https://example.com/emberfall/warden">Read the full codex entry</a>
 
-<h2>Band Members</h2>
+<h2>Phases</h2>
 <ul>
-  <li>Thomas Bangalter</li>
-  <li>Guy-Manuel de Homem-Christo</li>
+  <li>Phase 1 — Lantern</li>
+  <li>Phase 2 — Darkness</li>
 </ul>
 
-<h2>Top 5 Favorite Songs</h2>
+<h2>Top 5 Attacks</h2>
 <ol>
-  <li>One More Time</li>
-  <li>Digital Love</li>
-  <li>Harder, Better, Faster, Stronger</li>
-  <li>Around the World</li>
-  <li>Get Lucky</li>
+  <li>Lantern Sweep</li>
+  <li>Ember Bolt</li>
+  <li>Floor Cleave</li>
+  <li>Blind Dash</li>
+  <li>Ninth Floor Collapse</li>
 </ol>
 ```
 
 > [!TIP]
 > **Game dev version**
-> The tavern roster page is the same page as an enemy card or a character sheet. Swap the heading for
-> the creature name, the blurb for the lore, the unordered list for the ability list and the
-> ordered list for the drop table. Chapter [[02 - Structure & Attributes]] takes that card
-> and gives it `class` and `id` so a stylesheet can target it.
+> A boss page is a character sheet: swap the heading for the enemy name, the blurb for the
+> lore, the unordered list for the phases and the ordered list for the move list. Every data
+> screen in a game is this page with different words. Chapter [[02 - Structure & Attributes]]
+> takes that card and gives it `class` and `id` so a stylesheet can target it.
 
 ---
 
-## Bonus Loot:: Debug Console
+## Bonus Loot:: Developer Tools
 
 ### Inspect
 
-**Debug Console** allow us to create, test and debug web development software. Current browsers provide integrated developer tools, which let us **inspect** a website and see the code of virtually every site in the world. You can now see the complete HTML code of the page you are on.
+**Developer Tools** allow us to create, test and debug web development software. Current browsers provide integrated developer tools, which let us **inspect** a website and see the code of virtually every site in the world. You can now see the complete HTML code of the page you are on.
 
 | Browser | Tool Name | How To Open | Keyboard Shortcut |
 | :--- | :--- | :--- | :--- |
 | **Google Chrome** | DevTools | Right-click > "Inspect" | `ctrl` + `shift` + `c` (Windows/Linux); `cmd` + `option` + `i` (macOS) |
 | **Apple Safari** | Safari Develop menu | Menu > Preferences > Developer > Show JavaScript Console | `option` + `cmd` + `c` |
-| **Mozilla Firefox** | Firefox Debug Console | Tools > Web Developer > Web Debug Console | `ctrl` + `shift` + `i` (Windows/Linux); `cmd` + `option` + `i` (macOS) |
+| **Mozilla Firefox** | Firefox Developer Tools | Tools > Web Developer > Web Developer Tools | `ctrl` + `shift` + `i` (Windows/Linux); `cmd` + `option` + `i` (macOS) |
 
 How to open them:
 
 - **Chrome:** right-click and choose "Inspect". Click the pointer icon in the top-left corner of the dev tools and hover over an element to inspect it.
 - **Safari:** Safari > Preferences > **Advanced** tab > check "Show Develop menu in menu bar". Then Develop > Show Web Inspector.
-- **Firefox:** hamburger menu (upper right) > More Tools > Web Debug Console.
+- **Firefox:** hamburger menu (upper right) > More Tools > Web Developer Tools.
 
 ### Common Features
 
@@ -423,19 +429,20 @@ How to open them:
 - A **Console** window to write and run simple JavaScript from within the developer tools.
 - A **responsive device mode** to view the rendered HTML on different screen sizes.
 
-### Bonus: Lil' Prank
+### Bonus: Live Edit
 
-Click into the HTML code in the Elements panel, change the content of an element and see the page change. You just "hacked" a website... well, not really: the page resets after a refresh, but it's a fun trick.
+Click into the HTML code in the Elements panel, change the content of an element and see the page change. You just "hacked" the game's website... well, not really: the page resets after a refresh, but it's a fun trick.
 
 ### More Resources
 
 - Google Chrome DevTools (documentation)
-- Safari Debug Console Overview
+- Safari Developer Tools Overview
 - Firefox DevTools User Docs
 
 > [!TIP]
-> Debug Console are the fastest way to learn HTML. Find any page you like, inspect it, and
-> read the tags the author chose. Ten minutes of that teaches more than an hour of guessing.
+> Developer Tools are the fastest way to learn HTML. Find any game page you like, inspect
+> it, and read the tags the author chose. Ten minutes of that teaches more than an hour of
+> guessing.
 
 ---
 
@@ -448,7 +455,7 @@ Click into the HTML code in the Elements panel, change the content of an element
 - 🖍️ `<b>`, `<i>`, `<u>`, `<s>` format text (CSS is the modern way).
 - 📋 `<ul>` for bullets, `<ol>` for numbers, `<li>` for each item.
 - 🔗 `<a href>` links, `<img src>` images.
-- 🔍 Debug Console let you inspect any page.
+- 🔍 Developer Tools let you inspect any page.
 
 ---
 
@@ -458,7 +465,7 @@ Click into the HTML code in the Elements panel, change the content of an element
 - 📋 Recipes, to-do lists and menus
 - 🧑‍🎤 Profile and fan pages
 - 🔗 Link pages and simple portfolios
-- 🎮 Enemy cards, item catalogs and quest logs — the same markup, different words
+- 🎮 Boss pages, item catalogs and patch notes — the same markup, different words
 
 ---
 
@@ -467,7 +474,7 @@ Click into the HTML code in the Elements panel, change the content of an element
 1. Make a `bio.html` page with an `<h1>`, two paragraphs and a list of your hobbies.
 2. Add a link that opens your favorite site and an email link with `mailto:`.
 3. Use all four text formatting tags in one paragraph.
-4. Open Debug Console on any site and change a heading's text.
+4. Open Developer Tools on any site and change a heading's text.
 5. **Boss fight:** build `bestiary.html` with one `<h1>`, an `<h2>` per creature, an `<img>` with `alt`, and a `<ul>` of weaknesses plus an `<ol>` of drops for each of three creatures.
 
 ---
@@ -477,5 +484,6 @@ Click into the HTML code in the Elements panel, change the content of an element
 - [[00b - HTML Cheatsheet]] — every element from this chapter on one page
 - [[02 - Structure & Attributes]] — next chapter: page skeleton, comments, attributes
 - [[03 - Forms]] — collecting player input
+- [[04 - Semantic HTML]] — giving the page a meaningful layout
 
 ---
