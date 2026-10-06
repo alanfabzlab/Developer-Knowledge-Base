@@ -48,7 +48,7 @@ level-notes.txt
 
 > [!WARNING]
 > **Trampa**
-> El reemplazo es lo que hay que vigilar. `cp importante.txt respaldo.txt` es inofensivo, pero `cp importante.txt importante.txt` trunca el archivo antes de leerlo — la misma trampa de sobrescritura consigo mismo que `cat a > a` en [[09 - Queso a la Plancha|09. Escribiendo el Lore]].
+> El reemplazo es lo que hay que vigilar. `cp importante.txt respaldo.txt` es inofensivo, pero `cp importante.txt importante.txt` trunca el archivo antes de leerlo — la misma trampa de sobrescritura consigo mismo que `cat a > a` en [[09 - Escribiendo el Lore]].
 
 ---
 

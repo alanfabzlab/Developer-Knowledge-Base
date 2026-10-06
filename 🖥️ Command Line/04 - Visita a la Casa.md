@@ -84,7 +84,7 @@ hp: 41
 embers: 1
 ```
 
-Ambos archivos se imprimen seguidos, sin separador. Eso es precisamente lo que significa *concatenar*, y es la razón por la que `cat` sirve mejor para leer que para combinar — para eso, redirige la salida, como se explica en [[09 - Queso a la Plancha|09. Escribiendo el Lore]].
+Ambos archivos se imprimen seguidos, sin separador. Eso es precisamente lo que significa *concatenar*, y es la razón por la que `cat` sirve mejor para leer que para combinar — para eso, redirige la salida, como se explica en [[09 - Escribiendo el Lore]].
 
 > [!WARNING]
 > **Trampa**

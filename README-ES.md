@@ -135,7 +135,7 @@ Developer-Knowledge-Base/
 │   ├── 06 - Scavenger Hunt.md             ·  06 - Búsqueda del Tesoro.md
 │   ├── 07 - Recipes.md                    ·  07 - Recetas.md
 │   ├── 08 - Cuisine Type.md               ·  08 - Tipo de Cocina.md
-│   ├── 09 - Grilled Cheese.md             ·  09 - Queso a la Plancha.md
+│   ├── 09 - Writing the Lore.md           ·  09 - Escribiendo el Lore.md
 │   ├── 10 - Move Around.md                ·  10 - Mover y Renombrar.md
 │   ├── 11 - Copy That.md                  ·  11 - Copia Eso.md
 │   └── 12 - Music Playlists.md            ·  12 - Listas de Reproducción.md

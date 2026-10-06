@@ -43,7 +43,7 @@ Empieza por **01** si el terminal te resulta nuevo. Si ya te manegas con soltura
 
 * **Crear directorios:** [07 - Planos del Proyecto](./07%20-%20Recetas.md) — `mkdir`, el error del padre ausente y por qué `mkdir -p` es la opción correcta en scripts.
 * **Crear archivos:** [08 - Forjando Archivos](./08%20-%20Tipo%20de%20Cocina.md) — `touch`, cómo las extensiones son una convención de nombres, y el marcador `.gitkeep`.
-* **Escribir y añadir:** [09 - Escribiendo el Lore](./09%20-%20Queso%20a%20la%20Plancha.md) — Redirección con `>` y `>>`, combinación de archivos con `cat` y la trampa de sobrescritura consigo mismo.
+* **Escribir y añadir:** [09 - Escribiendo el Lore](./09%20-%20Escribiendo%20el%20Lore.md) — Redirección con `>` y `>>`, combinación de archivos con `cat` y la trampa de sobrescritura consigo mismo.
 * **Mover y borrar:** [10 - Mover y Renombrar](./10%20-%20Mover%20y%20Renombrar.md) — Mover frente a renombrar con `mv`, `rm`, `rmdir`, `rm -r` y los hábitos que hacen sobrevivible un borrado.
 * **Copiar:** [11 - Copia Eso](./11%20-%20Copia%20Eso.md) — `cp`, reglas de destino, `cp -r` y respaldar antes de borrar.
 * **Repaso del Capítulo 2:** [12 - Construyendo la Mazmorra](./12%20-%20Listas%20de%20Reproducci%C3%B3n.md) — Construir un espacio de nivel de principio a fin, `ls -R` y limpieza de sesión.

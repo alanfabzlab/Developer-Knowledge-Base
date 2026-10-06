@@ -84,7 +84,7 @@ hp: 41
 embers: 1
 ```
 
-Both save files print one after the other, with no separator. That is precisely what *concatenate* means, and it is why `cat` is better at reading than at combining — for that, redirect the output instead, as in [[09 - Grilled Cheese|09. Writing the Lore]].
+Both save files print one after the other, with no separator. That is precisely what *concatenate* means, and it is why `cat` is better at reading than at combining — for that, redirect the output instead, as in [[09 - Writing the Lore]].
 
 > [!WARNING]
 > **Trap**

@@ -1,7 +1,7 @@
 
 # 09. Escribiendo el Lore
 
-**Versión original en inglés:** [09 - Grilled Cheese.md](09%20-%20Grilled%20Cheese.md)
+**Versión original en inglés:** [09 - Writing the Lore.md](09%20-%20Writing%20the%20Lore.md)
 
 **Curso:** Command Line
 **Tema:** Redirección de salida, sobrescribir vs. añadir, combinar con `cat`
