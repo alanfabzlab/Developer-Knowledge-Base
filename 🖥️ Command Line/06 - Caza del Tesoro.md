@@ -1,7 +1,7 @@
 
-# 06. Búsqueda del Tesoro
+# 06. Caza del Tesoro
 
-**Versión original en inglés:** [06 - Scavenger Hunt.md](06%20-%20Scavenger%20Hunt.md)
+**Versión original en inglés:** [06 - Treasure Hunt.md](06%20-%20Treasure%20Hunt.md)
 
 **Curso:** Command Line
 **Tema:** Repaso del Capítulo 1 y reto de navegación
@@ -120,7 +120,7 @@ $ pwd
 /Users/dev/SunkenKeep/assets/sprites
 ```
 
-Ese último paso merece una pausa: `Tab` completó el nombre perfectamente y el comando aun así falló, porque el terminal ya estaba dentro de `SunkenKeep`. Una ruta relativa solo se resuelve desde donde estás — la regla de [[02 - Sistema de Archivos]] apareciendo exactamente donde suele morder.
+Ese último paso merece una pausa: `Tab` completó el nombre perfectamente y el comando aun así falló, porque el terminal ya estaba dentro de `SunkenKeep`. Una ruta relativa solo se resuelve desde donde estás — la regla de [[02 - El Árbol del Proyecto]] apareciendo exactamente donde suele morder.
 
 El segundo `pwd` es justamente lo que busca la pista. Un `cd` fallido te deja exactamente donde estabas, y por eso conviene adquirir el hábito de comprobar tu ubicación después de un error.
 

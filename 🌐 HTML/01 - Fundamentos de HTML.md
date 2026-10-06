@@ -73,7 +73,7 @@ Acabas de crear tu primera página web con HTML.
 
 > [!TIP]
 > Los archivos de este módulo son simples `.html` en una carpeta. No necesitas instalar nada
-> ni compilar nada — en [[02 - Sistema de Archivos]] del módulo de Línea de Comandos ves cómo
+> ni compilar nada — en [[02 - El Árbol del Proyecto]] del módulo de Línea de Comandos ves cómo
 > navegar a esa carpeta y abrir el archivo en el navegador.
 
 ---

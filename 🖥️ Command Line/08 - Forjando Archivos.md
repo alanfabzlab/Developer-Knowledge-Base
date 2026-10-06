@@ -1,7 +1,7 @@
 
 # 08. Forjando Archivos
 
-**Versión original en inglés:** [08 - Cuisine Type.md](08%20-%20Cuisine%20Type.md)
+**Versión original en inglés:** [08 - Forging Files.md](08%20-%20Forging%20Files.md)
 
 **Curso:** Command Line
 **Tema:** Crear archivos con `touch` y extensiones de archivo

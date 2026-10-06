@@ -30,23 +30,23 @@ Start with **01** if the terminal is new to you. If you already navigate comfort
 
 ### 🧭 1. Navigation (Chapter 1)
 
-* **First Steps:** [01 - In The Beginning](./01%20-%20In%20The%20Beginning.md) — What the shell is, why the CLI outlives the GUI, `echo`, `say`, the prompt, and command history.
-* **The Tree:** [02 - Filesystem](./02%20-%20Filesystem.md) — Files, directories, and links; reading the project tree; `pwd`; absolute vs. relative paths; quoting paths with spaces.
-* **Moving & Listing:** [03 - Moving Day](./03%20-%20Moving%20Day.md) — `cd` into, up, home, and back; `ls` with `-l` and `-a`; listing several paths at once.
-* **Reading & Relative Paths:** [04 - House Tour](./04%20-%20House%20Tour.md) — Climbing with `..`, combining `.` and `..`, reading files with `cat`, and why paths need quotes.
-* **Keeping It Readable:** [05 - Clean Slate](./05%20-%20Clean%20Slate.md) — `clear`, history with `↑`/`↓` and `Ctrl + R`, and `Tab` completion including the double-`Tab` candidate list.
-* **Chapter 1 Review:** [06 - Scavenger Hunt](./06%20-%20Scavenger%20Hunt.md) — Twelve-clue navigation challenge over the whole project, with a full annotated walkthrough.
+* **First Steps:** [01 - The Shell](./01%20-%20The%20Shell.md) — What the shell is, why the CLI outlives the GUI, `echo`, `say`, the prompt, and command history.
+* **The Tree:** [02 - The Project Tree](./02%20-%20The%20Project%20Tree.md) — Files, directories, and links; reading the project tree; `pwd`; absolute vs. relative paths; quoting paths with spaces.
+* **Moving & Listing:** [03 - Dungeon Navigation](./03%20-%20Dungeon%20Navigation.md) — `cd` into, up, home, and back; `ls` with `-l` and `-a`; listing several paths at once.
+* **Reading & Relative Paths:** [04 - Reading the Keep](./04%20-%20Reading%20the%20Keep.md) — Climbing with `..`, combining `.` and `..`, reading files with `cat`, and why paths need quotes.
+* **Keeping It Readable:** [05 - Clearing the Fog](./05%20-%20Clearing%20the%20Fog.md) — `clear`, history with `↑`/`↓` and `Ctrl + R`, and `Tab` completion including the double-`Tab` candidate list.
+* **Chapter 1 Review:** [06 - Treasure Hunt](./06%20-%20Treasure%20Hunt.md) — Twelve-clue navigation challenge over the whole project, with a full annotated walkthrough.
 
 ---
 
 ### 📁 2. File Management (Chapter 2)
 
-* **Creating Directories:** [07 - Project Blueprints](./07%20-%20Recipes.md) — `mkdir`, the missing-parent error, and why `mkdir -p` is the right choice in scripts.
-* **Creating Files:** [08 - Forging Files](./08%20-%20Cuisine%20Type.md) — `touch`, how extensions are a naming convention, and the `.gitkeep` placeholder.
+* **Creating Directories:** [07 - Project Blueprints](./07%20-%20Project%20Blueprints.md) — `mkdir`, the missing-parent error, and why `mkdir -p` is the right choice in scripts.
+* **Creating Files:** [08 - Forging Files](./08%20-%20Forging%20Files.md) — `touch`, how extensions are a naming convention, and the `.gitkeep` placeholder.
 * **Writing & Appending:** [09 - Writing the Lore](./09%20-%20Writing%20the%20Lore.md) — Redirection with `>` and `>>`, combining files with `cat`, and the self-overwrite trap.
-* **Moving & Deleting:** [10 - Move Around](./10%20-%20Move%20Around.md) — `mv` move vs. rename, `rm`, `rmdir`, `rm -r`, and the habits that make deletion survivable.
-* **Copying:** [11 - Copy That](./11%20-%20Copy%20That.md) — `cp`, destination rules, `cp -r`, and backing up before you delete.
-* **Chapter 2 Review:** [12 - Dungeon Build](./12%20-%20Music%20Playlists.md) — Building a level workspace end to end, `ls -R`, and session cleanup.
+* **Moving & Deleting:** [10 - Managing Loot](./10%20-%20Managing%20Loot.md) — `mv` move vs. rename, `rm`, `rmdir`, `rm -r`, and the habits that make deletion survivable.
+* **Copying:** [11 - Cloning Relics](./11%20-%20Cloning%20Relics.md) — `cp`, destination rules, `cp -r`, and backing up before you delete.
+* **Chapter 2 Review:** [12 - Dungeon Build](./12%20-%20Dungeon%20Build.md) — Building a level workspace end to end, `ls -R`, and session cleanup.
 
 ---
 
@@ -78,15 +78,15 @@ SunkenKeep/
 
 ```mermaid
 flowchart TD
-    A[01 - In The Beginning] --> B[02 - Filesystem]
-    B --> C[03 - Moving Day]
-    C --> D[04 - House Tour]
-    D --> E[05 - Clean Slate]
-    E --> F[06 - Scavenger Hunt]
+    A[01 - The Shell] --> B[02 - The Project Tree]
+    B --> C[03 - Dungeon Navigation]
+    C --> D[04 - Reading the Keep]
+    D --> E[05 - Clearing the Fog]
+    E --> F[06 - Treasure Hunt]
     F --> G[07 - Project Blueprints]
     G --> H[08 - Forging Files]
     H --> I[09 - Writing the Lore]
-    I --> J[10 - Move Around]
-    J --> K[11 - Copy That]
+    I --> J[10 - Managing Loot]
+    J --> K[11 - Cloning Relics]
     K --> L[12 - Dungeon Build]
 ```

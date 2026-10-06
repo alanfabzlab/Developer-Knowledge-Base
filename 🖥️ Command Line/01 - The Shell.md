@@ -1,7 +1,7 @@
 
-# 01. In The Beginning
+# 01. The Shell
 
-**Spanish version:** [01 - En los Orígenes.md](01%20-%20En%20los%20Or%C3%ADgenes.md)
+**Spanish version:** [01 - La Terminal.md](01%20-%20La%20Terminal.md)
 
 **Course:** Command Line
 **Topic:** Shell History, GUI vs. CLI, First Commands

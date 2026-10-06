@@ -1,7 +1,7 @@
 
-# 03. Día de Mudanza
+# 03. Navegando la Mazmorra
 
-**Versión original en inglés:** [03 - Moving Day.md](03%20-%20Moving%20Day.md)
+**Versión original en inglés:** [03 - Dungeon Navigation.md](03%20-%20Dungeon%20Navigation.md)
 
 **Curso:** Command Line
 **Tema:** Cambiar de directorio y listar contenidos
@@ -45,7 +45,7 @@ $ cd -
 
 > [!WARNING]
 > **Trampa**
-> `cd` no puede crear nada. Escribir `cd build` en un directorio que no existe informa `no such file or directory` — y la solución es `mkdir build`, que se cubre en [[07 - Recetas|07. Planos del Proyecto]]. Los dos errores comparten el mensaje pero significan lo contrario.
+> `cd` no puede crear nada. Escribir `cd build` en un directorio que no existe informa `no such file or directory` — y la solución es `mkdir build`, que se cubre en [[07 - Planos del Proyecto]]. Los dos errores comparten el mensaje pero significan lo contrario.
 
 ---
 

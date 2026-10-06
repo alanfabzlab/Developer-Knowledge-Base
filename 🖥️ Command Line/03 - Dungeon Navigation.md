@@ -1,7 +1,7 @@
 
-# 03. Moving Day
+# 03. Dungeon Navigation
 
-**Spanish version:** [03 - Día de Mudanza.md](03%20-%20D%C3%ADa%20de%20Mudanza.md)
+**Spanish version:** [03 - Navegando la Mazmorra.md](03%20-%20Navegando%20la%20Mazmorra.md)
 
 **Course:** Command Line
 **Topic:** Changing Directory & Listing Contents
@@ -45,7 +45,7 @@ $ cd -
 
 > [!WARNING]
 > **Trap**
-> `cd` cannot create anything. Typing `cd build` into a directory that does not exist reports `no such file or directory` — and the fix is `mkdir build`, covered in [[07 - Recipes|07. Project Blueprints]]. The two errors share a message but mean opposite things.
+> `cd` cannot create anything. Typing `cd build` into a directory that does not exist reports `no such file or directory` — and the fix is `mkdir build`, covered in [[07 - Project Blueprints]]. The two errors share a message but mean opposite things.
 
 ---
 

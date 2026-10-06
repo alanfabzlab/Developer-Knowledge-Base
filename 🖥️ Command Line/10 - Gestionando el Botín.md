@@ -1,7 +1,7 @@
 
-# 10. Mover y Renombrar
+# 10. Gestionando el Botín
 
-**Versión original en inglés:** [10 - Move Around.md](10%20-%20Move%20Around.md)
+**Versión original en inglés:** [10 - Managing Loot.md](10%20-%20Managing%20Loot.md)
 
 **Curso:** Command Line
 **Tema:** Mover, renombrar y borrar con `mv`, `rm` y `rmdir`

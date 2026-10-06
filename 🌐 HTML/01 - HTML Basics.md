@@ -72,7 +72,7 @@ You just created your first web page with HTML.
 
 > [!TIP]
 > The files in this module are plain `.html` files in a folder. Nothing needs to be installed
-> and nothing needs to be built — see [[02 - Filesystem]] for navigating to the folder and
+> and nothing needs to be built — see [[02 - The Project Tree]] for navigating to the folder and
 > opening the file in a browser.
 
 ---

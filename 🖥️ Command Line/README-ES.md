@@ -30,23 +30,23 @@ Empieza por **01** si el terminal te resulta nuevo. Si ya te manegas con soltura
 
 ### 🧭 1. Navegación (Capítulo 1)
 
-* **Primeros pasos:** [01 - En los Orígenes](./01%20-%20En%20los%20Or%C3%ADgenes.md) — Qué es el shell, por qué la CLI sobrevive a la GUI, `echo`, `say`, el prompt y el historial de comandos.
-* **El árbol:** [02 - Sistema de Archivos](./02%20-%20Sistema%20de%20Archivos.md) — Archivos, directorios y enlaces; lectura del árbol del proyecto; `pwd`; rutas absolutas frente a relativas; comillas y espacios.
-* **Moverse y listar:** [03 - Día de Mudanza](./03%20-%20D%C3%ADa%20de%20Mudanza.md) — `cd` hacia dentro, hacia arriba, a casa y de vuelta; `ls` con `-l` y `-a`; listar varias rutas a la vez.
-* **Lectura y rutas relativas:** [04 - Visita a la Casa](./04%20-%20Visita%20a%20la%20Casa.md) — Subir con `..`, combinar `.` y `..`, leer archivos con `cat` y por qué las rutas necesitan comillas.
-* **Mantenerlo legible:** [05 - Hoja en Blanco](./05%20-%20Hoja%20en%20Blanco.md) — `clear`, historial con `↑`/`↓` y `Ctrl + R`, y autocompletado con Tab incluida la lista de candidatas con doble `Tab`.
-* **Repaso del Capítulo 1:** [06 - Búsqueda del Tesoro](./06%20-%20B%C3%BAsqueda%20del%20Tesoro.md) — Reto de navegación de doce pistas por todo el proyecto, con recorrido completo y comentado.
+* **Primeros pasos:** [01 - La Terminal](./01%20-%20La%20Terminal.md) — Qué es el shell, por qué la CLI sobrevive a la GUI, `echo`, `say`, el prompt y el historial de comandos.
+* **El árbol:** [02 - El Árbol del Proyecto](./02%20-%20El%20%C3%81rbol%20del%20Proyecto.md) — Archivos, directorios y enlaces; lectura del árbol del proyecto; `pwd`; rutas absolutas frente a relativas; comillas y espacios.
+* **Moverse y listar:** [03 - Navegando la Mazmorra](./03%20-%20Navegando%20la%20Mazmorra.md) — `cd` hacia dentro, hacia arriba, a casa y de vuelta; `ls` con `-l` y `-a`; listar varias rutas a la vez.
+* **Lectura y rutas relativas:** [04 - Leyendo la Mazmorra](./04%20-%20Leyendo%20la%20Mazmorra.md) — Subir con `..`, combinar `.` y `..`, leer archivos con `cat` y por qué las rutas necesitan comillas.
+* **Mantenerlo legible:** [05 - Despejando la Niebla](./05%20-%20Despejando%20la%20Niebla.md) — `clear`, historial con `↑`/`↓` y `Ctrl + R`, y autocompletado con Tab incluida la lista de candidatas con doble `Tab`.
+* **Repaso del Capítulo 1:** [06 - Caza del Tesoro](./06%20-%20Caza%20del%20Tesoro.md) — Reto de navegación de doce pistas por todo el proyecto, con recorrido completo y comentado.
 
 ---
 
 ### 📁 2. Gestión de Archivos (Capítulo 2)
 
-* **Crear directorios:** [07 - Planos del Proyecto](./07%20-%20Recetas.md) — `mkdir`, el error del padre ausente y por qué `mkdir -p` es la opción correcta en scripts.
-* **Crear archivos:** [08 - Forjando Archivos](./08%20-%20Tipo%20de%20Cocina.md) — `touch`, cómo las extensiones son una convención de nombres, y el marcador `.gitkeep`.
+* **Crear directorios:** [07 - Planos del Proyecto](./07%20-%20Planos%20del%20Proyecto.md) — `mkdir`, el error del padre ausente y por qué `mkdir -p` es la opción correcta en scripts.
+* **Crear archivos:** [08 - Forjando Archivos](./08%20-%20Forjando%20Archivos.md) — `touch`, cómo las extensiones son una convención de nombres, y el marcador `.gitkeep`.
 * **Escribir y añadir:** [09 - Escribiendo el Lore](./09%20-%20Escribiendo%20el%20Lore.md) — Redirección con `>` y `>>`, combinación de archivos con `cat` y la trampa de sobrescritura consigo mismo.
-* **Mover y borrar:** [10 - Mover y Renombrar](./10%20-%20Mover%20y%20Renombrar.md) — Mover frente a renombrar con `mv`, `rm`, `rmdir`, `rm -r` y los hábitos que hacen sobrevivible un borrado.
-* **Copiar:** [11 - Copia Eso](./11%20-%20Copia%20Eso.md) — `cp`, reglas de destino, `cp -r` y respaldar antes de borrar.
-* **Repaso del Capítulo 2:** [12 - Construyendo la Mazmorra](./12%20-%20Listas%20de%20Reproducci%C3%B3n.md) — Construir un espacio de nivel de principio a fin, `ls -R` y limpieza de sesión.
+* **Mover y borrar:** [10 - Gestionando el Botín](./10%20-%20Gestionando%20el%20Bot%C3%ADn.md) — Mover frente a renombrar con `mv`, `rm`, `rmdir`, `rm -r` y los hábitos que hacen sobrevivible un borrado.
+* **Copiar:** [11 - Clonando Reliquias](./11%20-%20Clonando%20Reliquias.md) — `cp`, reglas de destino, `cp -r` y respaldar antes de borrar.
+* **Repaso del Capítulo 2:** [12 - Construyendo la Mazmorra](./12%20-%20Construyendo%20la%20Mazmorra.md) — Construir un espacio de nivel de principio a fin, `ls -R` y limpieza de sesión.
 
 ---
 
@@ -78,15 +78,15 @@ SunkenKeep/
 
 ```mermaid
 flowchart TD
-    A[01 - En los Orígenes] --> B[02 - Sistema de Archivos]
-    B --> C[03 - Día de Mudanza]
-    C --> D[04 - Visita a la Casa]
-    D --> E[05 - Hoja en Blanco]
-    E --> F[06 - Búsqueda del Tesoro]
+    A[01 - La Terminal] --> B[02 - El Árbol del Proyecto]
+    B --> C[03 - Navegando la Mazmorra]
+    C --> D[04 - Leyendo la Mazmorra]
+    D --> E[05 - Despejando la Niebla]
+    E --> F[06 - Caza del Tesoro]
     F --> G[07 - Planos del Proyecto]
     G --> H[08 - Forjando Archivos]
     H --> I[09 - Escribiendo el Lore]
-    I --> J[10 - Mover y Renombrar]
-    J --> K[11 - Copia Eso]
+    I --> J[10 - Gestionando el Botín]
+    J --> K[11 - Clonando Reliquias]
     K --> L[12 - Construyendo la Mazmorra]
 ```

@@ -1,7 +1,7 @@
 
 # 12. Dungeon Build
 
-**Spanish version:** [12 - Listas de Reproducción.md](12%20-%20Listas%20de%20Reproducci%C3%B3n.md)
+**Spanish version:** [12 - Construyendo la Mazmorra.md](12%20-%20Construyendo%20la%20Mazmorra.md)
 
 **Course:** Command Line
 **Topic:** Chapter 2 Review, Recursive Listing & Full Workflow
@@ -68,7 +68,7 @@ enemies
 content/scripts/enemies:
 ```
 
-Note the empty level directory. `mkdir -p` produced it, and it will not survive a version-control commit on its own — the `.gitkeep` trick from [[08 - Cuisine Type|08. Forging Files]] applies.
+Note the empty level directory. `mkdir -p` produced it, and it will not survive a version-control commit on its own — the `.gitkeep` trick from [[08 - Forging Files]] applies.
 
 ---
 

@@ -1,7 +1,7 @@
 
-# 05. Hoja en Blanco
+# 05. Despejando la Niebla
 
-**Versión original en inglés:** [05 - Clean Slate.md](05%20-%20Clean%20Slate.md)
+**Versión original en inglés:** [05 - Clearing the Fog.md](05%20-%20Clearing%20the%20Fog.md)
 
 **Curso:** Command Line
 **Tema:** Limpiar la pantalla, historial de comandos y autocompletado con Tab

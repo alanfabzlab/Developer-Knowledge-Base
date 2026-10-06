@@ -1,7 +1,7 @@
 
-# 05. Clean Slate
+# 05. Clearing the Fog
 
-**Spanish version:** [05 - Hoja en Blanco.md](05%20-%20Hoja%20en%20Blanco.md)
+**Spanish version:** [05 - Despejando la Niebla.md](05%20-%20Despejando%20la%20Niebla.md)
 
 **Course:** Command Line
 **Topic:** Clearing the Screen, Command History & Tab Completion

@@ -1,7 +1,7 @@
 
-# 06. Scavenger Hunt
+# 06. Treasure Hunt
 
-**Spanish version:** [06 - Búsqueda del Tesoro.md](06%20-%20B%C3%BAsqueda%20del%20Tesoro.md)
+**Spanish version:** [06 - Caza del Tesoro.md](06%20-%20Caza%20del%20Tesoro.md)
 
 **Course:** Command Line
 **Topic:** Chapter 1 Review & Navigation Challenge
@@ -120,7 +120,7 @@ $ pwd
 /Users/dev/SunkenKeep/assets/sprites
 ```
 
-That last step is worth pausing on: `Tab` completed the name perfectly and the command still failed, because the terminal was already inside `SunkenKeep`. A relative path only resolves from where you are — the rule from [[02 - Filesystem]] showing up exactly where it tends to bite.
+That last step is worth pausing on: `Tab` completed the name perfectly and the command still failed, because the terminal was already inside `SunkenKeep`. A relative path only resolves from where you are — the rule from [[02 - The Project Tree]] showing up exactly where it tends to bite.
 
 The second `pwd` is the point of the clue. A failed `cd` leaves you exactly where you were, which is why checking your location after a mistake is a habit worth keeping.
 

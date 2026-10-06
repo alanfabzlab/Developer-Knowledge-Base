@@ -1,7 +1,7 @@
 
-# 01. En los Orígenes
+# 01. La Terminal
 
-**Versión original en inglés:** [01 - In The Beginning.md](01%20-%20In%20The%20Beginning.md)
+**Versión original en inglés:** [01 - The Shell.md](01%20-%20The%20Shell.md)
 
 **Curso:** Command Line
 **Tema:** Historial del shell, GUI vs. CLI, primeros comandos

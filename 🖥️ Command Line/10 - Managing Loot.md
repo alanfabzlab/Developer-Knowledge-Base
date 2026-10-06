@@ -1,7 +1,7 @@
 
-# 10. Move Around
+# 10. Managing Loot
 
-**Spanish version:** [10 - Mover y Renombrar.md](10%20-%20Mover%20y%20Renombrar.md)
+**Spanish version:** [10 - Gestionando el Botín.md](10%20-%20Gestionando%20el%20Bot%C3%ADn.md)
 
 **Course:** Command Line
 **Topic:** Moving, Renaming, and Deleting with `mv`, `rm`, and `rmdir`

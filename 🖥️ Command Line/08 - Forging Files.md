@@ -1,7 +1,7 @@
 
 # 08. Forging Files
 
-**Spanish version:** [08 - Tipo de Cocina.md](08%20-%20Tipo%20de%20Cocina.md)
+**Spanish version:** [08 - Forjando Archivos.md](08%20-%20Forjando%20Archivos.md)
 
 **Course:** Command Line
 **Topic:** Creating Files with `touch` and File Extensions

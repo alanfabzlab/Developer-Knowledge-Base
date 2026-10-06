@@ -1,7 +1,7 @@
 
 # 12. Construyendo la Mazmorra
 
-**Versión original en inglés:** [12 - Music Playlists.md](12%20-%20Music%20Playlists.md)
+**Versión original en inglés:** [12 - Dungeon Build.md](12%20-%20Dungeon%20Build.md)
 
 **Curso:** Command Line
 **Tema:** Repaso del Capítulo 2, listado recursivo y flujo de trabajo completo
@@ -68,7 +68,7 @@ enemies
 content/scripts/enemies:
 ```
 
-Fíjate en el directorio de nivel vacío. `mkdir -p` lo produjo, y por sí solo no sobrevivirá a un commit — el truco de `.gitkeep` de [[08 - Tipo de Cocina|08. Forjando Archivos]] se aplica aquí.
+Fíjate en el directorio de nivel vacío. `mkdir -p` lo produjo, y por sí solo no sobrevivirá a un commit — el truco de `.gitkeep` de [[08 - Forjando Archivos]] se aplica aquí.
 
 ---
 

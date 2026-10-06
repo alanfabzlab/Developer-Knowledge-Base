@@ -123,18 +123,18 @@ Developer-Knowledge-Base/
 ├── 🖥️ Command Line/                       <-- 13 topics · EN + ES
 │   ├── README.md          ·  README-ES.md
 │   ├── 00b - Command Line Cheatsheet.md   ·  00b - Chuleta de Línea de Comandos.md
-│   ├── 01 - In The Beginning.md           ·  01 - En los Orígenes.md
-│   ├── 02 - Filesystem.md                 ·  02 - Sistema de Archivos.md
-│   ├── 03 - Moving Day.md                 ·  03 - Día de Mudanza.md
-│   ├── 04 - House Tour.md                 ·  04 - Visita a la Casa.md
-│   ├── 05 - Clean Slate.md                ·  05 - Hoja en Blanco.md
-│   ├── 06 - Scavenger Hunt.md             ·  06 - Búsqueda del Tesoro.md
-│   ├── 07 - Recipes.md                    ·  07 - Recetas.md
-│   ├── 08 - Cuisine Type.md               ·  08 - Tipo de Cocina.md
+│   ├── 01 - The Shell.md                  ·  01 - La Terminal.md
+│   ├── 02 - The Project Tree.md           ·  02 - El Árbol del Proyecto.md
+│   ├── 03 - Dungeon Navigation.md         ·  03 - Navegando la Mazmorra.md
+│   ├── 04 - Reading the Keep.md           ·  04 - Leyendo la Mazmorra.md
+│   ├── 05 - Clearing the Fog.md           ·  05 - Despejando la Niebla.md
+│   ├── 06 - Treasure Hunt.md              ·  06 - Caza del Tesoro.md
+│   ├── 07 - Project Blueprints.md         ·  07 - Planos del Proyecto.md
+│   ├── 08 - Forging Files.md              ·  08 - Forjando Archivos.md
 │   ├── 09 - Writing the Lore.md           ·  09 - Escribiendo el Lore.md
-│   ├── 10 - Move Around.md                ·  10 - Mover y Renombrar.md
-│   ├── 11 - Copy That.md                  ·  11 - Copia Eso.md
-│   └── 12 - Music Playlists.md            ·  12 - Listas de Reproducción.md
+│   ├── 10 - Managing Loot.md              ·  10 - Gestionando el Botín.md
+│   ├── 11 - Cloning Relics.md             ·  11 - Clonando Reliquias.md
+│   └── 12 - Dungeon Build.md              ·  12 - Construyendo la Mazmorra.md
 │
 ├── 🌐 HTML/                           <-- 6 topics · EN + ES
 │   ├── README.md          ·  README-ES.md

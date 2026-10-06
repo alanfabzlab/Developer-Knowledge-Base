@@ -1,7 +1,7 @@
 
-# 04. House Tour
+# 04. Reading the Keep
 
-**Spanish version:** [04 - Visita a la Casa.md](04%20-%20Visita%20a%20la%20Casa.md)
+**Spanish version:** [04 - Leyendo la Mazmorra.md](04%20-%20Leyendo%20la%20Mazmorra.md)
 
 **Course:** Command Line
 **Topic:** Parent Paths, Absolute Paths & Reading Files with `cat`

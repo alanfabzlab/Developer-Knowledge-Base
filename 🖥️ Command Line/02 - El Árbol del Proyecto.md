@@ -1,7 +1,7 @@
 
-# 02. Sistema de Archivos
+# 02. El Árbol del Proyecto
 
-**Versión original en inglés:** [02 - Filesystem.md](02%20-%20Filesystem.md)
+**Versión original en inglés:** [02 - The Project Tree.md](02%20-%20The%20Project%20Tree.md)
 
 **Curso:** Command Line
 **Tema:** Directorios, archivos, rutas y `pwd`

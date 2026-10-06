@@ -1,7 +1,7 @@
 
 # 07. Planos del Proyecto
 
-**Versión original en inglés:** [07 - Recipes.md](07%20-%20Recipes.md)
+**Versión original en inglés:** [07 - Project Blueprints.md](07%20-%20Project%20Blueprints.md)
 
 **Curso:** Command Line
 **Tema:** Crear directorios con `mkdir` y el flag `-p`

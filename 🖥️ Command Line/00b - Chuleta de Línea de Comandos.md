@@ -9,7 +9,7 @@
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
-Referencia de una página para todo el módulo. Los ejemplos usan el árbol del proyecto **Sunken Keep** introducido en [[02 - Sistema de Archivos]].
+Referencia de una página para todo el módulo. Los ejemplos usan el árbol del proyecto **Sunken Keep** introducido en [[02 - El Árbol del Proyecto]].
 
 ---
 

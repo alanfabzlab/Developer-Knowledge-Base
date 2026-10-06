@@ -9,7 +9,7 @@
 
 <hr style="border: none; height: 3px; background: linear-gradient(90deg, transparent, #7C5CFF, #00C2A8, #7C5CFF, transparent); margin: 24px 0;" />
 
-One-page reference for the whole module. Examples use the **Sunken Keep** project tree introduced in [[02 - Filesystem]].
+One-page reference for the whole module. Examples use the **Sunken Keep** project tree introduced in [[02 - The Project Tree]].
 
 ---
 

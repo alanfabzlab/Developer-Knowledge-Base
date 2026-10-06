@@ -1,7 +1,7 @@
 
-# 04. Visita a la Casa
+# 04. Leyendo la Mazmorra
 
-**Versión original en inglés:** [04 - House Tour.md](04%20-%20House%20Tour.md)
+**Versión original en inglés:** [04 - Reading the Keep.md](04%20-%20Reading%20the%20Keep.md)
 
 **Curso:** Command Line
 **Tema:** Rutas al directorio padre, rutas absolutas y lectura de archivos con `cat`

@@ -1,7 +1,7 @@
 
-# 11. Copy That
+# 11. Cloning Relics
 
-**Spanish version:** [11 - Copia Eso.md](11%20-%20Copia%20Eso.md)
+**Spanish version:** [11 - Clonando Reliquias.md](11%20-%20Clonando%20Reliquias.md)
 
 **Course:** Command Line
 **Topic:** Duplicating Files and Directories with `cp` and `cp -r`
