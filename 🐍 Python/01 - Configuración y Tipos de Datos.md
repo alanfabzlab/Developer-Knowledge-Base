@@ -38,7 +38,7 @@ En Python, usamos la función integrada `print()` para enviar texto o datos a la
 ```python
 
 # Salida básica
-print('¡Hola Mundo!')
+print('¡Hola, Emberfall!')
 
 ```
 

@@ -257,15 +257,16 @@ estructura — cada gramo de estilo viene de los dos shorthands que acabas de ap
     <h1>¡Estás Invitado!</h1>
     <div id="invite-text">
       <p>
-        Ven con nosotros a una noche de brasas, risas y buena compañía en la fiesta de
-        lanzamiento más esperada del año. Nos alegra invitarte a nuestra soirée
-        exclusiva, donde se reencuentran los grupos de Cinderlight Fest y el estudio
-        enseña la primera build jugable de la expansión Salas Profundas.
+        Aventureros de Emberfall, ven con nosotros a una noche de brasas, risas y buena
+        compañía en la fiesta de lanzamiento más esperada del año. El gremio ha reservado
+        un ala del Salón del Trono para la reunión de los actos de Cinderlight Fest — y
+        para la primera build jugable de la expansión Salas Profundas, recién salida de la
+        forja de los devs.
       </p>
       <p>
-        Habrá música en vivo con The Ashen Choir, cócteles de brasa exclusivos y un
-        primer vistazo al artbook. El código de vestimenta es aventurero casual — ven
-        disfrazado de tu clase favorita.
+        Habrá música en vivo con The Ashen Choir, cócteles de brasa exclusivos, un primer
+        vistazo al artbook y un código de botín exclusivo para los invitados. El código de
+        vestimenta es aventurero casual — ven disfrazado de tu clase favorita.
       </p>
       <p>¡No podemos esperar para verte allí!</p>
     </div>

@@ -254,15 +254,15 @@ ounce of style comes from the two shorthands you just learned.
     <h1>You're Invited!</h1>
     <div id="invite-text">
       <p>
-        Come join us for a night of embers, laughter and good company at the most
-        anticipated launch party of the year! We're thrilled to invite you to our
-        exclusive soirée, where the Cinderlight Fest acts reunite and the studio shows
-        the first playable build of the Deep Halls expansion.
+        Adventurers of Emberfall, come join us for a night of embers, laughter and good
+        company at the most anticipated launch party of the year! The Guild has reserved
+        a wing of the Throne Hall for the reunion of the Cinderlight Fest acts — and for a
+        first playable build of the Deep Halls expansion, fresh from the dev forge.
       </p>
       <p>
-        Expect live music by The Ashen Choir, signature cinder cocktails and a first look
-        at the artbook. Dress code is adventuring casual — come as your favorite
-        character class.
+        Expect live music by The Ashen Choir, signature cinder cocktails, a first look at
+        the artbook, and an exclusive loot code for everyone on the guest list. Dress code
+        is adventuring casual — come as your favorite character class.
       </p>
       <p>We can't wait to see you there!</p>
     </div>

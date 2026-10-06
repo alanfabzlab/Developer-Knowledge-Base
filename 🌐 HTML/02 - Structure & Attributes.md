@@ -471,14 +471,14 @@ A wireframe is placeholder layout you use before the final content exists. Creat
 
     <div class="hud-panel">
       <h2 class="panel-title" id="panel-1">Panel 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Patch notes for the Deep Halls expansion land here once the text is final.</p>
+      <p>Reward cards, the launch date and the season banner render inside this panel.</p>
     </div>
 
     <div class="hud-panel">
       <h2 class="panel-title" id="panel-2">Panel 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Patch notes for the Deep Halls expansion land here once the text is final.</p>
+      <p>Reward cards, the launch date and the season banner render inside this panel.</p>
     </div>
   </body>
 </html>

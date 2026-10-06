@@ -105,12 +105,12 @@ class Hero:
         self.level = level
 
     def say_hi(self):
-        print(f'👋 My name is {self.name}')
+        print(f'👋 {self.name}, level {self.level}, reporting for duty!')
 
 aria = Hero('Aria', 22)
 kai = Hero('Kai', 23)
 
-aria.say_hi()  # 👋 My name is Aria
+aria.say_hi()  # 👋 Aria, level 22, reporting for duty!
 ```
 
 

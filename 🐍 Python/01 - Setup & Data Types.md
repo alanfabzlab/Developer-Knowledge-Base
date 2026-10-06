@@ -39,7 +39,7 @@ In Python, we use the built-in `print()` function to send text or data to the te
 ```python
 
 # Basic Output
-print('Hello World!')
+print('Hello, Emberfall!')
 
 ```
 

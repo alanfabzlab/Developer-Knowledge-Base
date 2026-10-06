@@ -474,14 +474,14 @@ definitivo. Crea `wireframe.html`:
 
     <div class="panel-hud">
       <h2 class="titulo-panel" id="panel-1">Panel 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Las notas del parche de Salas Profundas irán aquí cuando el texto esté definido.</p>
+      <p>Las tarjetas de botín, la fecha de lanzamiento y el banner de la temporada se renderizan en este panel.</p>
     </div>
 
     <div class="panel-hud">
       <h2 class="titulo-panel" id="panel-2">Panel 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Las notas del parche de Salas Profundas irán aquí cuando el texto esté definido.</p>
+      <p>Las tarjetas de botín, la fecha de lanzamiento y el banner de la temporada se renderizan en este panel.</p>
     </div>
   </body>
 </html>
